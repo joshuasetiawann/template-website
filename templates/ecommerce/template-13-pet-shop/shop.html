@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Wag &amp; Whisker</title>
+<meta name="description" content="Browse the full Wag &amp; Whisker catalog — filter by category and sort 16 products by price or name.">
+<meta name="theme-color" content="#F0F7FB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='22'%20fill='%23FF7849'/%3E%3Ctext%20x='32'%20y='34'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20dominant-baseline='central'%20fill='%23FFFFFF'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body class="v2 t13 shop-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+<div class="container nav-row">
+<a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">W</span><span>Wag &amp; Whisker</span></a>
+<nav class="nav-menu" data-nav-menu aria-label="Main navigation">
+<ul>
+<li><a aria-current="page" class="nav-shop" href="shop.html">Shop</a></li>
+<li><a href="shop.html">By pet</a></li>
+<li><a href="shop.html">Welcome kit</a></li>
+<li><a href="about.html#lookbook">The pack</a></li>
+<li><a href="contact.html">Treat club</a></li>
+</ul>
+</nav>
+<div class="nav-actions">
+<button class="cart-btn" type="button" data-cart-open aria-label="Open cart"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 8h13l-1.2 11h-10.6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="cart-count" data-cart-count>0</span></button>
+<button class="nav-toggle" type="button" data-nav-toggle aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="shop-hero">
+<div class="container">
+<nav class="crumbs" aria-label="Breadcrumb">
+<ol>
+<li><a href="index.html">Home</a></li>
+<li aria-current="page">Shop</li>
+</ol>
+</nav>
+<div class="shop-hero-copy">
+<p class="kicker">All products</p>
+<h1>The complete pet shop catalog</h1>
+<p class="lead">Every piece in one place. Filter by category, sort by price or name, and add to your basket without leaving the page.</p>
+</div>
+</div>
+</section>
+<section class="shop-main">
+<div class="container">
+<div class="shop-toolbar">
+<div class="pill-row shop-chips" role="group" aria-label="Filter products by category">
+<button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All<small>16</small></button>
+<button class="filter-chip" type="button" data-filter="dogs" aria-pressed="false">Dogs<small>5</small></button>
+<button class="filter-chip" type="button" data-filter="treats" aria-pressed="false">Treats<small>4</small></button>
+<button class="filter-chip" type="button" data-filter="cats" aria-pressed="false">Cats<small>5</small></button>
+<button class="filter-chip" type="button" data-filter="small" aria-pressed="false">Small Pets<small>2</small></button>
+</div>
+<div class="shop-sort">
+<label class="shop-sort-label" for="shop-sort-select">Sort</label>
+<div class="select-wrap">
+<select id="shop-sort-select" class="shop-sort-select" data-shop-sort>
+<option value="featured">Featured</option>
+<option value="price-asc">Price: low to high</option>
+<option value="price-desc">Price: high to low</option>
+<option value="name">Name: A to Z</option>
+</select>
+<svg class="select-caret" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</div>
+</div>
+</div>
+<p class="shop-count" data-shop-count aria-live="polite">Showing 16 products</p>
+<div class="product-grid grid-4 shop-grid" data-grid data-shop-grid>
+<article class="product-card" data-card-link data-href="product.html?p=0" data-cat="dogs" data-price="12" data-name="Tug-of-War Rope Toy" data-rating="4.3">
+<div class="p-media" style="--g:linear-gradient(145deg,#FFDCCB,#FF7849)"><span class="p-emoji" aria-hidden="true">🐶</span></div>
+<div class="p-info">
+<p class="p-cat">Dogs</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=0">Tug-of-War Rope Toy</a></h3>
+<p class="p-meta">Triple-braided · machine washable</p>
+<div class="p-stars" aria-label="Rated 4.3 out of 5 from 307 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.3 (307)</span></div>
+<div class="p-row"><span class="price">$12</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#FFDCCB,#FF7849)" data-name="Tug-of-War Rope Toy" data-price="12" aria-label="Add Tug-of-War Rope Toy to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=1" data-cat="treats" data-price="9.5" data-name="Salmon Crunch Treats" data-rating="4.3">
+<div class="p-media" style="--g:linear-gradient(145deg,#CDEDEA,#2BA39B)"><span class="p-emoji" aria-hidden="true">🐟</span><span class="badge">Biscuit’s pick</span></div>
+<div class="p-info">
+<p class="p-cat">Treats</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=1">Salmon Crunch Treats</a></h3>
+<p class="p-meta">Single ingredient · 90 g</p>
+<div class="p-stars" aria-label="Rated 4.3 out of 5 from 332 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.3 (332)</span></div>
+<div class="p-row"><span class="price">$9.50</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#CDEDEA,#2BA39B)" data-name="Salmon Crunch Treats" data-price="9.5" aria-label="Add Salmon Crunch Treats to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=2" data-cat="cats" data-price="49" data-name="Cloud Cat Cave" data-rating="4.9">
+<div class="p-media" style="--g:linear-gradient(145deg,#D8F0EE,#54B8AF)"><span class="p-emoji" aria-hidden="true">🐱</span><span class="badge">New</span></div>
+<div class="p-info">
+<p class="p-cat">Cats</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=2">Cloud Cat Cave</a></h3>
+<p class="p-meta">Felted wool · warm &amp;amp; dark</p>
+<div class="p-stars" aria-label="Rated 4.9 out of 5 from 377 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.9 (377)</span></div>
+<div class="p-row"><span class="price">$49</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#D8F0EE,#54B8AF)" data-name="Cloud Cat Cave" data-price="49" aria-label="Add Cloud Cat Cave to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=3" data-cat="dogs" data-price="24" data-name="Adjustable Harness — Coral" data-rating="4.7">
+<div class="p-media" style="--g:linear-gradient(145deg,#FFE9D9,#F09A6A)"><span class="p-emoji" aria-hidden="true">🦴</span></div>
+<div class="p-info">
+<p class="p-cat">Dogs</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=3">Adjustable Harness — Coral</a></h3>
+<p class="p-meta">No-pull front clip · S to XL</p>
+<div class="p-stars" aria-label="Rated 4.7 out of 5 from 290 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.7 (290)</span></div>
+<div class="p-row"><span class="price">$24</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#FFE9D9,#F09A6A)" data-name="Adjustable Harness — Coral" data-price="24" aria-label="Add Adjustable Harness — Coral to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=4" data-cat="cats" data-price="11" data-name="Feather Wand Teaser" data-rating="4.3">
+<div class="p-media" style="--g:linear-gradient(145deg,#FFE2D2,#E8825B)"><span class="p-emoji" aria-hidden="true">🪶</span></div>
+<div class="p-info">
+<p class="p-cat">Cats</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=4">Feather Wand Teaser</a></h3>
+<p class="p-meta">Replaceable lures · 90 cm</p>
+<div class="p-stars" aria-label="Rated 4.3 out of 5 from 335 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.3 (335)</span></div>
+<div class="p-row"><span class="price">$11</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#FFE2D2,#E8825B)" data-name="Feather Wand Teaser" data-price="11" aria-label="Add Feather Wand Teaser to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=5" data-cat="small" data-price="14" data-name="Timothy Hay Bale" data-rating="4.9">
+<div class="p-media" style="--g:linear-gradient(145deg,#CDEDEA,#2BA39B)"><span class="p-emoji" aria-hidden="true">🐹</span></div>
+<div class="p-info">
+<p class="p-cat">Small Pets</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=5">Timothy Hay Bale</a></h3>
+<p class="p-meta">First cut · 1 kg</p>
+<div class="p-stars" aria-label="Rated 4.9 out of 5 from 244 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.9 (244)</span></div>
+<div class="p-row"><span class="price">$14</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#CDEDEA,#2BA39B)" data-name="Timothy Hay Bale" data-price="14" aria-label="Add Timothy Hay Bale to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=6" data-cat="treats" data-price="8.5" data-name="Peanut Butter Biscuits" data-rating="4.0">
+<div class="p-media" style="--g:linear-gradient(145deg,#FFDCCB,#FF7849)"><span class="p-emoji" aria-hidden="true">🥜</span></div>
+<div class="p-info">
+<p class="p-cat">Treats</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=6">Peanut Butter Biscuits</a></h3>
+<p class="p-meta">Oven-baked · xylitol-free</p>
+<div class="p-stars" aria-label="Rated 4.0 out of 5 from 385 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.0 (385)</span></div>
+<div class="p-row"><span class="price">$8.50</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#FFDCCB,#FF7849)" data-name="Peanut Butter Biscuits" data-price="8.5" aria-label="Add Peanut Butter Biscuits to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=7" data-cat="dogs" data-price="39" data-name="Cozy Donut Bed" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(145deg,#D8F0EE,#54B8AF)"><span class="p-emoji" aria-hidden="true">🛏️</span><span class="badge">-20%</span></div>
+<div class="p-info">
+<p class="p-cat">Dogs</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=7">Cozy Donut Bed</a></h3>
+<p class="p-meta">Calming raised rim · washable</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 304 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (304)</span></div>
+<div class="p-row"><span class="price">$39</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#D8F0EE,#54B8AF)" data-name="Cozy Donut Bed" data-price="39" aria-label="Add Cozy Donut Bed to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=8" data-cat="cats" data-price="13" data-name="Catnip Garden Kit" data-rating="4.3">
+<div class="p-media" style="--g:linear-gradient(145deg,#FFE9D9,#F09A6A)"><span class="p-emoji" aria-hidden="true">🌱</span></div>
+<div class="p-info">
+<p class="p-cat">Cats</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=8">Catnip Garden Kit</a></h3>
+<p class="p-meta">Grow your own · 3 pots</p>
+<div class="p-stars" aria-label="Rated 4.3 out of 5 from 25 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.3 (25)</span></div>
+<div class="p-row"><span class="price">$13</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#FFE9D9,#F09A6A)" data-name="Catnip Garden Kit" data-price="13" aria-label="Add Catnip Garden Kit to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=9" data-cat="dogs" data-price="69" data-name="Orthopedic Dog Bed L" data-rating="4.8">
+<div class="p-media" style="--g:linear-gradient(145deg,#FFDCCB,#FF7849)"><span class="p-emoji" aria-hidden="true">🐶</span></div>
+<div class="p-info">
+<p class="p-cat">Dogs</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=9">Orthopedic Dog Bed L</a></h3>
+<p class="p-meta">Memory foam · washable cover</p>
+<div class="p-stars" aria-label="Rated 4.8 out of 5 from 312 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.8 (312)</span></div>
+<div class="p-row"><span class="price">$69</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#FFDCCB,#FF7849)" data-name="Orthopedic Dog Bed L" data-price="69" aria-label="Add Orthopedic Dog Bed L to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=10" data-cat="cats" data-price="14" data-name="Catnip Kicker Set ×3" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(145deg,#CDEDEA,#2BA39B)"><span class="p-emoji" aria-hidden="true">🐱</span></div>
+<div class="p-info">
+<p class="p-cat">Cats</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=10">Catnip Kicker Set ×3</a></h3>
+<p class="p-meta">Organic catnip · durable</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 421 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (421)</span></div>
+<div class="p-row"><span class="price">$14</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#CDEDEA,#2BA39B)" data-name="Catnip Kicker Set ×3" data-price="14" aria-label="Add Catnip Kicker Set ×3 to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=11" data-cat="treats" data-price="18" data-name="Grain-Free Salmon Bites" data-rating="4.7">
+<div class="p-media" style="--g:linear-gradient(145deg,#D8F0EE,#54B8AF)"><span class="p-emoji" aria-hidden="true">🐟</span></div>
+<div class="p-info">
+<p class="p-cat">Treats</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=11">Grain-Free Salmon Bites</a></h3>
+<p class="p-meta">Single protein · training size</p>
+<div class="p-stars" aria-label="Rated 4.7 out of 5 from 288 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.7 (288)</span></div>
+<div class="p-row"><span class="price">$18</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#D8F0EE,#54B8AF)" data-name="Grain-Free Salmon Bites" data-price="18" aria-label="Add Grain-Free Salmon Bites to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=12" data-cat="small" data-price="24" data-name="Hideaway Hut — Small Pet" data-rating="4.5">
+<div class="p-media" style="--g:linear-gradient(145deg,#FFE9D9,#F09A6A)"><span class="p-emoji" aria-hidden="true">🐹</span><span class="badge">New</span></div>
+<div class="p-info">
+<p class="p-cat">Small Pets</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=12">Hideaway Hut — Small Pet</a></h3>
+<p class="p-meta">Cosy fleece · machine wash</p>
+<div class="p-stars" aria-label="Rated 4.5 out of 5 from 142 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.5 (142)</span></div>
+<div class="p-row"><span class="price">$24</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#FFE9D9,#F09A6A)" data-name="Hideaway Hut — Small Pet" data-price="24" aria-label="Add Hideaway Hut — Small Pet to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=13" data-cat="dogs" data-price="29" data-name="No-Pull Harness" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(145deg,#FFE2D2,#E8825B)"><span class="p-emoji" aria-hidden="true">🐶</span></div>
+<div class="p-info">
+<p class="p-cat">Dogs</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=13">No-Pull Harness</a></h3>
+<p class="p-meta">Padded · reflective trim</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 356 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (356)</span></div>
+<div class="p-row"><span class="price">$29</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#FFE2D2,#E8825B)" data-name="No-Pull Harness" data-price="29" aria-label="Add No-Pull Harness to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=14" data-cat="cats" data-price="34" data-name="Window Cat Perch" data-rating="4.4">
+<div class="p-media" style="--g:linear-gradient(145deg,#FFDCCB,#FF7849)"><span class="p-emoji" aria-hidden="true">🐱</span></div>
+<div class="p-info">
+<p class="p-cat">Cats</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=14">Window Cat Perch</a></h3>
+<p class="p-meta">Suction-mount · 18kg</p>
+<div class="p-stars" aria-label="Rated 4.4 out of 5 from 198 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.4 (198)</span></div>
+<div class="p-row"><span class="price">$34</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#FFDCCB,#FF7849)" data-name="Window Cat Perch" data-price="34" aria-label="Add Window Cat Perch to cart">Add</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=15" data-cat="treats" data-price="12" data-name="Dental Chew Sticks ×7" data-rating="4.5">
+<div class="p-media" style="--g:linear-gradient(145deg,#CDEDEA,#2BA39B)"><span class="p-emoji" aria-hidden="true">🐟</span></div>
+<div class="p-info">
+<p class="p-cat">Treats</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=15">Dental Chew Sticks ×7</a></h3>
+<p class="p-meta">Vet-formulated · fresh breath</p>
+<div class="p-stars" aria-label="Rated 4.5 out of 5 from 267 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.5 (267)</span></div>
+<div class="p-row"><span class="price">$12</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(145deg,#CDEDEA,#2BA39B)" data-name="Dental Chew Sticks ×7" data-price="12" aria-label="Add Dental Chew Sticks ×7 to cart">Add</button></div>
+</div>
+</article>
+</div>
+<p class="shop-empty" data-shop-empty hidden>No products match that filter. <button type="button" class="link-btn" data-shop-reset>Show everything</button></p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col footer-brand">
+<a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">W</span><span>Wag &amp; Whisker</span></a>
+<p>A neighbourhood pet shop with a national shipping habit. Treats first, questions later.</p>
+<div class="social-row">
+<a href="#" aria-label="Instagram" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+<a href="#" aria-label="YouTube" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4 5.5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2zm6 4v6l5.5-3z"/></svg></a>
+<a href="#" aria-label="Pinterest" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M10 17.5 13 9.5M9.5 12.8c-.8-2 .6-4.3 2.8-4.3 1.9 0 3.2 1.3 3.2 3 0 2.2-1.3 3.8-3 3.8-1 0-1.8-.6-2-1.4"/></svg></a>
+<a href="#" aria-label="X" data-demo-link><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5.2 21h-3l7.3-8.3L2 3h6.4l4.4 5.9zm-1.1 16.1h1.7L7.5 4.8H5.7z"/></svg></a>
+<a href="#" aria-label="Facebook" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M13.4 21v-7.1h2.4l.4-2.9h-2.8V9.1c0-.9.2-1.5 1.5-1.5h1.4V5c-.3 0-1.2-.1-2.1-.1-2.1 0-3.5 1.3-3.5 3.6V11H8.3v2.9h2.4V21z"/></svg></a>
+</div>
+</div>
+<div class="footer-col"><h3>Shop</h3><ul>
+<li><a href="shop.html">Shop all</a></li>
+<li><a href="shop.html">Shop all</a></li>
+<li><a href="shop.html">Dogs</a></li>
+<li><a href="shop.html">Cats</a></li>
+<li><a href="shop.html">Small Pets</a></li>
+<li><a href="shop.html">Treats</a></li>
+</ul></div>
+<div class="footer-col"><h3>Explore</h3><ul>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="shop.html">By pet</a></li>
+<li><a href="shop.html">Welcome kit</a></li>
+<li><a href="about.html#lookbook">The pack</a></li>
+<li><a href="contact.html">Treat club</a></li>
+</ul></div>
+<div class="footer-col"><h3>Support</h3><ul>
+<li><a href="contact.html">Shipping</a></li>
+<li><a href="contact.html">Returns</a></li>
+<li><a href="contact.html">Treat club FAQ</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></div>
+</div>
+<div class="pay-row" data-payments>
+<span class="pay-label">We accept</span>
+<ul class="pay-list" aria-label="Accepted payment methods">
+<li class="pay-pill">Visa</li>
+<li class="pay-pill">Mastercard</li>
+<li class="pay-pill">AmEx</li>
+<li class="pay-pill">PayPal</li>
+<li class="pay-pill">Klarna</li>
+</ul>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span data-year>2026</span> Wag &amp; Whisker. All rights reserved.</p>
+<p>Approved by Biscuit, Head of Quality</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span data-year>2026</span> Wag &amp; Whisker. All rights reserved.</p>
+<p>Approved by Biscuit, Head of Quality</p>
+</div>
+</div>
+</footer>
+<button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button>
+
+<div class="toast" data-toast role="status" aria-live="polite"><span class="toast-msg" data-toast-msg></span><button class="toast-action" type="button" data-toast-view hidden>View basket</button></div>
+</body>
+</html>

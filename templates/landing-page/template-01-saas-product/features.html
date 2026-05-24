@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — Real-time product analytics · Pulsedeck</title>
+  <meta name="description" content="Tour every Pulsedeck feature: live dashboards, funnels, retention cohorts, anomaly alerts and a governed metric layer.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%234F46E5'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EP%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#FFFFFF">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>New:</strong> anomaly alerts now ship on every plan.</p>
+      <a class="announce-link" href="pricing.html">See pricing</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V11M10 20V5M16 20v-7M20 20H3"/></svg></span>Pulsedeck</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html" aria-current="page">Features</a></li>
+          <li><a href="features.html#benefits">Benefits</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Start free trial</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="crumb-list">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Features</li>
+        </ol>
+      </div>
+    </nav>
+    <section class="page-hero" aria-labelledby="phTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <span class="hero-badge"><i aria-hidden="true"></i>Every metric, one live deck</span>
+        <h1 id="phTitle">Features built for product teams who ship</h1>
+        <p class="lead">Pulsedeck replaces dashboard sprawl with one real-time deck. Here is exactly how each piece works — and what it removes from your week.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="pricing.html">See pricing</a>
+          <a class="btn btn-ghost btn-lg" href="contact.html">Talk to us</a>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Feature breakdown</p>
+        <h2>Six tools that retire your spreadsheet pile</h2>
+        <p class="lead">Each one is a job your team does manually today, automated and made trustworthy.</p>
+      </div>
+        <div class="deep-list">
+          <article class="deep-row reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V11M10 20V5M16 20v-7M20 20H3"/></svg></span>
+              <h3>Live dashboards</h3>
+              <p>Boards refresh the instant an event lands, so standups debate decisions instead of arguing about whose number is right. Pin any board to a TV, a tab, or a Monday digest.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Sub-second refresh on every tile</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Drag-to-arrange board layouts</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Auto-dark TV mode for office screens</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-grid"><div class="mm-card"><span class="mm-num">12,482</span><span class="mm-lab">Signups</span></div><div class="mm-card"><span class="mm-num">3.4%</span><span class="mm-lab">Conv</span></div><div class="mm-card"><span class="mm-num">$48.9k</span><span class="mm-lab">MRR</span></div></div><div class="mm-chart"><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span></div></div>
+          </article>
+          <article class="deep-row flip reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16l-6 8v6l-4-2v-4L4 5z"/></svg></span>
+              <h3>Funnel explorer</h3>
+              <p>Build a conversion funnel by dragging steps in the order users take them, then watch exactly where they stall. Break any step down by plan, source or device without writing SQL.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Drag-and-drop step builder</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Drop-off reasons per step</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Segment by any user property</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-rows"><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span></div></div>
+          </article>
+          <article class="deep-row reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20c0-3.4 2.6-5.4 6-5.4s6 2 6 5.4"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M17.5 14.6c2.4.4 3.5 2.1 3.5 4.4"/></svg></span>
+              <h3>Retention cohorts</h3>
+              <p>Weekly cohort grids show whether your latest release actually keeps people around or just spiked a vanity metric. Compare cohorts side by side to prove a change moved the needle.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Day, week and month cohorts</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Release annotations on the grid</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Compare up to four cohorts</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-grid"><div class="mm-card"><span class="mm-num">68%</span><span class="mm-lab">W1</span></div><div class="mm-card"><span class="mm-num">54%</span><span class="mm-lab">W2</span></div><div class="mm-card"><span class="mm-num">47%</span><span class="mm-lab">W4</span></div></div></div>
+          </article>
+          <article class="deep-row flip reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 19.5a2.2 2.2 0 0 0 4 0"/></svg></span>
+              <h3>Anomaly alerts</h3>
+              <p>Pulsedeck learns each metric's normal rhythm and pings the right channel the moment one bends out of pattern — usually before a customer files a ticket. No static thresholds to babysit.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Learned, seasonal baselines</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Route alerts per metric owner</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Mute windows for deploys</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-chart"><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span></div></div>
+          </article>
+          <article class="deep-row reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></span>
+              <h3>Shareable reports</h3>
+              <p>Turn any view into a scheduled digest your stakeholders receive every Monday morning, rendered as a clean email no one needs a login to read. Exports drop to CSV and PDF in a click.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Scheduled email digests</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>No-login shared links</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>CSV and PDF export</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-rows"><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span></div></div>
+          </article>
+          <article class="deep-row flip reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></span>
+              <h3>North-star tracking</h3>
+              <p>Pin the single metric that matters and trace every squad's work back to it, so roadmap reviews start from impact instead of opinion. Input metrics roll up automatically.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>One governed north-star</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Input-metric roll-ups</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Goal lines and pacing</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-donut" style="--p:72"><span>72%</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="how">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">How it works</p>
+        <h2>From snippet to insight in one afternoon</h2>
+        <p class="lead">Four steps, no data engineer required.</p>
+      </div>
+        <div class="steps-grid steps-4">
+          <article class="step-card reveal" data-d="0">
+            <span class="step-n" aria-hidden="true">1</span><h3>Drop in the snippet</h3>
+            <p>Paste one script tag or call a server-side SDK. Your first events arrive within minutes.</p>
+          </article>
+          <article class="step-card reveal" data-d="1">
+            <span class="step-n" aria-hidden="true">2</span><h3>Map your events</h3>
+            <p>Name events in plain language once; the governed metric layer keeps every board consistent forever.</p>
+          </article>
+          <article class="step-card reveal" data-d="2">
+            <span class="step-n" aria-hidden="true">3</span><h3>Build your deck</h3>
+            <p>Assemble dashboards, funnels and cohorts by clicking — no query language to learn.</p>
+          </article>
+          <article class="step-card reveal" data-d="3">
+            <span class="step-n" aria-hidden="true">4</span><h3>Invite the team</h3>
+            <p>Add unlimited teammates, set role-based access and schedule the Monday digest.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Outcomes</p>
+        <h2>What teams measure after a quarter</h2>
+        <p class="lead">Numbers from 1,900+ teams running Pulsedeck day to day.</p>
+      </div>
+        <div class="boutcome-grid">
+          <article class="bout-card reveal">
+            <span class="bout-num">42%</span>
+            <h3>Less time reporting</h3>
+            <p>Analysts stop stitching CSVs into slides and get their Mondays back.</p>
+          </article>
+          <article class="bout-card reveal">
+            <span class="bout-num">12 min</span>
+            <h3>Median setup</h3>
+            <p>Most teams send their first event and build a board before lunch.</p>
+          </article>
+          <article class="bout-card reveal">
+            <span class="bout-num">9 → 1</span>
+            <h3>Dashboards collapsed</h3>
+            <p>The average new team retires nine scattered dashboards in week one.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="integrations">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Integrations & use cases</p>
+        <h2>Plugs into the stack you already run</h2>
+        <p class="lead">One-click connectors keep your warehouse, billing and support data flowing in.</p>
+      </div>
+        <div class="usecase-grid">
+          <article class="usecase-card reveal">
+            <span class="uc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3c3 1.5 5 4.5 5 8 0 2-.5 3.5-1 4.5l-4 2-4-2c-.5-1-1-2.5-1-4.5 0-3.5 2-6.5 5-8z"/><circle cx="12" cy="10" r="1.6"/><path d="M9 17l-2 4 4-2M15 17l2 4-4-2"/></svg></span>
+            <h3>Growth teams</h3>
+            <p>Watch activation and funnel health daily, and catch a broken signup flow before the sprint ends.</p>
+          </article>
+          <article class="usecase-card reveal">
+            <span class="uc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13.5l9 5 9-5"/></svg></span>
+            <h3>Product managers</h3>
+            <p>Answer your own roadmap questions in a click instead of queueing behind the data team.</p>
+          </article>
+          <article class="usecase-card reveal">
+            <span class="uc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10.5h18"/><path d="M15.5 15h2.5"/></svg></span>
+            <h3>Founders</h3>
+            <p>Open one deck before the board call and trust every number on it.</p>
+          </article>
+        </div>
+        <div class="int-grid-wrap"><div class="integration-grid">
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Snowdrift DW</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Postmark Events</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Stripe-style billing</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Segmenta CDP</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Slacky alerts</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Webhook in/out</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>BigStore export</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>REST API</div>
+        </div></div>
+      </div>
+    </section>
+    <section id="compare" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Why Pulsedeck</p>
+        <h2>One source of truth beats ten dashboards</h2>
+        <p class="lead">The difference is governance, not just charts.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Dashboard sprawl</span><h3>Numbers nobody trusts</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Funnels live in one tool, revenue in another, retention in a third.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Two dashboards disagree and the meeting becomes a forensics session.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>By the time a drop is spotted, the sprint that caused it has shipped.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">With Pulsedeck</span><h3>One governed deck</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Every metric shares one definition in a governed layer.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Anomaly alerts surface a bend the moment it happens.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Unlimited teammates read the same live numbers, no exports.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-banner-sec">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>See the plan that fits your traffic</h2>
+          <p>Every plan includes unlimited teammates and the governed metric layer. Pay for events, not seats.</p>
+          <a class="btn btn-invert btn-lg" href="pricing.html">View pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V11M10 20V5M16 20v-7M20 20H3"/></svg></span>Pulsedeck</a>
+          <p>The real-time analytics deck for modern product teams. Measure what matters, ignore the rest.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>Changelog</a>
+          <a href="#" data-demo-link>Roadmap</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="#" data-demo-link>Careers</a>
+          <a href="#" data-demo-link>Press kit</a>
+        </nav>
+        <nav class="footer-col" aria-label="Resources links">
+          <h4>Resources</h4>
+          <a href="#" data-demo-link>Docs</a>
+          <a href="#" data-demo-link>API reference</a>
+          <a href="#" data-demo-link>Status</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Pulsedeck Analytics, Inc.. All rights reserved.</p>
+        <p>Made for builders who love clean data.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

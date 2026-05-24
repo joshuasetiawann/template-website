@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Nordvolt</title>
+<meta name="description" content="Browse the full Nordvolt catalog — filter by category and sort 16 products by price or name.">
+<meta name="theme-color" content="#0B1220">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%233B82F6'/%3E%3Ctext%20x='32'%20y='34'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20dominant-baseline='central'%20fill='%23FFFFFF'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body class="v4 t02 shop-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+<div class="container nav-row">
+<a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">N</span><span>Nordvolt</span></a>
+<nav class="nav-menu" data-nav-menu aria-label="Main navigation">
+<ul>
+<li><a aria-current="page" class="nav-shop" href="shop.html">Shop</a></li>
+<li><a href="shop.html">Categories</a></li>
+<li><a href="shop.html">Featured</a></li>
+<li><a href="about.html">Why Nordvolt</a></li>
+<li><a href="contact.html">Support</a></li>
+</ul>
+</nav>
+<div class="nav-actions">
+<button class="cart-btn" type="button" data-cart-open aria-label="Open cart"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 8h13l-1.2 11h-10.6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="cart-count" data-cart-count>0</span></button>
+<button class="nav-toggle" type="button" data-nav-toggle aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="shop-hero">
+<div class="container">
+<nav class="crumbs" aria-label="Breadcrumb">
+<ol>
+<li><a href="index.html">Home</a></li>
+<li aria-current="page">Shop</li>
+</ol>
+</nav>
+<div class="shop-hero-copy">
+<p class="kicker">All products</p>
+<h1>The complete electronics catalog</h1>
+<p class="lead">Every piece in one place. Filter by category, sort by price or name, and add to your cart without leaving the page.</p>
+</div>
+</div>
+</section>
+<section class="shop-main">
+<div class="container">
+<div class="shop-toolbar">
+<div class="pill-row shop-chips" role="group" aria-label="Filter products by category">
+<button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All<small>16</small></button>
+<button class="filter-chip" type="button" data-filter="audio" aria-pressed="false">Audio<small>3</small></button>
+<button class="filter-chip" type="button" data-filter="smarthome" aria-pressed="false">Smart Home<small>4</small></button>
+<button class="filter-chip" type="button" data-filter="power" aria-pressed="false">Power<small>3</small></button>
+<button class="filter-chip" type="button" data-filter="peripherals" aria-pressed="false">Peripherals<small>6</small></button>
+</div>
+<div class="shop-sort">
+<label class="shop-sort-label" for="shop-sort-select">Sort</label>
+<div class="select-wrap">
+<select id="shop-sort-select" class="shop-sort-select" data-shop-sort>
+<option value="featured">Featured</option>
+<option value="price-asc">Price: low to high</option>
+<option value="price-desc">Price: high to low</option>
+<option value="name">Name: A to Z</option>
+</select>
+<svg class="select-caret" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</div>
+</div>
+</div>
+<p class="shop-count" data-shop-count aria-live="polite">Showing 16 products</p>
+<div class="product-grid grid-4 shop-grid" data-grid data-shop-grid>
+<article class="product-card" data-card-link data-href="product.html?p=0" data-cat="audio" data-price="249" data-name="Aurora ANC Headphones" data-rating="4.5">
+<div class="p-media" style="--g:linear-gradient(140deg,#16263F,#3B82F6)"><span class="p-initial" aria-hidden="true">A</span><span class="badge">New</span></div>
+<div class="p-info">
+<p class="p-cat">Audio</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=0">Aurora ANC Headphones</a></h3>
+<p class="p-meta">Adaptive ANC · 48 h battery</p>
+<div class="p-stars" aria-label="Rated 4.5 out of 5 from 352 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.5 (352)</span></div>
+<div class="p-row"><span class="price">$249</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#16263F,#3B82F6)" data-name="Aurora ANC Headphones" data-price="249" aria-label="Add Aurora ANC Headphones to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=1" data-cat="audio" data-price="129" data-name="Pulse TWS Earbuds" data-rating="4.9">
+<div class="p-media" style="--g:linear-gradient(140deg,#0F2433,#22D3EE)"><span class="p-initial" aria-hidden="true">P</span></div>
+<div class="p-info">
+<p class="p-cat">Audio</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=1">Pulse TWS Earbuds</a></h3>
+<p class="p-meta">Dual drivers · wireless case</p>
+<div class="p-stars" aria-label="Rated 4.9 out of 5 from 95 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.9 (95)</span></div>
+<div class="p-row"><span class="price">$129</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#0F2433,#22D3EE)" data-name="Pulse TWS Earbuds" data-price="129" aria-label="Add Pulse TWS Earbuds to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=2" data-cat="smarthome" data-price="179" data-name="Halo Smart Speaker" data-rating="4.1">
+<div class="p-media" style="--g:linear-gradient(140deg,#1B2A4A,#6366F1)"><span class="p-initial" aria-hidden="true">H</span></div>
+<div class="p-info">
+<p class="p-cat">Smart Home</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=2">Halo Smart Speaker</a></h3>
+<p class="p-meta">Room-filling 360° sound</p>
+<div class="p-stars" aria-label="Rated 4.1 out of 5 from 299 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.1 (299)</span></div>
+<div class="p-row"><span class="price">$179</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#1B2A4A,#6366F1)" data-name="Halo Smart Speaker" data-price="179" aria-label="Add Halo Smart Speaker to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=3" data-cat="power" data-price="59" data-name="Flux 100W GaN Charger" data-rating="5.0">
+<div class="p-media" style="--g:linear-gradient(140deg,#10303F,#0EA5E9)"><span class="p-initial" aria-hidden="true">F</span><span class="badge">-15%</span></div>
+<div class="p-info">
+<p class="p-cat">Power</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=3">Flux 100W GaN Charger</a></h3>
+<p class="p-meta">3 ports · gallium nitride</p>
+<div class="p-stars" aria-label="Rated 5.0 out of 5 from 86 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">5.0 (86)</span></div>
+<div class="p-row"><span class="price">$59</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#10303F,#0EA5E9)" data-name="Flux 100W GaN Charger" data-price="59" aria-label="Add Flux 100W GaN Charger to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=4" data-cat="power" data-price="69" data-name="Arc 20K Power Bank" data-rating="4.1">
+<div class="p-media" style="--g:linear-gradient(140deg,#1E2B50,#38BDF8)"><span class="p-initial" aria-hidden="true">A</span></div>
+<div class="p-info">
+<p class="p-cat">Power</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=4">Arc 20K Power Bank</a></h3>
+<p class="p-meta">20,000 mAh · 65 W out</p>
+<div class="p-stars" aria-label="Rated 4.1 out of 5 from 205 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.1 (205)</span></div>
+<div class="p-row"><span class="price">$69</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#1E2B50,#38BDF8)" data-name="Arc 20K Power Bank" data-price="69" aria-label="Add Arc 20K Power Bank to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=5" data-cat="peripherals" data-price="119" data-name="Prism 4K Webcam" data-rating="4.3">
+<div class="p-media" style="--g:linear-gradient(140deg,#0F2433,#22D3EE)"><span class="p-initial" aria-hidden="true">P</span></div>
+<div class="p-info">
+<p class="p-cat">Peripherals</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=5">Prism 4K Webcam</a></h3>
+<p class="p-meta">HDR sensor · auto-frame</p>
+<div class="p-stars" aria-label="Rated 4.3 out of 5 from 132 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.3 (132)</span></div>
+<div class="p-row"><span class="price">$119</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#0F2433,#22D3EE)" data-name="Prism 4K Webcam" data-price="119" aria-label="Add Prism 4K Webcam to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=6" data-cat="peripherals" data-price="59" data-name="Drift Low-Latency Mouse" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(140deg,#10303F,#0EA5E9)"><span class="p-initial" aria-hidden="true">D</span></div>
+<div class="p-info">
+<p class="p-cat">Peripherals</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=6">Drift Low-Latency Mouse</a></h3>
+<p class="p-meta">1 ms wireless · 68 g</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 93 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (93)</span></div>
+<div class="p-row"><span class="price">$59</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#10303F,#0EA5E9)" data-name="Drift Low-Latency Mouse" data-price="59" aria-label="Add Drift Low-Latency Mouse to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=7" data-cat="smarthome" data-price="329" data-name="Beam Mini Projector" data-rating="4.9">
+<div class="p-media" style="--g:linear-gradient(140deg,#1B2A4A,#6366F1)"><span class="p-initial" aria-hidden="true">B</span></div>
+<div class="p-info">
+<p class="p-cat">Smart Home</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=7">Beam Mini Projector</a></h3>
+<p class="p-meta">1080p · auto keystone</p>
+<div class="p-stars" aria-label="Rated 4.9 out of 5 from 177 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.9 (177)</span></div>
+<div class="p-row"><span class="price">$329</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#1B2A4A,#6366F1)" data-name="Beam Mini Projector" data-price="329" aria-label="Add Beam Mini Projector to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=8" data-cat="peripherals" data-price="139" data-name="Tide Mechanical Keyboard" data-rating="4.0">
+<div class="p-media" style="--g:linear-gradient(140deg,#16263F,#3B82F6)"><span class="p-initial" aria-hidden="true">T</span><span class="badge">Hot</span></div>
+<div class="p-info">
+<p class="p-cat">Peripherals</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=8">Tide Mechanical Keyboard</a></h3>
+<p class="p-meta">Hot-swap · gasket mount</p>
+<div class="p-stars" aria-label="Rated 4.0 out of 5 from 357 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.0 (357)</span></div>
+<div class="p-row"><span class="price">$139</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#16263F,#3B82F6)" data-name="Tide Mechanical Keyboard" data-price="139" aria-label="Add Tide Mechanical Keyboard to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=9" data-cat="peripherals" data-price="49" data-name="Volt USB-C Hub 7-in-1" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(140deg,#16263F,#3B82F6)"><span class="p-initial" aria-hidden="true">V</span></div>
+<div class="p-info">
+<p class="p-cat">Peripherals</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=9">Volt USB-C Hub 7-in-1</a></h3>
+<p class="p-meta">4K HDMI · 100W passthrough</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 412 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (412)</span></div>
+<div class="p-row"><span class="price">$49</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#16263F,#3B82F6)" data-name="Volt USB-C Hub 7-in-1" data-price="49" aria-label="Add Volt USB-C Hub 7-in-1 to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=10" data-cat="audio" data-price="99" data-name="Echo Studio Microphone" data-rating="4.7">
+<div class="p-media" style="--g:linear-gradient(140deg,#0F2433,#22D3EE)"><span class="p-initial" aria-hidden="true">E</span></div>
+<div class="p-info">
+<p class="p-cat">Audio</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=10">Echo Studio Microphone</a></h3>
+<p class="p-meta">Cardioid · USB-C</p>
+<div class="p-stars" aria-label="Rated 4.7 out of 5 from 288 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.7 (288)</span></div>
+<div class="p-row"><span class="price">$99</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#0F2433,#22D3EE)" data-name="Echo Studio Microphone" data-price="99" aria-label="Add Echo Studio Microphone to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=11" data-cat="power" data-price="39" data-name="Nova Wireless Charger" data-rating="4.4">
+<div class="p-media" style="--g:linear-gradient(140deg,#1B2A4A,#6366F1)"><span class="p-initial" aria-hidden="true">N</span></div>
+<div class="p-info">
+<p class="p-cat">Power</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=11">Nova Wireless Charger</a></h3>
+<p class="p-meta">15W Qi2 · magnetic</p>
+<div class="p-stars" aria-label="Rated 4.4 out of 5 from 356 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.4 (356)</span></div>
+<div class="p-row"><span class="price">$39</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#1B2A4A,#6366F1)" data-name="Nova Wireless Charger" data-price="39" aria-label="Add Nova Wireless Charger to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=12" data-cat="peripherals" data-price="129" data-name="Pixel Pro Capture Card" data-rating="4.5">
+<div class="p-media" style="--g:linear-gradient(140deg,#10303F,#0EA5E9)"><span class="p-initial" aria-hidden="true">P</span></div>
+<div class="p-info">
+<p class="p-cat">Peripherals</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=12">Pixel Pro Capture Card</a></h3>
+<p class="p-meta">1080p120 · zero-lag</p>
+<div class="p-stars" aria-label="Rated 4.5 out of 5 from 142 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.5 (142)</span></div>
+<div class="p-row"><span class="price">$129</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#10303F,#0EA5E9)" data-name="Pixel Pro Capture Card" data-price="129" aria-label="Add Pixel Pro Capture Card to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=13" data-cat="smarthome" data-price="29" data-name="Surge Smart Plug 2-pack" data-rating="4.3">
+<div class="p-media" style="--g:linear-gradient(140deg,#1E2B50,#38BDF8)"><span class="p-initial" aria-hidden="true">S</span></div>
+<div class="p-info">
+<p class="p-cat">Smart Home</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=13">Surge Smart Plug 2-pack</a></h3>
+<p class="p-meta">Energy monitor · app control</p>
+<div class="p-stars" aria-label="Rated 4.3 out of 5 from 503 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.3 (503)</span></div>
+<div class="p-row"><span class="price">$29</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#1E2B50,#38BDF8)" data-name="Surge Smart Plug 2-pack" data-price="29" aria-label="Add Surge Smart Plug 2-pack to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=14" data-cat="smarthome" data-price="54" data-name="Lumen LED Light Bar" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(140deg,#16263F,#3B82F6)"><span class="p-initial" aria-hidden="true">L</span></div>
+<div class="p-info">
+<p class="p-cat">Smart Home</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=14">Lumen LED Light Bar</a></h3>
+<p class="p-meta">16M colours · sync</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 219 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (219)</span></div>
+<div class="p-row"><span class="price">$54</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#16263F,#3B82F6)" data-name="Lumen LED Light Bar" data-price="54" aria-label="Add Lumen LED Light Bar to cart">Add to Cart</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=15" data-cat="peripherals" data-price="49" data-name="Glide Ergo Vertical Mouse" data-rating="4.5">
+<div class="p-media" style="--g:linear-gradient(140deg,#0F2433,#22D3EE)"><span class="p-initial" aria-hidden="true">G</span></div>
+<div class="p-info">
+<p class="p-cat">Peripherals</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=15">Glide Ergo Vertical Mouse</a></h3>
+<p class="p-meta">Silent click · 4000 DPI</p>
+<div class="p-stars" aria-label="Rated 4.5 out of 5 from 178 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.5 (178)</span></div>
+<div class="p-row"><span class="price">$49</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(140deg,#0F2433,#22D3EE)" data-name="Glide Ergo Vertical Mouse" data-price="49" aria-label="Add Glide Ergo Vertical Mouse to cart">Add to Cart</button></div>
+</div>
+</article>
+</div>
+<p class="shop-empty" data-shop-empty hidden>No products match that filter. <button type="button" class="link-btn" data-shop-reset>Show everything</button></p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col footer-brand">
+<a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">N</span><span>Nordvolt</span></a>
+<p>Charge tech and audio gear engineered in Oslo since 2019. Obsessively tested, honestly priced.</p>
+<div class="social-row">
+<a href="#" aria-label="Instagram" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+<a href="#" aria-label="YouTube" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4 5.5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2zm6 4v6l5.5-3z"/></svg></a>
+<a href="#" aria-label="Pinterest" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M10 17.5 13 9.5M9.5 12.8c-.8-2 .6-4.3 2.8-4.3 1.9 0 3.2 1.3 3.2 3 0 2.2-1.3 3.8-3 3.8-1 0-1.8-.6-2-1.4"/></svg></a>
+<a href="#" aria-label="X" data-demo-link><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5.2 21h-3l7.3-8.3L2 3h6.4l4.4 5.9zm-1.1 16.1h1.7L7.5 4.8H5.7z"/></svg></a>
+<a href="#" aria-label="Facebook" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M13.4 21v-7.1h2.4l.4-2.9h-2.8V9.1c0-.9.2-1.5 1.5-1.5h1.4V5c-.3 0-1.2-.1-2.1-.1-2.1 0-3.5 1.3-3.5 3.6V11H8.3v2.9h2.4V21z"/></svg></a>
+</div>
+</div>
+<div class="footer-col"><h3>Shop</h3><ul>
+<li><a href="shop.html">Shop all</a></li>
+<li><a href="shop.html">Shop all</a></li>
+<li><a href="shop.html">Audio</a></li>
+<li><a href="shop.html">Smart Home</a></li>
+<li><a href="shop.html">Power</a></li>
+<li><a href="shop.html">Peripherals</a></li>
+</ul></div>
+<div class="footer-col"><h3>Explore</h3><ul>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="shop.html">Categories</a></li>
+<li><a href="shop.html">Featured</a></li>
+<li><a href="about.html">Why Nordvolt</a></li>
+<li><a href="contact.html">Support</a></li>
+</ul></div>
+<div class="footer-col"><h3>Support</h3><ul>
+<li><a href="contact.html">Shipping</a></li>
+<li><a href="contact.html">Returns</a></li>
+<li><a href="contact.html">Warranty</a></li>
+<li><a href="contact.html">Manuals</a></li>
+</ul></div>
+</div>
+<div class="pay-row" data-payments>
+<span class="pay-label">We accept</span>
+<ul class="pay-list" aria-label="Accepted payment methods">
+<li class="pay-pill">Visa</li>
+<li class="pay-pill">Mastercard</li>
+<li class="pay-pill">AmEx</li>
+<li class="pay-pill">PayPal</li>
+<li class="pay-pill">Klarna</li>
+</ul>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span data-year>2026</span> Nordvolt. All rights reserved.</p>
+<p>Engineered in Oslo · Tested beyond reason</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span data-year>2026</span> Nordvolt. All rights reserved.</p>
+<p>Engineered in Oslo · Tested beyond reason</p>
+</div>
+</div>
+</footer>
+<button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button>
+<div class="drawer-overlay" data-drawer-overlay></div>
+<aside class="cart-drawer" data-drawer aria-label="Shopping cart">
+<div class="drawer-head"><h2 class="drawer-title">Your Cart <span data-drawer-count>(0)</span></h2>
+<button class="drawer-close" type="button" data-drawer-close aria-label="Close cart"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<div class="drawer-ship-wrap">
+<p class="drawer-ship" data-drawer-ship>Free shipping on orders over $75.</p>
+<div class="ship-bar" aria-hidden="true"><span class="ship-fill" data-ship-fill></span></div>
+</div>
+<ul class="drawer-items" data-drawer-items></ul>
+<p class="drawer-empty" data-drawer-empty>Your cart is empty — add something you love.</p>
+<div class="drawer-foot">
+<div class="drawer-total"><span>Subtotal</span><strong data-drawer-total>$0.00</strong></div>
+<button class="btn btn-primary checkout-btn" type="button" data-checkout>Checkout</button>
+</div>
+</aside>
+</body>
+</html>

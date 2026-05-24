@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Apex Motion</title>
+<meta name="description" content="Browse the full Apex Motion catalog — filter by category and sort 14 products by price or name.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='8'%20fill='%23F24E1E'/%3E%3Ctext%20x='32'%20y='34'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20dominant-baseline='central'%20fill='%23FFFFFF'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body class="v3 t16 shop-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+<div class="container nav-row">
+<a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">A</span><span>Apex Motion</span></a>
+<nav class="nav-menu" data-nav-menu aria-label="Main navigation">
+<ul>
+<li><a aria-current="page" class="nav-shop" href="shop.html">Shop</a></li>
+<li><a href="shop.html">Gear</a></li>
+<li><a href="shop.html">The bundle</a></li>
+<li><a href="about.html">Clubs</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="nav-actions">
+<button class="cart-btn" type="button" data-cart-open aria-label="Open cart"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 8h13l-1.2 11h-10.6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="cart-count" data-cart-count>0</span></button>
+<button class="nav-toggle" type="button" data-nav-toggle aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="shop-hero">
+<div class="container">
+<nav class="crumbs" aria-label="Breadcrumb">
+<ol>
+<li><a href="index.html">Home</a></li>
+<li aria-current="page">Shop</li>
+</ol>
+</nav>
+<div class="shop-hero-copy">
+<p class="kicker">All products</p>
+<h1>The complete sports catalog</h1>
+<p class="lead">Every piece in one place. Filter by category, sort by price or name, and add to your kit without leaving the page.</p>
+</div>
+</div>
+</section>
+<section class="shop-main">
+<div class="container">
+<div class="shop-toolbar">
+<div class="pill-row shop-chips" role="group" aria-label="Filter products by category">
+<button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All<small>14</small></button>
+<button class="filter-chip" type="button" data-filter="run" aria-pressed="false">Run<small>2</small></button>
+<button class="filter-chip" type="button" data-filter="train" aria-pressed="false">Train<small>4</small></button>
+<button class="filter-chip" type="button" data-filter="recover" aria-pressed="false">Recover<small>4</small></button>
+<button class="filter-chip" type="button" data-filter="gear" aria-pressed="false">Accessories<small>4</small></button>
+</div>
+<div class="shop-sort">
+<label class="shop-sort-label" for="shop-sort-select">Sort</label>
+<div class="select-wrap">
+<select id="shop-sort-select" class="shop-sort-select" data-shop-sort>
+<option value="featured">Featured</option>
+<option value="price-asc">Price: low to high</option>
+<option value="price-desc">Price: high to low</option>
+<option value="name">Name: A to Z</option>
+</select>
+<svg class="select-caret" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</div>
+</div>
+</div>
+<p class="shop-count" data-shop-count aria-live="polite">Showing 14 products</p>
+<div class="product-grid grid-4 shop-grid" data-grid data-shop-grid>
+<article class="product-card" data-card-link data-href="product.html?p=0" data-cat="run" data-price="42" data-name="Stride 7in Shorts" data-rating="5.0">
+<div class="p-media" style="--g:linear-gradient(135deg,#C23D14,#F24E1E)"><span class="p-initial" aria-hidden="true">S</span><span class="badge">New</span></div>
+<div class="p-info">
+<p class="p-cat">Run</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=0">Stride 7in Shorts</a></h3>
+<p class="p-meta">Split hem · zip pocket</p>
+<div class="p-stars" aria-label="Rated 5.0 out of 5 from 364 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">5.0 (364)</span></div>
+<div class="p-row"><span class="price">$42</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#C23D14,#F24E1E)" data-name="Stride 7in Shorts" data-price="42" aria-label="Add Stride 7in Shorts to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=1" data-cat="train" data-price="24" data-name="Grip Training Gloves" data-rating="4.9">
+<div class="p-media" style="--g:linear-gradient(135deg,#3A4E92,#16306F)"><span class="p-initial" aria-hidden="true">G</span></div>
+<div class="p-info">
+<p class="p-cat">Train</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=1">Grip Training Gloves</a></h3>
+<p class="p-meta">Suede palm · pull bar ready</p>
+<div class="p-stars" aria-label="Rated 4.9 out of 5 from 42 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.9 (42)</span></div>
+<div class="p-row"><span class="price">$24</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#3A4E92,#16306F)" data-name="Grip Training Gloves" data-price="24" aria-label="Add Grip Training Gloves to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=2" data-cat="recover" data-price="32" data-name="Flux Foam Roller" data-rating="4.4">
+<div class="p-media" style="--g:linear-gradient(135deg,#1B3380,#11296B)"><span class="p-initial" aria-hidden="true">F</span><span class="badge">Team pick</span></div>
+<div class="p-info">
+<p class="p-cat">Recover</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=2">Flux Foam Roller</a></h3>
+<p class="p-meta">Dual density · 33 cm</p>
+<div class="p-stars" aria-label="Rated 4.4 out of 5 from 38 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.4 (38)</span></div>
+<div class="p-row"><span class="price">$32</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#1B3380,#11296B)" data-name="Flux Foam Roller" data-price="32" aria-label="Add Flux Foam Roller to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=3" data-cat="gear" data-price="22" data-name="Apex Bottle 750" data-rating="5.0">
+<div class="p-media" style="--g:linear-gradient(135deg,#8F9CC8,#5A6BAA)"><span class="p-initial" aria-hidden="true">A</span></div>
+<div class="p-info">
+<p class="p-cat">Accessories</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=3">Apex Bottle 750</a></h3>
+<p class="p-meta">Insulated · one-hand cap</p>
+<div class="p-stars" aria-label="Rated 5.0 out of 5 from 66 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">5.0 (66)</span></div>
+<div class="p-row"><span class="price">$22</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#8F9CC8,#5A6BAA)" data-name="Apex Bottle 750" data-price="22" aria-label="Add Apex Bottle 750 to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=4" data-cat="recover" data-price="18" data-name="Massage Ball Duo" data-rating="4.1">
+<div class="p-media" style="--g:linear-gradient(135deg,#3A4E92,#16306F)"><span class="p-initial" aria-hidden="true">M</span></div>
+<div class="p-info">
+<p class="p-cat">Recover</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=4">Massage Ball Duo</a></h3>
+<p class="p-meta">Targeted release · 2 firmnesses</p>
+<div class="p-stars" aria-label="Rated 4.1 out of 5 from 406 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.1 (406)</span></div>
+<div class="p-row"><span class="price">$18</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#3A4E92,#16306F)" data-name="Massage Ball Duo" data-price="18" aria-label="Add Massage Ball Duo to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=5" data-cat="gear" data-price="26" data-name="Featherweight Gym Sack" data-rating="4.7">
+<div class="p-media" style="--g:linear-gradient(135deg,#11296B,#3D55A5)"><span class="p-initial" aria-hidden="true">F</span></div>
+<div class="p-info">
+<p class="p-cat">Accessories</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=5">Featherweight Gym Sack</a></h3>
+<p class="p-meta">90 g · weatherproof</p>
+<div class="p-stars" aria-label="Rated 4.7 out of 5 from 58 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.7 (58)</span></div>
+<div class="p-row"><span class="price">$26</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#11296B,#3D55A5)" data-name="Featherweight Gym Sack" data-price="26" aria-label="Add Featherweight Gym Sack to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=6" data-cat="train" data-price="19" data-name="Interval Skipping Rope" data-rating="4.4">
+<div class="p-media" style="--g:linear-gradient(135deg,#C23D14,#F24E1E)"><span class="p-initial" aria-hidden="true">I</span><span class="badge">-20%</span></div>
+<div class="p-info">
+<p class="p-cat">Train</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=6">Interval Skipping Rope</a></h3>
+<p class="p-meta">Ball bearings · adjustable</p>
+<div class="p-stars" aria-label="Rated 4.4 out of 5 from 191 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.4 (191)</span></div>
+<div class="p-row"><span class="price">$19</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#C23D14,#F24E1E)" data-name="Interval Skipping Rope" data-price="19" aria-label="Add Interval Skipping Rope to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=7" data-cat="train" data-price="29" data-name="Carbon Jump Rope" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(135deg,#C23D14,#F24E1E)"><span class="p-initial" aria-hidden="true">C</span></div>
+<div class="p-info">
+<p class="p-cat">Train</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=7">Carbon Jump Rope</a></h3>
+<p class="p-meta">Bearing handles · adjustable</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 312 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (312)</span></div>
+<div class="p-row"><span class="price">$29</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#C23D14,#F24E1E)" data-name="Carbon Jump Rope" data-price="29" aria-label="Add Carbon Jump Rope to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=8" data-cat="recover" data-price="99" data-name="Recovery Massage Gun" data-rating="4.7">
+<div class="p-media" style="--g:linear-gradient(135deg,#3A4E92,#16306F)"><span class="p-initial" aria-hidden="true">R</span></div>
+<div class="p-info">
+<p class="p-cat">Recover</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=8">Recovery Massage Gun</a></h3>
+<p class="p-meta">5 heads · quiet motor</p>
+<div class="p-stars" aria-label="Rated 4.7 out of 5 from 208 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.7 (208)</span></div>
+<div class="p-row"><span class="price">$99</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#3A4E92,#16306F)" data-name="Recovery Massage Gun" data-price="99" aria-label="Add Recovery Massage Gun to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=9" data-cat="run" data-price="89" data-name="Trail Vest 12L" data-rating="4.5">
+<div class="p-media" style="--g:linear-gradient(135deg,#1B3380,#11296B)"><span class="p-initial" aria-hidden="true">T</span></div>
+<div class="p-info">
+<p class="p-cat">Run</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=9">Trail Vest 12L</a></h3>
+<p class="p-meta">Bounce-free · soft flasks</p>
+<div class="p-stars" aria-label="Rated 4.5 out of 5 from 142 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.5 (142)</span></div>
+<div class="p-row"><span class="price">$89</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#1B3380,#11296B)" data-name="Trail Vest 12L" data-price="89" aria-label="Add Trail Vest 12L to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=10" data-cat="train" data-price="24" data-name="Resistance Band Set" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(135deg,#8F9CC8,#5A6BAA)"><span class="p-initial" aria-hidden="true">R</span><span class="badge">New</span></div>
+<div class="p-info">
+<p class="p-cat">Train</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=10">Resistance Band Set</a></h3>
+<p class="p-meta">5 levels · door anchor</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 356 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (356)</span></div>
+<div class="p-row"><span class="price">$24</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#8F9CC8,#5A6BAA)" data-name="Resistance Band Set" data-price="24" aria-label="Add Resistance Band Set to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=11" data-cat="gear" data-price="18" data-name="Cushioned Race Socks ×3" data-rating="4.7">
+<div class="p-media" style="--g:linear-gradient(135deg,#11296B,#3D55A5)"><span class="p-initial" aria-hidden="true">C</span></div>
+<div class="p-info">
+<p class="p-cat">Accessories</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=11">Cushioned Race Socks ×3</a></h3>
+<p class="p-meta">Blister-guard · arch support</p>
+<div class="p-stars" aria-label="Rated 4.7 out of 5 from 231 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.7 (231)</span></div>
+<div class="p-row"><span class="price">$18</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#11296B,#3D55A5)" data-name="Cushioned Race Socks ×3" data-price="18" aria-label="Add Cushioned Race Socks ×3 to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=12" data-cat="recover" data-price="34" data-name="Foam Roller Grid" data-rating="4.5">
+<div class="p-media" style="--g:linear-gradient(135deg,#C23D14,#F24E1E)"><span class="p-initial" aria-hidden="true">F</span></div>
+<div class="p-info">
+<p class="p-cat">Recover</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=12">Foam Roller Grid</a></h3>
+<p class="p-meta">High-density · textured</p>
+<div class="p-stars" aria-label="Rated 4.5 out of 5 from 176 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.5 (176)</span></div>
+<div class="p-row"><span class="price">$34</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#C23D14,#F24E1E)" data-name="Foam Roller Grid" data-price="34" aria-label="Add Foam Roller Grid to cart">Add to Kit</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=13" data-cat="gear" data-price="22" data-name="Trail Cap Lightweight" data-rating="4.4">
+<div class="p-media" style="--g:linear-gradient(135deg,#3A4E92,#16306F)"><span class="p-initial" aria-hidden="true">T</span></div>
+<div class="p-info">
+<p class="p-cat">Accessories</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=13">Trail Cap Lightweight</a></h3>
+<p class="p-meta">UPF 50 · quick-dry</p>
+<div class="p-stars" aria-label="Rated 4.4 out of 5 from 143 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.4 (143)</span></div>
+<div class="p-row"><span class="price">$22</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(135deg,#3A4E92,#16306F)" data-name="Trail Cap Lightweight" data-price="22" aria-label="Add Trail Cap Lightweight to cart">Add to Kit</button></div>
+</div>
+</article>
+</div>
+<p class="shop-empty" data-shop-empty hidden>No products match that filter. <button type="button" class="link-btn" data-shop-reset>Show everything</button></p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col footer-brand">
+<a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">A</span><span>Apex Motion</span></a>
+<p>Performance apparel engineered in Innsbruck, tested by 400 club athletes.</p>
+<div class="social-row">
+<a href="#" aria-label="Instagram" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+<a href="#" aria-label="YouTube" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4 5.5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2zm6 4v6l5.5-3z"/></svg></a>
+<a href="#" aria-label="Pinterest" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M10 17.5 13 9.5M9.5 12.8c-.8-2 .6-4.3 2.8-4.3 1.9 0 3.2 1.3 3.2 3 0 2.2-1.3 3.8-3 3.8-1 0-1.8-.6-2-1.4"/></svg></a>
+<a href="#" aria-label="X" data-demo-link><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5.2 21h-3l7.3-8.3L2 3h6.4l4.4 5.9zm-1.1 16.1h1.7L7.5 4.8H5.7z"/></svg></a>
+<a href="#" aria-label="Facebook" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M13.4 21v-7.1h2.4l.4-2.9h-2.8V9.1c0-.9.2-1.5 1.5-1.5h1.4V5c-.3 0-1.2-.1-2.1-.1-2.1 0-3.5 1.3-3.5 3.6V11H8.3v2.9h2.4V21z"/></svg></a>
+</div>
+</div>
+<div class="footer-col"><h3>Shop</h3><ul>
+<li><a href="shop.html">Shop all</a></li>
+<li><a href="shop.html">Shop all</a></li>
+<li><a href="shop.html">Run</a></li>
+<li><a href="shop.html">Train</a></li>
+<li><a href="shop.html">Recover</a></li>
+<li><a href="shop.html">Accessories</a></li>
+</ul></div>
+<div class="footer-col"><h3>Explore</h3><ul>
+<li><a href="shop.html">Gear</a></li>
+<li><a href="shop.html">The bundle</a></li>
+<li><a href="about.html">Clubs</a></li>
+</ul></div>
+<div class="footer-col"><h3>Support</h3><ul>
+<li><a href="contact.html">Shipping</a></li>
+<li><a href="contact.html">Returns</a></li>
+<li><a href="contact.html">Size guide</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></div>
+</div>
+<div class="pay-row" data-payments>
+<span class="pay-label">We accept</span>
+<ul class="pay-list" aria-label="Accepted payment methods">
+<li class="pay-pill">Visa</li>
+<li class="pay-pill">Mastercard</li>
+<li class="pay-pill">AmEx</li>
+<li class="pay-pill">PayPal</li>
+<li class="pay-pill">Klarna</li>
+</ul>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span data-year>2026</span> Apex Motion. All rights reserved.</p>
+<p>Engineered in Innsbruck · Tested on track</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span data-year>2026</span> Apex Motion. All rights reserved.</p>
+<p>Engineered in Innsbruck · Tested on track</p>
+</div>
+</div>
+</footer>
+<button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button>
+<div class="drawer-overlay" data-drawer-overlay></div>
+<aside class="cart-drawer" data-drawer aria-label="Shopping cart">
+<div class="drawer-head"><h2 class="drawer-title">Your Cart <span data-drawer-count>(0)</span></h2>
+<button class="drawer-close" type="button" data-drawer-close aria-label="Close cart"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<div class="drawer-ship-wrap">
+<p class="drawer-ship" data-drawer-ship>Free shipping on orders over $60.</p>
+<div class="ship-bar" aria-hidden="true"><span class="ship-fill" data-ship-fill></span></div>
+</div>
+<ul class="drawer-items" data-drawer-items></ul>
+<p class="drawer-empty" data-drawer-empty>Your cart is empty — add something you love.</p>
+<div class="drawer-foot">
+<div class="drawer-total"><span>Subtotal</span><strong data-drawer-total>$0.00</strong></div>
+<button class="btn btn-primary checkout-btn" type="button" data-checkout>Checkout</button>
+</div>
+</aside>
+</body>
+</html>

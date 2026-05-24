@@ -1,0 +1,6 @@
+# Generator scratch (created by template generators; not part of the library)
+.gen/
+**/__pycache__/
+*.pyc
+*.pyo
+.DS_Store

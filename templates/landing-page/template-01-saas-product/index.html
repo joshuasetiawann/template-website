@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulsedeck — SaaS Product</title>
+  <meta name="description" content="Pulsedeck turns scattered product data into one clear, real-time analytics deck for the whole team.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%234F46E5'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EP%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#FFFFFF">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>New:</strong> anomaly alerts now ship on every plan.</p>
+      <a class="announce-link" href="pricing.html">See pricing</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V11M10 20V5M16 20v-7M20 20H3"/></svg></span>Pulsedeck</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="features.html#benefits">Benefits</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Start free trial</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-center" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-badge"><i aria-hidden="true"></i>New: anomaly alerts just shipped</span>
+          <h1 id="heroTitle">Every product metric. One clear deck.</h1>
+          <p class="lead">Pulsedeck pipes signups, funnels and retention into a live dashboard your whole team actually reads — no SQL, no stale spreadsheets.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Start free trial</a>
+          <a class="btn btn-ghost btn-lg" href="#features">See it in action</a>
+        </div>
+        <p class="hero-note">Free 14-day trial · No credit card required</p>
+        </div>
+        <div class="mock-browser reveal" role="img" aria-label="Stylized dashboard preview of the Pulsedeck app">
+          <div class="mock-top" aria-hidden="true">
+            <span class="mock-dot r"></span><span class="mock-dot y"></span><span class="mock-dot g"></span>
+            <span class="mock-url">app.pulsedeck.io/overview</span>
+          </div>
+          <div class="mock-body" aria-hidden="true">
+            <div class="mock-side">
+              <span class="m-navitem active"></span><span class="m-navitem"></span><span class="m-navitem w2"></span><span class="m-navitem w3"></span><span class="m-navitem w2"></span>
+            </div>
+            <div class="mock-main">
+              <div class="mock-cards">
+              <div class="mock-card"><span class="m-label"></span><span class="m-num">12,482</span><span class="m-trend">▲ 8.2%</span></div>
+              <div class="mock-card"><span class="m-label"></span><span class="m-num">3.4%</span><span class="m-trend">▲ 0.6%</span></div>
+              <div class="mock-card"><span class="m-label"></span><span class="m-num">$48.9k</span><span class="m-trend">▲ 12%</span></div>
+              </div>
+              <div class="mock-chart">
+                <span class="mock-bar"></span><span class="mock-bar"></span><span class="mock-bar"></span><span class="mock-bar"></span><span class="mock-bar"></span><span class="mock-bar"></span><span class="mock-bar"></span><span class="mock-bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Trusted by">
+      <div class="container">
+        <p class="logos-title">Powering product teams at</p>
+        <div class="logos-row">
+          <span class="logo-word">Northway</span><span class="logo-word">Bluefin Labs</span><span class="logo-word">Cartwheel</span><span class="logo-word">Hexaform</span><span class="logo-word">Mooncrest</span><span class="logo-word">Tandemly</span>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The problem</p>
+        <h2>Your data is everywhere except in front of your team</h2>
+        <p class="lead">Most teams drown in dashboards nobody opens. Pulsedeck replaces the pile with one deck that answers real questions.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Without Pulsedeck</span><h3>Metrics scattered across five tools</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Analysts spend Mondays stitching CSV exports into slide decks.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Funnels live in one tool, revenue in another, retention in a third.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>By the time a drop is spotted, the sprint that caused it has shipped.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">With Pulsedeck</span><h3>One live source of truth</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Connect your stack once — every metric updates in real time.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Funnels, cohorts and revenue share one definition of every event.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Anomaly alerts ping the right channel the moment a metric bends.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Features</p>
+        <h2>Everything a product team measures, in one place</h2>
+        <p class="lead">Six core tools that replace your tangle of dashboards and exports.</p>
+      </div>
+        <div class="features-grid">
+          <article class="f-card reveal" data-d="0">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></span><h3>Live dashboards</h3>
+            <p>Boards refresh the second an event lands, so standups argue about decisions, not numbers.</p>
+          </article>
+          <article class="f-card reveal" data-d="1">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13.5l9 5 9-5"/></svg></span><h3>Funnel explorer</h3>
+            <p>Drag steps to build conversion funnels and see exactly where users stall or bail.</p>
+          </article>
+          <article class="f-card reveal" data-d="2">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20c0-3.4 2.6-5.4 6-5.4s6 2 6 5.4"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M17.5 14.6c2.4.4 3.5 2.1 3.5 4.4"/></svg></span><h3>Retention cohorts</h3>
+            <p>Weekly cohort grids show whether your latest release actually keeps people around.</p>
+          </article>
+          <article class="f-card reveal" data-d="0">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 19.5a2.2 2.2 0 0 0 4 0"/></svg></span><h3>Anomaly alerts</h3>
+            <p>Pulsedeck learns each metric's rhythm and pings Slack-style channels when one breaks pattern.</p>
+          </article>
+          <article class="f-card reveal" data-d="1">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></span><h3>Shareable reports</h3>
+            <p>Turn any view into a scheduled digest your stakeholders receive every Monday morning.</p>
+          </article>
+          <article class="f-card reveal" data-d="2">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></span><h3>North-star tracking</h3>
+            <p>Pin the one metric that matters and trace every team's work back to it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Benefits</p>
+        <h2>Built for the way product teams actually work</h2>
+      </div>
+        <div class="benefit-rows">
+          <div class="benefit-row reveal">
+            <div class="benefit-art art-a" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Decisions in minutes, not meetings</h3>
+              <p>Stop scheduling a review to learn what happened. Open the deck, see the trend, ship the fix.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Live boards for every squad</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>One shared metric dictionary</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>History on every chart</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="benefit-row flip reveal">
+            <div class="benefit-art art-b" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Self-serve answers for everyone</h3>
+              <p>PMs, designers and founders explore data themselves with a click-based query builder.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>No SQL required</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Saved questions and views</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Role-based access controls</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="benefit-row reveal">
+            <div class="benefit-art art-c" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Trustworthy numbers by default</h3>
+              <p>Definitions live in one governed layer, so two dashboards can never disagree again.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Versioned event schema</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Audit log on every change</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Sandbox before publish</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="integrations">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Integrations</p>
+        <h2>Plugs into the stack you already run</h2>
+        <p class="lead">One-click connectors keep your warehouse, billing and support data flowing in.</p>
+      </div>
+        <div class="integration-grid">
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Snowdrift DW</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Postmark Events</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Stripe-style billing</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Segmenta CDP</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Slacky alerts</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Webhook in/out</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>BigStore export</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>REST API</div>
+        </div>
+      </div>
+    </section>
+    <section class="stats-band" id="stats" aria-label="Key numbers">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num" data-target="42" data-suffix="%">0%</span><span class="stat-label">less time spent reporting</span></div>
+          <div class="stat"><span class="stat-num" data-target="1900" data-suffix="+">0+</span><span class="stat-label">teams on Pulsedeck</span></div>
+          <div class="stat"><span class="stat-num" data-target="4.8" data-suffix="/5" data-decimals="1">0/5</span><span class="stat-label">average customer rating</span></div>
+          <div class="stat"><span class="stat-num" data-target="12" data-suffix=" min">0 min</span><span class="stat-label">median setup time</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Loved by product teams</p>
+        <h2>Teams stopped arguing about numbers</h2>
+      </div>
+        <div class="testi-grid">
+          <figure class="t-card reveal" data-d="0"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“We deleted nine dashboards the week we adopted Pulsedeck. Now there is one deck and everyone trusts it.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">ML</span><span><b>Maya Lindqvist</b><i>Head of Product, Cartwheel</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="1"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“The anomaly alert caught a broken signup flow forty minutes after deploy. That alone paid for the year.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">DO</span><span><b>Dev Okafor</b><i>CTO, Hexaform</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="2"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“I finally answer my own questions instead of queuing behind the data team. Game changer for roadmap calls.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">PR</span><span><b>Priya Raman</b><i>Senior PM, Mooncrest</i></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Simple plans that scale with your traffic</h2>
+        <p class="lead">Every plan includes unlimited teammates. Pay for events, not seats.</p>
+      </div>
+        <div class="billing-bar">
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button type="button" class="bill-btn is-active" data-bill="a" aria-pressed="true">Monthly</button>
+            <button type="button" class="bill-btn" data-bill="b" aria-pressed="false">Yearly<span class="save-badge">-20%</span></button>
+          </div>
+          <p class="bill-note" data-a="Billed monthly. Cancel anytime." data-b="Billed yearly — two months free.">Billed monthly. Cancel anytime.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Starter</h3><p class="plan-blurb">For young products finding their first signal.</p>
+            <p class="price-line"><span class="amount" data-a="$19" data-b="$15">$19</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Up to 100k events/mo</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>3 live dashboards</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Funnel explorer</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Email digests</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Community support</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Start free</a>
+          <p class="plan-note">14-day free trial &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Most popular</span>
+            <h3 class="plan-name">Growth</h3><p class="plan-blurb">For teams shipping weekly and watching closely.</p>
+            <p class="price-line"><span class="amount" data-a="$49" data-b="$39">$49</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Up to 1M events/mo</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited dashboards</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Retention cohorts</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Anomaly alerts</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Priority support</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Start free trial</a>
+          <p class="plan-note">14-day free trial &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Scale</h3><p class="plan-blurb">For data-heavy products with governance needs.</p>
+            <p class="price-line"><span class="amount" data-a="$99" data-b="$79">$99</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Up to 10M events/mo</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Governed metric layer</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Audit log + SSO</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Warehouse sync</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Dedicated success manager</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Talk to sales</a>
+          <p class="plan-note">14-day free trial &middot; Cancel anytime</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Questions, answered</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How long does setup actually take?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Most teams send their first event within 12 minutes using our drop-in snippet or a server-side SDK. Historical imports from CSV or your warehouse usually finish the same day.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Do I need a data engineer to use Pulsedeck?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>No. Dashboards, funnels and cohorts are all point-and-click. Engineers only get involved if you want custom event properties or warehouse syncing.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What happens if I go over my event limit?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Nothing breaks. We keep collecting data and simply ask you to upgrade within 30 days. We never throw away your events or surprise-bill you.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can I export my data?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Always. Every chart exports to CSV, and Growth plans and above can sync raw events back to your own warehouse on a schedule.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is there a free plan?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Every plan starts with a 14-day full-featured trial, no card required. After that, Starter is the cheapest way to keep one project running.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-banner-sec">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Put your whole product on one deck</h2>
+          <p>Join 1,900+ teams who replaced dashboard sprawl with a single source of truth.</p>
+          <a class="btn btn-invert btn-lg" href="#pricing">Start your free trial</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V11M10 20V5M16 20v-7M20 20H3"/></svg></span>Pulsedeck</a>
+          <p>The real-time analytics deck for modern product teams. Measure what matters, ignore the rest.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>Changelog</a>
+          <a href="#" data-demo-link>Roadmap</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="#" data-demo-link>Careers</a>
+          <a href="#" data-demo-link>Press kit</a>
+        </nav>
+        <nav class="footer-col" aria-label="Resources links">
+          <h4>Resources</h4>
+          <a href="#" data-demo-link>Docs</a>
+          <a href="#" data-demo-link>API reference</a>
+          <a href="#" data-demo-link>Status</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Pulsedeck Analytics, Inc.. All rights reserved.</p>
+        <p>Made for builders who love clean data.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

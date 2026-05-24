@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daybloom — Mobile App</title>
+  <meta name="description" content="Daybloom is the gentle habit and routine app that turns tiny daily wins into streaks you actually keep.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='30'%20fill='%236366F1'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3ED%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#FFFFFF">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5 5l1.8 1.8M17.2 17.2L19 19M19 5l-1.8 1.8M6.8 17.2L5 19"/></svg></span>Daybloom</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html#how">How it works</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html#testimonials">Stories</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Get the app</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-split" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-copy">
+          <span class="hero-badge"><i aria-hidden="true"></i>4.8★ from 21,000 reviews</span>
+          <h1 id="heroTitle">Tiny habits. <span class="accent">Blooming</span> streaks.</h1>
+          <p class="lead">Daybloom turns your mornings, focus blocks and wind-downs into a garden of streaks — gentle nudges included, guilt not.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#cta">Download free</a>
+          <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+        </div>
+        <p class="hero-note">Free on iOS and Android · Plus plan optional</p>
+        </div>
+        <div class="hero-visual">
+        <div class="phone" role="img" aria-label="Stylized phone preview of the Daybloom app">
+          <div class="phone-top" aria-hidden="true"><span class="notch"></span></div>
+          <div class="phone-screen" aria-hidden="true">
+            <div class="app-greet"><b>Good morning, Noa 🌤</b><span>3 of 5 rituals done</span></div>
+            <div class="ring"><div class="ring-in"><b>78%</b><span>today</span></div></div>
+            <div class="habit-row"><span class="habit-emoji" aria-hidden="true">🌿</span><span><b>Morning stretch</b><small>8 min · 21-day streak</small></span><span class="habit-check" aria-hidden="true">✓</span></div>
+            <div class="habit-row"><span class="habit-emoji" aria-hidden="true">📖</span><span><b>Read 10 pages</b><small>Chapter 4 · 13-day streak</small></span><span class="habit-check" aria-hidden="true">✓</span></div>
+            <div class="habit-row todo"><span class="habit-emoji" aria-hidden="true">💧</span><span><b>Drink water</b><small>4 of 8 glasses</small></span><span class="habit-check" aria-hidden="true">·</span></div>
+            <div class="habit-row todo"><span class="habit-emoji" aria-hidden="true">🌙</span><span><b>Wind-down, no screens</b><small>Starts 9:30 PM</small></span><span class="habit-check" aria-hidden="true">·</span></div>
+            <div class="tabbar"><i class="on"></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Trusted by">
+      <div class="container">
+        <p class="logos-title">Featured by</p>
+        <div class="logos-row">
+          <span class="logo-word">App Daily</span><span class="logo-word">Habit Weekly</span><span class="logo-word">The Morning Stack</span><span class="logo-word">Calm Tech Mag</span><span class="logo-word">Routinely</span>
+        </div>
+      </div>
+    </section>
+    <section id="how">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">How it works</p>
+        <h2>Three steps to a day that runs itself</h2>
+        <p class="lead">No 5 AM bootcamp. Just small rituals stacked where they fit.</p>
+      </div>
+        <div class="steps-grid">
+          <article class="step-card reveal" data-d="0">
+            <span class="step-n" aria-hidden="true">1</span><h3>Pick your rituals</h3>
+            <p>Choose from 60+ science-backed micro-habits or write your own — each takes ten minutes or less.</p>
+          </article>
+          <article class="step-card reveal" data-d="1">
+            <span class="step-n" aria-hidden="true">2</span><h3>Stack them into your day</h3>
+            <p>Anchor rituals to times or to each other: after coffee, stretch; after stretch, journal. Done.</p>
+          </article>
+          <article class="step-card reveal" data-d="2">
+            <span class="step-n" aria-hidden="true">3</span><h3>Watch streaks bloom</h3>
+            <p>Every completed day grows your garden. Miss one? A grace day keeps the streak — and your motivation — alive.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Features</p>
+        <h2>One app for the whole arc of your day</h2>
+        <p class="lead">Swipe through the three moments Daybloom is built around.</p>
+      </div>
+        <div data-tabs>
+          <div class="tab-list" role="tablist" aria-label="App feature areas">
+            <button class="tab-btn is-active" id="tab-0" type="button" role="tab" aria-selected="true" aria-controls="panel-0" tabindex="0">🌅 Mornings</button>
+            <button class="tab-btn" id="tab-1" type="button" role="tab" aria-selected="false" aria-controls="panel-1" tabindex="-1">🎯 Focus</button>
+            <button class="tab-btn" id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">🌙 Evenings</button>
+          </div>
+          <div class="tab-panel is-active" id="panel-0" role="tabpanel" aria-labelledby="tab-0">
+            <div class="tab-copy">
+              <h3>Mornings that start themselves</h3>
+              <p>Wake to a single card with your first ritual, not a wall of notifications.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Ritual stacking with anchors</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Adaptive wake-window nudges</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>One-tap snooze that reschedules, not cancels</span></li>
+              </ul>
+            </div>
+            <div class="panel-art" aria-hidden="true">
+              <span class="art-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5 5l1.8 1.8M17.2 17.2L19 19M19 5l-1.8 1.8M6.8 17.2L5 19"/></svg></span>
+              <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+            <div class="tab-copy">
+              <h3>Focus blocks without the fuss</h3>
+              <p>Start a 25 or 50 minute bloom session and watch distractions get politely batched.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Built-in focus timer</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Notification batching while you work</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Streaks for deep-work hours, not just tasks</span></li>
+              </ul>
+            </div>
+            <div class="panel-art" aria-hidden="true">
+              <span class="art-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></span>
+              <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+            <div class="tab-copy">
+              <h3>Wind-downs that actually wind down</h3>
+              <p>A gentle evening flow dims the app, queues tomorrow and closes your day in two minutes.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Two-minute shutdown ritual</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Tomorrow auto-planned from today</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Sleep-friendly night palette</span></li>
+              </ul>
+            </div>
+            <div class="panel-art" aria-hidden="true">
+              <span class="art-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4 7 7 0 0 0 20 14.5z"/></svg></span>
+              <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stats-band" id="stats" aria-label="Key numbers">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num" data-target="92" data-suffix="%">0%</span><span class="stat-label">keep their streak past week 2</span></div>
+          <div class="stat"><span class="stat-num" data-target="1.4" data-suffix="M" data-decimals="1">0M</span><span class="stat-label">streak days logged monthly</span></div>
+          <div class="stat"><span class="stat-num" data-target="4.8" data-suffix="★" data-decimals="1">0★</span><span class="stat-label">average store rating</span></div>
+          <div class="stat"><span class="stat-num" data-target="9" data-suffix=" min">0 min</span><span class="stat-label">average daily time in app</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Why Daybloom</p>
+        <h2>Habit apps fail because they shame you</h2>
+        <p class="lead">Streak-breaking guilt is why most trackers get deleted in week three. We built the opposite.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Typical tracker</span><h3>All-or-nothing pressure</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>One missed day nukes a 40-day streak and your will to continue.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Endless stats screens that read like a quarterly report.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Reminders that nag at the worst possible moments.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">Daybloom</span><h3>Progress with grace built in</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Grace days protect streaks when life happens — twice a month.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>One glanceable garden shows the week without judgment.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Smart nudges learn your rhythm and stay quiet in meetings.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Why people stay</p>
+        <h2>Designed to be deleted from your worries, not your phone</h2>
+      </div>
+        <div class="benefit-cards">
+          <article class="b-card reveal" data-d="0">
+            <h3>Kind by default</h3>
+            <p>Grace days, soft streaks and zero red badges. The app roots for you instead of scolding you.</p>
+          </article>
+          <article class="b-card reveal" data-d="1">
+            <h3>Private by design</h3>
+            <p>Your habits sync end-to-end encrypted. We could not sell your bedtime if we wanted to.</p>
+          </article>
+          <article class="b-card reveal" data-d="2">
+            <h3>Light on your day</h3>
+            <p>Average users spend nine minutes a day in Daybloom — the rest happens in real life.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Stories</p>
+        <h2>Streaks that survived real life</h2>
+      </div>
+        <div class="spotlight-grid">
+          <figure class="spot-main reveal">
+            <div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“I have started every habit app and quit by February. Daybloom's grace days got me through a house move, a flu and tax season — streak intact, 212 days.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">RC</span><span><b>Renata Cole</b><i>Designer · 212-day streak</i></span></figcaption>
+          </figure>
+          <div class="spot-side">
+          <figure class="t-card reveal" data-d="1">
+            <blockquote>“The evening shutdown ritual fixed my doomscrolling more than any blocker ever did.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">LT</span><span><b>Liam Tran</b><i>Engineer · 96-day streak</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="2">
+            <blockquote>“My therapist asked what changed. It was three ten-minute rituals, honestly.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">AB</span><span><b>Aisha Bello</b><i>Teacher · 154-day streak</i></span></figcaption>
+          </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Free to bloom. Plus if you want the garden</h2>
+        <p class="lead">No ads on any plan. Ever.</p>
+      </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Free</h3><p class="plan-blurb">Everything you need to build 3 habits.</p>
+            <p class="price-line"><span class="amount">$0</span><span class="per">forever</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>3 active rituals</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Streaks + grace days</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Morning and evening flows</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>7-day history</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Download free</a>
+          <p class="plan-note">7-day trial &middot; Cancel in two taps</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Most loved</span>
+            <h3 class="plan-name">Bloom Plus</h3><p class="plan-blurb">The full garden, for serious streaks.</p>
+            <p class="price-line"><span class="amount">$6</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited rituals + stacks</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Focus sessions + batching</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Full history and trends</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Encrypted multi-device sync</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Custom garden themes</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Start 7-day trial</a>
+          <p class="plan-note">7-day trial &middot; Cancel in two taps</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Family</h3><p class="plan-blurb">Up to 6 people, shared gently.</p>
+            <p class="price-line"><span class="amount">$12</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>6 Plus accounts</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Shared family rituals</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Kid-safe mode</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Streak cheering (optional)</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>One bill, six gardens</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Start family plan</a>
+          <p class="plan-note">7-day trial &middot; Cancel in two taps</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Gentle answers to fair questions</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What exactly is a grace day?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Twice a month, a missed day is automatically forgiven and your streak continues. Research on habit formation shows one lapse does not break a habit — so our streaks do not either.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Does Daybloom work without an internet connection?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Yes. Everything runs on-device and syncs when you are back online. Airplane-mode mornings count just the same.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can I move my data from another habit app?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>You can import CSV exports from most popular trackers, and your streak history carries over so you do not start from zero.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is my data really private?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Habit data is end-to-end encrypted with keys that stay on your devices. We monetize through Plus subscriptions, not through your data.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What happens to my streaks if I cancel Plus?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Nothing. Your history and streaks stay forever on the free plan — you just go back to 3 active rituals.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-final">
+      <div class="container">
+        <h2>Plant your first ritual tonight</h2>
+        <p>Download Daybloom free and wake up to a morning that already knows what to do.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#top">Get Daybloom free</a>
+          <a class="btn btn-ghost btn-lg" href="#pricing">Compare plans</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5 5l1.8 1.8M17.2 17.2L19 19M19 5l-1.8 1.8M6.8 17.2L5 19"/></svg></span>Daybloom</a>
+          <p>The gentle habit app. Tiny rituals, blooming streaks, zero guilt.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="App links">
+          <h4>App</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>What's new</a>
+          <a href="#" data-demo-link>Download</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Journal</a>
+          <a href="#" data-demo-link>Careers</a>
+          <a href="#" data-demo-link>Press</a>
+        </nav>
+        <nav class="footer-col" aria-label="Support links">
+          <h4>Support</h4>
+          <a href="contact.html">Help center</a>
+          <a href="#" data-demo-link>Privacy</a>
+          <a href="#" data-demo-link>Terms</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Daybloom Apps Ltd.. All rights reserved.</p>
+        <p>Grown with patience.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="sticky-cta" data-stickycta>
+    <p class="sticky-cta-copy"><strong>Daybloom is free on iOS &amp; Android</strong><span>4.8&#9733; from 21,000 reviews</span></p>
+    <a class="btn btn-primary" href="contact.html">Download</a>
+  </div>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Eunoia Skin</title>
+<meta name="description" content="Browse the full Eunoia Skin catalog — filter by category and sort 15 products by price or name.">
+<meta name="theme-color" content="#EEF2EA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='16'%20fill='%235E8B6F'/%3E%3Ctext%20x='32'%20y='34'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20dominant-baseline='central'%20fill='%23FFFFFF'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body class="v1 t10 shop-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+<div class="container nav-row">
+<a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">E</span><span>Eunoia Skin</span></a>
+<nav class="nav-menu" data-nav-menu aria-label="Main navigation">
+<ul>
+<li><a aria-current="page" class="nav-shop" href="shop.html">Shop</a></li>
+<li><a href="shop.html">Concerns</a></li>
+<li><a href="shop.html">The Ritual</a></li>
+<li><a href="about.html">Why Eunoia</a></li>
+<li><a href="contact.html">Club</a></li>
+</ul>
+</nav>
+<div class="nav-actions">
+<button class="cart-btn" type="button" data-cart-open aria-label="Open cart"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 8h13l-1.2 11h-10.6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="cart-count" data-cart-count>0</span></button>
+<button class="nav-toggle" type="button" data-nav-toggle aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="shop-hero">
+<div class="container">
+<nav class="crumbs" aria-label="Breadcrumb">
+<ol>
+<li><a href="index.html">Home</a></li>
+<li aria-current="page">Shop</li>
+</ol>
+</nav>
+<div class="shop-hero-copy">
+<p class="kicker">All products</p>
+<h1>The complete skincare catalog</h1>
+<p class="lead">Every piece in one place. Filter by category, sort by price or name, and add to your bag without leaving the page.</p>
+</div>
+</div>
+</section>
+<section class="shop-main">
+<div class="container">
+<div class="shop-toolbar">
+<div class="pill-row shop-chips" role="group" aria-label="Filter products by category">
+<button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All<small>15</small></button>
+<button class="filter-chip" type="button" data-filter="cleanse" aria-pressed="false">Cleanse<small>3</small></button>
+<button class="filter-chip" type="button" data-filter="treat" aria-pressed="false">Treat<small>5</small></button>
+<button class="filter-chip" type="button" data-filter="hydrate" aria-pressed="false">Hydrate<small>5</small></button>
+<button class="filter-chip" type="button" data-filter="protect" aria-pressed="false">Protect<small>2</small></button>
+</div>
+<div class="shop-sort">
+<label class="shop-sort-label" for="shop-sort-select">Sort</label>
+<div class="select-wrap">
+<select id="shop-sort-select" class="shop-sort-select" data-shop-sort>
+<option value="featured">Featured</option>
+<option value="price-asc">Price: low to high</option>
+<option value="price-desc">Price: high to low</option>
+<option value="name">Name: A to Z</option>
+</select>
+<svg class="select-caret" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</div>
+</div>
+</div>
+<p class="shop-count" data-shop-count aria-live="polite">Showing 15 products</p>
+<div class="product-grid grid-4 shop-grid" data-grid data-shop-grid>
+<article class="product-card" data-card-link data-href="product.html?p=0" data-cat="cleanse" data-price="28" data-name="Gel-to-Milk Cleanser" data-rating="4.4">
+<div class="p-media" style="--g:linear-gradient(150deg,#DCE7DA,#5E8B6F)"><span class="p-initial" aria-hidden="true">G</span></div>
+<div class="p-info">
+<p class="p-cat">Cleanse</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=0">Gel-to-Milk Cleanser</a></h3>
+<p class="p-meta">pH 5.5 · removes SPF</p>
+<div class="p-stars" aria-label="Rated 4.4 out of 5 from 348 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.4 (348)</span></div>
+<div class="p-row"><span class="price">$28</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#DCE7DA,#5E8B6F)" data-name="Gel-to-Milk Cleanser" data-price="28" aria-label="Add Gel-to-Milk Cleanser to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=1" data-cat="treat" data-price="32" data-name="10% Niacinamide Serum" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(150deg,#CFE0D2,#4D7A5E)"><span class="p-initial" aria-hidden="true">1</span><span class="badge">Bestseller</span></div>
+<div class="p-info">
+<p class="p-cat">Treat</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=1">10% Niacinamide Serum</a></h3>
+<p class="p-meta">Pores &amp;amp; tone · 30 ml</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 70 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (70)</span></div>
+<div class="p-row"><span class="price">$32</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#CFE0D2,#4D7A5E)" data-name="10% Niacinamide Serum" data-price="32" aria-label="Add 10% Niacinamide Serum to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=2" data-cat="hydrate" data-price="36" data-name="Hyaluronic Quench Drops" data-rating="4.5">
+<div class="p-media" style="--g:linear-gradient(150deg,#E8EFE4,#7FA98C)"><span class="p-initial" aria-hidden="true">H</span></div>
+<div class="p-info">
+<p class="p-cat">Hydrate</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=2">Hyaluronic Quench Drops</a></h3>
+<p class="p-meta">Triple-weight HA</p>
+<div class="p-stars" aria-label="Rated 4.5 out of 5 from 404 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.5 (404)</span></div>
+<div class="p-row"><span class="price">$36</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#E8EFE4,#7FA98C)" data-name="Hyaluronic Quench Drops" data-price="36" aria-label="Add Hyaluronic Quench Drops to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=3" data-cat="treat" data-price="30" data-name="Eucalyptus Clay Mask" data-rating="4.0">
+<div class="p-media" style="--g:linear-gradient(150deg,#E3ECDF,#6E9A80)"><span class="p-initial" aria-hidden="true">E</span></div>
+<div class="p-info">
+<p class="p-cat">Treat</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=3">Eucalyptus Clay Mask</a></h3>
+<p class="p-meta">Weekly reset · 10 min</p>
+<div class="p-stars" aria-label="Rated 4.0 out of 5 from 400 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.0 (400)</span></div>
+<div class="p-row"><span class="price">$30</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#E3ECDF,#6E9A80)" data-name="Eucalyptus Clay Mask" data-price="30" aria-label="Add Eucalyptus Clay Mask to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=4" data-cat="hydrate" data-price="42" data-name="Barrier Repair Cream" data-rating="4.9">
+<div class="p-media" style="--g:linear-gradient(150deg,#D7E4D4,#86A893)"><span class="p-initial" aria-hidden="true">B</span></div>
+<div class="p-info">
+<p class="p-cat">Hydrate</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=4">Barrier Repair Cream</a></h3>
+<p class="p-meta">Ceramides 3:1:1 ratio</p>
+<div class="p-stars" aria-label="Rated 4.9 out of 5 from 224 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.9 (224)</span></div>
+<div class="p-row"><span class="price">$42</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#D7E4D4,#86A893)" data-name="Barrier Repair Cream" data-price="42" aria-label="Add Barrier Repair Cream to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=5" data-cat="protect" data-price="34" data-name="Mineral SPF 50 Veil" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(150deg,#CFE0D2,#4D7A5E)"><span class="p-initial" aria-hidden="true">M</span><span class="badge">New</span></div>
+<div class="p-info">
+<p class="p-cat">Protect</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=5">Mineral SPF 50 Veil</a></h3>
+<p class="p-meta">No white cast · zinc 22%</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 277 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (277)</span></div>
+<div class="p-row"><span class="price">$34</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#CFE0D2,#4D7A5E)" data-name="Mineral SPF 50 Veil" data-price="34" aria-label="Add Mineral SPF 50 Veil to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=6" data-cat="treat" data-price="31" data-name="AHA Resurfacing Tonic" data-rating="4.7">
+<div class="p-media" style="--g:linear-gradient(150deg,#DCE7DA,#5E8B6F)"><span class="p-initial" aria-hidden="true">A</span></div>
+<div class="p-info">
+<p class="p-cat">Treat</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=6">AHA Resurfacing Tonic</a></h3>
+<p class="p-meta">8% glycolic · twice weekly</p>
+<div class="p-stars" aria-label="Rated 4.7 out of 5 from 165 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.7 (165)</span></div>
+<div class="p-row"><span class="price">$31</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#DCE7DA,#5E8B6F)" data-name="AHA Resurfacing Tonic" data-price="31" aria-label="Add AHA Resurfacing Tonic to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=7" data-cat="hydrate" data-price="38" data-name="Squalane Cloud Cream" data-rating="4.2">
+<div class="p-media" style="--g:linear-gradient(150deg,#E3ECDF,#6E9A80)"><span class="p-initial" aria-hidden="true">S</span></div>
+<div class="p-info">
+<p class="p-cat">Hydrate</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=7">Squalane Cloud Cream</a></h3>
+<p class="p-meta">Weightless overnight seal</p>
+<div class="p-stars" aria-label="Rated 4.2 out of 5 from 187 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.2 (187)</span></div>
+<div class="p-row"><span class="price">$38</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#E3ECDF,#6E9A80)" data-name="Squalane Cloud Cream" data-price="38" aria-label="Add Squalane Cloud Cream to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=8" data-cat="cleanse" data-price="24" data-name="Gentle Gel Cleanser" data-rating="4.7">
+<div class="p-media" style="--g:linear-gradient(150deg,#DCE7DA,#5E8B6F)"><span class="p-initial" aria-hidden="true">G</span></div>
+<div class="p-info">
+<p class="p-cat">Cleanse</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=8">Gentle Gel Cleanser</a></h3>
+<p class="p-meta">pH-balanced · fragrance-free</p>
+<div class="p-stars" aria-label="Rated 4.7 out of 5 from 402 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.7 (402)</span></div>
+<div class="p-row"><span class="price">$24</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#DCE7DA,#5E8B6F)" data-name="Gentle Gel Cleanser" data-price="24" aria-label="Add Gentle Gel Cleanser to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=9" data-cat="treat" data-price="28" data-name="Niacinamide 10% Serum" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(150deg,#CFE0D2,#4D7A5E)"><span class="p-initial" aria-hidden="true">N</span></div>
+<div class="p-info">
+<p class="p-cat">Treat</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=9">Niacinamide 10% Serum</a></h3>
+<p class="p-meta">Pore-refining · oil-control</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 531 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (531)</span></div>
+<div class="p-row"><span class="price">$28</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#CFE0D2,#4D7A5E)" data-name="Niacinamide 10% Serum" data-price="28" aria-label="Add Niacinamide 10% Serum to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=10" data-cat="hydrate" data-price="34" data-name="Ceramide Barrier Cream" data-rating="4.8">
+<div class="p-media" style="--g:linear-gradient(150deg,#E8EFE4,#7FA98C)"><span class="p-initial" aria-hidden="true">C</span></div>
+<div class="p-info">
+<p class="p-cat">Hydrate</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=10">Ceramide Barrier Cream</a></h3>
+<p class="p-meta">Rich · overnight repair</p>
+<div class="p-stars" aria-label="Rated 4.8 out of 5 from 288 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.8 (288)</span></div>
+<div class="p-row"><span class="price">$34</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#E8EFE4,#7FA98C)" data-name="Ceramide Barrier Cream" data-price="34" aria-label="Add Ceramide Barrier Cream to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=11" data-cat="protect" data-price="30" data-name="Mineral SPF 50 Fluid" data-rating="4.5">
+<div class="p-media" style="--g:linear-gradient(150deg,#E3ECDF,#6E9A80)"><span class="p-initial" aria-hidden="true">M</span><span class="badge">New</span></div>
+<div class="p-info">
+<p class="p-cat">Protect</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=11">Mineral SPF 50 Fluid</a></h3>
+<p class="p-meta">No white cast · matte</p>
+<div class="p-stars" aria-label="Rated 4.5 out of 5 from 367 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.5 (367)</span></div>
+<div class="p-row"><span class="price">$30</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#E3ECDF,#6E9A80)" data-name="Mineral SPF 50 Fluid" data-price="30" aria-label="Add Mineral SPF 50 Fluid to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=12" data-cat="treat" data-price="26" data-name="PHA Exfoliating Toner" data-rating="4.4">
+<div class="p-media" style="--g:linear-gradient(150deg,#D7E4D4,#86A893)"><span class="p-initial" aria-hidden="true">P</span></div>
+<div class="p-info">
+<p class="p-cat">Treat</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=12">PHA Exfoliating Toner</a></h3>
+<p class="p-meta">Gentle · weekly</p>
+<div class="p-stars" aria-label="Rated 4.4 out of 5 from 214 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st st-off" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.4 (214)</span></div>
+<div class="p-row"><span class="price">$26</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#D7E4D4,#86A893)" data-name="PHA Exfoliating Toner" data-price="26" aria-label="Add PHA Exfoliating Toner to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=13" data-cat="hydrate" data-price="22" data-name="Hyaluronic Hydra Mist" data-rating="4.6">
+<div class="p-media" style="--g:linear-gradient(150deg,#DCE7DA,#5E8B6F)"><span class="p-initial" aria-hidden="true">H</span></div>
+<div class="p-info">
+<p class="p-cat">Hydrate</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=13">Hyaluronic Hydra Mist</a></h3>
+<p class="p-meta">Layerable · plumping</p>
+<div class="p-stars" aria-label="Rated 4.6 out of 5 from 176 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.6 (176)</span></div>
+<div class="p-row"><span class="price">$22</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#DCE7DA,#5E8B6F)" data-name="Hyaluronic Hydra Mist" data-price="22" aria-label="Add Hyaluronic Hydra Mist to cart">Add to Bag</button></div>
+</div>
+</article>
+<article class="product-card" data-card-link data-href="product.html?p=14" data-cat="cleanse" data-price="27" data-name="Oat Cleansing Balm" data-rating="4.7">
+<div class="p-media" style="--g:linear-gradient(150deg,#CFE0D2,#4D7A5E)"><span class="p-initial" aria-hidden="true">O</span></div>
+<div class="p-info">
+<p class="p-cat">Cleanse</p>
+<h3 class="p-name"><a class="p-name-link" href="product.html?p=14">Oat Cleansing Balm</a></h3>
+<p class="p-meta">Melts makeup · soothing</p>
+<div class="p-stars" aria-label="Rated 4.7 out of 5 from 243 reviews"><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><svg class="st" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.4l6.5-.9z"/></svg><span class="p-rcount">4.7 (243)</span></div>
+<div class="p-row"><span class="price">$27</span><button class="add-btn" type="button" data-add data-grad="linear-gradient(150deg,#CFE0D2,#4D7A5E)" data-name="Oat Cleansing Balm" data-price="27" aria-label="Add Oat Cleansing Balm to cart">Add to Bag</button></div>
+</div>
+</article>
+</div>
+<p class="shop-empty" data-shop-empty hidden>No products match that filter. <button type="button" class="link-btn" data-shop-reset>Show everything</button></p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col footer-brand">
+<a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">E</span><span>Eunoia Skin</span></a>
+<p>Barrier-first skincare made in Copenhagen. Ten products, no decoys.</p>
+<div class="social-row">
+<a href="#" aria-label="Instagram" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+<a href="#" aria-label="YouTube" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4 5.5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2zm6 4v6l5.5-3z"/></svg></a>
+<a href="#" aria-label="Pinterest" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M10 17.5 13 9.5M9.5 12.8c-.8-2 .6-4.3 2.8-4.3 1.9 0 3.2 1.3 3.2 3 0 2.2-1.3 3.8-3 3.8-1 0-1.8-.6-2-1.4"/></svg></a>
+<a href="#" aria-label="X" data-demo-link><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5.2 21h-3l7.3-8.3L2 3h6.4l4.4 5.9zm-1.1 16.1h1.7L7.5 4.8H5.7z"/></svg></a>
+<a href="#" aria-label="Facebook" data-demo-link><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M13.4 21v-7.1h2.4l.4-2.9h-2.8V9.1c0-.9.2-1.5 1.5-1.5h1.4V5c-.3 0-1.2-.1-2.1-.1-2.1 0-3.5 1.3-3.5 3.6V11H8.3v2.9h2.4V21z"/></svg></a>
+</div>
+</div>
+<div class="footer-col"><h3>Shop</h3><ul>
+<li><a href="shop.html">Shop all</a></li>
+<li><a href="shop.html">Shop all</a></li>
+<li><a href="shop.html">Cleanse</a></li>
+<li><a href="shop.html">Treat</a></li>
+<li><a href="shop.html">Hydrate</a></li>
+<li><a href="shop.html">Protect</a></li>
+</ul></div>
+<div class="footer-col"><h3>Explore</h3><ul>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="shop.html">Concerns</a></li>
+<li><a href="shop.html">The Ritual</a></li>
+<li><a href="about.html">Why Eunoia</a></li>
+<li><a href="contact.html">Club</a></li>
+</ul></div>
+<div class="footer-col"><h3>Support</h3><ul>
+<li><a href="contact.html">Shipping</a></li>
+<li><a href="contact.html">Returns</a></li>
+<li><a href="contact.html">Routine quiz</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></div>
+</div>
+<div class="pay-row" data-payments>
+<span class="pay-label">We accept</span>
+<ul class="pay-list" aria-label="Accepted payment methods">
+<li class="pay-pill">Visa</li>
+<li class="pay-pill">Mastercard</li>
+<li class="pay-pill">AmEx</li>
+<li class="pay-pill">PayPal</li>
+<li class="pay-pill">Klarna</li>
+</ul>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span data-year>2026</span> Eunoia Skin. All rights reserved.</p>
+<p>pH-tested · Refillable · Fragrance-free</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span data-year>2026</span> Eunoia Skin. All rights reserved.</p>
+<p>pH-tested · Refillable · Fragrance-free</p>
+</div>
+</div>
+</footer>
+<button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button>
+
+<div class="toast" data-toast role="status" aria-live="polite"><span class="toast-msg" data-toast-msg></span><button class="toast-action" type="button" data-toast-view hidden>View bag</button></div>
+</body>
+</html>

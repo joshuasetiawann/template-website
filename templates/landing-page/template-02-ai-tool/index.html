@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindgrid — AI Tool</title>
+  <meta name="description" content="Mindgrid is the AI knowledge engine that answers your team in seconds with sourced, trustworthy responses.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%237C3AED'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EM%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0A0A14">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>Mindgrid 2.0:</strong> cited answers drawn from your own docs.</p>
+      <a class="announce-link" href="contact.html">Start free</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z"/></svg></span>Mindgrid</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html#compare">Why Mindgrid</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Try Mindgrid free</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-glow" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-badge"><i aria-hidden="true"></i>Now with cited answers from your own docs</span>
+          <h1 id="heroTitle">Your team's second brain, <span class="grad-text">wired for speed</span></h1>
+          <p class="lead">Mindgrid reads your docs, tickets and wikis once — then answers any teammate in seconds, with sources attached.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Start for free</a>
+          <a class="btn btn-ghost btn-lg" href="#features">Watch the demo</a>
+        </div>
+        <p class="hero-note">Free plan forever · Set up in one afternoon</p>
+        <div class="prompt-box reveal" role="img" aria-label="Stylized AI prompt window from Mindgrid">
+          <div class="prompt-line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z"/></svg><span>How do we handle refunds for annual plans?</span><span class="cursor"></span></div>
+          <div class="answer-lines" aria-hidden="true"><span class="a-line l1"></span><span class="a-line l2"></span><span class="a-line l3"></span><span class="a-line l4"></span></div>
+          <div class="prompt-chips" aria-hidden="true"><span class="p-chip">Summarize this thread</span><span class="p-chip">Draft the release notes</span><span class="p-chip">Find the API limits</span><span class="p-chip">Translate to Spanish</span></div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Trusted by">
+      <div class="container">
+        <p class="logos-title">Trusted by teams who hate repeating themselves</p>
+        <div class="logos-row">
+          <span class="logo-word">Quanta Labs</span><span class="logo-word">Ferrostack</span><span class="logo-word">Opaline</span><span class="logo-word">Driftworks</span><span class="logo-word">Kelp & Co</span><span class="logo-word">Nimbus Nine</span>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Why Mindgrid</p>
+        <h2>Answers exist. Finding them is the job nobody wants</h2>
+        <p class="lead">Knowledge work dies in search boxes. Mindgrid turns your scattered docs into instant, sourced answers.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Life before</span><h3>Tribal knowledge, taxed daily</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Seniors lose hours a week answering the same onboarding questions.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Search returns 40 stale documents and zero actual answers.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Every department keeps its own contradictory wiki page.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">Life with Mindgrid</span><h3>Ask once, cite always</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Plain-language questions get direct answers with linked sources.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Stale or conflicting pages are flagged before they mislead anyone.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>New hires self-serve their first month instead of pinging mentors.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Capabilities</p>
+        <h2>A grid of skills, not a chat toy</h2>
+        <p class="lead">Every block below works on your private knowledge — nothing leaves your workspace.</p>
+      </div>
+        <div class="bento">
+          <article class="bento-card span-3 reveal" data-d="0">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z"/></svg></span><h3>Instant answers</h3>
+            <p>Ask in plain language and get a direct response with the exact passages it came from, every single time.</p>
+          </article>
+          <article class="bento-card span-3 reveal" data-d="1">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l4.5-1L19.5 8a2.1 2.1 0 0 0-3-3L5.5 15.5 4 20z"/><path d="M13.5 6.5l3 3"/></svg></span><h3>Auto-drafts</h3>
+            <p>Turn bullet points into briefs, release notes or replies that match your team's saved tone of voice.</p>
+          </article>
+          <article class="bento-card span-2 reveal" data-d="2">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11.5" rx="3"/><path d="M5 11.5a7 7 0 0 0 14 0M12 18.5V21"/></svg></span><h3>Meeting recall</h3>
+            <p>Drop in a transcript and query it like a database: decisions, owners and deadlines on demand.</p>
+          </article>
+          <article class="bento-card span-2 reveal" data-d="0">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9.5 14.5l5-5"/><path d="M11 7.5l1.6-1.6a3.5 3.5 0 0 1 5 5L16 12.5M13 16.5l-1.6 1.6a3.5 3.5 0 0 1-5-5L8 11.5"/></svg></span><h3>Connected sources</h3>
+            <p>Wikis, tickets, PDFs and shared drives sync on a schedule and stay searchable in one grid.</p>
+          </article>
+          <article class="bento-card span-2 reveal" data-d="1">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5c0 4.6-3 7.6-7 9-4-1.4-7-4.4-7-9V6l7-3z"/></svg></span><h3>Private by design</h3>
+            <p>Your content trains nobody else's model. Workspace data stays encrypted and siloed per team.</p>
+          </article>
+          <article class="bento-card span-6 reveal" data-d="2">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9L19 19M19 5l-2.1 2.1M7.1 16.9L5 19"/></svg></span>
+            <div><h3>Workflow hooks</h3><p>Pipe answers into forms, docs and review queues with no-code rules and a clean REST API.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="compare">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Before / after</p>
+        <h2>The same question, two very different mornings</h2>
+      </div>
+        <div data-compare>
+          <div class="compare-switch" role="group" aria-label="Before and after comparison">
+            <button class="cmp-btn is-active" type="button" aria-pressed="true">Before</button>
+            <button class="cmp-btn" type="button" aria-pressed="false">With Mindgrid</button>
+          </div>
+          <div class="compare-panes">
+            <div class="compare-pane pane-before is-active">
+              <h3>9:02 AM, the old way</h3>
+              <ul class="cmp-list">
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Search the wiki, open six tabs, find three conflicting answers.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Ping the one engineer who knows — she is in a different timezone.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Copy-paste a half-right answer to the customer and hope.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Forget to update the doc, dooming the next person to repeat this.</span></li>
+              </ul>
+            </div>
+            <div class="compare-pane pane-after">
+              <h3>9:02 AM, the Mindgrid way</h3>
+              <ul class="cmp-list">
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Type the question exactly as you would ask a colleague.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Get one answer in four seconds, with the source paragraph linked.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Click through to verify, send the reply, done by 9:04.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Mindgrid notices the doc gap and suggests an update for review.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Outcomes</p>
+        <h2>What teams measure after one quarter</h2>
+      </div>
+        <div class="outcome-grid">
+          <article class="outcome-card reveal" data-d="0">
+            <span class="outcome-num">3×</span>
+            <h3>Faster onboarding</h3>
+            <p>New teammates answer their own questions from day one instead of queueing for a mentor.</p>
+          </article>
+          <article class="outcome-card reveal" data-d="1">
+            <span class="outcome-num">-71%</span>
+            <h3>Less interruption</h3>
+            <p>Senior engineers report a steep drop in repeated questions hitting their inbox.</p>
+          </article>
+          <article class="outcome-card reveal" data-d="2">
+            <span class="outcome-num">100%</span>
+            <h3>Answers that hold up</h3>
+            <p>Every response carries its citations, so trust in internal answers climbs instead of eroding.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Wall of love</p>
+        <h2>Whole companies, off the treadmill</h2>
+      </div>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-set">
+          <figure class="t-card" data-d="0"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“It is the first AI tool our skeptics actually kept using after week one. The citations won them over.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">SB</span><span><b>Sofia Brandt</b><i>VP Engineering, Quanta Labs</i></span></figcaption>
+          </figure>
+          <figure class="t-card" data-d="1">
+            <blockquote>“Support deflected 40% of internal questions in a month. Our seniors finally get deep work time back.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">JW</span><span><b>Jae-won Park</b><i>Head of Support, Ferrostack</i></span></figcaption>
+          </figure>
+          <figure class="t-card" data-d="2"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“Onboarding docs used to rot. Now Mindgrid flags stale pages before anyone gets burned by them.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">AD</span><span><b>Amara Diallo</b><i>People Ops Lead, Opaline</i></span></figcaption>
+          </figure>
+          <figure class="t-card" data-d="0">
+            <blockquote>“I asked it about a decision from a meeting I missed and it quoted the transcript with a timestamp.”</blockquote>
+            <figcaption><span class="avatar av-d" aria-hidden="true">TR</span><span><b>Tomás Rivera</b><i>Product Manager, Driftworks</i></span></figcaption>
+          </figure>
+          <figure class="t-card" data-d="1"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“We pointed it at five years of tickets. It answered a edge-case billing question our own docs never covered.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">HL</span><span><b>Hannah Liu</b><i>CX Director, Kelp & Co</i></span></figcaption>
+          </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Start free, scale when the questions do</h2>
+        <p class="lead">Per-workspace pricing. Unlimited questions on every paid tier.</p>
+      </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Free</h3><p class="plan-blurb">For trying Mindgrid on one project.</p>
+            <p class="price-line"><span class="amount">$0</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>1 workspace, 3 members</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>200 answers per month</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>2 connected sources</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>7-day answer history</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Create workspace</a>
+          <p class="plan-note">Free plan forever &middot; Upgrade anytime</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Best value</span>
+            <h3 class="plan-name">Pro</h3><p class="plan-blurb">For teams that ask all day long.</p>
+            <p class="price-line"><span class="amount">$24</span><span class="per">/mo per seat</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited answers</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>20 connected sources</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Auto-drafts + meeting recall</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Tone-of-voice profiles</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Priority support</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Start 14-day trial</a>
+          <p class="plan-note">Free plan forever &middot; Upgrade anytime</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Team</h3><p class="plan-blurb">For org-wide rollouts with controls.</p>
+            <p class="price-line"><span class="amount">$59</span><span class="per">/mo per seat</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Everything in Pro</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>SSO + role permissions</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Audit log + retention rules</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>API + workflow hooks</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Dedicated onboarding</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Talk to us</a>
+          <p class="plan-note">Free plan forever &middot; Upgrade anytime</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>The questions everyone asks first</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Does my data train your models?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>No. Your workspace content is used only to answer your team's questions. It is never used to train shared models and never leaves your encrypted workspace.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How accurate are the answers?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Every answer links the exact source passages it was built from, so you can verify in one click. If sources conflict, Mindgrid shows both and says so instead of guessing.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What sources can I connect?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Wikis, cloud drives, ticket systems, PDFs, markdown repos and meeting transcripts. Most teams connect their first three sources in under an hour.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can I control who sees what?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Yes. Mindgrid mirrors your source permissions, so an answer only uses documents the person asking is already allowed to read.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What happens when I hit the free plan limit?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Answers pause until the next month or an upgrade — we never silently degrade quality or delete your connected sources.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-glow">
+      <div class="container">
+        <h2>Stop answering the same question twice</h2>
+        <p>Spin up a workspace, connect one source and ask your first question — free, in about ten minutes.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Try Mindgrid free</a>
+          <a class="btn btn-ghost btn-lg" href="#faq">Read the FAQ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z"/></svg></span>Mindgrid</a>
+          <p>The private AI knowledge engine for teams. Sourced answers, zero repeated questions.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Capabilities</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>Security</a>
+          <a href="#" data-demo-link>Changelog</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="#" data-demo-link>Careers</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer-col" aria-label="Resources links">
+          <h4>Resources</h4>
+          <a href="contact.html">Help center</a>
+          <a href="#" data-demo-link>API docs</a>
+          <a href="#" data-demo-link>Status</a>
+          <a href="#" data-demo-link>Community</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Mindgrid Systems. All rights reserved.</p>
+        <p>Glow responsibly.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>
