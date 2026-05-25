@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Brightwater Clinic</title>
+<meta name="description" content="Contact Brightwater Clinic to book a visit or register with a family doctor — reach the clinic team directly.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%230E9594'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3EB%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#F2F8FA">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Brightwater Clinic home"><span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-8-4.5-8-10a4.5 4.5 0 0 1 8-3 4.5 4.5 0 0 1 8 3c0 5.5-8 10-8 10z"/></svg></span><span class="brand-name">Brightwater Clinic</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu">
+<span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+</button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" href="services.html">Services</a></li>
+<li><a class="nav-link" href="team.html">Team</a></li>
+<li><a class="nav-link" href="services.html#cases">Projects</a></li>
+<li><a class="nav-link" href="services.html">Care &amp; Outcomes</a></li>
+<li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
+<li><a class="btn btn-sm nav-cta" href="contact.html">Book a Visit</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<nav class="sv-crumbs" aria-label="Breadcrumb">
+<div class="container"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol></div>
+</nav>
+<section class="sec pg-hero">
+<div class="container">
+<span class="kicker">Contact</span>
+<h1>Let's take care of you.</h1>
+<p class="sec-lead pg-hero-lead">Tell us how we can help and our team will respond within one business day. For anything urgent, please call the clinic directly.</p>
+</div>
+</section>
+<section class="sec pg-contact">
+<div class="container contact-grid">
+<div>
+<form class="contact-form pg-form" id="contact-form" novalidate>
+<div class="field">
+<label for="cf-name">Full name</label>
+<input type="text" id="cf-name" name="name" autocomplete="name" placeholder="Alex Porter">
+<p class="field-err" id="err-name" hidden>Please enter your name.</p>
+</div>
+<div class="field">
+<label for="cf-email">Email address</label>
+<input type="email" id="cf-email" name="email" autocomplete="email" placeholder="you@example.com">
+<p class="field-err" id="err-email" hidden>Please enter a valid email address.</p>
+</div>
+<div class="field">
+<label for="cf-subject">Subject</label>
+<select id="cf-subject" name="subject">
+<option value="">Choose a topic…</option>
+<option value="Register as a new patient">Register as a new patient</option>
+<option value="Book an appointment">Book an appointment</option>
+<option value="Specialist referral">Specialist referral</option>
+<option value="Careers">Careers</option>
+<option value="Something else">Something else</option>
+</select>
+<p class="field-err" id="err-subject" hidden>Please choose a subject.</p>
+</div>
+<div class="field">
+<label for="cf-msg">How can we help?</label>
+<textarea id="cf-msg" name="message" rows="5" placeholder="Tell us how we can help — please don't include sensitive medical details here..."></textarea>
+<p class="field-err" id="err-msg" hidden>Please add a short message (at least 10 characters).</p>
+</div>
+<button class="btn btn-lg" type="submit">Send Message</button>
+<p class="form-ok" id="form-ok" role="status" hidden>Thanks — your message is with our care team. We'll respond within one business day. For anything urgent, please call us.</p>
+</form>
+</div>
+<div class="contact-side pg-contact-side">
+<div class="contact-card pg-ic-card"><span class="pg-ic-badge"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><h3>Email</h3><p><a href="mailto:care@brightwaterclinic.com">care@brightwaterclinic.com</a></p><p class="pg-ic-sub">Our team replies within one business day.</p></div>
+<div class="contact-card pg-ic-card"><span class="pg-ic-badge"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-3 2a13 13 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span><h3>Phone</h3><p><a href="tel:+1(603)555-0151">+1 (603) 555-0151</a></p><p class="pg-ic-sub">Mon–Sat 7:30–20:00, Sun 9:00–14:00.</p></div>
+<div class="contact-card pg-ic-card"><span class="pg-ic-badge"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><h3>Visit</h3><p>58 Lakeshore Avenue, Portsmouth, NH 03801</p><p class="pg-ic-sub">Walk-ins welcome; appointments preferred.</p></div>
+<div class="hours-card pg-hours" data-hours>
+<h3>Office hours</h3>
+<table class="hours-table"><tbody>
+<tr><td>Mon – Fri</td><td>7:30 – 20:00</td></tr>
+<tr><td>Saturday</td><td>8:00 – 18:00</td></tr>
+<tr><td>Sunday</td><td>9:00 – 14:00</td></tr>
+</tbody></table>
+</div>
+<div class="map-ph pg-map" role="img" aria-label="Stylized map placeholder for the Brightwater Clinic office">
+<span class="map-pin" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+<div class="map-card"><strong>Brightwater Clinic</strong><span>58 Lakeshore Avenue, Portsmouth, NH</span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec pg-cfaq">
+<div class="container faq-wrap">
+<div class="sec-head"><span class="kicker">FAQ</span><h2 class="sec-title">Quick answers before you write</h2></div>
+<div class="faq-list">
+<div class="acc faq-item pg-acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="cfaq-p0">
+<span>How do I register as a new patient?</span><span class="acc-ic" aria-hidden="true"></span>
+</button>
+<div class="acc-panel" id="cfaq-p0" hidden><p>Send us a message or call the clinic and our team will guide you through registration and book your first visit.</p></div>
+</div>
+<div class="acc faq-item pg-acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="cfaq-p1">
+<span>Will I see the same clinician each time?</span><span class="acc-ic" aria-hidden="true"></span>
+</button>
+<div class="acc-panel" id="cfaq-p1" hidden><p>Wherever possible, yes. Continuity is central to how we work — a clinician who knows your story makes better care.</p></div>
+</div>
+<div class="acc faq-item pg-acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="cfaq-p2">
+<span>Do you have specialists on site?</span><span class="acc-ic" aria-hidden="true"></span>
+</button>
+<div class="acc-panel" id="cfaq-p2" hidden><p>Yes. Family medicine, specialists and allied health share one roof so your care is coordinated, not fragmented.</p></div>
+</div>
+<div class="acc faq-item pg-acc">
+<button class="acc-btn" type="button" aria-expanded="false" aria-controls="cfaq-p3">
+<span>What if my issue is urgent?</span><span class="acc-ic" aria-hidden="true"></span>
+</button>
+<div class="acc-panel" id="cfaq-p3" hidden><p>Please call the clinic directly rather than using this form. For emergencies, contact your local emergency service.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec-certs pg-social-sec" aria-label="Find us online">
+<div class="container">
+<p class="certs-title">Stay connected with the clinic</p>
+<div class="socials pg-socials">
+<a class="social" href="#" data-demo-link aria-label="Follow us on social channel one"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Follow us on social channel two"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.9 7.9"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Follow us on social channel three"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a5 5 0 0 0 7.1 0l2.4-2.4a5 5 0 0 0-7.1-7.1l-1.2 1.2"/><path d="M14 10a5 5 0 0 0-7.1 0l-2.4 2.4a5 5 0 0 0 7.1 7.1l1.2-1.2"/></svg></a>
+<a class="social" href="mailto:care@brightwaterclinic.com" aria-label="Email us"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-col footer-about">
+<a class="brand footer-brand" href="index.html" aria-label="Brightwater Clinic home"><span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-8-4.5-8-10a4.5 4.5 0 0 1 8-3 4.5 4.5 0 0 1 8 3c0 5.5-8 10-8 10z"/></svg></span><span class="brand-name">Brightwater Clinic</span></a>
+<p>Brightwater Clinic: family medicine, specialist care and diagnostics under one calm roof — 20-minute appointments that start on time.</p>
+<div class="socials">
+<a class="social" href="#" data-demo-link aria-label="Follow us on social channel one"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Follow us on social channel two"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="4"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Follow us on social channel three"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5M7 5h12v12"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Follow us on social channel four"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8 8H4l2.1-3.1A8 8 0 1 1 21 11.5z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Follow us on social channel five"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5v-7z"/></svg></a>
+</div>
+</div>
+<div class="footer-col"><h3>Explore</h3><ul class="footer-links">
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="services.html#cases">Projects</a></li>
+<li><a href="services.html">Care &amp; Outcomes</a></li>
+<li><a href="contact.html" aria-current="page">Contact</a></li>
+</ul></div>
+<div class="footer-col"><h3>Services</h3><ul class="footer-links">
+<li><a href="services.html#svc-1">GP Consultations</a></li>
+<li><a href="services.html#svc-2">Child &amp; Teen Health</a></li>
+<li><a href="services.html#svc-3">Cardiology Clinic</a></li>
+<li><a href="services.html#svc-4">Physiotherapy</a></li>
+</ul></div>
+<div class="footer-col"><h3>Visit us</h3>
+<address class="footer-addr">52 Harborview Avenue, Portsmouth, NH 03801<br><a href="tel:+1(603)555-0151">+1 (603) 555-0151</a><br><a href="mailto:care@brightwaterclinic.com">care@brightwaterclinic.com</a></address>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>&copy; <span id="year" data-year>2026</span> Brightwater Clinic. All rights reserved.</p>
+<p class="footer-note">This template is a design demo; content is illustrative and not medical advice.</p>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+</body>
+</html>

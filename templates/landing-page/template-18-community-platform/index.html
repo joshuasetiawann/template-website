@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowroom — Community Platform</title>
+  <meta name="description" content="Glowroom is the community platform where creators host members, conversations and events without fighting an algorithm.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='30'%20fill='%23EC4899'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EG%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#150F1E">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>Creator Fund:</strong> round two applications are open.</p>
+      <a class="announce-link" href="contact.html">Apply now</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20c0-3.4 2.6-5.4 6-5.4s6 2 6 5.4"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M17.5 14.6c2.4.4 3.5 2.1 3.5 4.4"/></svg></span>Glowroom</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html#compare">Why Glowroom</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Open your room</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-glow" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-badge"><i aria-hidden="true"></i>Home to 5,200 communities and counting</span>
+          <h1 id="heroTitle">Build the room your people <span class="grad-text">keep coming back to</span></h1>
+          <p class="lead">Glowroom gives your community a calm home — discussions, events and member spaces that you own, free from feeds that bury your best posts.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Open your room</a>
+          <a class="btn btn-ghost btn-lg" href="#features">Tour the features</a>
+        </div>
+        <p class="hero-note">14-day free trial · Migrate from anywhere</p>
+        <div class="face-cluster" role="img" aria-label="Members of the Glowroom community">
+          <span class="face f1" aria-hidden="true">KO</span><span class="face f2" aria-hidden="true">JM</span><span class="face f3" aria-hidden="true">AS</span><span class="face f4" aria-hidden="true">RB</span><span class="face f5" aria-hidden="true">TW</span><span class="face f6" aria-hidden="true">LP</span>
+          <span class="face face-count" aria-hidden="true">+5k</span>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Social proof">
+      <div class="container">
+        <p class="logos-title">Communities call it home</p>
+        <div class="logos-row">
+          <span class="logo-word">Indie Makers Club</span><span class="logo-word">The Design Loop</span><span class="logo-word">Writers Guild</span><span class="logo-word">Founder Circle</span><span class="logo-word">Pixel Society</span>
+        </div>
+      </div>
+    </section>
+    <section class="stats-band" id="stats" aria-label="Key numbers">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num" data-target="5200" data-suffix="+">0+</span><span class="stat-label">active communities</span></div>
+          <div class="stat"><span class="stat-num" data-target="74" data-suffix="%">0%</span><span class="stat-label">weekly member return rate</span></div>
+          <div class="stat"><span class="stat-num" data-target="2.1" data-suffix="M" data-decimals="1">0M</span><span class="stat-label">posts that found their people</span></div>
+          <div class="stat"><span class="stat-num" data-target="11" data-suffix=" min">0 min</span><span class="stat-label">median daily visit length</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Why Glowroom</p>
+        <h2>Your community deserves better than a busy feed</h2>
+        <p class="lead">Groups inside social networks rent attention from an algorithm. Rooms on Glowroom own it.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Algorithm-land</span><h3>Renting your audience</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Your announcement reaches 8% of the members who chose to follow you.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Threads vanish under ads and rage-bait within hours.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>One policy change can erase five years of community building.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">Your Glowroom</span><h3>Owning your room</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Every member sees what you post — reach is not for rent here.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Spaces keep conversations findable for years, not hours.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Export everything anytime: members, posts, the lot. It is yours.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Features</p>
+        <h2>Everything a thriving room needs</h2>
+        <p class="lead">Six pieces, designed to make small groups feel alive and big ones feel small.</p>
+      </div>
+        <div class="bento">
+          <article class="bento-card span-3 reveal" data-d="0">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4V5z"/></svg></span><h3>Spaces, not feeds</h3>
+            <p>Organized rooms per topic with slow, readable threads. The good conversation from March is still findable in November.</p>
+          </article>
+          <article class="bento-card span-3 reveal" data-d="1">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 3v4M16 3v4"/></svg></span><h3>Events that fill</h3>
+            <p>Workshops, AMAs and hangouts with RSVPs, reminders and replays — built in, not bolted on.</p>
+          </article>
+          <article class="bento-card span-2 reveal" data-d="2">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.7 6.3.9-4.6 4.3 1.2 6.1L12 17l-5.6 3 1.2-6.1L3 9.6l6.3-.9L12 3z"/></svg></span><h3>Member spotlights</h3>
+            <p>Weekly digest celebrates helpful members automatically. Culture compounds when kindness is visible.</p>
+          </article>
+          <article class="bento-card span-2 reveal" data-d="0">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M17.5 12v3.5M21 12v2.5"/></svg></span><h3>Paid memberships</h3>
+            <p>Free tiers, paid tiers, founding-member deals. Your community can pay your rent without a third platform.</p>
+          </article>
+          <article class="bento-card span-2 reveal" data-d="1">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 19.5a2.2 2.2 0 0 0 4 0"/></svg></span><h3>Calm notifications</h3>
+            <p>Members choose their volume. The default is a daily digest, not a dopamine drip.</p>
+          </article>
+          <article class="bento-card span-6 reveal" data-d="2">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></span>
+            <div><h3>Your brand, your domain</h3><p>Custom domain, colors and tone. Glowroom disappears; your community is the brand.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Outcomes</p>
+        <h2>What room-owners report</h2>
+      </div>
+        <div class="outcome-grid">
+          <article class="outcome-card reveal" data-d="0">
+            <span class="outcome-num">74%</span>
+            <h3>Members return</h3>
+            <p>Weekly return rate across active rooms — because spaces respect attention instead of strip-mining it.</p>
+          </article>
+          <article class="outcome-card reveal" data-d="1">
+            <span class="outcome-num">9/10</span>
+            <h3>Posts get answered</h3>
+            <p>Median questions receiving a substantive reply within a day. Small-feeling rooms answer faster.</p>
+          </article>
+          <article class="outcome-card reveal" data-d="2">
+            <span class="outcome-num">8 wks</span>
+            <h3>Creators get paid</h3>
+            <p>Rooms running paid tiers cover their costs within the first two months, on average.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="compare">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The move</p>
+        <h2>Same community, two very different homes</h2>
+      </div>
+        <div data-compare>
+          <div class="compare-switch" role="group" aria-label="Before and after comparison">
+            <button class="cmp-btn is-active" type="button" aria-pressed="true">In the feed</button>
+            <button class="cmp-btn" type="button" aria-pressed="false">In the room</button>
+          </div>
+          <div class="compare-panes">
+            <div class="compare-pane pane-before is-active">
+              <h3>Life as a group inside a social network</h3>
+              <ul class="cmp-list">
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Announcement posted at 9 AM, seen by 8%, buried by 9:40.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Best discussion of the year is unfindable three weeks later.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Members are 'audience' — you cannot even email them.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Monetization means tagging sponsors and praying.</span></li>
+              </ul>
+            </div>
+            <div class="compare-pane pane-after">
+              <h3>Life in your Glowroom</h3>
+              <ul class="cmp-list">
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Announcements reach every member, in digest or instantly — their choice.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Spaces archive beautifully; newcomers binge old threads like a wiki.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Your member list exports anytime. Relationships, owned.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Paid tiers, event tickets and founding memberships — native.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Room tour</p>
+        <h2>Communities that found their glow</h2>
+      </div>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-set">
+          <figure class="t-card" data-d="0"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“We moved 3,000 members from a social group in one weekend. Engagement tripled in a month — same people, better room.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">KO</span><span><b>Kemi Oladipo</b><i>The Potters' Bench · 3,400 members</i></span></figcaption>
+          </figure>
+          <figure class="t-card" data-d="1">
+            <blockquote>“The daily digest default changed everything. People arrive calm, read deeply and reply like adults.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">JM</span><span><b>Jonas Mahler</b><i>Indie Game Devs Room · 1,900 members</i></span></figcaption>
+          </figure>
+          <figure class="t-card" data-d="2"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“Founding memberships funded my first paid year in eleven days. My community literally built its own house.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">AS</span><span><b>Ana-Sofia Reyes</b><i>Watercolor Wednesdays · 950 members</i></span></figcaption>
+          </figure>
+          <figure class="t-card" data-d="0">
+            <blockquote>“Events with built-in replays mean my timezone-scattered members finally share one campfire.”</blockquote>
+            <figcaption><span class="avatar av-d" aria-hidden="true">RB</span><span><b>Ravi Bhatt</b><i>Remote Leads Circle · 2,200 members</i></span></figcaption>
+          </figure>
+          <figure class="t-card" data-d="1"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“Search actually works. New members answer their own questions from 2024 threads and old members feel like legends.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">TW</span><span><b>Tilly Warren</b><i>The Sourdough Society · 5,100 members</i></span></figcaption>
+          </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Rooms for every stage</h2>
+        <p class="lead">Flat monthly pricing. Keep 100% of your membership revenue minus card fees.</p>
+      </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Spark</h3><p class="plan-blurb">For a community finding its feet.</p>
+            <p class="price-line"><span class="amount">$19</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Up to 500 members</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>5 spaces + events</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Daily digest engine</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Member export anytime</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Start free trial</a>
+          <p class="plan-note">14-day trial &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Most rooms</span>
+            <h3 class="plan-name">Glow</h3><p class="plan-blurb">For rooms ready to grow and earn.</p>
+            <p class="price-line"><span class="amount">$39</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Up to 5,000 members</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited spaces</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Paid memberships + tickets</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Custom domain + branding</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Spotlight automations</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Start free trial</a>
+          <p class="plan-note">14-day trial &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Constellation</h3><p class="plan-blurb">For networks of rooms.</p>
+            <p class="price-line"><span class="amount">$89</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited members</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Multi-room networks</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>API + SSO</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Advanced moderation tools</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Priority human support</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Talk to us</a>
+          <p class="plan-note">14-day trial &middot; Cancel anytime</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Room-owner questions</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can I migrate an existing community?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Yes — importers bring members, posts and structure from the big group platforms and forum exports. A 3,000-member migration typically takes a weekend, and we help with the invite campaign.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Do my members need another app?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Glowroom works beautifully in any browser and installs as a home-screen app on phones. Members join from a link in under a minute, no app store required.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How do paid memberships work?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Create tiers with monthly or yearly prices, gate specific spaces or events to them, and connect your payment account. You keep everything except standard card processing fees.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What moderation tools exist?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Member approval flows, keyword filters, slow mode, space-level moderators, and a quiet-removal option that avoids public drama. Calm rooms are a design goal, not an accident.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What happens if I leave Glowroom?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Export members (with emails, where consented), posts and files in open formats anytime — including during your trial. Your community should never be hostage to its software.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-glow">
+      <div class="container">
+        <h2>Light up your own room</h2>
+        <p>Fourteen free days, import tools included. Your people are ready for a better home.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Open your Glowroom</a>
+          <a class="btn btn-ghost btn-lg" href="#pricing">Compare plans</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20c0-3.4 2.6-5.4 6-5.4s6 2 6 5.4"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M17.5 14.6c2.4.4 3.5 2.1 3.5 4.4"/></svg></span>Glowroom</a>
+          <p>The community platform creators own. Calm spaces, real events, members who come back.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>Migrations</a>
+          <a href="#" data-demo-link>Changelog</a>
+        </nav>
+        <nav class="footer-col" aria-label="Creators links">
+          <h4>Creators</h4>
+          <a href="#" data-demo-link>Room gallery</a>
+          <a href="#" data-demo-link>Playbooks</a>
+          <a href="#" data-demo-link>Creator stories</a>
+          <a href="#" data-demo-link>Affiliates</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="#" data-demo-link>Trust + safety</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Glowroom Inc.. All rights reserved.</p>
+        <p>Warm by default.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmint — Booking Platform</title>
+  <meta name="description" content="Bookmint gives salons, studios and clinics a booking page clients love and a calendar that fills itself.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230D9488'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EB%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#FFFFFF">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 3v4M16 3v4"/></svg></span>Bookmint</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html#how">How it works</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Claim your page</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-split" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-copy">
+          <span class="hero-badge"><i aria-hidden="true"></i>12,400 local businesses run on Bookmint</span>
+          <h1 id="heroTitle">Your calendar, fully booked. Your phone, finally quiet.</h1>
+          <p class="lead">Bookmint gives your salon, studio or clinic a beautiful booking page, automatic reminders and deposits — so no-shows stop eating your week.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Claim your booking page</a>
+          <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+        </div>
+        <p class="hero-note">Free 30-day trial · No card · Keep your number</p>
+        </div>
+        <div class="hero-visual">
+        <div class="booking-card reveal" role="img" aria-label="Stylized booking widget from Bookmint">
+          <div class="bk-title" aria-hidden="true"><span>Book at Maple & Shear</span><span class="bk-live"><i></i>Live</span></div>
+          <div class="search-pill" aria-hidden="true">
+            <div class="search-cell"><b>Service</b><span>Cut + style · 45 min</span></div>
+            <div class="search-cell"><b>With</b><span>Dani M.</span></div>
+            <div class="search-cell"><b>Date</b><span>Thu, Jun 18</span></div>
+            <div class="search-cell"><b>Deposit</b><span>$10 (goes to bill)</span></div>
+          </div>
+          <div class="slot-grid" aria-hidden="true">
+            <span class="slot">9:00</span>
+            <span class="slot">11:15</span>
+            <span class="slot active">2:30</span>
+            <span class="slot">4:45</span>
+          </div>
+          <a class="btn btn-primary" href="#pricing">Book Thursday 2:30</a>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Social proof">
+      <div class="container">
+        <p class="logos-title">Powering bookings for</p>
+        <div class="logos-row">
+          <span class="logo-word">Salon Verde</span><span class="logo-word">The Dental Loft</span><span class="logo-word">Coast Physio</span><span class="logo-word">Studio Form</span><span class="logo-word">Fade &amp; Co</span>
+        </div>
+      </div>
+    </section>
+    <section id="how">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">How it works</p>
+        <h2>From link-in-bio to fully booked</h2>
+        <p class="lead">Three steps, about twenty minutes, no tech skills required.</p>
+      </div>
+        <div class="steps-grid">
+          <article class="step-card reveal" data-d="0">
+            <span class="step-n" aria-hidden="true">1</span><h3>Build your page</h3>
+            <p>Add services, durations, prices and staff. Your booking page goes live at yourname.bookmint.co — share it anywhere.</p>
+          </article>
+          <article class="step-card reveal" data-d="1">
+            <span class="step-n" aria-hidden="true">2</span><h3>Set your rules</h3>
+            <p>Buffers, deposits, cancellation windows and quiet hours. Bookmint enforces them so you never have to argue.</p>
+          </article>
+          <article class="step-card reveal" data-d="2">
+            <span class="step-n" aria-hidden="true">3</span><h3>Let it fill</h3>
+            <p>Clients book, reschedule and get reminded automatically. You just check tomorrow's list over coffee.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The problem</p>
+        <h2>Every missed call is a missed booking</h2>
+        <p class="lead">Half your bookings want to happen after closing time. Paper books and phone tag cannot catch them.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Phone-tag era</span><h3>Where bookings go to die</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Clients call during your busiest hour — or book with whoever answers.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>No-shows cost the average chair 6 hours a week.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Reschedules turn into four-message text threads.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">Bookmint era</span><h3>Open 24/7, even when you are not</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>38% of bookings happen outside business hours.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Deposits and smart reminders cut no-shows by two thirds.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Clients reschedule themselves into approved gaps only.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Built for your room</p>
+        <h2>One platform, your kind of business</h2>
+        <p class="lead">Bookmint shapes itself to the room it runs.</p>
+      </div>
+        <div data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Business types">
+            <button class="tab-btn is-active" id="tab-0" type="button" role="tab" aria-selected="true" aria-controls="panel-0" tabindex="0">💇 Salons</button>
+            <button class="tab-btn" id="tab-1" type="button" role="tab" aria-selected="false" aria-controls="panel-1" tabindex="-1">🧘 Studios</button>
+            <button class="tab-btn" id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">🩺 Clinics</button>
+          </div>
+          <div class="tab-panel is-active" id="panel-0" role="tabpanel" aria-labelledby="tab-0">
+            <div class="tab-copy">
+              <h3>Chairs that stay warm</h3>
+              <p>Per-stylist services, processing-time gaps and rebooking nudges tuned for hair.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Per-stylist menus and prices</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Processing-time aware slots</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>6-week rebooking reminders</span></li>
+              </ul>
+            </div>
+            <div class="panel-art" aria-hidden="true">
+              <span class="art-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z"/></svg></span>
+              <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+            <div class="tab-copy">
+              <h3>Classes that fill themselves</h3>
+              <p>Capacity-based classes with waitlists that promote automatically when a mat opens up.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Class capacity + waitlists</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Punch cards and memberships</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Late-cancel auto-fill</span></li>
+              </ul>
+            </div>
+            <div class="panel-art" aria-hidden="true">
+              <span class="art-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20c0-3.4 2.6-5.4 6-5.4s6 2 6 5.4"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M17.5 14.6c2.4.4 3.5 2.1 3.5 4.4"/></svg></span>
+              <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+            <div class="tab-copy">
+              <h3>Appointments without the admin</h3>
+              <p>Intake forms attach to bookings and reminders reduce the no-shows that wreck clinic days.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Custom intake forms</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Private notes per client</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Recall reminders for checkups</span></li>
+              </ul>
+            </div>
+            <div class="panel-art" aria-hidden="true">
+              <span class="art-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7.2-4.6-9.2-9A5 5 0 0 1 12 7.6 5 5 0 0 1 21.2 11c-2 4.4-9.2 9-9.2 9z"/></svg></span>
+              <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="integrations">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Plays well with</p>
+        <h2>Connected to the tools you already use</h2>
+        <p class="lead">Your bookings flow everywhere they need to go.</p>
+      </div>
+        <div class="integration-grid">
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Google Calendar</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Apple Calendar</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Instagram booking</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Stripe deposits</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Mailmint campaigns</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>SMS reminders</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Zoom links</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>CSV export</div>
+        </div>
+      </div>
+    </section>
+    <section class="stats-band" id="stats" aria-label="Key numbers">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num" data-target="12400">0</span><span class="stat-label">businesses on Bookmint</span></div>
+          <div class="stat"><span class="stat-num" data-target="9.1" data-suffix="M" data-decimals="1">0M</span><span class="stat-label">appointments booked yearly</span></div>
+          <div class="stat"><span class="stat-num" data-target="66" data-prefix="-" data-suffix="%">-0%</span><span class="stat-label">fewer no-shows with deposits on</span></div>
+          <div class="stat"><span class="stat-num" data-target="38" data-suffix="%">0%</span><span class="stat-label">of bookings made after hours</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Why owners stay</p>
+        <h2>Run the room, not the inbox</h2>
+      </div>
+        <div class="benefit-cards">
+          <article class="b-card reveal" data-d="0">
+            <h3>Your brand, front and center</h3>
+            <p>Your colors, your photos, your domain. Clients book with you, not with a marketplace that upsells your competitors.</p>
+          </article>
+          <article class="b-card reveal" data-d="1">
+            <h3>Money arrives smoother</h3>
+            <p>Deposits at booking, tips at checkout, payouts daily. The till finally agrees with the calendar.</p>
+          </article>
+          <article class="b-card reveal" data-d="2">
+            <h3>Clients feel the polish</h3>
+            <p>Confirmations, reminders and easy self-reschedules make a two-chair studio feel like a five-star front desk.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">From the chair</p>
+        <h2>Owners, on the record</h2>
+      </div>
+        <div class="spotlight-grid">
+          <figure class="spot-main reveal">
+            <div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“No-shows went from six a week to one a month once deposits switched on. That is a mortgage payment a year, recovered.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">DM</span><span><b>Dani Marsh</b><i>Owner, Maple & Shear Salon</i></span></figcaption>
+          </figure>
+          <div class="spot-side">
+          <figure class="t-card reveal" data-d="1">
+            <blockquote>“My yoga waitlist fills cancelled mats in minutes. I have not posted a 'spot open!' story since March.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">AS</span><span><b>Amrita Singh</b><i>Founder, Stillpoint Studio</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="2">
+            <blockquote>“Front desk used to spend two hours a day on phone bookings. Now it is twenty minutes of exceptions.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">DL</span><span><b>Dr. Leo Casals</b><i>Clinic Director, Casals Physio</i></span></figcaption>
+          </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Plans that pay for themselves in saved no-shows</h2>
+        <p class="lead">Unlimited bookings on every plan. No per-booking fees, ever.</p>
+      </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Solo</h3><p class="plan-blurb">For one busy professional.</p>
+            <p class="price-line"><span class="amount">$12</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>1 calendar, unlimited bookings</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Booking page + link-in-bio</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Email + SMS reminders</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Deposits via card</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Start free trial</a>
+          <p class="plan-note">30-day free trial &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Most popular</span>
+            <h3 class="plan-name">Studio</h3><p class="plan-blurb">For teams up to 10.</p>
+            <p class="price-line"><span class="amount">$29</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>10 staff calendars</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Classes, waitlists + memberships</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Intake forms</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Reports + rebooking nudges</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Priority support</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Start free trial</a>
+          <p class="plan-note">30-day free trial &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Chain</h3><p class="plan-blurb">For multiple locations.</p>
+            <p class="price-line"><span class="amount">$69</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited locations + staff</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Cross-location reporting</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Custom domain + API</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Role permissions</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Onboarding concierge</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Talk to us</a>
+          <p class="plan-note">30-day free trial &middot; Cancel anytime</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Owners usually ask</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Do my clients need an app?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>No. Your booking page works in any browser from any link — Instagram bio, Google profile, QR on the door. Clients book in under a minute, no account required.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How do deposits work?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>You choose a flat fee or percentage per service. Clients pay it at booking, it shows as credit on their bill, and your cancellation window decides if it is refundable. No-shows drop fast.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can I import my existing client list?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Yes — upload any CSV and Bookmint maps names, numbers and notes. Your clients get nothing until you choose to send your new booking link.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What if I already use Google Calendar?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Two-way sync means personal events block booking slots automatically, and Bookmint appointments appear in Google instantly. Double-bookings become impossible.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is there really no per-booking fee?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Really. You pay the flat monthly price; whether you take 40 or 400 bookings, it costs the same. Card processing for deposits uses standard payment rates.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-final">
+      <div class="container">
+        <h2>Your next client is trying to book right now</h2>
+        <p>Claim your page, set your rules, and let tonight's 11 PM booking happen without you.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Claim your booking page</a>
+          <a class="btn btn-ghost btn-lg" href="#features">Browse features</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 3v4M16 3v4"/></svg></span>Bookmint</a>
+          <p>Booking pages, reminders and deposits for salons, studios and clinics. The calendar that fills itself.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="features.html#integrations">Integrations</a>
+          <a href="#" data-demo-link>What's new</a>
+        </nav>
+        <nav class="footer-col" aria-label="For you links">
+          <h4>For you</h4>
+          <a href="#" data-demo-link>Salons</a>
+          <a href="#" data-demo-link>Studios</a>
+          <a href="#" data-demo-link>Clinics</a>
+          <a href="#" data-demo-link>Switching guide</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="contact.html">Help center</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Bookmint Technologies. All rights reserved.</p>
+        <p>Fully booked, kindly run.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="sticky-cta" data-stickycta>
+    <p class="sticky-cta-copy"><strong>Take bookings by tonight</strong><span>30-day free trial</span></p>
+    <a class="btn btn-primary" href="contact.html">Start free</a>
+  </div>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

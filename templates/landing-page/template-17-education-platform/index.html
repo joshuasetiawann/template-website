@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarpath — Education Platform</title>
+  <meta name="description" content="Scholarpath is an online learning platform with mentor-graded career certificates in data, design and operations.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='10'%20fill='%231E3A8A'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3ES%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#FFFFFF">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>Fall intake:</strong> enrollment open &mdash; financial aid available.</p>
+      <a class="announce-link" href="features.html">Enroll now</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2V5z"/><path d="M20 19H6"/></svg></span>Scholarpath</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html">Programs</a></li>
+          <li><a href="features.html#benefits">Outcomes</a></li>
+          <li><a href="pricing.html">Tuition</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="features.html">Browse programs</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-center" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-badge"><i aria-hidden="true"></i>Mentor-graded certificates · Hiring-partner network</span>
+          <h1 id="heroTitle">Learn it properly. Prove it publicly.</h1>
+          <p class="lead">Scholarpath certificates are projects graded by working professionals — not quizzes graded by autoplay. Build a portfolio employers can actually inspect.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#features">Browse programs</a>
+          <a class="btn btn-ghost btn-lg" href="#stats">See graduate outcomes</a>
+        </div>
+        <p class="hero-note">Audit any course free · Financial aid on every program</p>
+        </div>
+        <div class="mock-browser reveal" role="img" aria-label="Stylized learning dashboard preview of Scholarpath">
+          <div class="mock-top" aria-hidden="true">
+            <span class="mock-dot r"></span><span class="mock-dot y"></span><span class="mock-dot g"></span>
+            <span class="mock-url">scholarpath.org/my/programs</span>
+          </div>
+          <div class="course-list" aria-hidden="true">
+            <div class="course-row">
+              <span class="course-thumb"></span>
+              <span class="course-meta"><b>Data Analytics Certificate</b><span>Module 4 of 7 · Mentor: P. Singh</span></span>
+              <span class="prog p1"><span></span></span>
+            </div>
+            <div class="course-row">
+              <span class="course-thumb"></span>
+              <span class="course-meta"><b>SQL for Analysts</b><span>Project under review · due Fri</span></span>
+              <span class="prog p2"><span></span></span>
+            </div>
+            <div class="course-row">
+              <span class="course-thumb"></span>
+              <span class="course-meta"><b>Storytelling with Dashboards</b><span>Completed · graded A by mentor</span></span>
+              <span class="prog p3"><span></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Trusted by">
+      <div class="container">
+        <p class="logos-title">Graduates hired by teams at</p>
+        <div class="logos-row">
+          <span class="logo-word">Calderbank</span><span class="logo-word">Northgate Health</span><span class="logo-word">Mireles & Co</span><span class="logo-word">Brightharbor</span><span class="logo-word">Tannery Street</span><span class="logo-word">Ovaline Systems</span>
+        </div>
+      </div>
+    </section>
+    <section class="stats-band" id="stats" aria-label="Key numbers">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num" data-target="68000" data-suffix="+">0+</span><span class="stat-label">learners enrolled</span></div>
+          <div class="stat"><span class="stat-num" data-target="78" data-suffix="%">0%</span><span class="stat-label">career-track grads hired within 6 months</span></div>
+          <div class="stat"><span class="stat-num" data-target="4.7" data-suffix="/5" data-decimals="1">0/5</span><span class="stat-label">average mentor rating</span></div>
+          <div class="stat"><span class="stat-num" data-target="120" data-suffix="+">0+</span><span class="stat-label">hiring partners reviewing portfolios</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The difference</p>
+        <h2>Certificates are cheap. Evidence is not</h2>
+        <p class="lead">Employers stopped trusting completion badges years ago. They never stopped trusting work they can inspect.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Video-mill courses</span><h3>Watch, quiz, forget</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Autograded quizzes test recall, not capability.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Certificates that recruiters have learned to scroll past.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>No human ever reads your work or tells you the truth about it.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">Scholarpath</span><h3>Build, defend, get hired</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Every module ends in a real project graded by a working mentor.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Your certificate links to the portfolio behind it — public, inspectable.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Hiring partners browse graduate portfolios, not resumes.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Programs</p>
+        <h2>Six career tracks, mentor-graded</h2>
+        <p class="lead">Each track is 4–7 modules. Each module ends in work worth showing.</p>
+      </div>
+        <div class="features-grid">
+          <article class="f-card reveal" data-d="0">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V11M10 20V5M16 20v-7M20 20H3"/></svg></span><h3>Data Analytics</h3>
+            <p>From spreadsheets to SQL to dashboards that change decisions. Capstone: a full analysis for a real nonprofit.</p>
+          </article>
+          <article class="f-card reveal" data-d="1">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l4.5-1L19.5 8a2.1 2.1 0 0 0-3-3L5.5 15.5 4 20z"/><path d="M13.5 6.5l3 3"/></svg></span><h3>Product Design</h3>
+            <p>Research, wireframes, design systems and a usability-tested case study employers can click through.</p>
+          </article>
+          <article class="f-card reveal" data-d="2">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9L19 19M19 5l-2.1 2.1M7.1 16.9L5 19"/></svg></span><h3>Operations Management</h3>
+            <p>Process mapping, forecasting and the automation toolkit every COO wishes the team had.</p>
+          </article>
+          <article class="f-card reveal" data-d="0">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg></span><h3>Web Development</h3>
+            <p>HTML to deployed full-stack apps, with code review from senior engineers on every project.</p>
+          </article>
+          <article class="f-card reveal" data-d="1">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 7.5-8.5"/><path d="M15.5 6.5H21V12"/></svg></span><h3>Digital Marketing</h3>
+            <p>Run a live campaign with a real budget in module five. Graded on the numbers and the reasoning.</p>
+          </article>
+          <article class="f-card reveal" data-d="2">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20c0-3.4 2.6-5.4 6-5.4s6 2 6 5.4"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M17.5 14.6c2.4.4 3.5 2.1 3.5 4.4"/></svg></span><h3>People & Talent</h3>
+            <p>Hiring, onboarding and performance craft, graded by HR leads who do this for a living.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The Scholarpath way</p>
+        <h2>Three promises we grade ourselves on</h2>
+      </div>
+        <div class="benefit-rows">
+          <div class="benefit-row reveal">
+            <div class="benefit-art art-a" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>A human reads everything</h3>
+              <p>Every project gets written feedback from a mentor working in the field — usually within 48 hours.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Working professionals, not TAs</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Rubrics published up front</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>One free resubmission per project</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="benefit-row flip reveal">
+            <div class="benefit-art art-b" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Portfolios over papers</h3>
+              <p>Your public Scholarpath page holds the actual work: dashboards, case studies, deployed apps.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Public, linkable portfolio</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Verified mentor grades</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Employer view tracking</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="benefit-row reveal">
+            <div class="benefit-art art-c" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Career service that calls back</h3>
+              <p>Career-track learners get interview prep, portfolio reviews and warm introductions to hiring partners.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Mock interviews with humans</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>120+ hiring partners</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Salary negotiation clinic</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Graduate stories</p>
+        <h2>Hired on the strength of the work</h2>
+      </div>
+        <div class="testi-grid">
+          <figure class="t-card reveal" data-d="0"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“The hiring manager spent the whole interview inside my capstone dashboard. I got the offer the next morning — analytics, 40% raise.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">FE</span><span><b>Fatima El-Sayed</b><i>Data Analytics, Class of 2025</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="1"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“Mentor feedback was brutal in week two and career-changing by module five. Nobody had ever told me the truth about my design work before.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">CW</span><span><b>Connor Walsh</b><i>Product Design, Class of 2024</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="2"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“I audited free for a month, then committed. The live-budget campaign module alone was worth the tuition.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">LM</span><span><b>Lucia Moretti</b><i>Digital Marketing, Class of 2025</i></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Tuition</p>
+        <h2>Pay monthly, finish early, pay less</h2>
+        <p class="lead">Self-paced subscriptions. Most learners finish a track in 4–6 months.</p>
+      </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Audit</h3><p class="plan-blurb">Learn the material, free.</p>
+            <p class="price-line"><span class="amount">$0</span><span class="per">forever</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>All lessons + readings</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Practice exercises</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Community forum</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>No projects or grades</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Start auditing</a>
+          <p class="plan-note">7-day refund window &middot; Keep your notes</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Best outcomes</span>
+            <h3 class="plan-name">Learner</h3><p class="plan-blurb">The full graded experience.</p>
+            <p class="price-line"><span class="amount">$25</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Everything in Audit</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Mentor-graded projects</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Verified certificate + portfolio</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>48-hour feedback turnaround</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Pause anytime</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Enroll now</a>
+          <p class="plan-note">7-day refund window &middot; Keep your notes</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Career</h3><p class="plan-blurb">Graded, plus the job hunt.</p>
+            <p class="price-line"><span class="amount">$49</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Everything in Learner</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>1:1 mentor sessions monthly</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Mock interviews + prep</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Hiring partner introductions</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Job guarantee terms available</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Apply to Career track</a>
+          <p class="plan-note">7-day refund window &middot; Keep your notes</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Prospective-learner questions</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Who are the mentors?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Working professionals with at least five years in their field — analysts, designers, engineers and operators who grade a few hours weekly. Their names and backgrounds are on every track page.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How real is the 78% hiring number?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>It covers Career-track graduates who completed the program and used career services, measured at six months, verified by offer letters. Methodology is published in full on our outcomes page.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can I really learn while working full-time?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Yes — tracks are self-paced and designed around 6–8 hours a week. The pause button stops billing and deadlines whenever life interferes.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What if my project does not pass?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>You get specific written feedback and one free resubmission per project. Mentors fail about 15% of first submissions — that is the system working, not breaking.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is financial aid actually available?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Every program reserves aid seats covering 50–100% of tuition. The application takes fifteen minutes and decisions arrive within a week.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-banner-sec">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Your portfolio starts with module one</h2>
+          <p>Audit free today. Upgrade when you are ready for a mentor to read your work.</p>
+          <a class="btn btn-invert btn-lg" href="#features">Browse the programs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2V5z"/><path d="M20 19H6"/></svg></span>Scholarpath</a>
+          <p>Mentor-graded career certificates in data, design and operations. Evidence beats badges.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Programs links">
+          <h4>Programs</h4>
+          <a href="#" data-demo-link>Data Analytics</a>
+          <a href="#" data-demo-link>Product Design</a>
+          <a href="#" data-demo-link>Web Development</a>
+          <a href="#" data-demo-link>All tracks</a>
+        </nav>
+        <nav class="footer-col" aria-label="Learners links">
+          <h4>Learners</h4>
+          <a href="#" data-demo-link>Tuition + aid</a>
+          <a href="#" data-demo-link>Outcomes report</a>
+          <a href="#" data-demo-link>Portfolio gallery</a>
+          <a href="#" data-demo-link>Community</a>
+        </nav>
+        <nav class="footer-col" aria-label="Partners links">
+          <h4>Partners</h4>
+          <a href="#" data-demo-link>Hire graduates</a>
+          <a href="#" data-demo-link>Become a mentor</a>
+          <a href="#" data-demo-link>About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Scholarpath Education. All rights reserved.</p>
+        <p>Founded by two ex-teachers.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

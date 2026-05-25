@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pipewise — CRM Software</title>
+  <meta name="description" content="Pipewise is the no-clutter CRM for small B2B teams: pipeline, follow-ups and forecasts without the admin tax.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%232563EB'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EP%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#FFFFFF">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>Product news:</strong> two-way email sync is live on every tier.</p>
+      <a class="announce-link" href="contact.html">See what&rsquo;s new</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 7.5-8.5"/><path d="M15.5 6.5H21V12"/></svg></span>Pipewise</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="features.html#compare">Compare</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Start free</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-center" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-badge"><i aria-hidden="true"></i>Set up in one afternoon — imports included</span>
+          <h1 id="heroTitle">The CRM your sales team will actually update.</h1>
+          <p class="lead">Pipewise logs calls, emails and next steps automatically, so your pipeline reflects reality — not whoever remembered to do admin on Friday.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Start free trial</a>
+          <a class="btn btn-ghost btn-lg" href="#features">See the pipeline</a>
+        </div>
+        <p class="hero-note">14 days free · Import from any CRM or spreadsheet</p>
+        </div>
+        <div class="mock-browser reveal" role="img" aria-label="Stylized pipeline preview of the Pipewise app">
+          <div class="mock-top" aria-hidden="true">
+            <span class="mock-dot r"></span><span class="mock-dot y"></span><span class="mock-dot g"></span>
+            <span class="mock-url">pipewise.app/pipeline/q3</span>
+          </div>
+          <div class="pipe" aria-hidden="true">
+            <div class="pipe-head"><span>Deal</span><span>Progress</span><span>Stage</span><span>Value</span></div>
+            <div class="pipe-row">
+              <span class="pipe-co"><span class="pipe-ava"></span>Harbor Logistics</span>
+              <span class="pipe-bar"><span style="width:78%"></span></span>
+              <span class="stage ">Proposal</span>
+              <span class="pipe-val">$24,000</span>
+            </div>
+            <div class="pipe-row">
+              <span class="pipe-co"><span class="pipe-ava"></span>Britefield Co.</span>
+              <span class="pipe-bar"><span style="width:45%"></span></span>
+              <span class="stage demo">Demo</span>
+              <span class="pipe-val">$9,500</span>
+            </div>
+            <div class="pipe-row">
+              <span class="pipe-co"><span class="pipe-ava"></span>Atlas Mfg.</span>
+              <span class="pipe-bar"><span style="width:92%"></span></span>
+              <span class="stage won">Won</span>
+              <span class="pipe-val">$31,200</span>
+            </div>
+            <div class="pipe-row">
+              <span class="pipe-co"><span class="pipe-ava"></span>Junesmith Ltd.</span>
+              <span class="pipe-bar"><span style="width:60%"></span></span>
+              <span class="stage ">Proposal</span>
+              <span class="pipe-val">$12,800</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Trusted by">
+      <div class="container">
+        <p class="logos-title">Trusted by 4,000 small B2B teams</p>
+        <div class="logos-row">
+          <span class="logo-word">Harborlight</span><span class="logo-word">Britefield</span><span class="logo-word">Atlas Manufacturing</span><span class="logo-word">Quayside Group</span><span class="logo-word">Fenwick Supply</span><span class="logo-word">Loomline</span>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The problem</p>
+        <h2>Your CRM is a diary your team stopped writing</h2>
+        <p class="lead">When updating the CRM is a chore, the pipeline becomes fiction — and forecasts become improv.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Heavy CRM</span><h3>The admin tax</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Reps spend 5+ hours a week on data entry instead of selling.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Deals go quiet because follow-ups live in someone's head.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Forecast meetings start with 'so what is actually real here?'</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">Pipewise</span><h3>A pipeline that updates itself</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Email and calendar sync logs touchpoints automatically.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Every deal must have a next step — Pipewise enforces it kindly.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Forecasts build from stage history, not optimism.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Features</p>
+        <h2>Everything a small sales team needs. Nothing else</h2>
+        <p class="lead">We say no to feature requests for a living. Here is what made the cut.</p>
+      </div>
+        <div class="features-grid">
+          <article class="f-card reveal" data-d="0">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 7.5-8.5"/><path d="M15.5 6.5H21V12"/></svg></span><h3>Visual pipeline</h3>
+            <p>Drag deals through stages you define. Value, age and next step visible without clicking.</p>
+          </article>
+          <article class="f-card reveal" data-d="1">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></span><h3>Auto-logged activity</h3>
+            <p>Emails, meetings and calls attach themselves to the right deal. Reps confirm, not type.</p>
+          </article>
+          <article class="f-card reveal" data-d="2">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 19.5a2.2 2.2 0 0 0 4 0"/></svg></span><h3>Next-step enforcement</h3>
+            <p>No deal sits without an owner and a dated next step. Stale deals surface daily, politely.</p>
+          </article>
+          <article class="f-card reveal" data-d="0">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V11M10 20V5M16 20v-7M20 20H3"/></svg></span><h3>Honest forecasting</h3>
+            <p>Win probability from your team's actual stage history — not vibes-based percentages.</p>
+          </article>
+          <article class="f-card reveal" data-d="1">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20c0-3.4 2.6-5.4 6-5.4s6 2 6 5.4"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M17.5 14.6c2.4.4 3.5 2.1 3.5 4.4"/></svg></span><h3>Shared context</h3>
+            <p>Notes, files and a full timeline per company, so handoffs and vacations stop losing deals.</p>
+          </article>
+          <article class="f-card reveal" data-d="2">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9L19 19M19 5l-2.1 2.1M7.1 16.9L5 19"/></svg></span><h3>Two-click automations</h3>
+            <p>When deal moves to Proposal, create a task and notify finance — built in plain sentences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="compare">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The switch</p>
+        <h2>Spreadsheet sales vs. Pipewise sales</h2>
+      </div>
+        <div data-compare>
+          <div class="compare-switch" role="group" aria-label="Before and after comparison">
+            <button class="cmp-btn is-active" type="button" aria-pressed="true">Spreadsheet era</button>
+            <button class="cmp-btn" type="button" aria-pressed="false">Pipewise era</button>
+          </div>
+          <div class="compare-panes">
+            <div class="compare-pane pane-before is-active">
+              <h3>How Q2 actually went</h3>
+              <ul class="cmp-list">
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Pipeline tab last updated 19 days ago, by the intern.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Two proposals expired because follow-ups lived in heads.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Forecast: a number Dave felt good about on Tuesday.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>New rep onboarding: 'read these 14 tabs, good luck.'</span></li>
+              </ul>
+            </div>
+            <div class="compare-pane pane-after">
+              <h3>How Q3 is going</h3>
+              <ul class="cmp-list">
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Pipeline updates itself from email and calendar in real time.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Zero deals without a dated next step — the system insists.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Forecast built from 18 months of real stage conversion data.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>New rep shipped her first proposal on day 3 with full context.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Benefits</p>
+        <h2>What changes in the first month</h2>
+      </div>
+        <div class="benefit-rows">
+          <div class="benefit-row reveal">
+            <div class="benefit-art art-a" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Selling time comes back</h3>
+              <p>Teams reclaim about four hours per rep per week when logging happens automatically.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Auto-captured emails + meetings</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>One-tap call logging</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Bulk import that maps itself</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="benefit-row flip reveal">
+            <div class="benefit-art art-b" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Deals stop going quiet</h3>
+              <p>The daily stale-deal digest revives opportunities before they die of neglect.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Next-step enforcement</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Quiet-deal alerts</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Handoff-proof timelines</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="benefit-row reveal">
+            <div class="benefit-art art-c" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Forecasts earn trust</h3>
+              <p>Stage-history math replaces gut feel, so leadership plans on numbers that hold up.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Probability from real conversions</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Slippage warnings</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Board-ready monthly view</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Customer proof</p>
+        <h2>Small teams, serious pipelines</h2>
+      </div>
+        <div class="testi-grid">
+          <figure class="t-card reveal" data-d="0"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“We moved 1,400 deals from a spreadsheet in one afternoon. A month later our close rate was up 22% — purely from follow-ups not falling through.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">HF</span><span><b>Hugo Ferreira</b><i>Sales Lead, Quayside Group</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="1"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“The next-step rule sounded annoying. It is now the reason nothing dies quietly in our pipeline.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">BS</span><span><b>Becca Stone</b><i>Founder, Fenwick Supply</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="2"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“First forecast that matched reality within 5%. My CFO asked if I had hired an analyst.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">MB</span><span><b>Mathias Berg</b><i>MD, Loomline</i></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Per seat, no surprises</h2>
+        <p class="lead">All features on every paid plan — tiers differ by scale, not by hostage-taking.</p>
+      </div>
+        <div class="billing-bar">
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button type="button" class="bill-btn is-active" data-bill="a" aria-pressed="true">Monthly</button>
+            <button type="button" class="bill-btn" data-bill="b" aria-pressed="false">Yearly<span class="save-badge">Save 20%</span></button>
+          </div>
+          <p class="bill-note" data-a="Billed monthly per seat. Cancel anytime." data-b="Billed yearly per seat — about two months free.">Billed monthly per seat. Cancel anytime.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Starter</h3><p class="plan-blurb">For the first two salespeople.</p>
+            <p class="price-line"><span class="amount" data-a="$15" data-b="$12">$15</span><span class="per">/seat/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>1 pipeline, 2 seats</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Auto-logged activity</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Next-step enforcement</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Email support</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Start free trial</a>
+          <p class="plan-note">14-day free trial &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Best for teams</span>
+            <h3 class="plan-name">Team</h3><p class="plan-blurb">For growing B2B teams.</p>
+            <p class="price-line"><span class="amount" data-a="$39" data-b="$31">$39</span><span class="per">/seat/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited pipelines</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Honest forecasting</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Two-click automations</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Shared inboxes</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Priority support</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Start free trial</a>
+          <p class="plan-note">14-day free trial &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Scale</h3><p class="plan-blurb">For multi-team operations.</p>
+            <p class="price-line"><span class="amount" data-a="$79" data-b="$63">$79</span><span class="per">/seat/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Everything in Team</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Roles + territories</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>API + webhooks</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>SSO + audit log</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Onboarding specialist</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Talk to sales</a>
+          <p class="plan-note">14-day free trial &middot; Cancel anytime</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Before you switch</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How painful is migrating from our current CRM?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Less than you fear. Import wizards for the big CRMs and any CSV map your fields automatically, keep deal history, and flag duplicates. Median migration: one afternoon, including the coffee.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Does auto-logging read all our email?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>It matches messages to known deal contacts and logs those only. Personal mail is never stored, and any rep can exclude a thread with one click.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can we customize stages and fields?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Fully — stages, fields, currencies and probability windows are all editable. What you cannot do is bury the pipeline under 400 custom objects. That is a feature.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What does next-step enforcement actually do?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Whenever a deal is updated, Pipewise asks for the next step and a date — two clicks. Deals whose dates pass appear in the morning digest until someone acts. Gentle, relentless.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is there a long-term contract?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>No. Monthly plans cancel anytime; yearly plans simply do not renew if you leave. Your data exports completely either way.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-banner-sec">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Move your pipeline in one afternoon</h2>
+          <p>Import your deals, invite the team, and watch the first self-updating week happen.</p>
+          <a class="btn btn-invert btn-lg" href="#pricing">Start your free trial</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 7.5-8.5"/><path d="M15.5 6.5H21V12"/></svg></span>Pipewise</a>
+          <p>The no-clutter CRM for small B2B teams. Real pipeline, automatic logging, honest forecasts.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="features.html#integrations">Integrations</a>
+          <a href="#" data-demo-link>Changelog</a>
+        </nav>
+        <nav class="footer-col" aria-label="Compare links">
+          <h4>Compare</h4>
+          <a href="#" data-demo-link>vs. spreadsheets</a>
+          <a href="#" data-demo-link>vs. big CRM</a>
+          <a href="#" data-demo-link>Switching guide</a>
+          <a href="#" data-demo-link>Import tools</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="contact.html">Support</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Pipewise Software. All rights reserved.</p>
+        <p>CRM, minus the admin tax.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

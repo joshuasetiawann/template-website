@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brightreel — Creator Tool</title>
+  <meta name="description" content="Brightreel turns one long video into a week of captioned clips, scheduled everywhere your audience scrolls.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='18'%20fill='%238B5CF6'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EB%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#F6F1FE">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h3l2-2.5h6L17 8h3a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 20 20H4a1.5 1.5 0 0 1-1.5-1.5v-9A1.5 1.5 0 0 1 4 8z"/><circle cx="12" cy="13.5" r="3.5"/></svg></span>Brightreel</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="features.html#integrations">Integrations</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Clip something</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-bold" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <span class="shape shape-ring" aria-hidden="true"></span>
+      <span class="shape shape-dot-grid" aria-hidden="true"></span>
+      <span class="shape shape-tri" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-badge"><i aria-hidden="true"></i>✦ Used by 40,000 creators</span>
+          <h1 id="heroTitle">One video in. A <span class="accent">week of content</span> out.</h1>
+          <p class="lead">Brightreel finds the best 30 seconds of everything you record, captions them in your style, and schedules them everywhere — while you make the next thing.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Try it free</a>
+          <a class="btn btn-ghost btn-lg" href="#features">Watch a 60-sec demo</a>
+        </div>
+        <p class="hero-note">Free plan: 4 clips a month, watermark-free</p>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Social proof">
+      <div class="container">
+        <p class="logos-title">Loved by creators at</p>
+        <div class="logos-row">
+          <span class="logo-word">Reelhouse</span><span class="logo-word">Studio Nines</span><span class="logo-word">Loopcast</span><span class="logo-word">Framewell</span><span class="logo-word">The Cutroom</span>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The grind</p>
+        <h2>You became a creator to create. Not to crop</h2>
+        <p class="lead">Repurposing is the tax on every upload. Brightreel pays it for you.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Sunday night</span><h3>The repurposing treadmill</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Three hours of cropping, captioning and exporting per upload.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Each platform wants its own ratio, length and caption style.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Your best moments stay buried at minute 34 of the VOD.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">With Brightreel</span><h3>Upload once, ship all week</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Highlight detection pulls your 6 strongest moments automatically.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Captions, ratios and hooks adapt per platform in one pass.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>A week of posts lands on the calendar in about four minutes.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The toolkit</p>
+        <h2>Six tools, zero timeline anxiety</h2>
+        <p class="lead">Everything between record and posted, handled.</p>
+      </div>
+        <div class="icon-cards">
+          <article class="icon-card reveal" data-d="0">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z"/></svg></span><h3>Highlight finder</h3>
+            <p>Brightreel scores every moment for hooks, laughs and payoff — then drafts clips from the top six.</p>
+          </article>
+          <article class="icon-card reveal" data-d="1">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l4.5-1L19.5 8a2.1 2.1 0 0 0-3-3L5.5 15.5 4 20z"/><path d="M13.5 6.5l3 3"/></svg></span><h3>Style-locked captions</h3>
+            <p>Your fonts, colors and emoji habits saved as a style kit, applied to every clip automatically.</p>
+          </article>
+          <article class="icon-card reveal" data-d="2">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13.5l9 5 9-5"/></svg></span><h3>Ratio remix</h3>
+            <p>Every clip exports in 9:16, 1:1 and 16:9 with smart reframing that keeps faces centered.</p>
+          </article>
+          <article class="icon-card reveal" data-d="0">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 3v4M16 3v4"/></svg></span><h3>Auto-scheduler</h3>
+            <p>Drafts drop into a weekly calendar tuned to when your audience actually watches.</p>
+          </article>
+          <article class="icon-card reveal" data-d="1">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4V5z"/></svg></span><h3>Hook writer</h3>
+            <p>Three opening-line options per clip, written from your transcript in your voice.</p>
+          </article>
+          <article class="icon-card reveal" data-d="2">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 7.5-8.5"/><path d="M15.5 6.5H21V12"/></svg></span><h3>Clip scoreboard</h3>
+            <p>See which clips drove follows and watch-time, and teach the finder what your audience loves.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="integrations">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Publish everywhere</p>
+        <h2>Connected to every stage you perform on</h2>
+        <p class="lead">One approval posts natively — no watermark roulette.</p>
+      </div>
+        <div class="integration-grid">
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>TikTok</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>YouTube Shorts</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Instagram Reels</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>X / Twitter</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>LinkedIn</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Twitch</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Podcast RSS</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Webhook out</div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+        <div class="checklist-split">
+          <div class="reveal">
+            <p class="kicker">The payoff</p>
+            <h2>Get your Sundays back</h2>
+            <p class="lead">Creators on Brightreel ship 5× the clips in a tenth of the time — and the scoreboard keeps making the picks smarter.</p>
+          </div>
+          <div class="check-card reveal" data-d="1">
+            <ul class="check-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>~3 hours saved per long video</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Average 5.2 clips shipped weekly</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Style kit keeps every clip on-brand</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Scheduler learns your audience's clock</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>You approve everything before it posts</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Creator wall</p>
+        <h2>From the people shipping daily</h2>
+      </div>
+        <div class="proof-head reveal">
+          <div class="face-pile"><span class="avatar av-a" aria-hidden="true">KB</span><span class="avatar av-b" aria-hidden="true">DC</span><span class="avatar av-c" aria-hidden="true">JP</span><span class="avatar av-d" aria-hidden="true">SA</span></div>
+          <div class="proof-chips"><span class="proof-chip"><b>40k</b> creators on board</span><span class="proof-chip"><b>5×</b> more clips shipped</span><span class="proof-chip"><b>4 min</b> upload to scheduled</span></div>
+        </div>
+        <div class="proof-grid">
+          <figure class="t-card reveal" data-d="0"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“I batch-record Mondays and Brightreel fills my whole week. My clips channel grew 60k followers in a quarter while I slept more.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">KB</span><span><b>Kayla Brooks</b><i>Podcaster · 210k followers</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="1">
+            <blockquote>“The highlight finder picked a throwaway moment I would have cut. It did 2.1M views. I no longer trust my own taste.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">DC</span><span><b>Dario Conti</b><i>Streamer · 88k followers</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="2"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“Style kit means my editor and I stopped arguing about fonts. Everything just looks like us now.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">JP</span><span><b>June Park</b><i>Educator · 145k followers</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="0">
+            <blockquote>“Four minutes from upload to a scheduled week. I checked the timer because I did not believe it either.”</blockquote>
+            <figcaption><span class="avatar av-d" aria-hidden="true">SA</span><span><b>Sam Adeyemi</b><i>Coach · 52k followers</i></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Plans that scale with your posting habit</h2>
+        <p class="lead">Every clip watermark-free, on every plan. Yes, even Free.</p>
+      </div>
+        <div class="billing-bar">
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button type="button" class="bill-btn is-active" data-bill="a" aria-pressed="true">Monthly</button>
+            <button type="button" class="bill-btn" data-bill="b" aria-pressed="false">Yearly<span class="save-badge">Save 20%</span></button>
+          </div>
+          <p class="bill-note" data-a="Billed monthly. Cancel whenever." data-b="Billed yearly — about two months free.">Billed monthly. Cancel whenever.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Spark</h3><p class="plan-blurb">For testing the waters.</p>
+            <p class="price-line"><span class="amount" data-a="$0" data-b="$0">$0</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>4 clips per month</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Highlight finder</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>1 style kit</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Manual posting</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Start free</a>
+          <p class="plan-note">Cancel anytime &middot; Exports stay yours</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Creator favorite</span>
+            <h3 class="plan-name">Creator</h3><p class="plan-blurb">For the weekly publisher.</p>
+            <p class="price-line"><span class="amount" data-a="$12" data-b="$9.50">$12</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>40 clips per month</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Auto-scheduler, 3 platforms</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Hook writer</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Clip scoreboard</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Priority rendering</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Go Creator</a>
+          <p class="plan-note">Cancel anytime &middot; Exports stay yours</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Studio</h3><p class="plan-blurb">For teams and editors.</p>
+            <p class="price-line"><span class="amount" data-a="$29" data-b="$23">$29</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited clips</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>All platforms + webhooks</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>3 seats, shared kits</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Approval workflow</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>API access</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Go Studio</a>
+          <p class="plan-note">Cancel anytime &middot; Exports stay yours</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Asked in every creator Discord</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How does the highlight finder actually pick moments?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>It transcribes your video, then scores segments on hook strength, emotional spikes, laughter, and topic completeness. You always see why a clip was picked — and your edits teach it your taste.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Will my clips look like everyone else's?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>No — that is what style kits prevent. Your fonts, colors, caption rhythm and emoji habits are saved once and applied everywhere. Two creators using Brightreel look nothing alike.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Does Brightreel post for me or just export?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Both. Connect your accounts and approved clips post natively at scheduled times; or export files and captions to publish manually. Nothing ever posts without your approval.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What video formats and lengths work?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>MP4, MOV and direct imports of streams or podcast recordings up to four hours. Brightreel handles multi-speaker audio and messy game footage fine.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Do clips have a watermark on the free plan?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>No watermarks on any plan, ever. We would rather you outgrow Free because you love shipping, not because we graffitied your content.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-bold">
+      <div class="container">
+        <h2>Your last upload is full of clips</h2>
+        <p>Drop in one video and watch Brightreel draft your week in four minutes — free.</p>
+        <div class="hero-actions">
+          <a class="btn btn-invert btn-lg" href="#pricing">Clip my last video</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h3l2-2.5h6L17 8h3a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 20 20H4a1.5 1.5 0 0 1-1.5-1.5v-9A1.5 1.5 0 0 1 4 8z"/><circle cx="12" cy="13.5" r="3.5"/></svg></span>Brightreel</a>
+          <p>The clip studio for creators. One video in, a captioned, scheduled week out.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="features.html#integrations">Integrations</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>Changelog</a>
+        </nav>
+        <nav class="footer-col" aria-label="Creators links">
+          <h4>Creators</h4>
+          <a href="#" data-demo-link>Showcase</a>
+          <a href="#" data-demo-link>Style kit gallery</a>
+          <a href="#" data-demo-link>Creator guide</a>
+          <a href="#" data-demo-link>Affiliates</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="#" data-demo-link>Privacy</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Brightreel Media. All rights reserved.</p>
+        <p>Made between takes.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="sticky-cta" data-stickycta>
+    <p class="sticky-cta-copy"><strong>Edit your first reel tonight</strong><span>Free plan &middot; no watermark</span></p>
+    <a class="btn btn-primary" href="contact.html">Start free</a>
+  </div>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

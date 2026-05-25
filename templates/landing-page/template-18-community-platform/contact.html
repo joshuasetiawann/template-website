@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Talk to the Glowroom team · Glowroom</title>
+  <meta name="description" content="Reach Glowroom support and partnerships, ask about migrating a community, or apply to the Creator Fund. We reply within one business day.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='30'%20fill='%23EC4899'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EG%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#150F1E">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>Creator Fund:</strong> round two applications are open.</p>
+      <a class="announce-link" href="contact.html">Apply now</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20c0-3.4 2.6-5.4 6-5.4s6 2 6 5.4"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M17.5 14.6c2.4.4 3.5 2.1 3.5 4.4"/></svg></span>Glowroom</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html#compare">Why Glowroom</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html" aria-current="page">Open your room</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="crumb-list">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
+      </div>
+    </nav>
+    <section class="page-hero" aria-labelledby="phTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <span class="hero-badge"><i aria-hidden="true"></i>We reply within one business day</span>
+        <h1 id="phTitle">Let's build your community home</h1>
+        <p class="lead">Migrating from Discord, setting up paid tiers or applying to the Creator Fund — the right person here will help.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-wrap reveal">
+            <h2>Send us a message</h2>
+            <p class="form-intro">Tell us about your community and where it lives today. A human reads every note.</p>
+            <form class="contact-form" data-contact-form novalidate>
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" autocomplete="name" required>
+                <span class="field-err" data-err-for="cf-name" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="cf-email">Work email</label>
+                <input type="email" id="cf-email" name="email" autocomplete="email" required>
+                <span class="field-err" data-err-for="cf-email" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="cf-company">Company <span class="opt">(optional)</span></label>
+                <input type="text" id="cf-company" name="company" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label for="cf-topic">How can we help?</label>
+                <select id="cf-topic" name="topic">
+                  <option>I'm starting a community</option>
+                  <option>Help with my account</option>
+                  <option>Migrating from another platform</option>
+                  <option>Creator Fund</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="5" required></textarea>
+                <span class="field-err" data-err-for="cf-message" role="alert"></span>
+              </div>
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <p class="form-success" data-form-success role="status" aria-live="polite" hidden>Thanks — your message is in. Expect a reply within one business day.</p>
+            </form>
+          </div>
+          <div class="contact-info reveal" data-d="1">
+            <div class="info-cards">
+              <article class="info-card">
+                <span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 13a8 8 0 0 1 16 0"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M20 19a4 4 0 0 1-4 3h-2"/></svg></span>
+                <h3>Support</h3>
+                <p>Spaces, events, memberships and anything about your account.</p>
+                <p class="info-line">help@glowroom.com</p>
+              </article>
+              <article class="info-card">
+                <span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></span>
+                <h3>Partnerships</h3>
+                <p>The Creator Fund, partnerships and press.</p>
+                <p class="info-line">partners@glowroom.com</p>
+              </article>
+            </div>
+            <div class="demo-note">
+              <h3>Curious about the Creator Fund?</h3>
+              <p>Round two applications are open — we will walk you through what it offers.</p>
+              <a class="btn btn-ghost" href="pricing.html">See pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="offices" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Find us</p>
+        <h2>Where Glowroom works from</h2>
+        <p class="lead">Remote-first and warm by default.</p>
+      </div>
+        <div class="office-grid">
+          <article class="office-card reveal">
+            <h3>Brooklyn</h3>
+            <p>Williamsburg, Brooklyn, NY, USA</p>
+            <p class="info-line">Community & growth</p>
+          </article>
+          <article class="office-card reveal">
+            <h3>Lisbon</h3>
+            <p>Alcântara, Lisbon, Portugal</p>
+            <p class="info-line">Engineering</p>
+          </article>
+          <article class="office-card reveal">
+            <h3>Remote</h3>
+            <p>A team across 10 time zones</p>
+            <p class="info-line">Always-on support</p>
+          </article>
+        </div>
+        <div class="contact-social">
+          <p>Find us elsewhere</p>
+          <div class="footer-social">
+            <a href="#" data-demo-link aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="#" data-demo-link aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="#" data-demo-link aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="#" data-demo-link aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Quick answers</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How fast will I hear back?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Within one business day from both support and partnerships.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can you help me migrate?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Yes — tell us where your community lives and we will help bring people over warmly.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How do I apply to the Creator Fund?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Choose Creator Fund above and we will send the round-two application.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20c0-3.4 2.6-5.4 6-5.4s6 2 6 5.4"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M17.5 14.6c2.4.4 3.5 2.1 3.5 4.4"/></svg></span>Glowroom</a>
+          <p>The community platform creators own. Calm spaces, real events, members who come back.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>Migrations</a>
+          <a href="#" data-demo-link>Changelog</a>
+        </nav>
+        <nav class="footer-col" aria-label="Creators links">
+          <h4>Creators</h4>
+          <a href="#" data-demo-link>Room gallery</a>
+          <a href="#" data-demo-link>Playbooks</a>
+          <a href="#" data-demo-link>Creator stories</a>
+          <a href="#" data-demo-link>Affiliates</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="#" data-demo-link>Trust + safety</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Glowroom Inc.. All rights reserved.</p>
+        <p>Warm by default.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

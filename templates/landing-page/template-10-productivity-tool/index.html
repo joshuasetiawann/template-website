@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plannery — Productivity Tool</title>
+  <meta name="description" content="Plannery is the calm task board that plans your team week automatically and protects focus time by default.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23F59E0B'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23231903'%3EP%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#FFFFFF">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>New:</strong> 40+ starter board templates just landed.</p>
+      <a class="announce-link" href="contact.html">Browse templates</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 3v4M16 3v4"/></svg></span>Plannery</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html#how">How it works</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Try Plannery free</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-center" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-badge"><i aria-hidden="true"></i>Now planning 60,000 team weeks</span>
+          <h1 id="heroTitle">The week plans itself. You just work it.</h1>
+          <p class="lead">Plannery turns your backlog into a realistic weekly board — balanced across the team, with focus blocks protected before meetings can eat them.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Start free</a>
+          <a class="btn btn-ghost btn-lg" href="#how">Watch the 2-min tour</a>
+        </div>
+        <p class="hero-note">Free for teams of 3 · No credit card</p>
+        </div>
+        <div class="mock-browser reveal" role="img" aria-label="Stylized board preview of the Plannery app">
+          <div class="mock-top" aria-hidden="true">
+            <span class="mock-dot r"></span><span class="mock-dot y"></span><span class="mock-dot g"></span>
+            <span class="mock-url">plannery.app/board/week-24</span>
+          </div>
+          <div class="kanban" aria-hidden="true">
+            <div class="kb-col">
+              <div class="kb-head"><span>Monday</span><span class="kb-count">3</span></div>
+              <div class="kb-card"><span class="kb-tag"></span><span class="kb-line"></span><span class="kb-line short"></span></div>
+              <div class="kb-card"><span class="kb-tag"></span><span class="kb-line"></span><span class="kb-line short"></span></div>
+              <div class="kb-card"><span class="kb-tag"></span><span class="kb-line"></span><span class="kb-line short"></span></div>
+            </div>
+            <div class="kb-col">
+              <div class="kb-head"><span>Midweek</span><span class="kb-count">4</span></div>
+              <div class="kb-card"><span class="kb-tag"></span><span class="kb-line"></span><span class="kb-line short"></span></div>
+              <div class="kb-card"><span class="kb-tag"></span><span class="kb-line"></span><span class="kb-line short"></span></div>
+              <div class="kb-card"><span class="kb-tag"></span><span class="kb-line"></span><span class="kb-line short"></span></div>
+              <div class="kb-card"><span class="kb-tag"></span><span class="kb-line"></span><span class="kb-line short"></span></div>
+            </div>
+            <div class="kb-col">
+              <div class="kb-head"><span>Shipped</span><span class="kb-count">5</span></div>
+              <div class="kb-card"><span class="kb-tag"></span><span class="kb-line"></span><span class="kb-line short"></span></div>
+              <div class="kb-card"><span class="kb-tag"></span><span class="kb-line"></span><span class="kb-line short"></span></div>
+              <div class="kb-card"><span class="kb-tag"></span><span class="kb-line"></span><span class="kb-line short"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Trusted by">
+      <div class="container">
+        <p class="logos-title">Calm teams at</p>
+        <div class="logos-row">
+          <span class="logo-word">Fernworks</span><span class="logo-word">Copperline</span><span class="logo-word">Studio Brace</span><span class="logo-word">Tildepath</span><span class="logo-word">Quietloop</span><span class="logo-word">Marblepoint</span>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The problem</p>
+        <h2>Your task list is a wish list wearing a deadline</h2>
+        <p class="lead">Boards fill, weeks overflow, and Friday becomes an apology. Plannery plans with capacity math, not optimism.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Optimistic planning</span><h3>The overcommit spiral</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Sprint holds 60 hours of work; the week holds 31 after meetings.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Urgent tasks land on whoever replied last, not who has room.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Focus time exists in theory and dies by calendar invite.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">Capacity planning</span><h3>Weeks that add up</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Plannery reads real availability and fills to 80%, never 120%.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>New work routes to the teammate with actual capacity.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Focus blocks are booked first and defended automatically.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">How it works</p>
+        <h2>Sunday-night planning, retired in three steps</h2>
+        <p class="lead">Connect, set capacity, accept the plan. Tuesday-you will be grateful.</p>
+      </div>
+        <div class="steps-grid">
+          <article class="step-card reveal" data-d="0">
+            <span class="step-n" aria-hidden="true">1</span><h3>Connect your backlog</h3>
+            <p>Import from your existing tracker or start fresh. Tasks keep their estimates, owners and links.</p>
+          </article>
+          <article class="step-card reveal" data-d="1">
+            <span class="step-n" aria-hidden="true">2</span><h3>Set honest capacity</h3>
+            <p>Each teammate marks hours and meeting load. Plannery learns the difference between a 40-hour week and a real one.</p>
+          </article>
+          <article class="step-card reveal" data-d="2">
+            <span class="step-n" aria-hidden="true">3</span><h3>Accept your week</h3>
+            <p>Every Friday at 4 PM, next week's draft board arrives. Drag to adjust, hit accept, go enjoy the weekend.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Features</p>
+        <h2>Everything a calm week needs</h2>
+        <p class="lead">Six tools that turn good intentions into finished Fridays.</p>
+      </div>
+        <div class="features-grid">
+          <article class="f-card reveal" data-d="0">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 3v4M16 3v4"/></svg></span><h3>Auto-planned weeks</h3>
+            <p>Friday drafts of next week, balanced by capacity and deadlines — accept, tweak or regenerate.</p>
+          </article>
+          <article class="f-card reveal" data-d="1">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5c0 4.6-3 7.6-7 9-4-1.4-7-4.4-7-9V6l7-3z"/></svg></span><h3>Focus guard</h3>
+            <p>Two-hour deep work blocks are scheduled first and flagged when meetings try to land on them.</p>
+          </article>
+          <article class="f-card reveal" data-d="2">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13.5l9 5 9-5"/></svg></span><h3>Realistic boards</h3>
+            <p>Columns are days, not vague stages. If Monday is full, Plannery says so out loud.</p>
+          </article>
+          <article class="f-card reveal" data-d="0">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></span><h3>Smart rebalancing</h3>
+            <p>Someone out sick? One click redistributes their week by skill and capacity, not alphabetically.</p>
+          </article>
+          <article class="f-card reveal" data-d="1">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 7.5-8.5"/><path d="M15.5 6.5H21V12"/></svg></span><h3>Weekly drift report</h3>
+            <p>Mondays show planned vs. done with zero shame mechanics — just patterns you can fix.</p>
+          </article>
+          <article class="f-card reveal" data-d="2">
+            <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 19.5a2.2 2.2 0 0 0 4 0"/></svg></span><h3>Quiet-by-default alerts</h3>
+            <p>One daily digest instead of forty pings. Urgency is reserved for actual emergencies.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Benefits</p>
+        <h2>What changes by week three</h2>
+      </div>
+        <div class="benefit-rows">
+          <div class="benefit-row reveal">
+            <div class="benefit-art art-a" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Fridays stop being apology day</h3>
+              <p>When the plan matches capacity, finished becomes the default. Teams report shipping the same amount with far less heat.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>80% capacity rule built in</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Deadlines met without hero sprints</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Honest weekly drift trend</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="benefit-row flip reveal">
+            <div class="benefit-art art-b" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Deep work survives the calendar</h3>
+              <p>Focus guard books concentration first, so the maker schedule stops losing to the meeting schedule.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>2-hour blocks defended daily</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Meeting-collision warnings</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Per-person quiet hours</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="benefit-row reveal">
+            <div class="benefit-art art-c" aria-hidden="true"></div>
+            <div class="benefit-copy">
+              <h3>Managers see weather, not surveillance</h3>
+              <p>The drift report shows load and risk across the team without keystroke-counting nonsense.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Capacity heatmap</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>At-risk deadline flags</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>No activity tracking, ever</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Calm teams talking</p>
+        <h2>Less heat, same shipping</h2>
+      </div>
+        <div class="testi-grid">
+          <figure class="t-card reveal" data-d="0"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“We stopped doing sprint planning meetings entirely. The Friday draft is right 90% of the time and takes four minutes to fix.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">GS</span><span><b>Greta Sørensen</b><i>Engineering Manager, Fernworks</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="1"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“Focus guard is the feature I would defend with my life. My calendar finally has structural integrity.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">MB</span><span><b>Marco Bianchi</b><i>Senior Designer, Studio Brace</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="2"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“The drift report ended our estimate theater. We plan 30% less and finish 30% more. Math is humbling.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">TO</span><span><b>Tess Okonkwo</b><i>Founder, Quietloop</i></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Calm pricing, too</h2>
+        <p class="lead">Per person, per month. Every plan includes unlimited boards.</p>
+      </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Free</h3><p class="plan-blurb">For tiny teams getting organized.</p>
+            <p class="price-line"><span class="amount">$0</span><span class="per">up to 3 people</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Auto-planned weeks</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>1 board, 4-week history</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Focus guard (1 block/day)</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Community support</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Start free</a>
+          <p class="plan-note">14-day free trial &middot; No card required</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Team favorite</span>
+            <h3 class="plan-name">Pro</h3><p class="plan-blurb">For teams who ship every week.</p>
+            <p class="price-line"><span class="amount">$8</span><span class="per">/person/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited boards + history</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Full focus guard</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Smart rebalancing</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Drift reports</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Calendar integrations</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Start 14-day trial</a>
+          <p class="plan-note">14-day free trial &middot; No card required</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Business</h3><p class="plan-blurb">For multi-team orgs.</p>
+            <p class="price-line"><span class="amount">$16</span><span class="per">/person/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Everything in Pro</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Cross-team capacity view</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>SSO + admin controls</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Priority support</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>99.9% uptime SLA</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Talk to sales</a>
+          <p class="plan-note">14-day free trial &middot; No card required</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Reasonable questions</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How is this different from a normal kanban board?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Normal boards store intentions; Plannery checks them against reality. It knows your team's actual hours, books focus time first and refuses to schedule a 60-hour Monday.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can it replace our current tracker?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Many teams switch fully; others keep their tracker as the backlog and let Plannery own the week. Two-way sync keeps both honest either way.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What does the AI actually decide?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Only drafts. The Friday plan is a suggestion built from capacity, deadlines and skills — humans accept, edit or regenerate it. Nothing assigns silently.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Does Plannery track what my team does all day?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>No. There is no activity monitoring, screenshot nonsense or keystroke logging. Drift reports compare planned vs. completed tasks, nothing more.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What happens after the free trial?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>You drop to the Free plan automatically — no card on file, no surprise charge. Boards beyond the first become read-only until you upgrade.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-banner-sec">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Give your team a week that adds up</h2>
+          <p>Set up takes eleven minutes. The first auto-planned Friday arrives this week.</p>
+          <a class="btn btn-invert btn-lg" href="#pricing">Try Plannery free</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 3v4M16 3v4"/></svg></span>Plannery</a>
+          <p>The calm task board that plans your team week automatically and protects focus by default.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="features.html#integrations">Integrations</a>
+          <a href="#" data-demo-link>What's new</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Calm work blog</a>
+          <a href="#" data-demo-link>Careers</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer-col" aria-label="Resources links">
+          <h4>Resources</h4>
+          <a href="contact.html">Help center</a>
+          <a href="#" data-demo-link>API docs</a>
+          <a href="#" data-demo-link>Status</a>
+          <a href="#" data-demo-link>Community</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Plannery Software. All rights reserved.</p>
+        <p>Planned, not crammed.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

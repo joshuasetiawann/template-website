@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loopforge — Automation Tool</title>
+  <meta name="description" content="Loopforge is the visual automation builder that connects your tools into reliable workflows with retries and logs built in.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='10'%20fill='%23F97316'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%2316100A'%3EL%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0F1420">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>v3.2:</strong> 18 new connectors and full run history.</p>
+      <a class="announce-link" href="contact.html">See the changelog</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9L19 19M19 5l-2.1 2.1M7.1 16.9L5 19"/></svg></span>Loopforge</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="features.html#integrations">Integrations</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Build a loop</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-glow" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-badge"><i aria-hidden="true"></i>Runs 40M workflow steps a month</span>
+          <h1 id="heroTitle">Wire your tools together. <span class="grad-text">Then stop thinking about it.</span></h1>
+          <p class="lead">Loopforge is the visual builder for serious automations — branching, retries, human approvals and logs you can actually debug at 2 AM.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Start building free</a>
+          <a class="btn btn-ghost btn-lg" href="#features">See example loops</a>
+        </div>
+        <p class="hero-note">Free plan: 3 live loops · No card required</p>
+        <div class="flow-wrap reveal" role="img" aria-label="Stylized automation flow built in Loopforge">
+          <svg class="flow-svg" viewBox="0 0 640 260" aria-hidden="true" focusable="false">
+            <path class="wire" d="M150 60 C 230 60, 230 130, 300 130"/>
+            <path class="wire" d="M150 200 C 230 200, 230 130, 300 130"/>
+            <path class="wire" d="M390 130 C 450 130, 450 70, 500 70"/>
+            <path class="wire" d="M390 130 C 450 130, 450 190, 500 190"/>
+            <rect class="node" x="40" y="35" width="110" height="50" rx="10"/>
+            <circle class="pin" cx="58" cy="60" r="4"/>
+            <text x="72" y="57">New lead</text><text class="sub" x="72" y="72">Webhook</text>
+            <rect class="node" x="40" y="175" width="110" height="50" rx="10"/>
+            <circle class="pin" cx="58" cy="200" r="4"/>
+            <text x="72" y="197">Form sent</text><text class="sub" x="72" y="212">Trigger</text>
+            <rect class="node hot" x="300" y="103" width="90" height="54" rx="10"/>
+            <text x="318" y="127">Enrich</text><text class="sub" x="318" y="142">+ score</text>
+            <rect class="node" x="500" y="45" width="105" height="50" rx="10"/>
+            <circle class="pin" cx="518" cy="70" r="4"/>
+            <text x="532" y="67">Notify</text><text class="sub" x="532" y="82">Chat ping</text>
+            <rect class="node" x="500" y="165" width="105" height="50" rx="10"/>
+            <circle class="pin" cx="518" cy="190" r="4"/>
+            <text x="532" y="187">Update</text><text class="sub" x="532" y="202">CRM row</text>
+          </svg>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Social proof">
+      <div class="container">
+        <p class="logos-title">Automating workflows at</p>
+        <div class="logos-row">
+          <span class="logo-word">Stackline</span><span class="logo-word">Opsfield</span><span class="logo-word">Dataspruce</span><span class="logo-word">Relayworks</span><span class="logo-word">Quietops</span>
+        </div>
+      </div>
+    </section>
+    <section id="integrations">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Integrations</p>
+        <h2>Speaks fluent everything</h2>
+        <p class="lead">First-class nodes for the tools ops teams live in — plus raw HTTP for the rest.</p>
+      </div>
+        <div class="integration-grid">
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Webhooks in/out</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Postgres + MySQL</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Sheets + Airtable-likes</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Slack-style chat</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Stripe-style billing</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>SMTP + inbound mail</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>S3-compatible storage</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Raw HTTP + cron</div>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The duct-tape problem</p>
+        <h2>Your ops run on scripts nobody dares to touch</h2>
+        <p class="lead">Every team has the cron job that Bob wrote. Bob left. Loopforge is how you replace folklore with infrastructure.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Script folklore</span><h3>Automation, the fragile way</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Cron jobs fail silently until a customer notices for you.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Logic lives in five scripts, two zaps and one sacred spreadsheet.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>No retries, no logs, no idea why Tuesday's run skipped 14 rows.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">Loopforge</span><h3>Automation, the boring way</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Every run logged step-by-step with inputs, outputs and timing.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Automatic retries with backoff — and alerts when retries exhaust.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Version history and rollback, because flows are code (visually).</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Features</p>
+        <h2>The builder ops teams graduate into</h2>
+        <p class="lead">Start with drag-and-drop. Stay for the reliability engineering.</p>
+      </div>
+        <div class="bento">
+          <article class="bento-card span-3 reveal" data-d="0">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9L19 19M19 5l-2.1 2.1M7.1 16.9L5 19"/></svg></span><h3>Visual flow builder</h3>
+            <p>Branches, loops and parallel paths on an infinite canvas — readable by the teammate who inherits it.</p>
+          </article>
+          <article class="bento-card span-3 reveal" data-d="1">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></span><h3>Retries + backoff</h3>
+            <p>Transient failures retry themselves with exponential backoff. Permanent ones page a human with context.</p>
+          </article>
+          <article class="bento-card span-2 reveal" data-d="2">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M12.5 15.5H17"/></svg></span><h3>Step-level logs</h3>
+            <p>Every run shows exactly what went in and out of each node. Debugging becomes reading, not divination.</p>
+          </article>
+          <article class="bento-card span-2 reveal" data-d="0">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20c0-3.4 2.6-5.4 6-5.4s6 2 6 5.4"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M17.5 14.6c2.4.4 3.5 2.1 3.5 4.4"/></svg></span><h3>Human-in-the-loop</h3>
+            <p>Approval steps pause a flow until someone clicks yes — with full context and an audit trail.</p>
+          </article>
+          <article class="bento-card span-2 reveal" data-d="1">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Schedules + events</h3>
+            <p>Cron-precision schedules, webhooks and queue triggers. If it can emit an event, it can start a loop.</p>
+          </article>
+          <article class="bento-card span-6 reveal" data-d="2">
+            <span class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg></span>
+            <div><h3>Code when you want it</h3><p>Drop a JavaScript node anywhere logic gets gnarly. Visual where possible, code where necessary.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="compare">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Before / after</p>
+        <h2>The invoice workflow, two ways</h2>
+      </div>
+        <div data-compare>
+          <div class="compare-switch" role="group" aria-label="Before and after comparison">
+            <button class="cmp-btn is-active" type="button" aria-pressed="true">Duct tape</button>
+            <button class="cmp-btn" type="button" aria-pressed="false">Loopforge</button>
+          </div>
+          <div class="compare-panes">
+            <div class="compare-pane pane-before is-active">
+              <h3>How invoices worked last quarter</h3>
+              <ul class="cmp-list">
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Cron script emails CSV to ops; ops pastes into the ledger sheet.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Failed payment? Discovered during month-end archaeology.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Refund approvals happen in chat and vanish into scrollback.</span></li>
+                <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Bob's script breaks on Unicode names. Bob is unreachable.</span></li>
+              </ul>
+            </div>
+            <div class="compare-pane pane-after">
+              <h3>How invoices work now</h3>
+              <ul class="cmp-list">
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Billing webhook triggers the loop; ledger updates itself in seconds.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Failed payments retry 3×, then open a ticket with full history attached.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Refunds above $200 pause for one-click approval — logged forever.</span></li>
+                <li><span class="mk mk-c" aria-hidden="true">✓</span><span>The whole flow is on the canvas. New hires read it in minutes.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Outcomes</p>
+        <h2>Measured across customer workspaces</h2>
+      </div>
+        <div class="outcome-grid">
+          <article class="outcome-card reveal" data-d="0">
+            <span class="outcome-num">14 h</span>
+            <h3>Ops hours returned</h3>
+            <p>Average manual hours automated away per team, per week, after the first month.</p>
+          </article>
+          <article class="outcome-card reveal" data-d="1">
+            <span class="outcome-num">98.6%</span>
+            <h3>Silent failures ended</h3>
+            <p>Share of failed runs that alert a human with actionable context. The other 1.4% retry and succeed.</p>
+          </article>
+          <article class="outcome-card reveal" data-d="2">
+            <span class="outcome-num">19 min</span>
+            <h3>Time to first loop</h3>
+            <p>Median minutes from signup to a live, working automation. The tutorial is the product.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Builder stories</p>
+        <h2>Teams that retired their duct tape</h2>
+      </div>
+        <div class="wall-grid">
+          <figure class="t-card reveal" data-d="0"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“We replaced eleven cron jobs and two zap chains with four loops. On-call pages dropped 70% the same month.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">FG</span><span><b>Felix Gruber</b><i>Platform Lead, Cartonics</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="1">
+            <blockquote>“The approval step is sneaky-brilliant. Finance finally trusts automation because they are in the loop, literally.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">IW</span><span><b>Imani Walker</b><i>Ops Manager, Sundry Goods</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="2">
+            <blockquote>“Step logs saved a customer relationship — we traced a billing edge case in four minutes during the call itself.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">PN</span><span><b>Pavel Novak</b><i>Support Eng, Brightline API</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="0"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“I am not an engineer. I built our entire onboarding sequence in an afternoon and it has run 9,000 times.”</blockquote>
+            <figcaption><span class="avatar av-d" aria-hidden="true">GL</span><span><b>Grace Liu</b><i>Customer Success, Fernhill</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="1">
+            <blockquote>“Version rollback rescued us when an intern improved the refund flow on a Friday. Ask me how I know.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">MR</span><span><b>Marcus Reid</b><i>CTO, Pondworks</i></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Pay for runs, not for seats</h2>
+        <p class="lead">Invite your whole team free. Plans scale with workflow volume only.</p>
+      </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Maker</h3><p class="plan-blurb">For your first real loops.</p>
+            <p class="price-line"><span class="amount">$0</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>3 live loops</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>1,000 steps per month</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>7-day run logs</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Community support</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Start free</a>
+          <p class="plan-note">Free tier forever &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Most teams</span>
+            <h3 class="plan-name">Pro</h3><p class="plan-blurb">For teams automating in earnest.</p>
+            <p class="price-line"><span class="amount">$29</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited loops</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>50,000 steps per month</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Retries + alerting</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Human approval steps</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>90-day logs + versioning</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Start 14-day trial</a>
+          <p class="plan-note">Free tier forever &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Business</h3><p class="plan-blurb">For ops that cannot blink.</p>
+            <p class="price-line"><span class="amount">$79</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>250,000 steps per month</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>SSO + granular permissions</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Audit log + data residency</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Priority support + SLA</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Concurrency controls</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Talk to us</a>
+          <p class="plan-note">Free tier forever &middot; Cancel anytime</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Engineering-grade answers</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How is Loopforge different from simple zap tools?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Simple connectors shine at two-step automations and fall over when you need branching, retries, approvals or debugging. Loopforge is built for the workflows that run your business — with the logs and rollback to prove it.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What happens when a step fails?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Transient errors retry automatically with exponential backoff (you set the limits). If retries exhaust, the run pauses, a human gets alerted with full step context, and you can fix-and-resume from the failed step — not from scratch.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can non-developers really use it?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Yes — most loop authors are ops, support and finance folks. The canvas reads like a flowchart. When something needs real code, an engineer drops in one JavaScript node and the rest stays visual.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is our data safe passing through Loopforge?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Payloads are encrypted in transit and at rest, retained only as long as your log window, and EU residency is available on Business. Credentials live in a vault and are never visible in logs.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What counts as a step?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>One node execution in one run. A 5-node loop that runs 100 times uses 500 steps. The usage meter shows projections so the end of the month is never a surprise.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-glow">
+      <div class="container">
+        <h2>Forge your first loop tonight</h2>
+        <p>Nineteen minutes from signup to a live automation. Bring your most annoying chore.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Start building free</a>
+          <a class="btn btn-ghost btn-lg" href="#integrations">Browse integrations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9L19 19M19 5l-2.1 2.1M7.1 16.9L5 19"/></svg></span>Loopforge</a>
+          <p>The visual automation builder with reliability engineering built in. Wire it once, trust it nightly.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="features.html#integrations">Integrations</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>Changelog</a>
+        </nav>
+        <nav class="footer-col" aria-label="Developers links">
+          <h4>Developers</h4>
+          <a href="#" data-demo-link>Docs</a>
+          <a href="#" data-demo-link>API</a>
+          <a href="#" data-demo-link>Templates</a>
+          <a href="#" data-demo-link>Status</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="#" data-demo-link>Security</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Loopforge Labs. All rights reserved.</p>
+        <p>Forged in the off-hours.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

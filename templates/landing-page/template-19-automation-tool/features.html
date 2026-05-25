@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — Automate the busywork · Loopforge</title>
+  <meta name="description" content="Explore every Loopforge feature: a visual builder, 200+ connectors, branching logic, error handling and full run history — automation you can actually trust.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='10'%20fill='%23F97316'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%2316100A'%3EL%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0F1420">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>v3.2:</strong> 18 new connectors and full run history.</p>
+      <a class="announce-link" href="contact.html">See the changelog</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9L19 19M19 5l-2.1 2.1M7.1 16.9L5 19"/></svg></span>Loopforge</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html" aria-current="page">Features</a></li>
+          <li><a href="features.html#integrations">Integrations</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Build a loop</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="crumb-list">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Features</li>
+        </ol>
+      </div>
+    </nav>
+    <section class="page-hero" aria-labelledby="phTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <span class="hero-badge"><i aria-hidden="true"></i>v3.2 · 18 new connectors, full run history</span>
+        <h1 id="phTitle">Features that build reliable automations</h1>
+        <p class="lead">Loopforge connects your apps and runs the repetitive work for you — visually, with branching, retries and a full audit of every run. Here is each piece, in depth.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="pricing.html">See pricing</a>
+          <a class="btn btn-ghost btn-lg" href="contact.html">Talk to us</a>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Feature breakdown</p>
+        <h2>Six tools for automation you can trust</h2>
+        <p class="lead">Not a fragile zap that fails silently — flows with logic, retries and receipts.</p>
+      </div>
+        <div class="deep-list">
+          <article class="deep-row reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="6" height="5" rx="1.5"/><rect x="15" y="15" width="6" height="5" rx="1.5"/><path d="M6 9v4a3 3 0 0 0 3 3h6"/></svg></span>
+              <h3>Visual builder</h3>
+              <p>Drag triggers and actions onto a canvas and watch the flow take shape — no code, but no ceiling either. Build a real multi-step automation in minutes and read it like a diagram.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Drag-and-drop canvas</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Multi-step flows</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Readable as a diagram</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-rows"><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span></div></div>
+          </article>
+          <article class="deep-row flip reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9.5 14.5l5-5"/><path d="M11 7.5l1.6-1.6a3.5 3.5 0 0 1 5 5L16 12.5M13 16.5l-1.6 1.6a3.5 3.5 0 0 1-5-5L8 11.5"/></svg></span>
+              <h3>200+ connectors</h3>
+              <p>Connect the apps you already use — CRMs, sheets, chat, databases, payment tools — with deep, maintained integrations, not flaky webhooks. The long tail is covered too.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>200+ maintained apps</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Deep, not shallow</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Generic HTTP for the rest</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-grid"><div class="mm-card"><span class="mm-num">200+</span><span class="mm-lab">Apps</span></div><div class="mm-card"><span class="mm-num">18</span><span class="mm-lab">New</span></div><div class="mm-card"><span class="mm-num">∞</span><span class="mm-lab">HTTP</span></div></div></div>
+          </article>
+          <article class="deep-row reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16l-6 8v6l-4-2v-4L4 5z"/></svg></span>
+              <h3>Branching logic</h3>
+              <p>Add conditions, filters and paths so a flow does the right thing for each case — route a lead by size, only notify on failures, split by region. Real logic, visually.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Conditions & filters</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Multiple paths</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Loops over lists</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-rows"><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span></div></div>
+          </article>
+          <article class="deep-row flip reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5c0 4.6-3 7.6-7 9-4-1.4-7-4.4-7-9V6l7-3z"/></svg></span>
+              <h3>Error handling</h3>
+              <p>Automatic retries, fallbacks and alerts mean a hiccup in one app does not silently break your workflow. Loopforge tells you what failed and why, then tries again sensibly.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Automatic retries</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Fallback paths</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Failure alerts</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-rows"><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span></div></div>
+          </article>
+          <article class="deep-row reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 16.5h6"/></svg></span>
+              <h3>Full run history</h3>
+              <p>Every run is logged with inputs, outputs and timing, so you can debug, replay and prove exactly what happened. Automation you can audit instead of pray to.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Inputs & outputs logged</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Replay any run</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Searchable audit trail</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-rows"><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span><span class="mm-row"></span></div></div>
+          </article>
+          <article class="deep-row flip reveal">
+            <div class="deep-copy">
+              <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9L19 19M19 5l-2.1 2.1M7.1 16.9L5 19"/></svg></span>
+              <h3>Schedules & webhooks</h3>
+              <p>Trigger flows on a schedule, on an incoming webhook or on an app event, so automation runs exactly when it should. From nightly batches to instant reactions.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Cron-style schedules</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Incoming webhooks</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>App-event triggers</span></li>
+              </ul>
+            </div>
+            <div class="deep-mock" aria-hidden="true"><div class="mm-chart"><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span><span class="mm-bar"></span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="how">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">How it works</p>
+        <h2>From manual to automated in minutes</h2>
+        <p class="lead">Four steps to a flow that runs itself.</p>
+      </div>
+        <div class="steps-grid steps-4">
+          <article class="step-card reveal" data-d="0">
+            <span class="step-n" aria-hidden="true">1</span><h3>Pick a trigger</h3>
+            <p>Start from an app event, a schedule or a webhook — whatever kicks off the work.</p>
+          </article>
+          <article class="step-card reveal" data-d="1">
+            <span class="step-n" aria-hidden="true">2</span><h3>Add your steps</h3>
+            <p>Drag in actions and branching logic until the flow does the whole job.</p>
+          </article>
+          <article class="step-card reveal" data-d="2">
+            <span class="step-n" aria-hidden="true">3</span><h3>Test a run</h3>
+            <p>Run it once, inspect every step's input and output, and fix anything live.</p>
+          </article>
+          <article class="step-card reveal" data-d="3">
+            <span class="step-n" aria-hidden="true">4</span><h3>Turn it on</h3>
+            <p>Activate the flow and watch run history for a full, auditable record.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Outcomes</p>
+        <h2>What teams automate away</h2>
+        <p class="lead">Across teams running Loopforge in production.</p>
+      </div>
+        <div class="boutcome-grid">
+          <article class="bout-card reveal">
+            <span class="bout-num">12 hrs</span>
+            <h3>Saved weekly</h3>
+            <p>Per team, from work that now runs itself.</p>
+          </article>
+          <article class="bout-card reveal">
+            <span class="bout-num">200+</span>
+            <h3>Connectors</h3>
+            <p>So the apps you use are already supported.</p>
+          </article>
+          <article class="bout-card reveal">
+            <span class="bout-num">99.9%</span>
+            <h3>Run reliability</h3>
+            <p>With retries and fallbacks catching the hiccups.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="integrations">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Integrations & use cases</p>
+        <h2>Connects the apps you run</h2>
+        <p class="lead">Deep, maintained connectors plus generic HTTP for everything else.</p>
+      </div>
+        <div class="usecase-grid">
+          <article class="usecase-card reveal">
+            <span class="uc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10.5h18"/><path d="M15.5 15h2.5"/></svg></span>
+            <h3>Ops teams</h3>
+            <p>Sync data between tools and end the copy-paste between systems.</p>
+          </article>
+          <article class="usecase-card reveal">
+            <span class="uc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3c3 1.5 5 4.5 5 8 0 2-.5 3.5-1 4.5l-4 2-4-2c-.5-1-1-2.5-1-4.5 0-3.5 2-6.5 5-8z"/><circle cx="12" cy="10" r="1.6"/><path d="M9 17l-2 4 4-2M15 17l2 4-4-2"/></svg></span>
+            <h3>Growth teams</h3>
+            <p>Route leads, enrich them and notify the right rep automatically.</p>
+          </article>
+          <article class="usecase-card reveal">
+            <span class="uc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 13a8 8 0 0 1 16 0"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M20 19a4 4 0 0 1-4 3h-2"/></svg></span>
+            <h3>Support teams</h3>
+            <p>Triage tickets, escalate on rules and keep systems in sync.</p>
+          </article>
+        </div>
+        <div class="int-grid-wrap"><div class="integration-grid">
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Sheets & Excel</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Slacky</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>CRMs</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Databases</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Stripe-style billing</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Email & SMS</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>Webhooks</div>
+          <div class="int-chip"><span class="int-dot" aria-hidden="true"></span>HTTP / REST</div>
+        </div></div>
+      </div>
+    </section>
+    <section id="compare" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Why Loopforge</p>
+        <h2>Most automations fail silently</h2>
+        <p class="lead">A flow you cannot see or debug is a liability.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Fragile zaps</span><h3>Break quietly, fail loudly</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>A one-line automation snaps and nobody notices for a week.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>No branching, so every edge case needs another brittle zap.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>No history, so debugging is guesswork and prayer.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">With Loopforge</span><h3>Visible, robust, auditable</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Multi-step flows you can read like a diagram.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Branching, retries and fallbacks handle the edge cases.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Full run history makes debugging a lookup, not a guess.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-glow">
+      <div class="container">
+        <h2>Find the plan that fits your volume</h2>
+        <p>Free to build, more runs as you scale. See what each plan includes.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="pricing.html">View pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9L19 19M19 5l-2.1 2.1M7.1 16.9L5 19"/></svg></span>Loopforge</a>
+          <p>The visual automation builder with reliability engineering built in. Wire it once, trust it nightly.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="features.html#integrations">Integrations</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>Changelog</a>
+        </nav>
+        <nav class="footer-col" aria-label="Developers links">
+          <h4>Developers</h4>
+          <a href="#" data-demo-link>Docs</a>
+          <a href="#" data-demo-link>API</a>
+          <a href="#" data-demo-link>Templates</a>
+          <a href="#" data-demo-link>Status</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="#" data-demo-link>Security</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Loopforge Labs. All rights reserved.</p>
+        <p>Forged in the off-hours.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mintarc — Finance App</title>
+  <meta name="description" content="Mintarc is the personal finance app that budgets automatically, grows your savings and explains every number in plain language.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='16'%20fill='%232DD4A8'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%2306251C'%3EM%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0D1B2A">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10.5h18"/><path d="M15.5 15h2.5"/></svg></span>Mintarc</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="features.html#security">Security</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Get Mintarc</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-split" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-copy">
+          <span class="hero-badge"><i aria-hidden="true"></i>380,000 members · Bank-grade encryption</span>
+          <h1 id="heroTitle">Money that explains itself.</h1>
+          <p class="lead">Mintarc connects your accounts, sorts every transaction and tells you — in one honest sentence a day — what to do next with your money.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Start free</a>
+          <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+        </div>
+        <p class="hero-note">Read-only bank connections · Cancel anytime</p>
+        </div>
+        <div class="hero-visual">
+        <div class="fin-stack" role="img" aria-label="Stylized banking cards from the Mintarc app">
+          <div class="bank-card back" aria-hidden="true">
+            <div class="card-row"><span>MINTARC</span><span class="chip"></span></div>
+            <p class="card-num">•••• •••• •••• 7140</p>
+            <div class="card-foot"><span>Reserve</span><span>12/29</span></div>
+          </div>
+          <div class="bank-card front" aria-hidden="true">
+            <div class="card-row"><span>MINTARC</span><span class="chip"></span></div>
+            <p class="card-num">5312 8804 2291 0467</p>
+            <div class="card-foot"><span>N. Okafor</span><span>09/29</span></div>
+          </div>
+          <div class="balance-pop" aria-hidden="true">
+            <small>Safe to spend this week</small>
+            <b>$418.20</b>
+            <div class="spark"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Social proof">
+      <div class="container">
+        <p class="logos-title">Integrates with</p>
+        <div class="logos-row">
+          <span class="logo-word">Vaultline</span><span class="logo-word">Ledgerworks</span><span class="logo-word">Settlebank</span><span class="logo-word">Brightpay</span><span class="logo-word">Crestline</span>
+        </div>
+      </div>
+    </section>
+    <section class="stats-band" id="stats" aria-label="Key numbers">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num" data-target="2.4" data-prefix="$" data-suffix="B" data-decimals="1">$0B</span><span class="stat-label">tracked across member accounts</span></div>
+          <div class="stat"><span class="stat-num" data-target="380" data-suffix="k">0k</span><span class="stat-label">members budgeting monthly</span></div>
+          <div class="stat"><span class="stat-num" data-target="31" data-suffix="%">0%</span><span class="stat-label">avg. savings rate increase in year one</span></div>
+          <div class="stat"><span class="stat-num" data-target="4.8" data-suffix="★" data-decimals="1">0★</span><span class="stat-label">app store rating</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The problem</p>
+        <h2>Budgets fail because they are homework</h2>
+        <p class="lead">Spreadsheets demand discipline at 11 PM. Mintarc moves the discipline into software.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Manual budgeting</span><h3>The spreadsheet graveyard</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Categorizing transactions is a part-time job nobody applied for.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>You discover overspending three weeks after it happened.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Savings get whatever survives the month — usually nothing.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">Mintarc</span><h3>Budgeting on autopilot</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Transactions sort themselves with 96% accuracy from day one.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Safe-to-spend updates live, before the damage, not after.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Savings move first, automatically, the morning you get paid.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Features</p>
+        <h2>Spend, save, grow — one app</h2>
+        <p class="lead">Three jobs your money has. Tap through how Mintarc handles each.</p>
+      </div>
+        <div data-tabs>
+          <div class="tab-list" role="tablist" aria-label="App capabilities">
+            <button class="tab-btn is-active" id="tab-0" type="button" role="tab" aria-selected="true" aria-controls="panel-0" tabindex="0">Spend</button>
+            <button class="tab-btn" id="tab-1" type="button" role="tab" aria-selected="false" aria-controls="panel-1" tabindex="-1">Save</button>
+            <button class="tab-btn" id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">Grow</button>
+          </div>
+          <div class="tab-panel is-active" id="panel-0" role="tabpanel" aria-labelledby="tab-0">
+            <div class="tab-copy">
+              <h3>A safe-to-spend number you can trust</h3>
+              <p>After bills, goals and the weekend you already planned, here is what is actually free. One number, always current.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Live safe-to-spend on your lock screen</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Bills predicted before they land</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Gentle nudge at 80% of any category</span></li>
+              </ul>
+            </div>
+            <div class="panel-art" aria-hidden="true">
+              <span class="art-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span>
+              <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+            <div class="tab-copy">
+              <h3>Pay your goals like they are bills</h3>
+              <p>Goals get funded the morning your salary lands — automatically, before lifestyle has a vote.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Auto-split paydays across goals</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Round-ups on every card purchase</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Emergency fund autopilot with pause button</span></li>
+              </ul>
+            </div>
+            <div class="panel-art" aria-hidden="true">
+              <span class="art-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10.5h18"/><path d="M15.5 15h2.5"/></svg></span>
+              <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+            <div class="tab-copy">
+              <h3>Investing without the casino</h3>
+              <p>Simple index portfolios with plain-language risk labels and projections that show ranges, not fantasies.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Three portfolios, plainly explained</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Auto-invest spare cash above your buffer</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Fees shown in dollars, not basis points</span></li>
+              </ul>
+            </div>
+            <div class="panel-art" aria-hidden="true">
+              <span class="art-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 7.5-8.5"/><path d="M15.5 6.5H21V12"/></svg></span>
+              <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Getting started</p>
+        <h2>Three minutes to your first honest number</h2>
+        <p class="lead">No forms, no financial confession. Just connect and breathe.</p>
+      </div>
+        <div class="steps-grid">
+          <article class="step-card reveal" data-d="0">
+            <span class="step-n" aria-hidden="true">1</span><h3>Connect read-only</h3>
+            <p>Link accounts through encrypted, read-only connections. Mintarc can look, never touch.</p>
+          </article>
+          <article class="step-card reveal" data-d="1">
+            <span class="step-n" aria-hidden="true">2</span><h3>Approve your plan</h3>
+            <p>We draft a budget from your last 90 days of real life — not from who you wish you were.</p>
+          </article>
+          <article class="step-card reveal" data-d="2">
+            <span class="step-n" aria-hidden="true">3</span><h3>Live by one number</h3>
+            <p>Check safe-to-spend instead of your balance. That is the whole habit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Why it sticks</p>
+        <h2>Built for humans with feelings about money</h2>
+      </div>
+        <div class="benefit-cards">
+          <article class="b-card reveal" data-d="0">
+            <h3>No shame mechanics</h3>
+            <p>No red warnings for buying coffee. Mintarc adjusts the plan instead of judging the person.</p>
+          </article>
+          <article class="b-card reveal" data-d="1">
+            <h3>Plain language everywhere</h3>
+            <p>Every chart has a one-sentence caption a tired person can act on at 7 AM.</p>
+          </article>
+          <article class="b-card reveal" data-d="2">
+            <h3>You stay in control</h3>
+            <p>Every automation has a pause button and a preview. Nothing moves money without standing instructions you wrote.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="security" aria-label="Trust and compliance">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Security</p>
+        <h2>Boring security, by design</h2>
+        <p class="lead">The exciting part of your finances should be the savings rate.</p>
+      </div>
+        <div class="badge-row">
+          <div class="trust-badge reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg><span><b>256-bit encryption</b><p>Data is encrypted in transit and at rest. Bank connections are read-only tokens we could not spend with if we tried.</p></span></div>
+          <div class="trust-badge reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5c0 4.6-3 7.6-7 9-4-1.4-7-4.4-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg><span><b>SOC 2 Type II audited</b><p>Independent auditors review our controls annually. The report is available on request.</p></span></div>
+          <div class="trust-badge reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M17.5 12v3.5M21 12v2.5"/></svg><span><b>You own your data</b><p>Export everything as CSV anytime. Delete your account and data is purged within 30 days, verifiably.</p></span></div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Member stories</p>
+        <h2>Real balances, really growing</h2>
+      </div>
+        <div class="spotlight-grid">
+          <figure class="spot-main reveal">
+            <div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“I went from checking my balance with one eye closed to a $6,000 emergency fund in eleven months. The payday auto-split did all the heavy lifting.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">NO</span><span><b>Nneka Okafor</b><i>Nurse · Member since 2024</i></span></figcaption>
+          </figure>
+          <div class="spot-side">
+          <figure class="t-card reveal" data-d="1">
+            <blockquote>“Safe-to-spend ended every money fight in our house. We look at one number together every Sunday.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">J+</span><span><b>James + Allie Hart</b><i>Members since 2025</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="2">
+            <blockquote>“The investing tab is the first one that did not make me feel stupid. Ranges instead of promises — thank you.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">DF</span><span><b>Diego Fuentes</b><i>Teacher · Member since 2023</i></span></figcaption>
+          </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Free to start. Fair to grow</h2>
+        <p class="lead">No asterisks. Paid plans fund the product — your data is never the product.</p>
+      </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Free</h3><p class="plan-blurb">Real budgeting, truly free.</p>
+            <p class="price-line"><span class="amount">$0</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>2 connected accounts</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Auto-categorized budget</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Safe-to-spend number</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>90-day history</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Create account</a>
+          <p class="plan-note">Cancel anytime &middot; No hidden fees</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Most members</span>
+            <h3 class="plan-name">Plus</h3><p class="plan-blurb">The full money autopilot.</p>
+            <p class="price-line"><span class="amount">$9</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited accounts</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Payday auto-split + round-ups</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Bill prediction + alerts</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Full history + reports</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Shared budgets for two</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Try Plus free</a>
+          <p class="plan-note">Cancel anytime &middot; No hidden fees</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Metal</h3><p class="plan-blurb">Plus, with growth on top.</p>
+            <p class="price-line"><span class="amount">$19</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Everything in Plus</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Auto-invest portfolios</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Priority human support</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Quarterly money review call</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Early feature access</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Go Metal</a>
+          <p class="plan-note">Cancel anytime &middot; No hidden fees</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Money questions, straight answers</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is connecting my bank actually safe?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Connections use encrypted, read-only tokens through regulated aggregators — Mintarc never sees your bank password and cannot move money. Disconnecting takes one tap and revokes the token instantly.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can Mintarc move my money without asking?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Only standing instructions you explicitly create (like payday auto-split) ever move money, every automation shows a preview, and each one has a pause button right on its card.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What happens to my data if I leave?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Export everything to CSV first if you like, then delete your account in Settings. All personal data is purged within 30 days and we email you confirmation when it is done.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How does the free plan make money?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Free members cost us little and many upgrade later — that is the whole model. We do not sell data, show ads or push you into financial products for kickbacks.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is Mintarc a bank?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>No. Your accounts stay at your existing banks with their existing protections. Mintarc is the intelligence layer on top — the brains, not the vault.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-final">
+      <div class="container">
+        <h2>Know your number by tonight</h2>
+        <p>Connect one account, get one honest sentence about your money every morning. Free to start.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Get Mintarc free</a>
+          <a class="btn btn-ghost btn-lg" href="#security">Read security details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10.5h18"/><path d="M15.5 15h2.5"/></svg></span>Mintarc</a>
+          <p>The personal finance app that budgets automatically and explains every number in plain language.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>Security</a>
+          <a href="#" data-demo-link>Roadmap</a>
+        </nav>
+        <nav class="footer-col" aria-label="Learn links">
+          <h4>Learn</h4>
+          <a href="#" data-demo-link>Money guides</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="#" data-demo-link>Glossary</a>
+          <a href="#" data-demo-link>Calculators</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="#" data-demo-link>About</a>
+          <a href="#" data-demo-link>Careers</a>
+          <a href="#" data-demo-link>Privacy</a>
+          <a href="#" data-demo-link>Terms</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Mintarc Financial Technologies. All rights reserved.</p>
+        <p>Not financial advice; better defaults.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="sticky-cta" data-stickycta>
+    <p class="sticky-cta-copy"><strong>Open an account in 6 minutes</strong><span>No monthly fees on Core</span></p>
+    <a class="btn btn-primary" href="contact.html">Get started</a>
+  </div>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

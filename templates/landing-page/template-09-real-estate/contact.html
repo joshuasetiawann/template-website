@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Enquire with Aurelia Estates · Aurelia Estates</title>
+  <meta name="description" content="Make a private enquiry to Aurelia Estates about selling or buying a distinctive home. Handled in confidence; we respond within one business day.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='32'%20fill='%239C7A4D'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Georgia,serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EA%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#F7F4EE">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>Spring portfolio:</strong> three new homes this week.</p>
+      <a class="announce-link" href="contact.html">Book a viewing</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-7.5L21 11"/><path d="M5.5 9.5V20h13V9.5"/></svg></span>Aurelia Estates</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html#benefits">Philosophy</a></li>
+          <li><a href="features.html">The standard</a></li>
+          <li><a href="features.html#benefits">Portfolio</a></li>
+          <li><a href="contact.html" aria-current="page">Enquire</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Book a private tour</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="crumb-list">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
+      </div>
+    </nav>
+    <section class="page-hero" aria-labelledby="phTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <span class="hero-badge"><i aria-hidden="true"></i>Handled in strict confidence</span>
+        <h1 id="phTitle">A private enquiry</h1>
+        <p class="lead">Tell us about the home you wish to sell, or the one you are looking for. Everything you share is kept in confidence.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-wrap reveal">
+            <h2>Make an enquiry</h2>
+            <p class="form-intro">A few details are enough to begin. A principal will respond personally.</p>
+            <form class="contact-form" data-contact-form novalidate>
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" autocomplete="name" required>
+                <span class="field-err" data-err-for="cf-name" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="cf-email">Work email</label>
+                <input type="email" id="cf-email" name="email" autocomplete="email" required>
+                <span class="field-err" data-err-for="cf-email" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="cf-company">Company <span class="opt">(optional)</span></label>
+                <input type="text" id="cf-company" name="company" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label for="cf-topic">How can we help?</label>
+                <select id="cf-topic" name="topic">
+                  <option>I wish to sell a home</option>
+                  <option>I am looking to buy</option>
+                  <option>Off-market enquiry</option>
+                  <option>Valuation request</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="5" required></textarea>
+                <span class="field-err" data-err-for="cf-message" role="alert"></span>
+              </div>
+              <button class="btn btn-primary" type="submit">Send enquiry</button>
+              <p class="form-success" data-form-success role="status" aria-live="polite" hidden>Thank you — a principal will respond to your enquiry personally within one business day.</p>
+            </form>
+          </div>
+          <div class="contact-info reveal" data-d="1">
+            <div class="info-cards">
+              <article class="info-card">
+                <span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-7.5L21 11"/><path d="M5.5 9.5V20h13V9.5"/></svg></span>
+                <h3>Selling</h3>
+                <p>Valuations, representation and discreet off-market handling.</p>
+                <p class="info-line">sales@aureliaestates.com</p>
+              </article>
+              <article class="info-card">
+                <span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="4"/><path d="M11.5 12H21l-2 2.5M16 12v3"/></svg></span>
+                <h3>Buying</h3>
+                <p>Private search, including homes never publicly listed.</p>
+                <p class="info-line">acquisitions@aureliaestates.com</p>
+              </article>
+            </div>
+            <div class="demo-note">
+              <h3>Prefer to meet in person?</h3>
+              <p>We are glad to arrange a private appointment at our office or your home.</p>
+              <a class="btn btn-ghost" href="pricing.html">See our terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="offices" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Our offices</p>
+        <h2>Where to find us</h2>
+        <p class="lead">By appointment, in three quiet locations.</p>
+      </div>
+        <div class="office-grid">
+          <article class="office-card reveal">
+            <h3>London</h3>
+            <p>14 Mount Street, Mayfair, London W1K</p>
+            <p class="info-line">By appointment</p>
+          </article>
+          <article class="office-card reveal">
+            <h3>Cotswolds</h3>
+            <p>The Old Bank, Burford, Oxfordshire</p>
+            <p class="info-line">By appointment</p>
+          </article>
+          <article class="office-card reveal">
+            <h3>Côte d'Azur</h3>
+            <p>Boulevard de la Croisette, Cannes</p>
+            <p class="info-line">By appointment</p>
+          </article>
+        </div>
+        <div class="contact-social">
+          <p>Find us elsewhere</p>
+          <div class="footer-social">
+            <a href="#" data-demo-link aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="#" data-demo-link aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="#" data-demo-link aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="#" data-demo-link aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Quick answers</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How soon will you respond?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Within one business day, personally, and always in confidence.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can we speak before listing?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Of course. Many clients meet us long before deciding whether or how to sell.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Do you provide valuations?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Yes — request one above and we will arrange a discreet, considered appraisal.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-7.5L21 11"/><path d="M5.5 9.5V20h13V9.5"/></svg></span>Aurelia Estates</a>
+          <p>A boutique brokerage for architect-designed homes. Twelve residences, seventeen checks, one standard.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Portfolio links">
+          <h4>Portfolio</h4>
+          <a href="#" data-demo-link>Current residences</a>
+          <a href="#" data-demo-link>Recently placed</a>
+          <a href="#" data-demo-link>Off-market access</a>
+          <a href="#" data-demo-link>The standard</a>
+        </nav>
+        <nav class="footer-col" aria-label="Clients links">
+          <h4>Clients</h4>
+          <a href="#" data-demo-link>Register a brief</a>
+          <a href="#" data-demo-link>Private tours</a>
+          <a href="#" data-demo-link>Selling with us</a>
+          <a href="#" data-demo-link>References</a>
+        </nav>
+        <nav class="footer-col" aria-label="Office links">
+          <h4>Office</h4>
+          <a href="#" data-demo-link>Our partners</a>
+          <a href="#" data-demo-link>Journal</a>
+          <a href="#" data-demo-link>Privacy</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Aurelia Estates Partners. All rights reserved.</p>
+        <p>By appointment only.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

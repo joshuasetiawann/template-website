@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurelia Estates — Real Estate</title>
+  <meta name="description" content="Aurelia Estates is a boutique brokerage for architect-designed homes, offering private tours and off-market access.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='32'%20fill='%239C7A4D'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Georgia,serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EA%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#F7F4EE">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" data-announce hidden>
+    <div class="container announce-inner">
+      <p><strong>Spring portfolio:</strong> three new homes this week.</p>
+      <a class="announce-link" href="contact.html">Book a viewing</a>
+      <button class="announce-close" type="button" data-announce-close aria-label="Dismiss announcement"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-7.5L21 11"/><path d="M5.5 9.5V20h13V9.5"/></svg></span>Aurelia Estates</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html#benefits">Philosophy</a></li>
+          <li><a href="features.html">The standard</a></li>
+          <li><a href="features.html#benefits">Portfolio</a></li>
+          <li><a href="contact.html">Enquire</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Book a private tour</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-editorial" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <div class="container">
+        <span class="eyebrow">Curated homes · Est. 2011</span>
+        <h1 id="heroTitle">Homes chosen the way you will live in them.</h1>
+        <p class="lead">Aurelia represents a small portfolio of architect-designed residences — and the seventeen quiet checks each one passes before you ever see it.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#cta">Book a private tour</a>
+          <a class="btn btn-ghost btn-lg" href="#features">Read our standard</a>
+        </div>
+        <p class="hero-note">By appointment · Twelve residences currently represented</p>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Social proof">
+      <div class="container">
+        <p class="logos-title">As featured in</p>
+        <div class="logos-row">
+          <span class="logo-word">Habitat Quarterly</span><span class="logo-word">The Address</span><span class="logo-word">Maison Journal</span><span class="logo-word">City &amp; Garden</span><span class="logo-word">Estate Review</span>
+        </div>
+      </div>
+    </section>
+    <section class="stats-band" id="stats" aria-label="Key numbers">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num" data-target="1.2" data-prefix="$" data-suffix="B" data-decimals="1">$0B</span><span class="stat-label">in residences placed since 2011</span></div>
+          <div class="stat"><span class="stat-num" data-target="98" data-suffix="%">0%</span><span class="stat-label">of asking achieved on average</span></div>
+          <div class="stat"><span class="stat-num" data-target="21" data-suffix=" days">0 days</span><span class="stat-label">average time to offer</span></div>
+          <div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">residences in the current portfolio</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="prose-sec">
+      <div class="container">
+        <div class="prose-block reveal">
+          <p class="kicker">Philosophy</p>
+          <h2>Most listings are advertised. Very few are understood.</h2>
+          <p>The conventional market runs on volume: photograph wide, list loud, hope fast. A home becomes twelve angles and a floor plan, and its actual life — morning light, the neighbor's piano, the way winter behaves in the garden — never makes the brochure.</p>
+          <p>Buyers feel this. It is why viewings so often end in polite silence: the listing promised a photograph, and a photograph is not a place.</p>
+        </div>
+        <div class="prose-divider" aria-hidden="true">⁂</div>
+        <div class="prose-block reveal">
+          <h2>We represent twelve homes at a time. On purpose.</h2>
+          <p>Every Aurelia residence is walked at three different hours of the day, checked against our seventeen-point standard, and documented honestly — flaws included. We decline more homes than we accept, which is precisely why our clients tour so few before finding theirs.</p>
+          <p>When you enquire, you speak with the partner who has stood in the rooms. Tours are private, unhurried and scheduled around light, not lunch breaks.</p>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">The standard</p>
+        <h2>Seventeen checks. Here are seven</h2>
+        <p class="lead">What every residence passes before it joins the portfolio.</p>
+      </div>
+        <div class="num-list">
+          <div class="num-item reveal">
+            <span class="num" aria-hidden="true">01</span>
+            <div><h3>Light, three times a day</h3><p>We walk every home at morning, mid-afternoon and dusk. Photographs are taken at its honest best, not its staged one.</p></div>
+          </div>
+          <div class="num-item reveal">
+            <span class="num" aria-hidden="true">02</span>
+            <div><h3>The five-minute life</h3><p>Coffee, green space, school, transit, quiet — we map what your actual week looks like from the front door.</p></div>
+          </div>
+          <div class="num-item reveal">
+            <span class="num" aria-hidden="true">03</span>
+            <div><h3>Bones before beauty</h3><p>An independent structural read on every listing, summarized in plain language before your first visit.</p></div>
+          </div>
+          <div class="num-item reveal">
+            <span class="num" aria-hidden="true">04</span>
+            <div><h3>What you will hear</h3><p>Traffic at rush hour, the bar on Fridays, the morning train. Measured, noted, disclosed.</p></div>
+          </div>
+          <div class="num-item reveal">
+            <span class="num" aria-hidden="true">05</span>
+            <div><h3>Provenance + paperwork</h3><p>Title, permits, renovations and warranties assembled into one clean dossier before offers open.</p></div>
+          </div>
+          <div class="num-item reveal">
+            <span class="num" aria-hidden="true">06</span>
+            <div><h3>The honest flaw list</h3><p>Every dossier names the three things we would change. Buyers tell us this page is why they trust the rest.</p></div>
+          </div>
+          <div class="num-item reveal">
+            <span class="num" aria-hidden="true">07</span>
+            <div><h3>Off-market first</h3><p>Roughly half our placements never list publicly. Registered clients see them first, quietly.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+        <div class="benefit-split">
+          <div class="reveal">
+            <p class="kicker">Private clients</p>
+            <h2>Register once. Be shown only what fits</h2>
+            <p>Tell us how you live — light, noise tolerance, work, schools, the dog. We respond only when a residence genuinely matches, even if that takes a season.</p>
+            <ul class="check-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>A standing brief reviewed by a partner, not an algorithm</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>First access to off-market residences</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Private tours scheduled around the home's best hours</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>The full dossier — flaws included — before you visit</span></li>
+            </ul>
+          </div>
+          <div class="figure-panel reveal" data-d="1">
+            <div class="figure-stat"><b>48%</b><span>of placements happen off-market</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">From our clients</p>
+        <h2>Quietly told, gladly repeated</h2>
+      </div>
+        <div class="pullquotes">
+          <figure class="pullquote reveal">
+            <div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>They showed us two homes in four months. The second one is where I am writing this from. I have never felt less sold to in my life.</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">IM</span><span class="pq-meta"><b>Isabelle Marchand</b><i>Placed 2025 &middot; Garden District</i></span></figcaption>
+          </figure>
+          <figure class="pullquote reveal">
+            <div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>The flaw list won me over — the first honest document I have ever read in real estate. We negotiated from trust instead of suspicion.</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">TE</span><span class="pq-meta"><b>Thomas Eriksen</b><i>Placed 2024 &middot; Harbor Heights</i></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Practical matters</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Are you buyers' agents or sellers' agents?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>We represent the residence and one side of each transaction, never both. On enquiry we state plainly which side we hold, and we cap our portfolio so each partner carries at most six active homes.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What does a private tour cost?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Nothing. Tours are unhurried, typically 90 minutes, and scheduled at the hour the home shows most honestly — which is sometimes 8 AM, and we will say so.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How do I access off-market residences?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Register a brief with us. Off-market homes are shown only to registered clients whose briefs genuinely match — a discretion our sellers are paying for, and the reason they come to us.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Do you work with first-time buyers?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Gladly, within our portfolio's range. The seventeen-point dossier was originally designed for a first-time buyer who asked exactly the right questions.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Which areas do you cover?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>The Garden District, Harbor Heights, the Old Mill quarter and select rural properties within forty minutes of the city. Beyond that, we refer you honestly to colleagues we trust.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-editorial">
+      <div class="container">
+        <p class="kicker">Enquiries</p>
+        <h2>Begin with a conversation</h2>
+        <p>Leave your address and a partner will write back within one business day to arrange a call or a first tour.</p>
+        <form class="signup-form" data-validate novalidate>
+          <label class="sr-only" for="emailInput">Email address</label>
+          <input type="email" id="emailInput" name="email" placeholder="your@address.com" autocomplete="email" required>
+          <button class="btn btn-primary" type="submit">Request an introduction</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+        <p class="hero-note">Discreet by default. Your enquiry is never shared.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-7.5L21 11"/><path d="M5.5 9.5V20h13V9.5"/></svg></span>Aurelia Estates</a>
+          <p>A boutique brokerage for architect-designed homes. Twelve residences, seventeen checks, one standard.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Portfolio links">
+          <h4>Portfolio</h4>
+          <a href="#" data-demo-link>Current residences</a>
+          <a href="#" data-demo-link>Recently placed</a>
+          <a href="#" data-demo-link>Off-market access</a>
+          <a href="#" data-demo-link>The standard</a>
+        </nav>
+        <nav class="footer-col" aria-label="Clients links">
+          <h4>Clients</h4>
+          <a href="#" data-demo-link>Register a brief</a>
+          <a href="#" data-demo-link>Private tours</a>
+          <a href="#" data-demo-link>Selling with us</a>
+          <a href="#" data-demo-link>References</a>
+        </nav>
+        <nav class="footer-col" aria-label="Office links">
+          <h4>Office</h4>
+          <a href="#" data-demo-link>Our partners</a>
+          <a href="#" data-demo-link>Journal</a>
+          <a href="#" data-demo-link>Privacy</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Aurelia Estates Partners. All rights reserved.</p>
+        <p>By appointment only.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

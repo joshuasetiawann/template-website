@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellfern — Health App</title>
+  <meta name="description" content="Wellfern is a gentle daily health companion that tracks energy, sleep and mood in two soft minutes a day.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='30'%20fill='%2314B8A6'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EW%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#F0FAF7">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19C5 9.5 12.5 4.5 20 4.5c0 7.5-5 14.5-15 14.5z"/><path d="M5 19c3.5-5 7-8 11-10.5"/></svg></span>Wellfern</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="features.html#compare">Why Wellfern</a></li>
+          <li><a href="features.html#how">How it works</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Start your check-in</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero-bold" aria-labelledby="heroTitle">
+      <span class="hero-orb hero-orb-a" aria-hidden="true"></span>
+      <span class="hero-orb hero-orb-b" aria-hidden="true"></span>
+      <span class="shape shape-ring" aria-hidden="true"></span>
+      <span class="shape shape-dot-grid" aria-hidden="true"></span>
+      <span class="shape shape-tri" aria-hidden="true"></span>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-badge"><i aria-hidden="true"></i>Two minutes a day · Loved by 90,000 humans</span>
+          <h1 id="heroTitle">Health tracking that feels like a deep breath</h1>
+          <p class="lead">Wellfern checks in on your energy, sleep and mood with three soft questions a day — then quietly connects the dots your doctor will love.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#pricing">Begin tonight</a>
+          <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+        </div>
+        <p class="hero-note">Free 30-day journal · No wearable required</p>
+        </div>
+      </div>
+    </section>
+    <section class="logos-strip" aria-label="Social proof">
+      <div class="container">
+        <p class="logos-title">Recommended by clinics</p>
+        <div class="logos-row">
+          <span class="logo-word">Cedar Clinic</span><span class="logo-word">Northlight Health</span><span class="logo-word">Vital &amp; Co</span><span class="logo-word">Bloom Medical</span><span class="logo-word">Hartwell Care</span>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="duo-sec">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Why Wellfern</p>
+        <h2>Most health apps track everything and notice nothing</h2>
+        <p class="lead">Seventeen graphs cannot tell you why Thursdays feel heavy. Three honest questions can.</p>
+      </div>
+        <div class="duo-grid">
+          <div class="duo-card reveal">
+            <span class="duo-tag">Dashboard fatigue</span><h3>Data without kindness</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Streak-shaming widgets that turn rest days into failures.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Charts of steps and calories with zero connection to how you feel.</span></li>
+            <li><span class="mk mk-x" aria-hidden="true">✕</span><span>Symptoms logged in one app, sleep in another, mood nowhere.</span></li>
+            </ul>
+          </div>
+          <div class="duo-card gain reveal" data-d="1">
+            <span class="duo-tag">The Wellfern way</span><h3>Small signals, gently joined</h3>
+            <ul class="duo-list">
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>One two-minute evening check-in covers body, sleep and mood.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>Patterns surface in plain sentences: 'low energy follows late caffeine by ~2 days'.</span></li>
+            <li><span class="mk mk-c" aria-hidden="true">✓</span><span>A doctor-ready summary turns months of moments into one clear page.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">How it works</p>
+        <h2>A soft loop you can keep</h2>
+        <p class="lead">Designed with behavioral clinicians to survive busy weeks.</p>
+      </div>
+        <div class="steps-grid">
+          <article class="step-card reveal" data-d="0">
+            <span class="step-n" aria-hidden="true">1</span><h3>Check in, gently</h3>
+            <p>Each evening: how was your energy, how did you sleep, what is one word for today? Done in two minutes.</p>
+          </article>
+          <article class="step-card reveal" data-d="1">
+            <span class="step-n" aria-hidden="true">2</span><h3>Let patterns surface</h3>
+            <p>After two weeks, Fern Insights start connecting dots — written as kind sentences, never alarms.</p>
+          </article>
+          <article class="step-card reveal" data-d="2">
+            <span class="step-n" aria-hidden="true">3</span><h3>Share what matters</h3>
+            <p>Generate a one-page summary before appointments. Doctors report it saves half the consultation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Features</p>
+        <h2>Everything soft, nothing flimsy</h2>
+        <p class="lead">Clinically-informed underneath. Cozy on top.</p>
+      </div>
+        <div class="icon-cards">
+          <article class="icon-card reveal" data-d="0">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19C5 9.5 12.5 4.5 20 4.5c0 7.5-5 14.5-15 14.5z"/><path d="M5 19c3.5-5 7-8 11-10.5"/></svg></span><h3>Two-minute check-ins</h3>
+            <p>Three adaptive questions each evening. Skip a night and Wellfern simply says welcome back.</p>
+          </article>
+          <article class="icon-card reveal" data-d="1">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4 7 7 0 0 0 20 14.5z"/></svg></span><h3>Sleep stories, not scores</h3>
+            <p>Your nights described in words — restless, restored, short — matched against your days.</p>
+          </article>
+          <article class="icon-card reveal" data-d="2">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7.2-4.6-9.2-9A5 5 0 0 1 12 7.6 5 5 0 0 1 21.2 11c-2 4.4-9.2 9-9.2 9z"/></svg></span><h3>Symptom threads</h3>
+            <p>Log a headache once and Wellfern quietly watches for its companions: late screens, skipped lunches, storms.</p>
+          </article>
+          <article class="icon-card reveal" data-d="0">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z"/></svg></span><h3>Fern Insights</h3>
+            <p>Plain-sentence patterns after two weeks of entries, each with a confidence note and a try-this suggestion.</p>
+          </article>
+          <article class="icon-card reveal" data-d="1">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></span><h3>Doctor-ready summaries</h3>
+            <p>One clean page of trends and flags, exportable before any appointment.</p>
+          </article>
+          <article class="icon-card reveal" data-d="2">
+            <span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg></span><h3>Private like a diary</h3>
+            <p>End-to-end encrypted entries. Not even Wellfern can read your Tuesday.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <div class="container">
+        <div class="checklist-split">
+          <div class="reveal">
+            <p class="kicker">The feeling</p>
+            <h2>Finally, a health app on your side</h2>
+            <p class="lead">Wellfern is built for tired humans, not athletes in ads. It notices kindly, suggests gently and celebrates rest as much as movement.</p>
+          </div>
+          <div class="check-card reveal" data-d="1">
+            <ul class="check-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>No streak shaming — rest days count as data, not failure</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Insights written in sentences, not sirens</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Two minutes a day, honestly measured</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Works with or without any wearable</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Your data exports cleanly, always</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Gentle proof</p>
+        <h2>Small check-ins, big realizations</h2>
+      </div>
+        <div class="proof-head reveal">
+          <div class="face-pile"><span class="avatar av-a" aria-hidden="true">SK</span><span class="avatar av-b" aria-hidden="true">TH</span><span class="avatar av-c" aria-hidden="true">IB</span><span class="avatar av-d" aria-hidden="true">PN</span></div>
+          <div class="proof-chips"><span class="proof-chip"><b>90k</b> daily check-ins</span><span class="proof-chip"><b>2 min</b> median entry time</span><span class="proof-chip"><b>84%</b> still checking in at day 60</span></div>
+        </div>
+        <div class="proof-grid">
+          <figure class="t-card reveal" data-d="0"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“Wellfern noticed my migraines followed short sleep by two days. Three years of neurology appointments never connected that.”</blockquote>
+            <figcaption><span class="avatar av-a" aria-hidden="true">SK</span><span><b>Salma Khoury</b><i>Member · 14 months</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="1">
+            <blockquote>“It is the only app that never made me feel behind. I missed a whole week and it just said welcome back.”</blockquote>
+            <figcaption><span class="avatar av-b" aria-hidden="true">TH</span><span><b>Tom Hendricks</b><i>Member · 8 months</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="2"><div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+            <blockquote>“Brought the summary to my GP. She read it, looked up and said: this is the most useful thing a patient has handed me.”</blockquote>
+            <figcaption><span class="avatar av-c" aria-hidden="true">IB</span><span><b>Ingrid Bauer</b><i>Member · 2 years</i></span></figcaption>
+          </figure>
+          <figure class="t-card reveal" data-d="0">
+            <blockquote>“My one-word days were 'foggy' for a month. Fern suggested an iron check. It was right.”</blockquote>
+            <figcaption><span class="avatar av-d" aria-hidden="true">PN</span><span><b>Priya Nair</b><i>Member · 11 months</i></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Gentle on the wallet, too</h2>
+        <p class="lead">Start with a free 30-day journal. Keep what helps.</p>
+      </div>
+        <div class="billing-bar">
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button type="button" class="bill-btn is-active" data-bill="a" aria-pressed="true">Monthly</button>
+            <button type="button" class="bill-btn" data-bill="b" aria-pressed="false">Yearly<span class="save-badge">2 months free</span></button>
+          </div>
+          <p class="bill-note" data-a="Billed monthly. Pause anytime — your journal stays." data-b="Billed yearly. Two months free, same gentle everything.">Billed monthly. Pause anytime — your journal stays.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal" data-d="0">
+            <h3 class="plan-name">Journal</h3><p class="plan-blurb">The daily check-in habit.</p>
+            <p class="price-line"><span class="amount" data-a="$0" data-b="$0">$0</span><span class="per">forever</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Daily two-minute check-ins</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>30-day rolling journal</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Weekly reflection note</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Private + encrypted</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Start free</a>
+          <p class="plan-note">14-day free trial &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card featured reveal" data-d="1">
+            <span class="plan-flag">Most chosen</span>
+            <h3 class="plan-name">Plus</h3><p class="plan-blurb">Patterns and doctor pages.</p>
+            <p class="price-line"><span class="amount" data-a="$8" data-b="$6.50">$8</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Unlimited journal history</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Fern Insights patterns</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Symptom threads</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Doctor-ready summaries</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Wearable sync (optional)</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Try Plus free</a>
+          <p class="plan-note">14-day free trial &middot; Cancel anytime</p>
+          </article>
+          <article class="price-card reveal" data-d="2">
+            <h3 class="plan-name">Care</h3><p class="plan-blurb">Plus, with a human in the loop.</p>
+            <p class="price-line"><span class="amount" data-a="$14" data-b="$11.50">$14</span><span class="per">/mo</span></p>
+            <ul class="plan-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Everything in Plus</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Quarterly review with a health coach</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Custom check-in questions</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Family sharing for two</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Priority support</span></li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Choose Care</a>
+          <p class="plan-note">14-day free trial &middot; Cancel anytime</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+      <div class="section-head">
+        <p class="kicker">FAQ</p>
+        <h2>Soft answers, honest ones</h2>
+      </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is Wellfern a medical device?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>No. Wellfern is a self-knowledge tool that helps you and your clinicians see patterns. It never diagnoses, and any insight that touches health risk includes a see-a-professional note.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Do I need a smartwatch or tracker?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Not at all. The core of Wellfern is your two-minute check-in. If you do wear a device, sleep and activity sync in as gentle context.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Who can read my entries?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Only you. Entries are end-to-end encrypted with keys on your device. The summaries you export are decrypted by you, for whoever you hand them to.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What happens if I stop checking in?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Nothing punitive — no guilt streaks, no red badges. Wellfern sends one soft nudge after four quiet days, then waits patiently for you.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can I export or delete everything?</span><svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><p>Both, in two taps. Export gives you a complete readable archive; delete purges your account within 30 days with email confirmation.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta-bold">
+      <div class="container">
+        <h2>Tonight, take two minutes for yourself</h2>
+        <p>Start your free 30-day journal and let the patterns introduce themselves.</p>
+        <div class="hero-actions">
+          <a class="btn btn-invert btn-lg" href="#pricing">Start checking in</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19C5 9.5 12.5 4.5 20 4.5c0 7.5-5 14.5-15 14.5z"/><path d="M5 19c3.5-5 7-8 11-10.5"/></svg></span>Wellfern</a>
+          <p>A gentle daily health companion. Three soft questions, honest patterns, zero shame.</p>
+          <div class="footer-social">
+            <a href="index.html" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+            <a href="index.html" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14l2 7.5V19H3v-5.5L5 6z"/><path d="M3 13.5h5l2 3h4l2-3h5"/></svg></a>
+            <a href="index.html" aria-label="Watch our channel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+            <a href="index.html" aria-label="Join the community chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+            <a href="index.html" aria-label="Subscribe to the RSS feed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="App links">
+          <h4>App</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="#" data-demo-link>For clinicians</a>
+          <a href="#" data-demo-link>What's new</a>
+        </nav>
+        <nav class="footer-col" aria-label="Learn links">
+          <h4>Learn</h4>
+          <a href="features.html">The method</a>
+          <a href="#" data-demo-link>Research notes</a>
+          <a href="#" data-demo-link>Blog</a>
+          <a href="#" data-demo-link>Glossary</a>
+        </nav>
+        <nav class="footer-col" aria-label="Support links">
+          <h4>Support</h4>
+          <a href="contact.html">Help center</a>
+          <a href="#" data-demo-link>Privacy</a>
+          <a href="#" data-demo-link>Terms</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Wellfern Health. All rights reserved.</p>
+        <p>Be gentle with yourself.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="sticky-cta" data-stickycta>
+    <p class="sticky-cta-copy"><strong>Feel the first week free</strong><span>14-day trial &middot; cancel anytime</span></p>
+    <a class="btn btn-primary" href="contact.html">Try Wellfern</a>
+  </div>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>
