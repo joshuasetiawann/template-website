@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet utilisation dashboard — Marcus Oyelaran</title>
+  <meta name="description" content="Case study: Fleet utilisation dashboard — a dashboards project by Marcus Oyelaran. Challenge, approach, outcomes and process artifacts.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='8'%20fill='%230D9488'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial%2C%20sans-serif'%20font-size='26'%20font-weight='800'%20text-anchor='middle'%20fill='%23FFFFFF'%3EMO%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#F6F8FA">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="v1-body case-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+    <div class="nav-wrap container">
+      <a class="brand" href="index.html"><span class="brand-mark">MO</span><span class="brand-name">Marcus Oyelaran</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html#skills">Skills</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html#experience">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+  <nav class="cs-breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="cs-crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li aria-current="page"><span data-case-crumb>Fleet utilisation dashboard</span></li>
+      </ol>
+    </div>
+  </nav>
+  <section class="section cs-hero" aria-labelledby="case-title" data-case-page>
+    <div class="container">
+      <p class="kicker" data-case-kicker>Case study · Senior Data Analyst · 2025</p>
+      <h1 id="case-title" data-case-title>Fleet utilisation dashboard</h1>
+      <p class="cs-lede" data-case-lede>Live utilisation and idle-time views for 800 vehicles; surfaced £1.2M of recoverable capacity.</p>
+      <ul class="tag-list cs-chips" data-case-chips><li>Dashboards</li><li>Logistics</li></ul>
+      <dl class="cs-facts">
+        <div class="cs-fact"><dt>Role</dt><dd data-case-role>Senior Data Analyst</dd></div>
+        <div class="cs-fact"><dt>Client</dt><dd data-case-client>Northgate Logistics</dd></div>
+        <div class="cs-fact"><dt>Year</dt><dd data-case-year>2025</dd></div>
+        <div class="cs-fact"><dt>Timeline</dt><dd data-case-duration>10 weeks</dd></div>
+      </dl>
+    </div>
+  </section>
+  <section class="section cs-overview" id="overview" aria-labelledby="overview-title">
+    <div class="container">
+      <p class="kicker">Overview</p>
+      <h2 id="overview-title">Overview</h2>
+      <div class="about-block cs-prose">
+        <p data-case-ov1>Northgate ran 400 trucks on instinct and a wall of spreadsheets. I built the utilisation dashboard the depot managers actually open at 6am.</p>
+        <p data-case-ov2>Live load factors, dead-leg miles and idle hours by depot, with drill-downs that answer the follow-up question before it is asked.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section alt-bg cs-challenge" id="challenge" aria-labelledby="challenge-title">
+    <div class="container">
+      <p class="kicker">The brief</p>
+      <h2 id="challenge-title">The challenge</h2>
+      <div class="about-block cs-prose">
+        <p data-case-ch>The first version was ignored — too many charts. The redesign cut it to five numbers and a map, and adoption followed within a month.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section cs-approach" id="approach" aria-labelledby="approach-title">
+    <div class="container">
+      <p class="kicker">Method</p>
+      <h2 id="approach-title">The approach</h2>
+      <ol class="cs-steps">
+        <li class="cs-step">
+          <span class="cs-step-num" aria-hidden="true">01</span>
+          <h3>Frame the question</h3>
+          <p>Decision first, metric second: what will change if this number moves? No dashboard begins without a named decision-maker.</p>
+        </li>
+        <li class="cs-step">
+          <span class="cs-step-num" aria-hidden="true">02</span>
+          <h3>Audit the data</h3>
+          <p>Lineage walks, null censuses and a reconciliation against finance. Trust is built in the plumbing, not the chart.</p>
+        </li>
+        <li class="cs-step">
+          <span class="cs-step-num" aria-hidden="true">03</span>
+          <h3>Model &amp; test</h3>
+          <p>dbt models with tests on every join; experiments sized before launch and pre-registered so the readout cannot be argued backwards.</p>
+        </li>
+        <li class="cs-step">
+          <span class="cs-step-num" aria-hidden="true">04</span>
+          <h3>Tell the answer</h3>
+          <p>One headline, three numbers, the caveat in plain sight. The deck ends with a recommended action, never with "more research needed".</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section class="section stats-band cs-outcomes" aria-label="Outcome metrics">
+    <div class="container">
+      <div class="stat-grid">
+        <div class="stat-cell"><span class="stat-num" data-target="400" data-suffix="">0</span><span class="stat-label">Trucks tracked live</span></div>
+        <div class="stat-cell"><span class="stat-num" data-target="17" data-suffix="%">0</span><span class="stat-label">Dead-leg miles reduced</span></div>
+        <div class="stat-cell"><span class="stat-num" data-target="9" data-suffix="">0</span><span class="stat-label">Depots on the morning dashboard</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section cs-gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <p class="kicker">Notebooks</p>
+      <h2 id="gallery-title">Queries, charts, receipts</h2>
+      <div class="cs-figs">
+        <figure class="cs-fig">
+          <div class="thumb cs-fig-thumb" style="background-image:linear-gradient(135deg,#0D9488,#2DD4BF)" aria-hidden="true"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></span></div>
+          <figcaption>Lineage map of the metrics layer</figcaption>
+        </figure>
+        <figure class="cs-fig">
+          <div class="thumb cs-fig-thumb" style="background-image:linear-gradient(135deg,#155E75,#22D3EE)" aria-hidden="true"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span></div>
+          <figcaption>Null census from the data audit</figcaption>
+        </figure>
+        <figure class="cs-fig">
+          <div class="thumb cs-fig-thumb" style="background-image:linear-gradient(135deg,#0F766E,#5EEAD4)" aria-hidden="true"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span></div>
+          <figcaption>Experiment design doc, pre-registered</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="section alt-bg cs-praise" aria-label="Stakeholder quote">
+    <div class="container">
+      <figure class="quote-card cs-quote">
+        <blockquote><p data-case-quote>The 6am huddle now starts with Marcus’s screen instead of arguments. We found two routes that should never have existed.</p></blockquote>
+        <figcaption><strong data-case-quote-by>Janet Okoro</strong> <span data-case-quote-role>— Ops Director, Northgate</span></figcaption>
+      </figure>
+    </div>
+  </section>
+  <nav class="section cs-pager" aria-label="More case studies">
+    <div class="container cs-pager-row">
+      <a class="cs-pager-link cs-pager-prev" href="project.html?p=5" data-case-prev rel="prev"><span class="cs-pager-dir">&larr; Previous case</span><span class="cs-pager-name" data-case-prev-name>Exec Monday briefing pack</span></a>
+      <a class="cs-pager-all" href="work.html">All projects</a>
+      <a class="cs-pager-link cs-pager-next" href="project.html?p=1" data-case-next rel="next"><span class="cs-pager-dir">Next case &rarr;</span><span class="cs-pager-name" data-case-next-name>Churn early-warning model</span></a>
+    </div>
+  </nav>
+  </main>
+<section class="cta-banner" aria-labelledby="cta-banner-title">
+    <div class="container cta-banner-inner">
+      <div class="cta-banner-copy">
+        <p class="cta-kicker">Hypothesis: we should talk</p>
+        <h2 id="cta-banner-title">Got data? Let’s make it speak.</h2>
+        <p class="cta-sub">Dashboards nobody ignores, models that explain themselves, and decisions you can defend in the Monday meeting.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a class="btn btn-banner" href="mailto:marcus@oyelaran.analytics"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email Marcus</a>
+        <a class="btn btn-banner-ghost" href="work.html">Inspect the evidence</a>
+      </div>
+    </div>
+  </section>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-id">
+          <a class="brand" href="index.html"><span class="brand-mark">MO</span><span class="brand-name">Marcus Oyelaran</span></a>
+          <p class="footer-tagline">I turn messy operational data into dashboards leadership actually opens on Mondays.</p>
+          <ul class="social-row">
+            <li><a href="#" data-demo-link aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="Tableau Public"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></a></li>
+            <li><a href="mailto:marcus@oyelaran.analytics" aria-label="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="RSS feed"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></a></li>
+          </ul>
+        </div>
+        <nav class="footer-col" aria-label="Footer links">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#skills">Skills</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html#experience">Experience</a></li>
+            <li><a href="about.html#notes">Notes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-links footer-contact">
+            <li><a href="mailto:marcus@oyelaran.analytics">marcus@oyelaran.analytics</a></li>
+            <li>Available for analytics consulting</li>
+            <li>Lagos ⇄ remote, GMT+1</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Marcus Oyelaran. Designed &amp; built by hand — no frameworks, no trackers.</p>
+        <p class="footer-meta">Data Analyst</p>
+      </div>
+    </div>
+  </footer>
+<button class="to-top" data-totop type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="18 15 12 9 6 15"/></svg></button>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Tomas Reyes</title>
+  <meta name="description" content="Get in touch with Tomas Reyes, Principal Architect. Contact form, email, availability and FAQ.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='2'%20fill='%233B3B36'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial%2C%20sans-serif'%20font-size='26'%20font-weight='800'%20text-anchor='middle'%20fill='%23FFFFFF'%3ETR%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#FAFAF8">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="v4-body case-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+    <div class="nav-wrap container">
+      <a class="brand" href="index.html"><span class="brand-mark">TR</span><span class="brand-name">Tomas Reyes</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Index</a></li>
+        <li><a href="about.html#experience">Experience</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+  <nav class="cs-breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="cs-crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page"><span>Contact</span></li>
+      </ol>
+    </div>
+  </nav>
+  <section class="section pfp-hero" aria-labelledby="contact-h1">
+    <div class="container">
+      <p class="kicker">Get in touch</p>
+      <h1 id="contact-h1">Let&rsquo;s talk</h1>
+      <p class="pfp-lede">Projects, collaborations and the occasional stubborn brief — all welcome. The form reaches me directly, or just copy my email.</p>
+      <p class="avail-badge" data-avail><span class="avail-dot" aria-hidden="true"></span>Accepting residential briefs for 2027</p>
+    </div>
+  </section>
+  <section class="section" id="contact-main" aria-labelledby="form-title">
+    <div class="container pfp-contact-wrap">
+      <div class="pfp-contact-form-col">
+        <p class="kicker">Send a message</p>
+        <h2 id="form-title">Drop me a line</h2>
+        <form class="pfp-form" id="pfp-contact-form" novalidate>
+          <div class="pfp-field">
+            <label for="pf-name">Name</label>
+            <input type="text" id="pf-name" name="name" autocomplete="name" placeholder="Your name">
+            <p class="pfp-error" id="pf-err-name" aria-live="polite"></p>
+          </div>
+          <div class="pfp-field">
+            <label for="pf-email">Email</label>
+            <input type="email" id="pf-email" name="email" autocomplete="email" placeholder="you@example.com">
+            <p class="pfp-error" id="pf-err-email" aria-live="polite"></p>
+          </div>
+          <div class="pfp-field">
+            <label for="pf-msg">Message</label>
+            <textarea id="pf-msg" name="message" rows="5" placeholder="A sentence or two about what you have in mind&hellip;"></textarea>
+            <p class="pfp-error" id="pf-err-msg" aria-live="polite"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+          <p class="pfp-success" id="pf-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <aside class="pfp-contact-side">
+        <div class="pfp-contact-card">
+          <h3>Prefer email?</h3>
+          <p>Write to <a class="pfp-inline-mail" href="mailto:estudio@tomasreyes.cl">estudio@tomasreyes.cl</a> and I&rsquo;ll reply personally.</p>
+          <div class="copy-row">
+            <span class="copy-label">Copy my email</span>
+            <button class="copy-btn" type="button" data-email="estudio@tomasreyes.cl" aria-label="Copy email address to clipboard">
+              <code>estudio@tomasreyes.cl</code><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+            <span class="copy-status" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="pfp-contact-card">
+          <h3>Find me elsewhere</h3>
+          <ul class="social-row pfp-social">
+            <li><a href="#" data-demo-link aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="Archello"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+            <li><a href="mailto:estudio@tomasreyes.cl" aria-label="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="RSS feed"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></a></li>
+          </ul>
+          <p class="pfp-response">Typical response time: within two working days.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <section class="section alt-bg" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <p class="kicker">Before you write</p>
+      <h2 id="faq-title">Quick questions</h2>
+      <div class="pfp-faq">
+        <details class="pfp-faq-item">
+          <summary>Do you take small projects?</summary>
+          <p>Yes — a well-considered extension teaches as much as a museum. What matters is a real constraint and a client who cares.</p>
+        </details>
+        <details class="pfp-faq-item">
+          <summary>How involved are you on site?</summary>
+          <p>Closely. I detail for the builder and visit regularly; the drawings are a beginning, the building is the work.</p>
+        </details>
+        <details class="pfp-faq-item">
+          <summary>Sustainability — how built in?</summary>
+          <p>From the first sketch. Orientation, mass, daylight and local material do more than any bolt-on system.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+  <section class="section pfp-cta" aria-labelledby="pfp-cta-title">
+    <div class="container">
+      <div class="pfp-cta-inner">
+        <div>
+          <h2 id="pfp-cta-title">Rather just say hi?</h2>
+          <p>No brief required. If our work might overlap, I would love to hear from you.</p>
+        </div>
+        <div class="pfp-cta-actions">
+          <a class="btn btn-primary" href="contact.html">Contact me <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a class="btn btn-ghost" href="mailto:estudio@tomasreyes.cl">Email directly</a>
+        </div>
+      </div>
+    </div>
+  </section>
+    </main>
+  <section class="cta-banner" aria-labelledby="cta-banner-title">
+    <div class="container cta-banner-inner">
+      <div class="cta-banner-copy">
+        <p class="cta-kicker">Commission 2027</p>
+        <h2 id="cta-banner-title">Let’s work together</h2>
+        <p class="cta-sub">Houses, adaptive reuse and small civic work. A site photo and a paragraph is the perfect first drawing.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a class="btn btn-banner" href="mailto:estudio@tomasreyes.cl"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email the estudio</a>
+        <a class="btn btn-banner-ghost" href="work.html">Review built work</a>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-id">
+          <a class="brand" href="index.html"><span class="brand-mark">TR</span><span class="brand-name">Tomas Reyes</span></a>
+          <p class="footer-tagline">Buildings that age well. Adaptive reuse, civic spaces and quiet residential work.</p>
+          <ul class="social-row">
+            <li><a href="#" data-demo-link aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="Archello"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+            <li><a href="mailto:estudio@tomasreyes.cl" aria-label="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="RSS feed"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></a></li>
+          </ul>
+        </div>
+        <nav class="footer-col" aria-label="Footer links">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Index</a></li>
+            <li><a href="about.html#experience">Experience</a></li>
+            <li><a href="about.html#awards">Awards</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-links footer-contact">
+            <li><a href="mailto:estudio@tomasreyes.cl">estudio@tomasreyes.cl</a></li>
+            <li>Accepting residential briefs for 2027</li>
+            <li>Estudio in Santiago de Chile</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Tomas Reyes. Designed &amp; built by hand — no frameworks, no trackers.</p>
+        <p class="footer-meta">Architect</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" data-totop type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="18 15 12 9 6 15"/></svg></button>
+</body>
+</html>
