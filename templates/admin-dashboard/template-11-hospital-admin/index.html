@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wardlight — Hospital Admin Dashboard</title>
+  <meta name="description" content="A calm boxed hospital administration dashboard template with bed-occupancy donut, appointments table with live filter and on-duty staff strip.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2310B981'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='%23FFFFFF'%3EW%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="v4">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="brand">
+    <span class="brand-mark"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l2.5-6 4 12 2.5-6h5"/></svg></span>
+    <span class="brand-name nav-label">Wardlight</span>
+  </div>
+  <nav>
+    <div class="nav-group">
+      <div class="nav-group-label">Clinical</div>
+      <a class="nav-link active" href="#/overview" data-view="overview" aria-current="page"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg><span class="nav-label">Overview</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg><span class="nav-label">Patients</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span class="nav-label">Appointments</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M3 18h18M7 8V5h10v3"/></svg><span class="nav-label">Wards</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Care</div>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l2.5-6 4 12 2.5-6h5"/></svg><span class="nav-label">Monitoring</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg><span class="nav-label">Lab results</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg><span class="nav-label">Emergency</span><span class="nav-badge">2</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Admin</div>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20"/><path d="M16.5 6.5c-1-1.4-2.6-2-4.5-2-2.5 0-4.5 1.3-4.5 3.4 0 4.6 9 2.6 9 7.1 0 2.1-2 3.5-4.5 3.5-2 0-3.8-.7-4.8-2.2"/></svg><span class="nav-label">Billing</span></a>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg><span class="nav-label">Settings</span></a>
+    </div>
+  </nav>
+  <div class="sidebar-foot">
+    <div class="side-card"><strong>Flu clinic</strong><br>Walk-in vaccinations Sat 9–13.<a class="mini-btn" href="#" data-demo-link>Staff roster</a></div>
+  </div>
+</aside>
+<div class="overlay" id="overlay" aria-hidden="true"></div>
+<div class="main-wrap">
+<header class="topbar">
+  <button class="icon-btn hamburger" id="navToggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu" title="Open navigation menu"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><span class="topbar-ctx" data-view-ctx aria-hidden="true">Hospital operations</span>
+  <form class="search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" placeholder="Search patients, MRNs…" aria-label="Search patients, MRNs…"></form>
+  <div class="topbar-actions">
+    <div class="dropdown">
+      <button class="icon-btn" id="notifBtn" data-menu-toggle aria-controls="notifPanel" aria-expanded="false" aria-haspopup="true" aria-label="Notifications" title="Notifications"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><span class="dot"></span></button>
+      <div class="dropdown-panel" id="notifPanel" aria-label="Notifications">
+      <div class="dd-head">Notifications <span class="pill pill-info">4 new</span></div>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p><strong>ICU</strong> at 90% capacity — 2 beds free</p><span class="when">5 min ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span><p>Dr. Reyes clinic <strong>overbooked</strong> by 2 slots</p><span class="when">38 min ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></span><span><p>Lab results ready for <strong>MRN 48211</strong></p><span class="when">1 hr ago</span></span></a>
+      <a class="dd-foot" href="#" data-demo-link>View all notifications</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="profile-chip" id="profileBtn" data-menu-toggle aria-controls="profilePanel" aria-expanded="false" aria-haspopup="true"><span class="avatar" style="background:linear-gradient(135deg,#10B981,#34D399)" aria-hidden="true">DS</span><span class="chip-meta"><span class="nm">Dr. Amara Singh</span><span class="rl">Medical Director</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dropdown-panel" id="profilePanel" aria-label="Account menu">
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>My profile</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg>Workspace settings</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Billing &amp; plan</a>
+        <div class="menu-sep"></div>
+        <a class="menu-item danger" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Sign out</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<nav class="crumbs" aria-label="Breadcrumb" data-crumbs="Home / Dashboards / Hospital operations"><a href="#" data-demo-link>Home</a><span class="crumb-sep" aria-hidden="true">/</span><a href="#" data-demo-link>Dashboards</a><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-here" aria-current="page">Hospital operations</span></nav>
+<section class="view" data-view-panel="overview" aria-label="Overview">
+<div class="page-head">
+  <div><h1>Hospital operations</h1></div>
+  <div class="page-actions"><button class="btn" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg><span class="btxt">Daily report</span></button><button class="btn primary" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><span class="btxt">Admit patient</span></button></div>
+  <p class="sub">St. Verity General — beds, theatre and clinic flow for Jun 11, 2026.</p>
+</div>
+<section class="stats-grid" aria-label="Key metrics">
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Bed occupancy</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M3 18h18M7 8V5h10v3"/></svg></span></div>
+    <div class="stat-value" data-count="81.4" data-dec="1" data-prefix="" data-suffix="%">81.4%</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>2.6 pts <small>vs yesterday</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Inpatients</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg></span></div>
+    <div class="stat-value" data-count="312" data-dec="0" data-prefix="" data-suffix="">312</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>4.8% <small>vs last week</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Surgeries today</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l2.5-6 4 12 2.5-6h5"/></svg></span></div>
+    <div class="stat-value" data-count="14" data-dec="0" data-prefix="" data-suffix="">14</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>2 added <small>theatre 2 & 4</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Avg ER wait</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span></div>
+    <div class="stat-value" data-count="26" data-dec="0" data-prefix="" data-suffix=" min">26 min</div>
+    <span class="delta down good"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg>3.4 min <small>improving</small></span>
+  </article>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>On-duty specialists</h2>
+  </div>
+  <div class="team-strip">
+    <span class="team-stack"><span class="avatar" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">AS</span><span class="avatar" style="background:linear-gradient(135deg,#10B981,#34D399)" aria-hidden="true">LB</span><span class="avatar" style="background:linear-gradient(135deg,#F59E0B,#F97316)" aria-hidden="true">SV</span><span class="avatar" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">TO</span><span class="avatar" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">HA</span><span class="team-more">+23</span></span>
+    <span class="team-meta"><b>28 clinicians on shift</b><span>Next rotation at 19:00</span></span>
+    <button class="btn" type="button" style="margin-left:auto"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg>Rota</button>
+  </div>
+</section>
+
+<div class="layout-cols">
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Bed occupancy by ward</h2>
+    <div class="card-tools"><div class="range-chips" role="group" aria-label="Date range" data-rangegroup><button type="button" data-rng="a" aria-pressed="true">Today</button><button type="button" data-rng="b" aria-pressed="false">Last week</button></div></div>
+    <p class="hint">Occupied beds out of 284 staffed beds.</p>
+  </div>
+  <div class="donut-wrap">
+    <div class="donut" id="wardDonut" role="img" aria-label="Bed occupancy donut chart"><span class="donut-center"><b>81%</b><span>occupied</span></span></div>
+    <ul class="donut-legend">
+      <li><i class="sw" style="background:#10B981"></i><span class="ll">General medicine</span><span class="lv">142 / 168</span><span class="lp">61%</span></li>
+      <li><i class="sw" style="background:#F0635C"></i><span class="ll">ICU</span><span class="lv">18 / 20</span><span class="lp">8%</span></li>
+      <li><i class="sw" style="background:#60A5FA"></i><span class="ll">Maternity</span><span class="lv">38 / 48</span><span class="lp">16%</span></li>
+      <li><i class="sw" style="background:#E8A33D"></i><span class="ll">Pediatrics</span><span class="lv">33 / 48</span><span class="lp">15%</span></li>
+    </ul>
+  </div>
+</section>
+  </div>
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Ward updates</h2>
+    <div class="card-tools"><button class="icon-btn" type="button" aria-label="Activity options" title="Activity options"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></button></div>
+  </div>
+  <ul class="feed">
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l2.5-6 4 12 2.5-6h5"/></svg></span><span><p><strong>Theatre 2</strong>: hip replacement completed, patient stable.</p><span class="when">Today, 10:20</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M3 18h18M7 8V5h10v3"/></svg></span><span><p><strong>2 beds</strong> released in General medicine after discharge.</p><span class="when">Today, 09:35</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p>ER triage level raised to <strong>amber</strong> for 40 min.</p><span class="when">Today, 08:12</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></span><span><p><strong>38 lab panels</strong> processed overnight.</p><span class="when">Today, 06:00</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg></span><span><p>Night shift handover completed — <strong>0 incidents</strong>.</p><span class="when">Today, 05:45</span></span></li>
+  </ul>
+</section>
+  </div>
+</div>
+
+<section class="card">
+  <div class="card-head">
+    <h2>Today’s appointments</h2>
+    <div class="card-tools"><label class="filter-box"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" id="tableFilter" placeholder="Filter by patient, physician…" aria-label="Filter by patient, physician…"></label><button class="btn" type="button" data-export="wardlight-appointments.csv" title="Download table as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button></div>
+  </div>
+  <div class="table-wrap" role="region" aria-label="Today’s appointments" tabindex="0">
+    <table id="dataTable">
+      <thead><tr><th scope="col">Patient</th><th scope="col">Department</th><th scope="col">Physician</th><th scope="col">Time</th><th scope="col">Room</th><th scope="col">Status</th><th scope="col">Actions</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">HJ</span><span><span class="nm">Harold Jensen</span><span class="em">MRN 48211</span></span></span></td>
+          <td>Cardiology</td>
+          <td>Dr. A. Reyes</td>
+          <td>09:30</td>
+          <td>C-204</td>
+          <td><span class="pill pill-success">Checked-in</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">FS</span><span><span class="nm">Fatima El-Sayed</span><span class="em">MRN 51028</span></span></span></td>
+          <td>Maternity</td>
+          <td>Dr. L. Brooks</td>
+          <td>10:15</td>
+          <td>M-112</td>
+          <td><span class="pill pill-warn">In surgery</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">PK</span><span><span class="nm">Peter Kowalczyk</span><span class="em">MRN 47785</span></span></span></td>
+          <td>Orthopedics</td>
+          <td>Dr. S. Varga</td>
+          <td>11:00</td>
+          <td>B-318</td>
+          <td><span class="pill pill-info">Scheduled</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">RJ</span><span><span class="nm">Rosa Jiménez</span><span class="em">MRN 50342</span></span></span></td>
+          <td>Pediatrics</td>
+          <td>Dr. T. Okello</td>
+          <td>11:45</td>
+          <td>P-021</td>
+          <td><span class="pill pill-success">Checked-in</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#2563EB,#60A5FA)" aria-hidden="true">MB</span><span><span class="nm">Magnus Berg</span><span class="em">MRN 49467</span></span></span></td>
+          <td>Oncology</td>
+          <td>Dr. A. Reyes</td>
+          <td>13:30</td>
+          <td>C-209</td>
+          <td><span class="pill pill-info">Scheduled</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#10B981,#34D399)" aria-hidden="true">LP</span><span><span class="nm">Linh Pham</span><span class="em">MRN 50990</span></span></span></td>
+          <td>General medicine</td>
+          <td>Dr. H. Adler</td>
+          <td>14:15</td>
+          <td>G-105</td>
+          <td><span class="pill pill-neutral">Discharged</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">GA</span><span><span class="nm">George Abara</span><span class="em">MRN 48733</span></span></span></td>
+          <td>Cardiology</td>
+          <td>Dr. H. Adler</td>
+          <td>15:00</td>
+          <td>C-201</td>
+          <td><span class="pill pill-danger">No-show</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+              <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#2563EB,#60A5FA)" aria-hidden="true">MK</span><span><span class="nm">Marcus Klein</span><span class="em">MRN 52114</span></span></span></td>
+          <td>Orthopedics</td>
+          <td>Dr. S. Varga</td>
+          <td>11:00</td>
+          <td>O-310</td>
+          <td><span class="pill pill-info">Scheduled</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#10B981,#34D399)" aria-hidden="true">AP</span><span><span class="nm">Anita Prasad</span><span class="em">MRN 49873</span></span></span></td>
+          <td>Cardiology</td>
+          <td>Dr. A. Reyes</td>
+          <td>11:45</td>
+          <td>C-208</td>
+          <td><span class="pill pill-success">Checked-in</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">TB</span><span><span class="nm">Tomas Berg</span><span class="em">MRN 53420</span></span></span></td>
+          <td>Pediatrics</td>
+          <td>Dr. M. Chen</td>
+          <td>13:15</td>
+          <td>P-104</td>
+          <td><span class="pill pill-info">Scheduled</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">RD</span><span><span class="nm">Rosa Delgado</span><span class="em">MRN 47651</span></span></span></td>
+          <td>General medicine</td>
+          <td>Dr. K. Osei</td>
+          <td>14:00</td>
+          <td>G-221</td>
+          <td><span class="pill pill-neutral">Discharged</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">LN</span><span><span class="nm">Lars Nilsen</span><span class="em">MRN 50982</span></span></span></td>
+          <td>Cardiology</td>
+          <td>Dr. A. Reyes</td>
+          <td>15:30</td>
+          <td>C-204</td>
+          <td><span class="pill pill-danger">No-show</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Open chart for row" title="Open chart for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Reschedule row" title="Reschedule row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="empty-note" id="emptyNote">No rows match your filter.</p>
+  <div class="table-foot" data-pagination data-page-size="5" data-noun="appointments"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 12 appointments</span>
+    <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+  </div>
+</section>
+
+</section>
+<section class="view" data-view-panel="list" hidden aria-label="Patients">
+  <div class="view-head"><h2>Patients</h2><p class="sub">Admitted patients with ward, consultant and status.</p></div>
+  <div class="sum-chips"><div class="sum-chip"><div class="sc-label">Inpatients</div><div class="sc-value">212</div><div class="sc-foot">78% bed occupancy</div></div><div class="sum-chip"><div class="sc-label">Admissions today</div><div class="sc-value">18</div><div class="sc-foot up">+4 vs yesterday</div></div><div class="sum-chip"><div class="sc-label">Critical</div><div class="sc-value">4</div><div class="sc-foot down">in ICU now</div></div><div class="sum-chip"><div class="sc-label">Avg stay</div><div class="sc-value">4.6 days</div><div class="sc-foot down">0.3 day shorter</div></div></div>
+  <section class="card">
+    <div class="list-toolbar">
+      <form class="list-search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" data-list-search placeholder="Search patients…" aria-label="Search Patients"></form>
+      <span class="spacer"></span>
+      <button class="btn" type="button" data-export="wardlight-patients.csv" data-table="listTable" title="Download all patients as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button>
+    </div>
+    <div class="table-wrap" role="region" aria-label="Patients" tabindex="0">
+      <table id="listTable">
+        <thead><tr><th scope="col">Patient</th><th scope="col">Ward</th><th scope="col">Consultant</th><th scope="col">Admitted</th><th scope="col">Acuity</th><th scope="col">Status</th><th scope="col">Actions</th></tr></thead>
+        <tbody>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#2563EB,#60A5FA)" aria-hidden="true">LF</span><span><span class="nm">Lena Fischer</span><span class="em">MRN 88231</span></span></span></td><td>Cardiology</td><td>Dr. Patel</td><td>Jun 08</td><td><span class="pill pill-danger">High</span></td><td><span class="pill pill-success">Stable</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">MW</span><span><span class="nm">Marcus Webb</span><span class="em">MRN 88232</span></span></span></td><td>Orthopaedics</td><td>Dr. Cho</td><td>Jun 09</td><td><span class="pill pill-warn">Medium</span></td><td><span class="pill pill-info">Recovering</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">PR</span><span><span class="nm">Priya Raman</span><span class="em">MRN 88233</span></span></span></td><td>General</td><td>Dr. Singh</td><td>Jun 10</td><td><span class="pill pill-neutral">Low</span></td><td><span class="pill pill-success">Stable</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">DS</span><span><span class="nm">Diego Santos</span><span class="em">MRN 88234</span></span></span></td><td>ICU</td><td>Dr. Adeyemi</td><td>Jun 07</td><td><span class="pill pill-danger">Critical</span></td><td><span class="pill pill-warn">Monitored</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">AH</span><span><span class="nm">Amelia Hart</span><span class="em">MRN 88235</span></span></span></td><td>Maternity</td><td>Dr. Olsen</td><td>Jun 11</td><td><span class="pill pill-warn">Medium</span></td><td><span class="pill pill-success">Stable</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">TN</span><span><span class="nm">Tomasz Nowak</span><span class="em">MRN 88236</span></span></span></td><td>Cardiology</td><td>Dr. Patel</td><td>Jun 06</td><td><span class="pill pill-danger">High</span></td><td><span class="pill pill-info">Recovering</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">SR</span><span><span class="nm">Sofia Ricci</span><span class="em">MRN 88237</span></span></span></td><td>General</td><td>Dr. Singh</td><td>Jun 10</td><td><span class="pill pill-neutral">Low</span></td><td><span class="pill pill-success">Discharge soon</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#16A34A,#4ADE80)" aria-hidden="true">IO</span><span><span class="nm">Imani Okoye</span><span class="em">MRN 88238</span></span></span></td><td>Paediatrics</td><td>Dr. Cho</td><td>Jun 09</td><td><span class="pill pill-warn">Medium</span></td><td><span class="pill pill-success">Stable</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#D97706,#FBBF24)" aria-hidden="true">RC</span><span><span class="nm">Ruben Castillo</span><span class="em">MRN 88239</span></span></span></td><td>ICU</td><td>Dr. Adeyemi</td><td>Jun 05</td><td><span class="pill pill-danger">Critical</span></td><td><span class="pill pill-warn">Monitored</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#E11D48,#FB7185)" aria-hidden="true">EK</span><span><span class="nm">Elliot Kim</span><span class="em">MRN 88240</span></span></span></td><td>Orthopaedics</td><td>Dr. Cho</td><td>Jun 11</td><td><span class="pill pill-neutral">Low</span></td><td><span class="pill pill-success">Stable</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#2563EB,#60A5FA)" aria-hidden="true">NV</span><span><span class="nm">Nadia Vogel</span><span class="em">MRN 88241</span></span></span></td><td>Cardiology</td><td>Dr. Patel</td><td>Jun 08</td><td><span class="pill pill-warn">Medium</span></td><td><span class="pill pill-info">Recovering</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">JB</span><span><span class="nm">Jonas Brandt</span><span class="em">MRN 88242</span></span></span></td><td>General</td><td>Dr. Singh</td><td>Jun 09</td><td><span class="pill pill-danger">High</span></td><td><span class="pill pill-warn">Monitored</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">HS</span><span><span class="nm">Hana Suzuki</span><span class="em">MRN 88243</span></span></span></td><td>Maternity</td><td>Dr. Olsen</td><td>Jun 10</td><td><span class="pill pill-neutral">Low</span></td><td><span class="pill pill-success">Stable</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">OR</span><span><span class="nm">Owen Reilly</span><span class="em">MRN 88244</span></span></span></td><td>Paediatrics</td><td>Dr. Cho</td><td>Jun 07</td><td><span class="pill pill-warn">Medium</span></td><td><span class="pill pill-info">Recovering</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">CM</span><span><span class="nm">Carla Mendes</span><span class="em">MRN 88245</span></span></span></td><td>Cardiology</td><td>Dr. Patel</td><td>Jun 11</td><td><span class="pill pill-danger">High</span></td><td><span class="pill pill-success">Stable</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">VP</span><span><span class="nm">Viktor Petrov</span><span class="em">MRN 88246</span></span></span></td><td>ICU</td><td>Dr. Adeyemi</td><td>Jun 06</td><td><span class="pill pill-danger">Critical</span></td><td><span class="pill pill-warn">Monitored</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">YH</span><span><span class="nm">Yara Haddad</span><span class="em">MRN 88247</span></span></span></td><td>General</td><td>Dr. Singh</td><td>Jun 10</td><td><span class="pill pill-neutral">Low</span></td><td><span class="pill pill-success">Discharge soon</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#16A34A,#4ADE80)" aria-hidden="true">FM</span><span><span class="nm">Felix Mayer</span><span class="em">MRN 88248</span></span></span></td><td>Orthopaedics</td><td>Dr. Cho</td><td>Jun 08</td><td><span class="pill pill-warn">Medium</span></td><td><span class="pill pill-info">Recovering</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#D97706,#FBBF24)" aria-hidden="true">GA</span><span><span class="nm">Grace Adeyemi</span><span class="em">MRN 88249</span></span></span></td><td>Maternity</td><td>Dr. Olsen</td><td>Jun 11</td><td><span class="pill pill-neutral">Low</span></td><td><span class="pill pill-success">Stable</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#E11D48,#FB7185)" aria-hidden="true">NB</span><span><span class="nm">Noah Bergstrom</span><span class="em">MRN 88250</span></span></span></td><td>Cardiology</td><td>Dr. Patel</td><td>Jun 07</td><td><span class="pill pill-danger">High</span></td><td><span class="pill pill-warn">Monitored</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="list-empty" data-list-empty hidden>No patients match your search.</p>
+    <div class="table-foot" data-pagination data-table="listTable" data-page-size="5" data-noun="patients"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 20 patients</span>
+      <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+    </div>
+  </section>
+</section>
+<section class="view" data-view-panel="reports" hidden aria-label="Operations reports">
+  <div class="view-head"><h2>Operations reports</h2><p class="sub">Occupancy, admissions and wait-time trends.</p></div>
+  <div class="insight-grid"><article class="insight-tile"><div class="it-label">Bed occupancy</div><div class="it-value">78%</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> 4pt below capacity</div></article><article class="insight-tile"><div class="it-label">Avg ED wait</div><div class="it-value">38 min</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> 7 min faster</div></article><article class="insight-tile"><div class="it-label">Discharges today</div><div class="it-value">21</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> above daily target</div></article></div>
+  <div class="report-grid">
+  <section class="card">
+    <div class="card-head"><h2>Patients by ward</h2><p class="hint">Current inpatient distribution.</p></div>
+    <div class="donut-wrap report-chart"><div class="donut" id="repChartA" role="img" aria-label="Patients by ward"><span class="donut-center"><b>212 beds</b><span>total</span></span></div><ul class="donut-legend"><li><i class="sw" style="background:var(--accent)"></i><span class="ll">Cardiology</span><span class="lp">28%</span></li><li><i class="sw" style="background:var(--accent-2)"></i><span class="ll">General</span><span class="lp">24%</span></li><li><i class="sw" style="background:#34D399"></i><span class="ll">Orthopaedics</span><span class="lp">18%</span></li><li><i class="sw" style="background:#F87171"></i><span class="ll">ICU</span><span class="lp">12%</span></li><li><i class="sw" style="background:#FBBF24"></i><span class="ll">Maternity</span><span class="lp">10%</span></li><li><i class="sw" style="background:#A78BFA"></i><span class="ll">Paediatrics</span><span class="lp">8%</span></li></ul></div>
+  </section>
+  <section class="card">
+    <div class="card-head"><h2>Patients by acuity</h2><p class="hint">Acuity mix across all wards.</p></div>
+    <div class="donut-wrap report-chart"><div class="donut" id="repChartB" role="img" aria-label="Patients by acuity"><span class="donut-center"><b>212</b><span>total</span></span></div><ul class="donut-legend"><li><i class="sw" style="background:var(--accent-2)"></i><span class="ll">Low</span><span class="lp">45%</span></li><li><i class="sw" style="background:#FBBF24"></i><span class="ll">Medium</span><span class="lp">35%</span></li><li><i class="sw" style="background:#FB923C"></i><span class="ll">High</span><span class="lp">18%</span></li><li><i class="sw" style="background:#F87171"></i><span class="ll">Critical</span><span class="lp">2%</span></li></ul></div>
+  </section>
+  </div>
+  <section class="card">
+    <div class="card-head"><h2>Key takeaways</h2></div>
+    <ul class="takeaways">
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>ICU is at <b>4 of 6</b> critical beds — capacity is adequate.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Average emergency wait fell to <b>38 minutes</b> this week.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span><b>Cardiology</b> has the highest admission volume this month.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Average length of stay shortened to <b>4.6 days</b>.</span></li>
+    </ul>
+  </section>
+</section>
+<section class="view" data-view-panel="settings" hidden aria-label="Settings">
+  <div class="view-head"><h2>Settings</h2><p class="sub">Clinician profile, ward alerts and preferences.</p></div>
+  <div class="settings-grid">
+    <section class="card">
+      <div class="card-head"><h2>Profile</h2></div>
+      <form data-settings-form novalidate>
+        <div class="form-row"><label for="set-name-template-11-hospital-admin">Full name</label><input type="text" id="set-name-template-11-hospital-admin" name="profileName" value="Dr. Anita Patel" autocomplete="name"><span class="field-err">Please enter your name.</span></div>
+        <div class="form-row"><label for="set-email-template-11-hospital-admin">Email address</label><input type="email" id="set-email-template-11-hospital-admin" name="profileEmail" value="a.patel@wardlight.example.com" autocomplete="email"><span class="field-err">Enter a valid email address.</span></div>
+        <div class="form-actions"><button class="btn primary" type="submit"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg><span class="btxt">Save changes</span></button><span class="form-note" data-form-note role="status" aria-live="polite"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg>Saved</span></div>
+      </form>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Preferences</h2></div>
+      <div class="toggle-list">
+        <div class="toggle-row"><div class="tr-main"><b>Critical patient alerts</b><span>Notify on any critical acuity change.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Critical patient alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Bed capacity warnings</b><span>Alert when a ward exceeds 90%.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Bed capacity warnings"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Lab result notifications</b><span>Ping when results are ready.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Lab result notifications"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Shift handover summary</b><span>Email a recap at end of shift.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Shift handover summary"></button></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Appearance</h2></div>
+      <div class="appearance-row"><div class="ar-main"><b>Density</b><span>Comfortable spacing or a compact layout.</span></div><div class="seg-toggle" role="group" aria-label="Density"><button type="button" data-pref-seg aria-pressed="true">Comfortable</button><button type="button" data-pref-seg aria-pressed="false">Compact</button></div></div>
+      <div class="appearance-row"><div class="ar-main"><b>Reduce motion</b><span>Minimise animations across the dashboard.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Reduce motion"></button></div>
+    </section>
+    <section class="card danger-zone">
+      <div class="card-head"><h2>Danger zone</h2></div>
+      <div class="danger-row"><div class="dr-main"><b>Trigger ward lockdown</b><span>Restrict admissions to a ward.</span></div><button class="btn danger" type="button" data-demo-link>Lockdown</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Reset bed map</b><span>Rebuild the live bed allocation.</span></div><button class="btn danger" type="button" data-demo-link>Reset map</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Revoke my access</b><span>Remove your clinical permissions.</span></div><button class="btn danger" type="button" data-demo-link>Revoke access</button></div>
+    </section>
+  </div>
+</section>
+<footer class="page-foot"><span>&copy; <span data-year>2026</span> Wardlight Labs <span class="ver-chip">v2.2.0</span> — demo data only, refreshed June 11, 2026.</span><span><a href="#" data-demo-link>Docs</a> &middot; <a href="#" data-demo-link>Changelog</a> &middot; <a href="#" data-demo-link>Status</a></span></footer>
+</main>
+</div>
+</div>
+</body>
+</html>

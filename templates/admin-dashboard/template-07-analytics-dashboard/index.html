@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metricore — Analytics Dashboard</title>
+  <meta name="description" content="A dense analytics dashboard template with icon-rail navigation, multi-series traffic line chart, sparkline stats, top sources list and pages table.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%232563EB'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='%23FFFFFF'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="v5">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="brand">
+    <span class="brand-mark"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></span>
+    <span class="brand-name nav-label">Metricore</span>
+  </div>
+  <nav>
+    <div class="nav-group">
+      <div class="nav-group-label">Measure</div>
+      <a class="nav-link active" href="#/overview" data-view="overview" aria-current="page"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg><span class="nav-label">Overview</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg><span class="nav-label">Traffic</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg><span class="nav-label">Audience</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="nav-label">Acquisition</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Explore</div>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2L3 14h7l-1 8 11-12h-8l1-8z"/></svg><span class="nav-label">Events</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg><span class="nav-label">Conversions</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg><span class="nav-label">Reports</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Admin</div>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2l10 6-10 6L2 8z"/><path d="M2 13.5l10 6 10-6"/></svg><span class="nav-label">Properties</span></a>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg><span class="nav-label">Settings</span></a>
+    </div>
+  </nav>
+  <div class="sidebar-foot">
+    <button class="rail-toggle" id="railToggle" aria-expanded="false" aria-label="Expand navigation labels"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg><span class="nav-label">Collapse</span></button>
+    <div class="side-card"><strong>Weekly digest</strong><br>Email summary every Monday.<a class="mini-btn" href="#" data-demo-link>Configure</a></div>
+  </div>
+</aside>
+<div class="overlay" id="overlay" aria-hidden="true"></div>
+<div class="main-wrap">
+<header class="topbar">
+  <button class="icon-btn hamburger" id="navToggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu" title="Open navigation menu"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><span class="topbar-ctx" data-view-ctx aria-hidden="true">Traffic overview</span>
+  <form class="search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" placeholder="Search pages, events…" aria-label="Search pages, events…"></form>
+  <div class="topbar-actions">
+    <div class="dropdown">
+      <button class="icon-btn" id="notifBtn" data-menu-toggle aria-controls="notifPanel" aria-expanded="false" aria-haspopup="true" aria-label="Notifications" title="Notifications"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><span class="dot"></span></button>
+      <div class="dropdown-panel" id="notifPanel" aria-label="Notifications">
+      <div class="dd-head">Notifications <span class="pill pill-info">3 new</span></div>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2L3 14h7l-1 8 11-12h-8l1-8z"/></svg></span><span><p>Traffic spike detected on <strong>/launch</strong> (+412%)</p><span class="when">14 min ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg></span><span><p>Goal <strong>Trial signup</strong> hit its weekly target</p><span class="when">3 hrs ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></span><span><p>May acquisition report is <strong>ready</strong></p><span class="when">8 hrs ago</span></span></a>
+      <a class="dd-foot" href="#" data-demo-link>View all notifications</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="profile-chip" id="profileBtn" data-menu-toggle aria-controls="profilePanel" aria-expanded="false" aria-haspopup="true"><span class="avatar" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">QB</span><span class="chip-meta"><span class="nm">Quinn Barrow</span><span class="rl">Growth Analyst</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dropdown-panel" id="profilePanel" aria-label="Account menu">
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>My profile</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg>Workspace settings</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Billing &amp; plan</a>
+        <div class="menu-sep"></div>
+        <a class="menu-item danger" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Sign out</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<nav class="crumbs" aria-label="Breadcrumb" data-crumbs="Home / Dashboards / Traffic overview"><a href="#" data-demo-link>Home</a><span class="crumb-sep" aria-hidden="true">/</span><a href="#" data-demo-link>Dashboards</a><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-here" aria-current="page">Traffic overview</span></nav>
+<section class="view" data-view-panel="overview" aria-label="Overview">
+<div class="page-head">
+  <div><h1>Traffic overview</h1></div>
+  <div class="page-actions"><button class="btn" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span class="btxt">Jun 1 – Jun 11</span></button><button class="btn primary" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button></div>
+  <p class="sub">metricore.example.com property · last 11 days vs prior period.</p>
+</div>
+<section class="stats-grid" aria-label="Key metrics">
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Sessions</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 12h-4l-3 8L9 4l-3 8H2"/></svg></span></div>
+    <div class="stat-value" data-count="248420" data-dec="0" data-prefix="" data-suffix="">248,420</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>12.4% <small>vs prior period</small></span>
+    <svg class="spark" data-points="18,21,19,24,23,27,25,29,31,30,34" aria-hidden="true"></svg>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Unique visitors</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg></span></div>
+    <div class="stat-value" data-count="182640" data-dec="0" data-prefix="" data-suffix="">182,640</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>9.1% <small>vs prior period</small></span>
+    <svg class="spark" data-points="14,16,15,18,17,20,19,22,23,22,25" aria-hidden="true"></svg>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Bounce rate</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg></span></div>
+    <div class="stat-value" data-count="42.8" data-dec="1" data-prefix="" data-suffix="%">42.8%</div>
+    <span class="delta down good"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg>1.6 pts <small>improving</small></span>
+    <svg class="spark" data-points="52,50,51,48,49,47,46,46,44,43,43" aria-hidden="true"></svg>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Pages / session</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></span></div>
+    <div class="stat-value" data-count="4.6" data-dec="1" data-prefix="" data-suffix="">4.6</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>0.4 <small>vs prior period</small></span>
+    <svg class="spark" data-points="3.8,3.9,4.0,3.9,4.1,4.2,4.1,4.3,4.4,4.5,4.6" aria-hidden="true"></svg>
+  </article>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Sessions by channel</h2>
+    <div class="card-tools"><div class="range-chips" role="group" aria-label="Date range" data-rangegroup><button type="button" data-rng="a" aria-pressed="true">11 days</button><button type="button" data-rng="b" aria-pressed="false">Prior 11</button></div><span class="chart-legend"><span><i class="sw" style="background:#2563EB"></i>Organic</span><span><i class="sw" style="background:#F59E0B"></i>Paid</span><span><i class="sw" style="background:#14B8A6"></i>Referral</span></span></div>
+    <p class="hint">Daily sessions split by acquisition channel.</p>
+  </div>
+  <div class="line-chart" id="trafficLine" role="img" aria-label="Sessions by channel line chart"></div>
+</section>
+
+<div class="layout-cols flip">
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Top pages</h2>
+    <div class="card-tools"><button class="btn" type="button" data-export="metricore-top-pages.csv" title="Download table as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button></div>
+  </div>
+  <div class="table-wrap" role="region" aria-label="Top pages" tabindex="0">
+    <table id="dataTable">
+      <thead><tr><th scope="col">Page</th><th scope="col">Channel</th><th scope="col">Visitors</th><th scope="col">Conv. rate</th><th scope="col">Bounce</th><th scope="col">Trend</th><th scope="col">Actions</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>/launch</strong></td>
+          <td>Organic search</td>
+          <td class="num">48,210</td>
+          <td class="num">6.4%</td>
+          <td class="num">31.2%</td>
+          <td><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>41.8%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>/pricing</strong></td>
+          <td>Direct</td>
+          <td class="num">31,884</td>
+          <td class="num">4.8%</td>
+          <td class="num">38.5%</td>
+          <td><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>8.2%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>/blog/ai-benchmarks</strong></td>
+          <td>Referral</td>
+          <td class="num">24,902</td>
+          <td class="num">1.9%</td>
+          <td class="num">52.1%</td>
+          <td><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>12.6%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>/</strong></td>
+          <td>Organic search</td>
+          <td class="num">22,418</td>
+          <td class="num">3.2%</td>
+          <td class="num">44.0%</td>
+          <td><span class="delta down"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg>2.1%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>/docs/quickstart</strong></td>
+          <td>Direct</td>
+          <td class="num">18,772</td>
+          <td class="num">2.4%</td>
+          <td class="num">29.8%</td>
+          <td><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>5.4%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>/templates</strong></td>
+          <td>Social</td>
+          <td class="num">14,210</td>
+          <td class="num">5.1%</td>
+          <td class="num">36.7%</td>
+          <td><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>18.9%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>/blog/q2-changelog</strong></td>
+          <td>Newsletter</td>
+          <td class="num">11,684</td>
+          <td class="num">2.2%</td>
+          <td class="num">47.3%</td>
+          <td><span class="delta down"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg>4.8%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>/integrations</strong></td>
+          <td>Organic search</td>
+          <td class="num">9,412</td>
+          <td class="num">3.8%</td>
+          <td class="num">40.2%</td>
+          <td><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>3.3%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>/customers</strong></td>
+          <td>Referral</td>
+          <td class="num">7,206</td>
+          <td class="num">2.9%</td>
+          <td class="num">42.6%</td>
+          <td><span class="delta down"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg>1.2%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+              <tr>
+          <td><strong>/docs/getting-started</strong></td>
+          <td>Organic search</td>
+          <td class="num">18,442</td>
+          <td class="num">2.9%</td>
+          <td class="num">44.7%</td>
+          <td><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>12.6%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>/templates</strong></td>
+          <td>Referral</td>
+          <td class="num">12,380</td>
+          <td class="num">5.6%</td>
+          <td class="num">29.8%</td>
+          <td><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>6.4%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>/blog/spring-release</strong></td>
+          <td>Social</td>
+          <td class="num">9,214</td>
+          <td class="num">1.8%</td>
+          <td class="num">52.3%</td>
+          <td><span class="delta down"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg>9.1%</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Inspect row" title="Inspect row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Open report for row" title="Open report for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></button></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-foot" data-pagination data-page-size="5" data-noun="pages"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 12 pages</span>
+    <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+  </div>
+</section>
+  </div>
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Top sources</h2>
+    <p class="hint">Share of sessions — last 11 days.</p>
+  </div>
+  <ol class="tlist">
+    <li><span class="tl-rank">1</span><span class="tl-main"><b>Organic search</b><span class="tl-bar"><i style="--w:100%"></i></span></span><span class="tl-val">38.4%</span></li>
+    <li><span class="tl-rank">2</span><span class="tl-main"><b>Direct</b><span class="tl-bar"><i style="--w:63%"></i></span></span><span class="tl-val">24.1%</span></li>
+    <li><span class="tl-rank">3</span><span class="tl-main"><b>Referral</b><span class="tl-bar"><i style="--w:41%"></i></span></span><span class="tl-val">15.7%</span></li>
+    <li><span class="tl-rank">4</span><span class="tl-main"><b>Newsletter</b><span class="tl-bar"><i style="--w:32%"></i></span></span><span class="tl-val">12.2%</span></li>
+    <li><span class="tl-rank">5</span><span class="tl-main"><b>Social</b><span class="tl-bar"><i style="--w:25%"></i></span></span><span class="tl-val">9.6%</span></li>
+  </ol>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Alerts & events</h2>
+    <div class="card-tools"><button class="icon-btn" type="button" aria-label="Activity options" title="Activity options"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></button></div>
+  </div>
+  <ul class="feed">
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2L3 14h7l-1 8 11-12h-8l1-8z"/></svg></span><span><p>Anomaly: <strong>+412% sessions</strong> on /launch from Organic.</p><span class="when">Today, 09:48</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg></span><span><p><strong>Trial signup</strong> conversions passed 1,000 this week.</p><span class="when">Today, 08:00</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><span><p>New referrer detected: <strong>devdigest.example.com</strong>.</p><span class="when">Yesterday, 21:15</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></span><span><p>Scheduled report <strong>May acquisition</strong> delivered.</p><span class="when">Yesterday, 07:00</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p>Tracking gap on <strong>/checkout</strong> resolved (8 min).</p><span class="when">Jun 09, 23:41</span></span></li>
+  </ul>
+</section>
+  </div>
+</div>
+
+</section>
+<section class="view" data-view-panel="list" hidden aria-label="Pages">
+  <div class="view-head"><h2>Pages</h2><p class="sub">Top landing pages by traffic, engagement and conversion.</p></div>
+  <div class="sum-chips"><div class="sum-chip"><div class="sc-label">Sessions (7d)</div><div class="sc-value">184k</div><div class="sc-foot up">+9.2% WoW</div></div><div class="sum-chip"><div class="sc-label">Unique visitors</div><div class="sc-value">121k</div><div class="sc-foot up">+6.4% WoW</div></div><div class="sum-chip"><div class="sc-label">Avg session</div><div class="sc-value">1m 58s</div><div class="sc-foot up">+11s vs prior</div></div><div class="sum-chip"><div class="sc-label">Bounce rate</div><div class="sc-value">38%</div><div class="sc-foot down">2pt improvement</div></div></div>
+  <section class="card">
+    <div class="list-toolbar">
+      <form class="list-search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" data-list-search placeholder="Search pages…" aria-label="Search Pages"></form>
+      <span class="spacer"></span>
+      <button class="btn" type="button" data-export="metricore-pages.csv" data-table="listTable" title="Download all pages as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button>
+    </div>
+    <div class="table-wrap" role="region" aria-label="Pages" tabindex="0">
+      <table id="listTable">
+        <thead><tr><th scope="col">Page</th><th scope="col">Views</th><th scope="col">Unique</th><th scope="col">Avg time</th><th scope="col">Bounce</th><th scope="col">Trend</th><th scope="col">Actions</th></tr></thead>
+        <tbody>
+        <tr><td>/home</td><td class="num">48,210</td><td class="num">31,540</td><td>1m 12s</td><td>38%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/pricing</td><td class="num">21,884</td><td class="num">17,902</td><td>2m 04s</td><td>29%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/blog/launch-week</td><td class="num">18,442</td><td class="num">15,330</td><td>3m 41s</td><td>22%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/features</td><td class="num">14,905</td><td class="num">11,260</td><td>1m 48s</td><td>41%</td><td><span class="pill pill-neutral">Flat</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/signup</td><td class="num">12,330</td><td class="num">10,880</td><td>0m 54s</td><td>18%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/docs</td><td class="num">11,718</td><td class="num">8,402</td><td>4m 12s</td><td>26%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/blog/seo-guide</td><td class="num">9,640</td><td class="num">8,110</td><td>3m 02s</td><td>31%</td><td><span class="pill pill-danger">Down</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/about</td><td class="num">8,221</td><td class="num">6,540</td><td>1m 06s</td><td>52%</td><td><span class="pill pill-neutral">Flat</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/integrations</td><td class="num">7,905</td><td class="num">5,990</td><td>2m 18s</td><td>37%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/contact</td><td class="num">6,448</td><td class="num">5,210</td><td>0m 48s</td><td>49%</td><td><span class="pill pill-danger">Down</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/blog/changelog</td><td class="num">5,902</td><td class="num">4,780</td><td>2m 50s</td><td>28%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/careers</td><td class="num">5,330</td><td class="num">4,120</td><td>1m 34s</td><td>44%</td><td><span class="pill pill-neutral">Flat</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/customers</td><td class="num">4,918</td><td class="num">3,860</td><td>2m 22s</td><td>34%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/security</td><td class="num">4,210</td><td class="num">3,540</td><td>1m 58s</td><td>39%</td><td><span class="pill pill-neutral">Flat</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/blog/case-study</td><td class="num">3,980</td><td class="num">3,290</td><td>3m 18s</td><td>24%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/demo</td><td class="num">3,612</td><td class="num">3,140</td><td>1m 02s</td><td>21%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/status</td><td class="num">3,104</td><td class="num">2,480</td><td>0m 36s</td><td>58%</td><td><span class="pill pill-danger">Down</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/partners</td><td class="num">2,890</td><td class="num">2,210</td><td>1m 40s</td><td>46%</td><td><span class="pill pill-neutral">Flat</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/blog/roadmap</td><td class="num">2,544</td><td class="num">2,090</td><td>2m 44s</td><td>27%</td><td><span class="pill pill-success">Up</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>/terms</td><td class="num">2,118</td><td class="num">1,760</td><td>0m 50s</td><td>61%</td><td><span class="pill pill-danger">Down</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="list-empty" data-list-empty hidden>No pages match your search.</p>
+    <div class="table-foot" data-pagination data-table="listTable" data-page-size="5" data-noun="pages"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 20 pages</span>
+      <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+    </div>
+  </section>
+</section>
+<section class="view" data-view-panel="reports" hidden aria-label="Traffic reports">
+  <div class="view-head"><h2>Traffic reports</h2><p class="sub">Acquisition channels and engagement over time.</p></div>
+  <div class="insight-grid"><article class="insight-tile"><div class="it-label">Goal completions</div><div class="it-value">4,820</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> +14% this week</div></article><article class="insight-tile"><div class="it-label">Pages / session</div><div class="it-value">3.6</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> +0.2 vs last week</div></article><article class="insight-tile"><div class="it-label">Top channel</div><div class="it-value">Organic</div><div class="it-note"> 44% of sessions</div></article></div>
+  <div class="report-grid">
+  <section class="card">
+    <div class="card-head"><h2>Sessions by channel</h2><p class="hint">Daily sessions, organic vs paid.</p></div>
+    <div class="line-chart report-chart" id="repChartA" role="img" aria-label="Sessions by channel"></div>
+  </section>
+  <section class="card">
+    <div class="card-head"><h2>Conversion rate trend</h2><p class="hint">Goal conversion %, last 12 weeks.</p></div>
+    <div class="line-chart report-chart" id="repChartB" role="img" aria-label="Conversion rate trend"></div>
+  </section>
+  </div>
+  <section class="card">
+    <div class="card-head"><h2>Key takeaways</h2></div>
+    <ul class="takeaways">
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span><b>Organic search</b> drove 44% of sessions, up 5pt week on week.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>The <b>/pricing</b> page improved time-on-page by 18 seconds.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Bounce rate fell to <b>38%</b> after the hero redesign.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Referral traffic from <b>launch-week</b> coverage is still climbing.</span></li>
+    </ul>
+  </section>
+</section>
+<section class="view" data-view-panel="settings" hidden aria-label="Settings">
+  <div class="view-head"><h2>Settings</h2><p class="sub">Analytics profile, report scheduling and alerts.</p></div>
+  <div class="settings-grid">
+    <section class="card">
+      <div class="card-head"><h2>Profile</h2></div>
+      <form data-settings-form novalidate>
+        <div class="form-row"><label for="set-name-template-07-analytics-dashboard">Full name</label><input type="text" id="set-name-template-07-analytics-dashboard" name="profileName" value="Tobias Lund" autocomplete="name"><span class="field-err">Please enter your name.</span></div>
+        <div class="form-row"><label for="set-email-template-07-analytics-dashboard">Email address</label><input type="email" id="set-email-template-07-analytics-dashboard" name="profileEmail" value="tobias@metricore.example.com" autocomplete="email"><span class="field-err">Enter a valid email address.</span></div>
+        <div class="form-actions"><button class="btn primary" type="submit"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg><span class="btxt">Save changes</span></button><span class="form-note" data-form-note role="status" aria-live="polite"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg>Saved</span></div>
+      </form>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Preferences</h2></div>
+      <div class="toggle-list">
+        <div class="toggle-row"><div class="tr-main"><b>Traffic spike alerts</b><span>Notify on unusual session spikes.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Traffic spike alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Weekly report email</b><span>Send a Monday performance recap.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Weekly report email"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Goal completion alerts</b><span>Ping when goals exceed target.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Goal completion alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Anomaly detection</b><span>Flag sudden drops in key metrics.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Anomaly detection"></button></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Appearance</h2></div>
+      <div class="appearance-row"><div class="ar-main"><b>Density</b><span>Comfortable spacing or a compact layout.</span></div><div class="seg-toggle" role="group" aria-label="Density"><button type="button" data-pref-seg aria-pressed="true">Comfortable</button><button type="button" data-pref-seg aria-pressed="false">Compact</button></div></div>
+      <div class="appearance-row"><div class="ar-main"><b>Reduce motion</b><span>Minimise animations across the dashboard.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Reduce motion"></button></div>
+    </section>
+    <section class="card danger-zone">
+      <div class="card-head"><h2>Danger zone</h2></div>
+      <div class="danger-row"><div class="dr-main"><b>Reset attribution model</b><span>Revert to last-click attribution.</span></div><button class="btn danger" type="button" data-demo-link>Reset model</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Clear saved segments</b><span>Delete all custom audience segments.</span></div><button class="btn danger" type="button" data-demo-link>Clear segments</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Delete property</b><span>Permanently remove this property.</span></div><button class="btn danger" type="button" data-demo-link>Delete property</button></div>
+    </section>
+  </div>
+</section>
+<footer class="page-foot"><span>&copy; <span data-year>2026</span> Metricore Labs <span class="ver-chip">v1.6.1</span> — demo data only, refreshed June 11, 2026.</span><span><a href="#" data-demo-link>Docs</a> &middot; <a href="#" data-demo-link>Changelog</a> &middot; <a href="#" data-demo-link>Status</a></span></footer>
+</main>
+</div>
+</div>
+</body>
+</html>

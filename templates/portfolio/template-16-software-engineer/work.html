@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Rohan Mehta</title>
+  <meta name="description" content="Selected work and projects by Rohan Mehta, Staff Software Engineer — case studies, tags and the approach behind them.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='10'%20fill='%2310B981'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial%2C%20sans-serif'%20font-size='26'%20font-weight='800'%20text-anchor='middle'%20fill='%23FFFFFF'%3ERM%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#F8FAFC">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="v5-body case-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+    <div class="nav-wrap container">
+      <a class="brand" href="index.html"><span class="brand-mark">RM</span><span class="brand-name">Rohan Mehta</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html" aria-current="page">Projects</a></li>
+        <li><a href="about.html#experience">Journey</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false"><span class="tt-sun"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span><span class="tt-moon"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span></button>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+  <nav class="cs-breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="cs-crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page"><span>Work</span></li>
+      </ol>
+    </div>
+  </nav>
+  <section class="section pfp-hero" aria-labelledby="work-h1">
+    <div class="container">
+      <p class="kicker">Selected work</p>
+      <h1 id="work-h1">Work &amp; projects</h1>
+      <p class="pfp-lede">A fuller look at the projects behind the highlights — open any one for the full case study.</p>
+      <div class="pfp-hero-actions">
+        <a class="btn btn-primary" href="contact.html">Start a project <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn btn-ghost" href="about.html">More about me</a>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="work-grid" aria-labelledby="grid-title">
+    <div class="container">
+      <p class="kicker">Case studies</p>
+      <h2 id="grid-title">Projects</h2>
+      <div class="pfp-filters" role="group" aria-label="Filter projects by tag">
+        <button class="pfp-chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="pfp-chip" type="button" data-filter="systems" aria-pressed="false">Systems</button>
+        <button class="pfp-chip" type="button" data-filter="go" aria-pressed="false">Go</button>
+        <button class="pfp-chip" type="button" data-filter="api" aria-pressed="false">API</button>
+        <button class="pfp-chip" type="button" data-filter="tooling" aria-pressed="false">Tooling</button>
+        <button class="pfp-chip" type="button" data-filter="open source" aria-pressed="false">Open source</button>
+        <button class="pfp-chip" type="button" data-filter="postgres" aria-pressed="false">Postgres</button>
+        <button class="pfp-chip" type="button" data-filter="sre" aria-pressed="false">SRE</button>
+        <button class="pfp-chip" type="button" data-filter="infra" aria-pressed="false">Infra</button>
+      </div>
+      <div class="pfp-grid">
+        <article class="pfp-card" data-tags="systems go">
+          <a class="thumb pfp-card-thumb" href="project.html?p=0" style="background-image:linear-gradient(135deg,#10B981,#065F46)" aria-label="Open case study: Event pipeline rebuild"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="21"/></svg></span></a>
+          <div class="pfp-card-body">
+            <h3><a class="case-title-link" href="project.html?p=0">Event pipeline rebuild</a></h3>
+            <p>Kafka-based pipeline handling 40k events/sec with exactly-once semantics; p99 latency cut 8x.</p>
+            <ul class="tag-list"><li>Systems</li><li>Go</li></ul>
+          </div>
+        </article>
+        <article class="pfp-card" data-tags="systems api">
+          <a class="thumb pfp-card-thumb" href="project.html?p=1" style="background-image:linear-gradient(135deg,#334155,#10B981)" aria-label="Open case study: Payments idempotency layer"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span></a>
+          <div class="pfp-card-body">
+            <h3><a class="case-title-link" href="project.html?p=1">Payments idempotency layer</a></h3>
+            <p>Idempotency-key service that ended duplicate-charge incidents — zero in 18 months since.</p>
+            <ul class="tag-list"><li>Systems</li><li>API</li></ul>
+          </div>
+        </article>
+        <article class="pfp-card" data-tags="tooling open source">
+          <a class="thumb pfp-card-thumb" href="project.html?p=2" style="background-image:linear-gradient(135deg,#0EA5E9,#0C4A6E)" aria-label="Open case study: `shipctl` deploy CLI"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span></a>
+          <div class="pfp-card-body">
+            <h3><a class="case-title-link" href="project.html?p=2">`shipctl` deploy CLI</a></h3>
+            <p>Open-source CLI wrapping our deploy pipeline; 1.4k stars and adopted by three other orgs.</p>
+            <ul class="tag-list"><li>Tooling</li><li>Open source</li></ul>
+          </div>
+        </article>
+        <article class="pfp-card" data-tags="tooling postgres">
+          <a class="thumb pfp-card-thumb" href="project.html?p=3" style="background-image:linear-gradient(135deg,#059669,#D1FAE5)" aria-label="Open case study: Query plan visualiser"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></span></a>
+          <div class="pfp-card-body">
+            <h3><a class="case-title-link" href="project.html?p=3">Query plan visualiser</a></h3>
+            <p>Web tool that renders EXPLAIN output humans can read; now part of our onboarding curriculum.</p>
+            <ul class="tag-list"><li>Tooling</li><li>Postgres</li></ul>
+          </div>
+        </article>
+        <article class="pfp-card" data-tags="sre systems">
+          <a class="thumb pfp-card-thumb" href="project.html?p=4" style="background-image:linear-gradient(135deg,#10B981,#1E293B)" aria-label="Open case study: On-call load balancer"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span></a>
+          <div class="pfp-card-body">
+            <h3><a class="case-title-link" href="project.html?p=4">On-call load balancer</a></h3>
+            <p>Alert routing by service ownership and recent toil; pages per engineer down 45%.</p>
+            <ul class="tag-list"><li>SRE</li><li>Systems</li></ul>
+          </div>
+        </article>
+        <article class="pfp-card" data-tags="infra open source">
+          <a class="thumb pfp-card-thumb" href="project.html?p=5" style="background-image:linear-gradient(135deg,#22D3EE,#155E75)" aria-label="Open case study: Homelab GitOps setup"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span></a>
+          <div class="pfp-card-body">
+            <h3><a class="case-title-link" href="project.html?p=5">Homelab GitOps setup</a></h3>
+            <p>Three-node k3s cluster, fully declarative, documented as a public template repo.</p>
+            <ul class="tag-list"><li>Infra</li><li>Open source</li></ul>
+          </div>
+        </article>
+        <article class="pfp-card" data-tags="systems go">
+          <a class="thumb pfp-card-thumb" href="project.html?p=0" style="background-image:linear-gradient(135deg,#10B981,#065F46)" aria-label="Open case study: Ledger reconciliation"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span></a>
+          <div class="pfp-card-body">
+            <h3><a class="case-title-link" href="project.html?p=0">Ledger reconciliation</a></h3>
+            <p>A nightly reconciliation service that closed a class of money bugs for good.</p>
+            <ul class="tag-list"><li>Systems</li><li>Go</li></ul>
+          </div>
+        </article>
+        <article class="pfp-card" data-tags="platform api">
+          <a class="thumb pfp-card-thumb" href="project.html?p=1" style="background-image:linear-gradient(135deg,#334155,#10B981)" aria-label="Open case study: Feature-flag service"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span></a>
+          <div class="pfp-card-body">
+            <h3><a class="case-title-link" href="project.html?p=1">Feature-flag service</a></h3>
+            <p>A low-latency flag system with audit trails, adopted across a dozen teams.</p>
+            <ul class="tag-list"><li>Platform</li><li>API</li></ul>
+          </div>
+        </article>
+        <article class="pfp-card" data-tags="sre observability">
+          <a class="thumb pfp-card-thumb" href="project.html?p=2" style="background-image:linear-gradient(135deg,#0EA5E9,#0C4A6E)" aria-label="Open case study: Trace sampling rework"><span class="th-shape th-a"></span><span class="th-shape th-b"></span><span class="th-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="21"/></svg></span></a>
+          <div class="pfp-card-body">
+            <h3><a class="case-title-link" href="project.html?p=2">Trace sampling rework</a></h3>
+            <p>Smarter sampling that kept the signal while cutting tracing cost by half.</p>
+            <ul class="tag-list"><li>SRE</li><li>Observability</li></ul>
+          </div>
+        </article>
+      </div>
+      <p class="pfp-empty" data-pfp-empty hidden>No projects match that filter yet.</p>
+    </div>
+  </section>
+  <section class="section alt-bg" id="process" aria-labelledby="process-title">
+    <div class="container">
+      <p class="kicker">How I work</p>
+      <h2 id="process-title">The approach</h2>
+      <p class="section-lead">Different projects, same backbone. This is roughly how the work happens.</p>
+      <ol class="cs-steps pfp-steps">
+        <li class="cs-step">
+          <span class="cs-step-num" aria-hidden="true">01</span>
+          <h3>Spec</h3>
+          <p>Write the design doc first: the invariants, the failure modes, the rollback. The hard thinking belongs before the code.</p>
+        </li>
+        <li class="cs-step">
+          <span class="cs-step-num" aria-hidden="true">02</span>
+          <h3>Shadow</h3>
+          <p>Run the new path beside the old one, diffed continuously, until the difference is boring.</p>
+        </li>
+        <li class="cs-step">
+          <span class="cs-step-num" aria-hidden="true">03</span>
+          <h3>Cut over</h3>
+          <p>Switch when the data says it is safe, with a rollback one command away and dashboards watching.</p>
+        </li>
+        <li class="cs-step">
+          <span class="cs-step-num" aria-hidden="true">04</span>
+          <h3>Operate</h3>
+          <p>Runbooks, alerts that mean something, and load tests that keep the guarantees honest over time.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section class="section pfp-cta" aria-labelledby="pfp-cta-title">
+    <div class="container">
+      <div class="pfp-cta-inner">
+        <div>
+          <h2 id="pfp-cta-title">Have a project like these?</h2>
+          <p>The best work starts with a real problem and a short conversation. Tell me about yours.</p>
+        </div>
+        <div class="pfp-cta-actions">
+          <a class="btn btn-primary" href="contact.html">Contact me <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a class="btn btn-ghost" href="mailto:rohan@mehta.dev">Email directly</a>
+        </div>
+      </div>
+    </div>
+  </section>
+    </main>
+  <section class="cta-banner" aria-labelledby="cta-banner-title">
+    <div class="container cta-banner-inner">
+      <div class="cta-banner-copy">
+        <p class="cta-kicker">$ ./start-project.sh</p>
+        <h2 id="cta-banner-title">Let’s ship something reliable</h2>
+        <p class="cta-sub">Distributed systems, gnarly migrations, on-call you can sleep through. Send the problem, not the JD.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a class="btn btn-banner" href="mailto:rohan@mehta.dev"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email Rohan</a>
+        <a class="btn btn-banner-ghost" href="work.html" aria-current="page">Read the changelog</a>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-id">
+          <a class="brand" href="index.html"><span class="brand-mark">RM</span><span class="brand-name">Rohan Mehta</span></a>
+          <p class="footer-tagline">Backend-leaning full-stack engineer. Distributed systems by day, homelab chaos by night.</p>
+          <ul class="social-row">
+            <li><a href="#" data-demo-link aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="Blog feed"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></a></li>
+            <li><a href="mailto:rohan@mehta.dev" aria-label="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></li>
+            <li><a href="#" data-demo-link aria-label="RSS feed"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></a></li>
+          </ul>
+        </div>
+        <nav class="footer-col" aria-label="Footer links">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html" aria-current="page">Projects</a></li>
+            <li><a href="about.html#experience">Journey</a></li>
+            <li><a href="about.html#notes">Notes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-links footer-contact">
+            <li><a href="mailto:rohan@mehta.dev">rohan@mehta.dev</a></li>
+            <li>Open to staff engineering roles</li>
+            <li>Pune ⇄ remote, IST overlap</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Rohan Mehta. Designed &amp; built by hand — no frameworks, no trackers.</p>
+        <p class="footer-meta">Software Engineer</p>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" data-totop type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="18 15 12 9 6 15"/></svg></button>
+</body>
+</html>

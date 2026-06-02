@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freightwise — Logistics Dashboard</title>
+  <meta name="description" content="A navy-and-amber logistics control tower dashboard template with dual-area volume chart, route network grid, tabbed shipments table and dark mode toggle.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23F59E0B'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='%233A2A05'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="v2">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="brand">
+    <span class="brand-mark"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 7h11v9H2z"/><path d="M13 10h4l3 3v3h-7"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="16.5" cy="18" r="1.8"/></svg></span>
+    <span class="brand-name nav-label">Freightwise</span>
+  </div>
+  <nav>
+    <div class="nav-group">
+      <div class="nav-group-label">Operations</div>
+      <a class="nav-link active" href="#/overview" data-view="overview" aria-current="page"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg><span class="nav-label">Control tower</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 7h11v9H2z"/><path d="M13 10h4l3 3v3h-7"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="16.5" cy="18" r="1.8"/></svg><span class="nav-label">Shipments</span><span class="nav-badge">48</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg><span class="nav-label">Loads</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span class="nav-label">Routes</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Partners</div>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg><span class="nav-label">Carriers</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 6h2M13 6h2M9 10h2M13 10h2M9 14h2M13 14h2M10 22v-4h4v4"/></svg><span class="nav-label">Warehouses</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg><span class="nav-label">Customs docs</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Insights</div>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg><span class="nav-label">Reports</span></a>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg><span class="nav-label">Settings</span></a>
+    </div>
+  </nav>
+  <div class="sidebar-foot">
+    <div class="side-card"><strong>Storm advisory</strong><br>Gulf routes may slip 6–12h.<a class="mini-btn" href="#" data-demo-link>View impact</a></div>
+  </div>
+</aside>
+<div class="overlay" id="overlay" aria-hidden="true"></div>
+<div class="main-wrap">
+<header class="topbar">
+  <button class="icon-btn hamburger" id="navToggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu" title="Open navigation menu"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><span class="topbar-ctx" data-view-ctx aria-hidden="true">Control tower</span>
+  <form class="search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" placeholder="Search shipments, carriers…" aria-label="Search shipments, carriers…"></form>
+  <div class="topbar-actions">
+    <button class="icon-btn" id="themeToggle" aria-pressed="false" aria-label="Toggle color theme" title="Toggle color theme"><span class="th-sun"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span class="th-moon"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></span></button>
+    <div class="dropdown">
+      <button class="icon-btn" id="notifBtn" data-menu-toggle aria-controls="notifPanel" aria-expanded="false" aria-haspopup="true" aria-label="Notifications" title="Notifications"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><span class="dot"></span></button>
+      <div class="dropdown-panel" id="notifPanel" aria-label="Notifications">
+      <div class="dd-head">Notifications <span class="pill pill-info">5 new</span></div>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p><strong>SH-88412</strong> held at customs (Rotterdam)</p><span class="when">7 min ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 7h11v9H2z"/><path d="M13 10h4l3 3v3h-7"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="16.5" cy="18" r="1.8"/></svg></span><span><p>Carrier <strong>Blue Arrow</strong> accepted 12 loads</p><span class="when">45 min ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><p>Route <strong>CHI → DAL</strong> re-optimized, −42 mi</p><span class="when">2 hrs ago</span></span></a>
+      <a class="dd-foot" href="#" data-demo-link>View all notifications</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="profile-chip" id="profileBtn" data-menu-toggle aria-controls="profilePanel" aria-expanded="false" aria-haspopup="true"><span class="avatar" style="background:linear-gradient(135deg,#64748B,#94A3B8)" aria-hidden="true">BV</span><span class="chip-meta"><span class="nm">Bram Visser</span><span class="rl">Dispatch Manager</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dropdown-panel" id="profilePanel" aria-label="Account menu">
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>My profile</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg>Workspace settings</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Billing &amp; plan</a>
+        <div class="menu-sep"></div>
+        <a class="menu-item danger" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Sign out</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<nav class="crumbs" aria-label="Breadcrumb" data-crumbs="Home / Dashboards / Control tower"><a href="#" data-demo-link>Home</a><span class="crumb-sep" aria-hidden="true">/</span><a href="#" data-demo-link>Dashboards</a><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-here" aria-current="page">Control tower</span></nav>
+<section class="view" data-view-panel="overview" aria-label="Overview">
+<div class="page-head">
+  <div><h1>Control tower</h1></div>
+  <div class="page-actions"><button class="btn" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg><span class="btxt">Exceptions</span></button><button class="btn primary" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><span class="btxt">New shipment</span></button></div>
+  <p class="sub">Network-wide shipment flow and exceptions — Jun 11, 2026 10:40 UTC.</p>
+</div>
+<section class="stats-grid" aria-label="Key metrics">
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Active shipments</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 7h11v9H2z"/><path d="M13 10h4l3 3v3h-7"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="16.5" cy="18" r="1.8"/></svg></span></div>
+    <div class="stat-value" data-count="1248" data-dec="0" data-prefix="" data-suffix="">1,248</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>6.4% <small>vs last week</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">On-time delivery</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span></div>
+    <div class="stat-value" data-count="94.2" data-dec="1" data-prefix="" data-suffix="%">94.2%</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>1.8 pts <small>vs last month</small></span>
+  </article>
+  <article class="card stat-card down-trend">
+    <div class="stat-top"><span class="stat-label">Open exceptions</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span></div>
+    <div class="stat-value" data-count="23" data-dec="0" data-prefix="" data-suffix="">23</div>
+    <span class="delta up bad"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>5 <small>since 06:00</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Cost per mile</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20"/><path d="M16.5 6.5c-1-1.4-2.6-2-4.5-2-2.5 0-4.5 1.3-4.5 3.4 0 4.6 9 2.6 9 7.1 0 2.1-2 3.5-4.5 3.5-2 0-3.8-.7-4.8-2.2"/></svg></span></div>
+    <div class="stat-value" data-count="1.86" data-dec="2" data-prefix="$" data-suffix="">$1.86</div>
+    <span class="delta down good"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg>2.4% <small>vs last month</small></span>
+  </article>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Network volume — 10 days</h2>
+    <div class="card-tools"><div class="range-chips" role="group" aria-label="Date range" data-rangegroup><button type="button" data-rng="a" aria-pressed="true">10 days</button><button type="button" data-rng="b" aria-pressed="false">Prior 10</button></div><span class="chart-legend"><span><i class="sw" style="background:#F59E0B"></i>Outbound</span><span><i class="sw" style="background:#33658A"></i>Inbound</span></span></div>
+    <p class="hint">Outbound vs inbound shipments per day.</p>
+  </div>
+  <div class="line-chart" id="volumeLine" role="img" aria-label="Shipment volume line chart"></div>
+</section>
+
+<section class="card">
+  <div class="card-head">
+    <h2>Route network</h2>
+    <p class="hint">Active corridors between regional hubs (schematic).</p>
+  </div>
+  <div class="route-grid" aria-hidden="true">
+    <span class="route-cell"></span>
+    <span class="route-cell hub"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell hub"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell hub"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell hub"></span>
+    <span class="route-cell"></span>
+    <span class="route-cell"></span>
+    <svg class="route-path" viewBox="0 0 300 110" preserveAspectRatio="none"><path vector-effect="non-scaling-stroke" d="M42 22 C 90 7, 132 48, 174 40 S 252 81, 268 92"/><path vector-effect="non-scaling-stroke" d="M42 22 C 66 62, 144 73, 170 88" opacity=".5"/></svg>
+  </div>
+  <div class="route-key"><span><i class="sw" style="background:var(--accent)"></i>Active hub</span><span><i class="sw" style="background:var(--surface-2);border:1px solid var(--border)"></i>Coverage zone</span></div>
+</section>
+
+<div class="layout-cols">
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Shipment board</h2>
+    <div class="card-tools"><div class="tabs" role="tablist" aria-label="Table views"><button class="tab-btn" role="tab" data-tab="a" aria-selected="true">Outbound</button><button class="tab-btn" role="tab" data-tab="b" aria-selected="false">Inbound</button></div><button class="btn" type="button" data-export="freightwise-shipments.csv" title="Download table as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button></div>
+  </div>
+  <div class="table-wrap" role="region" aria-label="Shipment board" tabindex="0">
+    <table id="dataTable">
+      <thead><tr><th scope="col">Shipment</th><th scope="col">Carrier</th><th scope="col">Route</th><th scope="col">ETA</th><th scope="col">Weight</th><th scope="col">Status</th><th scope="col">Actions</th></tr></thead>
+      <tbody data-tab-panel="a">
+        <tr>
+          <td><strong>SH-88412</strong></td>
+          <td>Maas Freight</td>
+          <td>Rotterdam → Birmingham</td>
+          <td>Jun 13, 14:00</td>
+          <td class="num">8.2 t</td>
+          <td><span class="pill pill-warn">Customs hold</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88407</strong></td>
+          <td>Blue Arrow</td>
+          <td>Chicago, IL → Dallas, TX</td>
+          <td>Jun 12, 09:30</td>
+          <td class="num">14.6 t</td>
+          <td><span class="pill pill-info">In transit</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88399</strong></td>
+          <td>Northgate Rail</td>
+          <td>Hamburg → Warsaw</td>
+          <td>Jun 12, 22:15</td>
+          <td class="num">21.0 t</td>
+          <td><span class="pill pill-info">In transit</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88385</strong></td>
+          <td>Pacific Lane</td>
+          <td>Oakland, CA → Reno, NV</td>
+          <td>Jun 11, 18:45</td>
+          <td class="num">6.8 t</td>
+          <td><span class="pill pill-danger">Delayed</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88371</strong></td>
+          <td>Blue Arrow</td>
+          <td>Dallas, TX → Atlanta, GA</td>
+          <td>Jun 11, 12:10</td>
+          <td class="num">11.4 t</td>
+          <td><span class="pill pill-success">Delivered</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88364</strong></td>
+          <td>Iber Cargo</td>
+          <td>Valencia → Lyon</td>
+          <td>Jun 13, 08:00</td>
+          <td class="num">9.9 t</td>
+          <td><span class="pill pill-neutral">Loading</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88350</strong></td>
+          <td>Maas Freight</td>
+          <td>Antwerp → Manchester</td>
+          <td>Jun 14, 16:30</td>
+          <td class="num">17.3 t</td>
+          <td><span class="pill pill-info">In transit</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+              <tr>
+          <td><strong>SH-88347</strong></td>
+          <td>Iber Cargo</td>
+          <td>Lyon → Milan</td>
+          <td>Jun 14, 11:20</td>
+          <td class="num">12.1 t</td>
+          <td><span class="pill pill-info">In transit</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88342</strong></td>
+          <td>Blue Arrow</td>
+          <td>Atlanta, GA → Miami, FL</td>
+          <td>Jun 13, 17:40</td>
+          <td class="num">9.4 t</td>
+          <td><span class="pill pill-neutral">Loading</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88338</strong></td>
+          <td>Maas Freight</td>
+          <td>Birmingham → Leeds</td>
+          <td>Jun 12, 13:05</td>
+          <td class="num">5.6 t</td>
+          <td><span class="pill pill-success">Delivered</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88329</strong></td>
+          <td>Northgate Rail</td>
+          <td>Warsaw → Prague</td>
+          <td>Jun 15, 07:30</td>
+          <td class="num">23.8 t</td>
+          <td><span class="pill pill-info">In transit</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88321</strong></td>
+          <td>Pacific Lane</td>
+          <td>Dallas, TX → Phoenix, AZ</td>
+          <td>Jun 14, 20:10</td>
+          <td class="num">10.9 t</td>
+          <td><span class="pill pill-danger">Delayed</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+      </tbody>
+      <tbody data-tab-panel="b" hidden>
+        <tr>
+          <td><strong>SH-88340</strong></td>
+          <td>Northgate Rail</td>
+          <td>Gdansk → Hamburg</td>
+          <td>Jun 12, 06:50</td>
+          <td class="num">19.5 t</td>
+          <td><span class="pill pill-info">In transit</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88333</strong></td>
+          <td>Pacific Lane</td>
+          <td>Reno, NV → Oakland, CA</td>
+          <td>Jun 11, 21:00</td>
+          <td class="num">7.7 t</td>
+          <td><span class="pill pill-info">In transit</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88321</strong></td>
+          <td>Iber Cargo</td>
+          <td>Lyon → Valencia</td>
+          <td>Jun 13, 13:20</td>
+          <td class="num">12.2 t</td>
+          <td><span class="pill pill-neutral">Loading</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88307</strong></td>
+          <td>Blue Arrow</td>
+          <td>Atlanta, GA → Chicago, IL</td>
+          <td>Jun 11, 16:40</td>
+          <td class="num">15.8 t</td>
+          <td><span class="pill pill-danger">Delayed</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88298</strong></td>
+          <td>Maas Freight</td>
+          <td>Birmingham → Rotterdam</td>
+          <td>Jun 12, 11:05</td>
+          <td class="num">10.1 t</td>
+          <td><span class="pill pill-info">In transit</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>SH-88284</strong></td>
+          <td>Northgate Rail</td>
+          <td>Warsaw → Gdansk</td>
+          <td>Jun 11, 23:55</td>
+          <td class="num">22.4 t</td>
+          <td><span class="pill pill-success">Delivered</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="Track row" title="Track row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></button><button class="row-btn" type="button" aria-label="Documents for row" title="Documents for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-foot" data-pagination data-page-size="5" data-noun="shipments"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 12 shipments</span>
+    <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+  </div>
+</section>
+  </div>
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Dispatch actions</h2>
+  </div>
+  <div class="qa-grid">
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span>New shipment</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg></span>Assign carrier</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></span>Print labels</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span>Report exception</button>
+  </div>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Dispatch log</h2>
+    <div class="card-tools"><button class="icon-btn" type="button" aria-label="Activity options" title="Activity options"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></button></div>
+  </div>
+  <ul class="feed">
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p><strong>SH-88412</strong> flagged: missing CN23 form at Rotterdam.</p><span class="when">Today, 10:33</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 7h11v9H2z"/><path d="M13 10h4l3 3v3h-7"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="16.5" cy="18" r="1.8"/></svg></span><span><p><strong>42 loads</strong> tendered to carriers for Friday.</p><span class="when">Today, 09:10</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><p>Geofence alert: <strong>SH-88385</strong> off planned corridor.</p><span class="when">Today, 08:26</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg></span><span><p>POD received for <strong>SH-88371</strong> — no damages.</p><span class="when">Today, 07:58</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 6h2M13 6h2M9 10h2M13 10h2M9 14h2M13 14h2M10 22v-4h4v4"/></svg></span><span><p>Dock 4 at <strong>Dallas hub</strong> reopened after repair.</p><span class="when">Yesterday, 19:34</span></span></li>
+  </ul>
+</section>
+  </div>
+</div>
+
+</section>
+<section class="view" data-view-panel="list" hidden aria-label="Shipments">
+  <div class="view-head"><h2>Shipments</h2><p class="sub">Live and recently delivered shipments across the network.</p></div>
+  <div class="sum-chips"><div class="sum-chip"><div class="sc-label">In transit</div><div class="sc-value">184</div><div class="sc-foot">across 9 lanes</div></div><div class="sum-chip"><div class="sc-label">On-time rate</div><div class="sc-value">93%</div><div class="sc-foot up">+1.6pt WoW</div></div><div class="sum-chip"><div class="sc-label">Delayed</div><div class="sc-value">12</div><div class="sc-foot down">needs follow-up</div></div><div class="sum-chip"><div class="sc-label">Exceptions</div><div class="sc-value">4</div><div class="sc-foot down">escalated</div></div></div>
+  <section class="card">
+    <div class="list-toolbar">
+      <form class="list-search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" data-list-search placeholder="Search shipments…" aria-label="Search Shipments"></form>
+      <span class="spacer"></span>
+      <button class="btn" type="button" data-export="freightwise-shipments.csv" data-table="listTable" title="Download all shipments as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button>
+    </div>
+    <div class="table-wrap" role="region" aria-label="Shipments" tabindex="0">
+      <table id="listTable">
+        <thead><tr><th scope="col">Tracking</th><th scope="col">Route</th><th scope="col">Carrier</th><th scope="col">ETA</th><th scope="col">Status</th><th scope="col">Weight</th><th scope="col">Actions</th></tr></thead>
+        <tbody>
+        <tr><td class="num">FW-77120</td><td>Rotterdam → Madrid</td><td>EuroFreight</td><td>Jun 14</td><td><span class="pill pill-info">In transit</span></td><td>12.4t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77119</td><td>Hamburg → Paris</td><td>RhineCargo</td><td>Jun 13</td><td><span class="pill pill-info">In transit</span></td><td>8.1t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77118</td><td>Lyon → Milan</td><td>AlpLog</td><td>Jun 12</td><td><span class="pill pill-success">Delivered</span></td><td>5.6t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77117</td><td>Antwerp → Berlin</td><td>EuroFreight</td><td>Jun 15</td><td><span class="pill pill-warn">Delayed</span></td><td>14.2t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77116</td><td>Madrid → Lisbon</td><td>IberiaMove</td><td>Jun 13</td><td><span class="pill pill-info">In transit</span></td><td>3.9t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77115</td><td>Paris → Amsterdam</td><td>RhineCargo</td><td>Jun 12</td><td><span class="pill pill-success">Delivered</span></td><td>6.8t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77114</td><td>Milan → Zurich</td><td>AlpLog</td><td>Jun 16</td><td><span class="pill pill-info">In transit</span></td><td>9.3t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77113</td><td>Berlin → Warsaw</td><td>OstTrans</td><td>Jun 14</td><td><span class="pill pill-danger">Exception</span></td><td>11.0t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77112</td><td>Lisbon → Porto</td><td>IberiaMove</td><td>Jun 12</td><td><span class="pill pill-success">Delivered</span></td><td>2.4t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77111</td><td>Amsterdam → Cologne</td><td>RhineCargo</td><td>Jun 13</td><td><span class="pill pill-info">In transit</span></td><td>7.5t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77110</td><td>Zurich → Vienna</td><td>AlpLog</td><td>Jun 15</td><td><span class="pill pill-warn">Delayed</span></td><td>10.6t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77109</td><td>Warsaw → Prague</td><td>OstTrans</td><td>Jun 14</td><td><span class="pill pill-info">In transit</span></td><td>8.8t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77108</td><td>Cologne → Brussels</td><td>EuroFreight</td><td>Jun 12</td><td><span class="pill pill-success">Delivered</span></td><td>4.2t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77107</td><td>Vienna → Budapest</td><td>OstTrans</td><td>Jun 16</td><td><span class="pill pill-info">In transit</span></td><td>6.1t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77106</td><td>Brussels → Rotterdam</td><td>EuroFreight</td><td>Jun 13</td><td><span class="pill pill-success">Delivered</span></td><td>5.0t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77105</td><td>Prague → Munich</td><td>AlpLog</td><td>Jun 15</td><td><span class="pill pill-info">In transit</span></td><td>9.9t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77104</td><td>Budapest → Vienna</td><td>OstTrans</td><td>Jun 14</td><td><span class="pill pill-warn">Delayed</span></td><td>7.2t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77103</td><td>Munich → Stuttgart</td><td>RhineCargo</td><td>Jun 12</td><td><span class="pill pill-success">Delivered</span></td><td>3.3t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77102</td><td>Stuttgart → Lyon</td><td>AlpLog</td><td>Jun 16</td><td><span class="pill pill-info">In transit</span></td><td>12.8t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">FW-77101</td><td>Porto → Madrid</td><td>IberiaMove</td><td>Jun 15</td><td><span class="pill pill-danger">Exception</span></td><td>6.5t</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="list-empty" data-list-empty hidden>No shipments match your search.</p>
+    <div class="table-foot" data-pagination data-table="listTable" data-page-size="5" data-noun="shipments"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 20 shipments</span>
+      <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+    </div>
+  </section>
+</section>
+<section class="view" data-view-panel="reports" hidden aria-label="Network reports">
+  <div class="view-head"><h2>Network reports</h2><p class="sub">Lane throughput, on-time performance and carrier mix.</p></div>
+  <div class="insight-grid"><article class="insight-tile"><div class="it-label">On-time delivery</div><div class="it-value">93%</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> +1.6pt WoW</div></article><article class="insight-tile"><div class="it-label">Avg transit time</div><div class="it-value">2.1 days</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> 0.2 day faster</div></article><article class="insight-tile"><div class="it-label">Cost per tonne-km</div><div class="it-value">$0.41</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> $0.02 lower</div></article></div>
+  <div class="report-grid">
+  <section class="card">
+    <div class="card-head"><h2>On-time rate by week</h2><p class="hint">Network on-time delivery %, 8 weeks.</p></div>
+    <div class="line-chart report-chart" id="repChartA" role="img" aria-label="On-time rate by week"></div>
+  </section>
+  <section class="card">
+    <div class="card-head"><h2>Volume by lane (top 3)</h2><p class="hint">Daily shipments on the busiest lanes.</p></div>
+    <div class="line-chart report-chart" id="repChartB" role="img" aria-label="Volume by lane (top 3)"></div>
+  </section>
+  </div>
+  <section class="card">
+    <div class="card-head"><h2>Key takeaways</h2></div>
+    <ul class="takeaways">
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>On-time delivery climbed to <b>93%</b> after route optimisation.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Four shipments hit <b>exceptions</b> — customs holds on two lanes.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span><b>EuroFreight</b> handles the most volume at 34% of loads.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Average transit time dropped to <b>2.1 days</b> network-wide.</span></li>
+    </ul>
+  </section>
+</section>
+<section class="view" data-view-panel="settings" hidden aria-label="Settings">
+  <div class="view-head"><h2>Settings</h2><p class="sub">Operator profile, exception alerts and appearance.</p></div>
+  <div class="settings-grid">
+    <section class="card">
+      <div class="card-head"><h2>Profile</h2></div>
+      <form data-settings-form novalidate>
+        <div class="form-row"><label for="set-name-template-16-logistics-dashboard">Full name</label><input type="text" id="set-name-template-16-logistics-dashboard" name="profileName" value="Ingrid Bauer" autocomplete="name"><span class="field-err">Please enter your name.</span></div>
+        <div class="form-row"><label for="set-email-template-16-logistics-dashboard">Email address</label><input type="email" id="set-email-template-16-logistics-dashboard" name="profileEmail" value="ingrid@freightwise.example.com" autocomplete="email"><span class="field-err">Enter a valid email address.</span></div>
+        <div class="form-actions"><button class="btn primary" type="submit"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg><span class="btxt">Save changes</span></button><span class="form-note" data-form-note role="status" aria-live="polite"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg>Saved</span></div>
+      </form>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Preferences</h2></div>
+      <div class="toggle-list">
+        <div class="toggle-row"><div class="tr-main"><b>Exception alerts</b><span>Notify on any shipment exception.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Exception alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Delay warnings</b><span>Alert when ETA slips beyond plan.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Delay warnings"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Delivery confirmations</b><span>Ping on proof-of-delivery.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Delivery confirmations"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Daily network digest</b><span>Email lane performance each morning.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Daily network digest"></button></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Appearance</h2></div>
+      <div class="appearance-row"><div class="ar-main"><b>Color theme</b><span>Switch between the light and dark interface.</span></div><div class="seg-toggle" data-theme-seg role="group" aria-label="Color theme"><button type="button" data-theme-set="dark" aria-pressed="false">Dark</button><button type="button" data-theme-set="light" aria-pressed="false">Light</button></div></div>
+      <div class="appearance-row"><div class="ar-main"><b>Density</b><span>Comfortable spacing or a compact layout.</span></div><div class="seg-toggle" role="group" aria-label="Density"><button type="button" data-pref-seg aria-pressed="true">Comfortable</button><button type="button" data-pref-seg aria-pressed="false">Compact</button></div></div>
+      <div class="appearance-row"><div class="ar-main"><b>Reduce motion</b><span>Minimise animations across the dashboard.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Reduce motion"></button></div>
+    </section>
+    <section class="card danger-zone">
+      <div class="card-head"><h2>Danger zone</h2></div>
+      <div class="danger-row"><div class="dr-main"><b>Reroute all delayed</b><span>Auto-reroute delayed shipments.</span></div><button class="btn danger" type="button" data-demo-link>Reroute</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Reset lane mapping</b><span>Rebuild the lane and hub network.</span></div><button class="btn danger" type="button" data-demo-link>Reset lanes</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Remove my access</b><span>Revoke your operations permissions.</span></div><button class="btn danger" type="button" data-demo-link>Remove access</button></div>
+    </section>
+  </div>
+</section>
+<footer class="page-foot"><span>&copy; <span data-year>2026</span> Freightwise Labs <span class="ver-chip">v1.7.0</span> — demo data only, refreshed June 11, 2026.</span><span><a href="#" data-demo-link>Docs</a> &middot; <a href="#" data-demo-link>Changelog</a> &middot; <a href="#" data-demo-link>Status</a></span></footer>
+</main>
+</div>
+</div>
+</body>
+</html>

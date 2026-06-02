@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ledgerline — Finance Dashboard</title>
+  <meta name="description" content="A dense enterprise finance dashboard template with icon-rail navigation, cashflow combo chart, sparkline stat cards and a transactions ledger table.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2314304D'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='%23FFFFFF'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="v5">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="brand">
+    <span class="brand-mark"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20M16 15h2"/></svg></span>
+    <span class="brand-name nav-label">Ledgerline</span>
+  </div>
+  <nav>
+    <div class="nav-group">
+      <div class="nav-group-label">Money</div>
+      <a class="nav-link active" href="#/overview" data-view="overview" aria-current="page"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg><span class="nav-label">Overview</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20M16 15h2"/></svg><span class="nav-label">Accounts</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg><span class="nav-label">Transfers</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="nav-label">Cards</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Ledger</div>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg><span class="nav-label">Invoices</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg><span class="nav-label">Cashflow</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="5" rx="1"/><path d="M4 9v11h16V9M10 13h4"/></svg><span class="nav-label">Statements</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Control</div>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg><span class="nav-label">Alerts</span><span class="nav-badge">3</span></a>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg><span class="nav-label">Settings</span></a>
+    </div>
+  </nav>
+  <div class="sidebar-foot">
+    <button class="rail-toggle" id="railToggle" aria-expanded="false" aria-label="Expand navigation labels"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg><span class="nav-label">Collapse</span></button>
+    <div class="side-card"><strong>Month-end close</strong><br>4 reconciliations pending.<a class="mini-btn" href="#" data-demo-link>Open checklist</a></div>
+  </div>
+</aside>
+<div class="overlay" id="overlay" aria-hidden="true"></div>
+<div class="main-wrap">
+<header class="topbar">
+  <button class="icon-btn hamburger" id="navToggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu" title="Open navigation menu"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><span class="topbar-ctx" data-view-ctx aria-hidden="true">Treasury overview</span>
+  <form class="search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" placeholder="Search transactions, payees…" aria-label="Search transactions, payees…"></form>
+  <div class="topbar-actions">
+    <div class="dropdown">
+      <button class="icon-btn" id="notifBtn" data-menu-toggle aria-controls="notifPanel" aria-expanded="false" aria-haspopup="true" aria-label="Notifications" title="Notifications"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><span class="dot"></span></button>
+      <div class="dropdown-panel" id="notifPanel" aria-label="Notifications">
+      <div class="dd-head">Notifications <span class="pill pill-info">3 alerts</span></div>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p>Transaction <strong>$24,800</strong> flagged for review</p><span class="when">22 min ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg></span><span><p>April bank reconciliation <strong>completed</strong></p><span class="when">2 hrs ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><span><p>Corporate card ••7714 nearing limit (92%)</p><span class="when">5 hrs ago</span></span></a>
+      <a class="dd-foot" href="#" data-demo-link>View all notifications</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="profile-chip" id="profileBtn" data-menu-toggle aria-controls="profilePanel" aria-expanded="false" aria-haspopup="true"><span class="avatar" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">RA</span><span class="chip-meta"><span class="nm">Ruth Adeyemi</span><span class="rl">Controller</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dropdown-panel" id="profilePanel" aria-label="Account menu">
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>My profile</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg>Workspace settings</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Billing &amp; plan</a>
+        <div class="menu-sep"></div>
+        <a class="menu-item danger" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Sign out</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<nav class="crumbs" aria-label="Breadcrumb" data-crumbs="Home / Dashboards / Treasury overview"><a href="#" data-demo-link>Home</a><span class="crumb-sep" aria-hidden="true">/</span><a href="#" data-demo-link>Dashboards</a><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-here" aria-current="page">Treasury overview</span></nav>
+<section class="view" data-view-panel="overview" aria-label="Overview">
+<div class="page-head">
+  <div><h1>Treasury overview</h1></div>
+  <div class="page-actions"><button class="btn" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export ledger</span></button><button class="btn primary" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><span class="btxt">New transfer</span></button></div>
+  <p class="sub">Consolidated cash position across 6 accounts — updated Jun 11, 2026 07:00 UTC.</p>
+</div>
+<section class="stats-grid" aria-label="Key metrics">
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Cash balance</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20M16 15h2"/></svg></span></div>
+    <div class="stat-value" data-count="1284600" data-dec="0" data-prefix="$" data-suffix="">$1,284,600</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>2.4% <small>vs last month</small></span>
+    <svg class="spark" data-points="61,60,63,62,66,65,69,72,71,74" aria-hidden="true"></svg>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Inflow MTD</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg></span></div>
+    <div class="stat-value" data-count="342800" data-dec="0" data-prefix="$" data-suffix="">$342,800</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>8.6% <small>vs last month</small></span>
+    <svg class="spark" data-points="30,34,33,38,36,41,44,43,47,52" aria-hidden="true"></svg>
+  </article>
+  <article class="card stat-card down-trend">
+    <div class="stat-top"><span class="stat-label">Outflow MTD</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span></div>
+    <div class="stat-value" data-count="287400" data-dec="0" data-prefix="$" data-suffix="">$287,400</div>
+    <span class="delta up bad"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>4.1% <small>vs last month</small></span>
+    <svg class="spark" data-points="42,40,44,43,47,46,49,48,52,54" aria-hidden="true"></svg>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Net cashflow</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></span></div>
+    <div class="stat-value" data-count="55400" data-dec="0" data-prefix="$" data-suffix="">$55,400</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>31.2% <small>vs last month</small></span>
+    <svg class="spark" data-points="8,11,9,14,12,16,15,19,18,22" aria-hidden="true"></svg>
+  </article>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Cashflow — trailing 12 weeks</h2>
+    <div class="card-tools"><div class="range-chips" role="group" aria-label="Date range" data-rangegroup><button type="button" data-rng="a" aria-pressed="true">12 wk</button><button type="button" data-rng="b" aria-pressed="false">6 wk</button></div><span class="chart-legend"><span><i class="sw" style="background:#14304D"></i>Inflow</span><span><i class="sw" style="background:#2E5C8A"></i>Outflow</span><span><i class="sw" style="background:#16A34A"></i>Net position</span></span></div>
+    <p class="hint">Inflow vs outflow ($k) with net position line.</p>
+  </div>
+  <div class="combo-chart" role="img" aria-label="Cashflow combo chart">
+    <div class="combo-bars" id="cashCombo-bars"></div>
+    <svg class="combo-line" id="cashCombo-line" preserveAspectRatio="none"></svg>
+    <div class="combo-labels" id="cashCombo-labels"></div>
+  </div>
+</section>
+
+<div class="layout-cols">
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Transaction ledger</h2>
+    <div class="card-tools"><button class="btn" type="button" data-export="ledgerline-transactions.csv" title="Download table as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button></div>
+  </div>
+  <div class="table-wrap" role="region" aria-label="Transaction ledger" tabindex="0">
+    <table id="dataTable">
+      <thead><tr><th scope="col">Date</th><th scope="col">Description</th><th scope="col">Category</th><th scope="col">Account</th><th scope="col">Amount</th><th scope="col">Status</th><th scope="col">Actions</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Jun 11</td>
+          <td><strong>Stripe payout · batch 1142</strong></td>
+          <td>Revenue</td>
+          <td>Operating ••0841</td>
+          <td class="amount pos">+$48,210.00</td>
+          <td><span class="pill pill-success">Cleared</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td>Jun 11</td>
+          <td><strong>AWS — May usage</strong></td>
+          <td>Infrastructure</td>
+          <td>Operating ••0841</td>
+          <td class="amount neg">−$12,840.55</td>
+          <td><span class="pill pill-success">Cleared</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td>Jun 10</td>
+          <td><strong>Meridian Office — Q3 rent</strong></td>
+          <td>Facilities</td>
+          <td>Operating ••0841</td>
+          <td class="amount neg">−$24,800.00</td>
+          <td><span class="pill pill-danger">Flagged</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td>Jun 10</td>
+          <td><strong>Payroll run · June 1st half</strong></td>
+          <td>Payroll</td>
+          <td>Payroll ••3306</td>
+          <td class="amount neg">−$86,420.18</td>
+          <td><span class="pill pill-success">Cleared</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td>Jun 09</td>
+          <td><strong>Invoice #INV-2218 — Vantor</strong></td>
+          <td>Receivables</td>
+          <td>Operating ••0841</td>
+          <td class="amount pos">+$31,500.00</td>
+          <td><span class="pill pill-warn">Pending</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td>Jun 09</td>
+          <td><strong>Corporate card settlement</strong></td>
+          <td>Cards</td>
+          <td>Cards ••7714</td>
+          <td class="amount neg">−$8,212.90</td>
+          <td><span class="pill pill-success">Cleared</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td>Jun 08</td>
+          <td><strong>FX transfer EUR → USD</strong></td>
+          <td>Treasury</td>
+          <td>Reserve ••9920</td>
+          <td class="amount pos">+$60,118.42</td>
+          <td><span class="pill pill-success">Cleared</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td>Jun 08</td>
+          <td><strong>Quarterly insurance premium</strong></td>
+          <td>Insurance</td>
+          <td>Operating ••0841</td>
+          <td class="amount neg">−$9,640.00</td>
+          <td><span class="pill pill-info">Scheduled</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td>Jun 07</td>
+          <td><strong>Interest income — T-bills</strong></td>
+          <td>Treasury</td>
+          <td>Reserve ••9920</td>
+          <td class="amount pos">+$4,386.77</td>
+          <td><span class="pill pill-success">Cleared</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+              <tr>
+          <td>Jun 09</td>
+          <td><strong>Gusto — payroll run</strong></td>
+          <td>Payroll</td>
+          <td>Operating ••0841</td>
+          <td class="amount neg">−$84,160.00</td>
+          <td><span class="pill pill-success">Cleared</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td>Jun 09</td>
+          <td><strong>Refund — invoice #INV-2381</strong></td>
+          <td>Revenue</td>
+          <td>Operating ••0841</td>
+          <td class="amount neg">−$1,920.00</td>
+          <td><span class="pill pill-danger">Flagged</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td>Jun 08</td>
+          <td><strong>Treasury sweep — money market</strong></td>
+          <td>Transfers</td>
+          <td>Operating ••0841</td>
+          <td class="amount pos">+$25,000.00</td>
+          <td><span class="pill pill-info">Scheduled</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Receipt for row" title="Receipt for row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></button></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-foot" data-pagination data-page-size="5" data-noun="transactions"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 12 transactions</span>
+    <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+  </div>
+</section>
+  </div>
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Quick actions</h2>
+  </div>
+  <div class="qa-grid">
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg></span>New transfer</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></span>Pay invoice</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>Add payee</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></span>Export ledger</button>
+  </div>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Ledger events</h2>
+    <div class="card-tools"><button class="icon-btn" type="button" aria-label="Activity options" title="Activity options"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></button></div>
+  </div>
+  <ul class="feed">
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p><strong>$24,800</strong> rent payment flagged: duplicate vendor match.</p><span class="when">Today, 08:55</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg></span><span><p>May close package approved by <strong>R. Adeyemi</strong>.</p><span class="when">Today, 07:30</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg></span><span><p>Auto-sweep moved <strong>$50,000</strong> to reserve.</p><span class="when">Yesterday, 23:00</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></span><span><p>14 invoices issued totalling <strong>$118,360</strong>.</p><span class="when">Yesterday, 17:12</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><span><p>New corporate card issued to <strong>D. Whitfield</strong>.</p><span class="when">Jun 09, 11:05</span></span></li>
+  </ul>
+</section>
+  </div>
+</div>
+
+</section>
+<section class="view" data-view-panel="list" hidden aria-label="Transactions">
+  <div class="view-head"><h2>Transactions</h2><p class="sub">Posted and pending movements across treasury accounts.</p></div>
+  <div class="sum-chips"><div class="sum-chip"><div class="sc-label">Net cash flow (MTD)</div><div class="sc-value">+$214k</div><div class="sc-foot up">+6.4% vs May</div></div><div class="sum-chip"><div class="sc-label">Inflows</div><div class="sc-value">$452k</div><div class="sc-foot">11 receipts</div></div><div class="sum-chip"><div class="sc-label">Outflows</div><div class="sc-value">$238k</div><div class="sc-foot">9 payments</div></div><div class="sum-chip"><div class="sc-label">Pending settlement</div><div class="sc-value">$139k</div><div class="sc-foot">4 in flight</div></div></div>
+  <section class="card">
+    <div class="list-toolbar">
+      <form class="list-search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" data-list-search placeholder="Search transactions…" aria-label="Search Transactions"></form>
+      <span class="spacer"></span>
+      <button class="btn" type="button" data-export="ledgerline-transactions.csv" data-table="listTable" title="Download all transactions as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button>
+    </div>
+    <div class="table-wrap" role="region" aria-label="Transactions" tabindex="0">
+      <table id="listTable">
+        <thead><tr><th scope="col">Reference</th><th scope="col">Description</th><th scope="col">Account</th><th scope="col">Amount</th><th scope="col">Status</th><th scope="col">Date</th><th scope="col">Actions</th></tr></thead>
+        <tbody>
+        <tr><td class="num">TXN-88142</td><td>Payroll run — June</td><td>Operating ••4192</td><td class="amount neg">-$184,500.00</td><td><span class="pill pill-success">Posted</span></td><td>Jun 11</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88141</td><td>Stripe payout</td><td>Revenue ••7781</td><td class="amount pos">+$62,430.18</td><td><span class="pill pill-success">Posted</span></td><td>Jun 11</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88140</td><td>AWS invoice</td><td>Operating ••4192</td><td class="amount neg">-$9,284.55</td><td><span class="pill pill-success">Posted</span></td><td>Jun 10</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88139</td><td>Customer wire — Vantor</td><td>Revenue ••7781</td><td class="amount pos">+$86,900.00</td><td><span class="pill pill-warn">Pending</span></td><td>Jun 10</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88138</td><td>Office lease</td><td>Operating ••4192</td><td class="amount neg">-$14,200.00</td><td><span class="pill pill-success">Posted</span></td><td>Jun 09</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88137</td><td>FX settlement EUR</td><td>Treasury ••3050</td><td class="amount neg">-$22,118.40</td><td><span class="pill pill-success">Posted</span></td><td>Jun 09</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88136</td><td>Customer wire — Kestrel</td><td>Revenue ••7781</td><td class="amount pos">+$27,600.00</td><td><span class="pill pill-success">Posted</span></td><td>Jun 08</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88135</td><td>Refund — Lumetta</td><td>Revenue ••7781</td><td class="amount neg">-$9,850.00</td><td><span class="pill pill-success">Posted</span></td><td>Jun 08</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88134</td><td>Cloud reserved instances</td><td>Operating ••4192</td><td class="amount neg">-$41,000.00</td><td><span class="pill pill-warn">Pending</span></td><td>Jun 07</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88133</td><td>Stripe payout</td><td>Revenue ••7781</td><td class="amount pos">+$54,210.92</td><td><span class="pill pill-success">Posted</span></td><td>Jun 07</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88132</td><td>Contractor invoice</td><td>Operating ••4192</td><td class="amount neg">-$7,400.00</td><td><span class="pill pill-success">Posted</span></td><td>Jun 06</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88131</td><td>Tax provision Q2</td><td>Treasury ••3050</td><td class="amount neg">-$63,000.00</td><td><span class="pill pill-danger">Failed</span></td><td>Jun 06</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88130</td><td>Customer wire — Polaris</td><td>Revenue ••7781</td><td class="amount pos">+$74,500.00</td><td><span class="pill pill-success">Posted</span></td><td>Jun 05</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88129</td><td>SaaS subscriptions</td><td>Operating ••4192</td><td class="amount neg">-$3,820.00</td><td><span class="pill pill-success">Posted</span></td><td>Jun 05</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88128</td><td>Interest income</td><td>Treasury ••3050</td><td class="amount pos">+$4,118.66</td><td><span class="pill pill-success">Posted</span></td><td>Jun 04</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88127</td><td>Customer wire — Solstice</td><td>Revenue ••7781</td><td class="amount pos">+$36,800.00</td><td><span class="pill pill-success">Posted</span></td><td>Jun 04</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88126</td><td>Marketing — paid ads</td><td>Operating ••4192</td><td class="amount neg">-$18,600.00</td><td><span class="pill pill-success">Posted</span></td><td>Jun 03</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88125</td><td>Equipment purchase</td><td>Operating ••4192</td><td class="amount neg">-$11,250.00</td><td><span class="pill pill-warn">Pending</span></td><td>Jun 03</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88124</td><td>Customer wire — Harbor</td><td>Revenue ••7781</td><td class="amount pos">+$24,900.00</td><td><span class="pill pill-success">Posted</span></td><td>Jun 02</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td class="num">TXN-88123</td><td>Bank fees</td><td>Treasury ••3050</td><td class="amount neg">-$642.10</td><td><span class="pill pill-success">Posted</span></td><td>Jun 02</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="list-empty" data-list-empty hidden>No transactions match your search.</p>
+    <div class="table-foot" data-pagination data-table="listTable" data-page-size="5" data-noun="transactions"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 20 transactions</span>
+      <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+    </div>
+  </section>
+</section>
+<section class="view" data-view-panel="reports" hidden aria-label="Treasury reports">
+  <div class="view-head"><h2>Treasury reports</h2><p class="sub">Cash position, burn and runway across all accounts.</p></div>
+  <div class="insight-grid"><article class="insight-tile"><div class="it-label">Cash runway</div><div class="it-value">17 mo</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> +1 mo vs last quarter</div></article><article class="insight-tile"><div class="it-label">Gross burn</div><div class="it-value">$238k/mo</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> 4% lower than May</div></article><article class="insight-tile"><div class="it-label">Liquid reserves</div><div class="it-value">$4.06M</div><div class="it-note"> across 3 accounts</div></article></div>
+  <div class="report-grid">
+  <section class="card">
+    <div class="card-head"><h2>Inflows vs outflows</h2><p class="hint">Monthly cash movement with net trend.</p></div>
+    <div class="combo-chart report-chart" id="repChartA">
+      <div class="combo-bars" id="repChartA-bars"></div>
+      <svg class="combo-line" id="repChartA-line" aria-hidden="true"></svg>
+      <div class="combo-labels" id="repChartA-labels"></div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card-head"><h2>Spend by category</h2><p class="hint">Outflow categories with budget line.</p></div>
+    <div class="combo-chart report-chart" id="repChartB">
+      <div class="combo-bars" id="repChartB-bars"></div>
+      <svg class="combo-line" id="repChartB-line" aria-hidden="true"></svg>
+      <div class="combo-labels" id="repChartB-labels"></div>
+    </div>
+  </section>
+  </div>
+  <section class="card">
+    <div class="card-head"><h2>Key takeaways</h2></div>
+    <ul class="takeaways">
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Net cash flow turned <b>positive</b> for the third month running.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Reserved-instance prepay cuts cloud spend <b>$6k/mo</b> from July.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>One tax provision payment <b>failed</b> — re-submit before Jun 15.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>FX exposure on EUR receivables is hedged through <b>Q3</b>.</span></li>
+    </ul>
+  </section>
+</section>
+<section class="view" data-view-panel="settings" hidden aria-label="Settings">
+  <div class="view-head"><h2>Settings</h2><p class="sub">Treasury profile, approval thresholds and alerting.</p></div>
+  <div class="settings-grid">
+    <section class="card">
+      <div class="card-head"><h2>Profile</h2></div>
+      <form data-settings-form novalidate>
+        <div class="form-row"><label for="set-name-template-04-finance-dashboard">Full name</label><input type="text" id="set-name-template-04-finance-dashboard" name="profileName" value="Daniel Okafor" autocomplete="name"><span class="field-err">Please enter your name.</span></div>
+        <div class="form-row"><label for="set-email-template-04-finance-dashboard">Email address</label><input type="email" id="set-email-template-04-finance-dashboard" name="profileEmail" value="daniel@ledgerline.example.com" autocomplete="email"><span class="field-err">Enter a valid email address.</span></div>
+        <div class="form-actions"><button class="btn primary" type="submit"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg><span class="btxt">Save changes</span></button><span class="form-note" data-form-note role="status" aria-live="polite"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg>Saved</span></div>
+      </form>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Preferences</h2></div>
+      <div class="toggle-list">
+        <div class="toggle-row"><div class="tr-main"><b>Large transaction alerts</b><span>Notify on movements above $50k.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Large transaction alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Failed payment alerts</b><span>Immediate alert on any failure.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Failed payment alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Daily balance summary</b><span>Email balances each morning.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Daily balance summary"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Low-runway warning</b><span>Warn when runway drops below 12 months.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Low-runway warning"></button></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Appearance</h2></div>
+      <div class="appearance-row"><div class="ar-main"><b>Density</b><span>Comfortable spacing or a compact layout.</span></div><div class="seg-toggle" role="group" aria-label="Density"><button type="button" data-pref-seg aria-pressed="true">Comfortable</button><button type="button" data-pref-seg aria-pressed="false">Compact</button></div></div>
+      <div class="appearance-row"><div class="ar-main"><b>Reduce motion</b><span>Minimise animations across the dashboard.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Reduce motion"></button></div>
+    </section>
+    <section class="card danger-zone">
+      <div class="card-head"><h2>Danger zone</h2></div>
+      <div class="danger-row"><div class="dr-main"><b>Lock the ledger</b><span>Freeze posting for month-end close.</span></div><button class="btn danger" type="button" data-demo-link>Lock ledger</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Reset categorisation</b><span>Revert auto-categorisation rules.</span></div><button class="btn danger" type="button" data-demo-link>Reset rules</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Revoke my access</b><span>Remove your treasury permissions.</span></div><button class="btn danger" type="button" data-demo-link>Revoke access</button></div>
+    </section>
+  </div>
+</section>
+<footer class="page-foot"><span>&copy; <span data-year>2026</span> Ledgerline Labs <span class="ver-chip">v3.0.1</span> — demo data only, refreshed June 11, 2026.</span><span><a href="#" data-demo-link>Docs</a> &middot; <a href="#" data-demo-link>Changelog</a> &middot; <a href="#" data-demo-link>Status</a></span></footer>
+</main>
+</div>
+</div>
+</body>
+</html>

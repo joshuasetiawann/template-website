@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funnelfox — Marketing Dashboard</title>
+  <meta name="description" content="A bright marketing dashboard template with grouped spend-vs-revenue bar chart, lead goal gauge, quick actions and campaign performance table.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23EA580C'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='%23FFFFFF'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="v1">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="brand">
+    <span class="brand-mark"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg></span>
+    <span class="brand-name nav-label">Funnelfox</span>
+  </div>
+  <nav>
+    <div class="nav-group">
+      <div class="nav-group-label">Marketing</div>
+      <a class="nav-link active" href="#/overview" data-view="overview" aria-current="page"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg><span class="nav-label">Overview</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg><span class="nav-label">Campaigns</span><span class="nav-badge">7</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg><span class="nav-label">Audiences</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="nav-label">Email</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Insights</div>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg><span class="nav-label">Attribution</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg><span class="nav-label">Goals</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg><span class="nav-label">Reports</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Setup</div>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12l10 10 9.5-9.5L12 2H5a3 3 0 0 0-3 3z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg><span class="nav-label">UTM builder</span></a>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg><span class="nav-label">Settings</span></a>
+    </div>
+  </nav>
+  <div class="sidebar-foot">
+    <div class="side-card"><strong>Summer launch</strong><br>Creative review due Jun 13.<a class="mini-btn" href="#" data-demo-link>Open brief</a></div>
+  </div>
+</aside>
+<div class="overlay" id="overlay" aria-hidden="true"></div>
+<div class="main-wrap">
+<header class="topbar">
+  <button class="icon-btn hamburger" id="navToggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu" title="Open navigation menu"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><span class="topbar-ctx" data-view-ctx aria-hidden="true">Marketing performance</span>
+  <form class="search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" placeholder="Search campaigns, audiences…" aria-label="Search campaigns, audiences…"></form>
+  <div class="topbar-actions">
+    <div class="dropdown">
+      <button class="icon-btn" id="notifBtn" data-menu-toggle aria-controls="notifPanel" aria-expanded="false" aria-haspopup="true" aria-label="Notifications" title="Notifications"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><span class="dot"></span></button>
+      <div class="dropdown-panel" id="notifPanel" aria-label="Notifications">
+      <div class="dd-head">Notifications <span class="pill pill-info">3 new</span></div>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg></span><span><p><strong>Summer launch</strong> ads approved on all channels</p><span class="when">15 min ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p><strong>Retarget – cart</strong> hit its daily budget cap</p><span class="when">1 hr ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg></span><span><p>Lead goal is at <strong>76%</strong> with 12 days left</p><span class="when">3 hrs ago</span></span></a>
+      <a class="dd-foot" href="#" data-demo-link>View all notifications</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="profile-chip" id="profileBtn" data-menu-toggle aria-controls="profilePanel" aria-expanded="false" aria-haspopup="true"><span class="avatar" style="background:linear-gradient(135deg,#F59E0B,#F97316)" aria-hidden="true">IM</span><span class="chip-meta"><span class="nm">Iggy Moran</span><span class="rl">Growth Lead</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dropdown-panel" id="profilePanel" aria-label="Account menu">
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>My profile</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg>Workspace settings</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Billing &amp; plan</a>
+        <div class="menu-sep"></div>
+        <a class="menu-item danger" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Sign out</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<nav class="crumbs" aria-label="Breadcrumb" data-crumbs="Home / Dashboards / Marketing performance"><a href="#" data-demo-link>Home</a><span class="crumb-sep" aria-hidden="true">/</span><a href="#" data-demo-link>Dashboards</a><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-here" aria-current="page">Marketing performance</span></nav>
+<section class="view" data-view-panel="overview" aria-label="Overview">
+<div class="page-head">
+  <div><h1>Marketing performance</h1></div>
+  <div class="page-actions"><button class="btn" type="button" data-export="funnelfox-campaigns.csv" title="Download table as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button><button class="btn primary" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><span class="btxt">New campaign</span></button></div>
+  <p class="sub">Spend, conversions and channel efficiency — June 2026.</p>
+</div>
+<section class="stats-grid" aria-label="Key metrics">
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Ad spend MTD</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20"/><path d="M16.5 6.5c-1-1.4-2.6-2-4.5-2-2.5 0-4.5 1.3-4.5 3.4 0 4.6 9 2.6 9 7.1 0 2.1-2 3.5-4.5 3.5-2 0-3.8-.7-4.8-2.2"/></svg></span></div>
+    <div class="stat-value" data-count="46820" data-dec="0" data-prefix="$" data-suffix="">$46,820</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>6.2% <small>of $80k budget</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Click-through rate</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/></svg></span></div>
+    <div class="stat-value" data-count="3.84" data-dec="2" data-prefix="" data-suffix="%">3.84%</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>0.42 pts <small>vs last month</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Conversions</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2L3 14h7l-1 8 11-12h-8l1-8z"/></svg></span></div>
+    <div class="stat-value" data-count="2418" data-dec="0" data-prefix="" data-suffix="">2,418</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>11.9% <small>vs last month</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Blended ROAS</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg></span></div>
+    <div class="stat-value" data-count="4.2" data-dec="1" data-prefix="" data-suffix="x">4.2x</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>0.3 <small>vs last month</small></span>
+  </article>
+</section>
+<div class="layout-cols">
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Spend vs revenue by month</h2>
+    <div class="card-tools"><div class="range-chips" role="group" aria-label="Date range" data-rangegroup><button type="button" data-rng="a" aria-pressed="true">6 mo</button><button type="button" data-rng="b" aria-pressed="false">3 mo</button></div><span class="chart-legend"><span><i class="sw" style="background:#EA580C"></i>Spend</span><span><i class="sw" style="background:#9D174D"></i>Attributed revenue</span></span></div>
+    <p class="hint">Paid spend against attributed revenue ($k).</p>
+  </div>
+  <div class="bar-chart" id="spendBars" role="img" aria-label="Spend versus revenue bar chart"></div>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Campaign performance</h2>
+    <div class="card-tools"><button class="btn" type="button" data-export="funnelfox-campaigns.csv" title="Download table as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button></div>
+  </div>
+  <div class="table-wrap" role="region" aria-label="Campaign performance" tabindex="0">
+    <table id="dataTable">
+      <thead><tr><th scope="col">Campaign</th><th scope="col">Channel</th><th scope="col">Budget</th><th scope="col">Spend</th><th scope="col">CTR</th><th scope="col">Status</th><th scope="col">Actions</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Summer launch — search</strong></td>
+          <td>Paid search</td>
+          <td class="amount">$12,000</td>
+          <td class="amount">$7,420</td>
+          <td class="num">4.6%</td>
+          <td><span class="pill pill-success">Live</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>Summer launch — social</strong></td>
+          <td>Paid social</td>
+          <td class="amount">$9,500</td>
+          <td class="amount">$5,180</td>
+          <td class="num">3.1%</td>
+          <td><span class="pill pill-success">Live</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>Retarget – cart abandoners</strong></td>
+          <td>Display</td>
+          <td class="amount">$4,000</td>
+          <td class="amount">$3,940</td>
+          <td class="num">5.8%</td>
+          <td><span class="pill pill-warn">Paused</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>Newsletter June digest</strong></td>
+          <td>Email</td>
+          <td class="amount">$800</td>
+          <td class="amount">$640</td>
+          <td class="num">7.2%</td>
+          <td><span class="pill pill-success">Live</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>Brand awareness Q2</strong></td>
+          <td>Video</td>
+          <td class="amount">$15,000</td>
+          <td class="amount">$11,210</td>
+          <td class="num">1.9%</td>
+          <td><span class="pill pill-info">Learning</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>Partner co-marketing</strong></td>
+          <td>Referral</td>
+          <td class="amount">$3,500</td>
+          <td class="amount">$2,160</td>
+          <td class="num">2.7%</td>
+          <td><span class="pill pill-success">Live</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>Spring promo wrap-up</strong></td>
+          <td>Paid social</td>
+          <td class="amount">$6,000</td>
+          <td class="amount">$6,000</td>
+          <td class="num">3.4%</td>
+          <td><span class="pill pill-danger">Ended</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+              <tr>
+          <td><strong>Newsletter reactivation</strong></td>
+          <td>Email</td>
+          <td class="amount">$3,800</td>
+          <td class="amount">$2,140</td>
+          <td class="num">6.2%</td>
+          <td><span class="pill pill-success">Live</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>Brand awareness — display</strong></td>
+          <td>Display</td>
+          <td class="amount">$7,200</td>
+          <td class="amount">$6,890</td>
+          <td class="num">1.4%</td>
+          <td><span class="pill pill-warn">Paused</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>Summer launch — video</strong></td>
+          <td>Video</td>
+          <td class="amount">$10,500</td>
+          <td class="amount">$4,310</td>
+          <td class="num">2.8%</td>
+          <td><span class="pill pill-info">Learning</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>Partner co-marketing</strong></td>
+          <td>Affiliate</td>
+          <td class="amount">$5,000</td>
+          <td class="amount">$1,260</td>
+          <td class="num">3.9%</td>
+          <td><span class="pill pill-success">Live</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>Spring promo retargeting</strong></td>
+          <td>Paid social</td>
+          <td class="amount">$6,400</td>
+          <td class="amount">$6,400</td>
+          <td class="num">2.2%</td>
+          <td><span class="pill pill-danger">Ended</span></td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-foot" data-pagination data-page-size="5" data-noun="campaigns"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 12 campaigns</span>
+    <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+  </div>
+</section>
+  </div>
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Monthly lead goal</h2>
+  </div>
+  <div class="gauge-wrap">
+    <svg class="gauge-svg" viewBox="0 0 220 120" role="img" aria-label="Lead goal gauge">
+      <defs><linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--accent-2)"/></linearGradient></defs>
+      <path class="gauge-track" d="M20 110 A 90 90 0 0 1 200 110"/>
+      <path class="gauge-val" id="leadGauge-path" d="M20 110 A 90 90 0 0 1 200 110"/>
+    </svg>
+    <div class="gauge-num"><b id="leadGauge-num">76%</b><span>1,824 of 2,400 leads</span></div>
+    <div class="gauge-meta"><span>0</span><span>2,400</span></div>
+  </div>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Quick actions</h2>
+  </div>
+  <div class="qa-grid">
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span>New campaign</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12l10 10 9.5-9.5L12 2H5a3 3 0 0 0-3 3z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg></span>Build UTM</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>Send test email</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></span>Pull report</button>
+  </div>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Campaign feed</h2>
+    <div class="card-tools"><button class="icon-btn" type="button" aria-label="Activity options" title="Activity options"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></button></div>
+  </div>
+  <ul class="feed">
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg></span><span><p><strong>Summer launch — search</strong> went live in 4 regions.</p><span class="when">Today, 09:00</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg></span><span><p><strong>1,824 leads</strong> captured — 76% of monthly goal.</p><span class="when">Today, 08:10</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p>CPC rose 14% on <strong>Brand awareness Q2</strong>.</p><span class="when">Yesterday, 18:40</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><p><strong>June digest</strong> sent to 48,200 subscribers (42% open).</p><span class="when">Yesterday, 07:30</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg></span><span><p>UTM audit completed — <strong>3 broken links</strong> fixed.</p><span class="when">Jun 09, 14:15</span></span></li>
+  </ul>
+</section>
+  </div>
+</div>
+
+</section>
+<section class="view" data-view-panel="list" hidden aria-label="Campaigns">
+  <div class="view-head"><h2>Campaigns</h2><p class="sub">Active and completed campaigns with spend and ROAS.</p></div>
+  <div class="sum-chips"><div class="sum-chip"><div class="sc-label">Total spend (MTD)</div><div class="sc-value">$148k</div><div class="sc-foot up">+8.4% MoM</div></div><div class="sum-chip"><div class="sc-label">Blended ROAS</div><div class="sc-value">3.4x</div><div class="sc-foot up">+0.3 vs May</div></div><div class="sum-chip"><div class="sc-label">Conversions</div><div class="sc-value">5,486</div><div class="sc-foot up">+11% MoM</div></div><div class="sum-chip"><div class="sc-label">Cost per acq.</div><div class="sc-value">$27</div><div class="sc-foot down">$3 lower</div></div></div>
+  <section class="card">
+    <div class="list-toolbar">
+      <form class="list-search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" data-list-search placeholder="Search campaigns…" aria-label="Search Campaigns"></form>
+      <span class="spacer"></span>
+      <button class="btn" type="button" data-export="funnelfox-campaigns.csv" data-table="listTable" title="Download all campaigns as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button>
+    </div>
+    <div class="table-wrap" role="region" aria-label="Campaigns" tabindex="0">
+      <table id="listTable">
+        <thead><tr><th scope="col">Campaign</th><th scope="col">Channel</th><th scope="col">Spend</th><th scope="col">Conversions</th><th scope="col">ROAS</th><th scope="col">Status</th><th scope="col">Actions</th></tr></thead>
+        <tbody>
+        <tr><td>Summer Drop 2026</td><td>Paid Social</td><td class="amount">$12,400</td><td class="num">482</td><td class="num">3.8x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Brand Search</td><td>Search</td><td class="amount">$8,900</td><td class="num">611</td><td class="num">5.2x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Retargeting — Cart</td><td>Display</td><td class="amount">$4,200</td><td class="num">288</td><td class="num">4.1x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Spring Newsletter</td><td>Email</td><td class="amount">$1,100</td><td class="num">344</td><td class="num">8.6x</td><td><span class="pill pill-info">Completed</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Influencer — Q2</td><td>Partnerships</td><td class="amount">$18,000</td><td class="num">402</td><td class="num">2.4x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Lookalike Prospecting</td><td>Paid Social</td><td class="amount">$9,600</td><td class="num">210</td><td class="num">1.8x</td><td><span class="pill pill-warn">Paused</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Competitor Search</td><td>Search</td><td class="amount">$6,300</td><td class="num">188</td><td class="num">2.1x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Webinar Promo</td><td>Email</td><td class="amount">$900</td><td class="num">276</td><td class="num">7.2x</td><td><span class="pill pill-info">Completed</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>YouTube Pre-roll</td><td>Video</td><td class="amount">$11,200</td><td class="num">156</td><td class="num">1.4x</td><td><span class="pill pill-warn">Paused</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Affiliate — Tier 1</td><td>Partnerships</td><td class="amount">$5,400</td><td class="num">321</td><td class="num">4.6x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Abandoned Browse</td><td>Display</td><td class="amount">$3,100</td><td class="num">199</td><td class="num">3.3x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Product Launch Blast</td><td>Email</td><td class="amount">$1,400</td><td class="num">512</td><td class="num">9.1x</td><td><span class="pill pill-info">Completed</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>TikTok Spark Ads</td><td>Paid Social</td><td class="amount">$7,800</td><td class="num">264</td><td class="num">2.9x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Generic Search</td><td>Search</td><td class="amount">$10,100</td><td class="num">233</td><td class="num">1.9x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Holiday Teaser</td><td>Display</td><td class="amount">$2,600</td><td class="num">141</td><td class="num">2.7x</td><td><span class="pill pill-neutral">Draft</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Loyalty Re-engage</td><td>Email</td><td class="amount">$700</td><td class="num">188</td><td class="num">6.4x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Podcast Sponsorship</td><td>Partnerships</td><td class="amount">$9,000</td><td class="num">174</td><td class="num">2.2x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Shopping Feed</td><td>Search</td><td class="amount">$8,200</td><td class="num">356</td><td class="num">4.0x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Awareness — Reels</td><td>Video</td><td class="amount">$6,500</td><td class="num">98</td><td class="num">1.2x</td><td><span class="pill pill-warn">Paused</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td>Win-back Flow</td><td>Email</td><td class="amount">$500</td><td class="num">142</td><td class="num">5.8x</td><td><span class="pill pill-success">Active</span></td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="list-empty" data-list-empty hidden>No campaigns match your search.</p>
+    <div class="table-foot" data-pagination data-table="listTable" data-page-size="5" data-noun="campaigns"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 20 campaigns</span>
+      <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+    </div>
+  </section>
+</section>
+<section class="view" data-view-panel="reports" hidden aria-label="Marketing reports">
+  <div class="view-head"><h2>Marketing reports</h2><p class="sub">Channel performance, attribution and goal pacing.</p></div>
+  <div class="insight-grid"><article class="insight-tile"><div class="it-label">Marketing-sourced rev</div><div class="it-value">$504k</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> +14% this month</div></article><article class="insight-tile"><div class="it-label">Email open rate</div><div class="it-value">42%</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> +2pt vs May</div></article><article class="insight-tile"><div class="it-label">Goal pacing</div><div class="it-value">108%</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> ahead of target</div></article></div>
+  <div class="report-grid">
+  <section class="card">
+    <div class="card-head"><h2>Spend by channel</h2><p class="hint">Month-to-date spend, $k.</p></div>
+    <div class="bar-chart report-chart" id="repChartA" role="img" aria-label="Spend by channel"></div>
+  </section>
+  <section class="card">
+    <div class="card-head"><h2>Budget utilisation</h2><p class="hint">Spend against the monthly cap.</p></div>
+    <div class="gauge-wrap report-chart">
+      <svg class="gauge-svg" viewBox="0 0 220 120" role="img" aria-label="Budget utilisation">
+        <path class="gauge-track" d="M20 110 A 90 90 0 0 1 200 110"/>
+        <path class="gauge-val" id="repChartB-path" d="M20 110 A 90 90 0 0 1 200 110"/>
+      </svg>
+      <div class="gauge-num"><b id="repChartB-num">0%</b><span>of $160k monthly budget</span></div>
+    </div>
+  </section>
+  </div>
+  <section class="card">
+    <div class="card-head"><h2>Key takeaways</h2></div>
+    <ul class="takeaways">
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span><b>Email</b> remains the highest-ROAS channel at 7.4x blended.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Three <b>video</b> campaigns are paused for under-performance.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Blended ROAS improved to <b>3.4x</b> after budget reallocation.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span><b>Brand search</b> drives the most conversions per dollar.</span></li>
+    </ul>
+  </section>
+</section>
+<section class="view" data-view-panel="settings" hidden aria-label="Settings">
+  <div class="view-head"><h2>Settings</h2><p class="sub">Marketing profile, pacing alerts and preferences.</p></div>
+  <div class="settings-grid">
+    <section class="card">
+      <div class="card-head"><h2>Profile</h2></div>
+      <form data-settings-form novalidate>
+        <div class="form-row"><label for="set-name-template-13-marketing-dashboard">Full name</label><input type="text" id="set-name-template-13-marketing-dashboard" name="profileName" value="Olivia Brooks" autocomplete="name"><span class="field-err">Please enter your name.</span></div>
+        <div class="form-row"><label for="set-email-template-13-marketing-dashboard">Email address</label><input type="email" id="set-email-template-13-marketing-dashboard" name="profileEmail" value="olivia@funnelfox.example.com" autocomplete="email"><span class="field-err">Enter a valid email address.</span></div>
+        <div class="form-actions"><button class="btn primary" type="submit"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg><span class="btxt">Save changes</span></button><span class="form-note" data-form-note role="status" aria-live="polite"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg>Saved</span></div>
+      </form>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Preferences</h2></div>
+      <div class="toggle-list">
+        <div class="toggle-row"><div class="tr-main"><b>Budget pacing alerts</b><span>Notify when spend pacing drifts.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Budget pacing alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>ROAS drop alerts</b><span>Alert when a campaign ROAS falls below 2x.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="ROAS drop alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>New conversion alerts</b><span>Ping on high-value conversions.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="New conversion alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Weekly performance email</b><span>Send a Monday channel recap.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Weekly performance email"></button></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Appearance</h2></div>
+      <div class="appearance-row"><div class="ar-main"><b>Density</b><span>Comfortable spacing or a compact layout.</span></div><div class="seg-toggle" role="group" aria-label="Density"><button type="button" data-pref-seg aria-pressed="true">Comfortable</button><button type="button" data-pref-seg aria-pressed="false">Compact</button></div></div>
+      <div class="appearance-row"><div class="ar-main"><b>Reduce motion</b><span>Minimise animations across the dashboard.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Reduce motion"></button></div>
+    </section>
+    <section class="card danger-zone">
+      <div class="card-head"><h2>Danger zone</h2></div>
+      <div class="danger-row"><div class="dr-main"><b>Pause all campaigns</b><span>Stop spend across every channel.</span></div><button class="btn danger" type="button" data-demo-link>Pause all</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Reset attribution</b><span>Revert to default attribution model.</span></div><button class="btn danger" type="button" data-demo-link>Reset model</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Delete workspace</b><span>Permanently remove this workspace.</span></div><button class="btn danger" type="button" data-demo-link>Delete workspace</button></div>
+    </section>
+  </div>
+</section>
+<footer class="page-foot"><span>&copy; <span data-year>2026</span> Funnelfox Labs <span class="ver-chip">v1.9.0</span> — demo data only, refreshed June 11, 2026.</span><span><a href="#" data-demo-link>Docs</a> &middot; <a href="#" data-demo-link>Changelog</a> &middot; <a href="#" data-demo-link>Status</a></span></footer>
+</main>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northpeak — Sales Dashboard</title>
+  <meta name="description" content="A clean light sales admin dashboard template with revenue stats, an animated bar chart, deal pipeline table and activity feed.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%232563EB'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='%23FFFFFF'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="v1">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="brand">
+    <span class="brand-mark"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></span>
+    <span class="brand-name nav-label">Northpeak</span>
+  </div>
+  <nav>
+    <div class="nav-group">
+      <div class="nav-group-label">Overview</div>
+      <a class="nav-link active" href="#/overview" data-view="overview" aria-current="page"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg><span class="nav-label">Dashboard</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg><span class="nav-label">Pipeline</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg><span class="nav-label">Contacts</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M2 13h20"/></svg><span class="nav-label">Deals</span><span class="nav-badge">12</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Operations</div>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span class="nav-label">Meetings</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg><span class="nav-label">Quotes</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="nav-label">Outreach</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Workspace</div>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg><span class="nav-label">Settings</span></a>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span class="nav-label">Team</span></a>
+    </div>
+  </nav>
+  <div class="sidebar-foot">
+    <div class="side-card"><strong>Quarter target</strong><br>$1.2M booked of $1.6M goal.<a class="mini-btn" href="#" data-demo-link>View forecast</a></div>
+  </div>
+</aside>
+<div class="overlay" id="overlay" aria-hidden="true"></div>
+<div class="main-wrap">
+<header class="topbar">
+  <button class="icon-btn hamburger" id="navToggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu" title="Open navigation menu"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><span class="topbar-ctx" data-view-ctx aria-hidden="true">Sales overview</span>
+  <form class="search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" placeholder="Search deals, contacts…" aria-label="Search deals, contacts…"></form>
+  <div class="topbar-actions">
+    <div class="dropdown">
+      <button class="icon-btn" id="notifBtn" data-menu-toggle aria-controls="notifPanel" aria-expanded="false" aria-haspopup="true" aria-label="Notifications" title="Notifications"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><span class="dot"></span></button>
+      <div class="dropdown-panel" id="notifPanel" aria-label="Notifications">
+      <div class="dd-head">Notifications <span class="pill pill-info">3 new</span></div>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M2 13h20"/></svg></span><span><p><strong>Halvorsen Group</strong> moved to Negotiation</p><span class="when">12 min ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg></span><span><p>Quote <strong>#Q-2214</strong> was accepted</p><span class="when">1 hr ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg></span><span><p><strong>Priya Raman</strong> assigned you 3 leads</p><span class="when">3 hrs ago</span></span></a>
+      <a class="dd-foot" href="#" data-demo-link>View all notifications</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="profile-chip" id="profileBtn" data-menu-toggle aria-controls="profilePanel" aria-expanded="false" aria-haspopup="true"><span class="avatar" style="background:linear-gradient(135deg,#2563EB,#60A5FA)" aria-hidden="true">MC</span><span class="chip-meta"><span class="nm">Maya Chen</span><span class="rl">Sales Lead</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dropdown-panel" id="profilePanel" aria-label="Account menu">
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>My profile</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg>Workspace settings</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Billing &amp; plan</a>
+        <div class="menu-sep"></div>
+        <a class="menu-item danger" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Sign out</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<nav class="crumbs" aria-label="Breadcrumb" data-crumbs="Home / Dashboards / Sales overview"><a href="#" data-demo-link>Home</a><span class="crumb-sep" aria-hidden="true">/</span><a href="#" data-demo-link>Dashboards</a><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-here" aria-current="page">Sales overview</span></nav>
+<section class="view" data-view-panel="overview" aria-label="Overview">
+<div class="page-head">
+  <div><h1>Sales overview</h1></div>
+  <div class="page-actions"><button class="btn" type="button" data-export="northpeak-deals.csv" title="Download table as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button><button class="btn primary" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><span class="btxt">New deal</span></button></div>
+  <p class="sub">Pipeline health and revenue performance for Q2 2026.</p>
+</div>
+<section class="stats-grid" aria-label="Key metrics">
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Revenue MTD</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20"/><path d="M16.5 6.5c-1-1.4-2.6-2-4.5-2-2.5 0-4.5 1.3-4.5 3.4 0 4.6 9 2.6 9 7.1 0 2.1-2 3.5-4.5 3.5-2 0-3.8-.7-4.8-2.2"/></svg></span></div>
+    <div class="stat-value" data-count="284500" data-dec="0" data-prefix="$" data-suffix="">$284,500</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>12.4% <small>vs last month</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Deals closed</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M2 13h20"/></svg></span></div>
+    <div class="stat-value" data-count="47" data-dec="0" data-prefix="" data-suffix="">47</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>8.1% <small>vs last month</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Pipeline value</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg></span></div>
+    <div class="stat-value" data-count="1.24" data-dec="2" data-prefix="$" data-suffix="M">$1.24M</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>4.7% <small>vs last month</small></span>
+  </article>
+  <article class="card stat-card down-trend">
+    <div class="stat-top"><span class="stat-label">Win rate</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/></svg></span></div>
+    <div class="stat-value" data-count="31.8" data-dec="1" data-prefix="" data-suffix="%">31.8%</div>
+    <span class="delta down"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg>2.3% <small>vs last month</small></span>
+  </article>
+</section>
+<div class="layout-cols">
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Revenue performance</h2>
+    <div class="card-tools"><div class="range-chips" role="group" aria-label="Date range"><button type="button" data-range="6 mo" aria-pressed="true">6 mo</button><button type="button" data-range="12 mo" aria-pressed="false">12 mo</button></div></div>
+    <p class="hint">Closed-won bookings per month, in thousands USD.</p>
+  </div>
+  <div class="bar-chart" id="revChart" role="img" aria-label="Monthly revenue bar chart"></div>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Recent deals</h2>
+    <div class="card-tools"><button class="btn" type="button" data-export="northpeak-deals.csv" title="Download table as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button></div>
+  </div>
+  <div class="table-wrap" role="region" aria-label="Recent deals" tabindex="0">
+    <table id="dataTable">
+      <thead><tr><th scope="col">Customer</th><th scope="col">Company</th><th scope="col">Value</th><th scope="col">Stage</th><th scope="col">Close date</th><th scope="col">Actions</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">LF</span><span><span class="nm">Lena Fischer</span><span class="em">lena.f@halvorsen.example.com</span></span></span></td>
+          <td>Halvorsen Group</td>
+          <td class="amount">$48,200</td>
+          <td><span class="pill pill-warn">Negotiation</span></td>
+          <td>Jun 18, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">MW</span><span><span class="nm">Marcus Webb</span><span class="em">m.webb@corelane.example.com</span></span></span></td>
+          <td>Corelane Logistics</td>
+          <td class="amount">$32,750</td>
+          <td><span class="pill pill-success">Won</span></td>
+          <td>Jun 09, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">PR</span><span><span class="nm">Priya Raman</span><span class="em">priya@bluefig.example.com</span></span></span></td>
+          <td>Bluefig Studio</td>
+          <td class="amount">$12,400</td>
+          <td><span class="pill pill-info">Proposal</span></td>
+          <td>Jun 24, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">DS</span><span><span class="nm">Diego Santos</span><span class="em">diego@vantor.example.com</span></span></span></td>
+          <td>Vantor Industries</td>
+          <td class="amount">$86,900</td>
+          <td><span class="pill pill-neutral">Discovery</span></td>
+          <td>Jul 02, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">AH</span><span><span class="nm">Amelia Hart</span><span class="em">amelia@northwave.example.com</span></span></span></td>
+          <td>Northwave Media</td>
+          <td class="amount">$21,300</td>
+          <td><span class="pill pill-success">Won</span></td>
+          <td>Jun 05, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">TN</span><span><span class="nm">Tomasz Nowak</span><span class="em">t.nowak@gridlock.example.com</span></span></span></td>
+          <td>Gridlock Systems</td>
+          <td class="amount">$54,000</td>
+          <td><span class="pill pill-warn">Negotiation</span></td>
+          <td>Jun 27, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">SR</span><span><span class="nm">Sofia Ricci</span><span class="em">sofia@lumetta.example.com</span></span></span></td>
+          <td>Lumetta Retail</td>
+          <td class="amount">$9,850</td>
+          <td><span class="pill pill-danger">Lost</span></td>
+          <td>Jun 03, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+              <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">IO</span><span><span class="nm">Imani Okoye</span><span class="em">imani@kestrel.example.com</span></span></span></td>
+          <td>Kestrel Health</td>
+          <td class="amount">$27,600</td>
+          <td><span class="pill pill-info">Proposal</span></td>
+          <td>Jul 08, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">RC</span><span><span class="nm">Ruben Castillo</span><span class="em">ruben@atlaspay.example.com</span></span></span></td>
+          <td>Atlaspay</td>
+          <td class="amount">$63,400</td>
+          <td><span class="pill pill-neutral">Discovery</span></td>
+          <td>Jul 15, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">EK</span><span><span class="nm">Elliot Kim</span><span class="em">elliot@brighton.example.com</span></span></span></td>
+          <td>Brighton.io</td>
+          <td class="amount">$18,750</td>
+          <td><span class="pill pill-success">Won</span></td>
+          <td>Jun 02, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">NV</span><span><span class="nm">Nadia Vogel</span><span class="em">nadia@meridianhq.example.com</span></span></span></td>
+          <td>Meridian HQ</td>
+          <td class="amount">$41,900</td>
+          <td><span class="pill pill-warn">Negotiation</span></td>
+          <td>Jun 30, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">JB</span><span><span class="nm">Jonas Brandt</span><span class="em">jonas@quartzlab.example.com</span></span></span></td>
+          <td>Quartz Labs</td>
+          <td class="amount">$8,300</td>
+          <td><span class="pill pill-danger">Lost</span></td>
+          <td>May 28, 2026</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-foot" data-pagination data-page-size="5" data-noun="deals"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 12 deals</span>
+    <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+  </div>
+</section>
+  </div>
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Quick actions</h2>
+  </div>
+  <div class="qa-grid">
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></span>New deal</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>Add contact</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span>Log call</button>
+    <button class="qa-btn" type="button"><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6v20h12V8z"/><path d="M14 2v6h4"/><path d="M9 13h6M9 17h6"/></svg></span>Send quote</button>
+  </div>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Recent activity</h2>
+    <div class="card-tools"><button class="icon-btn" type="button" aria-label="Activity options" title="Activity options"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></button></div>
+  </div>
+  <ul class="feed">
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg></span><span><p><strong>Marcus Webb</strong> signed the Corelane renewal — $32,750.</p><span class="when">Today, 09:42</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><p>Follow-up email sent to <strong>Bluefig Studio</strong>.</p><span class="when">Today, 08:15</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span><p>Demo booked with <strong>Vantor Industries</strong> for Jun 16.</p><span class="when">Yesterday, 16:30</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p>Deal <strong>Lumetta Retail</strong> marked as lost (budget).</p><span class="when">Yesterday, 11:02</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg></span><span><p><strong>2 new leads</strong> imported from the spring webinar.</p><span class="when">Jun 09, 14:48</span></span></li>
+  </ul>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Top reps this month</h2>
+  </div>
+  <ol class="tlist">
+    <li><span class="tl-rank">1</span><span class="tl-main"><b>Maya Chen</b><span class="tl-bar"><i style="--w:100%"></i></span></span><span class="tl-val">$86.2k</span></li>
+    <li><span class="tl-rank">2</span><span class="tl-main"><b>Jonas Brandt</b><span class="tl-bar"><i style="--w:83%"></i></span></span><span class="tl-val">$71.4k</span></li>
+    <li><span class="tl-rank">3</span><span class="tl-main"><b>Priya Raman</b><span class="tl-bar"><i style="--w:74%"></i></span></span><span class="tl-val">$63.8k</span></li>
+    <li><span class="tl-rank">4</span><span class="tl-main"><b>Elliot Kim</b><span class="tl-bar"><i style="--w:56%"></i></span></span><span class="tl-val">$48.1k</span></li>
+    <li><span class="tl-rank">5</span><span class="tl-main"><b>Rosa Delgado</b><span class="tl-bar"><i style="--w:46%"></i></span></span><span class="tl-val">$39.7k</span></li>
+  </ol>
+</section>
+  </div>
+</div>
+
+</section>
+<section class="view" data-view-panel="list" hidden aria-label="Deals">
+  <div class="view-head"><h2>Deals</h2><p class="sub">Every open and closed opportunity across the Q2 2026 pipeline.</p></div>
+  <div class="sum-chips"><div class="sum-chip"><div class="sc-label">Open pipeline</div><div class="sc-value">$1.24M</div><div class="sc-foot up">14 active deals</div></div><div class="sum-chip"><div class="sc-label">Won this quarter</div><div class="sc-value">$268k</div><div class="sc-foot up">+8.1% vs Q1</div></div><div class="sum-chip"><div class="sc-label">Avg deal size</div><div class="sc-value">$39.7k</div><div class="sc-foot">across 20 deals</div></div><div class="sum-chip"><div class="sc-label">Win rate</div><div class="sc-value">31.8%</div><div class="sc-foot down">2.3% vs Q1</div></div></div>
+  <section class="card">
+    <div class="list-toolbar">
+      <form class="list-search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" data-list-search placeholder="Search deals…" aria-label="Search Deals"></form>
+      <span class="spacer"></span>
+      <button class="btn" type="button" data-export="northpeak-deals.csv" data-table="listTable" title="Download all deals as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button>
+    </div>
+    <div class="table-wrap" role="region" aria-label="Deals" tabindex="0">
+      <table id="listTable">
+        <thead><tr><th scope="col">Owner</th><th scope="col">Company</th><th scope="col">Value</th><th scope="col">Stage</th><th scope="col">Close date</th><th scope="col">Actions</th></tr></thead>
+        <tbody>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#2563EB,#60A5FA)" aria-hidden="true">LF</span><span><span class="nm">Lena Fischer</span><span class="em">lena.f@halvorsen.example.com</span></span></span></td><td>Halvorsen Group</td><td class="amount">$48,200</td><td><span class="pill pill-warn">Negotiation</span></td><td>Jun 18, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">MW</span><span><span class="nm">Marcus Webb</span><span class="em">m.webb@corelane.example.com</span></span></span></td><td>Corelane Logistics</td><td class="amount">$32,750</td><td><span class="pill pill-success">Won</span></td><td>Jun 09, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">PR</span><span><span class="nm">Priya Raman</span><span class="em">priya@bluefig.example.com</span></span></span></td><td>Bluefig Studio</td><td class="amount">$12,400</td><td><span class="pill pill-info">Proposal</span></td><td>Jun 24, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">DS</span><span><span class="nm">Diego Santos</span><span class="em">diego@vantor.example.com</span></span></span></td><td>Vantor Industries</td><td class="amount">$86,900</td><td><span class="pill pill-neutral">Discovery</span></td><td>Jul 02, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">AH</span><span><span class="nm">Amelia Hart</span><span class="em">amelia@northwave.example.com</span></span></span></td><td>Northwave Media</td><td class="amount">$21,300</td><td><span class="pill pill-success">Won</span></td><td>Jun 05, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">TN</span><span><span class="nm">Tomasz Nowak</span><span class="em">t.nowak@gridlock.example.com</span></span></span></td><td>Gridlock Systems</td><td class="amount">$54,000</td><td><span class="pill pill-warn">Negotiation</span></td><td>Jun 27, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">SR</span><span><span class="nm">Sofia Ricci</span><span class="em">sofia@lumetta.example.com</span></span></span></td><td>Lumetta Retail</td><td class="amount">$9,850</td><td><span class="pill pill-danger">Lost</span></td><td>Jun 03, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#16A34A,#4ADE80)" aria-hidden="true">IO</span><span><span class="nm">Imani Okoye</span><span class="em">imani@kestrel.example.com</span></span></span></td><td>Kestrel Health</td><td class="amount">$27,600</td><td><span class="pill pill-info">Proposal</span></td><td>Jul 08, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#D97706,#FBBF24)" aria-hidden="true">RC</span><span><span class="nm">Ruben Castillo</span><span class="em">ruben@atlaspay.example.com</span></span></span></td><td>Atlaspay</td><td class="amount">$63,400</td><td><span class="pill pill-neutral">Discovery</span></td><td>Jul 15, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#E11D48,#FB7185)" aria-hidden="true">EK</span><span><span class="nm">Elliot Kim</span><span class="em">elliot@brighton.example.com</span></span></span></td><td>Brighton.io</td><td class="amount">$18,750</td><td><span class="pill pill-success">Won</span></td><td>Jun 02, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#2563EB,#60A5FA)" aria-hidden="true">NV</span><span><span class="nm">Nadia Vogel</span><span class="em">nadia@meridianhq.example.com</span></span></span></td><td>Meridian HQ</td><td class="amount">$41,900</td><td><span class="pill pill-warn">Negotiation</span></td><td>Jun 30, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">JB</span><span><span class="nm">Jonas Brandt</span><span class="em">jonas@quartzlab.example.com</span></span></span></td><td>Quartz Labs</td><td class="amount">$8,300</td><td><span class="pill pill-danger">Lost</span></td><td>May 28, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">HS</span><span><span class="nm">Hana Suzuki</span><span class="em">hana@polarisbank.example.com</span></span></span></td><td>Polaris Bank</td><td class="amount">$74,500</td><td><span class="pill pill-info">Proposal</span></td><td>Jul 11, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">OR</span><span><span class="nm">Owen Reilly</span><span class="em">owen@tidewater.example.com</span></span></span></td><td>Tidewater Co</td><td class="amount">$15,200</td><td><span class="pill pill-neutral">Discovery</span></td><td>Jul 19, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">CM</span><span><span class="nm">Carla Mendes</span><span class="em">carla@solstice.example.com</span></span></span></td><td>Solstice Retail</td><td class="amount">$36,800</td><td><span class="pill pill-success">Won</span></td><td>Jun 12, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">VP</span><span><span class="nm">Viktor Petrov</span><span class="em">viktor@ironclad.example.com</span></span></span></td><td>Ironclad Mfg</td><td class="amount">$92,100</td><td><span class="pill pill-warn">Negotiation</span></td><td>Jul 04, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">YH</span><span><span class="nm">Yara Haddad</span><span class="em">yara@cedarvine.example.com</span></span></span></td><td>Cedar &amp; Vine</td><td class="amount">$11,650</td><td><span class="pill pill-info">Proposal</span></td><td>Jul 22, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#16A34A,#4ADE80)" aria-hidden="true">FM</span><span><span class="nm">Felix Mayer</span><span class="em">felix@skyline.example.com</span></span></span></td><td>Skyline Group</td><td class="amount">$58,300</td><td><span class="pill pill-neutral">Discovery</span></td><td>Jul 26, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#D97706,#FBBF24)" aria-hidden="true">GA</span><span><span class="nm">Grace Adeyemi</span><span class="em">grace@harborfoods.example.com</span></span></span></td><td>Harbor Foods</td><td class="amount">$24,900</td><td><span class="pill pill-success">Won</span></td><td>Jun 15, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#E11D48,#FB7185)" aria-hidden="true">NB</span><span><span class="nm">Noah Bergstrom</span><span class="em">noah@vertexcloud.example.com</span></span></span></td><td>Vertex Cloud</td><td class="amount">$47,400</td><td><span class="pill pill-warn">Negotiation</span></td><td>Jul 09, 2026</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="list-empty" data-list-empty hidden>No deals match your search.</p>
+    <div class="table-foot" data-pagination data-table="listTable" data-page-size="5" data-noun="deals"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 20 deals</span>
+      <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+    </div>
+  </section>
+</section>
+<section class="view" data-view-panel="reports" hidden aria-label="Sales reports">
+  <div class="view-head"><h2>Sales reports</h2><p class="sub">Win/loss trends and pipeline coverage for the sales org.</p></div>
+  <div class="insight-grid"><article class="insight-tile"><div class="it-label">Quota attainment</div><div class="it-value">92%</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> 4 of 6 reps above plan</div></article><article class="insight-tile"><div class="it-label">Avg sales cycle</div><div class="it-value">34 days</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> 3 days faster than Q1</div></article><article class="insight-tile"><div class="it-label">Pipeline coverage</div><div class="it-value">3.4x</div><div class="it-note"> against $1.6M target</div></article></div>
+  <div class="report-grid">
+  <section class="card">
+    <div class="card-head"><h2>Wins vs losses by month</h2><p class="hint">Closed-won deal counts per month.</p></div>
+    <div class="bar-chart report-chart" id="repChartA" role="img" aria-label="Wins vs losses by month"></div>
+  </section>
+  <section class="card">
+    <div class="card-head"><h2>Pipeline by stage</h2><p class="hint">Open value per stage, $k.</p></div>
+    <div class="bar-chart report-chart" id="repChartB" role="img" aria-label="Pipeline by stage"></div>
+  </section>
+  </div>
+  <section class="card">
+    <div class="card-head"><h2>Key takeaways</h2></div>
+    <ul class="takeaways">
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span><b>Enterprise</b> deals over $50k now drive 58% of booked revenue.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Negotiation-stage win rate slipped <b>2.3%</b> — coach on discounting.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span><b>Maya Chen</b> leads the board at $86.2k closed this month.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Inbound demo bookings are up <b>27%</b> since the spring webinar.</span></li>
+    </ul>
+  </section>
+</section>
+<section class="view" data-view-panel="settings" hidden aria-label="Settings">
+  <div class="view-head"><h2>Settings</h2><p class="sub">Manage your sales profile, alerts and workspace defaults.</p></div>
+  <div class="settings-grid">
+    <section class="card">
+      <div class="card-head"><h2>Profile</h2></div>
+      <form data-settings-form novalidate>
+        <div class="form-row"><label for="set-name-template-01-sales-dashboard">Full name</label><input type="text" id="set-name-template-01-sales-dashboard" name="profileName" value="Maya Chen" autocomplete="name"><span class="field-err">Please enter your name.</span></div>
+        <div class="form-row"><label for="set-email-template-01-sales-dashboard">Email address</label><input type="email" id="set-email-template-01-sales-dashboard" name="profileEmail" value="maya.chen@northpeak.example.com" autocomplete="email"><span class="field-err">Enter a valid email address.</span></div>
+        <div class="form-actions"><button class="btn primary" type="submit"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg><span class="btxt">Save changes</span></button><span class="form-note" data-form-note role="status" aria-live="polite"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg>Saved</span></div>
+      </form>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Preferences</h2></div>
+      <div class="toggle-list">
+        <div class="toggle-row"><div class="tr-main"><b>Deal stage alerts</b><span>Notify me when a deal changes stage.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Deal stage alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Weekly pipeline digest</b><span>Monday summary of pipeline movement.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Weekly pipeline digest"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Quota progress nudges</b><span>Reminders as you approach your monthly quota.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Quota progress nudges"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Auto-log emails</b><span>Attach sent emails to the matching deal.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Auto-log emails"></button></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Appearance</h2></div>
+      <div class="appearance-row"><div class="ar-main"><b>Density</b><span>Comfortable spacing or a compact layout.</span></div><div class="seg-toggle" role="group" aria-label="Density"><button type="button" data-pref-seg aria-pressed="true">Comfortable</button><button type="button" data-pref-seg aria-pressed="false">Compact</button></div></div>
+      <div class="appearance-row"><div class="ar-main"><b>Reduce motion</b><span>Minimise animations across the dashboard.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Reduce motion"></button></div>
+    </section>
+    <section class="card danger-zone">
+      <div class="card-head"><h2>Danger zone</h2></div>
+      <div class="danger-row"><div class="dr-main"><b>Reassign all open deals</b><span>Move your pipeline to another rep.</span></div><button class="btn danger" type="button" data-demo-link>Reassign</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Reset dashboard layout</b><span>Restore the default sales overview.</span></div><button class="btn danger" type="button" data-demo-link>Reset layout</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Close workspace</b><span>Permanently remove this sales workspace.</span></div><button class="btn danger" type="button" data-demo-link>Close workspace</button></div>
+    </section>
+  </div>
+</section>
+<footer class="page-foot"><span>&copy; <span data-year>2026</span> Northpeak Labs <span class="ver-chip">v1.4.2</span> — demo data only, refreshed June 11, 2026.</span><span><a href="#" data-demo-link>Docs</a> &middot; <a href="#" data-demo-link>Changelog</a> &middot; <a href="#" data-demo-link>Status</a></span></footer>
+</main>
+</div>
+</div>
+</body>
+</html>

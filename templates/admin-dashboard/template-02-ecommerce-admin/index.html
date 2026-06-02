@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartloom — E-commerce Admin Dashboard</title>
+  <meta name="description" content="A two-tone e-commerce admin dashboard template with an indigo sidebar, animated revenue line chart, tabbed orders table and best-seller list.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%237C3AED'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='%23FFFFFF'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="v2">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+  <div class="brand">
+    <span class="brand-mark"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg></span>
+    <span class="brand-name nav-label">Cartloom</span>
+  </div>
+  <nav>
+    <div class="nav-group">
+      <div class="nav-group-label">Store</div>
+      <a class="nav-link active" href="#/overview" data-view="overview" aria-current="page"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg><span class="nav-label">Dashboard</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg><span class="nav-label">Orders</span><span class="nav-badge">23</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12l10 10 9.5-9.5L12 2H5a3 3 0 0 0-3 3z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg><span class="nav-label">Products</span></a>
+      <a class="nav-link" href="#/list" data-view="list"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg><span class="nav-label">Customers</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Grow</div>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg><span class="nav-label">Promotions</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M3 21h18"/></svg><span class="nav-label">Analytics</span></a>
+      <a class="nav-link" href="#/reports" data-view="reports"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17l-6.1 3.6 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><span class="nav-label">Reviews</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Manage</div>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span class="nav-label">Payouts</span></a>
+      <a class="nav-link" href="#/settings" data-view="settings"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg><span class="nav-label">Settings</span></a>
+    </div>
+  </nav>
+  <div class="sidebar-foot">
+    <div class="side-card"><strong>Holiday sale</strong><br>Storewide promo starts Jun 20.<a class="mini-btn" href="#" data-demo-link>Plan campaign</a></div>
+  </div>
+</aside>
+<div class="overlay" id="overlay" aria-hidden="true"></div>
+<div class="main-wrap">
+<header class="topbar">
+  <button class="icon-btn hamburger" id="navToggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation menu" title="Open navigation menu"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><span class="topbar-ctx" data-view-ctx aria-hidden="true">Store dashboard</span>
+  <form class="search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" placeholder="Search orders, SKUs…" aria-label="Search orders, SKUs…"></form>
+  <div class="topbar-actions">
+    <div class="dropdown">
+      <button class="icon-btn" id="notifBtn" data-menu-toggle aria-controls="notifPanel" aria-expanded="false" aria-haspopup="true" aria-label="Notifications" title="Notifications"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><span class="dot"></span></button>
+      <div class="dropdown-panel" id="notifPanel" aria-label="Notifications">
+      <div class="dd-head">Notifications <span class="pill pill-info">5 new</span></div>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg></span><span><p>Order <strong>#CL-10482</strong> needs fulfillment</p><span class="when">6 min ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 16.6v.5"/></svg></span><span><p><strong>Linen tote</strong> is low in stock (4 left)</p><span class="when">40 min ago</span></span></a>
+      <a class="dd-item" href="#" data-demo-link><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17l-6.1 3.6 1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span><span><p>New 5-star review on <strong>Ceramic mug set</strong></p><span class="when">2 hrs ago</span></span></a>
+      <a class="dd-foot" href="#" data-demo-link>View all notifications</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="profile-chip" id="profileBtn" data-menu-toggle aria-controls="profilePanel" aria-expanded="false" aria-haspopup="true"><span class="avatar" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">TM</span><span class="chip-meta"><span class="nm">Theo Mensah</span><span class="rl">Store Owner</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dropdown-panel" id="profilePanel" aria-label="Account menu">
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>My profile</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></svg>Workspace settings</a>
+        <a class="menu-item" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Billing &amp; plan</a>
+        <div class="menu-sep"></div>
+        <a class="menu-item danger" href="#" data-demo-link><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Sign out</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<nav class="crumbs" aria-label="Breadcrumb" data-crumbs="Home / Dashboards / Store dashboard"><a href="#" data-demo-link>Home</a><span class="crumb-sep" aria-hidden="true">/</span><a href="#" data-demo-link>Dashboards</a><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-here" aria-current="page">Store dashboard</span></nav>
+<section class="view" data-view-panel="overview" aria-label="Overview">
+<div class="page-head">
+  <div><h1>Store dashboard</h1></div>
+  <div class="page-actions"><button class="btn" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Report</span></button><button class="btn primary" type="button"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><span class="btxt">Add product</span></button></div>
+  <p class="sub">Sales, orders and conversion for cartloom.example.com.</p>
+</div>
+<section class="stats-grid" aria-label="Key metrics">
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Revenue today</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20"/><path d="M16.5 6.5c-1-1.4-2.6-2-4.5-2-2.5 0-4.5 1.3-4.5 3.4 0 4.6 9 2.6 9 7.1 0 2.1-2 3.5-4.5 3.5-2 0-3.8-.7-4.8-2.2"/></svg></span></div>
+    <div class="stat-value" data-count="8427" data-dec="0" data-prefix="$" data-suffix="">$8,427</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>14.2% <small>vs yesterday</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Orders</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg></span></div>
+    <div class="stat-value" data-count="312" data-dec="0" data-prefix="" data-suffix="">312</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>9.6% <small>vs yesterday</small></span>
+  </article>
+  <article class="card stat-card">
+    <div class="stat-top"><span class="stat-label">Conversion rate</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/></svg></span></div>
+    <div class="stat-value" data-count="3.42" data-dec="2" data-prefix="" data-suffix="%">3.42%</div>
+    <span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>0.38 pts <small>vs last week</small></span>
+  </article>
+  <article class="card stat-card down-trend">
+    <div class="stat-top"><span class="stat-label">Avg order value</span><span class="stat-ic"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span></div>
+    <div class="stat-value" data-count="27.01" data-dec="2" data-prefix="$" data-suffix="">$27.01</div>
+    <span class="delta down"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7l10 10"/><path d="M17 8v9H8"/></svg>1.2% <small>vs last week</small></span>
+  </article>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Revenue — last 14 days</h2>
+    <div class="card-tools"><div class="range-chips" role="group" aria-label="Date range" data-rangegroup><button type="button" data-rng="a" aria-pressed="true">14 days</button><button type="button" data-rng="b" aria-pressed="false">Prior 14</button></div><span class="chart-legend"><span><i class="sw" style="background:#7C3AED"></i>Gross revenue</span></span></div>
+    <p class="hint">Gross sales with area fill; hover points for daily totals.</p>
+  </div>
+  <div class="line-chart" id="salesLine" role="img" aria-label="Daily revenue line chart"></div>
+</section>
+
+<div class="layout-cols">
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Orders</h2>
+    <div class="card-tools"><div class="tabs" role="tablist" aria-label="Table views"><button class="tab-btn" role="tab" data-tab="a" aria-selected="true">Recent orders</button><button class="tab-btn" role="tab" data-tab="b" aria-selected="false">Awaiting fulfillment</button></div><button class="btn" type="button" data-export="cartloom-orders.csv" title="Download table as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button></div>
+  </div>
+  <div class="table-wrap" role="region" aria-label="Orders" tabindex="0">
+    <table id="dataTable">
+      <thead><tr><th scope="col">Order</th><th scope="col">Customer</th><th scope="col">Items</th><th scope="col">Total</th><th scope="col">Payment</th><th scope="col">Placed</th><th scope="col">Actions</th></tr></thead>
+      <tbody data-tab-panel="a">
+        <tr>
+          <td><strong>#CL-10486</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">AL</span><span><span class="nm">Ava Lindqvist</span><span class="em">ava.l@example.com</span></span></span></td>
+          <td class="num">3</td>
+          <td class="amount">$84.50</td>
+          <td><span class="pill pill-success">Paid</span></td>
+          <td>Jun 11, 10:24</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10485</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">NP</span><span><span class="nm">Noah Petit</span><span class="em">noah.petit@example.com</span></span></span></td>
+          <td class="num">1</td>
+          <td class="amount">$29.00</td>
+          <td><span class="pill pill-success">Paid</span></td>
+          <td>Jun 11, 09:58</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10484</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F59E0B,#F97316)" aria-hidden="true">MO</span><span><span class="nm">Mia Okafor</span><span class="em">mia.ok@example.com</span></span></span></td>
+          <td class="num">5</td>
+          <td class="amount">$142.75</td>
+          <td><span class="pill pill-warn">Pending</span></td>
+          <td>Jun 11, 09:31</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10483</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F59E0B,#F97316)" aria-hidden="true">LM</span><span><span class="nm">Lucas Meyer</span><span class="em">lucas.m@example.com</span></span></span></td>
+          <td class="num">2</td>
+          <td class="amount">$56.20</td>
+          <td><span class="pill pill-success">Paid</span></td>
+          <td>Jun 11, 08:47</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10482</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">EC</span><span><span class="nm">Emma Castillo</span><span class="em">emma.c@example.com</span></span></span></td>
+          <td class="num">4</td>
+          <td class="amount">$98.10</td>
+          <td><span class="pill pill-info">COD</span></td>
+          <td>Jun 11, 08:12</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10481</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F59E0B,#F97316)" aria-hidden="true">OT</span><span><span class="nm">Oliver Tan</span><span class="em">oliver.tan@example.com</span></span></span></td>
+          <td class="num">1</td>
+          <td class="amount">$19.99</td>
+          <td><span class="pill pill-danger">Refunded</span></td>
+          <td>Jun 10, 22:05</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10480</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">IM</span><span><span class="nm">Ines Moreau</span><span class="em">ines.m@example.com</span></span></span></td>
+          <td class="num">2</td>
+          <td class="amount">$63.40</td>
+          <td><span class="pill pill-success">Paid</span></td>
+          <td>Jun 10, 21:18</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+              <tr>
+          <td><strong>#CL-10473</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">SR</span><span><span class="nm">Sofia Ricci</span><span class="em">sofia.r@example.com</span></span></span></td>
+          <td class="num">2</td>
+          <td class="amount">$63.20</td>
+          <td><span class="pill pill-success">Paid</span></td>
+          <td>Jun 10, 16:02</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10469</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">DK</span><span><span class="nm">Daan de Klerk</span><span class="em">daan.dk@example.com</span></span></span></td>
+          <td class="num">4</td>
+          <td class="amount">$118.90</td>
+          <td><span class="pill pill-info">COD</span></td>
+          <td>Jun 10, 14:37</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10465</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">PB</span><span><span class="nm">Priya Banerjee</span><span class="em">priya.b@example.com</span></span></span></td>
+          <td class="num">1</td>
+          <td class="amount">$19.50</td>
+          <td><span class="pill pill-success">Paid</span></td>
+          <td>Jun 10, 11:48</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10458</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">TM</span><span><span class="nm">Tom Mercer</span><span class="em">tom.m@example.com</span></span></span></td>
+          <td class="num">6</td>
+          <td class="amount">$203.40</td>
+          <td><span class="pill pill-danger">Refunded</span></td>
+          <td>Jun 09, 19:21</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10451</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F59E0B,#F97316)" aria-hidden="true">YS</span><span><span class="nm">Yuki Sato</span><span class="em">yuki.s@example.com</span></span></span></td>
+          <td class="num">2</td>
+          <td class="amount">$58.00</td>
+          <td><span class="pill pill-warn">Pending</span></td>
+          <td>Jun 09, 15:06</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+      </tbody>
+      <tbody data-tab-panel="b" hidden>
+        <tr>
+          <td><strong>#CL-10484</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">MO</span><span><span class="nm">Mia Okafor</span><span class="em">mia.ok@example.com</span></span></span></td>
+          <td class="num">5</td>
+          <td class="amount">$142.75</td>
+          <td><span class="pill pill-warn">Pending</span></td>
+          <td>Jun 11, 09:31</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10478</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">JW</span><span><span class="nm">Jonas Weber</span><span class="em">j.weber@example.com</span></span></span></td>
+          <td class="num">2</td>
+          <td class="amount">$47.60</td>
+          <td><span class="pill pill-warn">Pending</span></td>
+          <td>Jun 10, 18:44</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10474</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">SH</span><span><span class="nm">Sara Haddad</span><span class="em">sara.h@example.com</span></span></span></td>
+          <td class="num">6</td>
+          <td class="amount">$188.30</td>
+          <td><span class="pill pill-success">Paid</span></td>
+          <td>Jun 10, 15:02</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10471</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">FB</span><span><span class="nm">Felix Brand</span><span class="em">felix.b@example.com</span></span></span></td>
+          <td class="num">1</td>
+          <td class="amount">$34.00</td>
+          <td><span class="pill pill-info">COD</span></td>
+          <td>Jun 10, 13:55</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10467</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">NV</span><span><span class="nm">Nina Vasquez</span><span class="em">nina.v@example.com</span></span></span></td>
+          <td class="num">3</td>
+          <td class="amount">$76.85</td>
+          <td><span class="pill pill-warn">Pending</span></td>
+          <td>Jun 10, 11:23</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+        <tr>
+          <td><strong>#CL-10465</strong></td>
+          <td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">AK</span><span><span class="nm">Adam Kowalski</span><span class="em">adam.k@example.com</span></span></span></td>
+          <td class="num">2</td>
+          <td class="amount">$52.10</td>
+          <td><span class="pill pill-success">Paid</span></td>
+          <td>Jun 10, 09:40</td>
+          <td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-foot" data-pagination data-page-size="5" data-noun="orders"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 12 orders</span>
+    <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+  </div>
+</section>
+  </div>
+  <div class="col-stack">
+<section class="card">
+  <div class="card-head">
+    <h2>Best sellers</h2>
+    <p class="hint">Units sold — last 30 days.</p>
+  </div>
+  <ol class="tlist">
+    <li><span class="tl-rank">1</span><span class="tl-main"><b>Ceramic mug set</b><span class="tl-bar"><i style="--w:100%"></i></span></span><span class="tl-val">1,284</span></li>
+    <li><span class="tl-rank">2</span><span class="tl-main"><b>Linen tote bag</b><span class="tl-bar"><i style="--w:76%"></i></span></span><span class="tl-val">976</span></li>
+    <li><span class="tl-rank">3</span><span class="tl-main"><b>Soy candle trio</b><span class="tl-bar"><i style="--w:58%"></i></span></span><span class="tl-val">742</span></li>
+    <li><span class="tl-rank">4</span><span class="tl-main"><b>Walnut serving board</b><span class="tl-bar"><i style="--w:40%"></i></span></span><span class="tl-val">518</span></li>
+    <li><span class="tl-rank">5</span><span class="tl-main"><b>Stoneware vase</b><span class="tl-bar"><i style="--w:31%"></i></span></span><span class="tl-val">402</span></li>
+  </ol>
+</section>
+<section class="card">
+  <div class="card-head">
+    <h2>Store activity</h2>
+    <div class="card-tools"><button class="icon-btn" type="button" aria-label="Activity options" title="Activity options"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></button></div>
+  </div>
+  <ul class="feed">
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg></span><span><p><strong>312 orders</strong> placed today across 4 channels.</p><span class="when">Today, 10:30</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12l10 10 9.5-9.5L12 2H5a3 3 0 0 0-3 3z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg></span><span><p>Price updated on <strong>Linen tote</strong> ($34 → $29).</p><span class="when">Today, 09:12</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17l-6.1 3.6 1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span><span><p><strong>Ceramic mug set</strong> hit 200 reviews (4.8 avg).</p><span class="when">Yesterday, 19:45</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><span><p>Payout of <strong>$12,480</strong> sent to bank ••4821.</p><span class="when">Yesterday, 09:00</span></span></li>
+    <li><span class="dd-bubble"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/></svg></span><span><p><strong>86 new customers</strong> this week from referrals.</p><span class="when">Jun 09, 17:20</span></span></li>
+  </ul>
+</section>
+  </div>
+</div>
+
+</section>
+<section class="view" data-view-panel="list" hidden aria-label="Orders">
+  <div class="view-head"><h2>Orders</h2><p class="sub">All store orders with fulfilment status and order value.</p></div>
+  <div class="sum-chips"><div class="sum-chip"><div class="sc-label">Orders today</div><div class="sc-value">34</div><div class="sc-foot up">+6 vs yesterday</div></div><div class="sum-chip"><div class="sc-label">Revenue today</div><div class="sc-value">$6.8k</div><div class="sc-foot up">+12.4% WoW</div></div><div class="sum-chip"><div class="sc-label">Avg order value</div><div class="sc-value">$58.20</div><div class="sc-foot">across 20 orders</div></div><div class="sum-chip"><div class="sc-label">Refund rate</div><div class="sc-value">2.1%</div><div class="sc-foot down">0.4% vs last week</div></div></div>
+  <section class="card">
+    <div class="list-toolbar">
+      <form class="list-search" role="search" onsubmit="return false"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input type="search" data-list-search placeholder="Search orders…" aria-label="Search Orders"></form>
+      <span class="spacer"></span>
+      <button class="btn" type="button" data-export="cartloom-orders.csv" data-table="listTable" title="Download all orders as CSV"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span class="btxt">Export</span></button>
+    </div>
+    <div class="table-wrap" role="region" aria-label="Orders" tabindex="0">
+      <table id="listTable">
+        <thead><tr><th scope="col">Customer</th><th scope="col">Order</th><th scope="col">Items</th><th scope="col">Total</th><th scope="col">Status</th><th scope="col">Placed</th><th scope="col">Actions</th></tr></thead>
+        <tbody>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#2563EB,#60A5FA)" aria-hidden="true">LF</span><span><span class="nm">Lena Fischer</span><span class="em">lena.f@mail.example.com</span></span></span></td><td class="num">#CL-10428</td><td>3 items</td><td class="amount">$182.40</td><td><span class="pill pill-success">Shipped</span></td><td>Jun 11</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">MW</span><span><span class="nm">Marcus Webb</span><span class="em">m.webb@mail.example.com</span></span></span></td><td class="num">#CL-10427</td><td>1 item</td><td class="amount">$49.00</td><td><span class="pill pill-info">Processing</span></td><td>Jun 11</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">PR</span><span><span class="nm">Priya Raman</span><span class="em">priya@mail.example.com</span></span></span></td><td class="num">#CL-10426</td><td>5 items</td><td class="amount">$311.75</td><td><span class="pill pill-success">Delivered</span></td><td>Jun 10</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">DS</span><span><span class="nm">Diego Santos</span><span class="em">diego@mail.example.com</span></span></span></td><td class="num">#CL-10425</td><td>2 items</td><td class="amount">$86.90</td><td><span class="pill pill-danger">Refunded</span></td><td>Jun 10</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">AH</span><span><span class="nm">Amelia Hart</span><span class="em">amelia@mail.example.com</span></span></span></td><td class="num">#CL-10424</td><td>4 items</td><td class="amount">$213.30</td><td><span class="pill pill-success">Shipped</span></td><td>Jun 09</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">TN</span><span><span class="nm">Tomasz Nowak</span><span class="em">t.nowak@mail.example.com</span></span></span></td><td class="num">#CL-10423</td><td>1 item</td><td class="amount">$54.00</td><td><span class="pill pill-info">Processing</span></td><td>Jun 09</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">SR</span><span><span class="nm">Sofia Ricci</span><span class="em">sofia@mail.example.com</span></span></span></td><td class="num">#CL-10422</td><td>6 items</td><td class="amount">$398.50</td><td><span class="pill pill-warn">Pending</span></td><td>Jun 08</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#16A34A,#4ADE80)" aria-hidden="true">IO</span><span><span class="nm">Imani Okoye</span><span class="em">imani@mail.example.com</span></span></span></td><td class="num">#CL-10421</td><td>2 items</td><td class="amount">$127.60</td><td><span class="pill pill-success">Delivered</span></td><td>Jun 08</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#D97706,#FBBF24)" aria-hidden="true">RC</span><span><span class="nm">Ruben Castillo</span><span class="em">ruben@mail.example.com</span></span></span></td><td class="num">#CL-10420</td><td>3 items</td><td class="amount">$163.40</td><td><span class="pill pill-success">Shipped</span></td><td>Jun 07</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#E11D48,#FB7185)" aria-hidden="true">EK</span><span><span class="nm">Elliot Kim</span><span class="em">elliot@mail.example.com</span></span></span></td><td class="num">#CL-10419</td><td>1 item</td><td class="amount">$28.75</td><td><span class="pill pill-info">Processing</span></td><td>Jun 07</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#2563EB,#60A5FA)" aria-hidden="true">NV</span><span><span class="nm">Nadia Vogel</span><span class="em">nadia@mail.example.com</span></span></span></td><td class="num">#CL-10418</td><td>4 items</td><td class="amount">$241.90</td><td><span class="pill pill-warn">Pending</span></td><td>Jun 06</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">JB</span><span><span class="nm">Jonas Brandt</span><span class="em">jonas@mail.example.com</span></span></span></td><td class="num">#CL-10417</td><td>2 items</td><td class="amount">$83.00</td><td><span class="pill pill-danger">Cancelled</span></td><td>Jun 06</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#14B8A6,#0D9488)" aria-hidden="true">HS</span><span><span class="nm">Hana Suzuki</span><span class="em">hana@mail.example.com</span></span></span></td><td class="num">#CL-10416</td><td>7 items</td><td class="amount">$474.50</td><td><span class="pill pill-success">Delivered</span></td><td>Jun 05</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)" aria-hidden="true">OR</span><span><span class="nm">Owen Reilly</span><span class="em">owen@mail.example.com</span></span></span></td><td class="num">#CL-10415</td><td>1 item</td><td class="amount">$15.20</td><td><span class="pill pill-success">Shipped</span></td><td>Jun 05</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#F43F5E,#FB923C)" aria-hidden="true">CM</span><span><span class="nm">Carla Mendes</span><span class="em">carla@mail.example.com</span></span></span></td><td class="num">#CL-10414</td><td>3 items</td><td class="amount">$168.80</td><td><span class="pill pill-info">Processing</span></td><td>Jun 04</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">VP</span><span><span class="nm">Viktor Petrov</span><span class="em">viktor@mail.example.com</span></span></span></td><td class="num">#CL-10413</td><td>5 items</td><td class="amount">$292.10</td><td><span class="pill pill-success">Delivered</span></td><td>Jun 04</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#0EA5E9,#22D3EE)" aria-hidden="true">YH</span><span><span class="nm">Yara Haddad</span><span class="em">yara@mail.example.com</span></span></span></td><td class="num">#CL-10412</td><td>2 items</td><td class="amount">$116.50</td><td><span class="pill pill-warn">Pending</span></td><td>Jun 03</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#16A34A,#4ADE80)" aria-hidden="true">FM</span><span><span class="nm">Felix Mayer</span><span class="em">felix@mail.example.com</span></span></span></td><td class="num">#CL-10411</td><td>4 items</td><td class="amount">$258.30</td><td><span class="pill pill-success">Shipped</span></td><td>Jun 03</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#D97706,#FBBF24)" aria-hidden="true">GA</span><span><span class="nm">Grace Adeyemi</span><span class="em">grace@mail.example.com</span></span></span></td><td class="num">#CL-10410</td><td>1 item</td><td class="amount">$24.90</td><td><span class="pill pill-success">Delivered</span></td><td>Jun 02</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        <tr><td><span class="cell-person"><span class="avatar sm" style="background:linear-gradient(135deg,#E11D48,#FB7185)" aria-hidden="true">NB</span><span><span class="nm">Noah Bergstrom</span><span class="em">noah@mail.example.com</span></span></span></td><td class="num">#CL-10409</td><td>3 items</td><td class="amount">$147.40</td><td><span class="pill pill-info">Processing</span></td><td>Jun 02</td><td><span class="row-actions"><button class="row-btn" type="button" aria-label="View row" title="View row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="row-btn" type="button" aria-label="Edit row" title="Edit row"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="list-empty" data-list-empty hidden>No orders match your search.</p>
+    <div class="table-foot" data-pagination data-table="listTable" data-page-size="5" data-noun="orders"><span class="pg-info" data-page-info aria-live="polite">Showing 1–5 of 20 orders</span>
+      <span class="pager"><button type="button" data-page-prev aria-label="Previous page" disabled>&lsaquo;</button><span class="pg-nums" data-page-nums></span><button type="button" data-page-next aria-label="Next page">&rsaquo;</button></span>
+    </div>
+  </section>
+</section>
+<section class="view" data-view-panel="reports" hidden aria-label="Store reports">
+  <div class="view-head"><h2>Store reports</h2><p class="sub">Sales trends, channel mix and conversion for the storefront.</p></div>
+  <div class="insight-grid"><article class="insight-tile"><div class="it-label">Conversion rate</div><div class="it-value">3.4%</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> +0.3pt this week</div></article><article class="insight-tile"><div class="it-label">Cart abandonment</div><div class="it-value">61%</div><div class="it-note"><span class="delta up"><svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span> 2pt lower than May</div></article><article class="insight-tile"><div class="it-label">Repeat customers</div><div class="it-value">38%</div><div class="it-note"> of orders this month</div></article></div>
+  <div class="report-grid">
+  <section class="card">
+    <div class="card-head"><h2>Revenue trend (12 weeks)</h2><p class="hint">Net store revenue per week.</p></div>
+    <div class="line-chart report-chart" id="repChartA" role="img" aria-label="Revenue trend (12 weeks)"></div>
+  </section>
+  <section class="card">
+    <div class="card-head"><h2>Sessions vs orders</h2><p class="hint">Daily sessions and completed orders.</p></div>
+    <div class="line-chart report-chart" id="repChartB" role="img" aria-label="Sessions vs orders"></div>
+  </section>
+  </div>
+  <section class="card">
+    <div class="card-head"><h2>Key takeaways</h2></div>
+    <ul class="takeaways">
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span><b>Mobile</b> now accounts for 64% of completed checkouts.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>The <b>Summer Drop</b> promo lifted average order value by $7.40.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span>Refund rate fell to <b>2.1%</b> after the sizing-guide update.</span></li>
+      <li><span class="tk-ic"><svg class="ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span><b>Apparel</b> remains the top category by units sold.</span></li>
+    </ul>
+  </section>
+</section>
+<section class="view" data-view-panel="settings" hidden aria-label="Settings">
+  <div class="view-head"><h2>Settings</h2><p class="sub">Store profile, notifications and checkout preferences.</p></div>
+  <div class="settings-grid">
+    <section class="card">
+      <div class="card-head"><h2>Profile</h2></div>
+      <form data-settings-form novalidate>
+        <div class="form-row"><label for="set-name-template-02-ecommerce-admin">Full name</label><input type="text" id="set-name-template-02-ecommerce-admin" name="profileName" value="Sara Lindqvist" autocomplete="name"><span class="field-err">Please enter your name.</span></div>
+        <div class="form-row"><label for="set-email-template-02-ecommerce-admin">Email address</label><input type="email" id="set-email-template-02-ecommerce-admin" name="profileEmail" value="sara@cartloom.example.com" autocomplete="email"><span class="field-err">Enter a valid email address.</span></div>
+        <div class="form-actions"><button class="btn primary" type="submit"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg><span class="btxt">Save changes</span></button><span class="form-note" data-form-note role="status" aria-live="polite"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l5 5L20 7"/></svg>Saved</span></div>
+      </form>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Preferences</h2></div>
+      <div class="toggle-list">
+        <div class="toggle-row"><div class="tr-main"><b>New order alerts</b><span>Ping me when an order is placed.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="New order alerts"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Low-stock warnings</b><span>Alert when a SKU drops below threshold.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Low-stock warnings"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Daily sales summary</b><span>Email a recap each evening.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Daily sales summary"></button></div>
+        <div class="toggle-row"><div class="tr-main"><b>Abandoned cart emails</b><span>Auto-send recovery emails after 1 hour.</span></div><button class="switch" type="button" role="switch" aria-checked="true" aria-pressed="true" aria-label="Abandoned cart emails"></button></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Appearance</h2></div>
+      <div class="appearance-row"><div class="ar-main"><b>Density</b><span>Comfortable spacing or a compact layout.</span></div><div class="seg-toggle" role="group" aria-label="Density"><button type="button" data-pref-seg aria-pressed="true">Comfortable</button><button type="button" data-pref-seg aria-pressed="false">Compact</button></div></div>
+      <div class="appearance-row"><div class="ar-main"><b>Reduce motion</b><span>Minimise animations across the dashboard.</span></div><button class="switch" type="button" role="switch" aria-checked="false" aria-pressed="false" aria-label="Reduce motion"></button></div>
+    </section>
+    <section class="card danger-zone">
+      <div class="card-head"><h2>Danger zone</h2></div>
+      <div class="danger-row"><div class="dr-main"><b>Clear test orders</b><span>Remove all sandbox orders from history.</span></div><button class="btn danger" type="button" data-demo-link>Clear</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Reset storefront theme</b><span>Revert to the default store layout.</span></div><button class="btn danger" type="button" data-demo-link>Reset theme</button></div>
+      <div class="danger-row"><div class="dr-main"><b>Close store</b><span>Permanently deactivate this storefront.</span></div><button class="btn danger" type="button" data-demo-link>Close store</button></div>
+    </section>
+  </div>
+</section>
+<footer class="page-foot"><span>&copy; <span data-year>2026</span> Cartloom Labs <span class="ver-chip">v2.1.0</span> — demo data only, refreshed June 11, 2026.</span><span><a href="#" data-demo-link>Docs</a> &middot; <a href="#" data-demo-link>Changelog</a> &middot; <a href="#" data-demo-link>Status</a></span></footer>
+</main>
+</div>
+</div>
+</body>
+</html>
