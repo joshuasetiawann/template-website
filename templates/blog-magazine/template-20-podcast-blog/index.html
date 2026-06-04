@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static &amp; Signal &mdash; Podcast Blog</title>
+  <meta name="description" content="Static &amp; Signal is a dark podcast blog template with a fake episode player, animated EQ bars, amber-violet styling, episode show notes grid and a topic marquee.">
+  <meta name="theme-color" content="#160F1E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23F59E0B'/%3E%3Ctext%20x='32'%20y='44'%20font-family='Georgia%2C%20serif'%20font-size='30'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top" class="v5-body tpl-20">
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Static &amp; Signal</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="articles.html">Episodes</a></li>
+          <li><a href="articles.html">Show notes</a></li>
+          <li><a href="articles.html">Charts</a></li>
+          <li><a href="contact.html#subscribe">Flare</a></li>
+          <li><a href="about.html">Hosts</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-small btn-primary header-cta" href="articles.html">Listen now</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero hero-v5" id="top-story" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="kicker">Latest episode · 54 min</p>
+          <h1 id="hero-title">Ep. 87 — The Algorithm Made Me Buy It</h1>
+          
+          <p class="hero-excerpt">Three listeners, one shared haunting: products they never searched for, delivered anyway. We trace the recommendation pipelines backwards with an ex-ranking engineer until the trail goes warm. Plus: Mona buys a theremin, allegedly by choice.</p>
+          <p class="hero-meta"><span class="meta-avatar" aria-hidden="true">E</span><span class="meta-author">Ezra Quill</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-06-09">Jun 9, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">54 min listen</span></p>
+          <div class="hero-ctas"><a class="btn btn-primary" href="article.html?p=0">Read the show notes <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#notes">Browse all posts</a></div>
+        </div>
+        <div class="hero-art" data-reveal>
+          <div class="cover cov-0 duotone cover-hero" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg><span class="hero-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="cover-label">Episodes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section sec-episodes section--tint" id="player" aria-labelledby="player-title">
+      <div class="container narrow">
+      <div class="section-head" data-reveal>
+        <p class="kicker">On air</p>
+        <h2 id="player-title">Recent episodes</h2>
+        <p class="lead">Press play on a fake player that behaves like a real one — queue, EQ bars and all.</p>
+      </div>
+        <div class="episode-list">
+        <article class="episode is-featured" data-reveal>
+          <button class="play-btn" type="button" data-play aria-pressed="false" aria-label="Play episode 87 &mdash; The Algorithm Made Me Buy It">
+            <svg class="ic-play" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.5 4.8v14.4L19.2 12z"/></svg><svg class="ic-pause" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><rect x="6.4" y="4.8" width="3.6" height="14.4" rx="1"/><rect x="14" y="4.8" width="3.6" height="14.4" rx="1"/></svg>
+          </button>
+          <div class="ep-body">
+            <p class="ep-num">Episode 87 &middot; 54:12</p>
+            <h3 class="ep-title">The Algorithm Made Me Buy It</h3>
+            <p class="ep-desc">A haunted shopping cart, an ex-ranking engineer, and a theremin nobody admits to wanting.</p>
+          </div>
+          <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="episode" data-reveal>
+          <button class="play-btn" type="button" data-play aria-pressed="false" aria-label="Play episode 86 &mdash; Night Shift Cities">
+            <svg class="ic-play" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.5 4.8v14.4L19.2 12z"/></svg><svg class="ic-pause" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><rect x="6.4" y="4.8" width="3.6" height="14.4" rx="1"/><rect x="14" y="4.8" width="3.6" height="14.4" rx="1"/></svg>
+          </button>
+          <div class="ep-body">
+            <p class="ep-num">Episode 86 &middot; 49:33</p>
+            <h3 class="ep-title">Night Shift Cities</h3>
+            <p class="ep-desc">The people who keep 3 a.m. running, recorded where they work — quietly.</p>
+          </div>
+          <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="episode" data-reveal>
+          <button class="play-btn" type="button" data-play aria-pressed="false" aria-label="Play episode 85 &mdash; The Archivist of Dead Websites">
+            <svg class="ic-play" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.5 4.8v14.4L19.2 12z"/></svg><svg class="ic-pause" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><rect x="6.4" y="4.8" width="3.6" height="14.4" rx="1"/><rect x="14" y="4.8" width="3.6" height="14.4" rx="1"/></svg>
+          </button>
+          <div class="ep-body">
+            <p class="ep-num">Episode 85 &middot; 51:08</p>
+            <h3 class="ep-title">The Archivist of Dead Websites</h3>
+            <p class="ep-desc">Lina Maros backs up the internet's attics before the lights go out.</p>
+          </div>
+          <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="episode" data-reveal>
+          <button class="play-btn" type="button" data-play aria-pressed="false" aria-label="Play episode 84 &mdash; Why We Whisper in Museums">
+            <svg class="ic-play" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.5 4.8v14.4L19.2 12z"/></svg><svg class="ic-pause" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><rect x="6.4" y="4.8" width="3.6" height="14.4" rx="1"/><rect x="14" y="4.8" width="3.6" height="14.4" rx="1"/></svg>
+          </button>
+          <div class="ep-body">
+            <p class="ep-num">Episode 84 &middot; 46:51</p>
+            <h3 class="ep-title">Why We Whisper in Museums</h3>
+            <p class="ep-desc">The acoustics of awe, with the sound designer who tunes the hush.</p>
+          </div>
+          <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        </div>
+      </div>
+    </section>
+    <div class="topic-marquee" id="wire" aria-label="Topics on rotation">
+      <div class="mq-track"><span class="mq-run"><span class="mq-item">EP. 87 OUT NOW<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">DEAD WEBSITES<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">NIGHT SHIFT CITIES<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">RECOMMENDATION ENGINES<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">MUSEUM WHISPERS<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">LISTENER VOICEMAILS<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">GEAR TEARDOWNS<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">SEASON SIX SOON<span class="mq-dot" aria-hidden="true">&#10022;</span></span></span><span class="mq-run" aria-hidden="true"><span class="mq-item">EP. 87 OUT NOW<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">DEAD WEBSITES<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">NIGHT SHIFT CITIES<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">RECOMMENDATION ENGINES<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">MUSEUM WHISPERS<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">LISTENER VOICEMAILS<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">GEAR TEARDOWNS<span class="mq-dot" aria-hidden="true">&#10022;</span></span><span class="mq-item">SEASON SIX SOON<span class="mq-dot" aria-hidden="true">&#10022;</span></span></span></div>
+    </div>
+    <section class="section sec-grid" id="notes" aria-labelledby="notes-title">
+      <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="kicker">The companion blog</p>
+        <h2 id="notes-title">Show notes &amp; field reports</h2>
+        <p class="lead">Sources for every claim, gear confessions and the segments that didn't survive the edit.</p>
+      </div>
+      <div class="chip-row" role="group" aria-label="Filter by category">
+        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="episodes" aria-pressed="false">Episodes</button>
+        <button class="chip" type="button" data-filter="show-notes" aria-pressed="false">Show Notes</button>
+        <button class="chip" type="button" data-filter="behind-the-mic" aria-pressed="false">Behind the Mic</button>
+        <button class="chip" type="button" data-filter="guests" aria-pressed="false">Guests</button>
+        <button class="chip" type="button" data-filter="gear" aria-pressed="false">Gear</button>
+      </div>
+      <p class="filter-note" data-count aria-live="polite">Showing all 10 posts</p>
+      <div class="post-grid zine-grid" data-grid>
+        <article class="post-card zine-card" data-cat="show-notes" data-reveal>
+          <div class="cover cov-0 duotone" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg></span><span class="cover-label">Show Notes</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Show Notes</span></p>
+            <h3 class="card-title"><a href="article.html?p=0">Ep. 87 Show Notes: Every Source on the Recommendation Trail</a></h3>
+            <p class="card-excerpt">The papers, the patents and the leaked slide deck, time-stamped to the minute we mention them.</p>
+            <p class="card-meta"><span class="meta-author">Ezra Quill</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-06-04">Jun 4, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">6 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card zine-card" data-cat="episodes" data-reveal>
+          <div class="cover cov-1 duotone" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg></span><span class="cover-label">Episodes</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Episodes</span></p>
+            <h3 class="card-title"><a href="article.html?p=1">Ep. 86 — Night Shift Cities: Who Keeps 3 A.M. Running</a></h3>
+            <p class="card-excerpt">Bakers, dispatchers, harbor pilots and one extremely calm air-traffic controller. A love letter to the awake.</p>
+            <p class="card-meta"><span class="meta-author">Mona Iwu</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-30">May 30, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">49 min listen</span></p>
+          </div>
+        </article>
+        <article class="post-card zine-card" data-cat="behind-the-mic" data-reveal>
+          <div class="cover cov-2 duotone" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg></span><span class="cover-label">Behind the Mic</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Behind the Mic</span></p>
+            <h3 class="card-title"><a href="article.html?p=2">How We Record Across Six Time Zones Without Sounding Like It</a></h3>
+            <p class="card-excerpt">Our double-ender setup, the silence-sync trick and why Mona mails SD cards like it's 2009.</p>
+            <p class="card-meta"><span class="meta-author">Mona Iwu</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-28">May 28, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">7 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card zine-card" data-cat="guests" data-reveal>
+          <div class="cover cov-3 duotone" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg></span><span class="cover-label">Guests</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Guests</span></p>
+            <h3 class="card-title"><a href="article.html?p=3">Guest Spotlight: The Archivist of Dead Websites</a></h3>
+            <p class="card-excerpt">Before Ep. 85, read about Lina Maros's basement server farm and the GeoCities funeral she hosts annually.</p>
+            <p class="card-meta"><span class="meta-author">Ezra Quill</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-23">May 23, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">8 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card zine-card" data-cat="gear" data-reveal>
+          <div class="cover cov-4 duotone" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg></span><span class="cover-label">Gear</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Gear</span></p>
+            <h3 class="card-title"><a href="article.html?p=4">The $230 Mic Setup That Beat Our Studio Kit (Blind Test)</a></h3>
+            <p class="card-excerpt">Five listeners, ten clips, one upset. The dynamic mic and a duvet beat the treated room. Receipts inside.</p>
+            <p class="card-meta"><span class="meta-author">Mona Iwu</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-18">May 18, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">9 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card zine-card" data-cat="episodes" data-reveal>
+          <div class="cover cov-0 duotone" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg></span><span class="cover-label">Episodes</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Episodes</span></p>
+            <h3 class="card-title"><a href="article.html?p=5">Ep. 85 — The Archivist of Dead Websites</a></h3>
+            <p class="card-excerpt">What disappears when a hosting bill lapses? Lina Maros saves the web one obsolete fan shrine at a time.</p>
+            <p class="card-meta"><span class="meta-author">Ezra Quill</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-16">May 16, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">51 min listen</span></p>
+          </div>
+        </article>
+        <article class="post-card zine-card" data-cat="show-notes" data-reveal>
+          <div class="cover cov-1 duotone" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg></span><span class="cover-label">Show Notes</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Show Notes</span></p>
+            <h3 class="card-title"><a href="article.html?p=6">Ep. 86 Show Notes: The Night Shift Reading List</a></h3>
+            <p class="card-excerpt">Shift-work sleep research, the harbor pilot's logbook and the 3 a.m. bakery cam (with permission).</p>
+            <p class="card-meta"><span class="meta-author">Mona Iwu</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-11">May 11, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">5 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card zine-card" data-cat="behind-the-mic" data-reveal>
+          <div class="cover cov-2 duotone" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg></span><span class="cover-label">Behind the Mic</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Behind the Mic</span></p>
+            <h3 class="card-title"><a href="article.html?p=7">Why We Cut Our Best Segment Ever (An Editing Post-Mortem)</a></h3>
+            <p class="card-excerpt">Fourteen minutes of audio gold that broke the episode's spine. On killing darlings at 96 kHz.</p>
+            <p class="card-meta"><span class="meta-author">Ezra Quill</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-06">May 6, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">6 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card zine-card" data-cat="guests" data-reveal>
+          <div class="cover cov-3 duotone" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg></span><span class="cover-label">Guests</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Guests</span></p>
+            <h3 class="card-title"><a href="article.html?p=8">Guest Spotlight: The Whisper Engineer of Museum Audio Guides</a></h3>
+            <p class="card-excerpt">Ahead of Ep. 84, meet the sound designer who decides exactly how quiet a Vermeer should be.</p>
+            <p class="card-meta"><span class="meta-author">Mona Iwu</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-04">May 4, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">7 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card zine-card" data-cat="gear" data-reveal>
+          <div class="cover cov-4 duotone" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg></span><span class="cover-label">Gear</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Gear</span></p>
+            <h3 class="card-title"><a href="article.html?p=9">Our Full Rig, Cable by Cable (2026 Edition)</a></h3>
+            <p class="card-excerpt">Every plug, preamp and pop filter in the current chain — with the budget swaps we'd actually make.</p>
+            <p class="card-meta"><span class="meta-author">Ezra Quill</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-04-29">Apr 29, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">10 min read</span></p>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
+    <section class="section sec-trending section--tint" id="most-played" aria-labelledby="most-played-title">
+      <div class="container narrow">
+      <div class="section-head" data-reveal>
+        <p class="kicker">Heavy rotation</p>
+        <h2 id="most-played-title">Most played &amp; most read</h2>
+        <p class="lead">What listeners queued twice, charted across the season.</p>
+      </div>
+        <ol class="trend-list">
+          <li class="trend-item" data-reveal>
+            <span class="trend-num" aria-hidden="true">01</span>
+            <div class="trend-body">
+              <a class="trend-link" href="article.html?p=0">Ep. 87 — The Algorithm Made Me Buy It</a>
+              <span class="trend-metric">61k plays</span>
+            </div>
+          </li>
+          <li class="trend-item" data-reveal>
+            <span class="trend-num" aria-hidden="true">02</span>
+            <div class="trend-body">
+              <a class="trend-link" href="article.html?p=5">Ep. 85 — The Archivist of Dead Websites</a>
+              <span class="trend-metric">54k plays</span>
+            </div>
+          </li>
+          <li class="trend-item" data-reveal>
+            <span class="trend-num" aria-hidden="true">03</span>
+            <div class="trend-body">
+              <a class="trend-link" href="article.html?p=4">The $230 Mic Setup That Beat Our Studio Kit</a>
+              <span class="trend-metric">38k reads</span>
+            </div>
+          </li>
+          <li class="trend-item" data-reveal>
+            <span class="trend-num" aria-hidden="true">04</span>
+            <div class="trend-body">
+              <a class="trend-link" href="article.html?p=1">Ep. 86 — Night Shift Cities</a>
+              <span class="trend-metric">47k plays</span>
+            </div>
+          </li>
+          <li class="trend-item" data-reveal>
+            <span class="trend-num" aria-hidden="true">05</span>
+            <div class="trend-body">
+              <a class="trend-link" href="article.html?p=7">Why We Cut Our Best Segment Ever</a>
+              <span class="trend-metric">24k reads</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="section sec-news" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="container narrow">
+        <div class="news-card" data-reveal>
+      <div class="section-head head-center" data-reveal>
+        <p class="kicker">The Signal Flare</p>
+        <h2 id="newsletter-title">New episodes, decoded weekly</h2>
+        <p class="lead">Episode drops, the one source worth your click and a transmission from the cutting-room floor.</p>
+      </div>
+
+        <form class="news-form" data-newsletter novalidate>
+          <div class="form-row">
+            <label class="sr-only" for="nl-email">Email address</label>
+            <input id="nl-email" class="news-input" type="email" name="email" placeholder="listener@example.com" autocomplete="email" required>
+            <button class="btn btn-primary" type="submit">Tune in</button>
+          </div>
+          <p class="form-msg" data-form-msg aria-live="polite"></p>
+          <p class="form-privacy">Weekly. No dynamic ad insertion in your inbox, promise.</p>
+        </form>
+        </div>
+      </div>
+    </section>
+    <section class="section sec-editor section--tint" id="about" aria-labelledby="about-title">
+      <div class="container narrow">
+      <div class="section-head" data-reveal>
+        <p class="kicker">Behind the mic</p>
+        <h2 id="about-title">Your hosts</h2>
+        <p class="lead">Two voices, one mixing desk, an ongoing argument about jingles.</p>
+      </div>
+        <div class="editor-card" data-reveal>
+          <div class="editor-avatar" aria-hidden="true"><span>EQ</span></div>
+          <div class="editor-body">
+            <h3 class="editor-name">Ezra Quill &amp; Mona Iwu</h3>
+            <p class="editor-role">Hosts, producers, rival jingle composers</p>
+            <p class="editor-blurb">Ezra reported on tech for a decade; Mona engineered live radio. Together they make Static &amp; Signal in two closets six time zones apart, swapping interviews, SD cards and increasingly elaborate theories about the internet's weather.</p>
+            <p class="editor-note"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M8.5 21h7"/></svg> Listener voicemails are open — three minutes max, weird encouraged.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Static &amp; Signal</span></a>
+        <p class="footer-about">Static &amp; Signal is an independent podcast and companion blog investigating the internet's strange corners — fully listener-funded.</p>
+        <ul class="social-row" aria-label="Social links"><li><a href="#top" aria-label="Spotify"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.6"/><path d="M8.2 10.4c2.8-.9 5.6-.6 7.8.7"/><path d="M8.6 13.1c2.3-.7 4.4-.4 6.2.6"/><path d="M9 15.6c1.7-.5 3.2-.3 4.6.4"/></svg></a></li><li><a href="#top" aria-label="Podcast"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0"/><path d="M12 17v3.5"/></svg></a></li><li><a href="#top" aria-label="Youtube"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="3.5"/><path d="M10.5 9.6v4.8l4.2-2.4z" fill="currentColor" stroke="none"/></svg></a></li><li><a href="#top" aria-label="Rss"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11a8 8 0 0 1 8 8"/><path d="M5 5a14 14 0 0 1 14 14"/><circle cx="6" cy="18" r="1.4" fill="currentColor" stroke="none"/></svg></a></li><li><a href="#top" aria-label="X"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4l16 16"/><path d="M20 4L4 20"/></svg></a></li></ul>
+      </div>
+      <nav class="footer-col" aria-label="Quick links">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="articles.html">Episodes</a></li>
+          <li><a href="articles.html">Show notes</a></li>
+          <li><a href="articles.html">Charts</a></li>
+          <li><a href="contact.html#subscribe">Flare</a></li>
+          <li><a href="about.html">Hosts</a></li>
+          <li><a href="#top">Back to top</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h3>Topics</h3>
+        <ul>
+          <li><a href="articles.html">Episodes</a></li>
+          <li><a href="articles.html">Show Notes</a></li>
+          <li><a href="articles.html">Behind the Mic</a></li>
+          <li><a href="articles.html">Guests</a></li>
+          <li><a href="articles.html">Gear</a></li>
+          <li><a href="articles.html">Voicemails</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li>studio@staticandsignal.example</li>
+          <li>Voicemail line in every episode</li>
+          <li>Transcripts for all episodes</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Static &amp; Signal. All rights reserved.</p>
+      <p>Part of the Template Library &mdash; Blog &amp; Magazine collection.</p>
+    </div>
+  </footer>
+  <button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></button>
+</body>
+</html>

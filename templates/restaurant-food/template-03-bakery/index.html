@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Butterfold Bakehouse — Artisan Bakery</title>
+<meta name="description" content="Butterfold Bakehouse is a warm, scallop-edged bakery template with a pastry case menu, bake schedule, preorder form and small-batch story.">
+<meta name="theme-color" content="#B4632A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23B4632A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header header-pill" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Butterfold Bakehouse home"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V9M12 9c-2.6 0-4-1.6-4-4 2.6 0 4 1.6 4 4zm0 0c2.6 0 4-1.6 4-4-2.6 0-4 1.6-4 4zm0 5c-2.6 0-4-1.6-4-4 2.6 0 4 1.6 4 4zm0 0c2.6 0 4-1.6 4-4-2.6 0-4 1.6-4 4z"/></svg></span><span class="brand-name">Butterfold Bakehouse</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="menu.html">Pastry Case</a></li>
+<li><a class="nav-link" href="menu.html">Bake Times</a></li>
+<li><a class="nav-link" href="about.html">Our Story</a></li>
+<li><a class="nav-link" href="about.html#gallery">Gallery</a></li>
+<li><a class="nav-link" href="contact.html">Preorder</a></li>
+<li><a class="nav-link" href="contact.html#location">Visit</a></li>
+<li><a class="nav-link" href="menu.html">Full Menu</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="contact.html">Preorder a Bake</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-soft" id="top-hero">
+<span class="blob blob-a" aria-hidden="true"></span>
+<span class="blob blob-b" aria-hidden="true"></span>
+<div class="container hero-grid">
+<div class="hero-copy">
+<span class="kicker" data-reveal>Baked before sunrise, gone by noon</span>
+<h1 data-reveal>Butter, flour &amp; a 4 am alarm.</h1>
+<p class="hero-lead" data-reveal>A small-batch bakehouse folding croissants by hand, proofing sourdough for two days and icing cakes like it's somebody's birthday every day.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg" href="#order">Preorder a Bake</a>
+<a class="btn btn-lg btn-ghost" href="#menu">Peek the Case</a>
+</div>
+<div class="fact-pills"><span class="fact-pill" data-reveal><strong>48 hr</strong> sourdough ferment</span>
+<span class="fact-pill" data-reveal><strong>27</strong> layers per croissant</span>
+<span class="fact-pill" data-reveal><strong>4 am</strong> ovens wake up</span></div>
+</div>
+<div class="hero-art hero-orbs" role="img" aria-label="Playful shapes evoking Artisan Bakery">
+<span class="orb orb-1" aria-hidden="true"><svg class="orb-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14v8H5z"/><path d="M5 15.5c1.5 1.4 3-1.4 4.5 0s3-1.4 4.5 0 3-1.4 4.5 0"/><path d="M12 9v3M12 5.5a1.2 1.2 0 1 0-.01 0z"/></svg></span>
+<span class="orb orb-2" aria-hidden="true"><svg class="orb-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V9M12 9c-2.6 0-4-1.6-4-4 2.6 0 4 1.6 4 4zm0 0c2.6 0 4-1.6 4-4-2.6 0-4 1.6-4 4zm0 5c-2.6 0-4-1.6-4-4 2.6 0 4 1.6 4 4zm0 0c2.6 0 4-1.6 4-4-2.6 0-4 1.6-4 4z"/></svg></span>
+<span class="orb orb-3" aria-hidden="true"><svg class="orb-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg></span>
+</div>
+</div>
+</section>
+<section class="section sec-menu" id="menu" data-menu aria-label="Menu">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">The Pastry Case</span>
+<h2 class="">What's in the case</h2>
+<p class="lead">Everything is baked in small rounds through the morning — tap a category to browse, then preorder so the good stuff is waiting.</p>
+</div>
+<div class="menu-chips" role="group" aria-label="Filter menu by category">
+<button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+<button class="chip" type="button" data-filter="vienn" aria-pressed="false">Viennoiserie</button>
+<button class="chip" type="button" data-filter="bread" aria-pressed="false">Breads</button>
+<button class="chip" type="button" data-filter="cake" aria-pressed="false">Cakes</button>
+<button class="chip" type="button" data-filter="season" aria-pressed="false">Seasonal</button>
+</div>
+<div class="menu-cardgrid" data-menu-grid>
+<article class="mi-card" data-cat="vienn" data-reveal>
+<span class="mi-tag">Bestseller</span><h3 class="mi-name">Classic Butter Croissant</h3>
+<p class="mi-desc">27 layers, French butter, blistered and deeply bronzed</p>
+<div class="mi-foot"><span class="mi-price">$4.50</span><span class="mi-cat">Viennoiserie</span></div>
+</article>
+<article class="mi-card" data-cat="vienn" data-reveal>
+<h3 class="mi-name">Almond Twice-Baked</h3>
+<p class="mi-desc">Frangipane-filled, toasted almonds, dusted heavy</p>
+<div class="mi-foot"><span class="mi-price">$5.75</span><span class="mi-cat">Viennoiserie</span></div>
+</article>
+<article class="mi-card" data-cat="vienn" data-reveal>
+<h3 class="mi-name">Morning Bun</h3>
+<p class="mi-desc">Croissant dough rolled in orange-cinnamon sugar</p>
+<div class="mi-foot"><span class="mi-price">$5.25</span><span class="mi-cat">Viennoiserie</span></div>
+</article>
+<article class="mi-card" data-cat="vienn" data-reveal>
+<h3 class="mi-name">Ham &amp; Gruyère Roll</h3>
+<p class="mi-desc">Laminated dough, dijon cream, crisp edges</p>
+<div class="mi-foot"><span class="mi-price">$6.50</span><span class="mi-cat">Viennoiserie</span></div>
+</article>
+<article class="mi-card" data-cat="bread" data-reveal>
+<h3 class="mi-name">Country Sourdough</h3>
+<p class="mi-desc">48-hour levain, stone-milled blend, dark bake</p>
+<div class="mi-foot"><span class="mi-price">$8.00</span><span class="mi-cat">Breads</span></div>
+</article>
+<article class="mi-card" data-cat="bread" data-reveal>
+<h3 class="mi-name">Seeded Rye</h3>
+<p class="mi-desc">Caraway and toasted seeds, dense crumb, keeps for days</p>
+<div class="mi-foot"><span class="mi-price">$8.50</span><span class="mi-cat">Breads</span></div>
+</article>
+<article class="mi-card" data-cat="bread" data-reveal>
+<h3 class="mi-name">Olive &amp; Rosemary Loaf</h3>
+<p class="mi-desc">Castelvetrano olives folded through soft crumb</p>
+<div class="mi-foot"><span class="mi-price">$9.00</span><span class="mi-cat">Breads</span></div>
+</article>
+<article class="mi-card" data-cat="cake" data-reveal>
+<h3 class="mi-name">Brown Butter Carrot Cake</h3>
+<p class="mi-desc">Three layers, cream cheese frosting, candied walnuts</p>
+<div class="mi-foot"><span class="mi-price">$42.00</span><span class="mi-cat">Cakes</span></div>
+</article>
+<article class="mi-card" data-cat="cake" data-reveal>
+<h3 class="mi-name">Lemon Olive-Oil Cake</h3>
+<p class="mi-desc">Single layer, mascarpone cloud, 6 inch</p>
+<div class="mi-foot"><span class="mi-price">$28.00</span><span class="mi-cat">Cakes</span></div>
+</article>
+<article class="mi-card" data-cat="cake" data-reveal>
+<h3 class="mi-name">Celebration Sprinkle Cake</h3>
+<p class="mi-desc">Vanilla bean layers, rainbow rim — write-on plaque included</p>
+<div class="mi-foot"><span class="mi-price">$48.00</span><span class="mi-cat">Cakes</span></div>
+</article>
+<article class="mi-card" data-cat="season" data-reveal>
+<h3 class="mi-name">Rhubarb Custard Danish</h3>
+<p class="mi-desc">Spring only — vanilla custard, blushed rhubarb</p>
+<div class="mi-foot"><span class="mi-price">$5.95</span><span class="mi-cat">Seasonal</span></div>
+</article>
+<article class="mi-card" data-cat="season" data-reveal>
+<h3 class="mi-name">Strawberry Cream Bun</h3>
+<p class="mi-desc">Soft milk bun, whipped cream, macerated berries</p>
+<div class="mi-foot"><span class="mi-price">$6.25</span><span class="mi-cat">Seasonal</span></div>
+</article>
+</div>
+<p class="menu-empty" data-menu-empty hidden>Nothing in this category right now — try another.</p>
+
+
+<div class="mp-viewfull-wrap">
+<a class="btn btn-lg mp-viewfull" href="menu.html" data-mp-viewfull>View full menu<svg class="ic ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</section>
+<section class="section sec-band" id="bakes">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Bake Times</span>
+<h2 class="">Out of the oven at…</h2>
+<p class="lead">Pinned to the wall by the register — refreshed often, photographed constantly.</p>
+</div>
+<div class="pb-grid">
+<article class="pb-card" data-reveal>
+<span class="pb-time">7:30 am</span>
+<h3>Croissants &amp; morning buns</h3>
+<p>First round, still warm at opening</p>
+</article>
+<article class="pb-card" data-reveal>
+<span class="pb-time">9:00 am</span>
+<h3>Sourdough &amp; rye loaves</h3>
+<p>Breads land on the shelf</p>
+</article>
+<article class="pb-card" data-reveal>
+<span class="pb-time">11:00 am</span>
+<h3>Second croissant bake</h3>
+<p>The insurance round</p>
+</article>
+<article class="pb-card" data-reveal>
+<span class="pb-time">1:00 pm</span>
+<h3>Danishes &amp; seasonal fruit</h3>
+<p>Last bake of the day</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section sec-story" id="story">
+<div class="container">
+<div class="story-grid story-flip"><div class="story-copy" data-reveal><div class="sec-head" data-reveal>
+<span class="kicker">Our Story</span>
+<h2 class="">A bakehouse with one oven and big feelings</h2>
+<p class="lead">Butterfold started as a Saturday market stall with forty croissants and a hand-painted sign.</p>
+</div><p>Head baker Maren Ode learned lamination in a Copenhagen basement and brought the obsession home. The first forty croissants sold out in nineteen minutes; the bakehouse followed a year later.</p>
+<p>We still do it the slow way — cold butter, long ferments, fruit from growers we can name, and a case that changes with whatever the orchard drops off.</p><figure class="story-quote" data-reveal>
+<blockquote><p>&ldquo;If the butter isn't cold, we start over.&rdquo;</p></blockquote>
+<figcaption><strong>Maren Ode</strong> · Head Baker &amp; Owner</figcaption>
+</figure></div><div class="story-art" data-reveal aria-hidden="true">
+<div class="story-portrait"><span class="story-ini">M</span><span class="story-cap"><strong>Maren Ode</strong><em>Head Baker &amp; Owner</em></span></div>
+</div></div>
+</div>
+</section>
+<section class="section sec-gallery g-rounded" id="gallery">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">In Pictures</span>
+<h2 class="">A look inside</h2>
+<p class="lead">Gradient tiles stand in for photography — swap in your own imagery when you make this template yours.</p>
+</div>
+<div class="g-strip">
+<figure class="g-tile g-1" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14v8H5z"/><path d="M5 15.5c1.5 1.4 3-1.4 4.5 0s3-1.4 4.5 0 3-1.4 4.5 0"/><path d="M12 9v3M12 5.5a1.2 1.2 0 1 0-.01 0z"/></svg>
+<figcaption>Lamination day</figcaption>
+</figure>
+<figure class="g-tile g-2" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V9M12 9c-2.6 0-4-1.6-4-4 2.6 0 4 1.6 4 4zm0 0c2.6 0 4-1.6 4-4-2.6 0-4 1.6-4 4zm0 5c-2.6 0-4-1.6-4-4 2.6 0 4 1.6 4 4zm0 0c2.6 0 4-1.6 4-4-2.6 0-4 1.6-4 4z"/></svg>
+<figcaption>Sourdough scoring</figcaption>
+</figure>
+<figure class="g-tile g-3" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg>
+<figcaption>The 4 am bench</figcaption>
+</figure>
+<figure class="g-tile g-4" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.7-7.5-10A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 3c0 5.3-7.5 10-7.5 10z"/></svg>
+<figcaption>Birthday cake pickup</figcaption>
+</figure>
+<figure class="g-tile g-5" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>
+<figcaption>Market-stall roots</figcaption>
+</figure>
+<figure class="g-tile g-6" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>
+<figcaption>Saturday case, 8 am</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-reviews" id="reviews">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Word of Mouth</span>
+<h2 class="">What guests keep saying</h2>
+<p class="lead">Pulled from the guestbook, the order slips and the occasional happy shout across the room.</p>
+</div>
+<div class="rev-grid">
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>The morning bun should be studied. Crackly, perfumed, gone in four bites — I preorder six every Friday.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">T</span><span><strong>Talia R.</strong><em>Friday regular</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Ordered the carrot cake for my mum's 70th. People clapped. The bakery equivalent of a standing ovation.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">O</span><span><strong>Owen P.</strong><em>Cake order</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 4 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Real sourdough with an actual crust. Get there before 10 or accept your fate.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">D</span><span><strong>Dee H.</strong><em>Bread club member</em></span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-reserve" id="order">
+<div class="container res-narrow">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Preorders</span>
+<h2 class="">Preorder your bake</h2>
+<p class="lead">Order by 2 pm for next-day pickup. Cakes need 48 hours' notice — we'll email to confirm flavours and the plaque message.</p>
+</div>
+<div class="form-bubble" data-reveal>
+<form id="main-form" class="res-form" novalidate>
+<div class="field">
+<label for="name">Your name</label>
+<input id="name" name="name" type="text" placeholder="Alex Morgan" autocomplete="off" data-validate="name">
+<span class="f-err" id="err-name" hidden>Please enter your name (at least 2 characters).</span>
+</div>
+<div class="field">
+<label for="email">Email address</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="off" data-validate="email">
+<span class="f-err" id="err-email" hidden>Please enter a valid email address.</span>
+</div>
+<div class="field">
+<label for="date">Pickup date</label>
+<input id="date" name="date" type="date" placeholder="" autocomplete="off" data-validate="date">
+<span class="f-err" id="err-date" hidden>Please choose a pickup date.</span>
+</div>
+<div class="field">
+<label for="note">What should we set aside?</label>
+<input id="note" name="note" type="text" placeholder="e.g. 2 loaves + 6 morning buns" autocomplete="off" data-validate="note">
+<span class="f-err" id="err-note" hidden>Tell us what to set aside (at least 4 characters).</span>
+</div>
+<p class="f-success" id="form-success" hidden role="status">Preorder received! Watch your inbox — we'll confirm your pickup window shortly.</p>
+<button class="btn btn-lg btn-submit" type="submit">Place Preorder</button>
+<p class="f-fine">No payment now — this demo form validates in the browser only.</p>
+</form>
+</div>
+</div>
+</section>
+<section class="section sec-visit" id="visit">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Hours &amp; Location</span>
+<h2 class="">Come find us</h2>
+<p class="lead">The map below is a styled placeholder — drop in your favourite embed when you go live.</p>
+</div>
+<div class="visit-grid">
+<div class="map-wrap" data-reveal>
+<div class="map-ph" role="img" aria-label="Stylized map placeholder for 212 Quince Street">
+<span class="map-road map-road-a" aria-hidden="true"></span>
+<span class="map-road map-road-b" aria-hidden="true"></span>
+<span class="map-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+</div>
+<div class="map-card">
+<strong>Butterfold Bakehouse</strong>
+<p>212 Quince Street<br>Fernhill, VT 05401</p>
+<p class="map-note">Pickup window on Quince Street · day-old shelf 50% off after noon</p>
+</div>
+</div>
+<div class="visit-info">
+<div class="visit-contact" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Find us</h3><ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>212 Quince Street, Fernhill, VT 05401</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+18025550163">+1 (802) 555-0163</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:orders@butterfold.com">orders@butterfold.com</a></li>
+</ul><p class="visit-note">Pickup window on Quince Street · day-old shelf 50% off after noon</p></div>
+<div class="visit-hours" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg>Opening hours</h3><ul class="hours-list" data-hours>
+<li data-day="0"><span>Monday</span><span class="hrs">Closed — ovens rest</span></li>
+<li data-day="1"><span>Tuesday</span><span class="hrs">7:30 am – 2:00 pm</span></li>
+<li data-day="2"><span>Wednesday</span><span class="hrs">7:30 am – 2:00 pm</span></li>
+<li data-day="3"><span>Thursday</span><span class="hrs">7:30 am – 2:00 pm</span></li>
+<li data-day="4"><span>Friday</span><span class="hrs">7:30 am – 3:00 pm</span></li>
+<li data-day="5"><span>Saturday</span><span class="hrs">8:00 am – 3:00 pm</span></li>
+<li data-day="6"><span>Sunday</span><span class="hrs">8:00 am – 1:00 pm</span></li>
+</ul></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand foot-logo" href="index.html"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V9M12 9c-2.6 0-4-1.6-4-4 2.6 0 4 1.6 4 4zm0 0c2.6 0 4-1.6 4-4-2.6 0-4 1.6-4 4zm0 5c-2.6 0-4-1.6-4-4 2.6 0 4 1.6 4 4zm0 0c2.6 0 4-1.6 4-4-2.6 0-4 1.6-4 4z"/></svg></span><span>Butterfold Bakehouse</span></a>
+<p>Small-batch bakehouse — laminated pastry, long-ferment breads and celebration cakes, baked daily from 4 am.</p>
+<div class="foot-socials">
+<a class="soc" href="index.html" aria-label="Butterfold Bakehouse on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Butterfold Bakehouse on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Butterfold Bakehouse on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Butterfold Bakehouse on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Butterfold Bakehouse on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer quick links">
+<h3 class="foot-h">Explore</h3>
+<ul class="foot-links">
+<li><a href="menu.html">Pastry Case</a></li>
+<li><a href="menu.html">Bake Times</a></li>
+<li><a href="about.html">Our Story</a></li>
+<li><a href="about.html#gallery">Gallery</a></li>
+<li><a href="contact.html">Preorder</a></li>
+<li><a href="contact.html#location">Visit</a></li>
+<li><a href="menu.html">Full Menu</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h3 class="foot-h">Hours</h3>
+<ul class="foot-hours">
+<li><span>Monday</span><span>Closed — ovens rest</span></li>
+<li><span>Thursday</span><span>7:30 am – 2:00 pm</span></li>
+<li><span>Sunday</span><span>8:00 am – 1:00 pm</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h3 class="foot-h">Find Us</h3>
+<address class="foot-addr">
+212 Quince Street<br>Fernhill, VT 05401<br>
+<a href="tel:+18025550163">+1 (802) 555-0163</a><br>
+<a href="mailto:orders@butterfold.com">orders@butterfold.com</a>
+</address>
+</div>
+</div>
+<div class="container foot-bottom">
+<p>&copy; <span data-year>2025</span> Butterfold Bakehouse. All rights reserved.</p>
+<p class="foot-fine">Crafted as a static HTML/CSS/JS template — no frameworks, no build step.</p>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+
+</body>
+</html>

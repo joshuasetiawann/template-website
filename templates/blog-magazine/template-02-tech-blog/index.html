@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackline &mdash; Tech Blog</title>
+  <meta name="description" content="Stackline is a tech blog template with a classic editorial layout, split featured hero, three-column article grid, sticky sidebar and mono code-bracket accents.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232563EB'/%3E%3Ctext%20x='32'%20y='44'%20font-family='Georgia%2C%20serif'%20font-size='30'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top" class="v1-body tpl-02">
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Stackline</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="articles.html">Latest</a></li>
+          <li><a href="articles.html">Release radar</a></li>
+          <li><a href="about.html">Masthead</a></li>
+          <li><a href="contact.html#subscribe">Newsletter</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-small btn-primary header-cta" href="contact.html#subscribe">Subscribe</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="masthead-band container" data-reveal>
+      <p class="masthead-date"><time datetime="2026-06-12">Friday, June 12, 2026</time> &middot; Engineering notes from the cutting room floor</p>
+      <p class="masthead-title" aria-hidden="true">Stackline</p>
+    </div>
+    <section class="hero hero-v1" id="top-story" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="kicker">Featured deep dive</p>
+          <h1 id="hero-title">The Quiet Death of the Jamstack (and What Replaced It)</h1>
+          <p class="hero-excerpt">Five years ago every conference talk ended with a static site and a CDN. We traced 40 production architectures to find out where the pendulum actually stopped — and the answer isn't 'back to servers'.</p>
+          <p class="hero-meta"><span class="meta-avatar" aria-hidden="true">P</span><span class="meta-author">Priya Raghunathan</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-06-09">Jun 9, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">14 min read</span></p>
+          <div class="hero-ctas"><a class="btn btn-primary" href="article.html?p=0">Read the analysis <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#latest">Browse all posts</a></div>
+        </div>
+        <div class="hero-art" data-reveal>
+          <div class="cover cov-2 cover-hero" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">Web Platform</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section sec-grid section--tint" id="latest" aria-labelledby="latest-title">
+      <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="kicker">Fresh commits</p>
+        <h2 id="latest-title">Latest from the desk</h2>
+        <p class="lead">Long-form engineering writing — benchmarked, profiled and reviewed before it ships to your feed.</p>
+      </div>
+      <div class="layout-sidebar">
+        <div class="grid-col">
+      <div class="chip-row" role="group" aria-label="Filter by category">
+        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="ai-ml" aria-pressed="false">AI &amp; ML</button>
+        <button class="chip" type="button" data-filter="web-platform" aria-pressed="false">Web Platform</button>
+        <button class="chip" type="button" data-filter="devops" aria-pressed="false">DevOps</button>
+        <button class="chip" type="button" data-filter="hardware" aria-pressed="false">Hardware</button>
+        <button class="chip" type="button" data-filter="open-source" aria-pressed="false">Open Source</button>
+      </div>
+      <p class="filter-note" data-count aria-live="polite">Showing all 10 posts</p>
+      <div class="post-grid" data-grid>
+        <article class="post-card" data-cat="ai-ml" data-reveal>
+          <div class="cover cov-0" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">AI &amp; ML</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">AI &amp; ML</span></p>
+            <h3 class="card-title"><a href="article.html?p=0">We Fine-Tuned a 3B Model on Our Docs. It Beat Search.</a></h3>
+            <p class="card-excerpt">A weekend experiment with embeddings, one consumer GPU and 80k internal pages — plus the eval harness that kept us honest.</p>
+            <p class="card-meta"><span class="meta-author">Dana Kovac</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-06-04">Jun 4, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">11 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card" data-cat="web-platform" data-reveal>
+          <div class="cover cov-1" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">Web Platform</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Web Platform</span></p>
+            <h3 class="card-title"><a href="article.html?p=1">View Transitions Are Finally Boring — That's the Point</a></h3>
+            <p class="card-excerpt">The API stopped changing, the polyfills retired, and now the best implementations are the ones you never notice.</p>
+            <p class="card-meta"><span class="meta-author">Priya Raghunathan</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-30">May 30, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">7 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card" data-cat="devops" data-reveal>
+          <div class="cover cov-2" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">DevOps</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">DevOps</span></p>
+            <h3 class="card-title"><a href="article.html?p=2">Postmortem Culture Is Broken at Most Startups</a></h3>
+            <p class="card-excerpt">Blameless reviews became blameless theater. Here is the four-question format that got our incident repeats down 60%.</p>
+            <p class="card-meta"><span class="meta-author">Marcus Oyelaran</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-28">May 28, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">9 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card" data-cat="hardware" data-reveal>
+          <div class="cover cov-3" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">Hardware</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Hardware</span></p>
+            <h3 class="card-title"><a href="article.html?p=3">RISC-V Laptops Are Real Now. Should You Care?</a></h3>
+            <p class="card-excerpt">We daily-drove the first credible RISC-V ultrabook for three weeks. Toolchains: surprisingly fine. Battery: a saga.</p>
+            <p class="card-meta"><span class="meta-author">Felix Brandt</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-23">May 23, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">12 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card" data-cat="open-source" data-reveal>
+          <div class="cover cov-4" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">Open Source</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Open Source</span></p>
+            <h3 class="card-title"><a href="article.html?p=4">The Maintainer Who Said No: Inside a One-Line License Change</a></h3>
+            <p class="card-excerpt">A single clause in a 12-year-old utility library rippled through 4,000 downstream builds. The maintainer has no regrets.</p>
+            <p class="card-meta"><span class="meta-author">Marcus Oyelaran</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-18">May 18, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">10 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card" data-cat="ai-ml" data-reveal>
+          <div class="cover cov-0" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">AI &amp; ML</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">AI &amp; ML</span></p>
+            <h3 class="card-title"><a href="article.html?p=5">Why Your RAG Pipeline Is Slow (Hint: It's Not the Model)</a></h3>
+            <p class="card-excerpt">Profiling ten retrieval stacks showed the same culprit nine times: chunking strategy and a chatty vector store.</p>
+            <p class="card-meta"><span class="meta-author">Dana Kovac</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-16">May 16, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">8 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card" data-cat="web-platform" data-reveal>
+          <div class="cover cov-1" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">Web Platform</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Web Platform</span></p>
+            <h3 class="card-title"><a href="article.html?p=6">CSS Anchor Positioning Killed My Tooltip Library</a></h3>
+            <p class="card-excerpt">I maintained 14k lines of floating-element math. The platform shipped it natively, so I wrote the library a eulogy.</p>
+            <p class="card-meta"><span class="meta-author">Priya Raghunathan</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-11">May 11, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">6 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card" data-cat="devops" data-reveal>
+          <div class="cover cov-2" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">DevOps</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">DevOps</span></p>
+            <h3 class="card-title"><a href="article.html?p=7">We Cut Our CI Bill 70% With One Weird Cache Key</a></h3>
+            <p class="card-excerpt">Content-hashing the lockfile is table stakes. Hashing the compiler version string is where the money was hiding.</p>
+            <p class="card-meta"><span class="meta-author">Felix Brandt</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-06">May 6, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">5 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card" data-cat="hardware" data-reveal>
+          <div class="cover cov-3" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">Hardware</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Hardware</span></p>
+            <h3 class="card-title"><a href="article.html?p=8">Benchmarking the New Arm Mini-Servers Under Real Load</a></h3>
+            <p class="card-excerpt">Synthetic benchmarks said 2x. Our message queue said 1.4x. Both numbers are true, and the difference is the story.</p>
+            <p class="card-meta"><span class="meta-author">Felix Brandt</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-05-04">May 4, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">13 min read</span></p>
+          </div>
+        </article>
+        <article class="post-card" data-cat="open-source" data-reveal>
+          <div class="cover cov-4" aria-hidden="true"><span class="cover-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg></span><span class="cover-label">Open Source</span></div>
+          <div class="card-body">
+            <p class="cat-line"><span class="cat-tag">Open Source</span></p>
+            <h3 class="card-title"><a href="article.html?p=9">Forks, Friction, and the Economics of Goodwill</a></h3>
+            <p class="card-excerpt">What actually happens in the 90 days after a high-profile open source fork, measured across contributors and CI minutes.</p>
+            <p class="card-meta"><span class="meta-author">Marcus Oyelaran</span><span class="meta-dot" aria-hidden="true">&middot;</span><time datetime="2026-04-29">Apr 29, 2026</time><span class="meta-dot" aria-hidden="true">&middot;</span><span class="meta-read">9 min read</span></p>
+          </div>
+        </article>
+      </div>
+        </div>
+        <aside class="rail" aria-label="Sidebar">
+        <div class="widget" id="trending" data-reveal>
+          <h3 class="widget-title">Trending now</h3>
+          <ol class="trend-list">
+          <li class="trend-item" data-reveal>
+            <span class="trend-num" aria-hidden="true">01</span>
+            <div class="trend-body">
+              <a class="trend-link" href="article.html?p=0">The Quiet Death of the Jamstack (and What Replaced It)</a>
+              <span class="trend-metric">21k reads</span>
+            </div>
+          </li>
+          <li class="trend-item" data-reveal>
+            <span class="trend-num" aria-hidden="true">02</span>
+            <div class="trend-body">
+              <a class="trend-link" href="article.html?p=7">We Cut Our CI Bill 70% With One Weird Cache Key</a>
+              <span class="trend-metric">17k reads</span>
+            </div>
+          </li>
+          <li class="trend-item" data-reveal>
+            <span class="trend-num" aria-hidden="true">03</span>
+            <div class="trend-body">
+              <a class="trend-link" href="article.html?p=5">Why Your RAG Pipeline Is Slow (Hint: It's Not the Model)</a>
+              <span class="trend-metric">14k reads</span>
+            </div>
+          </li>
+          <li class="trend-item" data-reveal>
+            <span class="trend-num" aria-hidden="true">04</span>
+            <div class="trend-body">
+              <a class="trend-link" href="article.html?p=6">CSS Anchor Positioning Killed My Tooltip Library</a>
+              <span class="trend-metric">11k reads</span>
+            </div>
+          </li>
+          <li class="trend-item" data-reveal>
+            <span class="trend-num" aria-hidden="true">05</span>
+            <div class="trend-body">
+              <a class="trend-link" href="article.html?p=3">RISC-V Laptops Are Real Now. Should You Care?</a>
+              <span class="trend-metric">9.5k reads</span>
+            </div>
+          </li>
+        </ol>
+        </div>
+        <div class="widget widget-news" id="newsletter" data-reveal>
+          <h3 class="widget-title">The newsletter</h3>
+          <p class="widget-lead">One email a week. We never sell the list, and you can grep our privacy policy.</p>
+        <form class="news-form" data-newsletter novalidate>
+          <div class="form-row">
+            <label class="sr-only" for="nl-email">Email address</label>
+            <input id="nl-email" class="news-input" type="email" name="email" placeholder="you@company.dev" autocomplete="email" required>
+            <button class="btn btn-primary" type="submit">Join 12k engineers</button>
+          </div>
+          <p class="form-msg" data-form-msg aria-live="polite"></p>
+          <p class="form-privacy">One email a week. We never sell the list, and you can grep our privacy policy.</p>
+        </form>
+        </div>
+        <div class="widget" data-reveal>
+          <h3 class="widget-title">Browse by tag</h3>
+          <p class="widget-lead">Tags map straight onto the category filter.</p>
+          <div class="tag-cloud"><button class="tag-chip" type="button" data-tag="rust">#rust</button><button class="tag-chip" type="button" data-tag="wasm">#wasm</button><button class="tag-chip" type="button" data-tag="k8s">#k8s</button><button class="tag-chip" type="button" data-tag="edge">#edge</button><button class="tag-chip" type="button" data-tag="sqlite">#sqlite</button><button class="tag-chip" type="button" data-tag="llms">#llms</button><button class="tag-chip" type="button" data-tag="ci-cd">#ci-cd</button><button class="tag-chip" type="button" data-tag="perf">#perf</button></div>
+        </div>
+        </aside>
+      </div>
+      </div>
+    </section>
+    <section class="section sec-notes" id="radar" aria-labelledby="radar-title">
+      <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="kicker">Release radar</p>
+        <h2 id="radar-title">Three releases worth your changelog time</h2>
+        <p class="lead">Short, opinionated notes on the updates that will actually touch your stack this sprint.</p>
+      </div>
+        <div class="note-grid">
+        <div class="note-card" data-reveal>
+          <p class="note-index" aria-hidden="true">01</p>
+          <h3 class="note-title">Quasar 3.0</h3>
+          <p class="note-body">The query planner rewrite is real: our 4-table join suite ran 38% faster with zero config changes. Migration is one flag.</p>
+          <p class="note-tag">Databases</p>
+        </div>
+        <div class="note-card" data-reveal>
+          <p class="note-index" aria-hidden="true">02</p>
+          <h3 class="note-title">Helmfile-NG 1.4</h3>
+          <p class="note-body">Drift detection finally diffs rendered manifests, not templates. Worth it for the audit trail alone.</p>
+          <p class="note-tag">DevOps</p>
+        </div>
+        <div class="note-card" data-reveal>
+          <p class="note-index" aria-hidden="true">03</p>
+          <h3 class="note-title">Lumen.js 0.9</h3>
+          <p class="note-body">The signals-based reactivity core dropped below 4kB. The ecosystem is thin but the primitives are right.</p>
+          <p class="note-tag">Web Platform</p>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="section sec-editor section--tint" id="about" aria-labelledby="about-title">
+      <div class="container narrow">
+      <div class="section-head" data-reveal>
+        <p class="kicker">The masthead</p>
+        <h2 id="about-title">Who reviews this stuff</h2>
+        <p class="lead">Four engineers, one shared linter config, zero sponsored benchmarks.</p>
+      </div>
+        <div class="editor-card" data-reveal>
+          <div class="editor-avatar" aria-hidden="true"><span>PR</span></div>
+          <div class="editor-body">
+            <h3 class="editor-name">Priya Raghunathan</h3>
+            <p class="editor-role">Editor-in-chief, ex-platform engineer</p>
+            <p class="editor-blurb">Priya spent nine years running infrastructure teams before deciding the postmortems were the best part. She edits every Stackline piece with a profiler open and rejects any benchmark she can't reproduce on the office mini-rack.</p>
+            <p class="editor-note"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 4.5L3.5 12l5 7.5"/><path d="M15.5 4.5l5 7.5-5 7.5"/></svg> Current obsession: making cold starts boring.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Stackline</span></a>
+        <p class="footer-about">Stackline publishes reproducible, vendor-neutral engineering analysis. Every claim ships with a methodology section.</p>
+        <ul class="social-row" aria-label="Social links"><li><a href="#top" aria-label="X"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4l16 16"/><path d="M20 4L4 20"/></svg></a></li><li><a href="#top" aria-label="Rss"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11a8 8 0 0 1 8 8"/><path d="M5 5a14 14 0 0 1 14 14"/><circle cx="6" cy="18" r="1.4" fill="currentColor" stroke="none"/></svg></a></li><li><a href="#top" aria-label="Youtube"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="3.5"/><path d="M10.5 9.6v4.8l4.2-2.4z" fill="currentColor" stroke="none"/></svg></a></li><li><a href="#top" aria-label="Mail"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M4 7.5l8 6 8-6"/></svg></a></li></ul>
+      </div>
+      <nav class="footer-col" aria-label="Quick links">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="articles.html">Latest</a></li>
+          <li><a href="articles.html">Release radar</a></li>
+          <li><a href="about.html">Masthead</a></li>
+          <li><a href="contact.html#subscribe">Newsletter</a></li>
+          <li><a href="#top">Back to top</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h3>Topics</h3>
+        <ul>
+          <li><a href="articles.html">AI &amp; ML</a></li>
+          <li><a href="articles.html">Web Platform</a></li>
+          <li><a href="articles.html">DevOps</a></li>
+          <li><a href="articles.html">Hardware</a></li>
+          <li><a href="articles.html">Open Source</a></li>
+          <li><a href="articles.html">Postmortems</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li>tips@stackline.example</li>
+          <li>Pitch us a deep dive</li>
+          <li>Reproducibility reports welcome</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Stackline. All rights reserved.</p>
+      <p>Part of the Template Library &mdash; Blog &amp; Magazine collection.</p>
+    </div>
+  </footer>
+  <button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></button>
+</body>
+</html>
