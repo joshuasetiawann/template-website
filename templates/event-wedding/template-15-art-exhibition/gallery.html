@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liminal: New Works &mdash; Gallery</title>
+  <meta name="description" content="Gallery for Liminal: New Works — an expanded photo grid with lightbox, a highlights strip and an RSVP call to action. Pure HTML, CSS and vanilla JS.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2064%2064%27%3E%3Crect%20width=%2764%27%20height=%2764%27%20rx=%278%27%20fill=%27%23141414%27/%3E%3Ctext%20x=%2732%27%20y=%2744%27%20font-family=%27Arial,sans-serif%27%20font-size=%2734%27%20font-weight=%27700%27%20text-anchor=%27middle%27%20fill=%27%23FFFFFF%27%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="theme-v2 tpl-15">
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Liminal: New Works home">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-mono">L</span></span>
+        <span class="brand-name">Liminal Exhibition</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="details.html#people">Programme</a></li>
+          <li><a class="nav-link" href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a class="nav-link" href="details.html#schedule">Schedule</a></li>
+          <li><a class="nav-link" href="details.html#venue">Venue</a></li>
+          <li><a class="nav-link" href="details.html#faq">FAQ</a></li>
+          <li><a class="nav-link" href="rsvp.html">RSVP</a></li>
+          <li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="rsvp.html">RSVP</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+  <section class="page-hero" aria-label="Page header">
+    <div class="page-hero-orn" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol class="crumbs-list">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page"><span>Gallery</span></li>
+        </ol>
+      </nav>
+      <span class="kicker" data-reveal>In pictures</span>
+      <h1 class="page-hero-title" data-reveal>The gallery</h1>
+      <p class="page-hero-lead lead" data-reveal>A growing collection of frames — tap any photo to view it larger.</p>
+    </div>
+  </section>
+<section class="section sec-gallery" id="gallery" aria-labelledby="gallery-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Selected Works</span>
+        <h2 id="gallery-h">From the show</h2>
+        <p class="lead">A preview. The works reveal more in person.</p>
+      </div>
+      <div class="gallery-strip">
+        <button class="gallery-tile art-1" type="button" data-lb-open data-art="art-1" data-cap="Threshold I — Tanaka, oil" aria-label="Open photo: Threshold I — Tanaka, oil">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Threshold I</strong><span>Tanaka, oil</span></span>
+        </button>
+        <button class="gallery-tile art-2" type="button" data-lb-open data-art="art-2" data-cap="Passage — Bello, concrete" aria-label="Open photo: Passage — Bello, concrete">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Passage</strong><span>Bello, concrete</span></span>
+        </button>
+        <button class="gallery-tile art-3" type="button" data-lb-open data-art="art-3" data-cap="Dawn Door — Kowalski, photo" aria-label="Open photo: Dawn Door — Kowalski, photo">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Dawn Door</strong><span>Kowalski, photo</span></span>
+        </button>
+        <button class="gallery-tile art-4" type="button" data-lb-open data-art="art-4" data-cap="Light Room — Lee, installation" aria-label="Open photo: Light Room — Lee, installation">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Light Room</strong><span>Lee, installation</span></span>
+        </button>
+        <button class="gallery-tile art-5" type="button" data-lb-open data-art="art-5" data-cap="Crossing — Diop, textile" aria-label="Open photo: Crossing — Diop, textile">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Crossing</strong><span>Diop, textile</span></span>
+        </button>
+        <button class="gallery-tile art-6" type="button" data-lb-open data-art="art-6" data-cap="Remnant — Hartmann, mixed" aria-label="Open photo: Remnant — Hartmann, mixed">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Remnant</strong><span>Hartmann, mixed</span></span>
+        </button>
+        <button class="gallery-tile art-1" type="button" data-lb-open data-art="art-1" data-cap="Golden hour — the light we love" aria-label="Open photo: Golden hour — the light we love">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Golden hour</strong><span>the light we love</span></span>
+        </button>
+        <button class="gallery-tile art-2" type="button" data-lb-open data-art="art-2" data-cap="Backstage — before the doors open" aria-label="Open photo: Backstage — before the doors open">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Backstage</strong><span>before the doors open</span></span>
+        </button>
+        <button class="gallery-tile art-3" type="button" data-lb-open data-art="art-3" data-cap="The crowd — everyone together" aria-label="Open photo: The crowd — everyone together">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>The crowd</strong><span>everyone together</span></span>
+        </button>
+        <button class="gallery-tile art-4" type="button" data-lb-open data-art="art-4" data-cap="Quiet moment — between the big ones" aria-label="Open photo: Quiet moment — between the big ones">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Quiet moment</strong><span>between the big ones</span></span>
+        </button>
+        <button class="gallery-tile art-5" type="button" data-lb-open data-art="art-5" data-cap="Detail — the little things" aria-label="Open photo: Detail — the little things">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Detail</strong><span>the little things</span></span>
+        </button>
+        <button class="gallery-tile art-6" type="button" data-lb-open data-art="art-6" data-cap="After dark — when it really starts" aria-label="Open photo: After dark — when it really starts">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>After dark</strong><span>when it really starts</span></span>
+        </button>
+      </div>
+    </div>
+  </section>  <section class="section sec-moments is-tint" id="moments" aria-labelledby="moments-h">
+    <div class="container">
+      <div class="sec-head sec-head-center" data-reveal>
+        <span class="kicker">Highlights</span>
+        <h2 id="moments-h">Inside the exhibition</h2>
+        <p class="lead">A glimpse of the rooms, the works and the route through Liminal.</p>
+      </div>
+      <ul class="moments-strip">
+        <li class="moment" data-reveal>
+          <span class="moment-dot" aria-hidden="true"></span>
+          <div><strong>The hang</strong><span>weeks of work</span></div>
+        </li>
+        <li class="moment" data-reveal>
+          <span class="moment-dot" aria-hidden="true"></span>
+          <div><strong>The opening</strong><span>artists present</span></div>
+        </li>
+        <li class="moment" data-reveal>
+          <span class="moment-dot" aria-hidden="true"></span>
+          <div><strong>The route</strong><span>walk it slow</span></div>
+        </li>
+        <li class="moment" data-reveal>
+          <span class="moment-dot" aria-hidden="true"></span>
+          <div><strong>The sound piece</strong><span>headphones on</span></div>
+        </li>
+        <li class="moment" data-reveal>
+          <span class="moment-dot" aria-hidden="true"></span>
+          <div><strong>The quiet room</strong><span>sit and look</span></div>
+        </li>
+        <li class="moment" data-reveal>
+          <span class="moment-dot" aria-hidden="true"></span>
+          <div><strong>The second visit</strong><span>seeing more</span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section sec-gcta" aria-label="Reserve your place">
+    <div class="container narrow gcta-inner" data-reveal>
+      <h2>Seen enough? We would love you there.</h2>
+      <p class="lead">These are our favourite frames so far — the next one could have you in it.</p>
+      <a class="btn btn-lg" href="rsvp.html">RSVP now <svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+  </section>
+  </main>
+<footer class="site-footer" aria-label="Footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <p class="footer-brand"><span class="brand-mark" aria-hidden="true"><span class="brand-mono">L</span></span>Liminal Exhibition</p>
+        <p class="footer-blurb">New works exploring the spaces between. Free to all.</p>
+        <p class="footer-line"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Saturday, 3 October 2026 &middot; 6:00 PM</p>
+        <p class="footer-line"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> The Halden Gallery, London, United Kingdom</p>
+      </div>
+      <nav class="footer-col" aria-label="Footer links">
+        <h2 class="footer-head">Quick links</h2>
+        <ul class="footer-links">
+          <li><a href="details.html#people">Programme</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="details.html#schedule">Schedule</a></li>
+          <li><a href="details.html#venue">Venue</a></li>
+          <li><a href="details.html#faq">FAQ</a></li>
+          <li><a href="rsvp.html">RSVP</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2 class="footer-head">Contact</h2>
+        <ul class="footer-links footer-contact">
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg><a href="mailto:hello@haldengallery.example">hello@haldengallery.example</a></li>
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 3.4a2 2 0 0 1-.5 1.8L8 10.2a16 16 0 0 0 5.8 5.8l1.3-1.3a2 2 0 0 1 1.8-.5l3.4.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+442079460991">+44 20 7946 0991</a></li>
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>London, United Kingdom</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-head">Stay connected</h2>
+        <p class="footer-blurb">Use #LiminalShow and tag us in your photos.</p>
+        <ul class="social-row">
+            <li><a class="social-link" href="#top" aria-label="Instagram" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Facebook" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 9V7c0-1 .5-1.5 1.5-1.5H17V2.5h-2.5C12 2.5 11 4 11 6.5V9H8.5v3H11v9.5h3V12h2.3l.5-3z"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Twitter" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 5.8a8 8 0 0 1-2.3.6 4 4 0 0 0 1.8-2.2 8 8 0 0 1-2.5 1 4 4 0 0 0-6.9 3.6A11.3 11.3 0 0 1 3.9 4.7a4 4 0 0 0 1.2 5.3 4 4 0 0 1-1.8-.5 4 4 0 0 0 3.2 4 4 4 0 0 1-1.8.1 4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.1a11.3 11.3 0 0 0 6.1 1.8c7.4 0 11.4-6.1 11.4-11.4v-.5A8 8 0 0 0 22 5.8z"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Pinterest" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M9.5 19c-.3-1.2-.3-2.4.1-3.6l1.2-5M12 8.5a2.5 2.5 0 0 1 2.5 2.5c0 2-1.2 3.5-2.8 3.5-1 0-1.7-.8-1.5-1.8"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Youtube" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10 9 16 12 10 15 10 9" fill="currentColor" stroke="none"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Liminal Exhibition. A demo template, free to adapt.</p>
+      <p class="footer-credit">Built as a static template — HTML, CSS &amp; vanilla JS.</p>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+  <div class="lightbox" data-lightbox hidden>
+    <div class="lb-backdrop" data-lb-close></div>
+    <div class="lb-dialog" role="dialog" aria-modal="true" aria-label="Photo preview">
+      <div class="lb-art art-1" aria-hidden="true"></div>
+      <p class="lb-cap"></p>
+      <button class="lb-close" type="button" data-lb-close aria-label="Close preview">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

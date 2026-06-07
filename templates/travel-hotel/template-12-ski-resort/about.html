@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Glacier Hollow Ski Resort</title>
+<meta name="description" content="About Glacier Hollow Ski Resort: our story, amenities and facilities, things to do, sustainability notes and guest reviews. A static HTML, CSS and vanilla-JS page.">
+<meta name="theme-color" content="#2D7FF0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232D7FF0'/%3E%3Cstop offset='1' stop-color='%2336404A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial%2Csans-serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+<header class="site-header" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html#home" aria-label="Glacier Hollow Ski Resort home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M5 16 11 6l4 6 4-8"/></svg></span>
+<span>Glacier Hollow Ski Resort</span>
+</a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+<span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+</button>
+<ul class="nav-menu" id="nav-menu">
+<li><a class="nav-link" href="packages.html">Lodges</a></li>
+<li><a class="nav-link" href="about.html#amenities">Amenities</a></li>
+<li><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" aria-current="page" href="about.html">About</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm" href="contact.html">Book a Stay</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="pkg-hero">
+<div class="container">
+<nav class="container breadcrumb" aria-label="Breadcrumb">
+<a href="index.html#home">Home</a>
+<span class="sep" aria-hidden="true">/</span>
+<span aria-current="page">About</span>
+</nav>
+<span class="kicker" data-reveal>Our story · Ski-in, ski-out</span>
+<h1 data-reveal>Out of the door and onto the snow</h1>
+<p class="lead" data-reveal>Lodges right on the piste, lifts a few steps from your boots and a whole mountain of terrain that runs back to the bar.</p>
+</div>
+</section>
+<section class="section" aria-labelledby="story-h">
+<div class="container">
+<div class="about-split">
+<div class="about-prose" data-reveal>
+<div class="sec-head" style="margin-bottom:1.4rem">
+<span class="kicker">Our story</span>
+<h2 id="story-h">Out of the door and onto the snow</h2>
+</div>
+<p>Glacier Hollow grew up around a single chairlift and a hut that sold soup. The mountain came first, and the resort was built to serve it rather than the other way round &mdash; which is why, decades later, you can still click in at your own door and ski to the lift without walking a step on tarmac.</p>
+<p>Ski-in, ski-out is not a slogan here; it is the whole layout. The lodges line the home run, the boot rooms open straight onto the snow, and the last trail of the day delivers you to the terrace with your drink already on its way. First tracks and last orders are equally easy to reach.</p>
+<p>The terrain is the reason to come. From the glacier at the top to the tree runs at the bottom, the mountain holds something for a first week on skis and for a season-pass local chasing the powder. Snowmaking covers the early weeks, the grooming is relentless, and the high bowls keep the snow long after the valley has thawed.</p>
+<p>Off the snow, we keep it warm and unfussy. Wood-fired lodges, a spa to soak the aches out, long tables for tired legs and good food, and a ski school that has been teaching nervous beginners to love the mountain for as long as the lifts have turned.</p>
+</div>
+<div class="about-aside" data-reveal>
+<div class="about-figure"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 24% 14%, #74ABF5 0%, rgba(255,255,255,0) 46%), linear-gradient(140deg, #468EF2 0%, #335889 54%, #2F3840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">The village</span></div>
+<div class="about-figure"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 32% 26%, #74ABF5 0%, rgba(255,255,255,0) 46%), linear-gradient(134deg, #468EF2 0%, #335889 54%, #2F3840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">The mountain</span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" aria-labelledby="stats-h">
+<div class="container">
+<h2 id="stats-h" class="visually-hidden-h">By the numbers</h2>
+<div class="stats-band" data-reveal>
+<div class="stats-bg" aria-hidden="true"></div>
+<dl class="stats-grid">
+<div class="stat"><dt><span class="stat-num" data-count="3200">0</span>m</dt><dd>Top of the glacier</dd></div>
+<div class="stat"><dt><span class="stat-num" data-count="120">0</span>km</dt><dd>Of marked piste</dd></div>
+<div class="stat"><dt><span class="stat-num" data-count="18">0</span></dt><dd>Lifts on the mountain</dd></div>
+<div class="stat"><dt><span class="stat-num" data-count="0">0</span></dt><dd>Steps to the snow</dd></div>
+</dl>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="amenities" aria-labelledby="amen-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">What&#x27;s included</span>
+<h2 id="amen-h">Everything you need</h2>
+<p class="lead">The details that turn a stay into the trip you remember.</p>
+</div>
+<div class="amenities-grid">
+<div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M4.2 7.5l15.6 9M19.8 7.5l-15.6 9"/></svg></div>
+<div><h3>Ski-in, ski-out</h3><p>Click in at the door and ride the home run back to it.</p></div>
+</div>
+<div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2.5 4 14.5h6l-1 7 9-12h-6l1-7z"/></svg></div>
+<div><h3>Heated high-speed lifts</h3><p>Eight-seat chairs and gondolas with barely a queue.</p></div>
+</div>
+<div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20 9.5 7l3.2 5.4L15.5 6 21 20H3z"/><path d="M8 13.5l1.5-1.5 1.7 2"/></svg></div>
+<div><h3>Glacier skiing</h3><p>Snow-sure runs up to 3,050 metres into late spring.</p></div>
+</div>
+<div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.8 2.8 3.8 4.2 3.8 7.7a3.8 3.8 0 0 1-7.6 0c0-1.6.7-2.7 1.3-3.7.5 1 1.2 1.6 2.2 1.8C11 7 10.8 5 12 3z"/><path d="M6 21h12"/></svg></div>
+<div><h3>Slopeside lodges</h3><p>Hot tubs, saunas and log fires after the last run.</p></div>
+</div>
+<div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M5 16 11 6l4 6 4-8"/></svg></div>
+<div><h3>Ski school &amp; rental</h3><p>On-snow lessons and boot-fitting in the village base.</p></div>
+</div>
+<div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a2.5 2.5 0 0 0 5 0V3"/><path d="M8.5 3v18"/><path d="M17.5 3c-2 1.5-3 4-3 7h3v11"/></svg></div>
+<div><h3>Mountain restaurants</h3><p>Twelve huts from rösti stops to a fine glacier table.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" aria-labelledby="exp-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">On and off the mountain</span>
+<h2 id="exp-h">Days on the snow</h2>
+<p class="lead">Glacier runs, tree skiing and a terrace at the bottom of the home run &mdash; all a few steps from your boots.</p>
+</div>
+<div class="exp-grid">
+<article class="exp-card" data-reveal>
+<div class="exp-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M15.5 8.5 13.5 13.5 8.5 15.5 10.5 10.5z"/></svg></div>
+<h3>Ski-in, ski-out lodges</h3>
+<p>Click in at the door and ski straight to the nearest lift.</p>
+</article>
+<article class="exp-card" data-reveal>
+<div class="exp-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg></div>
+<h3>Glacier terrain</h3>
+<p>High, snow-sure runs that hold their cover deep into spring.</p>
+</article>
+<article class="exp-card" data-reveal>
+<div class="exp-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 18.5C5.5 9.5 12 4.5 20 4.5c0 9-5 14-14.5 14z"/><path d="M5.5 18.5C8 13 12 9.5 16.5 8"/></svg></div>
+<h3>Ski &amp; board school</h3>
+<p>Patient instructors for first-timers and clinics for the confident.</p>
+</article>
+<article class="exp-card" data-reveal>
+<div class="exp-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="M4 17l5-4 4 3 3-2 4 3"/></svg></div>
+<h3>Tree runs at dusk</h3>
+<p>Sheltered lower-mountain lines for the flat-light afternoons.</p>
+</article>
+<article class="exp-card" data-reveal>
+<div class="exp-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+<h3>Mountain spa</h3>
+<p>Pools, saunas and steam to soak out a hard day on the snow.</p>
+</article>
+<article class="exp-card" data-reveal>
+<div class="exp-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg></div>
+<h3>Terrace apres</h3>
+<p>The home run delivers you straight to the drink and the fire.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section sec-tint" aria-labelledby="note-h">
+<div class="container">
+<div class="note-band" data-reveal>
+<div class="note-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 18.5C5.5 9.5 12 4.5 20 4.5c0 9-5 14-14.5 14z"/><path d="M5.5 18.5C8 13 12 9.5 16.5 8"/></svg></div>
+<div class="note-body">
+<span class="kicker">Sustainability</span>
+<h2 id="note-h">Snow worth protecting</h2>
+<p>A ski resort lives or dies by the climate, so ours takes it seriously. Lifts run on renewable power, snowmaking is timed for efficiency and fed by a recycling reservoir, and we are restoring alpine meadow on the lower slopes for the green seasons. Protecting the mountain is, quite literally, protecting the business.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="reviews" aria-labelledby="rev-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">Guest reviews</span>
+<h2 id="rev-h">What guests say</h2>
+<p class="lead">Real words from people who travelled before you.</p>
+</div>
+<div class="reviews-grid">
+<figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;True ski-in, ski-out — boots on at the door, first chair every morning. The glacier runs in April were perfect.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">M</span>
+<span class="review-meta"><b>Markus F.</b><span>Innsbruck</span></span>
+</figcaption>
+</figure>
+<figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;The family lodge was made for ski trips: drying room, ski store, bunks for the kids. We&#x27;ll be back every winter.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">C</span>
+<span class="review-meta"><b>Chloe &amp; Sam</b><span>Edinburgh</span></span>
+</figcaption>
+</figure>
+<figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 4 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;Lifts are fast and the village is lively. Book the summit suite if you can — the glacier view is unreal.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">P</span>
+<span class="review-meta"><b>Petra K.</b><span>Prague</span></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-tint" aria-labelledby="awards-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">Recognition</span>
+<h2 id="awards-h">Awards &amp; honours</h2>
+<p class="lead">A few of the moments others have been kind enough to notice.</p>
+</div>
+<ul class="awards-row">
+<li class="award" data-reveal>
+<div class="award-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg></div>
+<div><b>2024</b><span>Best Ski-in Resort — Alpine Awards</span></div>
+</li>
+<li class="award" data-reveal>
+<div class="award-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg></div>
+<div><b>2023</b><span>Family Ski Resort of the Year</span></div>
+</li>
+<li class="award" data-reveal>
+<div class="award-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg></div>
+<div><b>2022</b><span>Top Snow-Sure Resort — Powder</span></div>
+</li>
+<li class="award" data-reveal>
+<div class="award-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg></div>
+<div><b>2021</b><span>Green Mountain Award</span></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="section" aria-labelledby="acta-h">
+<div class="container">
+<div class="cta-band" data-reveal>
+<div class="cta-bg" aria-hidden="true"></div>
+<h2 id="acta-h">Book your ski week</h2>
+<p>Peak weeks and the slopeside chalets sell out by autumn — lock in your snow now.</p>
+<div class="hero-ctas" style="justify-content:center">
+<a class="btn btn-lg btn-on-hero" href="contact.html">Book a Stay</a>
+<a class="btn btn-lg btn-on-hero btn-ghost" href="packages.html">View Lodges &amp; Packages</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand" href="index.html#home" aria-label="Glacier Hollow Ski Resort home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M5 16 11 6l4 6 4-8"/></svg></span>
+<span>Glacier Hollow Ski Resort</span>
+</a>
+<p>A ski-in, ski-out resort with 180 kilometres of piste from your boot room — heated chairs, a glacier on top, slopeside lodges and a village that hums long </p>
+<div class="foot-socials">
+<a class="social" href="#" data-demo-link aria-label="Glacier Hollow Ski Resort on social channel one"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.6 7.4h.01"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Glacier Hollow Ski Resort on social channel two"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3.5 3 10.8l5.8 2.4L11.5 20 21 3.5z"/><path d="M8.8 13.2 17 6.5"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Glacier Hollow Ski Resort on social channel three"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.8 8.6l6 3.4-6 3.4V8.6z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Glacier Hollow Ski Resort on social channel four"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8 8H4l2.1-3.1A8 8 0 1 1 21 11.5z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Glacier Hollow Ski Resort on social channel five"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M8 5h11v11"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer links">
+<h2 class="foot-h">Explore</h2>
+<ul class="foot-links">
+<li><a href="packages.html">Lodges &amp; Packages</a></li>
+<li><a href="about.html#amenities">Amenities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h2 class="foot-h">Visit</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Glacier Hollow Village<br>Base 1,420m · Hollow Valley Alps</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h2 class="foot-h">Contact</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h4l2 5-3 2a13.5 13.5 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17.5 17.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg><a href="tel:+41275550144">+41 27 555 0144</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg><a href="mailto:stay@glacierhollow.example">stay@glacierhollow.example</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom">
+<p>&copy; <span data-year>2026</span> Glacier Hollow Ski Resort. All rights reserved.</p>
+<p>A static HTML / CSS / JS template &mdash; no frameworks, no build step.</p>
+</div>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

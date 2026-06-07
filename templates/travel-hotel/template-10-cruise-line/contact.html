@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Aurelia Ocean Voyages</title>
+<meta name="description" content="Contact Aurelia Ocean Voyages: send a booking or general enquiry, find our phone, email and address, getting-there directions and check-in policies. Static HTML/CSS/JS.">
+<meta name="theme-color" content="#0E1B2E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23D9C27E'/%3E%3Cstop offset='1' stop-color='%232E6E8E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Georgia%2Cserif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+<header class="site-header" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html#home" aria-label="Aurelia Ocean Voyages home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14"/><path d="M12 21a9 9 0 0 1-9-8h3"/><path d="M12 21a9 9 0 0 0 9-8h-3"/><path d="M9 10h6"/></svg></span>
+<span>Aurelia Ocean Voyages</span>
+</a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+<span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+</button>
+<ul class="nav-menu" id="nav-menu">
+<li><a class="nav-link" href="packages.html">Staterooms</a></li>
+<li><a class="nav-link" href="about.html#amenities">Amenities</a></li>
+<li><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm" href="contact.html">Book a Voyage</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="pkg-hero">
+<div class="container">
+<nav class="container breadcrumb" aria-label="Breadcrumb">
+<a href="index.html#home">Home</a>
+<span class="sep" aria-hidden="true">/</span>
+<span aria-current="page">Contact</span>
+</nav>
+<span class="kicker" data-reveal>Reservations &amp; enquiries</span>
+<h1 data-reveal>Plan a voyage</h1>
+<p class="lead" data-reveal>Tell us which seas you dream of and your dates, and our voyage team will match you to a sailing and a stateroom.</p>
+</div>
+</section>
+<section class="section" id="location" aria-labelledby="enq-h">
+<div class="container">
+<div class="contact-split">
+<div class="contact-form-col" data-reveal>
+<div class="sec-head" style="margin-bottom:1.2rem">
+<span class="kicker">Enquiry</span>
+<h2 id="enq-h">Send us a message</h2>
+<p class="lead">Send an enquiry below or speak to our voyage consultants directly. With small ships, the best cabins go early &mdash; it pays to start the conversation.</p>
+</div>
+<form class="booking contact-form" data-contact novalidate aria-label="Send an enquiry">
+<div class="bk-grid">
+<div class="field col-2"><label for="cf-name">Full name</label><input type="text" id="cf-name" name="name" autocomplete="name" data-validate="name" aria-describedby="err-cf-name" required><span class="err" id="err-cf-name" hidden>Please enter your name.</span></div>
+<div class="field col-2"><label for="cf-email">Email</label><input type="email" id="cf-email" name="email" autocomplete="email" data-validate="email" aria-describedby="err-cf-email" required><span class="err" id="err-cf-email" hidden>Enter a valid email address.</span></div>
+<div class="field"><label for="cf-date">Preferred date</label><input type="date" id="cf-date" name="date" data-validate="date" aria-describedby="err-cf-date" required><span class="err" id="err-cf-date" hidden>Please choose a date.</span></div>
+<div class="field"><label for="cf-guests">Party size</label><select id="cf-guests" name="guests" data-validate="select" aria-describedby="err-cf-guests" required><option value="" selected disabled>Select&hellip;</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6+</option></select><span class="err" id="err-cf-guests" hidden>Please choose a party size.</span></div>
+<div class="field col-2"><label for="cf-msg">Your message</label><textarea id="cf-msg" name="message" rows="4" data-validate="message" aria-describedby="err-cf-msg" required></textarea><span class="err" id="err-cf-msg" hidden>Please add a short message (at least 10 characters).</span></div>
+<button class="btn bk-submit" type="submit">Send enquiry</button>
+<p class="bk-success" data-success tabindex="-1" role="status" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg> Thank you &mdash; your enquiry is on its way and we&#x27;ll reply by email, usually within one working day.</p>
+<p class="bk-note">No payment is taken now &mdash; this is an enquiry only. Demo form.</p>
+</div>
+</form>
+</div>
+<div class="contact-info-col" data-reveal>
+<div class="info-cards">
+<a class="info-card" href="tel:+13055550188">
+<div class="info-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h4l2 5-3 2a13.5 13.5 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17.5 17.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg></div>
+<div class="info-tx"><span class="info-k">Call us</span><b>+1 (305) 555 0188</b></div>
+</a>
+<a class="info-card" href="mailto:voyages@aureliaocean.example">
+<div class="info-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg></div>
+<div class="info-tx"><span class="info-k">Email us</span><b>voyages@aureliaocean.example</b></div>
+</a>
+<div class="info-card">
+<div class="info-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+<div class="info-tx"><span class="info-k">Find us</span><b>Aurelia Ocean Voyages<br>Guest Office · seasonal home ports</b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section sec-tint" aria-labelledby="gt-h">
+<div class="container">
+<div class="loc-wrap">
+<div class="loc-copy">
+<div class="sec-head" data-reveal>
+<span class="kicker">Before you sail</span>
+<h2 id="gt-h">Reaching the ship</h2>
+<p class="lead">We sail from a handful of classic home ports; our team arranges transfers from the airport to the quay.</p>
+</div>
+<div class="getting-list">
+<div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h16l-1.8 3.5H5.8L4 17z"/><path d="M12 3v14"/><path d="M12 4c4.5 2 6.5 6.5 6.5 11"/></svg></div>
+<div><h3>Embarkation</h3><p>Board in the afternoon at the season&#x27;s home port; bags taken at the pier.</p></div>
+</div>
+<div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="2.5"/><path d="M3 11h18"/><circle cx="7.5" cy="18.5" r="1.8"/><circle cx="16.5" cy="18.5" r="1.8"/></svg></div>
+<div><h3>Getting to the ship</h3><p>Private transfers from the airport are included in every fare.</p></div>
+</div>
+<div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.6 13.6 8.5 15.5l1.9-5.1 5.1-1.9z"/></svg></div>
+<div><h3>Ashore</h3><p>Expedition tenders and included walks land you in every port.</p></div>
+</div>
+</div>
+</div>
+<div class="map-card" data-reveal role="img" aria-label="Stylised map showing the location of Aurelia Ocean Voyages">
+<div class="map-canvas" style="background:linear-gradient(135deg, #262F38, #13283D)"></div>
+<div class="vis-over map-canvas" style="opacity:.5"></div>
+<div class="map-pin"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span class="pin-pulse"></span></div>
+<div class="map-addr"><b>Aurelia Ocean Voyages</b>Aurelia Ocean Voyages &middot; Embarkation: seasonal home ports</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" aria-labelledby="pol-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">Good to know</span>
+<h2 id="pol-h">Times &amp; policies</h2>
+<p class="lead">The practical details worth checking before you arrive.</p>
+</div>
+<div class="times-row" data-reveal>
+<div class="time-card"><div class="time-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div><div><span class="time-k">Check-in / start</span><b>Embarkation</b></div></div>
+<div class="time-card"><div class="time-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div><div><span class="time-k">Check-out / end</span><b>Disembarkation</b></div></div>
+</div>
+<div class="policy-grid">
+<div class="policy" data-reveal><h3>Booking</h3><p>A deposit secures your stateroom; the balance is due 90 days before sailing.</p></div>
+<div class="policy" data-reveal><h3>Cancellation</h3><p>Sliding-scale terms are set out in full with every fare quote.</p></div>
+<div class="policy" data-reveal><h3>What's included</h3><p>Stateroom, all dining, expedition talks, port taxes and most shore landings.</p></div>
+<div class="policy" data-reveal><h3>Embarkation</h3><p>Boarding opens early afternoon; we sail in the evening on most departures.</p></div>
+</div>
+<div class="social-row" data-reveal>
+<span class="social-row-k">Follow along</span>
+<div class="foot-socials"><a class="social" href="#" data-demo-link aria-label="Aurelia Ocean Voyages on social channel one"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.6 7.4h.01"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Aurelia Ocean Voyages on social channel two"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3.5 3 10.8l5.8 2.4L11.5 20 21 3.5z"/><path d="M8.8 13.2 17 6.5"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Aurelia Ocean Voyages on social channel three"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.8 8.6l6 3.4-6 3.4V8.6z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Aurelia Ocean Voyages on social channel four"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8 8H4l2.1-3.1A8 8 0 1 1 21 11.5z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Aurelia Ocean Voyages on social channel five"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M8 5h11v11"/></svg></a></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand" href="index.html#home" aria-label="Aurelia Ocean Voyages home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14"/><path d="M12 21a9 9 0 0 1-9-8h3"/><path d="M12 21a9 9 0 0 0 9-8h-3"/><path d="M9 10h6"/></svg></span>
+<span>Aurelia Ocean Voyages</span>
+</a>
+<p>A boutique ship of just 240 guests, sailing slow itineraries to the harbours the giants cannot enter — open seating, butler-served suites and a foredeck th</p>
+<div class="foot-socials">
+<a class="social" href="#" data-demo-link aria-label="Aurelia Ocean Voyages on social channel one"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.6 7.4h.01"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Aurelia Ocean Voyages on social channel two"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3.5 3 10.8l5.8 2.4L11.5 20 21 3.5z"/><path d="M8.8 13.2 17 6.5"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Aurelia Ocean Voyages on social channel three"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.8 8.6l6 3.4-6 3.4V8.6z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Aurelia Ocean Voyages on social channel four"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8 8H4l2.1-3.1A8 8 0 1 1 21 11.5z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Aurelia Ocean Voyages on social channel five"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M8 5h11v11"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer links">
+<h2 class="foot-h">Explore</h2>
+<ul class="foot-links">
+<li><a href="packages.html">Staterooms &amp; Fares</a></li>
+<li><a href="about.html#amenities">Amenities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h2 class="foot-h">Visit</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Aurelia Ocean Voyages<br>Guest Office · seasonal home ports</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h2 class="foot-h">Contact</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h4l2 5-3 2a13.5 13.5 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17.5 17.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg><a href="tel:+13055550188">+1 (305) 555 0188</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg><a href="mailto:voyages@aureliaocean.example">voyages@aureliaocean.example</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom">
+<p>&copy; <span data-year>2026</span> Aurelia Ocean Voyages. All rights reserved.</p>
+<p>A static HTML / CSS / JS template &mdash; no frameworks, no build step.</p>
+</div>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Growth Lab Live &mdash; Online Webinar Template</title>
+  <meta name="description" content="The Growth Lab Live is a clean modern single-page online webinar template with a live countdown, a speaker grid, a schedule, gallery, venue map and a validated RSVP form — pure HTML, CSS and vanilla JS.">
+  <meta name="theme-color" content="#F6F8FB">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2064%2064%27%3E%3Crect%20width=%2764%27%20height=%2764%27%20rx=%278%27%20fill=%27%234F46E5%27/%3E%3Ctext%20x=%2732%27%20y=%2744%27%20font-family=%27Arial,sans-serif%27%20font-size=%2734%27%20font-weight=%27700%27%20text-anchor=%27middle%27%20fill=%27%23FFFFFF%27%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="theme-v2 tpl-13">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="The Growth Lab Live home">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-mono">GL</span></span>
+        <span class="brand-name">Growth Lab Live</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="details.html#people">Hosts</a></li>
+          <li><a class="nav-link" href="details.html#schedule">Schedule</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link" href="details.html#venue">Venue</a></li>
+          <li><a class="nav-link" href="rsvp.html">Register</a></li>
+          <li><a class="nav-link" href="details.html#faq">FAQ</a></li>
+          <li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="rsvp.html">Register Free</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+  <section class="hero hero-v2" id="hero" aria-label="Welcome">
+    <div class="container hero-split">
+      <div class="hero-col hero-text">
+        <p class="hero-kicker" data-reveal>a free online masterclass</p>
+        <h1 class="hero-title" data-reveal>The Growth Lab Live</h1>
+        <p class="hero-lead" data-reveal>A free 90-minute masterclass on building a product-led growth engine — practical frameworks, real teardowns and a live Q&amp;A. Join from anywhere; replay sent to every registrant.</p>
+      <div class="hero-ctas" data-reveal>
+        <a class="btn btn-lg" href="rsvp.html">Register Free</a>
+        <a class="btn btn-lg btn-ghost" href="details.html#schedule">See the Schedule</a>
+      </div>
+      <ul class="hero-meta hero-meta-stack" data-reveal>
+        <li><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Thursday, 30 July 2026</span></li>
+        <li><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg><span>11:00 AM EDT</span></li>
+        <li><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Live Online, Streamed worldwide</span></li>
+      </ul>
+      </div>
+      <div class="hero-col hero-aside" data-reveal>
+        <div class="hero-art" aria-hidden="true">
+          <span class="ha-shape ha-1"></span><span class="ha-shape ha-2"></span>
+          <span class="ha-rule"></span><span class="ha-mono">GL</span>
+        </div>
+      <div class="countdown" data-countdown aria-label="Countdown to the event">
+        <div class="cd-grid">
+          <div class="cd-cell"><span class="cd-num" data-cd="days">0</span><span class="cd-label">Days</span></div>
+          <div class="cd-cell"><span class="cd-num" data-cd="hours">0</span><span class="cd-label">Hours</span></div>
+          <div class="cd-cell"><span class="cd-num" data-cd="mins">0</span><span class="cd-label">Minutes</span></div>
+          <div class="cd-cell"><span class="cd-num" data-cd="secs">0</span><span class="cd-label">Seconds</span></div>
+        </div>
+        <p class="cd-note" data-cd-note>Counting down to Thursday, 30 July 2026.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-people is-tint" id="people" aria-labelledby="people-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Your Hosts</span>
+        <h2 id="people-h">Who you’ll learn from</h2>
+        <p class="lead">Operators who have built and scaled the things they teach.</p>
+      </div>
+      <div class="people-grid">
+        <article class="person-card" data-reveal>
+          <span class="person-badge" aria-hidden="true"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg></span>
+          <h3>Dana Whitlock</h3>
+          <p>Ex-Head of Growth at Tideline — scaled it from 10k to 2M users in three years.</p>
+        </article>
+        <article class="person-card" data-reveal>
+          <span class="person-badge" aria-hidden="true"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg></span>
+          <h3>Raj Patel</h3>
+          <p>Founder of MetricMind — advises 40+ SaaS teams on activation and retention.</p>
+        </article>
+        <article class="person-card" data-reveal>
+          <span class="person-badge" aria-hidden="true"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg></span>
+          <h3>Lucia Moreno</h3>
+          <p>Product Lead, Northstar — turns onboarding into a growth lever.</p>
+        </article>
+        <article class="person-card" data-reveal>
+          <span class="person-badge" aria-hidden="true"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg></span>
+          <h3>Guest: Eun-ji Park</h3>
+          <p>Author of “Loops” — joins live for the Q&amp;A and a teardown or two.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-schedule" id="schedule" aria-labelledby="schedule-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Agenda</span>
+        <h2 id="schedule-h">What we’ll cover</h2>
+        <p class="lead">90 minutes, no fluff, all replay-able.</p>
+      </div>
+      <ol class="timeline">
+          <li class="tl-item" data-reveal>
+            <span class="tl-time">00:00</span>
+            <span class="tl-marker" aria-hidden="true"></span>
+            <div class="tl-body"><h3>Welcome &amp; Framing</h3><p>What product-led growth really means in 2026.</p></div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <span class="tl-time">00:10</span>
+            <span class="tl-marker" aria-hidden="true"></span>
+            <div class="tl-body"><h3>The Activation Map</h3><p>Dana on the first ten minutes that decide everything.</p></div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <span class="tl-time">00:35</span>
+            <span class="tl-marker" aria-hidden="true"></span>
+            <div class="tl-body"><h3>Retention Loops</h3><p>Raj breaks down three loops you can copy this week.</p></div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <span class="tl-time">01:00</span>
+            <span class="tl-marker" aria-hidden="true"></span>
+            <div class="tl-body"><h3>Live Teardown</h3><p>We pull apart a real onboarding flow, on screen.</p></div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <span class="tl-time">01:20</span>
+            <span class="tl-marker" aria-hidden="true"></span>
+            <div class="tl-body"><h3>Q&amp;A</h3><p>Bring your questions; Eun-ji joins for this part.</p></div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <span class="tl-time">01:30</span>
+            <span class="tl-marker" aria-hidden="true"></span>
+            <div class="tl-body"><h3>Wrap &amp; Resources</h3><p>Slides, templates and the replay link.</p></div>
+          </li>
+      </ol>
+    </div>
+  </section>
+  <section class="section sec-gallery is-tint" id="gallery" aria-labelledby="gallery-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Inside the Session</span>
+        <h2 id="gallery-h">What you’ll get</h2>
+        <p class="lead">More than a talk — a working session.</p>
+      </div>
+      <div class="gallery-strip">
+        <button class="gallery-tile art-1" type="button" data-lb-open data-art="art-1" data-cap="Live Slides — follow along" aria-label="Open photo: Live Slides — follow along">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Live Slides</strong><span>follow along</span></span>
+        </button>
+        <button class="gallery-tile art-2" type="button" data-lb-open data-art="art-2" data-cap="The Teardown — real flows" aria-label="Open photo: The Teardown — real flows">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>The Teardown</strong><span>real flows</span></span>
+        </button>
+        <button class="gallery-tile art-3" type="button" data-lb-open data-art="art-3" data-cap="Frameworks — copy-ready" aria-label="Open photo: Frameworks — copy-ready">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Frameworks</strong><span>copy-ready</span></span>
+        </button>
+        <button class="gallery-tile art-4" type="button" data-lb-open data-art="art-4" data-cap="Q&amp;A — ask anything" aria-label="Open photo: Q&amp;A — ask anything">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Q&amp;A</strong><span>ask anything</span></span>
+        </button>
+        <button class="gallery-tile art-5" type="button" data-lb-open data-art="art-5" data-cap="Templates — yours to keep" aria-label="Open photo: Templates — yours to keep">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Templates</strong><span>yours to keep</span></span>
+        </button>
+        <button class="gallery-tile art-6" type="button" data-lb-open data-art="art-6" data-cap="Replay — sent to all" aria-label="Open photo: Replay — sent to all">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Replay</strong><span>sent to all</span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-venue" id="venue" aria-labelledby="venue-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">How to Join</span>
+        <h2 id="venue-h">Live online</h2>
+        <p class="lead">Streamed to your browser — no app, no download.</p>
+      </div>
+      <div class="venue-grid">
+        <ul class="venue-notes">
+          <li class="venue-note" data-reveal>
+            <span class="vn-ic" aria-hidden="true"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg></span>
+            <div><h3>The Link</h3><p>A unique join link arrives by email the moment you register.</p></div>
+          </li>
+          <li class="venue-note" data-reveal>
+            <span class="vn-ic" aria-hidden="true"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg></span>
+            <div><h3>Time Zones</h3><p>11:00 AM EDT / 4:00 PM BST / 8:30 PM IST. A reminder lands an hour before.</p></div>
+          </li>
+          <li class="venue-note" data-reveal>
+            <span class="vn-ic" aria-hidden="true"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></span>
+            <div><h3>The Replay</h3><p>Cannot make it live? Register anyway — every sign-up gets the recording.</p></div>
+          </li>
+        </ul>
+      <div class="venue-map" data-reveal>
+        <div class="map-canvas" aria-hidden="true">
+          <span class="map-road map-road-1"></span>
+          <span class="map-road map-road-2"></span>
+          <span class="map-road map-road-3"></span>
+          <span class="map-block map-block-1"></span>
+          <span class="map-block map-block-2"></span>
+          <span class="map-water"></span>
+          <span class="map-park"></span>
+          <span class="map-pin"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        </div>
+        <p class="map-note"><span class="mn-ic" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="12 2 15.1 8.3 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 8.9 8.3 12 2"/></svg></span>Joining link emailed on registration</p>
+        <p class="map-directions">Directions: head for the main entrance; signage and stewards will guide you on arrival.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-rsvp is-tint" id="rsvp" aria-labelledby="rsvp-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Register Free</span>
+        <h2 id="rsvp-h">Save your spot</h2>
+        <p class="lead">It is free, but seats on the live Q&amp;A are limited. Register to lock in the replay.</p>
+      </div>
+      <div class="rsvp-wrap">
+        <form class="rsvp-card" data-rsvp novalidate aria-label="Save your spot form">
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          <div class="form-body" data-form-body>
+            <div class="field-grid">
+      <div class="field" data-field="name" data-required="1">
+        <label class="field-label" for="rsvp-name">Full name <span class="req" aria-hidden="true">*</span></label>
+        <input class="field-control" id="rsvp-name" name="name" type="text" placeholder="e.g. Alex Morgan" aria-describedby="rsvp-name-err" required>
+        <span class="field-err" id="rsvp-name-err" role="alert"></span>
+      </div>
+      <div class="field" data-field="email" data-required="1">
+        <label class="field-label" for="rsvp-email">Email address <span class="req" aria-hidden="true">*</span></label>
+        <input class="field-control" id="rsvp-email" name="email" type="email" placeholder="you@example.com" aria-describedby="rsvp-email-err" required>
+        <span class="field-err" id="rsvp-email-err" role="alert"></span>
+      </div>
+      <div class="field" data-field="attend" data-required="1">
+        <label class="field-label" for="rsvp-attend">Will you attend? <span class="req" aria-hidden="true">*</span></label>
+        <div class="select-wrap">
+          <select class="field-control" id="rsvp-attend" name="attend" required aria-describedby="rsvp-attend-err">
+            <option value="" disabled selected>Choose one…</option>
+            <option value="in-person">Yes, in person</option>
+            <option value="online">Online / livestream</option>
+            <option value="no">Cannot make it</option>
+          </select>
+          <span class="select-chev" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </div>
+        <span class="field-err" id="rsvp-attend-err" role="alert"></span>
+      </div>
+      <div class="field" data-field="guests" data-required="1">
+        <label class="field-label" for="rsvp-guests">Seats needed <span class="req" aria-hidden="true">*</span></label>
+        <div class="select-wrap">
+          <select class="field-control" id="rsvp-guests" name="guests" required aria-describedby="rsvp-guests-err">
+            <option value="" disabled selected>Select…</option>
+            <option value="1">Just me (1)</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+            <option value="6+">6 or more</option>
+          </select>
+          <span class="select-chev" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </div>
+        <span class="field-err" id="rsvp-guests-err" role="alert"></span>
+      </div>
+      <div class="field field-span-2" data-field="text">
+        <label class="field-label" for="rsvp-message">Message (optional) <span class="opt">(optional)</span></label>
+        <textarea class="field-control" id="rsvp-message" name="message" rows="3" placeholder="A note for the hosts…" aria-describedby="rsvp-message-err"></textarea>
+        <span class="field-err" id="rsvp-message-err" role="alert"></span>
+      </div>
+            </div>
+            <button class="btn btn-lg form-submit" type="submit">Register Free <svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+            <p class="form-fineprint">This is a front-end demo — nothing is sent or stored. Replies validate in your browser only.</p>
+          </div>
+      <div class="form-success" data-form-success hidden>
+        <span class="fs-ic" aria-hidden="true"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <h3>Thank you, <span data-success-name>friend</span>!</h3>
+        <p>You’re registered. The join link and replay would normally be emailed to you.</p>
+        <button class="btn btn-sm btn-ghost" type="button" data-form-reset>Edit response</button>
+      </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-faq" id="faq" aria-labelledby="faq-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Before You Join</span>
+        <h2 id="faq-h">Common questions</h2>
+        <p class="lead">Everything you need to register with confidence.</p>
+      </div>
+      <div class="faq-list" data-accordion>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-0" aria-expanded="false" aria-controls="faq-panel-0">
+              <span>Is it really free?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-0" role="region" aria-labelledby="faq-btn-0" hidden>
+            <p>Yes, completely free. Register and you will get the live link and the replay.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-1" aria-expanded="false" aria-controls="faq-panel-1">
+              <span>Will there be a replay?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" hidden>
+            <p>Every registrant receives the full recording and the slides afterwards.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2">
+              <span>Do I need any software?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+            <p>No — it streams in your browser. A link arrives by email on sign-up.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3">
+              <span>Can I ask questions?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+            <p>Yes — there is a live Q&amp;A; submit questions in advance or on the day.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-4" aria-expanded="false" aria-controls="faq-panel-4">
+              <span>What if my time zone is different?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+            <p>Register anyway; the replay is yours regardless of the live time.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-5" aria-expanded="false" aria-controls="faq-panel-5">
+              <span>Will I be on camera?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" hidden>
+            <p>No — attendees are audio- and video-off; only the hosts are on screen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <p class="footer-brand"><span class="brand-mark" aria-hidden="true"><span class="brand-mono">GL</span></span>Growth Lab Live</p>
+        <p class="footer-blurb">A free, practical masterclass you can join from anywhere.</p>
+        <p class="footer-line"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Thursday, 30 July 2026 &middot; 11:00 AM EDT</p>
+        <p class="footer-line"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Live Online, Streamed worldwide</p>
+      </div>
+      <nav class="footer-col" aria-label="Footer links">
+        <h2 class="footer-head">Quick links</h2>
+        <ul class="footer-links">
+          <li><a href="details.html#people">Hosts</a></li>
+          <li><a href="details.html#schedule">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="details.html#venue">Venue</a></li>
+          <li><a href="rsvp.html">Register</a></li>
+          <li><a href="details.html#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2 class="footer-head">Contact</h2>
+        <ul class="footer-links footer-contact">
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg><a href="mailto:hello@growthlab.example">hello@growthlab.example</a></li>
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 3.4a2 2 0 0 1-.5 1.8L8 10.2a16 16 0 0 0 5.8 5.8l1.3-1.3a2 2 0 0 1 1.8-.5l3.4.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+1(202)5550123">+1 (202) 555 0123</a></li>
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Streamed worldwide</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-head">Stay connected</h2>
+        <p class="footer-blurb">Use #GrowthLabLive and tag us in your photos.</p>
+        <ul class="social-row">
+            <li><a class="social-link" href="#top" aria-label="Twitter" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 5.8a8 8 0 0 1-2.3.6 4 4 0 0 0 1.8-2.2 8 8 0 0 1-2.5 1 4 4 0 0 0-6.9 3.6A11.3 11.3 0 0 1 3.9 4.7a4 4 0 0 0 1.2 5.3 4 4 0 0 1-1.8-.5 4 4 0 0 0 3.2 4 4 4 0 0 1-1.8.1 4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.1a11.3 11.3 0 0 0 6.1 1.8c7.4 0 11.4-6.1 11.4-11.4v-.5A8 8 0 0 0 22 5.8z"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Linkedin" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="7" y1="10" x2="7" y2="17"/><circle cx="7" cy="6.8" r="1.2" fill="currentColor" stroke="none"/><path d="M11 17v-4a2.5 2.5 0 0 1 5 0v4M11 11v6"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Youtube" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10 9 16 12 10 15 10 9" fill="currentColor" stroke="none"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Instagram" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Facebook" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 9V7c0-1 .5-1.5 1.5-1.5H17V2.5h-2.5C12 2.5 11 4 11 6.5V9H8.5v3H11v9.5h3V12h2.3l.5-3z"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Growth Lab Live. A demo template, free to adapt.</p>
+      <p class="footer-credit">Built as a static template — HTML, CSS &amp; vanilla JS.</p>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+  <div class="lightbox" data-lightbox hidden>
+    <div class="lb-backdrop" data-lb-close></div>
+    <div class="lb-dialog" role="dialog" aria-modal="true" aria-label="Photo preview">
+      <div class="lb-art art-1" aria-hidden="true"></div>
+      <p class="lb-cap"></p>
+      <button class="lb-close" type="button" data-lb-close aria-label="Close preview">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

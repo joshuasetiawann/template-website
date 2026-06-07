@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northlight Film Festival &mdash; Film Festival Template</title>
+  <meta name="description" content="Northlight Film Festival is an elegant dark single-page film festival template with a live countdown, a lineup wall, a schedule, gallery, venue map and a validated RSVP form — pure HTML, CSS and vanilla JS.">
+  <meta name="theme-color" content="#0D0B10">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2064%2064%27%3E%3Crect%20width=%2764%27%20height=%2764%27%20rx=%2712%27%20fill=%27%23E8A13C%27/%3E%3Ctext%20x=%2732%27%20y=%2744%27%20font-family=%27Georgia,serif%27%20font-size=%2734%27%20font-weight=%27700%27%20text-anchor=%27middle%27%20fill=%27%23FFFFFF%27%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="theme-v4 tpl-16 is-dark">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Northlight Film Festival home">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-mono">NF</span></span>
+        <span class="brand-name">Northlight Film Fest</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="details.html#people">Programme</a></li>
+          <li><a class="nav-link" href="details.html#schedule">Schedule</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link" href="details.html#venue">Venue</a></li>
+          <li><a class="nav-link" href="rsvp.html">Updates</a></li>
+          <li><a class="nav-link" href="rsvp.html#tickets">Tickets</a></li>
+          <li><a class="nav-link" href="details.html#faq">FAQ</a></li>
+          <li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="rsvp.html#tickets">Get Tickets</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+  <section class="hero hero-v4" id="hero" aria-label="Welcome">
+    <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-frame" data-reveal>
+        <span class="hero-eyebrow">19–24 November 2026</span>
+        <p class="hero-kicker">six nights of cinema</p>
+        <h1 class="hero-title">Northlight Film Festival</h1>
+        <div class="ornament ornament-gold" aria-hidden="true"><span></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="7" y1="3" x2="7" y2="21"/><line x1="17" y1="3" x2="17" y2="21"/><line x1="2" y1="9" x2="7" y2="9"/><line x1="2" y1="15" x2="7" y2="15"/><line x1="17" y1="9" x2="22" y2="9"/><line x1="17" y1="15" x2="22" y2="15"/></svg><span></span></div>
+        <p class="hero-lead">Six nights, forty films, one grand old picture house. From restored classics to bold new voices, Northlight brings the world’s best independent cinema to Edinburgh’s most beautiful screen.</p>
+      </div>
+      <ul class="hero-meta" data-reveal>
+        <li><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>19–24 November 2026</span></li>
+        <li><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg><span>Nightly from 7:00 PM</span></li>
+        <li><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>The Aurora Picture House, Edinburgh, Scotland</span></li>
+      </ul>
+      <div class="countdown" data-countdown aria-label="Countdown to the event">
+        <div class="cd-grid">
+          <div class="cd-cell"><span class="cd-num" data-cd="days">0</span><span class="cd-label">Days</span></div>
+          <div class="cd-cell"><span class="cd-num" data-cd="hours">0</span><span class="cd-label">Hours</span></div>
+          <div class="cd-cell"><span class="cd-num" data-cd="mins">0</span><span class="cd-label">Minutes</span></div>
+          <div class="cd-cell"><span class="cd-num" data-cd="secs">0</span><span class="cd-label">Seconds</span></div>
+        </div>
+        <p class="cd-note" data-cd-note>Counting down to 19–24 November 2026.</p>
+      </div>
+      <div class="hero-ctas" data-reveal>
+        <a class="btn btn-lg" href="rsvp.html#tickets">Get Tickets</a>
+        <a class="btn btn-lg btn-ghost" href="details.html#schedule">See the Schedule</a>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-people is-tint" id="people" aria-labelledby="people-h">
+    <div class="container">
+      <div class="sec-head sec-head-center" data-reveal>
+        <span class="kicker">Official Selection</span>
+        <h2 id="people-h">Films in competition</h2>
+        <p class="lead">Forty features and shorts across six nights. A few of the headliners below.</p>
+      </div>
+      <div class="people-grid">
+        <article class="person-card" data-reveal>
+          <span class="person-badge" aria-hidden="true"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="7" y1="3" x2="7" y2="21"/><line x1="17" y1="3" x2="17" y2="21"/><line x1="2" y1="9" x2="7" y2="9"/><line x1="2" y1="15" x2="7" y2="15"/><line x1="17" y1="9" x2="22" y2="9"/><line x1="17" y1="15" x2="22" y2="15"/></svg></span>
+          <h3>The Salt Road</h3>
+          <p>Opening Gala — a sweeping desert drama, winner at three festivals already.</p>
+        </article>
+        <article class="person-card" data-reveal>
+          <span class="person-badge" aria-hidden="true"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="7" y1="3" x2="7" y2="21"/><line x1="17" y1="3" x2="17" y2="21"/><line x1="2" y1="9" x2="7" y2="9"/><line x1="2" y1="15" x2="7" y2="15"/><line x1="17" y1="9" x2="22" y2="9"/><line x1="17" y1="15" x2="22" y2="15"/></svg></span>
+          <h3>Quiet Harbour</h3>
+          <p>UK Premiere — a tender Scottish coming-of-age, shot on the Hebrides.</p>
+        </article>
+        <article class="person-card" data-reveal>
+          <span class="person-badge" aria-hidden="true"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="7" y1="3" x2="7" y2="21"/><line x1="17" y1="3" x2="17" y2="21"/><line x1="2" y1="9" x2="7" y2="9"/><line x1="2" y1="15" x2="7" y2="15"/><line x1="17" y1="9" x2="22" y2="9"/><line x1="17" y1="15" x2="22" y2="15"/></svg></span>
+          <h3>Neon Province</h3>
+          <p>Midnight Strand — a neo-noir thriller that does not blink.</p>
+        </article>
+        <article class="person-card" data-reveal>
+          <span class="person-badge" aria-hidden="true"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="7" y1="3" x2="7" y2="21"/><line x1="17" y1="3" x2="17" y2="21"/><line x1="2" y1="9" x2="7" y2="9"/><line x1="2" y1="15" x2="7" y2="15"/><line x1="17" y1="9" x2="22" y2="9"/><line x1="17" y1="15" x2="22" y2="15"/></svg></span>
+          <h3>The Archivists</h3>
+          <p>Documentary — the people racing to save a century of lost film.</p>
+        </article>
+        <article class="person-card" data-reveal>
+          <span class="person-badge" aria-hidden="true"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="7" y1="3" x2="7" y2="21"/><line x1="17" y1="3" x2="17" y2="21"/><line x1="2" y1="9" x2="7" y2="9"/><line x1="2" y1="15" x2="7" y2="15"/><line x1="17" y1="9" x2="22" y2="9"/><line x1="17" y1="15" x2="22" y2="15"/></svg></span>
+          <h3>Marigold Street</h3>
+          <p>Closing Gala — a warm ensemble comedy and a perfect send-off.</p>
+        </article>
+        <article class="person-card" data-reveal>
+          <span class="person-badge" aria-hidden="true"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="7" y1="3" x2="7" y2="21"/><line x1="17" y1="3" x2="17" y2="21"/><line x1="2" y1="9" x2="7" y2="9"/><line x1="2" y1="15" x2="7" y2="15"/><line x1="17" y1="9" x2="22" y2="9"/><line x1="17" y1="15" x2="22" y2="15"/></svg></span>
+          <h3>Shorts: New Voices</h3>
+          <p>Eight debut shorts from across the UK and Ireland.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-schedule" id="schedule" aria-labelledby="schedule-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Screenings</span>
+        <h2 id="schedule-h">The nightly programme</h2>
+        <p class="lead">Tap a night to see what is on the big screen.</p>
+      </div>
+      <div class="track-tabs" data-tabs>
+        <div class="track-tablist" role="tablist" aria-label="Schedule tracks">
+          <button class="track-tab is-active" type="button" role="tab" id="tab-thu-19" aria-controls="panel-thu-19" aria-selected="true" tabindex="0">Thu 19</button>
+          <button class="track-tab" type="button" role="tab" id="tab-fri-20" aria-controls="panel-fri-20" aria-selected="false" tabindex="-1">Fri 20</button>
+          <button class="track-tab" type="button" role="tab" id="tab-sat-21" aria-controls="panel-sat-21" aria-selected="false" tabindex="-1">Sat 21</button>
+          <button class="track-tab" type="button" role="tab" id="tab-sun-22" aria-controls="panel-sun-22" aria-selected="false" tabindex="-1">Sun 22</button>
+        </div>
+        <div class="track-panel" role="tabpanel" id="panel-thu-19" aria-labelledby="tab-thu-19">
+          <ul class="rundown">
+            <li class="rundown-row" data-reveal>
+              <span class="rd-time">7:00 PM</span>
+              <div class="rd-body"><h3>Opening Gala</h3><p>“The Salt Road” + director Q&amp;A.</p></div>
+            </li>
+            <li class="rundown-row" data-reveal>
+              <span class="rd-time">9:30 PM</span>
+              <div class="rd-body"><h3>Reception</h3><p>Drinks in the foyer with the festival jury.</p></div>
+            </li>
+          </ul>
+        </div>
+        <div class="track-panel" role="tabpanel" id="panel-fri-20" aria-labelledby="tab-fri-20" hidden>
+          <ul class="rundown">
+            <li class="rundown-row" data-reveal>
+              <span class="rd-time">6:30 PM</span>
+              <div class="rd-body"><h3>Quiet Harbour</h3><p>UK premiere + Hebrides shorts.</p></div>
+            </li>
+            <li class="rundown-row" data-reveal>
+              <span class="rd-time">9:00 PM</span>
+              <div class="rd-body"><h3>Neon Province</h3><p>Midnight Strand thriller.</p></div>
+            </li>
+          </ul>
+        </div>
+        <div class="track-panel" role="tabpanel" id="panel-sat-21" aria-labelledby="tab-sat-21" hidden>
+          <ul class="rundown">
+            <li class="rundown-row" data-reveal>
+              <span class="rd-time">2:00 PM</span>
+              <div class="rd-body"><h3>Family Matinee</h3><p>A restored animation classic.</p></div>
+            </li>
+            <li class="rundown-row" data-reveal>
+              <span class="rd-time">7:00 PM</span>
+              <div class="rd-body"><h3>The Archivists</h3><p>Documentary + panel on film preservation.</p></div>
+            </li>
+          </ul>
+        </div>
+        <div class="track-panel" role="tabpanel" id="panel-sun-22" aria-labelledby="tab-sun-22" hidden>
+          <ul class="rundown">
+            <li class="rundown-row" data-reveal>
+              <span class="rd-time">3:00 PM</span>
+              <div class="rd-body"><h3>Shorts: New Voices</h3><p>Eight debut shorts, one programme.</p></div>
+            </li>
+            <li class="rundown-row" data-reveal>
+              <span class="rd-time">7:30 PM</span>
+              <div class="rd-body"><h3>Retrospective</h3><p>A 35mm print of a festival favourite.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-gallery is-tint" id="gallery" aria-labelledby="gallery-h">
+    <div class="container">
+      <div class="sec-head sec-head-center" data-reveal>
+        <span class="kicker">The Festival</span>
+        <h2 id="gallery-h">Under the marquee</h2>
+        <p class="lead">Red carpets, full houses and late-night talks.</p>
+      </div>
+      <div class="gallery-strip">
+        <button class="gallery-tile art-1" type="button" data-lb-open data-art="art-1" data-cap="The Picture House — 1920s grandeur" aria-label="Open photo: The Picture House — 1920s grandeur">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>The Picture House</strong><span>1920s grandeur</span></span>
+        </button>
+        <button class="gallery-tile art-2" type="button" data-lb-open data-art="art-2" data-cap="Red Carpet — opening night" aria-label="Open photo: Red Carpet — opening night">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Red Carpet</strong><span>opening night</span></span>
+        </button>
+        <button class="gallery-tile art-3" type="button" data-lb-open data-art="art-3" data-cap="Q&amp;A Sessions — meet the makers" aria-label="Open photo: Q&amp;A Sessions — meet the makers">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Q&amp;A Sessions</strong><span>meet the makers</span></span>
+        </button>
+        <button class="gallery-tile art-4" type="button" data-lb-open data-art="art-4" data-cap="The Foyer — between films" aria-label="Open photo: The Foyer — between films">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>The Foyer</strong><span>between films</span></span>
+        </button>
+        <button class="gallery-tile art-5" type="button" data-lb-open data-art="art-5" data-cap="35mm Projection — the real thing" aria-label="Open photo: 35mm Projection — the real thing">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>35mm Projection</strong><span>the real thing</span></span>
+        </button>
+        <button class="gallery-tile art-6" type="button" data-lb-open data-art="art-6" data-cap="Closing Gala — the send-off" aria-label="Open photo: Closing Gala — the send-off">
+          <span class="gt-art" aria-hidden="true"></span>
+          <span class="gt-cap"><strong>Closing Gala</strong><span>the send-off</span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-venue" id="venue" aria-labelledby="venue-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">The Venue</span>
+        <h2 id="venue-h">The Aurora Picture House</h2>
+        <p class="lead">A lovingly restored 1923 cinema on the edge of the Old Town.</p>
+      </div>
+      <div class="venue-grid">
+        <ul class="venue-notes">
+          <li class="venue-note" data-reveal>
+            <span class="vn-ic" aria-hidden="true"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="14" rx="3"/><line x1="4" y1="10" x2="20" y2="10"/><circle cx="8.5" cy="13.5" r="1.2"/><circle cx="15.5" cy="13.5" r="1.2"/><path d="M8 17l-2 4M16 17l2 4"/></svg></span>
+            <div><h3>By Tram</h3><p>West End–Princes Street stop is a five-minute walk.</p></div>
+          </li>
+          <li class="venue-note" data-reveal>
+            <span class="vn-ic" aria-hidden="true"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-6h14l2 6"/><rect x="2" y="13" width="20" height="6" rx="2"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg></span>
+            <div><h3>Parking</h3><p>Castle Terrace car park is two minutes away; no on-site parking.</p></div>
+          </li>
+          <li class="venue-note" data-reveal>
+            <span class="vn-ic" aria-hidden="true"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg></span>
+            <div><h3>Doors</h3><p>House opens 30 minutes before each screening; latecomers seated at a pause.</p></div>
+          </li>
+        </ul>
+      <div class="venue-map" data-reveal>
+        <div class="map-canvas" aria-hidden="true">
+          <span class="map-road map-road-1"></span>
+          <span class="map-road map-road-2"></span>
+          <span class="map-road map-road-3"></span>
+          <span class="map-block map-block-1"></span>
+          <span class="map-block map-block-2"></span>
+          <span class="map-water"></span>
+          <span class="map-park"></span>
+          <span class="map-pin"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        </div>
+        <p class="map-note"><span class="mn-ic" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="12 2 15.1 8.3 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 8.9 8.3 12 2"/></svg></span>8 Lothian Road, Edinburgh, EH1 2DJ</p>
+        <p class="map-directions">Directions: head for the main entrance; signage and stewards will guide you on arrival.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-rsvp is-tint" id="rsvp" aria-labelledby="rsvp-h">
+    <div class="container">
+      <div class="sec-head sec-head-center" data-reveal>
+        <span class="kicker">Stay in the Loop</span>
+        <h2 id="rsvp-h">Join the mailing list</h2>
+        <p class="lead">Get programme announcements, ticket releases and surprise screenings first.</p>
+      </div>
+      <div class="rsvp-wrap">
+        <form class="rsvp-card rsvp-card-luxe" data-rsvp novalidate aria-label="Join the mailing list form">
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          <div class="form-body" data-form-body>
+            <div class="field-grid">
+      <div class="field" data-field="name" data-required="1">
+        <label class="field-label" for="rsvp-name">Full name <span class="req" aria-hidden="true">*</span></label>
+        <input class="field-control" id="rsvp-name" name="name" type="text" placeholder="e.g. Alex Morgan" aria-describedby="rsvp-name-err" required>
+        <span class="field-err" id="rsvp-name-err" role="alert"></span>
+      </div>
+      <div class="field" data-field="email" data-required="1">
+        <label class="field-label" for="rsvp-email">Email address <span class="req" aria-hidden="true">*</span></label>
+        <input class="field-control" id="rsvp-email" name="email" type="email" placeholder="you@example.com" aria-describedby="rsvp-email-err" required>
+        <span class="field-err" id="rsvp-email-err" role="alert"></span>
+      </div>
+      <div class="field" data-field="attend" data-required="1">
+        <label class="field-label" for="rsvp-attend">How will you join? <span class="req" aria-hidden="true">*</span></label>
+        <div class="select-wrap">
+          <select class="field-control" id="rsvp-attend" name="attend" required aria-describedby="rsvp-attend-err">
+            <option value="" disabled selected>Choose one…</option>
+            <option value="full">All days</option>
+            <option value="single">A single day</option>
+            <option value="maybe">Keep me posted</option>
+          </select>
+          <span class="select-chev" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </div>
+        <span class="field-err" id="rsvp-attend-err" role="alert"></span>
+      </div>
+      <div class="field" data-field="guests" data-required="1">
+        <label class="field-label" for="rsvp-guests">Tickets / people <span class="req" aria-hidden="true">*</span></label>
+        <div class="select-wrap">
+          <select class="field-control" id="rsvp-guests" name="guests" required aria-describedby="rsvp-guests-err">
+            <option value="" disabled selected>Select…</option>
+            <option value="1">Just me (1)</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+            <option value="6+">6 or more</option>
+          </select>
+          <span class="select-chev" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </div>
+        <span class="field-err" id="rsvp-guests-err" role="alert"></span>
+      </div>
+      <div class="field field-span-2" data-field="text">
+        <label class="field-label" for="rsvp-message">Message (optional) <span class="opt">(optional)</span></label>
+        <textarea class="field-control" id="rsvp-message" name="message" rows="3" placeholder="A note for the hosts…" aria-describedby="rsvp-message-err"></textarea>
+        <span class="field-err" id="rsvp-message-err" role="alert"></span>
+      </div>
+            </div>
+            <button class="btn btn-lg form-submit" type="submit">Get Tickets <svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+            <p class="form-fineprint">This is a front-end demo — nothing is sent or stored. Replies validate in your browser only.</p>
+          </div>
+      <div class="form-success" data-form-success hidden>
+        <span class="fs-ic" aria-hidden="true"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <h3>Thank you, <span data-success-name>friend</span>!</h3>
+        <p>You’re on the list. We’d normally email you set times, tickets and updates.</p>
+        <button class="btn btn-sm btn-ghost" type="button" data-form-reset>Edit response</button>
+      </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-tickets" id="tickets" aria-labelledby="tickets-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Tickets</span>
+        <h2 id="tickets-h">Passes &amp; seats</h2>
+        <p class="lead">Single tickets and festival passes both available.</p>
+      </div>
+      <div class="tickets-grid">
+        <article class="ticket-card" data-reveal>
+          <span class="ticket-notch ticket-notch-l" aria-hidden="true"></span>
+          <span class="ticket-notch ticket-notch-r" aria-hidden="true"></span>
+          <h3 class="ticket-name">Single Screening</h3>
+          <p class="ticket-price">£12 <span>one film</span></p>
+          <ul class="ticket-feats">
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>One screening of choice</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Any night, any strand</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Reserved seat</li>
+          </ul>
+          <a class="btn btn-block btn-ghost" href="rsvp.html">Book a screening</a>
+        </article>
+        <article class="ticket-card is-featured" data-reveal>
+          <span class="ticket-ribbon">Most popular</span>
+          <span class="ticket-notch ticket-notch-l" aria-hidden="true"></span>
+          <span class="ticket-notch ticket-notch-r" aria-hidden="true"></span>
+          <h3 class="ticket-name">Festival Pass</h3>
+          <p class="ticket-price">£89 <span>all six nights</span></p>
+          <ul class="ticket-feats">
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Entry to all screenings</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Priority seating</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Opening &amp; closing galas</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Festival tote</li>
+          </ul>
+          <a class="btn btn-block" href="rsvp.html">Buy festival pass</a>
+        </article>
+        <article class="ticket-card" data-reveal>
+          <span class="ticket-notch ticket-notch-l" aria-hidden="true"></span>
+          <span class="ticket-notch ticket-notch-r" aria-hidden="true"></span>
+          <h3 class="ticket-name">Patron Pass</h3>
+          <p class="ticket-price">£220 <span>all six nights</span></p>
+          <ul class="ticket-feats">
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Everything in Festival Pass</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Jury reception access</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Reserved gala seats</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Programme credit</li>
+          </ul>
+          <a class="btn btn-block btn-ghost" href="rsvp.html">Become a patron</a>
+        </article>
+      </div>
+      <div class="promo" data-reveal>
+        <p>Have an early-bird code? Use it at checkout to save.</p>
+        <div class="promo-code">
+          <code>NORTH26</code>
+          <span class="copy-wrap">
+            <button class="btn btn-sm copy-btn" type="button" data-copy="NORTH26" data-label="Copy code"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg> Copy code</button>
+            <span class="copy-live" role="status" aria-live="polite"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section sec-faq is-tint" id="faq" aria-labelledby="faq-h">
+    <div class="container">
+      <div class="sec-head sec-head-center" data-reveal>
+        <span class="kicker">Box Office</span>
+        <h2 id="faq-h">Before the lights dim</h2>
+        <p class="lead">Everything you need for six nights of film.</p>
+      </div>
+      <div class="faq-list" data-accordion>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-0" aria-expanded="false" aria-controls="faq-panel-0">
+              <span>How do I choose films?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-0" role="region" aria-labelledby="faq-btn-0" hidden>
+            <p>Single tickets let you pick any screening; the full programme is at the box office and online.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-1" aria-expanded="false" aria-controls="faq-panel-1">
+              <span>Are there age ratings?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" hidden>
+            <p>Every film carries its certificate; the midnight strand is strictly 18+.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2">
+              <span>Can I see the Q&amp;As only?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+            <p>Q&amp;As are part of their screening; a screening ticket includes the talk that follows.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3">
+              <span>Is the cinema accessible?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+            <p>Yes — step-free access to the stalls, an induction loop and captioned matinees.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-4" aria-expanded="false" aria-controls="faq-panel-4">
+              <span>Do passes guarantee a seat?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+            <p>Festival and Patron passes get priority seating, but galas should be reserved early.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-q">
+            <button class="acc-trigger" type="button" id="faq-btn-5" aria-expanded="false" aria-controls="faq-panel-5">
+              <span>Is there a student rate?</span>
+              <span class="acc-icon" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </h3>
+          <div class="faq-a" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" hidden>
+            <p>Yes — a 25% concession applies to single tickets with valid ID at the box office.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <p class="footer-brand"><span class="brand-mark" aria-hidden="true"><span class="brand-mono">NF</span></span>Northlight Film Fest</p>
+        <p class="footer-blurb">Six nights of the world’s best independent cinema.</p>
+        <p class="footer-line"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 19–24 November 2026 &middot; Nightly from 7:00 PM</p>
+        <p class="footer-line"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> The Aurora Picture House, Edinburgh, Scotland</p>
+      </div>
+      <nav class="footer-col" aria-label="Footer links">
+        <h2 class="footer-head">Quick links</h2>
+        <ul class="footer-links">
+          <li><a href="details.html#people">Programme</a></li>
+          <li><a href="details.html#schedule">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="details.html#venue">Venue</a></li>
+          <li><a href="rsvp.html">Updates</a></li>
+          <li><a href="rsvp.html#tickets">Tickets</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2 class="footer-head">Contact</h2>
+        <ul class="footer-links footer-contact">
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg><a href="mailto:hello@northlightfest.example">hello@northlightfest.example</a></li>
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 3.4a2 2 0 0 1-.5 1.8L8 10.2a16 16 0 0 0 5.8 5.8l1.3-1.3a2 2 0 0 1 1.8-.5l3.4.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+441315550188">+44 131 555 0188</a></li>
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Edinburgh, Scotland</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-head">Stay connected</h2>
+        <p class="footer-blurb">Use #NorthlightFest and tag us in your photos.</p>
+        <ul class="social-row">
+            <li><a class="social-link" href="#top" aria-label="Instagram" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Tiktok" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 4c.5 2 2 3.3 4 3.5v3c-1.6 0-3-.5-4-1.3V15a5 5 0 1 1-5-5c.3 0 .7 0 1 .1v3.1a2 2 0 1 0 1.5 1.9V4z"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Twitter" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 5.8a8 8 0 0 1-2.3.6 4 4 0 0 0 1.8-2.2 8 8 0 0 1-2.5 1 4 4 0 0 0-6.9 3.6A11.3 11.3 0 0 1 3.9 4.7a4 4 0 0 0 1.2 5.3 4 4 0 0 1-1.8-.5 4 4 0 0 0 3.2 4 4 4 0 0 1-1.8.1 4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.1a11.3 11.3 0 0 0 6.1 1.8c7.4 0 11.4-6.1 11.4-11.4v-.5A8 8 0 0 0 22 5.8z"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Youtube" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10 9 16 12 10 15 10 9" fill="currentColor" stroke="none"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Facebook" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 9V7c0-1 .5-1.5 1.5-1.5H17V2.5h-2.5C12 2.5 11 4 11 6.5V9H8.5v3H11v9.5h3V12h2.3l.5-3z"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Northlight Film Fest. A demo template, free to adapt.</p>
+      <p class="footer-credit">Built as a static template — HTML, CSS &amp; vanilla JS.</p>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+  <div class="lightbox" data-lightbox hidden>
+    <div class="lb-backdrop" data-lb-close></div>
+    <div class="lb-dialog" role="dialog" aria-modal="true" aria-label="Photo preview">
+      <div class="lb-art art-1" aria-hidden="true"></div>
+      <p class="lb-cap"></p>
+      <button class="lb-close" type="button" data-lb-close aria-label="Close preview">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

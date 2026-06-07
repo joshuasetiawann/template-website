@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coralline Bay Resort — Barefoot Beach &amp; Reef Resort</title>
+<meta name="description" content="Coralline Bay Resort is a beach resort website template: an immersive hero, a working booking enquiry widget, villas &amp; suites, amenities, gallery, reviews and a location map — pure HTML, CSS and vanilla JS.">
+<meta name="theme-color" content="#0FA3B1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230FA3B1'/%3E%3Cstop offset='1' stop-color='%23F0654A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial%2Csans-serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+<header class="site-header" id="top">
+<div class="container nav-in">
+<a class="brand" href="#home" aria-label="Coralline Bay Resort home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="6" r="2.6"/><path d="M2 14c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/><path d="M2 19c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/></svg></span>
+<span>Coralline Bay Resort</span>
+</a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+<span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+</button>
+<ul class="nav-menu" id="nav-menu">
+<li><a class="nav-link" href="packages.html">Villas</a></li>
+<li><a class="nav-link" href="about.html#amenities">Amenities</a></li>
+<li><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm" href="contact.html">Book a Stay</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-v2" id="home">
+<div class="container">
+<div class="hero-split">
+<div class="hero-copy">
+<span class="kicker" data-reveal>Barefoot resort · A reef-edged lagoon</span>
+<h1 data-reveal>Wake to the reef, not the alarm.</h1>
+<p class="hero-lead" data-reveal>Overwater suites and beach villas strung along a warm lagoon, where the snorkelling starts at your steps and the day ends in the colour of coral.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg" href="#booking">Book a Stay</a>
+<a class="btn btn-lg btn-ghost" href="#rooms">Explore Villas</a>
+</div>
+<dl class="hero-facts" data-reveal><div class="fact"><dt>48</dt><dd>villas &amp; suites</dd></div><div class="fact"><dt>1.2km</dt><dd>private beach</dd></div><div class="fact"><dt>∞</dt><dd>lagoon snorkelling</dd></div></dl>
+</div>
+<div class="hero-art" data-reveal>
+<div class="vis" aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 24% 14%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(140deg, #2CAEBA 0%, #9A7D71 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<form class="booking" data-booking novalidate aria-label="Check availability">
+<h3>Check availability</h3>
+<p class="bk-sub">Pick your dates and party — no payment is taken now.</p>
+<div class="bk-grid">
+<div class="field"><label for="bk-date">Check-in</label><input type="date" id="bk-date" name="checkin" data-validate="date" aria-describedby="err-bk-date" required><span class="err" id="err-bk-date" hidden>Please choose a date.</span></div>
+<div class="field"><label for="bk-date2">Check-out</label><input type="date" id="bk-date2" name="checkout" data-validate="dateout" aria-describedby="err-bk-date2" required><span class="err" id="err-bk-date2" hidden>Choose a date after check-in.</span></div>
+<div class="field"><label for="bk-guests">Guests</label><select id="bk-guests" name="guests" data-validate="select" aria-describedby="err-bk-guests" required><option value="" selected disabled>Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6+ guests</option></select><span class="err" id="err-bk-guests" hidden>Please choose guests.</span></div>
+<div class="field col-2"><label for="bk-name">Full name</label><input type="text" id="bk-name" name="name" autocomplete="name" data-validate="name" aria-describedby="err-bk-name" required><span class="err" id="err-bk-name" hidden>Please enter your name.</span></div>
+<div class="field col-2"><label for="bk-email">Email</label><input type="email" id="bk-email" name="email" autocomplete="email" data-validate="email" aria-describedby="err-bk-email" required><span class="err" id="err-bk-email" hidden>Enter a valid email address.</span></div>
+<button class="btn bk-submit" type="submit">Search dates</button>
+<p class="bk-success" data-success tabindex="-1" role="status" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg> Thank you — your dates are noted and we&#x27;ll confirm availability by email.</p>
+<p class="bk-note">No payment is taken now &mdash; we confirm availability by email. Demo form.</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="rooms" aria-labelledby="rooms-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">Villas &amp; Suites</span>
+<h2 id="rooms-h">Pick your patch of sand</h2>
+<p class="lead">From breezy garden bungalows to overwater suites with glass floors, every villa opens to the lagoon.</p>
+</div>
+<div class="cards-grid">
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-1" aria-label="Garden Bungalow &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 27% 29%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(185deg, #25ABB8 0%, #9A7D71 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Villa</span></a>
+<div class="rcard-body">
+<h3>Garden Bungalow</h3>
+<p class="rcard-desc">A thatched bungalow among the palms, two minutes from the water.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M4.2 7.5l15.6 9M19.8 7.5l-15.6 9"/></svg>Climate</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 18.5C5.5 9.5 12 4.5 20 4.5c0 9-5 14-14.5 14z"/><path d="M5.5 18.5C8 13 12 9.5 16.5 8"/></svg>Garden</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 9h11v6a4 4 0 0 1-4 4h-3a4 4 0 0 1-4-4V9z"/><path d="M15.5 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M7.5 3.5v2M11.5 3.5v2"/></svg>Coffee</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$290 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-1">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-2" aria-label="Beachfront Villa &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 24% 14%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(140deg, #2CAEBA 0%, #9A7D71 54%, #DD5D44 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Villa</span></a>
+<div class="rcard-body">
+<h3>Beachfront Villa</h3>
+<p class="rcard-desc">Toes-in-the-sand living with an outdoor shower and a hammock.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="6" r="2.6"/><path d="M2 14c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/><path d="M2 19c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/></svg>Beachfront</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Ensuite</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M4.2 7.5l15.6 9M19.8 7.5l-15.6 9"/></svg>Climate</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$410 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-2">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-3" aria-label="Lagoon Pool Villa &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 34% 26%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(164deg, #1DA9B6 0%, #9A7D71 54%, #C5533D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Villa</span></a>
+<div class="rcard-body">
+<h3>Lagoon Pool Villa</h3>
+<p class="rcard-desc">Your own plunge pool angled at the reef line.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/><path d="M2 13c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/><path d="M2 18c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/></svg>Pool</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Ensuite</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14l-7 8v6"/><path d="M8.5 20h7"/><path d="M7.5 7h9"/></svg>Lounge</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$560 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-3">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-4" aria-label="Overwater Suite &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 34% 26%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(164deg, #1DA9B6 0%, #9A7D71 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Villa</span></a>
+<div class="rcard-body">
+<h3>Overwater Suite</h3>
+<p class="rcard-desc">A deck over the lagoon with a glass floor and a ladder to the reef.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg>Reef</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8"/></svg>Sun deck</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M4.2 7.5l15.6 9M19.8 7.5l-15.6 9"/></svg>Climate</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$720 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-4">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-5" aria-label="Sunset Reef Suite &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 36% 38%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(138deg, #2CAEBA 0%, #9A7D71 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Villa</span></a>
+<div class="rcard-body">
+<h3>Sunset Reef Suite</h3>
+<p class="rcard-desc">The western point, where the day burns out over open water.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8"/></svg>Sun deck</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3.5h8c0 5-1.2 8.5-4 8.5s-4-3.5-4-8.5z"/><path d="M12 12v7.5"/><path d="M8.5 21h7"/></svg>Bar</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Ensuite</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$880 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-5">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-6" aria-label="Family Beach House &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 43% 35%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(187deg, #25ABB8 0%, #9A7D71 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Villa</span></a>
+<div class="rcard-body">
+<h3>Family Beach House</h3>
+<p class="rcard-desc">Two bedrooms, a kitchen and a stretch of beach for the kids.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 14.5a4.8 4.8 0 0 0 7 0"/><path d="M9 9.5h.01M15 9.5h.01"/></svg>Family</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 10.5h15V16a3.5 3.5 0 0 1-3.5 3.5H8A3.5 3.5 0 0 1 4.5 16v-5.5z"/><path d="M2.5 10.5h19"/><path d="M8.5 7.5c0-2.5 7-2.5 7 0"/></svg>Kitchen</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="6" r="2.6"/><path d="M2 14c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/><path d="M2 19c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/></svg>Beachfront</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$980 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-6">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="amenities" aria-labelledby="amen-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">What&#x27;s included</span>
+<h2 id="amen-h">Everything you need</h2>
+<p class="lead">The details that turn a stay into the trip you remember.</p>
+</div>
+<div class="amenities-grid amenities-grid-v2">
+<div class="amenity amenity-v2" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg></div>
+<div><h3>House reef</h3><p>Snorkel straight off the jetty into a living reef.</p></div>
+</div><div class="amenity amenity-v2" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h16l-1.8 3.5H5.8L4 17z"/><path d="M12 3v14"/><path d="M12 4c4.5 2 6.5 6.5 6.5 11"/></svg></div>
+<div><h3>Lagoon excursions</h3><p>Dolphin dawns, sandbank picnics and night paddles.</p></div>
+</div><div class="amenity amenity-v2" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c2 2.8 2 5.8 0 8.6-2-2.8-2-5.8 0-8.6z"/><path d="M4.5 9.5c3.2.4 5.5 2.4 6.3 5.8-3.4-.3-5.6-2.3-6.3-5.8z"/><path d="M19.5 9.5c-.7 3.5-2.9 5.5-6.3 5.8.8-3.4 3.1-5.4 6.3-5.8z"/><path d="M7 18.5c3 1.6 7 1.6 10 0"/></svg></div>
+<div><h3>Overwater spa</h3><p>Massage to the sound of water through a glass floor.</p></div>
+</div><div class="amenity amenity-v2" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a2.5 2.5 0 0 0 5 0V3"/><path d="M8.5 3v18"/><path d="M17.5 3c-2 1.5-3 4-3 7h3v11"/></svg></div>
+<div><h3>Three barefoot kitchens</h3><p>Wood-fired, sea-fired and a sunset raw bar.</p></div>
+</div><div class="amenity amenity-v2" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8"/></svg></div>
+<div><h3>Beach service</h3><p>Cold towels and coconuts to your lounger.</p></div>
+</div><div class="amenity amenity-v2" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 14.5a4.8 4.8 0 0 0 7 0"/><path d="M9 9.5h.01M15 9.5h.01"/></svg></div>
+<div><h3>Reef rangers club</h3><p>Marine-life days for small explorers.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="gallery" aria-labelledby="gal-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">Gallery</span>
+<h2 id="gal-h">A look around</h2>
+<p class="lead">A glimpse of what waits for you — every image here is pure CSS and inline SVG.</p>
+</div>
+<div class="gallery-strip">
+<div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 25% 17%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(141deg, #33B1BD 0%, #9A7D71 54%, #DD5D44 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Lagoon</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 23% 23%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(153deg, #25ABB8 0%, #9A7D71 54%, #C5533D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Overwater</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 21% 17%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(151deg, #33B1BD 0%, #9A7D71 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Reef</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 29% 23%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(173deg, #33B1BD 0%, #9A7D71 54%, #DD5D44 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Beach</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 19% 41%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(149deg, #25ABB8 0%, #9A7D71 54%, #DD5D44 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Sunset</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 22% 38%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(138deg, #1DA9B6 0%, #9A7D71 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Pool</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 39% 35%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(127deg, #25ABB8 0%, #9A7D71 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Jetty</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 28% 26%, #61C2CC 0%, rgba(255,255,255,0) 46%), linear-gradient(144deg, #2CAEBA 0%, #9A7D71 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Palm</span></div>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="reviews" aria-labelledby="rev-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">Guest reviews</span>
+<h2 id="rev-h">What guests say</h2>
+<p class="lead">Real words from people who travelled before you.</p>
+</div>
+<div class="reviews-grid">
+<figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;We snorkelled before breakfast every day. The overwater suite ruined us for normal hotels.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">P</span>
+<span class="review-meta"><b>Priya &amp; Dev</b><span>Singapore</span></span>
+</figcaption>
+</figure><figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;The reef is right there. Turtles at the jetty, rays at dusk, and staff who knew our names by day two.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">L</span>
+<span class="review-meta"><b>Lukas B.</b><span>Berlin</span></span>
+</figcaption>
+</figure><figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 4 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;Barefoot luxury done properly. The sunset suite is worth the splurge for the last night.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">H</span>
+<span class="review-meta"><b>Hana K.</b><span>Osaka</span></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="booking" aria-labelledby="booking-h">
+<div class="container">
+<div class="loc-wrap">
+<div>
+<div class="sec-head" data-reveal>
+<span class="kicker">Book your stay</span>
+<h2 id="booking-h">Claim an overwater suite</h2>
+<p class="lead">Only twelve sit over the lagoon, and they hold longest over the high season.</p>
+</div>
+<ul class="getting-list" data-reveal>
+<li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg></div><div><h3>Pick your dates</h3><p>Tell us when you&#x27;d like to stay and for how long.</p></div></li><li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l8 3.2v6c0 5-3.5 8-8 9.2C7.5 20 4 17 4 12V6l8-3.2z"/><path d="M9 12l2 2 4-4.5"/></svg></div><div><h3>No payment now</h3><p>This is an availability enquiry — nothing is charged today.</p></div></li><li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg></div><div><h3>We confirm by email</h3><p>A real person replies, usually within one working day.</p></div></li>
+</ul>
+</div>
+<div data-reveal><form class="booking" data-booking novalidate aria-label="Check availability">
+<h3>Check availability</h3>
+<p class="bk-sub">Pick your dates and party — no payment is taken now.</p>
+<div class="bk-grid">
+<div class="field"><label for="bk-date">Check-in</label><input type="date" id="bk-date" name="checkin" data-validate="date" aria-describedby="err-bk-date" required><span class="err" id="err-bk-date" hidden>Please choose a date.</span></div>
+<div class="field"><label for="bk-date2">Check-out</label><input type="date" id="bk-date2" name="checkout" data-validate="dateout" aria-describedby="err-bk-date2" required><span class="err" id="err-bk-date2" hidden>Choose a date after check-in.</span></div>
+<div class="field"><label for="bk-guests">Guests</label><select id="bk-guests" name="guests" data-validate="select" aria-describedby="err-bk-guests" required><option value="" selected disabled>Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6+ guests</option></select><span class="err" id="err-bk-guests" hidden>Please choose guests.</span></div>
+<div class="field col-2"><label for="bk-name">Full name</label><input type="text" id="bk-name" name="name" autocomplete="name" data-validate="name" aria-describedby="err-bk-name" required><span class="err" id="err-bk-name" hidden>Please enter your name.</span></div>
+<div class="field col-2"><label for="bk-email">Email</label><input type="email" id="bk-email" name="email" autocomplete="email" data-validate="email" aria-describedby="err-bk-email" required><span class="err" id="err-bk-email" hidden>Enter a valid email address.</span></div>
+<button class="btn bk-submit" type="submit">Search dates</button>
+<p class="bk-success" data-success tabindex="-1" role="status" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg> Thank you — your dates are noted and we&#x27;ll confirm availability by email.</p>
+<p class="bk-note">No payment is taken now &mdash; we confirm availability by email. Demo form.</p>
+</div>
+</form></div>
+</div>
+</div>
+</section>
+<section class="section" id="location" aria-labelledby="loc-h">
+<div class="container">
+<div class="loc-wrap">
+<div class="loc-copy">
+<div class="sec-head" data-reveal>
+<span class="kicker">Getting there</span>
+<h2 id="loc-h">On the lagoon&#x27;s edge</h2>
+<p class="lead">A forty-minute boat transfer from the regional airport across glass-clear water.</p>
+</div>
+<div class="getting-list"><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h16l-1.8 3.5H5.8L4 17z"/><path d="M12 3v14"/><path d="M12 4c4.5 2 6.5 6.5 6.5 11"/></svg></div>
+<div><h3>By boat</h3><p>Scheduled resort launches meet every flight at the regional airport.</p></div>
+</div><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.6 13.6 8.5 15.5l1.9-5.1 5.1-1.9z"/></svg></div>
+<div><h3>By seaplane</h3><p>Private seaplane on request lands directly on the lagoon.</p></div>
+</div><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+<div><h3>On arrival</h3><p>A welcome jetty, a cold towel and a barefoot check-in.</p></div>
+</div></div>
+</div>
+<div class="map-card" data-reveal role="img" aria-label="Stylised map showing the location of Coralline Bay Resort">
+<div class="map-canvas" style="background:linear-gradient(135deg, #D7F0F2, #F2E2DF)"></div>
+<div class="vis-over map-canvas" style="opacity:.5"></div>
+<div class="map-pin"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span class="pin-pulse"></span></div>
+<div class="map-addr"><b>Coralline Bay Resort</b>Coralline Bay &middot; North Lagoon, Tikuana Atoll</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" aria-labelledby="cta-h">
+<div class="container">
+<div class="cta-band" data-reveal>
+<div class="cta-bg" aria-hidden="true"></div>
+<h2 id="cta-h">Claim an overwater suite</h2>
+<p>Only twelve sit over the lagoon, and they hold longest over the high season.</p>
+<div class="hero-ctas" style="justify-content:center">
+<a class="btn btn-lg btn-on-hero" href="#booking">Book a Stay</a>
+<a class="btn btn-lg btn-on-hero btn-ghost" href="packages.html">See all villas &amp; suites</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand" href="#home" aria-label="Coralline Bay Resort home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="6" r="2.6"/><path d="M2 14c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/><path d="M2 19c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 3.5-1.5 5 0"/></svg></span>
+<span>Coralline Bay Resort</span>
+</a>
+<p>Overwater suites and beach villas strung along a warm lagoon, where the snorkelling starts at your steps and the day ends in the colour of coral.</p>
+<div class="foot-socials">
+<a class="social" href="#" data-demo-link aria-label="Coralline Bay Resort on social channel one"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.6 7.4h.01"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Coralline Bay Resort on social channel two"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3.5 3 10.8l5.8 2.4L11.5 20 21 3.5z"/><path d="M8.8 13.2 17 6.5"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Coralline Bay Resort on social channel three"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.8 8.6l6 3.4-6 3.4V8.6z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Coralline Bay Resort on social channel four"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8 8H4l2.1-3.1A8 8 0 1 1 21 11.5z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Coralline Bay Resort on social channel five"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M8 5h11v11"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer links">
+<h2 class="foot-h">Explore</h2>
+<ul class="foot-links">
+<li><a href="packages.html">Villas &amp; Suites</a></li>
+<li><a href="about.html#amenities">Amenities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h2 class="foot-h">Visit</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Coralline Bay<br>North Lagoon, Tikuana Atoll</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h2 class="foot-h">Contact</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h4l2 5-3 2a13.5 13.5 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17.5 17.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg><a href="tel:+9605550177">+960 555 0177</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg><a href="mailto:reservations@corallinebay.example">reservations@corallinebay.example</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom">
+<p>&copy; <span data-year>2026</span> Coralline Bay Resort. All rights reserved.</p>
+<p>A static HTML / CSS / JS template &mdash; no frameworks, no build step.</p>
+</div>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wildfern Glamping — Luxury Glamping in the Valley</title>
+<meta name="description" content="Wildfern Glamping is a glamping site website template: an immersive hero, a working booking enquiry widget, canvas stays, amenities, gallery, reviews and a location map — pure HTML, CSS and vanilla JS.">
+<meta name="theme-color" content="#D26A2D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23D26A2D'/%3E%3Cstop offset='1' stop-color='%235C7A3A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial%2Csans-serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+<header class="site-header" id="top">
+<div class="container nav-in">
+<a class="brand" href="#home" aria-label="Wildfern Glamping home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 2.5 20h19L12 4z"/><path d="M12 11l-4.5 9"/><path d="M12 11l4.5 9"/></svg></span>
+<span>Wildfern Glamping</span>
+</a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+<span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+</button>
+<ul class="nav-menu" id="nav-menu">
+<li><a class="nav-link" href="packages.html">Stays</a></li>
+<li><a class="nav-link" href="about.html#amenities">Amenities</a></li>
+<li><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm" href="contact.html">Book a Stay</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-v5" id="home">
+<div class="container">
+<div class="hero-split">
+<div class="hero-copy">
+<span class="kicker" data-reveal>Canvas, campfire &amp; cold streams · A wooded valley</span>
+<h1 data-reveal>Sleep under canvas, not compromise.</h1>
+<p class="hero-lead" data-reveal>Furnished bell tents, safari lodges and a stargazing dome scattered through a private valley — real beds, hot showers, a fire pit at every pitch and not a tent peg in sight.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg" href="#booking">Book a Stay</a>
+<a class="btn btn-lg btn-ghost" href="#rooms">Explore Stays</a>
+</div>
+</div>
+<div class="hero-art" data-reveal>
+<div class="vis" aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 24% 14%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(140deg, #D77C46 0%, #897435 54%, #506A32 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<span class="sticker top-r"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg> Fire at every pitch</span>
+<span class="sticker bot-l">Real beds</span>
+</div>
+</div>
+<div class="booking-inline" data-reveal><form class="booking" data-booking novalidate aria-label="Check availability">
+<h3>Check availability</h3>
+<p class="bk-sub">Pick your dates and party — no payment is taken now.</p>
+<div class="bk-grid">
+<div class="field"><label for="bk-date">Check-in</label><input type="date" id="bk-date" name="checkin" data-validate="date" aria-describedby="err-bk-date" required><span class="err" id="err-bk-date" hidden>Please choose a date.</span></div>
+<div class="field"><label for="bk-date2">Check-out</label><input type="date" id="bk-date2" name="checkout" data-validate="dateout" aria-describedby="err-bk-date2" required><span class="err" id="err-bk-date2" hidden>Choose a date after check-in.</span></div>
+<div class="field"><label for="bk-guests">Guests</label><select id="bk-guests" name="guests" data-validate="select" aria-describedby="err-bk-guests" required><option value="" selected disabled>Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6+ guests</option></select><span class="err" id="err-bk-guests" hidden>Please choose guests.</span></div>
+<div class="field col-2"><label for="bk-name">Full name</label><input type="text" id="bk-name" name="name" autocomplete="name" data-validate="name" aria-describedby="err-bk-name" required><span class="err" id="err-bk-name" hidden>Please enter your name.</span></div>
+<div class="field col-2"><label for="bk-email">Email</label><input type="email" id="bk-email" name="email" autocomplete="email" data-validate="email" aria-describedby="err-bk-email" required><span class="err" id="err-bk-email" hidden>Enter a valid email address.</span></div>
+<button class="btn bk-submit" type="submit">Search dates</button>
+<p class="bk-success" data-success tabindex="-1" role="status" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg> Thank you — your dates are noted and we&#x27;ll confirm availability by email.</p>
+<p class="bk-note">No payment is taken now &mdash; we confirm availability by email. Demo form.</p>
+</div>
+</form></div>
+</div>
+</section>
+<section class="section" id="rooms" aria-labelledby="rooms-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">Canvas Stays</span>
+<h2 id="rooms-h">Pick your pitch</h2>
+<p class="lead">From a snug bell tent for two to a family safari lodge, every stay comes made-up, lit and warm, with its own fire ring.</p>
+</div>
+<div class="cards-grid">
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-1" aria-label="Fernwood Bell Tent &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 41% 29%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(185deg, #D9804C 0%, #897435 54%, #506A32 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div></a>
+<div class="rcard-body">
+<h3>Fernwood Bell Tent</h3>
+<p class="rcard-desc">A cosy bell tent for two with a real bed and a wood-burner.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.8 2.8 3.8 4.2 3.8 7.7a3.8 3.8 0 0 1-7.6 0c0-1.6.7-2.7 1.3-3.7.5 1 1.2 1.6 2.2 1.8C11 7 10.8 5 12 3z"/><path d="M6 21h12"/></svg>Wood stove</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 18.5V6"/><path d="M2.5 14h19v4.5"/><path d="M2.5 11h7v3"/><path d="M21.5 14v-2a4 4 0 0 0-4-4h-8"/></svg>King bed</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 18.5C5.5 9.5 12 4.5 20 4.5c0 9-5 14-14.5 14z"/><path d="M5.5 18.5C8 13 12 9.5 16.5 8"/></svg>Garden</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$95 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-1">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-2" aria-label="Streamside Bell Tent &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 37% 23%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(153deg, #D9804C 0%, #897435 54%, #557035 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div></a>
+<div class="rcard-body">
+<h3>Streamside Bell Tent</h3>
+<p class="rcard-desc">The same snug tent, pitched right by the chattering stream.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.8 2.8 3.8 4.2 3.8 7.7a3.8 3.8 0 0 1-7.6 0c0-1.6.7-2.7 1.3-3.7.5 1 1.2 1.6 2.2 1.8C11 7 10.8 5 12 3z"/><path d="M6 21h12"/></svg>Wood stove</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Ensuite</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 18.5V6"/><path d="M2.5 14h19v4.5"/><path d="M2.5 11h7v3"/><path d="M21.5 14v-2a4 4 0 0 0-4-4h-8"/></svg>King bed</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$110 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-2">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-3" aria-label="Meadow Safari Lodge &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 26% 20%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(142deg, #D5733A 0%, #897435 54%, #506A32 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div></a>
+<div class="rcard-body">
+<h3>Meadow Safari Lodge</h3>
+<p class="rcard-desc">A furnished safari tent with a kitchen and a private deck.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.8 2.8 3.8 4.2 3.8 7.7a3.8 3.8 0 0 1-7.6 0c0-1.6.7-2.7 1.3-3.7.5 1 1.2 1.6 2.2 1.8C11 7 10.8 5 12 3z"/><path d="M6 21h12"/></svg>Wood stove</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 10.5h15V16a3.5 3.5 0 0 1-3.5 3.5H8A3.5 3.5 0 0 1 4.5 16v-5.5z"/><path d="M2.5 10.5h19"/><path d="M8.5 7.5c0-2.5 7-2.5 7 0"/></svg>Kitchen</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 18.5V6"/><path d="M2.5 14h19v4.5"/><path d="M2.5 11h7v3"/><path d="M21.5 14v-2a4 4 0 0 0-4-4h-8"/></svg>King bed</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$165 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-3">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-4" aria-label="Family Safari Lodge &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 21% 29%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(165deg, #D9804C 0%, #897435 54%, #557035 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div></a>
+<div class="rcard-body">
+<h3>Family Safari Lodge</h3>
+<p class="rcard-desc">Two canvas bedrooms, bunks for the kids and a big deck.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 14.5a4.8 4.8 0 0 0 7 0"/><path d="M9 9.5h.01M15 9.5h.01"/></svg>Family</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.8 2.8 3.8 4.2 3.8 7.7a3.8 3.8 0 0 1-7.6 0c0-1.6.7-2.7 1.3-3.7.5 1 1.2 1.6 2.2 1.8C11 7 10.8 5 12 3z"/><path d="M6 21h12"/></svg>Wood stove</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 10.5h15V16a3.5 3.5 0 0 1-3.5 3.5H8A3.5 3.5 0 0 1 4.5 16v-5.5z"/><path d="M2.5 10.5h19"/><path d="M8.5 7.5c0-2.5 7-2.5 7 0"/></svg>Kitchen</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$210 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-4">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-5" aria-label="The Stargazer Dome &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 35% 29%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(165deg, #D67740 0%, #897435 54%, #557035 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div></a>
+<div class="rcard-body">
+<h3>The Stargazer Dome</h3>
+<p class="rcard-desc">A clear-topped geodesic dome to fall asleep under the stars.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.5A8.5 8.5 0 1 1 10.5 3.5a7 7 0 0 0 10 10z"/></svg>Stargazing</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.8 2.8 3.8 4.2 3.8 7.7a3.8 3.8 0 0 1-7.6 0c0-1.6.7-2.7 1.3-3.7.5 1 1.2 1.6 2.2 1.8C11 7 10.8 5 12 3z"/><path d="M6 21h12"/></svg>Wood stove</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Ensuite</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$245 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-5">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-6" aria-label="The Hideaway Cabin &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 21% 41%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(179deg, #D9804C 0%, #897435 54%, #4B6430 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div></a>
+<div class="rcard-body">
+<h3>The Hideaway Cabin</h3>
+<p class="rcard-desc">A tiny timber cabin for couples who want walls and canvas.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a12 12 0 0 1 16 0"/><path d="M7.5 14.5a7 7 0 0 1 9 0"/><circle cx="12" cy="18.5" r="1"/></svg>Wi-Fi</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.8 2.8 3.8 4.2 3.8 7.7a3.8 3.8 0 0 1-7.6 0c0-1.6.7-2.7 1.3-3.7.5 1 1.2 1.6 2.2 1.8C11 7 10.8 5 12 3z"/><path d="M6 21h12"/></svg>Wood stove</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Ensuite</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 9h11v6a4 4 0 0 1-4 4h-3a4 4 0 0 1-4-4V9z"/><path d="M15.5 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M7.5 3.5v2M11.5 3.5v2"/></svg>Coffee</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$185 <span class="per">/ night</span></span>
+<a class="rcard-link" href="packages.html#pkg-6">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section host-band" aria-labelledby="host-h">
+<div class="container">
+<div class="host-wrap">
+<div class="host-photo" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 43% 17%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(131deg, #D67740 0%, #897435 54%, #557035 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div></div>
+<div data-reveal>
+<span class="kicker">Meet your hosts</span>
+<h2 id="host-h" class="sr-skip" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Meet your hosts</h2>
+<p class="host-quote"><span class="mark">&ldquo;</span>We fell for this valley fifteen years ago and have been coaxing people off their screens and round a campfire ever since. Bring wellies, bring marshmallows, leave your schedule at the gate.<span class="mark">&rdquo;</span></p>
+<p class="host-by">Bryn &amp; Carys<span>Wildfern&#x27;s founders</span></p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" aria-labelledby="how-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">How it works</span>
+<h2 id="how-h">From booking to campfire</h2>
+<p class="lead">Four easy steps from booking to the best bit.</p>
+</div>
+<div class="steps"><div class="step" data-reveal><h3>Pitch your dates</h3><p>Choose your canvas stay and book online in minutes.</p></div><div class="step" data-reveal><h3>Roll up &amp; settle</h3><p>Park at the barn; we barrow your bags to a made-up bed.</p></div><div class="step" data-reveal><h3>Light the fire</h3><p>Logs at every pitch — marshmallows are on the house.</p></div><div class="step" data-reveal><h3>Wander &amp; unwind</h3><p>Forest trails, dens for the kids and dark skies at night.</p></div></div>
+</div>
+</section>
+<section class="section sec-tint" id="amenities" aria-labelledby="amen-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">What&#x27;s included</span>
+<h2 id="amen-h">Everything you need</h2>
+<p class="lead">The details that turn a stay into the trip you remember.</p>
+</div>
+<div class="amenities-grid">
+<div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.8 2.8 3.8 4.2 3.8 7.7a3.8 3.8 0 0 1-7.6 0c0-1.6.7-2.7 1.3-3.7.5 1 1.2 1.6 2.2 1.8C11 7 10.8 5 12 3z"/><path d="M6 21h12"/></svg></div>
+<div><h3>A fire at every pitch</h3><p>Logs and kindling delivered, marshmallows on the house.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg></div>
+<div><h3>Hot showers &amp; loos</h3><p>Heated timber wash-houses, never a cold queue.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 10.5h15V16a3.5 3.5 0 0 1-3.5 3.5H8A3.5 3.5 0 0 1 4.5 16v-5.5z"/><path d="M2.5 10.5h19"/><path d="M8.5 7.5c0-2.5 7-2.5 7 0"/></svg></div>
+<div><h3>Camp kitchen &amp; store</h3><p>A stocked larder and a wood-fired pizza oven.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 18.5C5.5 9.5 12 4.5 20 4.5c0 9-5 14-14.5 14z"/><path d="M5.5 18.5C8 13 12 9.5 16.5 8"/></svg></div>
+<div><h3>Forest trails</h3><p>Waymarked walks straight from your tent flap.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 14.5a4.8 4.8 0 0 0 7 0"/><path d="M9 9.5h.01M15 9.5h.01"/></svg></div>
+<div><h3>Den-building &amp; dusk walks</h3><p>Wild play for children, bat walks at nightfall.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 9h11v6a4 4 0 0 1-4 4h-3a4 4 0 0 1-4-4V9z"/><path d="M15.5 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M7.5 3.5v2M11.5 3.5v2"/></svg></div>
+<div><h3>Morning provisions</h3><p>A basket of local bread, eggs and coffee at your door.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="gallery" aria-labelledby="gal-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">Gallery</span>
+<h2 id="gal-h">A look around</h2>
+<p class="lead">A glimpse of what waits for you — every image here is pure CSS and inline SVG.</p>
+</div>
+<div class="gallery-strip">
+<div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 24% 32%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(126deg, #D77C46 0%, #897435 54%, #557035 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Bell</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 20% 26%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(164deg, #D77C46 0%, #897435 54%, #4B6430 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Stream</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 37% 23%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(153deg, #D9804C 0%, #897435 54%, #557035 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Safari</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 35% 29%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(165deg, #D67740 0%, #897435 54%, #557035 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Dome</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 19% 35%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(177deg, #D67740 0%, #897435 54%, #557035 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Fire</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 43% 29%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(145deg, #D67740 0%, #897435 54%, #4B6430 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Forest</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 36% 26%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(124deg, #D77C46 0%, #897435 54%, #506A32 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Stars</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 19% 29%, #E19D74 0%, rgba(255,255,255,0) 46%), linear-gradient(135deg, #D67740 0%, #897435 54%, #557035 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Store</span></div>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="reviews" aria-labelledby="rev-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">Guest reviews</span>
+<h2 id="rev-h">What guests say</h2>
+<p class="lead">Real words from people who travelled before you.</p>
+</div>
+<div class="reviews-grid">
+<figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;Camping without the faff. The kids built dens all day, we sat by the fire all night. Magic.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">T</span>
+<span class="review-meta"><b>The Hartleys</b><span>Bristol</span></span>
+</figcaption>
+</figure><figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;The Stargazer Dome is unreal — we watched a meteor shower from the bed. Hot showers sealed it.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">A</span>
+<span class="review-meta"><b>Aoife &amp; Sean</b><span>Galway</span></span>
+</figcaption>
+</figure><figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 4 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;Proper beds, real fire, lovely valley. Bring wellies if it&#x27;s been raining and you&#x27;ll have a ball.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">D</span>
+<span class="review-meta"><b>Daniel K.</b><span>Amsterdam</span></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="booking" aria-labelledby="booking-h">
+<div class="container">
+<div class="loc-wrap">
+<div>
+<div class="sec-head" data-reveal>
+<span class="kicker">Book your stay</span>
+<h2 id="booking-h">Book your patch of valley</h2>
+<p class="lead">Summer weekends and the Stargazer Dome book out months ahead — pitch your dates now.</p>
+</div>
+<ul class="getting-list" data-reveal>
+<li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg></div><div><h3>Pick your dates</h3><p>Tell us when you&#x27;d like to stay and for how long.</p></div></li><li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l8 3.2v6c0 5-3.5 8-8 9.2C7.5 20 4 17 4 12V6l8-3.2z"/><path d="M9 12l2 2 4-4.5"/></svg></div><div><h3>No payment now</h3><p>This is an availability enquiry — nothing is charged today.</p></div></li><li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg></div><div><h3>We confirm by email</h3><p>A real person replies, usually within one working day.</p></div></li>
+</ul>
+</div>
+<div data-reveal><form class="booking" data-booking novalidate aria-label="Check availability">
+<h3>Check availability</h3>
+<p class="bk-sub">Pick your dates and party — no payment is taken now.</p>
+<div class="bk-grid">
+<div class="field"><label for="bk-date">Check-in</label><input type="date" id="bk-date" name="checkin" data-validate="date" aria-describedby="err-bk-date" required><span class="err" id="err-bk-date" hidden>Please choose a date.</span></div>
+<div class="field"><label for="bk-date2">Check-out</label><input type="date" id="bk-date2" name="checkout" data-validate="dateout" aria-describedby="err-bk-date2" required><span class="err" id="err-bk-date2" hidden>Choose a date after check-in.</span></div>
+<div class="field"><label for="bk-guests">Guests</label><select id="bk-guests" name="guests" data-validate="select" aria-describedby="err-bk-guests" required><option value="" selected disabled>Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6+ guests</option></select><span class="err" id="err-bk-guests" hidden>Please choose guests.</span></div>
+<div class="field col-2"><label for="bk-name">Full name</label><input type="text" id="bk-name" name="name" autocomplete="name" data-validate="name" aria-describedby="err-bk-name" required><span class="err" id="err-bk-name" hidden>Please enter your name.</span></div>
+<div class="field col-2"><label for="bk-email">Email</label><input type="email" id="bk-email" name="email" autocomplete="email" data-validate="email" aria-describedby="err-bk-email" required><span class="err" id="err-bk-email" hidden>Enter a valid email address.</span></div>
+<button class="btn bk-submit" type="submit">Search dates</button>
+<p class="bk-success" data-success tabindex="-1" role="status" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg> Thank you — your dates are noted and we&#x27;ll confirm availability by email.</p>
+<p class="bk-note">No payment is taken now &mdash; we confirm availability by email. Demo form.</p>
+</div>
+</form></div>
+</div>
+</div>
+</section>
+<section class="section" id="location" aria-labelledby="loc-h">
+<div class="container">
+<div class="loc-wrap">
+<div class="loc-copy">
+<div class="sec-head" data-reveal>
+<span class="kicker">Getting there</span>
+<h2 id="loc-h">Down in the valley</h2>
+<p class="lead">A private wooded valley twenty minutes off the main road, with the nearest village a short drive.</p>
+</div>
+<div class="getting-list"><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 16.5V8a2 2 0 0 1 2-2h9.5l7 5.5v5"/><path d="M2.5 16.5h19"/><circle cx="7" cy="18.5" r="2"/><circle cx="17" cy="18.5" r="2"/><path d="M14 6v5h7"/></svg></div>
+<div><h3>By car</h3><p>Park at the welcome barn; we ferry your bags to the pitch by trailer.</p></div>
+</div><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+<div><h3>On foot</h3><p>The village pub and shop are a twenty-minute walk along the brook.</p></div>
+</div><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.6 13.6 8.5 15.5l1.9-5.1 5.1-1.9z"/></svg></div>
+<div><h3>Getting here</h3><p>Detailed directions follow your booking — sat-nav stops short of the gate.</p></div>
+</div></div>
+</div>
+<div class="map-card" data-reveal role="img" aria-label="Stylised map showing the location of Wildfern Glamping">
+<div class="map-canvas" style="background:linear-gradient(135deg, #F3E3D2, #DFE0CD)"></div>
+<div class="vis-over map-canvas" style="opacity:.5"></div>
+<div class="map-pin"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span class="pin-pulse"></span></div>
+<div class="map-addr"><b>Wildfern Glamping</b>Wildfern Valley &middot; Off Hollowbrook Lane, Greenmere</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" aria-labelledby="cta-h">
+<div class="container">
+<div class="cta-band" data-reveal>
+<div class="cta-bg" aria-hidden="true"></div>
+<h2 id="cta-h">Book your patch of valley</h2>
+<p>Summer weekends and the Stargazer Dome book out months ahead — pitch your dates now.</p>
+<div class="hero-ctas" style="justify-content:center">
+<a class="btn btn-lg btn-on-hero" href="#booking">Book a Stay</a>
+<a class="btn btn-lg btn-on-hero btn-ghost" href="packages.html">See all all stays</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand" href="#home" aria-label="Wildfern Glamping home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 2.5 20h19L12 4z"/><path d="M12 11l-4.5 9"/><path d="M12 11l4.5 9"/></svg></span>
+<span>Wildfern Glamping</span>
+</a>
+<p>Furnished bell tents, safari lodges and a stargazing dome scattered through a private valley — real beds, hot showers, a fire pit at every pitch and not a </p>
+<div class="foot-socials">
+<a class="social" href="#" data-demo-link aria-label="Wildfern Glamping on social channel one"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.6 7.4h.01"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Wildfern Glamping on social channel two"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3.5 3 10.8l5.8 2.4L11.5 20 21 3.5z"/><path d="M8.8 13.2 17 6.5"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Wildfern Glamping on social channel three"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.8 8.6l6 3.4-6 3.4V8.6z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Wildfern Glamping on social channel four"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8 8H4l2.1-3.1A8 8 0 1 1 21 11.5z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Wildfern Glamping on social channel five"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M8 5h11v11"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer links">
+<h2 class="foot-h">Explore</h2>
+<ul class="foot-links">
+<li><a href="packages.html">All Stays</a></li>
+<li><a href="about.html#amenities">Amenities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h2 class="foot-h">Visit</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Wildfern Valley<br>Off Hollowbrook Lane, Greenmere</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h2 class="foot-h">Contact</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h4l2 5-3 2a13.5 13.5 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17.5 17.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg><a href="tel:+441453555012">+44 1453 555 012</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg><a href="mailto:hello@wildfernglamping.example">hello@wildfernglamping.example</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom">
+<p>&copy; <span data-year>2026</span> Wildfern Glamping. All rights reserved.</p>
+<p>A static HTML / CSS / JS template &mdash; no frameworks, no build step.</p>
+</div>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>
