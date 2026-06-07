@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak — Dapur Kunyit</title>
+<meta name="description" content="Pesan meja, tanya tentang katering, atau temukan Dapur Kunyit di Kemang, Jakarta — jam buka, peta, dan kontak.">
+<meta name="theme-color" content="#B3321B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23B3321B'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+<header class="site-header header-thick" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Dapur Kunyit home"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-5 7.4V20H9v-1.6A8 8 0 0 1 4 11z"/><path d="M9 7.5c0-1.4 1.2-1.4 1.2-2.8M13 7.5c0-1.4 1.2-1.4 1.2-2.8"/></svg></span><span class="brand-name">Dapur Kunyit</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="menu.html">Menu</a></li>
+<li><a class="nav-link" href="menu.html">Today's Special</a></li>
+<li><a class="nav-link" href="about.html">Our Kitchen</a></li>
+<li><a class="nav-link" href="about.html#gallery">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="contact.html" aria-current="page">Book</a></li>
+<li><a class="nav-link" href="menu.html">Full Menu</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="contact.html">Book a Table</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" class="ct-page">
+<nav class="mp-crumb" aria-label="Breadcrumb">
+<div class="container">
+<ol class="mp-crumb-list">
+<li><a href="index.html">Beranda</a></li>
+<li aria-current="page">Kontak</li>
+</ol>
+</div>
+</nav>
+<section class="section mp-hero ct-hero" id="ct-top">
+<div class="container">
+<div class="mp-hero-in" data-reveal>
+<span class="kicker">Reservasi</span>
+<h1 class="mp-title">Pesan meja atau sapa kami</h1>
+<p class="mp-note">Ruang makan hangat bernuansa batik, harga dalam rupiah. Beri tahu kapan Anda ingin datang dan kami siapkan tempatnya.</p>
+</div>
+</div>
+</section>
+<section class="section ct-form-sec" id="enquire" aria-labelledby="ct-form-h">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Reservasi</span>
+<h2 id="ct-form-h">Pesan meja</h2>
+<p class="lead">Rombongan besar sebaiknya pesan sehari sebelumnya. Tuliskan permintaan khusus di kolom pesan — kami balas lewat email.</p>
+</div>
+<div class="res-frame ct-frame" data-reveal>
+<div class="res-frame-grid">
+<form id="main-form" class="res-form ct-form" novalidate>
+<div class="field">
+<label for="name">Nama Anda</label>
+<input id="name" name="name" type="text" placeholder="Budi Santoso" autocomplete="off" data-validate="name">
+<span class="f-err" id="err-name" hidden>Mohon isi nama Anda (minimal 2 karakter).</span>
+</div>
+<div class="field">
+<label for="email">Alamat email</label>
+<input id="email" name="email" type="email" placeholder="anda@contoh.com" autocomplete="off" data-validate="email">
+<span class="f-err" id="err-email" hidden>Mohon masukkan alamat email yang valid.</span>
+</div>
+<div class="field">
+<label for="date">Tanggal kunjungan</label>
+<input id="date" name="date" type="date" autocomplete="off" data-validate="date">
+<span class="f-err" id="err-date" hidden>Mohon pilih tanggal.</span>
+</div>
+<div class="field">
+<label for="guests">Jumlah tamu</label>
+<select data-validate="guests" id="guests" name="guests"><option value="">Pilih…</option><option value="1">1 tamu</option><option value="2">2 tamu</option><option value="3">3 tamu</option><option value="4">4 tamu</option><option value="5">5 tamu</option><option value="6">6 tamu</option><option value="7">7 tamu</option><option value="8">8 tamu</option></select>
+<span class="f-err" id="err-guests" hidden>Mohon pilih jumlah tamu.</span>
+</div>
+<div class="field">
+<label for="note">Pesan</label>
+<textarea id="note" name="note" rows="3" placeholder="Ceritakan sedikit tentang kunjungan Anda…" data-validate="note"></textarea>
+<span class="f-err" id="err-note" hidden>Mohon tambahkan pesan singkat (minimal 4 karakter).</span>
+</div>
+<p class="f-success" id="form-success" hidden role="status">Terima kasih — permintaan Anda telah kami terima. Kami akan membalas melalui email segera.</p>
+<button class="btn btn-lg btn-submit" type="submit">Kirim Permintaan</button>
+<p class="f-fine">Tanpa pembayaran sekarang — formulir demo ini hanya divalidasi di peramban.</p>
+</form>
+<aside class="res-aside ct-aside">
+<h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg> Jam buka</h3>
+<ul class="hours-list" data-hours>
+<li data-day="0"><span>Senin</span><span class="hrs">Tutup</span></li>
+<li data-day="1"><span>Selasa</span><span class="hrs">11.00 – 22.00</span></li>
+<li data-day="2"><span>Rabu</span><span class="hrs">11.00 – 22.00</span></li>
+<li data-day="3"><span>Kamis</span><span class="hrs">11.00 – 22.00</span></li>
+<li data-day="4"><span>Jumat</span><span class="hrs">11.00 – 23.00</span></li>
+<li data-day="5"><span>Sabtu</span><span class="hrs">10.00 – 23.00</span></li>
+<li data-day="6"><span>Minggu</span><span class="hrs">10.00 – 22.00</span></li>
+</ul>
+<h3 class="block-h ct-aside-h2"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Temukan kami</h3>
+<ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Jl. Kenanga No. 12, Kemang, Jakarta Selatan 12730</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+62215550148">+62 21 555 0148</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:halo@dapurkunyit.id">halo@dapurkunyit.id</a></li>
+</ul>
+<p class="visit-note">Beside the flower market · parkir motor di depan · musholla available</p>
+</aside>
+</div>
+</div>
+</div>
+</section>
+<section class="section ct-cards" aria-labelledby="ct-cards-h">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Kontak</span>
+<h2 id="ct-cards-h">How to reach us</h2>
+</div>
+<div class="ct-cards-grid">
+<article class="ct-card" data-reveal><span class="ct-card-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><h3>Alamat</h3><p>Jl. Kenanga No. 12, Kemang, Jakarta Selatan 12730</p></article>
+<article class="ct-card" data-reveal><span class="ct-card-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span><h3>Telepon</h3><a href="tel:+62215550148">+62 21 555 0148</a></article>
+<article class="ct-card" data-reveal><span class="ct-card-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg></span><h3>Email</h3><a href="mailto:halo@dapurkunyit.id">halo@dapurkunyit.id</a></article>
+</div>
+</div>
+</section>
+<section class="section ct-location" id="location" aria-labelledby="ct-loc-h">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Cara ke sini</span>
+<h2 id="ct-loc-h">Temukan kami</h2>
+<p class="lead">The map below is a styled placeholder — drop in your favourite embed when you go live.</p>
+</div>
+<div class="visit-grid">
+<div class="map-wrap" data-reveal>
+<div class="map-ph" role="img" aria-label="Placeholder peta bergaya for Jl. Kenanga No. 12, Kemang, Jakarta Selatan 12730">
+<span class="map-road map-road-a" aria-hidden="true"></span>
+<span class="map-road map-road-b" aria-hidden="true"></span>
+<span class="map-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+</div>
+<div class="map-card">
+<strong>Dapur Kunyit</strong>
+<p>Jl. Kenanga No. 12<br>Kemang, Jakarta Selatan 12730</p>
+<p class="map-note">Beside the flower market · parkir motor di depan · musholla available</p>
+</div>
+</div>
+<div class="visit-info">
+<div class="visit-contact" data-reveal>
+<h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8 18h6a4 4 0 0 0 0-8H9a4 4 0 0 1 0-8"/></svg> Cara ke sini</h3>
+<ul class="contact-lines ct-getting">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Di samping pasar bunga, Kemang</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8 18h6a4 4 0 0 0 0-8H9a4 4 0 0 1 0-8"/></svg><span>Parkir motor di depan; angkutan umum lewat depan</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.6-7-9.4A3.6 3.6 0 0 1 12 8a3.6 3.6 0 0 1 7 2.6C19 15.4 12 20 12 20z"/></svg><span>Tersedia musholla; ruang keluarga yang ramah anak</span></li>
+</ul>
+</div>
+<div class="ct-events" data-reveal>
+<h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.6M15 14.4a6 6 0 0 1 6 5.6"/></svg> Acara & katering</h3>
+<p>Kami melayani katering untuk acara keluarga, kantor, dan syukuran dengan nasi tumpeng dan prasmanan. Kirim email berisi tanggal dan jumlah tamu untuk penawaran dan menu khusus.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section ct-social" aria-labelledby="ct-social-h">
+<div class="container ct-social-in" data-reveal>
+<h2 id="ct-social-h" class="ct-social-h">Ikuti kami</h2>
+<div class="foot-socials ct-socials">
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on Instagram"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on Facebook"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on WhatsApp"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19l1.2-3.4A7 7 0 1 1 9 18.2z"/><path d="M9 9c0 3 3 6 6 6 .8 0 1.2-.4 1.2-1.2l-2-1-1 1c-1-.4-2.2-1.6-2.6-2.6l1-1-1-2C9.4 7.8 9 8.2 9 9z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on X"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on TikTok"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand foot-logo" href="index.html"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-5 7.4V20H9v-1.6A8 8 0 0 1 4 11z"/><path d="M9 7.5c0-1.4 1.2-1.4 1.2-2.8M13 7.5c0-1.4 1.2-1.4 1.2-2.8"/></svg></span><span>Dapur Kunyit</span></a>
+<p>Family-recipe Indonesian kitchen — seven-hour rendang, charcoal sate and sambal ground fresh daily since 1987.</p>
+<div class="foot-socials">
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer quick links">
+<h3 class="foot-h">Explore</h3>
+<ul class="foot-links">
+<li><a href="menu.html">Menu</a></li>
+<li><a href="menu.html">Today's Special</a></li>
+<li><a href="about.html">Our Kitchen</a></li>
+<li><a href="about.html#gallery">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="contact.html" aria-current="page">Book</a></li>
+<li><a href="menu.html">Full Menu</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h3 class="foot-h">Hours</h3>
+<ul class="foot-hours">
+<li><span>Monday</span><span>Closed</span></li>
+<li><span>Thursday</span><span>11:00 am – 9:30 pm</span></li>
+<li><span>Sunday</span><span>10:00 am – 9:00 pm</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h3 class="foot-h">Find Us</h3>
+<address class="foot-addr">
+Jl. Kenanga No. 12<br>Kemang, Jakarta Selatan 12730<br>
+<a href="tel:+62215550148">+62 21 555 0148</a><br>
+<a href="mailto:halo@dapurkunyit.id">halo@dapurkunyit.id</a>
+</address>
+</div>
+</div>
+<div class="container foot-bottom">
+<p>&copy; <span data-year>2025</span> Dapur Kunyit. All rights reserved.</p>
+<p class="foot-fine">Crafted as a static HTML/CSS/JS template — no frameworks, no build step.</p>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

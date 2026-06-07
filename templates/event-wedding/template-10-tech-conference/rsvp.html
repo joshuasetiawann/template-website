@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShiftStack 2026 &mdash; RSVP</title>
+  <meta name="description" content="RSVP for ShiftStack 2026 — the full validated reply form, gifts or tickets, a before-you-reply note and contact details. Pure HTML, CSS and vanilla JS.">
+  <meta name="theme-color" content="#0B0F1A">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2064%2064%27%3E%3Crect%20width=%2764%27%20height=%2764%27%20rx=%2713%27%20fill=%27%233B82F6%27/%3E%3Ctext%20x=%2732%27%20y=%2744%27%20font-family=%27Arial,sans-serif%27%20font-size=%2734%27%20font-weight=%27700%27%20text-anchor=%27middle%27%20fill=%27%23FFFFFF%27%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="theme-v3 tpl-10 is-dark">
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="ShiftStack 2026 home">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-mono">SS</span></span>
+        <span class="brand-name">ShiftStack 2026</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="details.html#speakers">Speakers</a></li>
+          <li><a class="nav-link" href="details.html#schedule">Schedule</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link" href="details.html#venue">Venue</a></li>
+          <li><a class="nav-link" href="rsvp.html" aria-current="page">Register</a></li>
+          <li><a class="nav-link" href="rsvp.html#tickets">Tickets</a></li>
+          <li><a class="nav-link" href="details.html#faq">FAQ</a></li>
+          <li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="rsvp.html#tickets">Get Tickets</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+  <section class="page-hero" aria-label="Page header">
+    <div class="page-hero-orn" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol class="crumbs-list">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page"><span>RSVP</span></li>
+        </ol>
+      </nav>
+      <span class="kicker" data-reveal>Kindly reply</span>
+      <h1 class="page-hero-title" data-reveal>RSVP</h1>
+      <p class="page-hero-lead lead" data-reveal>Two minutes, four fields. Let us know if you can make it — we cannot wait to hear from you.</p>
+    </div>
+  </section>
+<section class="section sec-rsvp" id="rsvp" aria-labelledby="rsvp-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Register</span>
+        <h2 id="rsvp-h">Save your seat</h2>
+        <p class="lead">Reserve a pass and pick your tracks. Confirmation is browser-side only.</p>
+      </div>
+      <div class="rsvp-wrap">
+        <form class="rsvp-card" data-rsvp novalidate aria-label="Save your seat form">
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          <div class="form-body" data-form-body>
+            <div class="field-grid">
+      <div class="field" data-field="name" data-required="1">
+        <label class="field-label" for="rsvp-name">Full name <span class="req" aria-hidden="true">*</span></label>
+        <input class="field-control" id="rsvp-name" name="name" type="text" placeholder="e.g. Alex Morgan" aria-describedby="rsvp-name-err" required>
+        <span class="field-err" id="rsvp-name-err" role="alert"></span>
+      </div>
+      <div class="field" data-field="email" data-required="1">
+        <label class="field-label" for="rsvp-email">Email address <span class="req" aria-hidden="true">*</span></label>
+        <input class="field-control" id="rsvp-email" name="email" type="email" placeholder="you@example.com" aria-describedby="rsvp-email-err" required>
+        <span class="field-err" id="rsvp-email-err" role="alert"></span>
+      </div>
+      <div class="field" data-field="attend" data-required="1">
+        <label class="field-label" for="rsvp-attend">Will you attend? <span class="req" aria-hidden="true">*</span></label>
+        <div class="select-wrap">
+          <select class="field-control" id="rsvp-attend" name="attend" required aria-describedby="rsvp-attend-err">
+            <option value="" disabled selected>Choose one…</option>
+            <option value="in-person">Yes, in person</option>
+            <option value="online">Online / livestream</option>
+            <option value="no">Cannot make it</option>
+          </select>
+          <span class="select-chev" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </div>
+        <span class="field-err" id="rsvp-attend-err" role="alert"></span>
+      </div>
+      <div class="field" data-field="guests" data-required="1">
+        <label class="field-label" for="rsvp-guests">Seats needed <span class="req" aria-hidden="true">*</span></label>
+        <div class="select-wrap">
+          <select class="field-control" id="rsvp-guests" name="guests" required aria-describedby="rsvp-guests-err">
+            <option value="" disabled selected>Select…</option>
+            <option value="1">Just me (1)</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+            <option value="6+">6 or more</option>
+          </select>
+          <span class="select-chev" aria-hidden="true"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </div>
+        <span class="field-err" id="rsvp-guests-err" role="alert"></span>
+      </div>
+      <div class="field field-span-2" data-field="text">
+        <label class="field-label" for="rsvp-message">Message (optional) <span class="opt">(optional)</span></label>
+        <textarea class="field-control" id="rsvp-message" name="message" rows="3" placeholder="A note for the hosts…" aria-describedby="rsvp-message-err"></textarea>
+        <span class="field-err" id="rsvp-message-err" role="alert"></span>
+      </div>
+            </div>
+            <button class="btn btn-lg form-submit" type="submit">Get Tickets <svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+            <p class="form-fineprint">This is a front-end demo — nothing is sent or stored. Replies validate in your browser only.</p>
+          </div>
+      <div class="form-success" data-form-success hidden>
+        <span class="fs-ic" aria-hidden="true"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <h3>Thank you, <span data-success-name>friend</span>!</h3>
+        <p>Your spot is reserved. A confirmation and joining details would normally land in your inbox.</p>
+        <button class="btn btn-sm btn-ghost" type="button" data-form-reset>Edit response</button>
+      </div>
+        </form>
+      </div>
+    </div>
+  </section><section class="section sec-tickets is-tint" id="tickets" aria-labelledby="tickets-h">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Passes</span>
+        <h2 id="tickets-h">Tickets</h2>
+        <p class="lead">Early-bird pricing ends 31 August 2026.</p>
+      </div>
+      <div class="tickets-grid">
+        <article class="ticket-card" data-reveal>
+          <span class="ticket-notch ticket-notch-l" aria-hidden="true"></span>
+          <span class="ticket-notch ticket-notch-r" aria-hidden="true"></span>
+          <h3 class="ticket-name">Community</h3>
+          <p class="ticket-price">$0 <span>expo + livestream</span></p>
+          <ul class="ticket-feats">
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Expo hall access</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Livestreamed keynotes</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Community Discord</li>
+          </ul>
+          <a class="btn btn-block btn-ghost" href="#rsvp">Get free pass</a>
+        </article>
+        <article class="ticket-card is-featured" data-reveal>
+          <span class="ticket-ribbon">Most popular</span>
+          <span class="ticket-notch ticket-notch-l" aria-hidden="true"></span>
+          <span class="ticket-notch ticket-notch-r" aria-hidden="true"></span>
+          <h3 class="ticket-name">Conference</h3>
+          <p class="ticket-price">$399 <span>both days</span></p>
+          <ul class="ticket-feats">
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>All talks &amp; tracks</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Workshop access</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Lunch + after party</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Talk recordings</li>
+          </ul>
+          <a class="btn btn-block" href="#rsvp">Buy conference pass</a>
+        </article>
+        <article class="ticket-card" data-reveal>
+          <span class="ticket-notch ticket-notch-l" aria-hidden="true"></span>
+          <span class="ticket-notch ticket-notch-r" aria-hidden="true"></span>
+          <h3 class="ticket-name">Team</h3>
+          <p class="ticket-price">$1,499 <span>5 seats</span></p>
+          <ul class="ticket-feats">
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>5 conference passes</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Reserved seating</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Private team lounge</li>
+            <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>Invoice billing</li>
+          </ul>
+          <a class="btn btn-block btn-ghost" href="#rsvp">Buy team pass</a>
+        </article>
+      </div>
+      <div class="promo" data-reveal>
+        <p>Have an early-bird code? Use it at checkout to save.</p>
+        <div class="promo-code">
+          <code>STACK20</code>
+          <span class="copy-wrap">
+            <button class="btn btn-sm copy-btn" type="button" data-copy="STACK20" data-label="Copy code"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg> Copy code</button>
+            <span class="copy-live" role="status" aria-live="polite"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>  <section class="section sec-ntk" id="before-you-rsvp" aria-labelledby="ntk-h">
+    <div class="container narrow">
+      <div class="sec-head" data-reveal>
+        <span class="kicker">Before You Reply</span>
+        <h2 id="ntk-h">A few things to know first</h2>
+      </div>
+      <ul class="ntk-list">
+          <li data-reveal><span class="ntk-dot" aria-hidden="true"></span><span>Register on this site, then pick your pass in the tickets section.</span></li>
+          <li data-reveal><span class="ntk-dot" aria-hidden="true"></span><span>All talks are recorded and shared afterward.</span></li>
+          <li data-reveal><span class="ntk-dot" aria-hidden="true"></span><span>Lunch and the after party are included with paid passes.</span></li>
+          <li data-reveal><span class="ntk-dot" aria-hidden="true"></span><span>Read the code of conduct linked from your ticket before you arrive.</span></li>
+      </ul>
+    </div>
+  </section>
+  <section class="section sec-contactnote is-tint" aria-label="Contact for questions">
+    <div class="container narrow contactnote-inner" data-reveal>
+      <h2>Questions before you reply?</h2>
+      <p class="lead">Anything at all — dietary needs, access, travel — just ask. We answer every message.</p>
+      <p class="contactnote-line"><a class="btn btn-ghost" href="mailto:hello@shiftstack.example"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg> Email ShiftStack 2026</a></p>
+    </div>
+  </section>
+  </main>
+<footer class="site-footer" aria-label="Footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <p class="footer-brand"><span class="brand-mark" aria-hidden="true"><span class="brand-mono">SS</span></span>ShiftStack 2026</p>
+        <p class="footer-blurb">The engineering summit for the people building what’s next.</p>
+        <p class="footer-line"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Wednesday, 21 October 2026 &middot; 9:00 AM</p>
+        <p class="footer-line"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Pier 48 Convention Center, San Francisco, California</p>
+      </div>
+      <nav class="footer-col" aria-label="Footer links">
+        <h2 class="footer-head">Quick links</h2>
+        <ul class="footer-links">
+          <li><a href="details.html#speakers">Speakers</a></li>
+          <li><a href="details.html#schedule">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="details.html#venue">Venue</a></li>
+          <li><a href="rsvp.html">Register</a></li>
+          <li><a href="rsvp.html#tickets">Tickets</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2 class="footer-head">Contact</h2>
+        <ul class="footer-links footer-contact">
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg><a href="mailto:hello@shiftstack.example">hello@shiftstack.example</a></li>
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 3.4a2 2 0 0 1-.5 1.8L8 10.2a16 16 0 0 0 5.8 5.8l1.3-1.3a2 2 0 0 1 1.8-.5l3.4.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+1(415)5550102">+1 (415) 555 0102</a></li>
+          <li><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>San Francisco, California</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-head">Stay connected</h2>
+        <p class="footer-blurb">Use #ShiftStack2026 and tag us in your photos.</p>
+        <ul class="social-row">
+            <li><a class="social-link" href="#top" aria-label="Twitter" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 5.8a8 8 0 0 1-2.3.6 4 4 0 0 0 1.8-2.2 8 8 0 0 1-2.5 1 4 4 0 0 0-6.9 3.6A11.3 11.3 0 0 1 3.9 4.7a4 4 0 0 0 1.2 5.3 4 4 0 0 1-1.8-.5 4 4 0 0 0 3.2 4 4 4 0 0 1-1.8.1 4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.1a11.3 11.3 0 0 0 6.1 1.8c7.4 0 11.4-6.1 11.4-11.4v-.5A8 8 0 0 0 22 5.8z"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Linkedin" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="7" y1="10" x2="7" y2="17"/><circle cx="7" cy="6.8" r="1.2" fill="currentColor" stroke="none"/><path d="M11 17v-4a2.5 2.5 0 0 1 5 0v4M11 11v6"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Youtube" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10 9 16 12 10 15 10 9" fill="currentColor" stroke="none"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Instagram" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a></li>
+            <li><a class="social-link" href="#top" aria-label="Facebook" data-demo-link><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 9V7c0-1 .5-1.5 1.5-1.5H17V2.5h-2.5C12 2.5 11 4 11 6.5V9H8.5v3H11v9.5h3V12h2.3l.5-3z"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> ShiftStack 2026. A demo template, free to adapt.</p>
+      <p class="footer-credit">Built as a static template — HTML, CSS &amp; vanilla JS.</p>
+    </div>
+  </footer>
+  <button class="to-top" type="button" data-totop aria-label="Back to top"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+</body>
+</html>

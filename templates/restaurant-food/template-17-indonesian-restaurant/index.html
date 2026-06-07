@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dapur Kunyit — Indonesian Restaurant</title>
+<meta name="description" content="Dapur Kunyit is a warm batik-accented Indonesian restaurant template with rendang and sate menus in rupiah, a daily specials board and table bookings.">
+<meta name="theme-color" content="#B3321B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23B3321B'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header header-thick" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Dapur Kunyit home"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-5 7.4V20H9v-1.6A8 8 0 0 1 4 11z"/><path d="M9 7.5c0-1.4 1.2-1.4 1.2-2.8M13 7.5c0-1.4 1.2-1.4 1.2-2.8"/></svg></span><span class="brand-name">Dapur Kunyit</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="menu.html">Menu</a></li>
+<li><a class="nav-link" href="menu.html">Today's Special</a></li>
+<li><a class="nav-link" href="about.html">Our Kitchen</a></li>
+<li><a class="nav-link" href="about.html#gallery">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="contact.html">Book</a></li>
+<li><a class="nav-link" href="menu.html">Full Menu</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="contact.html">Book a Table</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-banner" id="top-hero">
+<div class="container banner-grid">
+<div class="hero-copy">
+<span class="kicker" data-reveal>Resep keluarga · family recipes since 1987</span>
+<h1 data-reveal>Rendang yang dimasak tujuh jam, served with pride.</h1>
+<p class="hero-lead" data-reveal>An Indonesian kitchen built on Ibu Sari's handwritten recipes — seven-hour rendang, charcoal sate and sambal ground fresh in the stone cobek every morning.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg" href="#order">Book a Table</a>
+<a class="btn btn-lg btn-ghost" href="#menu">Lihat Menu</a>
+</div>
+</div>
+<div class="banner-art" role="img" aria-label="Bold panel evoking Indonesian Restaurant">
+<span class="badge-rot" aria-hidden="true">Resep asli 1987</span>
+<span class="banner-motif" aria-hidden="true"><svg class="motif-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-5 7.4V20H9v-1.6A8 8 0 0 1 4 11z"/><path d="M9 7.5c0-1.4 1.2-1.4 1.2-2.8M13 7.5c0-1.4 1.2-1.4 1.2-2.8"/></svg></span>
+</div>
+</div>
+</section>
+<section class="hero-strip" aria-label="Dari Dapur Kami">
+<div class="container strip-in">
+<span class="strip-kicker">Dari Dapur Kami</span>
+<p>Every sambal is ground by hand in the cobek each morning — five kinds daily, from gentle kecap to the one we make you sign for.</p>
+<a class="btn btn-sm btn-invert" href="#menu">Browse the menu</a>
+</div>
+</section>
+<section class="section sec-menu" id="menu" data-menu aria-label="Menu">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Menu Kami</span>
+<h2 class="">From the wok, the grill &amp; the pot</h2>
+<p class="lead">Recipes follow Ibu Sari's 1987 notebook. Spice levels run gentle to galak — your server will calibrate honestly. Prices in rupiah.</p>
+</div>
+<div class="menu-tabs" role="tablist" aria-label="Menu categories">
+<button class="menu-tab is-active" type="button" role="tab" id="tab-nasi" aria-controls="panel-nasi" aria-selected="true" data-tab="nasi">Nasi &amp; Mie</button>
+<button class="menu-tab" type="button" role="tab" id="tab-sate" aria-controls="panel-sate" aria-selected="false" data-tab="sate">Sate &amp; Grill</button>
+<button class="menu-tab" type="button" role="tab" id="tab-gulai" aria-controls="panel-gulai" aria-selected="false" data-tab="gulai">Rendang &amp; Gulai</button>
+<button class="menu-tab" type="button" role="tab" id="tab-manis" aria-controls="panel-manis" aria-selected="false" data-tab="manis">Jajanan &amp; Es</button>
+</div>
+<div class="menu-panel menu-board" role="tabpanel" id="panel-nasi" aria-labelledby="tab-nasi" data-panel="nasi">
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Nasi Goreng Kampung<span class="mi-tag">Signature</span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 48.000</span></div>
+<p class="mi-desc">Village-style fried rice, smoky wok hei, fried egg, krupuk</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Mie Goreng Jawa</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 45.000</span></div>
+<p class="mi-desc">Sweet-soy fried noodles, chicken, pickled chili</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Nasi Uduk Komplit</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 52.000</span></div>
+<p class="mi-desc">Coconut rice, fried chicken, tempe orek, sambal kacang</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Gado-Gado Siram</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 42.000</span></div>
+<p class="mi-desc">Blanched vegetables, lontong, warm peanut sauce poured over</p>
+</article>
+</div>
+<div class="menu-panel menu-board" role="tabpanel" id="panel-sate" aria-labelledby="tab-sate" data-panel="sate" hidden>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Sate Ayam Madura (10)<span class="mi-tag">Charcoal-grilled</span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 55.000</span></div>
+<p class="mi-desc">Charcoal chicken skewers, peanut sauce, lontong</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Sate Kambing (10)</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 68.000</span></div>
+<p class="mi-desc">Young goat, sweet soy, raw shallot, tomato</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Ayam Bakar Taliwang</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 62.000</span></div>
+<p class="mi-desc">Flattened chicken, Lombok-style chili glaze, plecing</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Ikan Bakar Sambal Matah</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 85.000</span></div>
+<p class="mi-desc">Whole grilled fish, raw Balinese shallot-lemongrass sambal</p>
+</article>
+</div>
+<div class="menu-panel menu-board" role="tabpanel" id="panel-gulai" aria-labelledby="tab-gulai" data-panel="gulai" hidden>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Rendang Sapi Tujuh Jam<span class="mi-tag">Seven hours</span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 78.000</span></div>
+<p class="mi-desc">Seven-hour beef rendang, dark and dry the Minang way</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Gulai Kambing</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 72.000</span></div>
+<p class="mi-desc">Goat curry, toasted coconut, twenty-two spices</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Sayur Lodeh &amp; Tempe</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 40.000</span></div>
+<p class="mi-desc">Young jackfruit coconut stew, crispy tempe</p>
+</article>
+</div>
+<div class="menu-panel menu-board" role="tabpanel" id="panel-manis" aria-labelledby="tab-manis" data-panel="manis" hidden>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Es Cendol &amp; Kue Lapis</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">Rp 28.000</span></div>
+<p class="mi-desc">Pandan jellies, palm sugar, coconut milk — plus layered cake</p>
+</article>
+</div>
+
+
+<div class="mp-viewfull-wrap">
+<a class="btn btn-lg mp-viewfull" href="menu.html" data-mp-viewfull>View full menu<svg class="ic ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</section>
+<section class="section sec-specials" id="specials">
+<div class="container specials-grid">
+<div class="chalk-side" data-reveal>
+<span class="kicker kicker-chalk">Chalked Daily</span>
+<h2>Spesial Hari Ini</h2>
+<p class="lead">One off-menu dish a day from deeper in the notebook.</p>
+<p class="chalk-today" data-special-today aria-live="polite">Loading today's board…</p>
+<div class="chalk-ctl">
+<button class="chalk-btn" type="button" data-special-prev aria-label="Previous day's special">&larr;</button>
+<button class="chalk-btn" type="button" data-special-next aria-label="Next day's special">&rarr;</button>
+</div>
+</div>
+<ul class="chalkboard" data-specials>
+<li class="chalk-row" data-day="0" data-reveal>
+<span class="chalk-day">Senin</span>
+<span class="chalk-meta"><strong>Tutup</strong><em>Kitchen rests — pasar day for spices</em></span>
+</li>
+<li class="chalk-row" data-day="1" data-reveal>
+<span class="chalk-day">Selasa</span>
+<span class="chalk-meta"><strong>Soto Betawi</strong><em>Beef in coconut-milk broth, emping — Rp 55.000</em></span>
+</li>
+<li class="chalk-row" data-day="2" data-reveal>
+<span class="chalk-day">Rabu</span>
+<span class="chalk-meta"><strong>Pempek Palembang</strong><em>Fish cakes, cuko vinegar heat — Rp 45.000</em></span>
+</li>
+<li class="chalk-row" data-day="3" data-reveal>
+<span class="chalk-day">Kamis</span>
+<span class="chalk-meta"><strong>Rawon Surabaya</strong><em>Black keluak beef soup — Rp 58.000</em></span>
+</li>
+<li class="chalk-row" data-day="4" data-reveal>
+<span class="chalk-day">Jumat</span>
+<span class="chalk-meta"><strong>Nasi Padang Mini</strong><em>Rendang + three sides on one plate — Rp 75.000</em></span>
+</li>
+<li class="chalk-row" data-day="5" data-reveal>
+<span class="chalk-day">Sabtu</span>
+<span class="chalk-meta"><strong>Bebek Goreng Sambal Ijo</strong><em>Crispy duck, green chili — Rp 70.000</em></span>
+</li>
+<li class="chalk-row" data-day="6" data-reveal>
+<span class="chalk-day">Minggu</span>
+<span class="chalk-meta"><strong>Rijsttafel Keluarga</strong><em>Twelve small dishes for the table — Rp 320.000</em></span>
+</li>
+</ul>
+</div>
+</section>
+<section class="section sec-story" id="story">
+<div class="container">
+<div class="story-grid story-flip"><div class="story-copy" data-reveal><div class="sec-head" data-reveal>
+<span class="kicker">Our Kitchen</span>
+<h2 class="">Ibu Sari's notebook, page by page</h2>
+<p class="lead">The kitchen still cooks from a water-stained notebook dated 1987, Jakarta.</p>
+</div><p>Ibu Sari ran a five-table warung behind the Cikini rail station. Her granddaughter Ayu carried the notebook across an ocean and reopened the kitchen here — same rendang clock, same charcoal, same stubborn refusal to pre-grind sambal.</p>
+<p>The rendang pot goes on at seven each morning and is not discussed until two. Spices arrive whole and get toasted in-house. When the notebook says 'sabar' — patience — the kitchen listens.</p><figure class="story-quote" data-reveal>
+<blockquote><p>&ldquo;Rendang is not a recipe. It is a promise you keep for seven hours.&rdquo;</p></blockquote>
+<figcaption><strong>Ayu Prameswari</strong> · Chef &amp; Granddaughter</figcaption>
+</figure></div><div class="story-art" data-reveal aria-hidden="true">
+<div class="story-portrait"><span class="story-ini">A</span><span class="story-cap"><strong>Ayu Prameswari</strong><em>Chef &amp; Granddaughter</em></span></div>
+</div></div>
+</div>
+</section>
+<section class="section sec-gallery g-polaroid" id="gallery">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">In Pictures</span>
+<h2 class="">A look inside</h2>
+<p class="lead">Gradient tiles stand in for photography — swap in your own imagery when you make this template yours.</p>
+</div>
+<div class="g-strip">
+<figure class="g-tile g-1" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.7-7.5-10A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 3c0 5.3-7.5 10-7.5 10z"/></svg>
+<figcaption>The 1987 notebook</figcaption>
+</figure>
+<figure class="g-tile g-2" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 2.6 4.8 4.7 4.8 9a4.8 4.8 0 0 1-9.6 0c0-1.9.8-3.2 1.8-4.6.4 1.3 1.2 2.2 2.5 2.7C11 7.7 11.2 5.2 12 3z"/></svg>
+<figcaption>Charcoal sate line</figcaption>
+</figure>
+<figure class="g-tile g-3" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-5 7.4V20H9v-1.6A8 8 0 0 1 4 11z"/><path d="M9 7.5c0-1.4 1.2-1.4 1.2-2.8M13 7.5c0-1.4 1.2-1.4 1.2-2.8"/></svg>
+<figcaption>Cobek &amp; sambal</figcaption>
+</figure>
+<figure class="g-tile g-4" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg>
+<figcaption>Rendang, hour six</figcaption>
+</figure>
+<figure class="g-tile g-5" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19C5 10.5 11.5 4.5 20 4.5 20 13 13.5 19 5 19z"/><path d="M5 19c3-5.4 7.2-9.3 12-11.7"/></svg>
+<figcaption>Banana-leaf plating</figcaption>
+</figure>
+<figure class="g-tile g-6" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-.8 7a3.2 3.2 0 0 1-6.4 0L8 3z"/><path d="M12 13.5V20M9 20.5h6"/></svg>
+<figcaption>Es cendol pour</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-reviews" id="reviews">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Word of Mouth</span>
+<h2 class="">What guests keep saying</h2>
+<p class="lead">Pulled from the guestbook, the order slips and the occasional happy shout across the room.</p>
+</div>
+<div class="rev-grid">
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>The rendang is black-brown, dry and impossibly deep — exactly like my grandmother's in Padang. I nearly cried.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">R</span><span><strong>Rizky H.</strong><em>Homesick &amp; healed</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Sate ayam over real charcoal, sambal with actual courage. Ask for the matah on everything.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">G</span><span><strong>Grace L.</strong><em>Spice pilgrim</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Warm room, warmer staff, and the es cendol is the only correct dessert after gulai kambing.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">T</span><span><strong>Tom &amp; Widya</strong><em>Sunday lunch family</em></span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-steps" id="how">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Rijsttafel</span>
+<h2 class="">Feasting, the family way</h2>
+<p class="lead">Simple on purpose — the hard part happens at the stove.</p>
+</div>
+<ol class="steps-row">
+<li class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">1</span>
+<div><h3>Book two days out</h3><p>Rijsttafel feasts need the notebook's full prep.</p></div>
+</li>
+<li class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">2</span>
+<div><h3>The table fills up</h3><p>Twelve small dishes arrive in waves, family-style.</p></div>
+</li>
+<li class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">3</span>
+<div><h3>Sambal roulette</h3><p>Five sambals, gentle to galak — pace yourselves.</p></div>
+</li>
+</ol>
+</div>
+</section>
+<section class="section sec-reserve" id="order">
+<div class="container order-grid">
+<div class="order-side" data-reveal>
+<span class="kicker">Reservations</span>
+<h2>Book your table</h2>
+<p class="lead">Tables for two to twelve — big families welcome, rijsttafel-style feasts for six plus with two days' notice.</p>
+<div class="stamp" aria-hidden="true">We reply<br>same day</div>
+<ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Jl. Kenanga No. 12, Kemang, Jakarta Selatan 12730</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+62215550148">+62 21 555 0148</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:halo@dapurkunyit.id">halo@dapurkunyit.id</a></li>
+</ul>
+</div>
+<div class="order-card" data-reveal>
+<form id="main-form" class="res-form" novalidate>
+<div class="field">
+<label for="name">Your name</label>
+<input id="name" name="name" type="text" placeholder="Alex Morgan" autocomplete="off" data-validate="name">
+<span class="f-err" id="err-name" hidden>Please enter your name (at least 2 characters).</span>
+</div>
+<div class="field">
+<label for="email">Email address</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="off" data-validate="email">
+<span class="f-err" id="err-email" hidden>Please enter a valid email address.</span>
+</div>
+<div class="field">
+<label for="date">Date</label>
+<input id="date" name="date" type="date" placeholder="" autocomplete="off" data-validate="date">
+<span class="f-err" id="err-date" hidden>Please choose a date.</span>
+</div>
+<div class="field">
+<label for="guests">Guests</label>
+<select data-validate="guests" id="guests" name="guests"><option value="">Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option><option value="9">9 guests</option><option value="10">10 guests</option><option value="11">11 guests</option><option value="12">12 guests</option></select>
+<span class="f-err" id="err-guests" hidden>Please select the number of guests.</span>
+</div>
+<p class="f-success" id="form-success" hidden role="status">Terima kasih! Your booking request is in — we'll confirm by email shortly.</p>
+<button class="btn btn-lg btn-submit" type="submit">Book Table</button>
+<p class="f-fine">No payment now — this demo form validates in the browser only.</p>
+</form>
+</div>
+</div>
+</section>
+<section class="section sec-visit" id="visit">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Hours &amp; Location</span>
+<h2 class="">Come find us</h2>
+<p class="lead">The map below is a styled placeholder — drop in your favourite embed when you go live.</p>
+</div>
+<div class="visit-grid">
+<div class="map-wrap" data-reveal>
+<div class="map-ph" role="img" aria-label="Stylized map placeholder for Jl. Kenanga No. 12">
+<span class="map-road map-road-a" aria-hidden="true"></span>
+<span class="map-road map-road-b" aria-hidden="true"></span>
+<span class="map-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+</div>
+<div class="map-card">
+<strong>Dapur Kunyit</strong>
+<p>Jl. Kenanga No. 12<br>Kemang, Jakarta Selatan 12730</p>
+<p class="map-note">Beside the flower market · parkir motor di depan · musholla available</p>
+</div>
+</div>
+<div class="visit-info">
+<div class="visit-contact" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Find us</h3><ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Jl. Kenanga No. 12, Kemang, Jakarta Selatan 12730</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+62215550148">+62 21 555 0148</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:halo@dapurkunyit.id">halo@dapurkunyit.id</a></li>
+</ul><p class="visit-note">Beside the flower market · parkir motor di depan · musholla available</p></div>
+<div class="visit-hours" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg>Opening hours</h3><ul class="hours-list" data-hours>
+<li data-day="0"><span>Monday</span><span class="hrs">Closed</span></li>
+<li data-day="1"><span>Tuesday</span><span class="hrs">11:00 am – 9:30 pm</span></li>
+<li data-day="2"><span>Wednesday</span><span class="hrs">11:00 am – 9:30 pm</span></li>
+<li data-day="3"><span>Thursday</span><span class="hrs">11:00 am – 9:30 pm</span></li>
+<li data-day="4"><span>Friday</span><span class="hrs">11:00 am – 10:30 pm</span></li>
+<li data-day="5"><span>Saturday</span><span class="hrs">10:00 am – 10:30 pm</span></li>
+<li data-day="6"><span>Sunday</span><span class="hrs">10:00 am – 9:00 pm</span></li>
+</ul></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand foot-logo" href="index.html"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-5 7.4V20H9v-1.6A8 8 0 0 1 4 11z"/><path d="M9 7.5c0-1.4 1.2-1.4 1.2-2.8M13 7.5c0-1.4 1.2-1.4 1.2-2.8"/></svg></span><span>Dapur Kunyit</span></a>
+<p>Family-recipe Indonesian kitchen — seven-hour rendang, charcoal sate and sambal ground fresh daily since 1987.</p>
+<div class="foot-socials">
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Dapur Kunyit on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer quick links">
+<h3 class="foot-h">Explore</h3>
+<ul class="foot-links">
+<li><a href="menu.html">Menu</a></li>
+<li><a href="menu.html">Today's Special</a></li>
+<li><a href="about.html">Our Kitchen</a></li>
+<li><a href="about.html#gallery">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="contact.html">Book</a></li>
+<li><a href="menu.html">Full Menu</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h3 class="foot-h">Hours</h3>
+<ul class="foot-hours">
+<li><span>Monday</span><span>Closed</span></li>
+<li><span>Thursday</span><span>11:00 am – 9:30 pm</span></li>
+<li><span>Sunday</span><span>10:00 am – 9:00 pm</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h3 class="foot-h">Find Us</h3>
+<address class="foot-addr">
+Jl. Kenanga No. 12<br>Kemang, Jakarta Selatan 12730<br>
+<a href="tel:+62215550148">+62 21 555 0148</a><br>
+<a href="mailto:halo@dapurkunyit.id">halo@dapurkunyit.id</a>
+</address>
+</div>
+</div>
+<div class="container foot-bottom">
+<p>&copy; <span data-year>2025</span> Dapur Kunyit. All rights reserved.</p>
+<p class="foot-fine">Crafted as a static HTML/CSS/JS template — no frameworks, no build step.</p>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+
+</body>
+</html>

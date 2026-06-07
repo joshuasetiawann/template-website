@@ -1,0 +1,58 @@
+# Aisha & Yusuf — Nikah Celebration Template
+
+Aisha & Yusuf is an elegant dark, single-page nikah celebration template with a live countdown, a story timeline, a schedule, gallery, venue map and a validated RSVP form.
+
+## Features
+
+- Variant: **Elegant dark — deep palette with gold accents, formal serif and a luxe RSVP card**
+- Pure HTML5 / CSS3 / vanilla JavaScript — no frameworks, fonts, CDNs or build step; runs straight from `file://`
+- Vertical timeline schedule / rundown
+- Card grid for the story, hosts or party
+- Gift registry cards with a copyable contact
+- Gallery strip that opens an accessible lightbox
+- CSS map placeholder with a directions note
+- FAQ accordion (`aria-expanded` toggles)
+- Live countdown to Saturday, 5 December 2026 (days / hours / minutes / seconds, updated every second)
+- Validated RSVP form with an attendance choice, guest-count select, inline error messages and a success state (browser-side only)
+- Release polish: skip link, sticky header scroll state, scrollspy navigation (`aria-current`), staggered scroll-reveal that respects `prefers-reduced-motion`, and a back-to-top button
+- Inline-SVG favicon and `theme-color`; all imagery is CSS gradients / patterns plus inline SVG
+- Accessible: one `<h1>`, semantic landmarks, `aria-label` icon buttons, `aria-expanded` toggles and `:focus-visible` rings
+- Responsive at ~960px and ~640px with a mobile nav toggle and 44px+ touch targets
+
+## Pages
+
+- `index.html` — single-page overview with the live countdown, story, schedule, gallery, venue and RSVP
+- `details.html` — full story, schedule/rundown, venue, what-to-know and FAQ (the destination for Story / Schedule / Venue / FAQ)
+- `gallery.html` — expanded photo grid with lightbox, a highlights strip and an RSVP call to action
+- `rsvp.html` — the full validated RSVP form, gifts / tickets, a before-you-reply note and contact
+
+## Sections
+- Hero with names/event, date, venue and a live countdown
+- Story / about (timeline)
+- Schedule (vertical timeline)
+- Wedding party / hosts (cards)
+- Gallery strip (with lightbox)
+- Venue / location with CSS map placeholder
+- RSVP / registration form (validated)
+- Gift registry
+- FAQ accordion
+- Full footer (event info, quick links, contact, social icons, auto-updating year)
+
+## How to Use
+
+1. Copy this template folder (`index.html`, `style.css`, `script.js`).
+2. Open `index.html` in any modern browser — no server or build step required.
+3. Edit the text directly in `index.html`; every section is plain semantic markup.
+4. **Change the countdown date:** open `script.js`, find the `live countdown` block near the top, and edit the ISO date string in `new Date('2026-12-05T18:00:00')` to your event's date and local time. The days/hours/minutes/seconds update automatically.
+
+## Customization
+
+- **Colors:** tweak the CSS custom properties under `:root` at the top of `style.css` (`--bg`, `--accent`, `--accent-2`, `--line`, `--radius`).
+- **Schedule:** edit the vertical timeline rows in the schedule section
+- **Form:** field rules live in `script.js` (the `RSVP / registration form` block); each field group carries a `data-field` type used for validation.
+- **Gallery:** tiles are CSS-gradient `art-1`…`art-6` classes — swap the gradients in `style.css` or change the `data-cap` labels in `index.html`.
+- **Typography:** swap the system font stacks in `--font-head` / `--font-body`.
+
+---
+
+Part of the **Event & Wedding** category in the template library — one of 20 hand-built event concepts, each with its own palette, layout variant and content.

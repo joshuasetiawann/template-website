@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Moonmilk Creamery</title>
+<meta name="description" content="Order party tubs, ask about flavours, or find Moonmilk Creamery on Pippin Square — hours, map and contact details.">
+<meta name="theme-color" content="#E66AA8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23E66AA8'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+<header class="site-header header-pill" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Moonmilk Creamery home"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="4.6"/><path d="M8.4 11.5 12 20.5l3.6-9"/></svg></span><span class="brand-name">Moonmilk Creamery</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="menu.html">Flavors</a></li>
+<li><a class="nav-link" href="menu.html">This Week</a></li>
+<li><a class="nav-link" href="about.html">Our Story</a></li>
+<li><a class="nav-link" href="about.html#gallery">Gallery</a></li>
+<li><a class="nav-link" href="contact.html" aria-current="page">Parties</a></li>
+<li><a class="nav-link" href="contact.html#location">Visit</a></li>
+<li><a class="nav-link" href="menu.html">Full Menu</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="contact.html">Book a Party Tub</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" class="ct-page">
+<nav class="mp-crumb" aria-label="Breadcrumb">
+<div class="container">
+<ol class="mp-crumb-list">
+<li><a href="index.html">Home</a></li>
+<li aria-current="page">Contact</li>
+</ol>
+</div>
+</nav>
+<section class="section mp-hero ct-hero" id="ct-top">
+<div class="container">
+<div class="mp-hero-in" data-reveal>
+<span class="kicker">Parties & Visit</span>
+<h1 class="mp-title">Book a party tub or say hi</h1>
+<p class="mp-note">Hand-packed tubs for parties, cones at the window, flavours that change with the season. Tell us what you need.</p>
+</div>
+</div>
+</section>
+<section class="section ct-form-sec" id="enquire" aria-labelledby="ct-form-h">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Party preorders</span>
+<h2 id="ct-form-h">Reserve party tubs</h2>
+<p class="lead">Let us know your flavours and pickup date and we’ll hand-pack them fresh. Large party orders need 48 hours’ notice.</p>
+</div>
+<div class="res-frame ct-frame" data-reveal>
+<div class="res-frame-grid">
+<form id="main-form" class="res-form ct-form" novalidate>
+<div class="field">
+<label for="name">Your name</label>
+<input id="name" name="name" type="text" placeholder="Alex Morgan" autocomplete="off" data-validate="name">
+<span class="f-err" id="err-name" hidden>Please enter your name (at least 2 characters).</span>
+</div>
+<div class="field">
+<label for="email">Email address</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="off" data-validate="email">
+<span class="f-err" id="err-email" hidden>Please enter a valid email address.</span>
+</div>
+<div class="field">
+<label for="date">Preferred date</label>
+<input id="date" name="date" type="date" autocomplete="off" data-validate="date">
+<span class="f-err" id="err-date" hidden>Please choose a date.</span>
+</div>
+<div class="field">
+<label for="guests">Guests</label>
+<select data-validate="guests" id="guests" name="guests"><option value="">Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option></select>
+<span class="f-err" id="err-guests" hidden>Please select the number of guests.</span>
+</div>
+<div class="field">
+<label for="note">Message</label>
+<textarea id="note" name="note" rows="3" placeholder="Tell us a little about your visit…" data-validate="note"></textarea>
+<span class="f-err" id="err-note" hidden>Please add a short message (at least 4 characters).</span>
+</div>
+<p class="f-success" id="form-success" hidden role="status">Thank you — your request has been received. We will reply by email shortly.</p>
+<button class="btn btn-lg btn-submit" type="submit">Send Request</button>
+<p class="f-fine">No payment now — this demo form validates in the browser only.</p>
+</form>
+<aside class="res-aside ct-aside">
+<h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg> Opening hours</h3>
+<ul class="hours-list" data-hours>
+<li data-day="0"><span>Monday</span><span class="hrs">2:00 pm – 9:00 pm</span></li>
+<li data-day="1"><span>Tuesday</span><span class="hrs">2:00 pm – 9:00 pm</span></li>
+<li data-day="2"><span>Wednesday</span><span class="hrs">2:00 pm – 9:00 pm</span></li>
+<li data-day="3"><span>Thursday</span><span class="hrs">2:00 pm – 10:00 pm</span></li>
+<li data-day="4"><span>Friday</span><span class="hrs">12:00 pm – 11:00 pm</span></li>
+<li data-day="5"><span>Saturday</span><span class="hrs">12:00 pm – 11:00 pm</span></li>
+<li data-day="6"><span>Sunday</span><span class="hrs">12:00 pm – 9:00 pm</span></li>
+</ul>
+<h3 class="block-h ct-aside-h2"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Find us</h3>
+<ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>31 Pippin Square, Cherrydale, MI 49503</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+16165550122">+1 (616) 555-0122</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:scoops@moonmilkcreamery.com">scoops@moonmilkcreamery.com</a></li>
+</ul>
+<p class="visit-note">Pink awning on the square · cone window stays open 30 min past close</p>
+</aside>
+</div>
+</div>
+</div>
+</section>
+<section class="section ct-cards" aria-labelledby="ct-cards-h">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Contact</span>
+<h2 id="ct-cards-h">How to reach us</h2>
+</div>
+<div class="ct-cards-grid">
+<article class="ct-card" data-reveal><span class="ct-card-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><h3>Find us</h3><p>31 Pippin Square, Cherrydale, MI 49503</p></article>
+<article class="ct-card" data-reveal><span class="ct-card-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span><h3>Call the shop</h3><a href="tel:+16165550122">+1 (616) 555-0122</a></article>
+<article class="ct-card" data-reveal><span class="ct-card-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg></span><h3>Email us</h3><a href="mailto:scoops@moonmilkcreamery.com">scoops@moonmilkcreamery.com</a></article>
+</div>
+</div>
+</section>
+<section class="section ct-location" id="location" aria-labelledby="ct-loc-h">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Getting here</span>
+<h2 id="ct-loc-h">Come find us</h2>
+<p class="lead">The map below is a styled placeholder — drop in your favourite embed when you go live.</p>
+</div>
+<div class="visit-grid">
+<div class="map-wrap" data-reveal>
+<div class="map-ph" role="img" aria-label="Stylized map placeholder for 31 Pippin Square, Cherrydale, MI 49503">
+<span class="map-road map-road-a" aria-hidden="true"></span>
+<span class="map-road map-road-b" aria-hidden="true"></span>
+<span class="map-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+</div>
+<div class="map-card">
+<strong>Moonmilk Creamery</strong>
+<p>31 Pippin Square<br>Cherrydale, MI 49503</p>
+<p class="map-note">Pink awning on the square · cone window stays open 30 min past close</p>
+</div>
+</div>
+<div class="visit-info">
+<div class="visit-contact" data-reveal>
+<h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8 18h6a4 4 0 0 0 0-8H9a4 4 0 0 1 0-8"/></svg> Getting here</h3>
+<ul class="contact-lines ct-getting">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Pink awning on the square, by the fountain</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg><span>Cone window stays open 30 min past close</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 9a5 5 0 0 1 10 0z"/><path d="M8.4 11l3.6 9 3.6-9z"/></svg><span>Street parking around the square; bike rack out front</span></li>
+</ul>
+</div>
+<div class="ct-events" data-reveal>
+<h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.6M15 14.4a6 6 0 0 1 6 5.6"/></svg> Parties, carts & wholesale</h3>
+<p>We hand-pack tubs for parties and can bring a scoop cart to weddings and events. Email us about party orders, cart bookings or wholesale pints for your café or shop.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section ct-social" aria-labelledby="ct-social-h">
+<div class="container ct-social-in" data-reveal>
+<h2 id="ct-social-h" class="ct-social-h">Follow along</h2>
+<div class="foot-socials ct-socials">
+<a class="soc" href="index.html" aria-label="Moonmilk Creamery on Instagram"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Moonmilk Creamery on Facebook"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Moonmilk Creamery on TikTok"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+<a class="soc" href="index.html" aria-label="Moonmilk Creamery on X"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Moonmilk Creamery on YouTube"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand foot-logo" href="index.html"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="4.6"/><path d="M8.4 11.5 12 20.5l3.6-9"/></svg></span><span>Moonmilk Creamery</span></a>
+<p>Small-batch scoop shop — eight flavors at a time, waffle cones in the window, one wildcard a week. 🍦</p>
+<div class="foot-socials">
+<a class="soc" href="index.html" aria-label="Moonmilk Creamery on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Moonmilk Creamery on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Moonmilk Creamery on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Moonmilk Creamery on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Moonmilk Creamery on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer quick links">
+<h3 class="foot-h">Explore</h3>
+<ul class="foot-links">
+<li><a href="menu.html">Flavors</a></li>
+<li><a href="menu.html">This Week</a></li>
+<li><a href="about.html">Our Story</a></li>
+<li><a href="about.html#gallery">Gallery</a></li>
+<li><a href="contact.html" aria-current="page">Parties</a></li>
+<li><a href="contact.html#location">Visit</a></li>
+<li><a href="menu.html">Full Menu</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h3 class="foot-h">Hours</h3>
+<ul class="foot-hours">
+<li><span>Monday</span><span>Closed (churn day)</span></li>
+<li><span>Thursday</span><span>12:00 pm – 9:00 pm</span></li>
+<li><span>Sunday</span><span>11:00 am – 8:00 pm</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h3 class="foot-h">Find Us</h3>
+<address class="foot-addr">
+31 Pippin Square<br>Cherrydale, MI 49503<br>
+<a href="tel:+16165550122">+1 (616) 555-0122</a><br>
+<a href="mailto:scoops@moonmilkcreamery.com">scoops@moonmilkcreamery.com</a>
+</address>
+</div>
+</div>
+<div class="container foot-bottom">
+<p>&copy; <span data-year>2025</span> Moonmilk Creamery. All rights reserved.</p>
+<p class="foot-fine">Crafted as a static HTML/CSS/JS template — no frameworks, no build step.</p>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emberline Chophouse — Dry-Aged Steakhouse</title>
+<meta name="description" content="Emberline Chophouse is a dark walnut-and-ember steakhouse template with a cuts board, dry-age room story, masonry gallery and reservations.">
+<meta name="theme-color" content="#181210">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23C25E2E'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+<header class="site-header header-dark" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Emberline Chophouse home"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 2.6 4.8 4.7 4.8 9a4.8 4.8 0 0 1-9.6 0c0-1.9.8-3.2 1.8-4.6.4 1.3 1.2 2.2 2.5 2.7C11 7.7 11.2 5.2 12 3z"/></svg></span><span class="brand-name">Emberline Chophouse</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="menu.html">The Cuts</a></li>
+<li><a class="nav-link" href="about.html">Our House</a></li>
+<li><a class="nav-link" href="about.html#gallery">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="contact.html">Reserve</a></li>
+<li><a class="nav-link" href="contact.html#location">Visit</a></li>
+<li><a class="nav-link" href="menu.html">Full Menu</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="contact.html">Reserve a Table</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-bleed" id="top-hero">
+<div class="hero-veil" aria-hidden="true"></div>
+<div class="container hero-stack">
+<span class="kicker" data-reveal>Oak fire · 45-day dry age</span>
+<h1 data-reveal>Beef, fire and forty-five days of patience.</h1>
+<p class="hero-lead" data-reveal>A chophouse built around an oak hearth and a glass dry-age room. Cuts sold by the board, carved by the inch, rested like they matter.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg" href="#reserve">Reserve a Table</a>
+<a class="btn btn-lg btn-ghost" href="#menu">See the Cuts</a>
+</div>
+<dl class="hero-facts" data-reveal>
+<div class="fact"><dt>45</dt><dd>days minimum dry age</dd></div>
+<div class="fact"><dt>900 °F</dt><dd>oak-fired broiler</dd></div>
+<div class="fact"><dt>6</dt><dd>ranches we buy whole</dd></div>
+</dl>
+</div>
+</section>
+<section class="section sec-menu" id="menu" data-menu aria-label="Menu">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">The Board</span>
+<h2 class="">Cuts &amp; accompaniments</h2>
+<p class="lead">Steaks are listed by weight and age. Boards change as the dry-age room turns over — tonight's full list rides the chalk rail.</p>
+</div>
+<div class="menu-tabs" role="tablist" aria-label="Menu categories">
+<button class="menu-tab is-active" type="button" role="tab" id="tab-cuts" aria-controls="panel-cuts" aria-selected="true" data-tab="cuts">The Cuts</button>
+<button class="menu-tab" type="button" role="tab" id="tab-starters" aria-controls="panel-starters" aria-selected="false" data-tab="starters">Starters</button>
+<button class="menu-tab" type="button" role="tab" id="tab-sides" aria-controls="panel-sides" aria-selected="false" data-tab="sides">Sides</button>
+<button class="menu-tab" type="button" role="tab" id="tab-after" aria-controls="panel-after" aria-selected="false" data-tab="after">After</button>
+</div>
+<div class="menu-panel menu-colframe" role="tabpanel" id="panel-cuts" aria-labelledby="tab-cuts" data-panel="cuts">
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">45-Day Ribeye, 22 oz<span class="mi-tag">House cut</span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$78</span></div>
+<p class="mi-desc">Bone-in, oak-fired, smoked bone-marrow butter</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Dry-Aged Porterhouse, 36 oz</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$135</span></div>
+<p class="mi-desc">For two — carved tableside, both sauces</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Filet, Hearth-Roasted, 8 oz</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$58</span></div>
+<p class="mi-desc">Center-cut, ember salt, red wine jus</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Butcher's Hanger, 10 oz</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$39</span></div>
+<p class="mi-desc">The cut we keep quiet about, chimichurri</p>
+</article>
+</div>
+<div class="menu-panel menu-colframe" role="tabpanel" id="panel-starters" aria-labelledby="tab-starters" data-panel="starters" hidden>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Wedge, Properly Cold</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$14</span></div>
+<p class="mi-desc">Iceberg, smoked blue cheese, lardons, chive</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Beef Tartare</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$19</span></div>
+<p class="mi-desc">Hand-cut filet, cured yolk, charred sourdough</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Roasted Bone Marrow</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$17</span></div>
+<p class="mi-desc">Two canoes, parsley salad, grilled bread</p>
+</article>
+</div>
+<div class="menu-panel menu-colframe" role="tabpanel" id="panel-sides" aria-labelledby="tab-sides" data-panel="sides" hidden>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Duck-Fat Potatoes</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$12</span></div>
+<p class="mi-desc">Crisped in the hearth, rosemary salt</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Creamed Spinach</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$11</span></div>
+<p class="mi-desc">The classic, nutmeg-heavy, bubbling</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Charred Sweet Onion</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$10</span></div>
+<p class="mi-desc">Whole, ember-roasted, sherry glaze</p>
+</article>
+</div>
+<div class="menu-panel menu-colframe" role="tabpanel" id="panel-after" aria-labelledby="tab-after" data-panel="after" hidden>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Basque Cheesecake</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$12</span></div>
+<p class="mi-desc">Burnt top, soft middle, no crust, no regrets</p>
+</article>
+<article class="mi" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Smoked Old Fashioned</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$16</span></div>
+<p class="mi-desc">Oak-smoked bourbon, demerara, bitters</p>
+</article>
+</div>
+
+
+<div class="mp-viewfull-wrap">
+<a class="btn btn-lg mp-viewfull" href="menu.html" data-mp-viewfull>View full menu<svg class="ic ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</section>
+<section class="section sec-story" id="chef">
+<div class="container">
+<div class="story-grid"><div class="story-art" data-reveal aria-hidden="true">
+<div class="story-portrait"><span class="story-ini">M</span><span class="story-cap"><strong>Marcus Bell</strong><em>Head Grillardin</em></span></div>
+</div><div class="story-copy" data-reveal><div class="sec-head" data-reveal>
+<span class="kicker">Our House</span>
+<h2 class="">The dry-age room runs the show</h2>
+<p class="lead">Behind the host stand, a glass-walled room holds racks of beef sleeping at two degrees.</p>
+</div><p>Emberline buys whole animals from six ranches and breaks them down in-house. The dry-age room — salt walls, slow fans, forty-five days minimum — decides the menu more than any chef does.</p>
+<p>Pitmaster-turned-grillardin Marcus Bell runs the oak broiler at nine hundred degrees. Every steak rests as long as it seared. House rule: the kitchen will not cook past medium without a signed waiver. (We keep a pen. Nobody has asked twice.)</p><figure class="story-quote" data-reveal>
+<blockquote><p>&ldquo;Fire fast, rest long, slice loud.&rdquo;</p></blockquote>
+<figcaption><strong>Marcus Bell</strong> · Head Grillardin</figcaption>
+</figure></div></div>
+</div>
+</section>
+<section class="section sec-ritual">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">From the Age Room</span>
+<h2 class="">What patience looks like</h2>
+<p class="lead">The part of the craft you don't see from the table.</p>
+</div>
+<ol class="ritual-grid">
+<li class="ritual-step" data-reveal>
+<span class="ritual-time">Day 1</span>
+<h3>Whole primals racked</h3>
+<p>Salt walls and slow fans take over.</p>
+</li>
+<li class="ritual-step" data-reveal>
+<span class="ritual-time">Day 21</span>
+<h3>Crust forms</h3>
+<p>Flavour starts folding in on itself.</p>
+</li>
+<li class="ritual-step" data-reveal>
+<span class="ritual-time">Day 45</span>
+<h3>Board-ready</h3>
+<p>Trimmed, weighed and chalked onto the rail.</p>
+</li>
+<li class="ritual-step" data-reveal>
+<span class="ritual-time">Day 60+</span>
+<h3>The reserve rack</h3>
+<p>A few cuts go longer — ask your server.</p>
+</li>
+</ol>
+</div>
+</section>
+<section class="section sec-gallery" id="gallery">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">In Pictures</span>
+<h2 class="">Rooms, embers &amp; plates</h2>
+<p class="lead">Gradient tiles stand in for photography — replace them with your own moody shots.</p>
+</div>
+<div class="g-masonry">
+<figure class="g-tile g-1" data-reveal><svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg><figcaption>The dry-age room</figcaption></figure>
+<figure class="g-tile g-2 g-tall" data-reveal><svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 2.6 4.8 4.7 4.8 9a4.8 4.8 0 0 1-9.6 0c0-1.9.8-3.2 1.8-4.6.4 1.3 1.2 2.2 2.5 2.7C11 7.7 11.2 5.2 12 3z"/></svg><figcaption>Oak hearth at 900 °F</figcaption></figure>
+<figure class="g-tile g-3" data-reveal><svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg><figcaption>Porterhouse, carved</figcaption></figure>
+<figure class="g-tile g-4 g-tall" data-reveal><svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg><figcaption>The chalk rail</figcaption></figure>
+<figure class="g-tile g-5 g-tall" data-reveal><svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-.8 7a3.2 3.2 0 0 1-6.4 0L8 3z"/><path d="M12 13.5V20M9 20.5h6"/></svg><figcaption>Cellar stairs</figcaption></figure>
+<figure class="g-tile g-6" data-reveal><svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.7-7.5-10A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 3c0 5.3-7.5 10-7.5 10z"/></svg><figcaption>Bone-marrow butter</figcaption></figure>
+</div>
+</div>
+</section>
+<section class="section sec-reviews" id="reviews">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Word of Mouth</span>
+<h2 class="">What guests keep saying</h2>
+<p class="lead">Pulled from the guestbook, the order slips and the occasional happy shout across the room.</p>
+</div>
+<div class="rev-grid">
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>The 45-day ribeye has a crust like cast iron and a middle like velvet. Best steak of my life, and I'm from Texas.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">D</span><span><strong>Dale W.</strong><em>Birthday dinner</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Tableside porterhouse theatre, zero pretension. The duck-fat potatoes nearly stole the night.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">I</span><span><strong>Ingrid S.</strong><em>Anniversary</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Dark, loud in the right way, smells like oak smoke and money well spent.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">V</span><span><strong>Victor H.</strong><em>Client dinner</em></span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-reserve" id="reserve">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Reservations</span>
+<h2 class="">Claim your table</h2>
+<p class="lead">The hearth room seats forty; the cellar table seats ten for whole-animal dinners. Tell us the occasion and we'll set the stage.</p>
+</div>
+<div class="res-frame" data-reveal>
+<div class="res-frame-grid">
+<form id="main-form" class="res-form" novalidate>
+<div class="field">
+<label for="name">Your name</label>
+<input id="name" name="name" type="text" placeholder="Alex Morgan" autocomplete="off" data-validate="name">
+<span class="f-err" id="err-name" hidden>Please enter your name (at least 2 characters).</span>
+</div>
+<div class="field">
+<label for="email">Email address</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="off" data-validate="email">
+<span class="f-err" id="err-email" hidden>Please enter a valid email address.</span>
+</div>
+<div class="field">
+<label for="date">Date</label>
+<input id="date" name="date" type="date" placeholder="" autocomplete="off" data-validate="date">
+<span class="f-err" id="err-date" hidden>Please choose a date.</span>
+</div>
+<div class="field">
+<label for="guests">Guests</label>
+<select data-validate="guests" id="guests" name="guests"><option value="">Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option><option value="9">9 guests</option><option value="10">10 guests</option></select>
+<span class="f-err" id="err-guests" hidden>Please select the number of guests.</span>
+</div>
+<p class="f-success" id="form-success" hidden role="status">Request received — our host team will confirm by email within the hour during service.</p>
+<button class="btn btn-lg btn-submit" type="submit">Request Reservation</button>
+<p class="f-fine">No payment now — this demo form validates in the browser only.</p>
+</form>
+<aside class="res-aside">
+<h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg> Hours</h3>
+<ul class="hours-list" data-hours>
+<li data-day="0"><span>Monday</span><span class="hrs">5:00 pm – 10:00 pm</span></li>
+<li data-day="1"><span>Tuesday</span><span class="hrs">5:00 pm – 10:00 pm</span></li>
+<li data-day="2"><span>Wednesday</span><span class="hrs">5:00 pm – 10:00 pm</span></li>
+<li data-day="3"><span>Thursday</span><span class="hrs">5:00 pm – 11:00 pm</span></li>
+<li data-day="4"><span>Friday</span><span class="hrs">5:00 pm – 11:30 pm</span></li>
+<li data-day="5"><span>Saturday</span><span class="hrs">4:30 pm – 11:30 pm</span></li>
+<li data-day="6"><span>Sunday</span><span class="hrs">4:30 pm – 9:30 pm</span></li>
+</ul>
+<p class="visit-note">In the 1908 stockyards exchange building · coat check · valet nightly</p>
+</aside>
+</div>
+</div>
+</div>
+</section>
+<section class="section sec-visit" id="visit">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Hours &amp; Location</span>
+<h2 class="">Come find us</h2>
+<p class="lead">The map below is a styled placeholder — drop in your favourite embed when you go live.</p>
+</div>
+<div class="visit-grid">
+<div class="map-wrap" data-reveal>
+<div class="map-ph" role="img" aria-label="Stylized map placeholder for 400 Tallow Street">
+<span class="map-road map-road-a" aria-hidden="true"></span>
+<span class="map-road map-road-b" aria-hidden="true"></span>
+<span class="map-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+</div>
+<div class="map-card">
+<strong>Emberline Chophouse</strong>
+<p>400 Tallow Street<br>Old Stockyards, KS 66101</p>
+<p class="map-note">In the 1908 stockyards exchange building · coat check · valet nightly</p>
+</div>
+</div>
+<div class="visit-info">
+<div class="visit-contact" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Find us</h3><ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>400 Tallow Street, Old Stockyards, KS 66101</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+19135550117">+1 (913) 555-0117</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:host@emberlinechop.com">host@emberlinechop.com</a></li>
+</ul><p class="visit-note">In the 1908 stockyards exchange building · coat check · valet nightly</p></div>
+
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand foot-logo" href="index.html"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 2.6 4.8 4.7 4.8 9a4.8 4.8 0 0 1-9.6 0c0-1.9.8-3.2 1.8-4.6.4 1.3 1.2 2.2 2.5 2.7C11 7.7 11.2 5.2 12 3z"/></svg></span><span>Emberline Chophouse</span></a>
+<p>Whole-animal chophouse with a glass dry-age room and an oak hearth. Forty-five days of patience, ninety seconds of fire.</p>
+<div class="foot-socials">
+<a class="soc" href="index.html" aria-label="Emberline Chophouse on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Emberline Chophouse on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Emberline Chophouse on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Emberline Chophouse on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Emberline Chophouse on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer quick links">
+<h3 class="foot-h">Explore</h3>
+<ul class="foot-links">
+<li><a href="menu.html">The Cuts</a></li>
+<li><a href="about.html">Our House</a></li>
+<li><a href="about.html#gallery">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="contact.html">Reserve</a></li>
+<li><a href="contact.html#location">Visit</a></li>
+<li><a href="menu.html">Full Menu</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h3 class="foot-h">Hours</h3>
+<ul class="foot-hours">
+<li><span>Monday</span><span>5:00 pm – 10:00 pm</span></li>
+<li><span>Thursday</span><span>5:00 pm – 11:00 pm</span></li>
+<li><span>Sunday</span><span>4:30 pm – 9:30 pm</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h3 class="foot-h">Find Us</h3>
+<address class="foot-addr">
+400 Tallow Street<br>Old Stockyards, KS 66101<br>
+<a href="tel:+19135550117">+1 (913) 555-0117</a><br>
+<a href="mailto:host@emberlinechop.com">host@emberlinechop.com</a>
+</address>
+</div>
+</div>
+<div class="container foot-bottom">
+<p>&copy; <span data-year>2025</span> Emberline Chophouse. All rights reserved.</p>
+<p class="foot-fine">Crafted as a static HTML/CSS/JS template — no frameworks, no build step.</p>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+
+</body>
+</html>

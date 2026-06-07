@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citrus Comet — Street-Food Taco Truck</title>
+<meta name="description" content="Citrus Comet is a sunshine-yellow taco truck template with a weekly location board, chalk specials, sticker badges and a catering booking form.">
+<meta name="theme-color" content="#F5B301">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23F5B301'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header header-thick" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Citrus Comet home"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h11v9H2zM13 10h4l3 3v3h-7z"/><circle cx="6" cy="17.6" r="1.8"/><circle cx="16.5" cy="17.6" r="1.8"/></svg></span><span class="brand-name">Citrus Comet</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="menu.html">Menu</a></li>
+<li><a class="nav-link" href="contact.html#location">Find the Truck</a></li>
+<li><a class="nav-link" href="about.html">Our Story</a></li>
+<li><a class="nav-link" href="about.html#gallery">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="contact.html">Book Us</a></li>
+<li><a class="nav-link" href="menu.html">Full Menu</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="contact.html">Book the Truck</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-banner" id="top-hero">
+<div class="container banner-grid">
+<div class="hero-copy">
+<span class="kicker" data-reveal>Street tacos · citrus everything 🚚</span>
+<h1 data-reveal>Chasing the comet is half the meal.</h1>
+<p class="hero-lead" data-reveal>A banana-yellow truck slinging citrus-braised tacos, loaded fries and agua frescas across town. Five stops a week — catch us if you can.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg" href="#order">Book the Truck</a>
+<a class="btn btn-lg btn-ghost" href="#specials">This Week's Stops</a>
+</div>
+</div>
+<div class="banner-art" role="img" aria-label="Bold panel evoking Street-Food Truck">
+<span class="badge-rot" aria-hidden="true">Catch us if you can</span>
+<span class="banner-motif" aria-hidden="true"><svg class="motif-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h11v9H2zM13 10h4l3 3v3h-7z"/><circle cx="6" cy="17.6" r="1.8"/><circle cx="16.5" cy="17.6" r="1.8"/></svg></span>
+</div>
+</div>
+</section>
+<section class="hero-strip" aria-label="No Fixed Address">
+<div class="container strip-in">
+<span class="strip-kicker">No Fixed Address</span>
+<p>We post the week's stops every Sunday night. Pro move: the lunchtime line moves fastest in the first twenty minutes.</p>
+<a class="btn btn-sm btn-invert" href="#specials">See the stops</a>
+</div>
+</section>
+<section class="section sec-menu" id="menu" data-menu aria-label="Menu">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">The Window Menu</span>
+<h2 class="">Tacos, foil &amp; frescas</h2>
+<p class="lead">Everything comes off a four-foot plancha through one little window. Filter the board — corn tortillas pressed to order, always.</p>
+</div>
+<div class="menu-chips" role="group" aria-label="Filter menu by category">
+<button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+<button class="chip" type="button" data-filter="tacos" aria-pressed="false">Tacos</button>
+<button class="chip" type="button" data-filter="burritos" aria-pressed="false">Burritos</button>
+<button class="chip" type="button" data-filter="fries" aria-pressed="false">Loaded Fries</button>
+<button class="chip" type="button" data-filter="drinks" aria-pressed="false">Drinks</button>
+</div>
+<div class="menu-cardgrid" data-menu-grid>
+<article class="mi-card" data-cat="tacos" data-reveal>
+<span class="mi-tag">The flagship</span><h3 class="mi-name">Citrus Carnitas Taco</h3>
+<p class="mi-desc">Orange-braised pork, charred lime crema, pickled onion</p>
+<div class="mi-foot"><span class="mi-price">$4.50</span><span class="mi-cat">Tacos</span></div>
+</article>
+<article class="mi-card" data-cat="tacos" data-reveal>
+<h3 class="mi-name">Baja Shrimp Taco</h3>
+<p class="mi-desc">Crispy shrimp, citrus slaw, comet sauce</p>
+<div class="mi-foot"><span class="mi-price">$5.00</span><span class="mi-cat">Tacos</span></div>
+</article>
+<article class="mi-card" data-cat="tacos" data-reveal>
+<h3 class="mi-name">Charred Cauli Taco (V)</h3>
+<p class="mi-desc">Achiote cauliflower, pepita salsa, avocado</p>
+<div class="mi-foot"><span class="mi-price">$4.25</span><span class="mi-cat">Tacos</span></div>
+</article>
+<article class="mi-card" data-cat="tacos" data-reveal>
+<h3 class="mi-name">Birria Comet Taco</h3>
+<p class="mi-desc">Dipped, griddled crisp, consommé cup on the side</p>
+<div class="mi-foot"><span class="mi-price">$5.50</span><span class="mi-cat">Tacos</span></div>
+</article>
+<article class="mi-card" data-cat="burritos" data-reveal>
+<h3 class="mi-name">Comet Burrito</h3>
+<p class="mi-desc">Carnitas, citrus rice, beans, crema — foil-wrapped flight fuel</p>
+<div class="mi-foot"><span class="mi-price">$11.00</span><span class="mi-cat">Burritos</span></div>
+</article>
+<article class="mi-card" data-cat="burritos" data-reveal>
+<h3 class="mi-name">Breakfast Orbit (til 11 am)</h3>
+<p class="mi-desc">Eggs, chorizo, crispy potato, salsa roja</p>
+<div class="mi-foot"><span class="mi-price">$9.50</span><span class="mi-cat">Burritos</span></div>
+</article>
+<article class="mi-card" data-cat="burritos" data-reveal>
+<h3 class="mi-name">Veggie Gravity Bowl</h3>
+<p class="mi-desc">Everything from the burrito, no tortilla, extra pepitas</p>
+<div class="mi-foot"><span class="mi-price">$10.50</span><span class="mi-cat">Burritos</span></div>
+</article>
+<article class="mi-card" data-cat="fries" data-reveal>
+<span class="mi-tag">Two-fork job</span><h3 class="mi-name">Asteroid Fries</h3>
+<p class="mi-desc">Loaded: carnitas, queso, jalapeño, comet sauce</p>
+<div class="mi-foot"><span class="mi-price">$9.00</span><span class="mi-cat">Loaded Fries</span></div>
+</article>
+<article class="mi-card" data-cat="fries" data-reveal>
+<h3 class="mi-name">Half-Gravity Fries</h3>
+<p class="mi-desc">Queso, pico, crema — the meatless landing</p>
+<div class="mi-foot"><span class="mi-price">$7.50</span><span class="mi-cat">Loaded Fries</span></div>
+</article>
+<article class="mi-card" data-cat="drinks" data-reveal>
+<h3 class="mi-name">Horchata</h3>
+<p class="mi-desc">Cinnamon rice milk, slow-steeped overnight</p>
+<div class="mi-foot"><span class="mi-price">$4.00</span><span class="mi-cat">Drinks</span></div>
+</article>
+<article class="mi-card" data-cat="drinks" data-reveal>
+<h3 class="mi-name">Hibiscus-Lime Fresca</h3>
+<p class="mi-desc">Tart, ice-cold, alarmingly magenta</p>
+<div class="mi-foot"><span class="mi-price">$4.00</span><span class="mi-cat">Drinks</span></div>
+</article>
+<article class="mi-card" data-cat="drinks" data-reveal>
+<h3 class="mi-name">Grapefruit Comet Soda</h3>
+<p class="mi-desc">Fresh-squeezed, fizzy, rind-bitter finish</p>
+<div class="mi-foot"><span class="mi-price">$4.50</span><span class="mi-cat">Drinks</span></div>
+</article>
+</div>
+<p class="menu-empty" data-menu-empty hidden>Nothing in this category right now — try another.</p>
+
+
+<div class="mp-viewfull-wrap">
+<a class="btn btn-lg mp-viewfull" href="menu.html" data-mp-viewfull>View full menu<svg class="ic ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</section>
+<section class="section sec-specials" id="specials">
+<div class="container specials-grid">
+<div class="chalk-side" data-reveal>
+<span class="kicker kicker-chalk">Chalked Daily</span>
+<h2>This Week's Stops</h2>
+<p class="lead">Posted Sundays at 7 pm. Rain moves us under the market awning.</p>
+<p class="chalk-today" data-special-today aria-live="polite">Loading today's board…</p>
+<div class="chalk-ctl">
+<button class="chalk-btn" type="button" data-special-prev aria-label="Previous day's special">&larr;</button>
+<button class="chalk-btn" type="button" data-special-next aria-label="Next day's special">&rarr;</button>
+</div>
+</div>
+<ul class="chalkboard" data-specials>
+<li class="chalk-row" data-day="0" data-reveal>
+<span class="chalk-day">Monday</span>
+<span class="chalk-meta"><strong>Prep Day</strong><em>Truck dark — braising oranges, pressing nothing</em></span>
+</li>
+<li class="chalk-row" data-day="1" data-reveal>
+<span class="chalk-day">Tuesday</span>
+<span class="chalk-meta"><strong>Courthouse Lawn</strong><em>11 am – 2 pm · Justice &amp; carnitas</em></span>
+</li>
+<li class="chalk-row" data-day="2" data-reveal>
+<span class="chalk-day">Wednesday</span>
+<span class="chalk-meta"><strong>Tech Campus Lot B</strong><em>11 am – 2 pm · Badge required, hunger optional</em></span>
+</li>
+<li class="chalk-row" data-day="3" data-reveal>
+<span class="chalk-day">Thursday</span>
+<span class="chalk-meta"><strong>Barrel &amp; Sons Brewery</strong><em>5 pm – 9 pm · Birria + barrel-aged anything</em></span>
+</li>
+<li class="chalk-row" data-day="4" data-reveal>
+<span class="chalk-day">Friday</span>
+<span class="chalk-meta"><strong>Riverside Park</strong><em>11 am – 2 pm · Picnic-table service</em></span>
+</li>
+<li class="chalk-row" data-day="5" data-reveal>
+<span class="chalk-day">Saturday</span>
+<span class="chalk-meta"><strong>Farmers Market</strong><em>9 am – 2 pm · Breakfast Orbit till 11</em></span>
+</li>
+<li class="chalk-row" data-day="6" data-reveal>
+<span class="chalk-day">Sunday</span>
+<span class="chalk-meta"><strong>Route Drop</strong><em>Next week's stops posted at 7 pm</em></span>
+</li>
+</ul>
+</div>
+</section>
+<section class="section sec-story" id="story">
+<div class="container">
+<div class="story-grid story-flip"><div class="story-copy" data-reveal><div class="sec-head" data-reveal>
+<span class="kicker">Our Story</span>
+<h2 class="">One plancha, four wheels, zero landlords</h2>
+<p class="lead">Citrus Comet is what happens when a line cook buys a retired postal truck at auction.</p>
+</div><p>Chef-owner Manny Reyes spent twelve years in other people's kitchens before the auction paddle slipped (his words). Eight months of welding, one questionable paint job and a citrus obsession later, the Comet rolled out.</p>
+<p>The route grew stop by stop — breweries, the Saturday market, the courthouse lawn. The truck now sells out most days by 2 pm, and Manny still presses every tortilla himself.</p><figure class="story-quote" data-reveal>
+<blockquote><p>&ldquo;Small menu, hot plancha, full send.&rdquo;</p></blockquote>
+<figcaption><strong>Manny Reyes</strong> · Chef, Driver, Owner</figcaption>
+</figure></div><div class="story-art" data-reveal aria-hidden="true">
+<div class="story-portrait"><span class="story-ini">M</span><span class="story-cap"><strong>Manny Reyes</strong><em>Chef, Driver, Owner</em></span></div>
+</div></div>
+</div>
+</section>
+<section class="section sec-gallery g-polaroid" id="gallery">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">In Pictures</span>
+<h2 class="">A look inside</h2>
+<p class="lead">Gradient tiles stand in for photography — swap in your own imagery when you make this template yours.</p>
+</div>
+<div class="g-strip">
+<figure class="g-tile g-1" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h11v9H2zM13 10h4l3 3v3h-7z"/><circle cx="6" cy="17.6" r="1.8"/><circle cx="16.5" cy="17.6" r="1.8"/></svg>
+<figcaption>The banana-yellow rig</figcaption>
+</figure>
+<figure class="g-tile g-2" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 2.6 4.8 4.7 4.8 9a4.8 4.8 0 0 1-9.6 0c0-1.9.8-3.2 1.8-4.6.4 1.3 1.2 2.2 2.5 2.7C11 7.7 11.2 5.2 12 3z"/></svg>
+<figcaption>Plancha at full tilt</figcaption>
+</figure>
+<figure class="g-tile g-3" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.7-7.5-10A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 3c0 5.3-7.5 10-7.5 10z"/></svg>
+<figcaption>Tortilla press duty</figcaption>
+</figure>
+<figure class="g-tile g-4" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 19.5a6 6 0 0 1 12 0"/><circle cx="16.8" cy="9.5" r="2.4"/><path d="M16 14.6a5 5 0 0 1 5 4.9"/></svg>
+<figcaption>Brewery night line</figcaption>
+</figure>
+<figure class="g-tile g-5" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-.8 7a3.2 3.2 0 0 1-6.4 0L8 3z"/><path d="M12 13.5V20M9 20.5h6"/></svg>
+<figcaption>Fresca jars sweating</figcaption>
+</figure>
+<figure class="g-tile g-6" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>
+<figcaption>Sticker wall, door</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-steps" id="how">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Book Us</span>
+<h2 class="">Truck-to-party in three steps</h2>
+<p class="lead">Simple on purpose — the hard part happens at the stove.</p>
+</div>
+<ol class="steps-row">
+<li class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">1</span>
+<div><h3>Tell us the gig</h3><p>Date, headcount, address and the vibe.</p></div>
+</li>
+<li class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">2</span>
+<div><h3>Pick a window menu</h3><p>Three set menus or build your own board.</p></div>
+</li>
+<li class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">3</span>
+<div><h3>We roll in hot</h3><p>Self-contained rig — we need 20 feet and a smile.</p></div>
+</li>
+</ol>
+</div>
+</section>
+<section class="section sec-reviews" id="reviews">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Word of Mouth</span>
+<h2 class="">What guests keep saying</h2>
+<p class="lead">Pulled from the guestbook, the order slips and the occasional happy shout across the room.</p>
+</div>
+<div class="rev-grid">
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Followed this truck across three neighborhoods. The citrus carnitas taco is worth the GPS budget.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">R</span><span><strong>Robbie T.</strong><em>Comet chaser</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Booked them for our office party — they fed sixty people in ninety minutes and the queso fries caused a small riot.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">D</span><span><strong>Dana E.</strong><em>Catering booking</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Birria taco crisped on the plancha while you watch. Street food with receipts.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">M</span><span><strong>Memo G.</strong><em>Market regular</em></span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-reserve" id="order">
+<div class="container order-grid">
+<div class="order-side" data-reveal>
+<span class="kicker">Book the Truck</span>
+<h2>Park the Comet at your thing</h2>
+<p class="lead">Weddings, office lots, block parties — we bring the plancha, the awning and the playlist. Tell us the date and headcount.</p>
+<div class="stamp" aria-hidden="true">We reply<br>same day</div>
+<ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Commissary: 14 Dockside Yard, Marlow City, AZ 85004</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+16025550119">+1 (602) 555-0119</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:bookings@citruscomet.com">bookings@citruscomet.com</a></li>
+</ul>
+</div>
+<div class="order-card" data-reveal>
+<form id="main-form" class="res-form" novalidate>
+<div class="field">
+<label for="name">Your name</label>
+<input id="name" name="name" type="text" placeholder="Alex Morgan" autocomplete="off" data-validate="name">
+<span class="f-err" id="err-name" hidden>Please enter your name (at least 2 characters).</span>
+</div>
+<div class="field">
+<label for="email">Email address</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="off" data-validate="email">
+<span class="f-err" id="err-email" hidden>Please enter a valid email address.</span>
+</div>
+<div class="field">
+<label for="date">Event date</label>
+<input id="date" name="date" type="date" placeholder="" autocomplete="off" data-validate="date">
+<span class="f-err" id="err-date" hidden>Please choose a date.</span>
+</div>
+<div class="field">
+<label for="guests">Headcount</label>
+<select data-validate="guests" id="guests" name="guests"><option value="">Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option><option value="9">9 guests</option><option value="10">10 guests</option><option value="11">11 guests</option><option value="12">12 guests</option></select>
+<span class="f-err" id="err-guests" hidden>Please select the number of guests.</span>
+</div>
+<p class="f-success" id="form-success" hidden role="status">Request locked in! We'll email a quote and menu options within 24 hours.</p>
+<button class="btn btn-lg btn-submit" type="submit">Request the Truck</button>
+<p class="f-fine">No payment now — this demo form validates in the browser only.</p>
+</form>
+</div>
+</div>
+</section>
+<section class="section sec-visit" id="visit">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Hours &amp; Location</span>
+<h2 class="">Come find us</h2>
+<p class="lead">The map below is a styled placeholder — drop in your favourite embed when you go live.</p>
+</div>
+<div class="visit-grid">
+<div class="map-wrap" data-reveal>
+<div class="map-ph" role="img" aria-label="Stylized map placeholder for Commissary: 14 Dockside Yard">
+<span class="map-road map-road-a" aria-hidden="true"></span>
+<span class="map-road map-road-b" aria-hidden="true"></span>
+<span class="map-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+</div>
+<div class="map-card">
+<strong>Citrus Comet</strong>
+<p>Commissary: 14 Dockside Yard<br>Marlow City, AZ 85004</p>
+<p class="map-note">The truck moves daily — the map shows this week's anchor stop</p>
+</div>
+</div>
+<div class="visit-info">
+<div class="visit-contact" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Find us</h3><ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Commissary: 14 Dockside Yard, Marlow City, AZ 85004</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+16025550119">+1 (602) 555-0119</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:bookings@citruscomet.com">bookings@citruscomet.com</a></li>
+</ul><p class="visit-note">The truck moves daily — the map shows this week's anchor stop</p></div>
+<div class="visit-hours" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg>Opening hours</h3><ul class="hours-list" data-hours>
+<li data-day="0"><span>Monday</span><span class="hrs">Prep day — no service</span></li>
+<li data-day="1"><span>Tuesday</span><span class="hrs">11 am – 2 pm · Courthouse lawn</span></li>
+<li data-day="2"><span>Wednesday</span><span class="hrs">11 am – 2 pm · Tech campus</span></li>
+<li data-day="3"><span>Thursday</span><span class="hrs">5 pm – 9 pm · Barrel &amp; Sons Brewery</span></li>
+<li data-day="4"><span>Friday</span><span class="hrs">11 am – 2 pm · Riverside park</span></li>
+<li data-day="5"><span>Saturday</span><span class="hrs">9 am – 2 pm · Farmers market</span></li>
+<li data-day="6"><span>Sunday</span><span class="hrs">Stops posted 7 pm for next week</span></li>
+</ul></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand foot-logo" href="index.html"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h11v9H2zM13 10h4l3 3v3h-7z"/><circle cx="6" cy="17.6" r="1.8"/><circle cx="16.5" cy="17.6" r="1.8"/></svg></span><span>Citrus Comet</span></a>
+<p>Banana-yellow taco truck with a citrus habit. Five stops a week, tortillas pressed to order, sold out by 2 pm. 🚚</p>
+<div class="foot-socials">
+<a class="soc" href="index.html" aria-label="Citrus Comet on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Citrus Comet on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Citrus Comet on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Citrus Comet on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Citrus Comet on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer quick links">
+<h3 class="foot-h">Explore</h3>
+<ul class="foot-links">
+<li><a href="menu.html">Menu</a></li>
+<li><a href="contact.html#location">Find the Truck</a></li>
+<li><a href="about.html">Our Story</a></li>
+<li><a href="about.html#gallery">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="contact.html">Book Us</a></li>
+<li><a href="menu.html">Full Menu</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h3 class="foot-h">Hours</h3>
+<ul class="foot-hours">
+<li><span>Monday</span><span>Prep day — no service</span></li>
+<li><span>Thursday</span><span>5 pm – 9 pm · Barrel &amp; Sons Brewery</span></li>
+<li><span>Sunday</span><span>Stops posted 7 pm for next week</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h3 class="foot-h">Find Us</h3>
+<address class="foot-addr">
+Commissary: 14 Dockside Yard<br>Marlow City, AZ 85004<br>
+<a href="tel:+16025550119">+1 (602) 555-0119</a><br>
+<a href="mailto:bookings@citruscomet.com">bookings@citruscomet.com</a>
+</address>
+</div>
+</div>
+<div class="container foot-bottom">
+<p>&copy; <span data-year>2025</span> Citrus Comet. All rights reserved.</p>
+<p class="foot-fine">Crafted as a static HTML/CSS/JS template — no frameworks, no build step.</p>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+
+</body>
+</html>

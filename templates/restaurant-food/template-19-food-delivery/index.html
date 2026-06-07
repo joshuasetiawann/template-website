@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Platerunner — Local Food Delivery Service</title>
+<meta name="description" content="Platerunner is an app-clean food delivery template with a phone-mock hero, trending dishes menu, a 3-step order band and address-validated checkout form.">
+<meta name="theme-color" content="#16A34A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2316A34A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="promo-bar" data-promo>
+<div class="container promo-in">
+<p><strong>Heads up:</strong> Free delivery weekend: $0 fees on orders over $20, Friday through Sunday.</p>
+<button class="promo-x" type="button" data-promo-close aria-label="Dismiss announcement">&times;</button>
+</div>
+</div>
+<header class="site-header" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Platerunner home"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="16" r="3.4"/><circle cx="18" cy="16" r="3.4"/><path d="M6 16l3.4-7H7M9.4 9h6.1l2.5 7M12 16h-2.6"/></svg></span><span class="brand-name">Platerunner</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="menu.html">Popular Now</a></li>
+<li><a class="nav-link" href="about.html">How It Works</a></li>
+<li><a class="nav-link" href="about.html">Couriers</a></li>
+<li><a class="nav-link" href="about.html#gallery">Coverage</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="contact.html">Order</a></li>
+<li><a class="nav-link" href="menu.html">Full Menu</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="contact.html">Start an Order</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-center" id="top-hero">
+<div class="container">
+<div class="hero-copy hero-copy-center">
+<span class="kicker" data-reveal>From 240 local kitchens</span>
+<h1 data-reveal>Dinner, dispatched in minutes.</h1>
+<p class="hero-lead" data-reveal>Platerunner connects 240 neighbourhood kitchens to your door with live tracking, insulated bags and couriers who actually find the buzzer.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg" href="#order">Start an Order</a>
+<a class="btn btn-lg btn-ghost" href="#menu">Browse Popular</a>
+</div>
+</div>
+<div class="phone-mock" role="img" aria-label="Illustration of the Platerunner delivery app">
+<div class="phone-top"><span class="ph-notch" aria-hidden="true"></span></div>
+<div class="phone-status"><span class="ph-pulse" aria-hidden="true"></span>Courier 4 min away</div>
+<ul class="ph-list">
+<li class="ph-row"><span class="ph-dot" aria-hidden="true"></span><span class="ph-meta"><strong>Tonkotsu ramen</strong><em>Tangle Noodle Bar</em></span><span class="ph-price">$15.00</span></li>
+<li class="ph-row"><span class="ph-dot" aria-hidden="true"></span><span class="ph-meta"><strong>Margherita D.O.P.</strong><em>Rosso Forno</em></span><span class="ph-price">$14.00</span></li>
+<li class="ph-row"><span class="ph-dot" aria-hidden="true"></span><span class="ph-meta"><strong>Açaí glow bowl</strong><em>Pulp &amp; Glow</em></span><span class="ph-price">$13.50</span></li>
+</ul>
+<div class="phone-track" aria-hidden="true"><span class="ph-bike"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="16" r="3.4"/><circle cx="18" cy="16" r="3.4"/><path d="M6 16l3.4-7H7M9.4 9h6.1l2.5 7M12 16h-2.6"/></svg></span><span class="ph-bar"><span class="ph-fill"></span></span><span class="ph-home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span></div>
+</div>
+</div>
+</section>
+<section class="section sec-steps" id="steps">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">How It Works</span>
+<h2 class="">Three steps, zero soggy fries</h2>
+<p class="lead">From craving to doorstep — here's the whole journey.</p>
+</div>
+<div class="steps-grid">
+<article class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">01</span>
+<h3>Drop your address</h3>
+<p>We match you to kitchens inside your zone.</p>
+</article>
+<article class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">02</span>
+<h3>Kitchens cook, we time it</h3>
+<p>Couriers dispatch so food leaves at peak, not before.</p>
+</article>
+<article class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">03</span>
+<h3>Track to the door</h3>
+<p>Live map, courier chat, fry vents doing their job.</p>
+</article>
+</div>
+<div class="steps-cta" data-reveal><a class="btn btn-lg" href="#order">Check My Address</a><span>Average handoff under 30 minutes.</span></div>
+</div>
+</section>
+<section class="section sec-menu" id="menu" data-menu aria-label="Menu">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Popular Near You</span>
+<h2 class="">Trending plates tonight</h2>
+<p class="lead">Live favourites from partner kitchens across the city — tap a category, find dinner, watch it travel to you in real time.</p>
+</div>
+<div class="menu-tabs" role="tablist" aria-label="Menu categories">
+<button class="menu-tab is-active" type="button" role="tab" id="tab-trending" aria-controls="panel-trending" aria-selected="true" data-tab="trending">Trending</button>
+<button class="menu-tab" type="button" role="tab" id="tab-comfort" aria-controls="panel-comfort" aria-selected="false" data-tab="comfort">Comfort</button>
+<button class="menu-tab" type="button" role="tab" id="tab-healthy" aria-controls="panel-healthy" aria-selected="false" data-tab="healthy">Healthy-ish</button>
+<button class="menu-tab" type="button" role="tab" id="tab-late" aria-controls="panel-late" aria-selected="false" data-tab="late">Late Night</button>
+</div>
+<div class="menu-panel menu-cardgrid" role="tabpanel" id="panel-trending" aria-labelledby="tab-trending" data-panel="trending">
+<article class="mi-card" data-cat="trending" data-reveal>
+<span class="mi-tag">#1 tonight</span><h3 class="mi-name">Smash Double + Fries</h3>
+<p class="mi-desc">Hatch &amp; Griddle — crispy edges survive the ride</p>
+<div class="mi-foot"><span class="mi-price">$15.50</span><span class="mi-cat">Trending</span></div>
+</article>
+<article class="mi-card" data-cat="trending" data-reveal>
+<h3 class="mi-name">Tonkotsu, 12-Hour</h3>
+<p class="mi-desc">Tangle — broth tin + noodles packed separately</p>
+<div class="mi-foot"><span class="mi-price">$15.00</span><span class="mi-cat">Trending</span></div>
+</article>
+<article class="mi-card" data-cat="trending" data-reveal>
+<h3 class="mi-name">Nduja Honey Pizza</h3>
+<p class="mi-desc">Rosso Forno — heat-locked box, 30-minute radius</p>
+<div class="mi-foot"><span class="mi-price">$18.00</span><span class="mi-cat">Trending</span></div>
+</article>
+</div>
+<div class="menu-panel menu-cardgrid" role="tabpanel" id="panel-comfort" aria-labelledby="tab-comfort" data-panel="comfort" hidden>
+<article class="mi-card" data-cat="comfort" data-reveal>
+<h3 class="mi-name">Chicken Tikka Family Tray</h3>
+<p class="mi-desc">Saffron Lane — feeds four with naan avalanche</p>
+<div class="mi-foot"><span class="mi-price">$38.00</span><span class="mi-cat">Comfort</span></div>
+</article>
+<article class="mi-card" data-cat="comfort" data-reveal>
+<h3 class="mi-name">Mac &amp; Three Cheese</h3>
+<p class="mi-desc">Marrow House — broiled crust intact, somehow</p>
+<div class="mi-foot"><span class="mi-price">$12.50</span><span class="mi-cat">Comfort</span></div>
+</article>
+<article class="mi-card" data-cat="comfort" data-reveal>
+<h3 class="mi-name">Pad See Ew, Extra Char</h3>
+<p class="mi-desc">Soi 9 — wok smoke included free of charge</p>
+<div class="mi-foot"><span class="mi-price">$14.00</span><span class="mi-cat">Comfort</span></div>
+</article>
+</div>
+<div class="menu-panel menu-cardgrid" role="tabpanel" id="panel-healthy" aria-labelledby="tab-healthy" data-panel="healthy" hidden>
+<article class="mi-card" data-cat="healthy" data-reveal>
+<h3 class="mi-name">Açaí Glow Bowl</h3>
+<p class="mi-desc">Pulp &amp; Glow — granola packed on the side, always</p>
+<div class="mi-foot"><span class="mi-price">$13.50</span><span class="mi-cat">Healthy-ish</span></div>
+</article>
+<article class="mi-card" data-cat="healthy" data-reveal>
+<h3 class="mi-name">Charred Broccoli Caesar</h3>
+<p class="mi-desc">Rootline Kitchen — dressing rides shotgun</p>
+<div class="mi-foot"><span class="mi-price">$15.50</span><span class="mi-cat">Healthy-ish</span></div>
+</article>
+<article class="mi-card" data-cat="healthy" data-reveal>
+<h3 class="mi-name">Poke Duo Box</h3>
+<p class="mi-desc">Reef &amp; Rice — two bases, six toppings, chilled pack</p>
+<div class="mi-foot"><span class="mi-price">$16.50</span><span class="mi-cat">Healthy-ish</span></div>
+</article>
+</div>
+<div class="menu-panel menu-cardgrid" role="tabpanel" id="panel-late" aria-labelledby="tab-late" data-panel="late" hidden>
+<article class="mi-card" data-cat="late" data-reveal>
+<h3 class="mi-name">Birria Tacos x3, Consommé</h3>
+<p class="mi-desc">Citrus Comet — dip cup sealed like treasure</p>
+<div class="mi-foot"><span class="mi-price">$13.50</span><span class="mi-cat">Late Night</span></div>
+</article>
+<article class="mi-card" data-cat="late" data-reveal>
+<h3 class="mi-name">Garlic Knots, Double Order</h3>
+<p class="mi-desc">Rosso Forno — the 1 am answer</p>
+<div class="mi-foot"><span class="mi-price">$11.00</span><span class="mi-cat">Late Night</span></div>
+</article>
+<article class="mi-card" data-cat="late" data-reveal>
+<h3 class="mi-name">Banana Pudding Jar</h3>
+<p class="mi-desc">Black Kettle — spoon taped to the lid</p>
+<div class="mi-foot"><span class="mi-price">$6.50</span><span class="mi-cat">Late Night</span></div>
+</article>
+</div>
+
+
+<div class="mp-viewfull-wrap">
+<a class="btn btn-lg mp-viewfull" href="menu.html" data-mp-viewfull>View full menu<svg class="ic ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</section>
+<section class="section sec-story" id="story">
+<div class="container">
+<div class="story-grid story-flip"><div class="story-copy" data-reveal><div class="sec-head" data-reveal>
+<span class="kicker">The Fleet</span>
+<h2 class="">Couriers who treat food like cargo that matters</h2>
+<p class="lead">Platerunner started with one courier, one e-bike and a thesis: delivery shouldn't mean soggy.</p>
+</div><p>Founder Dani Okoye spent two years as a bike courier and kept a spreadsheet of everything that arrived ruined. Platerunner is the fix: insulated twin-chamber bags, broth tins, fry vents and routes planned around the food, not just the map.</p>
+<p>Every courier is trained on a 'cargo manifest' per cuisine — pizza rides flat, ramen rides split, bowls never tilt past fifteen degrees. The fleet is 70% e-bike and the average drop is under 24 minutes.</p><figure class="story-quote" data-reveal>
+<blockquote><p>&ldquo;We don't deliver food. We deliver the kitchen's reputation.&rdquo;</p></blockquote>
+<figcaption><strong>Dani Okoye</strong> · Founder &amp; Fleet Lead</figcaption>
+</figure></div><div class="story-art" data-reveal aria-hidden="true">
+<div class="story-portrait"><span class="story-ini">D</span><span class="story-cap"><strong>Dani Okoye</strong><em>Founder &amp; Fleet Lead</em></span></div>
+</div></div>
+</div>
+</section>
+<section class="section sec-gallery" id="gallery">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">In Pictures</span>
+<h2 class="">A look inside</h2>
+<p class="lead">Gradient tiles stand in for photography — swap in your own imagery when you make this template yours.</p>
+</div>
+<div class="g-strip">
+<figure class="g-tile g-1" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="16" r="3.4"/><circle cx="18" cy="16" r="3.4"/><path d="M6 16l3.4-7H7M9.4 9h6.1l2.5 7M12 16h-2.6"/></svg>
+<figcaption>The e-bike fleet</figcaption>
+</figure>
+<figure class="g-tile g-2" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>
+<figcaption>Twin-chamber bags</figcaption>
+</figure>
+<figure class="g-tile g-3" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>
+<figcaption>Dispatch wall, 7 pm</figcaption>
+</figure>
+<figure class="g-tile g-4" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-5 7.4V20H9v-1.6A8 8 0 0 1 4 11z"/><path d="M9 7.5c0-1.4 1.2-1.4 1.2-2.8M13 7.5c0-1.4 1.2-1.4 1.2-2.8"/></svg>
+<figcaption>Broth tins, sealed</figcaption>
+</figure>
+<figure class="g-tile g-5" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 19.5a6 6 0 0 1 12 0"/><circle cx="16.8" cy="9.5" r="2.4"/><path d="M16 14.6a5 5 0 0 1 5 4.9"/></svg>
+<figcaption>240 partner kitchens</figcaption>
+</figure>
+<figure class="g-tile g-6" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg>
+<figcaption>Under 24 minutes</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-reviews" id="reviews">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Word of Mouth</span>
+<h2 class="">What guests keep saying</h2>
+<p class="lead">Pulled from the guestbook, the order slips and the occasional happy shout across the room.</p>
+</div>
+<div class="rev-grid">
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Ramen arrived with broth scalding and noodles separate. Whoever invented the tin deserves a statue.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">P</span><span><strong>Priva D.</strong><em>Orders 3x a week</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Live map is accurate to the minute and the courier texted about the gate code before I remembered it exists.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">M</span><span><strong>Marcus L.</strong><em>Apartment 4F</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Fries showed up crispy. CRISPY. I've been lied to by every other app for years.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">T</span><span><strong>Tan W.</strong><em>Friday night loyalist</em></span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-reserve" id="order">
+<div class="container order-grid">
+<div class="order-side" data-reveal>
+<span class="kicker">Start an Order</span>
+<h2>Where are we running tonight?</h2>
+<p class="lead">Drop your address to check coverage and start your order — we'll confirm your zone and nearest kitchens by email.</p>
+<ul class="perk-list">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Direct orders skip third-party fees</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Live status by email the moment it's confirmed</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg>Made-when-you're-near timing on every order</li>
+</ul>
+</div>
+<div class="order-card" data-reveal>
+<form id="main-form" class="res-form" novalidate>
+<div class="field">
+<label for="name">Your name</label>
+<input id="name" name="name" type="text" placeholder="Alex Morgan" autocomplete="off" data-validate="name">
+<span class="f-err" id="err-name" hidden>Please enter your name (at least 2 characters).</span>
+</div>
+<div class="field">
+<label for="email">Email address</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="off" data-validate="email">
+<span class="f-err" id="err-email" hidden>Please enter a valid email address.</span>
+</div>
+<div class="field">
+<label for="address">Delivery address</label>
+<input id="address" name="address" type="text" placeholder="Street, number, apartment" autocomplete="off" data-validate="address">
+<span class="f-err" id="err-address" hidden>Please enter a delivery address (at least 8 characters).</span>
+</div>
+<div class="field">
+<label for="note">Order notes (optional)</label>
+<input id="note" name="note" type="text" placeholder="Ring the bell, extra napkins…" autocomplete="off" >
+<span class="f-err" id="err-note" hidden>Please enter a valid order notes (optional).</span>
+</div>
+<p class="f-success" id="form-success" hidden role="status">You're in the zone! Check your inbox — your order link and nearest kitchens are on the way.</p>
+<button class="btn btn-lg btn-submit" type="submit">Check My Address</button>
+<p class="f-fine">No payment now — this demo form validates in the browser only.</p>
+</form>
+</div>
+</div>
+</section>
+<section class="section sec-visit" id="visit">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Hours &amp; Location</span>
+<h2 class="">Come find us</h2>
+<p class="lead">The map below is a styled placeholder — drop in your favourite embed when you go live.</p>
+</div>
+<div class="visit-grid">
+<div class="map-wrap" data-reveal>
+<div class="map-ph" role="img" aria-label="Stylized map placeholder for Dispatch Hub: 50 Meridian Way">
+<span class="map-road map-road-a" aria-hidden="true"></span>
+<span class="map-road map-road-b" aria-hidden="true"></span>
+<span class="map-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+</div>
+<div class="map-card">
+<strong>Platerunner</strong>
+<p>Dispatch Hub: 50 Meridian Way<br>Fairport, NC 27601</p>
+<p class="map-note">Coverage: 9 zones citywide · live chat in the app 10:30 am – close</p>
+</div>
+</div>
+<div class="visit-info">
+<div class="visit-contact" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Find us</h3><ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Dispatch Hub: 50 Meridian Way, Fairport, NC 27601</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+19195550102">+1 (919) 555-0102</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:support@platerunner.com">support@platerunner.com</a></li>
+</ul><p class="visit-note">Coverage: 9 zones citywide · live chat in the app 10:30 am – close</p></div>
+<div class="visit-hours" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg>Opening hours</h3><ul class="hours-list" data-hours>
+<li data-day="0"><span>Monday</span><span class="hrs">10:30 am – 11:00 pm</span></li>
+<li data-day="1"><span>Tuesday</span><span class="hrs">10:30 am – 11:00 pm</span></li>
+<li data-day="2"><span>Wednesday</span><span class="hrs">10:30 am – 11:00 pm</span></li>
+<li data-day="3"><span>Thursday</span><span class="hrs">10:30 am – 12:00 am</span></li>
+<li data-day="4"><span>Friday</span><span class="hrs">10:30 am – 1:30 am</span></li>
+<li data-day="5"><span>Saturday</span><span class="hrs">10:30 am – 1:30 am</span></li>
+<li data-day="6"><span>Sunday</span><span class="hrs">10:30 am – 10:30 pm</span></li>
+</ul></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand foot-logo" href="index.html"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="16" r="3.4"/><circle cx="18" cy="16" r="3.4"/><path d="M6 16l3.4-7H7M9.4 9h6.1l2.5 7M12 16h-2.6"/></svg></span><span>Platerunner</span></a>
+<p>Local food delivery with insulated twin-chamber bags, broth tins and live tracking. 240 kitchens, 9 zones, under 24 minutes.</p>
+<div class="foot-socials">
+<a class="soc" href="index.html" aria-label="Platerunner on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Platerunner on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Platerunner on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Platerunner on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Platerunner on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer quick links">
+<h3 class="foot-h">Explore</h3>
+<ul class="foot-links">
+<li><a href="menu.html">Popular Now</a></li>
+<li><a href="about.html">How It Works</a></li>
+<li><a href="about.html">Couriers</a></li>
+<li><a href="about.html#gallery">Coverage</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="contact.html">Order</a></li>
+<li><a href="menu.html">Full Menu</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h3 class="foot-h">Hours</h3>
+<ul class="foot-hours">
+<li><span>Monday</span><span>10:30 am – 11:00 pm</span></li>
+<li><span>Thursday</span><span>10:30 am – 12:00 am</span></li>
+<li><span>Sunday</span><span>10:30 am – 10:30 pm</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h3 class="foot-h">Find Us</h3>
+<address class="foot-addr">
+Dispatch Hub: 50 Meridian Way<br>Fairport, NC 27601<br>
+<a href="tel:+19195550102">+1 (919) 555-0102</a><br>
+<a href="mailto:support@platerunner.com">support@platerunner.com</a>
+</address>
+</div>
+</div>
+<div class="container foot-bottom">
+<p>&copy; <span data-year>2025</span> Platerunner. All rights reserved.</p>
+<p class="foot-fine">Crafted as a static HTML/CSS/JS template — no frameworks, no build step.</p>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+
+</body>
+</html>

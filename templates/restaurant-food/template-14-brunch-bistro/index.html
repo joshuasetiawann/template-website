@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yolk &amp; Marigold — Brunch Bistro</title>
+<meta name="description" content="Yolk &amp; Marigold is a sunny peach-and-sky brunch bistro template with a chip-filtered menu, sun-ray motifs, waitlist form and weekend energy.">
+<meta name="theme-color" content="#F08A5B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23F08A5B'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3EY%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header header-pill" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Yolk &amp; Marigold home"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.7-7.5-10A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 3c0 5.3-7.5 10-7.5 10z"/></svg></span><span class="brand-name">Yolk &amp; Marigold</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="menu.html">Menu</a></li>
+<li><a class="nav-link" href="menu.html">Weekends</a></li>
+<li><a class="nav-link" href="about.html">Our Story</a></li>
+<li><a class="nav-link" href="about.html#gallery">Gallery</a></li>
+<li><a class="nav-link" href="contact.html">Waitlist</a></li>
+<li><a class="nav-link" href="contact.html#location">Visit</a></li>
+<li><a class="nav-link" href="menu.html">Full Menu</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="contact.html">Join the Waitlist</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-soft" id="top-hero">
+<span class="blob blob-a" aria-hidden="true"></span>
+<span class="blob blob-b" aria-hidden="true"></span>
+<div class="container hero-grid">
+<div class="hero-copy">
+<span class="kicker" data-reveal>Brunch until 3, no judgement until never</span>
+<h1 data-reveal>Mornings worth getting up for. Eventually.</h1>
+<p class="hero-lead" data-reveal>Custardy french toast, benedicts with proper hollandaise and a marigold-yellow room that runs on fresh orange juice and gossip.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg" href="#reserve">Join the Waitlist</a>
+<a class="btn btn-lg btn-ghost" href="#menu">See the Menu</a>
+</div>
+<div class="fact-pills"><span class="fact-pill" data-reveal><strong>3 pm</strong> brunch ends, sadly</span>
+<span class="fact-pill" data-reveal><strong>212</strong> eggs poached a weekend</span>
+<span class="fact-pill" data-reveal><strong>9</strong> kinds of toast</span></div>
+</div>
+<div class="hero-art hero-orbs" role="img" aria-label="Playful shapes evoking Brunch Bistro">
+<span class="orb orb-1" aria-hidden="true"><svg class="orb-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 19.5a6 6 0 0 1 12 0"/><circle cx="16.8" cy="9.5" r="2.4"/><path d="M16 14.6a5 5 0 0 1 5 4.9"/></svg></span>
+<span class="orb orb-2" aria-hidden="true"><svg class="orb-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-.8 7a3.2 3.2 0 0 1-6.4 0L8 3z"/><path d="M12 13.5V20M9 20.5h6"/></svg></span>
+<span class="orb orb-3" aria-hidden="true"><svg class="orb-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg></span>
+</div>
+</div>
+</section>
+<section class="section sec-menu" id="menu" data-menu aria-label="Menu">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">The Menu</span>
+<h2 class="">Sweet, savory &amp; in between</h2>
+<p class="lead">Filter by mood. Everything comes with the good butter; coffee refills wander the room on their own schedule.</p>
+</div>
+<div class="menu-chips" role="group" aria-label="Filter menu by category">
+<button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+<button class="chip" type="button" data-filter="sweet" aria-pressed="false">Sweet</button>
+<button class="chip" type="button" data-filter="savory" aria-pressed="false">Savory</button>
+<button class="chip" type="button" data-filter="bene" aria-pressed="false">Benedicts</button>
+<button class="chip" type="button" data-filter="drinks" aria-pressed="false">Drinks</button>
+</div>
+<div class="menu-cardgrid" data-menu-grid>
+<article class="mi-card" data-cat="sweet" data-reveal>
+<span class="mi-tag">The classic</span><h3 class="mi-name">Brûléed French Toast</h3>
+<p class="mi-desc">Custard-soaked brioche, torched sugar lid, macerated berries</p>
+<div class="mi-foot"><span class="mi-price">$15.50</span><span class="mi-cat">Sweet</span></div>
+</article>
+<article class="mi-card" data-cat="sweet" data-reveal>
+<h3 class="mi-name">Lemon Ricotta Pancakes</h3>
+<p class="mi-desc">Cloud-stack of three, blueberry compote, honey butter</p>
+<div class="mi-foot"><span class="mi-price">$14.50</span><span class="mi-cat">Sweet</span></div>
+</article>
+<article class="mi-card" data-cat="sweet" data-reveal>
+<h3 class="mi-name">Marigold Waffle</h3>
+<p class="mi-desc">Cornmeal crunch, whipped mascarpone, orange-blossom syrup</p>
+<div class="mi-foot"><span class="mi-price">$13.50</span><span class="mi-cat">Sweet</span></div>
+</article>
+<article class="mi-card" data-cat="savory" data-reveal>
+<h3 class="mi-name">Green Goddess Scramble</h3>
+<p class="mi-desc">Soft eggs, herbs, goat cheese, sourdough</p>
+<div class="mi-foot"><span class="mi-price">$13.00</span><span class="mi-cat">Savory</span></div>
+</article>
+<article class="mi-card" data-cat="savory" data-reveal>
+<h3 class="mi-name">Crispy Potato Hash</h3>
+<p class="mi-desc">Duck-fat potatoes, fried eggs, charred scallion crema</p>
+<div class="mi-foot"><span class="mi-price">$14.00</span><span class="mi-cat">Savory</span></div>
+</article>
+<article class="mi-card" data-cat="savory" data-reveal>
+<h3 class="mi-name">The Marigold Burger</h3>
+<p class="mi-desc">Brunch burger, fried egg, bacon jam, rosemary fries</p>
+<div class="mi-foot"><span class="mi-price">$16.50</span><span class="mi-cat">Savory</span></div>
+</article>
+<article class="mi-card" data-cat="bene" data-reveal>
+<h3 class="mi-name">Classic Benedict</h3>
+<p class="mi-desc">Ham, two poached eggs, hollandaise that took years</p>
+<div class="mi-foot"><span class="mi-price">$15.00</span><span class="mi-cat">Benedicts</span></div>
+</article>
+<article class="mi-card" data-cat="bene" data-reveal>
+<span class="mi-tag">Weekend favourite</span><h3 class="mi-name">Smoked Salmon Benedict</h3>
+<p class="mi-desc">Cured salmon, dill, lemon hollandaise</p>
+<div class="mi-foot"><span class="mi-price">$17.50</span><span class="mi-cat">Benedicts</span></div>
+</article>
+<article class="mi-card" data-cat="bene" data-reveal>
+<h3 class="mi-name">Garden Benedict (V)</h3>
+<p class="mi-desc">Roasted tomato, avocado, spinach, paprika hollandaise</p>
+<div class="mi-foot"><span class="mi-price">$14.50</span><span class="mi-cat">Benedicts</span></div>
+</article>
+<article class="mi-card" data-cat="drinks" data-reveal>
+<h3 class="mi-name">Fresh-Squeezed OJ</h3>
+<p class="mi-desc">Squeezed loudly behind the bar all morning</p>
+<div class="mi-foot"><span class="mi-price">$5.50</span><span class="mi-cat">Drinks</span></div>
+</article>
+<article class="mi-card" data-cat="drinks" data-reveal>
+<h3 class="mi-name">Espresso Martini, Brunch Edition</h3>
+<p class="mi-desc">Cold brew, vanilla, alarmingly smooth</p>
+<div class="mi-foot"><span class="mi-price">$13.00</span><span class="mi-cat">Drinks</span></div>
+</article>
+<article class="mi-card" data-cat="drinks" data-reveal>
+<h3 class="mi-name">Marigold Mimosa</h3>
+<p class="mi-desc">Orange-marigold cordial, something sparkling</p>
+<div class="mi-foot"><span class="mi-price">$11.00</span><span class="mi-cat">Drinks</span></div>
+</article>
+</div>
+<p class="menu-empty" data-menu-empty hidden>Nothing in this category right now — try another.</p>
+
+
+<div class="mp-viewfull-wrap">
+<a class="btn btn-lg mp-viewfull" href="menu.html" data-mp-viewfull>View full menu<svg class="ic ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</section>
+<section class="section sec-story" id="story">
+<div class="container">
+<div class="story-grid story-flip"><div class="story-copy" data-reveal><div class="sec-head" data-reveal>
+<span class="kicker">Our Story</span>
+<h2 class="">A diner kid and a pastry chef walk into a lease</h2>
+<p class="lead">Yolk &amp; Marigold is what happens when a third-generation diner kid marries a pastry chef.</p>
+</div><p>Nina grew up refilling coffee in her family's diner; Theo piped choux in fancy hotels. Their compromise is this sunny room — diner warmth, patisserie standards, and a hollandaise that gets whisked fresh every forty-five minutes.</p>
+<p>The marigolds on every table come from Nina's mother's garden between May and October. The playlist is whatever the dish pit votes for. Sundays are loud and we love them that way.</p><figure class="story-quote" data-reveal>
+<blockquote><p>&ldquo;Brunch is breakfast that finally relaxed.&rdquo;</p></blockquote>
+<figcaption><strong>Nina &amp; Theo Marigold</strong> · Owners</figcaption>
+</figure></div><div class="story-art" data-reveal aria-hidden="true">
+<div class="story-portrait"><span class="story-ini">N</span><span class="story-cap"><strong>Nina &amp; Theo Marigold</strong><em>Owners</em></span></div>
+</div></div>
+</div>
+</section>
+<section class="section sec-gallery g-rounded" id="gallery">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">In Pictures</span>
+<h2 class="">A look inside</h2>
+<p class="lead">Gradient tiles stand in for photography — swap in your own imagery when you make this template yours.</p>
+</div>
+<div class="g-strip">
+<figure class="g-tile g-1" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 19.5a6 6 0 0 1 12 0"/><circle cx="16.8" cy="9.5" r="2.4"/><path d="M16 14.6a5 5 0 0 1 5 4.9"/></svg>
+<figcaption>Sunday, 11 am</figcaption>
+</figure>
+<figure class="g-tile g-2" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-.8 7a3.2 3.2 0 0 1-6.4 0L8 3z"/><path d="M12 13.5V20M9 20.5h6"/></svg>
+<figcaption>The juice press</figcaption>
+</figure>
+<figure class="g-tile g-3" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>
+<figcaption>Hollandaise o'clock</figcaption>
+</figure>
+<figure class="g-tile g-4" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.7-7.5-10A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 3c0 5.3-7.5 10-7.5 10z"/></svg>
+<figcaption>Window table light</figcaption>
+</figure>
+<figure class="g-tile g-5" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14v8H5z"/><path d="M5 15.5c1.5 1.4 3-1.4 4.5 0s3-1.4 4.5 0 3-1.4 4.5 0"/><path d="M12 9v3M12 5.5a1.2 1.2 0 1 0-.01 0z"/></svg>
+<figcaption>Pancake flip</figcaption>
+</figure>
+<figure class="g-tile g-6" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19C5 10.5 11.5 4.5 20 4.5 20 13 13.5 19 5 19z"/><path d="M5 19c3-5.4 7.2-9.3 12-11.7"/></svg>
+<figcaption>Marigolds, table 6</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-band" id="weekend">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Weekends</span>
+<h2 class="">How weekends work here</h2>
+<p class="lead">Pinned to the wall by the register — refreshed often, photographed constantly.</p>
+</div>
+<div class="pb-grid">
+<article class="pb-card" data-reveal>
+<span class="pb-time">8:00 am</span>
+<h3>Doors &amp; first pour</h3>
+<p>Early birds get the window seats</p>
+</article>
+<article class="pb-card" data-reveal>
+<span class="pb-time">9:30 am</span>
+<h3>Waitlist warms up</h3>
+<p>Add your name online, wander the market</p>
+</article>
+<article class="pb-card" data-reveal>
+<span class="pb-time">11:00 am</span>
+<h3>Peak yolk</h3>
+<p>Full room, full juice press, full volume</p>
+</article>
+<article class="pb-card" data-reveal>
+<span class="pb-time">2:45 pm</span>
+<h3>Last hollandaise</h3>
+<p>Kitchen whisks the final batch</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section sec-reviews" id="reviews">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Word of Mouth</span>
+<h2 class="">What guests keep saying</h2>
+<p class="lead">Pulled from the guestbook, the order slips and the occasional happy shout across the room.</p>
+</div>
+<div class="rev-grid">
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>The brûléed french toast cracks like a crème brûlée. We plan weekends around it now.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">J</span><span><strong>Jess &amp; Sam</strong><em>Every Sunday</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Waitlist moved faster than promised and the smoked salmon benedict was worth double the wait anyway.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">A</span><span><strong>Andre B.</strong><em>Saturday brunch</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Sunny, loud, smells like oranges and bacon. The only acceptable place to be before noon.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">K</span><span><strong>Kara D.</strong><em>Brunch evangelist</em></span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-reserve" id="reserve">
+<div class="container res-narrow">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Waitlist &amp; Tables</span>
+<h2 class="">Get on the weekend waitlist</h2>
+<p class="lead">Weekdays we take bookings; weekends run on the waitlist. Put your name down, we'll email when your table's buttering up.</p>
+</div>
+<div class="form-bubble" data-reveal>
+<form id="main-form" class="res-form" novalidate>
+<div class="field">
+<label for="name">Your name</label>
+<input id="name" name="name" type="text" placeholder="Alex Morgan" autocomplete="off" data-validate="name">
+<span class="f-err" id="err-name" hidden>Please enter your name (at least 2 characters).</span>
+</div>
+<div class="field">
+<label for="email">Email address</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="off" data-validate="email">
+<span class="f-err" id="err-email" hidden>Please enter a valid email address.</span>
+</div>
+<div class="field">
+<label for="date">Date</label>
+<input id="date" name="date" type="date" placeholder="" autocomplete="off" data-validate="date">
+<span class="f-err" id="err-date" hidden>Please choose a date.</span>
+</div>
+<div class="field">
+<label for="guests">Guests</label>
+<select data-validate="guests" id="guests" name="guests"><option value="">Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option></select>
+<span class="f-err" id="err-guests" hidden>Please select the number of guests.</span>
+</div>
+<p class="f-success" id="form-success" hidden role="status">You're on the list! Keep an eye on your inbox — we'll wave when your table is ready.</p>
+<button class="btn btn-lg btn-submit" type="submit">Join Waitlist</button>
+<p class="f-fine">No payment now — this demo form validates in the browser only.</p>
+</form>
+</div>
+</div>
+</section>
+<section class="section sec-visit" id="visit">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Hours &amp; Location</span>
+<h2 class="">Come find us</h2>
+<p class="lead">The map below is a styled placeholder — drop in your favourite embed when you go live.</p>
+</div>
+<div class="visit-grid">
+<div class="map-wrap" data-reveal>
+<div class="map-ph" role="img" aria-label="Stylized map placeholder for 67 Sunporch Avenue">
+<span class="map-road map-road-a" aria-hidden="true"></span>
+<span class="map-road map-road-b" aria-hidden="true"></span>
+<span class="map-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+</div>
+<div class="map-card">
+<strong>Yolk &amp; Marigold</strong>
+<p>67 Sunporch Avenue<br>Lemonfield, GA 30307</p>
+<p class="map-note">Patio opens at 9 · dogs get a biscuit · cash tips split with the dish pit</p>
+</div>
+</div>
+<div class="visit-info">
+<div class="visit-contact" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Find us</h3><ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>67 Sunporch Avenue, Lemonfield, GA 30307</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+14045550151">+1 (404) 555-0151</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:hi@yolkandmarigold.com">hi@yolkandmarigold.com</a></li>
+</ul><p class="visit-note">Patio opens at 9 · dogs get a biscuit · cash tips split with the dish pit</p></div>
+<div class="visit-hours" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg>Opening hours</h3><ul class="hours-list" data-hours>
+<li data-day="0"><span>Monday</span><span class="hrs">8:00 am – 2:00 pm</span></li>
+<li data-day="1"><span>Tuesday</span><span class="hrs">8:00 am – 2:00 pm</span></li>
+<li data-day="2"><span>Wednesday</span><span class="hrs">8:00 am – 2:00 pm</span></li>
+<li data-day="3"><span>Thursday</span><span class="hrs">8:00 am – 2:00 pm</span></li>
+<li data-day="4"><span>Friday</span><span class="hrs">8:00 am – 3:00 pm</span></li>
+<li data-day="5"><span>Saturday</span><span class="hrs">8:00 am – 3:00 pm</span></li>
+<li data-day="6"><span>Sunday</span><span class="hrs">8:00 am – 3:00 pm</span></li>
+</ul></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand foot-logo" href="index.html"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.7-7.5-10A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 3c0 5.3-7.5 10-7.5 10z"/></svg></span><span>Yolk &amp; Marigold</span></a>
+<p>Sunny brunch bistro — custardy french toast, serious hollandaise and fresh OJ until 3 pm daily.</p>
+<div class="foot-socials">
+<a class="soc" href="index.html" aria-label="Yolk &amp; Marigold on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Yolk &amp; Marigold on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Yolk &amp; Marigold on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Yolk &amp; Marigold on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Yolk &amp; Marigold on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer quick links">
+<h3 class="foot-h">Explore</h3>
+<ul class="foot-links">
+<li><a href="menu.html">Menu</a></li>
+<li><a href="menu.html">Weekends</a></li>
+<li><a href="about.html">Our Story</a></li>
+<li><a href="about.html#gallery">Gallery</a></li>
+<li><a href="contact.html">Waitlist</a></li>
+<li><a href="contact.html#location">Visit</a></li>
+<li><a href="menu.html">Full Menu</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h3 class="foot-h">Hours</h3>
+<ul class="foot-hours">
+<li><span>Monday</span><span>8:00 am – 2:00 pm</span></li>
+<li><span>Thursday</span><span>8:00 am – 2:00 pm</span></li>
+<li><span>Sunday</span><span>8:00 am – 3:00 pm</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h3 class="foot-h">Find Us</h3>
+<address class="foot-addr">
+67 Sunporch Avenue<br>Lemonfield, GA 30307<br>
+<a href="tel:+14045550151">+1 (404) 555-0151</a><br>
+<a href="mailto:hi@yolkandmarigold.com">hi@yolkandmarigold.com</a>
+</address>
+</div>
+</div>
+<div class="container foot-bottom">
+<p>&copy; <span data-year>2025</span> Yolk &amp; Marigold. All rights reserved.</p>
+<p class="foot-fine">Crafted as a static HTML/CSS/JS template — no frameworks, no build step.</p>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+
+</body>
+</html>

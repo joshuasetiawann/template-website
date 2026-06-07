@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hatch &amp; Griddle — Smash Burger Joint</title>
+<meta name="description" content="Hatch &amp; Griddle is a loud mustard-and-ketchup burger joint template with a chalkboard specials panel, stacked hero banners and an order form.">
+<meta name="theme-color" content="#C8401F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23C8401F'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header header-thick" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Hatch &amp; Griddle home"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg></span><span class="brand-name">Hatch &amp; Griddle</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="menu.html">Menu</a></li>
+<li><a class="nav-link" href="menu.html">Specials</a></li>
+<li><a class="nav-link" href="about.html">Our Story</a></li>
+<li><a class="nav-link" href="about.html#gallery">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="contact.html">Order</a></li>
+<li><a class="nav-link" href="menu.html">Full Menu</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="contact.html">Order Pickup</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-banner" id="top-hero">
+<div class="container banner-grid">
+<div class="hero-copy">
+<span class="kicker" data-reveal>Smashed loud since 2019</span>
+<h1 data-reveal>Crispy edges or it doesn't leave the griddle.</h1>
+<p class="hero-lead" data-reveal>Double-smashed patties, squishy potato buns, sauce that drips past your wrist. Napkins are free; restraint is not on the menu.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg" href="#order">Order Pickup</a>
+<a class="btn btn-lg btn-ghost" href="#menu">See the Board</a>
+</div>
+</div>
+<div class="banner-art" role="img" aria-label="Bold panel evoking Smash Burger Joint">
+<span class="badge-rot" aria-hidden="true">Smashed to order</span>
+<span class="banner-motif" aria-hidden="true"><svg class="motif-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 2.6 4.8 4.7 4.8 9a4.8 4.8 0 0 1-9.6 0c0-1.9.8-3.2 1.8-4.6.4 1.3 1.2 2.2 2.5 2.7C11 7.7 11.2 5.2 12 3z"/></svg></span>
+</div>
+</div>
+</section>
+<section class="hero-strip" aria-label="The Promise">
+<div class="container strip-in">
+<span class="strip-kicker">The Promise</span>
+<p>Every patty smashed to order on a 50-year-old cast-iron griddle — 60 seconds a side, lacy edges, no heat lamps, no apologies.</p>
+<a class="btn btn-sm btn-invert" href="#menu">Read the menu</a>
+</div>
+</section>
+<section class="section sec-specials" id="specials">
+<div class="container specials-grid">
+<div class="chalk-side" data-reveal>
+<span class="kicker kicker-chalk">Chalked Daily</span>
+<h2>Chalkboard Specials</h2>
+<p class="lead">One special a day, gone when it's gone.</p>
+<p class="chalk-today" data-special-today aria-live="polite">Loading today's board…</p>
+<div class="chalk-ctl">
+<button class="chalk-btn" type="button" data-special-prev aria-label="Previous day's special">&larr;</button>
+<button class="chalk-btn" type="button" data-special-next aria-label="Next day's special">&rarr;</button>
+</div>
+</div>
+<ul class="chalkboard" data-specials>
+<li class="chalk-row" data-day="0" data-reveal>
+<span class="chalk-day">Monday</span>
+<span class="chalk-meta"><strong>Patty Melt Day</strong><em>Rye, swiss, griddled onions — $10.50</em></span>
+</li>
+<li class="chalk-row" data-day="1" data-reveal>
+<span class="chalk-day">Tuesday</span>
+<span class="chalk-meta"><strong>Double-Up Tuesday</strong><em>Any single becomes a double for $1</em></span>
+</li>
+<li class="chalk-row" data-day="2" data-reveal>
+<span class="chalk-day">Wednesday</span>
+<span class="chalk-meta"><strong>Green Chile Drop</strong><em>Fresh-roasted batch hits at noon</em></span>
+</li>
+<li class="chalk-row" data-day="3" data-reveal>
+<span class="chalk-day">Thursday</span>
+<span class="chalk-meta"><strong>Tots Supreme</strong><em>Cheese-sauce tots + bacon crumble — $7.50</em></span>
+</li>
+<li class="chalk-row" data-day="4" data-reveal>
+<span class="chalk-day">Friday</span>
+<span class="chalk-meta"><strong>Fish Sammy Friday</strong><em>Crispy cod, tartar slaw — $12</em></span>
+</li>
+<li class="chalk-row" data-day="5" data-reveal>
+<span class="chalk-day">Saturday</span>
+<span class="chalk-meta"><strong>Triple Threat</strong><em>Three patties, three cheeses — $15</em></span>
+</li>
+<li class="chalk-row" data-day="6" data-reveal>
+<span class="chalk-day">Sunday</span>
+<span class="chalk-meta"><strong>Family Bundle</strong><em>4 singles, 2 fries, 4 shakes — $42</em></span>
+</li>
+</ul>
+</div>
+</section>
+<section class="section sec-menu" id="menu" data-menu aria-label="Menu">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">The Board</span>
+<h2 class="">Burgers, birds &amp; shakes</h2>
+<p class="lead">Singles, doubles and a veg patty that earned its spot. All burgers come with pickles, shred lettuce and Hatch sauce unless you say otherwise.</p>
+</div>
+<div class="menu-chips" role="group" aria-label="Filter menu by category">
+<button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+<button class="chip" type="button" data-filter="smash" aria-pressed="false">Smash Burgers</button>
+<button class="chip" type="button" data-filter="birds" aria-pressed="false">Chicken &amp; Veg</button>
+<button class="chip" type="button" data-filter="sides" aria-pressed="false">Sides</button>
+<button class="chip" type="button" data-filter="shakes" aria-pressed="false">Shakes</button>
+</div>
+<div class="menu-cardgrid" data-menu-grid>
+<article class="mi-card" data-cat="smash" data-reveal>
+<span class="mi-tag">The one</span><h3 class="mi-name">OG Double Smash</h3>
+<p class="mi-desc">Two crispy-edge patties, American cheese, Hatch sauce</p>
+<div class="mi-foot"><span class="mi-price">$11.50</span><span class="mi-cat">Smash Burgers</span></div>
+</article>
+<article class="mi-card" data-cat="smash" data-reveal>
+<h3 class="mi-name">Onion-Crusted Single</h3>
+<p class="mi-desc">Patty smashed into shaved onions, mustard griddle flip</p>
+<div class="mi-foot"><span class="mi-price">$9.00</span><span class="mi-cat">Smash Burgers</span></div>
+</article>
+<article class="mi-card" data-cat="smash" data-reveal>
+<h3 class="mi-name">Blue Hour Burger</h3>
+<p class="mi-desc">Double smash, blue cheese crumble, bacon-onion jam</p>
+<div class="mi-foot"><span class="mi-price">$13.50</span><span class="mi-cat">Smash Burgers</span></div>
+</article>
+<article class="mi-card" data-cat="smash" data-reveal>
+<h3 class="mi-name">Green Chile Double</h3>
+<p class="mi-desc">Roasted hatch chiles, pepper jack, charred scallion mayo</p>
+<div class="mi-foot"><span class="mi-price">$13.00</span><span class="mi-cat">Smash Burgers</span></div>
+</article>
+<article class="mi-card" data-cat="birds" data-reveal>
+<h3 class="mi-name">Crunch Bird</h3>
+<p class="mi-desc">Buttermilk-fried thigh, hot honey, slaw, pickles</p>
+<div class="mi-foot"><span class="mi-price">$12.00</span><span class="mi-cat">Chicken &amp; Veg</span></div>
+</article>
+<article class="mi-card" data-cat="birds" data-reveal>
+<h3 class="mi-name">Grilled Bird Club</h3>
+<p class="mi-desc">Marinated breast, smoked bacon, avocado smash</p>
+<div class="mi-foot"><span class="mi-price">$12.50</span><span class="mi-cat">Chicken &amp; Veg</span></div>
+</article>
+<article class="mi-card" data-cat="birds" data-reveal>
+<h3 class="mi-name">Smash Shroom (V)</h3>
+<p class="mi-desc">Double mushroom-black bean patty, vegan sauce, same crispy edges</p>
+<div class="mi-foot"><span class="mi-price">$11.00</span><span class="mi-cat">Chicken &amp; Veg</span></div>
+</article>
+<article class="mi-card" data-cat="sides" data-reveal>
+<h3 class="mi-name">Twice-Cooked Fries</h3>
+<p class="mi-desc">Skin-on, fried twice, dusted with griddle salt</p>
+<div class="mi-foot"><span class="mi-price">$4.50</span><span class="mi-cat">Sides</span></div>
+</article>
+<article class="mi-card" data-cat="sides" data-reveal>
+<h3 class="mi-name">Cheese Sauce Tots</h3>
+<p class="mi-desc">Crackly tots drowned in pepper-jack sauce</p>
+<div class="mi-foot"><span class="mi-price">$6.00</span><span class="mi-cat">Sides</span></div>
+</article>
+<article class="mi-card" data-cat="shakes" data-reveal>
+<h3 class="mi-name">Frozen-Custard Vanilla Shake</h3>
+<p class="mi-desc">Spun thick — the spoon stands up</p>
+<div class="mi-foot"><span class="mi-price">$6.50</span><span class="mi-cat">Shakes</span></div>
+</article>
+<article class="mi-card" data-cat="shakes" data-reveal>
+<h3 class="mi-name">Burnt Caramel Shake</h3>
+<p class="mi-desc">Frozen custard, caramel cooked one shade too far</p>
+<div class="mi-foot"><span class="mi-price">$7.00</span><span class="mi-cat">Shakes</span></div>
+</article>
+<article class="mi-card" data-cat="shakes" data-reveal>
+<h3 class="mi-name">Strawberry Malt</h3>
+<p class="mi-desc">Roasted strawberries, malted milk, whipped top</p>
+<div class="mi-foot"><span class="mi-price">$7.00</span><span class="mi-cat">Shakes</span></div>
+</article>
+</div>
+<p class="menu-empty" data-menu-empty hidden>Nothing in this category right now — try another.</p>
+
+
+<div class="mp-viewfull-wrap">
+<a class="btn btn-lg mp-viewfull" href="menu.html" data-mp-viewfull>View full menu<svg class="ic ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</section>
+<section class="section sec-story" id="story">
+<div class="container">
+<div class="story-grid story-flip"><div class="story-copy" data-reveal><div class="sec-head" data-reveal>
+<span class="kicker">Our Story</span>
+<h2 class="">A griddle older than the owners</h2>
+<p class="lead">The cast-iron flat-top came out of a shuttered diner — fifty years seasoned, two thousand pounds, non-negotiable.</p>
+</div><p>Cousins Ray and Tonya Hatch towed the griddle across two state lines before they had a building to put it in. The shop was designed around it: counter up front, griddle in the window, smoke alarm hard-wired to be patient.</p>
+<p>Beef is ground fresh every morning from chuck and brisket, smashed thin so the edges go lacy and the middle stays loose. It's a four-napkin operation and the neighbourhood likes it that way.</p><figure class="story-quote" data-reveal>
+<blockquote><p>&ldquo;Flat is flavour. Smash it like you mean it.&rdquo;</p></blockquote>
+<figcaption><strong>Ray &amp; Tonya Hatch</strong> · Cousins &amp; Co-owners</figcaption>
+</figure></div><div class="story-art" data-reveal aria-hidden="true">
+<div class="story-portrait"><span class="story-ini">R</span><span class="story-cap"><strong>Ray &amp; Tonya Hatch</strong><em>Cousins &amp; Co-owners</em></span></div>
+</div></div>
+</div>
+</section>
+<section class="section sec-steps" id="how">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Order Ahead</span>
+<h2 class="">Three steps to crispy edges</h2>
+<p class="lead">Simple on purpose — the hard part happens at the stove.</p>
+</div>
+<ol class="steps-row">
+<li class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">1</span>
+<div><h3>Order online</h3><p>Build your stack and pick a window.</p></div>
+</li>
+<li class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">2</span>
+<div><h3>We smash on cue</h3><p>Patties hit the iron when you're ten minutes out.</p></div>
+</li>
+<li class="step-card" data-reveal>
+<span class="step-num" aria-hidden="true">3</span>
+<div><h3>Grab &amp; go loud</h3><p>Window pickup — bags labelled, shakes capped.</p></div>
+</li>
+</ol>
+</div>
+</section>
+<section class="section sec-gallery g-polaroid" id="gallery">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">In Pictures</span>
+<h2 class="">A look inside</h2>
+<p class="lead">Gradient tiles stand in for photography — swap in your own imagery when you make this template yours.</p>
+</div>
+<div class="g-strip">
+<figure class="g-tile g-1" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 2.6 4.8 4.7 4.8 9a4.8 4.8 0 0 1-9.6 0c0-1.9.8-3.2 1.8-4.6.4 1.3 1.2 2.2 2.5 2.7C11 7.7 11.2 5.2 12 3z"/></svg>
+<figcaption>The 50-year griddle</figcaption>
+</figure>
+<figure class="g-tile g-2" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>
+<figcaption>Smash o'clock</figcaption>
+</figure>
+<figure class="g-tile g-3" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-.8 7a3.2 3.2 0 0 1-6.4 0L8 3z"/><path d="M12 13.5V20M9 20.5h6"/></svg>
+<figcaption>Shake pull</figcaption>
+</figure>
+<figure class="g-tile g-4" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 19.5a6 6 0 0 1 12 0"/><circle cx="16.8" cy="9.5" r="2.4"/><path d="M16 14.6a5 5 0 0 1 5 4.9"/></svg>
+<figcaption>Counter regulars</figcaption>
+</figure>
+<figure class="g-tile g-5" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.7-7.5-10A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 3c0 5.3-7.5 10-7.5 10z"/></svg>
+<figcaption>Fresh grind, 7 am</figcaption>
+</figure>
+<figure class="g-tile g-6" data-reveal>
+<svg class="g-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>
+<figcaption>Saturday line outside</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-reviews" id="reviews">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Word of Mouth</span>
+<h2 class="">What guests keep saying</h2>
+<p class="lead">Pulled from the guestbook, the order slips and the occasional happy shout across the room.</p>
+</div>
+<div class="rev-grid">
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Edges like burger lace. The OG double is a top-three bite in this town and the tots are a felony.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">C</span><span><strong>Curtis J.</strong><em>Weekly order</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>The veg smash actually crisps like the beef one. Finally somewhere everyone in the car is happy.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">N</span><span><strong>Naomi S.</strong><em>Family pickup</em></span></figcaption>
+</figure>
+<figure class="rev-card" data-reveal>
+<span class="stars" role="img" aria-label="Rated 4 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></span>
+<blockquote><p>Burnt caramel shake + green chile double = the correct order. Trust the chalkboard specials.</p></blockquote>
+<figcaption><span class="rev-ava" aria-hidden="true">F</span><span><strong>Felix A.</strong><em>Counter seat</em></span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-reserve" id="order">
+<div class="container order-grid">
+<div class="order-side" data-reveal>
+<span class="kicker">Order Ahead</span>
+<h2>Skip the line, not the smash</h2>
+<p class="lead">Order for pickup or neighbourhood delivery. We fire when you're close — crispy edges don't do waiting rooms.</p>
+<div class="stamp" aria-hidden="true">We reply<br>same day</div>
+<ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>910 Larkspur Road, Kettleton, TX 78704</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+15125550195">+1 (512) 555-0195</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:yo@hatchandgriddle.com">yo@hatchandgriddle.com</a></li>
+</ul>
+</div>
+<div class="order-card" data-reveal>
+<form id="main-form" class="res-form" novalidate>
+<div class="field">
+<label for="name">Your name</label>
+<input id="name" name="name" type="text" placeholder="Alex Morgan" autocomplete="off" data-validate="name">
+<span class="f-err" id="err-name" hidden>Please enter your name (at least 2 characters).</span>
+</div>
+<div class="field">
+<label for="email">Email address</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="off" data-validate="email">
+<span class="f-err" id="err-email" hidden>Please enter a valid email address.</span>
+</div>
+<div class="field">
+<label for="address">Delivery address</label>
+<input id="address" name="address" type="text" placeholder="Street, number, apartment" autocomplete="off" data-validate="address">
+<span class="f-err" id="err-address" hidden>Please enter a delivery address (at least 8 characters).</span>
+</div>
+<div class="field">
+<label for="note">Order notes (optional)</label>
+<input id="note" name="note" type="text" placeholder="Ring the bell, extra napkins…" autocomplete="off" >
+<span class="f-err" id="err-note" hidden>Please enter a valid order notes (optional).</span>
+</div>
+<p class="f-success" id="form-success" hidden role="status">Got it! Your order hits the griddle shortly — confirmation is on its way to your inbox.</p>
+<button class="btn btn-lg btn-submit" type="submit">Send My Order</button>
+<p class="f-fine">No payment now — this demo form validates in the browser only.</p>
+</form>
+</div>
+</div>
+</section>
+<section class="section sec-visit" id="visit">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker">Hours &amp; Location</span>
+<h2 class="">Come find us</h2>
+<p class="lead">The map below is a styled placeholder — drop in your favourite embed when you go live.</p>
+</div>
+<div class="visit-grid">
+<div class="map-wrap" data-reveal>
+<div class="map-ph" role="img" aria-label="Stylized map placeholder for 910 Larkspur Road">
+<span class="map-road map-road-a" aria-hidden="true"></span>
+<span class="map-road map-road-b" aria-hidden="true"></span>
+<span class="map-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+</div>
+<div class="map-card">
+<strong>Hatch &amp; Griddle</strong>
+<p>910 Larkspur Road<br>Kettleton, TX 78704</p>
+<p class="map-note">Order window on Larkspur · picnic tables out back · cash and card</p>
+</div>
+</div>
+<div class="visit-info">
+<div class="visit-contact" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Find us</h3><ul class="contact-lines">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>910 Larkspur Road, Kettleton, TX 78704</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.8a13 13 0 0 0 5.7 5.7L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+15125550195">+1 (512) 555-0195</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7.5 12 13l9-5.5"/></svg><a href="mailto:yo@hatchandgriddle.com">yo@hatchandgriddle.com</a></li>
+</ul><p class="visit-note">Order window on Larkspur · picnic tables out back · cash and card</p></div>
+<div class="visit-hours" data-reveal><h3 class="block-h"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg>Opening hours</h3><ul class="hours-list" data-hours>
+<li data-day="0"><span>Monday</span><span class="hrs">11:00 am – 9:00 pm</span></li>
+<li data-day="1"><span>Tuesday</span><span class="hrs">11:00 am – 9:00 pm</span></li>
+<li data-day="2"><span>Wednesday</span><span class="hrs">11:00 am – 9:00 pm</span></li>
+<li data-day="3"><span>Thursday</span><span class="hrs">11:00 am – 10:00 pm</span></li>
+<li data-day="4"><span>Friday</span><span class="hrs">11:00 am – 11:00 pm</span></li>
+<li data-day="5"><span>Saturday</span><span class="hrs">11:00 am – 11:00 pm</span></li>
+<li data-day="6"><span>Sunday</span><span class="hrs">12:00 pm – 8:00 pm</span></li>
+</ul></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand foot-logo" href="index.html"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg></span><span>Hatch &amp; Griddle</span></a>
+<p>Double-smashed patties on a 50-year griddle. Potato buns, frozen custard shakes, four-napkin minimum.</p>
+<div class="foot-socials">
+<a class="soc" href="index.html" aria-label="Hatch &amp; Griddle on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Hatch &amp; Griddle on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Hatch &amp; Griddle on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Hatch &amp; Griddle on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Hatch &amp; Griddle on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer quick links">
+<h3 class="foot-h">Explore</h3>
+<ul class="foot-links">
+<li><a href="menu.html">Menu</a></li>
+<li><a href="menu.html">Specials</a></li>
+<li><a href="about.html">Our Story</a></li>
+<li><a href="about.html#gallery">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="contact.html">Order</a></li>
+<li><a href="menu.html">Full Menu</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h3 class="foot-h">Hours</h3>
+<ul class="foot-hours">
+<li><span>Monday</span><span>11:00 am – 9:00 pm</span></li>
+<li><span>Thursday</span><span>11:00 am – 10:00 pm</span></li>
+<li><span>Sunday</span><span>12:00 pm – 8:00 pm</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h3 class="foot-h">Find Us</h3>
+<address class="foot-addr">
+910 Larkspur Road<br>Kettleton, TX 78704<br>
+<a href="tel:+15125550195">+1 (512) 555-0195</a><br>
+<a href="mailto:yo@hatchandgriddle.com">yo@hatchandgriddle.com</a>
+</address>
+</div>
+</div>
+<div class="container foot-bottom">
+<p>&copy; <span data-year>2025</span> Hatch &amp; Griddle. All rights reserved.</p>
+<p class="foot-fine">Crafted as a static HTML/CSS/JS template — no frameworks, no build step.</p>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+
+</body>
+</html>

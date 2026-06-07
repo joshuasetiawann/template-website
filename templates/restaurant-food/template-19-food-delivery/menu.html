@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu &mdash; Platerunner</title>
+<meta name="description" content="The full Platerunner menu &mdash; every category, dish, price and dietary note, plus chef&rsquo;s specials, drinks, desserts and set menus.">
+<meta name="theme-color" content="#16A34A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2316A34A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="promo-bar" data-promo>
+<div class="container promo-in">
+<p><strong>Heads up:</strong> Free delivery weekend: $0 fees on orders over $20, Friday through Sunday.</p>
+<button class="promo-x" type="button" data-promo-close aria-label="Dismiss announcement">&times;</button>
+</div>
+</div>
+<header class="site-header" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html" aria-label="Platerunner home"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="16" r="3.4"/><circle cx="18" cy="16" r="3.4"/><path d="M6 16l3.4-7H7M9.4 9h6.1l2.5 7M12 16h-2.6"/></svg></span><span class="brand-name">Platerunner</span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="menu.html" aria-current="page">Popular Now</a></li>
+<li><a class="nav-link" href="about.html">How It Works</a></li>
+<li><a class="nav-link" href="about.html">Couriers</a></li>
+<li><a class="nav-link" href="about.html#gallery">Coverage</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="contact.html">Order</a></li>
+<li><a class="nav-link" href="menu.html">Full Menu</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm nav-cta" href="contact.html">Start an Order</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" class="menu-page">
+<nav class="mp-crumb" aria-label="Breadcrumb">
+<div class="container">
+<ol class="mp-crumb-list">
+<li><a href="index.html">Home</a></li>
+<li aria-current="page">Menu</li>
+</ol>
+</div>
+</nav>
+<section class="section mp-hero" id="menu-top">
+<div class="container">
+<div class="mp-hero-in" data-reveal>
+<span class="kicker">The Full Menu</span>
+<h1 class="mp-title">The Platerunner menu, in full</h1>
+<p class="mp-note">From the dispatch desk: Platerunner brings food from the best independent kitchens in your area, cooked to order and delivered hot by local riders. The menu below is a snapshot of what's trending tonight — your actual options shift by postcode and time. Average delivery is 28 minutes, door to door.</p>
+</div>
+</div>
+</section>
+<nav class="mp-catnav" aria-label="Menu categories" data-mp-catnav>
+<div class="container mp-catnav-in">
+<a class="mp-jump" href="#menu-trending">Trending tonight</a>
+<a class="mp-jump" href="#menu-comfort">Comfort food</a>
+<a class="mp-jump" href="#menu-healthy">Healthy-ish</a>
+<a class="mp-jump" href="#menu-late">Late night</a>
+<a class="mp-jump" href="#menu-specials">Chef&rsquo;s Specials</a>
+<a class="mp-jump" href="#menu-drinks">Drinks</a>
+<a class="mp-jump" href="#menu-desserts">Desserts</a>
+</div>
+</nav>
+<div class="section mp-body">
+<div class="container mp-cats">
+<section class="mp-cat" id="menu-trending" aria-labelledby="menu-trending-h" data-reveal>
+<div class="mp-cat-head">
+<span class="kicker">Hot right now</span>
+<h2 class="mp-cat-title" id="menu-trending-h">Trending tonight</h2>
+<p class="lead mp-cat-note">The most-ordered dishes from kitchens near you.</p>
+</div>
+<div class="mp-list">
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Double Smash Burger</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$11.50</span></div>
+<p class="mi-desc">Two patties, cheese, pickles, fries — from Hatch &amp; Griddle</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Tonkotsu Ramen</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$13.50</span></div>
+<p class="mi-desc">Pork broth, chashu, egg — from Tangle</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Margherita Pizza <span class="diet-tags"><span class="diet diet-v" title="Vegetarian">V</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$13.00</span></div>
+<p class="mi-desc">San Marzano, fior di latte, basil — from Rosso Forno</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Nasi Goreng Kampung <span class="diet-tags"><span class="diet diet-spicy" title="Spicy">Spicy</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$12.00</span></div>
+<p class="mi-desc">Village fried rice, fried egg — from Dapur Kunyit</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Birria Tacos (3)</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$13.50</span></div>
+<p class="mi-desc">Dipped, crisp, consommé — from Citrus Comet</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Açaí Bowl <span class="diet-tags"><span class="diet diet-vg" title="Vegan">VG</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$8.50</span></div>
+<p class="mi-desc">Banana, granola, berries — from Pulp &amp; Glow</p>
+</article>
+</div>
+</section>
+<section class="mp-cat" id="menu-comfort" aria-labelledby="menu-comfort-h" data-reveal>
+<div class="mp-cat-head">
+<span class="kicker">On the sofa</span>
+<h2 class="mp-cat-title" id="menu-comfort-h">Comfort food</h2>
+<p class="lead mp-cat-note">For nights that call for something warm and easy.</p>
+</div>
+<div class="mp-list">
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Mac &amp; Cheese, Loaded</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$9.50</span></div>
+<p class="mi-desc">Three cheeses, smoked crumb, bacon</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Buttermilk Fried Chicken Box</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$14.00</span></div>
+<p class="mi-desc">Eight pieces, fries, slaw, gravy</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Pad Thai</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$11.50</span></div>
+<p class="mi-desc">Rice noodles, prawn, peanut, lime</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Chicken Tikka Masala <span class="diet-tags"><span class="diet diet-spicy" title="Spicy">Spicy</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$12.50</span></div>
+<p class="mi-desc">Creamy, rice, naan, mango chutney</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Cheeseburger &amp; Fries</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$9.50</span></div>
+<p class="mi-desc">Single patty, cheese, fries, soda</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Cheesy Garlic Pizza Bread <span class="diet-tags"><span class="diet diet-v" title="Vegetarian">V</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$6.50</span></div>
+<p class="mi-desc">Pull-apart, garlic butter, mozzarella</p>
+</article>
+</div>
+</section>
+<section class="mp-cat" id="menu-healthy" aria-labelledby="menu-healthy-h" data-reveal>
+<div class="mp-cat-head">
+<span class="kicker">Lighter</span>
+<h2 class="mp-cat-title" id="menu-healthy-h">Healthy-ish</h2>
+<p class="lead mp-cat-note">Greener choices that still deliver well.</p>
+</div>
+<div class="mp-list">
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Grain &amp; Roast Veg Bowl <span class="diet-tags"><span class="diet diet-vg" title="Vegan">VG</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$11.50</span></div>
+<p class="mi-desc">Farro, roots, kale, tahini — vegan</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Poke Bowl <span class="diet-tags"><span class="diet diet-gf" title="Gluten-free">GF</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$13.00</span></div>
+<p class="mi-desc">Salmon, rice, edamame, avocado, sesame</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Falafel Wrap <span class="diet-tags"><span class="diet diet-vg" title="Vegan">VG</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$8.50</span></div>
+<p class="mi-desc">Hummus, salad, pickles, tahini</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Chicken Caesar Salad</h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$10.50</span></div>
+<p class="mi-desc">Grilled chicken, parmesan, croutons</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Green Smoothie <span class="diet-tags"><span class="diet diet-vg" title="Vegan">VG</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$6.80</span></div>
+<p class="mi-desc">Spinach, mango, banana, oat milk</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Sushi Selection (12) <span class="diet-tags"><span class="diet diet-gf" title="Gluten-free">GF</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$14.50</span></div>
+<p class="mi-desc">Mixed nigiri and maki, soy, wasabi</p>
+</article>
+</div>
+</section>
+<section class="mp-cat" id="menu-late" aria-labelledby="menu-late-h" data-reveal>
+<div class="mp-cat-head">
+<span class="kicker">After hours</span>
+<h2 class="mp-cat-title" id="menu-late-h">Late night</h2>
+<p class="lead mp-cat-note">Kitchens open past midnight, Thursday to Saturday.</p>
+</div>
+<div class="mp-list">
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Loaded Fries <span class="diet-tags"><span class="diet diet-spicy" title="Spicy">Spicy</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$7.50</span></div>
+<p class="mi-desc">Cheese, jalapeño, special sauce</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Doner Wrap <span class="diet-tags"><span class="diet diet-spicy" title="Spicy">Spicy</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$8.00</span></div>
+<p class="mi-desc">Spiced meat, salad, garlic and chilli sauce</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Chicken Wings (10) <span class="diet-tags"><span class="diet diet-spicy" title="Spicy">Spicy</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$9.50</span></div>
+<p class="mi-desc">Buffalo or BBQ, blue-cheese dip</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Late-Night Pizza Slice (2) <span class="diet-tags"><span class="diet diet-v" title="Vegetarian">V</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$7.00</span></div>
+<p class="mi-desc">Big New-York slices, your topping</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Churros &amp; Chocolate <span class="diet-tags"><span class="diet diet-v" title="Vegetarian">V</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$5.00</span></div>
+<p class="mi-desc">Cinnamon sugar, dipping chocolate</p>
+</article>
+</div>
+</section>
+</div>
+</div>
+<section class="section mp-specials-band" id="menu-specials" aria-labelledby="menu-specials-h">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg> Chef&rsquo;s Specials</span>
+<h2 id="menu-specials-h">Off the board this week</h2>
+<p class="lead">Changing plates the kitchen is excited about right now &mdash; ask your server before they sell out.</p>
+</div>
+<div class="mp-specials-grid">
+<article class="mp-special" data-reveal>
+<h3 class="mp-special-name">Tonight's Featured Kitchen</h3>
+<p class="mp-special-desc">A rotating local restaurant, 20% off first order</p>
+<span class="mp-special-price">-20%</span>
+</article>
+<article class="mp-special" data-reveal>
+<h3 class="mp-special-name">Free Delivery Over £20</h3>
+<p class="mp-special-desc">On orders above twenty pounds, all week</p>
+<span class="mp-special-price">+0</span>
+</article>
+<article class="mp-special" data-reveal>
+<h3 class="mp-special-name">Bundle &amp; Save</h3>
+<p class="mp-special-desc">Mains plus a side and drink, bundled cheaper</p>
+<span class="mp-special-price">$12</span>
+</article>
+</div>
+</div>
+</section>
+<div class="section mp-body mp-body-sub">
+<div class="container mp-cats">
+<section class="mp-cat mp-cat-sub" id="menu-drinks" aria-labelledby="menu-drinks-h" data-reveal>
+<div class="mp-cat-head">
+<span class="kicker">Drinks</span>
+<h2 class="mp-cat-title" id="menu-drinks-h">Add a drink</h2>
+<p class="lead mp-cat-note">Bundled cold with any order from the same kitchen.</p>
+</div>
+<div class="mp-list">
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Soft Drinks <span class="diet-tags"><span class="diet diet-vg" title="Vegan">VG</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$1.80</span></div>
+<p class="mi-desc">Cola, lemonade, sparkling water, cans</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Fresh Orange Juice <span class="diet-tags"><span class="diet diet-vg" title="Vegan">VG</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$3.00</span></div>
+<p class="mi-desc">Bottled, not from concentrate</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Craft Beer Can <span class="diet-tags"><span class="diet diet-vg" title="Vegan">VG</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$4.50</span></div>
+<p class="mi-desc">Local lager or IPA, 330ml</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Kombucha <span class="diet-tags"><span class="diet diet-vg" title="Vegan">VG</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$4.00</span></div>
+<p class="mi-desc">Rotating flavour, lightly fizzy</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Bottled Water <span class="diet-tags"><span class="diet diet-vg" title="Vegan">VG</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$1.50</span></div>
+<p class="mi-desc">Still or sparkling, 500ml</p>
+</article>
+</div>
+</section>
+<section class="mp-cat mp-cat-sub" id="menu-desserts" aria-labelledby="menu-desserts-h" data-reveal>
+<div class="mp-cat-head">
+<span class="kicker">Desserts</span>
+<h2 class="mp-cat-title" id="menu-desserts-h">Sweet add-ons</h2>
+<p class="lead mp-cat-note">Tuck one in the bag.</p>
+</div>
+<div class="mp-list">
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Warm Cookie Box (4) <span class="diet-tags"><span class="diet diet-v" title="Vegetarian">V</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$5.00</span></div>
+<p class="mi-desc">Chocolate chip, gooey, reheat-ready</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Brownie Slab <span class="diet-tags"><span class="diet diet-v" title="Vegetarian">V</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$4.00</span></div>
+<p class="mi-desc">Dense, salted, dark chocolate</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Cheesecake Slice <span class="diet-tags"><span class="diet diet-v" title="Vegetarian">V</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$5.50</span></div>
+<p class="mi-desc">New York style, berry compote</p>
+</article>
+<article class="mi mp-item" data-reveal>
+<div class="mi-top"><h3 class="mi-name">Ice Cream Tub <span class="diet-tags"><span class="diet diet-v" title="Vegetarian">V</span><span class="diet diet-gf" title="Gluten-free">GF</span></span></h3><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">$4.50</span></div>
+<p class="mi-desc">Vanilla, chocolate or salted caramel</p>
+</article>
+</div>
+</section>
+</div>
+</div>
+<section class="section mp-set" id="menu-set" aria-labelledby="menu-set-h">
+<div class="container">
+<div class="mp-set-frame" data-reveal>
+<div class="sec-head" data-reveal>
+<span class="kicker">Order together</span>
+<h2 id="menu-set-h">Group orders &amp; bundles</h2>
+<p class="lead">Split a big order across the table or grab a meal-deal bundle — one delivery, everyone fed.</p>
+</div>
+<div class="mp-set-grid">
+<article class="mp-set-item" data-reveal>
+<div class="mp-set-top"><h3 class="mp-set-name">Meal Deal</h3><span class="mp-set-price">$12</span></div>
+<p class="mp-set-desc">One main, one side, one drink, bundled</p>
+</article>
+<article class="mp-set-item" data-reveal>
+<div class="mp-set-top"><h3 class="mp-set-name">Group Order, Four</h3><span class="mp-set-price">$48</span></div>
+<p class="mp-set-desc">Pick four mains from one kitchen, free delivery</p>
+</article>
+<article class="mp-set-item" data-reveal>
+<div class="mp-set-top"><h3 class="mp-set-name">Movie-Night Box</h3><span class="mp-set-price">$36</span></div>
+<p class="mp-set-desc">Two mains, fries, wings, drinks, dessert</p>
+</article>
+</div>
+<p class="mp-set-note">Group orders share one cart and one delivery; add up to ten dishes.</p>
+<a class="btn btn-lg mp-set-cta" href="index.html#order">Start an Order<svg class="ic ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</section>
+<section class="section mp-hours" id="menu-hours" aria-labelledby="menu-hours-h">
+<div class="container">
+<div class="sec-head sh-center" data-reveal>
+<span class="kicker"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 2.4"/></svg> Hours</span>
+<h2 id="menu-hours-h">When the kitchen is open</h2>
+<p class="lead">Kitchen times can shift on holidays &mdash; today is highlighted below.</p>
+</div>
+<ul class="hours-list mp-hours-list" data-hours data-reveal>
+<li data-day="0"><span>Monday</span><span class="hrs">11:00 am – 11:00 pm</span></li>
+<li data-day="1"><span>Tuesday</span><span class="hrs">11:00 am – 11:00 pm</span></li>
+<li data-day="2"><span>Wednesday</span><span class="hrs">11:00 am – 11:00 pm</span></li>
+<li data-day="3"><span>Thursday</span><span class="hrs">11:00 am – 1:00 am</span></li>
+<li data-day="4"><span>Friday</span><span class="hrs">11:00 am – 2:00 am</span></li>
+<li data-day="5"><span>Saturday</span><span class="hrs">11:00 am – 2:00 am</span></li>
+<li data-day="6"><span>Sunday</span><span class="hrs">11:00 am – 11:00 pm</span></li>
+</ul>
+</div>
+</section>
+<section class="section mp-cta" id="menu-cta" aria-labelledby="menu-cta-h">
+<div class="container mp-cta-in" data-reveal>
+<div class="mp-cta-copy">
+<span class="kicker">Ready when you are</span>
+<h2 id="menu-cta-h">Like what you see on the menu?</h2>
+<p class="lead">Head back to the homepage to lock it in &mdash; the form takes a moment and we confirm by email.</p>
+</div>
+<div class="mp-cta-actions">
+<a class="btn btn-lg mp-cta-btn" href="index.html#order">Start an Order<svg class="ic ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="btn btn-lg btn-ghost" href="index.html#top">Back to home</a>
+<ul class="contact-lines mp-cta-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Platerunner HQ, 48 Dispatch Road, London E1 6AN</span></li>
+<li><a href="tel:+442075550119">+44 20 7555 0119</a></li>
+<li><a href="mailto:hello@platerunner.app">hello@platerunner.app</a></li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand foot-logo" href="index.html"><span class="brand-dot" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="16" r="3.4"/><circle cx="18" cy="16" r="3.4"/><path d="M6 16l3.4-7H7M9.4 9h6.1l2.5 7M12 16h-2.6"/></svg></span><span>Platerunner</span></a>
+<p>Local food delivery with insulated twin-chamber bags, broth tins and live tracking. 240 kitchens, 9 zones, under 24 minutes.</p>
+<div class="foot-socials">
+<a class="soc" href="index.html" aria-label="Platerunner on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="16.9" cy="7.1" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Platerunner on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 8.2h2.4V4.9h-2.8c-2.4 0-3.9 1.6-3.9 4v2.2H8v3.1h2.5V21h3.3v-6.8h2.6l.5-3.1h-3.1V9.3c0-.7.4-1.1 1-1.1z"/></svg></a>
+<a class="soc" href="index.html" aria-label="Platerunner on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+<a class="soc" href="index.html" aria-label="Platerunner on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="18.4" height="12" rx="3.4"/><path d="M10.2 9.4l5 2.6-5 2.6z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="index.html" aria-label="Platerunner on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4v9.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.5 5.2c.6 2 2 3.3 4.2 3.6"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer quick links">
+<h3 class="foot-h">Explore</h3>
+<ul class="foot-links">
+<li><a href="menu.html" aria-current="page">Popular Now</a></li>
+<li><a href="about.html">How It Works</a></li>
+<li><a href="about.html">Couriers</a></li>
+<li><a href="about.html#gallery">Coverage</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="contact.html">Order</a></li>
+<li><a href="menu.html">Full Menu</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h3 class="foot-h">Hours</h3>
+<ul class="foot-hours">
+<li><span>Monday</span><span>10:30 am – 11:00 pm</span></li>
+<li><span>Thursday</span><span>10:30 am – 12:00 am</span></li>
+<li><span>Sunday</span><span>10:30 am – 10:30 pm</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h3 class="foot-h">Find Us</h3>
+<address class="foot-addr">
+Dispatch Hub: 50 Meridian Way<br>Fairport, NC 27601<br>
+<a href="tel:+19195550102">+1 (919) 555-0102</a><br>
+<a href="mailto:support@platerunner.com">support@platerunner.com</a>
+</address>
+</div>
+</div>
+<div class="container foot-bottom">
+<p>&copy; <span data-year>2025</span> Platerunner. All rights reserved.</p>
+<p class="foot-fine">Crafted as a static HTML/CSS/JS template — no frameworks, no build step.</p>
+</div>
+</footer>
+
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+
+
+</body>
+</html>
