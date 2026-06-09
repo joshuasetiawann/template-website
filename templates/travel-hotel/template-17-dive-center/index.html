@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abyssal Blue Dive Center — PADI Dive Centre</title>
+<meta name="description" content="Abyssal Blue Dive Center is a dive center website template: an immersive hero, a working booking enquiry widget, dives &amp; courses, amenities, gallery, reviews and a location map — pure HTML, CSS and vanilla JS.">
+<meta name="theme-color" content="#07131D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322D3EE'/%3E%3Cstop offset='1' stop-color='%23F0654A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial%2Csans-serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+<header class="site-header" id="top">
+<div class="container nav-in">
+<a class="brand" href="#home" aria-label="Abyssal Blue Dive Center home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg></span>
+<span>Abyssal Blue Dive Center</span>
+</a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+<span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+</button>
+<ul class="nav-menu" id="nav-menu">
+<li><a class="nav-link" href="packages.html">Dives</a></li>
+<li><a class="nav-link" href="about.html#amenities">Amenities</a></li>
+<li><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm" href="contact.html">Book Dives</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-v3" id="home">
+<div class="hero-bg" aria-hidden="true" style="background:radial-gradient(120% 95% at 33% 23%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(163deg, #43DAF1 0%, #A28F88 54%, #D15840 100%)"></div>
+<div class="vis-over hero-bg" aria-hidden="true" style="z-index:-2;opacity:.45"></div>
+<div class="hero-veil" aria-hidden="true"></div>
+<div class="container hero-stack">
+<span class="kicker" data-reveal>PADI dive centre · Walls, wrecks &amp; reefs</span>
+<h1 data-reveal>Drop into the blue.</h1>
+<p class="hero-lead" data-reveal>A five-star dive centre on a coral coast — daily boat dives to walls and wrecks, courses from first breath to instructor, and a house reef you can shore-dive straight off the jetty.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg" href="#booking">Book Dives</a>
+<a class="btn btn-lg btn-ghost btn-on-hero" href="#rooms">Explore Dives</a>
+</div>
+<div class="badge-stats" data-reveal><span class="badge"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg><b>40+</b><span>dive sites</span></span><span class="badge"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8.5"/><path d="M12 13l4-4"/><path d="M5.5 13H7M17 13h1.5M12 6.5V8"/></svg><b>28m</b><span>the wreck below</span></span><span class="badge"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg><b>18–29°C</b><span>water, year-round</span></span></div>
+</div>
+</section>
+<div class="section" style="padding-top:clamp(2.5rem,5vw,4rem);padding-bottom:0">
+<div class="container"><form class="booking" data-booking novalidate aria-label="Book your dives">
+<h3>Book your dives</h3>
+<p class="bk-sub">Choose a date and party size — we&#x27;ll confirm availability by email.</p>
+<div class="bk-grid">
+<div class="field"><label for="bk-date">Preferred date</label><input type="date" id="bk-date" name="checkin" data-validate="date" aria-describedby="err-bk-date" required><span class="err" id="err-bk-date" hidden>Please choose a date.</span></div>
+<div class="field"><label for="bk-guests">Travellers</label><select id="bk-guests" name="guests" data-validate="select" aria-describedby="err-bk-guests" required><option value="" selected disabled>Select…</option><option value="1">1 traveller</option><option value="2">2 travellers</option><option value="3">3 travellers</option><option value="4">4 travellers</option><option value="5">5 travellers</option><option value="6">6+ travellers</option></select><span class="err" id="err-bk-guests" hidden>Please choose the number of travellers.</span></div>
+<div class="field col-2"><label for="bk-name">Full name</label><input type="text" id="bk-name" name="name" autocomplete="name" data-validate="name" aria-describedby="err-bk-name" required><span class="err" id="err-bk-name" hidden>Please enter your name.</span></div>
+<div class="field col-2"><label for="bk-email">Email</label><input type="email" id="bk-email" name="email" autocomplete="email" data-validate="email" aria-describedby="err-bk-email" required><span class="err" id="err-bk-email" hidden>Enter a valid email address.</span></div>
+<button class="btn bk-submit" type="submit">Check availability</button>
+<p class="bk-success" data-success tabindex="-1" role="status" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg> Thank you — we&#x27;ve received your enquiry and will be in touch shortly.</p>
+<p class="bk-note">No payment is taken now &mdash; we confirm availability by email. Demo form.</p>
+</div>
+</form></div>
+</div>
+<section class="section" id="rooms" aria-labelledby="rooms-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">Dives &amp; Courses</span>
+<h2 id="rooms-h">Choose your dive</h2>
+<p class="lead">Per-person dives, trips and courses, from a first try-dive in the bay to a deep wreck and full certification. Tap any for what&#x27;s included.</p>
+</div>
+<div class="cards-grid">
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-1" aria-label="Discover Scuba (Try-Dive) &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 33% 17%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(121deg, #43DAF1 0%, #A28F88 54%, #DD5D44 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Dive</span></a>
+<div class="rcard-body">
+<h3>Discover Scuba (Try-Dive)</h3>
+<p class="rcard-desc">Your first breath underwater, in the shallow bay.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Water</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg>Reef</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l8 3.2v6c0 5-3.5 8-8 9.2C7.5 20 4 17 4 12V6l8-3.2z"/><path d="M9 12l2 2 4-4.5"/></svg>Safe</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Ensuite</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$90 <span class="per">/ person</span></span>
+<a class="rcard-link" href="packages.html#pkg-1">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-2" aria-label="Two-Tank Boat Dive &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 21% 35%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(137deg, #43DAF1 0%, #A28F88 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Dive</span></a>
+<div class="rcard-body">
+<h3>Two-Tank Boat Dive</h3>
+<p class="rcard-desc">Two morning dives on the wall and the coral garden.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h16l-1.8 3.5H5.8L4 17z"/><path d="M12 3v14"/><path d="M12 4c4.5 2 6.5 6.5 6.5 11"/></svg>Boat</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg>Reef</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Water</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.6 13.6 8.5 15.5l1.9-5.1 5.1-1.9z"/></svg>Guided</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$110 <span class="per">/ person</span></span>
+<a class="rcard-link" href="packages.html#pkg-2">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-3" aria-label="Night Dive on the Reef &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 18% 14%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(120deg, #2FD6EF 0%, #A28F88 54%, #C5533D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Dive</span></a>
+<div class="rcard-body">
+<h3>Night Dive on the Reef</h3>
+<p class="rcard-desc">The reef after dark — torches, octopus and glow.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.5A8.5 8.5 0 1 1 10.5 3.5a7 7 0 0 0 10 10z"/></svg>Stargazing</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg>Reef</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Water</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Ensuite</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$75 <span class="per">/ person</span></span>
+<a class="rcard-link" href="packages.html#pkg-3">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-4" aria-label="The Bluewall Wreck Dive &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 31% 23%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(133deg, #36D7F0 0%, #A28F88 54%, #DD5D44 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Dive</span></a>
+<div class="rcard-body">
+<h3>The Bluewall Wreck Dive</h3>
+<p class="rcard-desc">A guided dive on the 28-metre wreck for certified divers.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.6 13.6 8.5 15.5l1.9-5.1 5.1-1.9z"/></svg>Guided</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8.5"/><path d="M12 13l4-4"/><path d="M5.5 13H7M17 13h1.5M12 6.5V8"/></svg>Depth</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Water</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg>Reef</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$130 <span class="per">/ person</span></span>
+<a class="rcard-link" href="packages.html#pkg-4">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-5" aria-label="Open Water Course &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 35% 29%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(165deg, #36D7F0 0%, #A28F88 54%, #C5533D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Dive</span></a>
+<div class="rcard-body">
+<h3>Open Water Course</h3>
+<p class="rcard-desc">Four days to your first certification, dives included.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l8 3.2v6c0 5-3.5 8-8 9.2C7.5 20 4 17 4 12V6l8-3.2z"/><path d="M9 12l2 2 4-4.5"/></svg>Safe</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15.5H6.5A2.5 2.5 0 0 0 4 21V5.5z"/><path d="M20 18.5v2.5H6.5"/><path d="M8 7h8M8 10.5h5"/></svg>Library</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Water</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg>Reef</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$480 <span class="per">/ person</span></span>
+<a class="rcard-link" href="packages.html#pkg-5">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-6" aria-label="Liveaboard Reef Safari &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 30% 26%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(174deg, #2FD6EF 0%, #A28F88 54%, #DD5D44 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Dive</span></a>
+<div class="rcard-body">
+<h3>Liveaboard Reef Safari</h3>
+<p class="rcard-desc">Three days, eleven dives, sleeping over the reef.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h16l-1.8 3.5H5.8L4 17z"/><path d="M12 3v14"/><path d="M12 4c4.5 2 6.5 6.5 6.5 11"/></svg>Boat</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg>Reef</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.6 13.6 8.5 15.5l1.9-5.1 5.1-1.9z"/></svg>Guided</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8"/></svg>Sun deck</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$890 <span class="per">/ person</span></span>
+<a class="rcard-link" href="packages.html#pkg-6">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section" aria-labelledby="tl-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">How it works</span>
+<h2 id="tl-h">The shape of a dive day</h2>
+<p class="lead">Two morning dives, a surface interval and the reef after dark.</p>
+</div>
+<div class="timeline"><div class="tl-step" data-reveal><b>07:30 · Kit &amp; brief</b><span>Check in at the kit room and brief the morning&#x27;s two sites.</span></div><div class="tl-step" data-reveal><b>Morning · Two-tank dive</b><span>Out by boat to the wall and the coral garden, small group.</span></div><div class="tl-step" data-reveal><b>Afternoon · House reef</b><span>Shore-dive the jetty reef at your own pace, or rest and refill.</span></div><div class="tl-step" data-reveal><b>After dark · Night dive</b><span>Torch-lit corals, octopus and bioluminescence on the reef.</span></div></div>
+</div>
+</section>
+<section class="section sec-tint" id="amenities" aria-labelledby="amen-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">What&#x27;s included</span>
+<h2 id="amen-h">Why dive with us</h2>
+<p class="lead">The details that turn a dive into the trip you remember.</p>
+</div>
+<div class="amenities-grid">
+<div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h16l-1.8 3.5H5.8L4 17z"/><path d="M12 3v14"/><path d="M12 4c4.5 2 6.5 6.5 6.5 11"/></svg></div>
+<div><h3>Daily dive boats</h3><p>Two fast boats reach forty sites, small groups, twice daily.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l8 3.2v6c0 5-3.5 8-8 9.2C7.5 20 4 17 4 12V6l8-3.2z"/><path d="M9 12l2 2 4-4.5"/></svg></div>
+<div><h3>Five-star instruction</h3><p>Courses from first try-dive to divemaster, safety first.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg></div>
+<div><h3>House reef</h3><p>Shore-dive a living reef straight off the centre&#x27;s jetty.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8.5"/><path d="M12 13l4-4"/><path d="M5.5 13H7M17 13h1.5M12 6.5V8"/></svg></div>
+<div><h3>Full equipment</h3><p>Serviced rental gear, nitrox fills and a kit room on site.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg></div>
+<div><h3>Marine guides</h3><p>Dive guides who know every wall, swim-through and turtle.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg></div>
+<div><h3>Warm-water diving</h3><p>Comfortable temperatures and good visibility all year.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="gallery" aria-labelledby="gal-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">Gallery</span>
+<h2 id="gal-h">Below the surface</h2>
+<p class="lead">A glimpse of what waits for you — every image here is pure CSS and inline SVG.</p>
+</div>
+<div class="gallery-strip">
+<div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 27% 41%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(129deg, #36D7F0 0%, #A28F88 54%, #DD5D44 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Reef</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 20% 20%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(122deg, #3DD8F0 0%, #A28F88 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Wreck</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 23% 29%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(125deg, #36D7F0 0%, #A28F88 54%, #DD5D44 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Turtle</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 36% 32%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(166deg, #3DD8F0 0%, #A28F88 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Boat</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 42% 26%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(144deg, #2FD6EF 0%, #A28F88 54%, #C5533D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Coral</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 34% 26%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(164deg, #2FD6EF 0%, #A28F88 54%, #D15840 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Night</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 23% 41%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(139deg, #36D7F0 0%, #A28F88 54%, #C5533D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Wall</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 22% 38%, #6DE2F4 0%, rgba(255,255,255,0) 46%), linear-gradient(138deg, #2FD6EF 0%, #A28F88 54%, #DD5D44 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Jetty</span></div>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="reviews" aria-labelledby="rev-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">Traveller reviews</span>
+<h2 id="rev-h">Diver reviews</h2>
+<p class="lead">Real words from people who travelled before you.</p>
+</div>
+<div class="reviews-grid">
+<figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;Did my Open Water here in four days — patient instructors, tiny groups, and the wreck on the fun-dive day was epic.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">S</span>
+<span class="review-meta"><b>Sven H.</b><span>Hamburg</span></span>
+</figcaption>
+</figure><figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;The night dive blew my mind: octopus, glowing plankton, a sleeping turtle. Gear was spotless and the boat crew brilliant.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">L</span>
+<span class="review-meta"><b>Lucía M.</b><span>Valencia</span></span>
+</figcaption>
+</figure><figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 4 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;Liveaboard was the highlight of the year — eleven dives, sleeping over the reef. Bring a 3mm and a good torch.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">W</span>
+<span class="review-meta"><b>Wei C.</b><span>Singapore</span></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="booking" aria-labelledby="booking-h">
+<div class="container">
+<div class="loc-wrap">
+<div>
+<div class="sec-head" data-reveal>
+<span class="kicker">Book in</span>
+<h2 id="booking-h">Book your dives</h2>
+<p class="lead">Small boats and small classes mean limited spaces — reserve your dives and courses early.</p>
+</div>
+<ul class="getting-list" data-reveal>
+<li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg></div><div><h3>Pick your dates</h3><p>Tell us when you&#x27;d like to dive and for how long.</p></div></li><li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l8 3.2v6c0 5-3.5 8-8 9.2C7.5 20 4 17 4 12V6l8-3.2z"/><path d="M9 12l2 2 4-4.5"/></svg></div><div><h3>No payment now</h3><p>This is an availability enquiry — nothing is charged today.</p></div></li><li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg></div><div><h3>We confirm by email</h3><p>A real person replies, usually within one working day.</p></div></li>
+</ul>
+</div>
+<div data-reveal><form class="booking" data-booking novalidate aria-label="Book your dives">
+<h3>Book your dives</h3>
+<p class="bk-sub">Choose a date and party size — we&#x27;ll confirm availability by email.</p>
+<div class="bk-grid">
+<div class="field"><label for="bk-date">Preferred date</label><input type="date" id="bk-date" name="checkin" data-validate="date" aria-describedby="err-bk-date" required><span class="err" id="err-bk-date" hidden>Please choose a date.</span></div>
+<div class="field"><label for="bk-guests">Travellers</label><select id="bk-guests" name="guests" data-validate="select" aria-describedby="err-bk-guests" required><option value="" selected disabled>Select…</option><option value="1">1 traveller</option><option value="2">2 travellers</option><option value="3">3 travellers</option><option value="4">4 travellers</option><option value="5">5 travellers</option><option value="6">6+ travellers</option></select><span class="err" id="err-bk-guests" hidden>Please choose the number of travellers.</span></div>
+<div class="field col-2"><label for="bk-name">Full name</label><input type="text" id="bk-name" name="name" autocomplete="name" data-validate="name" aria-describedby="err-bk-name" required><span class="err" id="err-bk-name" hidden>Please enter your name.</span></div>
+<div class="field col-2"><label for="bk-email">Email</label><input type="email" id="bk-email" name="email" autocomplete="email" data-validate="email" aria-describedby="err-bk-email" required><span class="err" id="err-bk-email" hidden>Enter a valid email address.</span></div>
+<button class="btn bk-submit" type="submit">Check availability</button>
+<p class="bk-success" data-success tabindex="-1" role="status" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg> Thank you — we&#x27;ve received your enquiry and will be in touch shortly.</p>
+<p class="bk-note">No payment is taken now &mdash; we confirm availability by email. Demo form.</p>
+</div>
+</form></div>
+</div>
+</div>
+</section>
+<section class="section" id="location" aria-labelledby="loc-h">
+<div class="container">
+<div class="loc-wrap">
+<div class="loc-copy">
+<div class="sec-head" data-reveal>
+<span class="kicker">Getting there</span>
+<h2 id="loc-h">Finding the centre</h2>
+<p class="lead">On the harbour front of the dive village, with the boats moored at our own jetty.</p>
+</div>
+<div class="getting-list"><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h16l-1.8 3.5H5.8L4 17z"/><path d="M12 3v14"/><path d="M12 4c4.5 2 6.5 6.5 6.5 11"/></svg></div>
+<div><h3>From the jetty</h3><p>All boat dives leave from our own jetty, steps from the kit room.</p></div>
+</div><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="2.5"/><path d="M3 11h18"/><circle cx="7.5" cy="18.5" r="1.8"/><circle cx="16.5" cy="18.5" r="1.8"/></svg></div>
+<div><h3>Getting here</h3><p>The dive village is a short transfer from the island airport; we can arrange it.</p></div>
+</div><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg></div>
+<div><h3>House reef</h3><p>Certified divers can shore-dive the house reef any time the flag is up.</p></div>
+</div></div>
+</div>
+<div class="map-card" data-reveal role="img" aria-label="Stylised map showing the location of Abyssal Blue Dive Center">
+<div class="map-canvas" style="background:linear-gradient(135deg, #0A2A36, #2C2024)"></div>
+<div class="vis-over map-canvas" style="opacity:.5"></div>
+<div class="map-pin"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span class="pin-pulse"></span></div>
+<div class="map-addr"><b>Abyssal Blue Dive Center</b>Abyssal Blue Dive Center &middot; Jetty 2, Harbour Road, Coralhaven</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" aria-labelledby="cta-h">
+<div class="container">
+<div class="cta-band" data-reveal>
+<div class="cta-bg" aria-hidden="true"></div>
+<h2 id="cta-h">Book your dives</h2>
+<p>Small boats and small classes mean limited spaces — reserve your dives and courses early.</p>
+<div class="hero-ctas" style="justify-content:center">
+<a class="btn btn-lg btn-on-hero" href="#booking">Book Dives</a>
+<a class="btn btn-lg btn-on-hero btn-ghost" href="packages.html">See all dives &amp; courses</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand" href="#home" aria-label="Abyssal Blue Dive Center home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c-3.5-4.5-8-6-12.5-4.5-2 .7-3.8 2.2-5.5 4.5 1.7 2.3 3.5 3.8 5.5 4.5C13 18 17.5 16.5 21 12z"/><circle cx="7.5" cy="11" r=".6"/><path d="M21 12l1.5-3M21 12l1.5 3"/></svg></span>
+<span>Abyssal Blue Dive Center</span>
+</a>
+<p>A five-star dive centre on a coral coast — daily boat dives to walls and wrecks, courses from first breath to instructor, and a house reef you can shore-di</p>
+<div class="foot-socials">
+<a class="social" href="#" data-demo-link aria-label="Abyssal Blue Dive Center on social channel one"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.6 7.4h.01"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Abyssal Blue Dive Center on social channel two"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3.5 3 10.8l5.8 2.4L11.5 20 21 3.5z"/><path d="M8.8 13.2 17 6.5"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Abyssal Blue Dive Center on social channel three"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.8 8.6l6 3.4-6 3.4V8.6z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Abyssal Blue Dive Center on social channel four"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8 8H4l2.1-3.1A8 8 0 1 1 21 11.5z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Abyssal Blue Dive Center on social channel five"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M8 5h11v11"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer links">
+<h2 class="foot-h">Explore</h2>
+<ul class="foot-links">
+<li><a href="packages.html">Dives &amp; Courses</a></li>
+<li><a href="about.html#amenities">Amenities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h2 class="foot-h">Visit</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Jetty 2, Harbour Road<br>Coralhaven, Azure Coast</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h2 class="foot-h">Contact</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h4l2 5-3 2a13.5 13.5 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17.5 17.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg><a href="tel:+63325550177">+63 32 555 0177</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg><a href="mailto:dive@abyssalblue.example">dive@abyssalblue.example</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom">
+<p>&copy; <span data-year>2026</span> Abyssal Blue Dive Center. All rights reserved.</p>
+<p>A static HTML / CSS / JS template &mdash; no frameworks, no build step.</p>
+</div>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

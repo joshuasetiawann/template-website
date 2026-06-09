@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian Yacht Charters — Crewed &amp; Bareboat Yacht Charter</title>
+<meta name="description" content="Meridian Yacht Charters is a yacht charter website template: an immersive hero, a working booking enquiry widget, yachts, amenities, gallery, reviews and a location map — pure HTML, CSS and vanilla JS.">
+<meta name="theme-color" content="#13335C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2313335C'/%3E%3Cstop offset='1' stop-color='%23B89B5E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Georgia%2Cserif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+<header class="site-header" id="top">
+<div class="container nav-in">
+<a class="brand" href="#home" aria-label="Meridian Yacht Charters home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17.5 18.5 4c1 4.5.5 9.5-2 13.5H5z"/><path d="M3.5 21h17"/></svg></span>
+<span>Meridian Yacht Charters</span>
+</a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+<span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+</button>
+<ul class="nav-menu" id="nav-menu">
+<li><a class="nav-link" href="packages.html">The fleet</a></li>
+<li><a class="nav-link" href="about.html#amenities">Amenities</a></li>
+<li><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm" href="contact.html">Charter Now</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero hero-v1" id="home">
+<div class="hero-bg" aria-hidden="true" style="background:radial-gradient(120% 95% at 33% 23%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(163deg, #365274 0%, #79735D 54%, #A08752 100%)"></div>
+<div class="vis-over hero-bg" aria-hidden="true" style="z-index:-2;opacity:.5"></div>
+<div class="hero-veil" aria-hidden="true"></div>
+<div class="container hero-stack">
+<span class="kicker" data-reveal>Crewed &amp; bareboat charters · Sail the islands</span>
+<h1 data-reveal>Set your own course across the blue.</h1>
+<p class="hero-lead" data-reveal>Crewed and bareboat charters through the island chain — sailing yachts and catamarans with a skipper and cook, or the helm in your own hands, and a different anchorage every night.</p>
+<div class="hero-ctas" data-reveal>
+<a class="btn btn-lg btn-on-hero" href="#booking">Charter Now</a>
+<a class="btn btn-lg btn-on-hero btn-ghost" href="#rooms">See the Fleet</a>
+</div>
+<dl class="hero-facts" data-reveal><div class="fact"><dt>16</dt><dd>yachts in the fleet</dd></div><div class="fact"><dt>7</dt><dd>nights, the classic week</dd></div><div class="fact"><dt>40+</dt><dd>island anchorages</dd></div></dl>
+</div>
+</section>
+<div class="booking-bar">
+<div class="container">
+<form class="booking" data-booking novalidate aria-label="Check availability">
+<h3>Check availability</h3>
+<p class="bk-sub">Pick your dates and party — no payment is taken now.</p>
+<div class="bk-grid">
+<div class="field"><label for="bk-date">Check-in</label><input type="date" id="bk-date" name="checkin" data-validate="date" aria-describedby="err-bk-date" required><span class="err" id="err-bk-date" hidden>Please choose a date.</span></div>
+<div class="field"><label for="bk-date2">Check-out</label><input type="date" id="bk-date2" name="checkout" data-validate="dateout" aria-describedby="err-bk-date2" required><span class="err" id="err-bk-date2" hidden>Choose a date after check-in.</span></div>
+<div class="field"><label for="bk-guests">Guests</label><select id="bk-guests" name="guests" data-validate="select" aria-describedby="err-bk-guests" required><option value="" selected disabled>Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6+ guests</option></select><span class="err" id="err-bk-guests" hidden>Please choose guests.</span></div>
+<div class="field col-2"><label for="bk-name">Full name</label><input type="text" id="bk-name" name="name" autocomplete="name" data-validate="name" aria-describedby="err-bk-name" required><span class="err" id="err-bk-name" hidden>Please enter your name.</span></div>
+<div class="field col-2"><label for="bk-email">Email</label><input type="email" id="bk-email" name="email" autocomplete="email" data-validate="email" aria-describedby="err-bk-email" required><span class="err" id="err-bk-email" hidden>Enter a valid email address.</span></div>
+<button class="btn bk-submit" type="submit">Search dates</button>
+<p class="bk-success" data-success tabindex="-1" role="status" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg> Thank you — your dates are noted and we&#x27;ll confirm availability by email.</p>
+<p class="bk-note">No payment is taken now &mdash; we confirm availability by email. Demo form.</p>
+</div>
+</form>
+</div>
+</div>
+<section class="section" id="rooms" aria-labelledby="rooms-h">
+<div class="container">
+<div class="sec-head hairline-head" data-reveal>
+<span class="kicker">The Fleet</span>
+<h2 id="rooms-h">Choose your yacht</h2>
+<p class="lead">From a nimble monohull for two couples to a luxury crewed catamaran, each charter is priced per week. Tap any to see the cabins and the crew.</p>
+</div>
+<div class="cards-grid">
+<article class="rcard rcard-v1" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-1" aria-label="Bareboat Monohull 42&#x27; &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 29% 23%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(173deg, #365274 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Yacht</span></a>
+<div class="rcard-body">
+<h3>Bareboat Monohull 42&#x27;</h3>
+<p class="rcard-desc">A classic 42-foot sloop for experienced sailors, sleeps six.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17.5 18.5 4c1 4.5.5 9.5-2 13.5H5z"/><path d="M3.5 21h17"/></svg>Sail</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="9"/><path d="M12 3v3.5M12 17.5V21M3 12h3.5M17.5 12H21M5.6 5.6l2.5 2.5M15.9 15.9l2.5 2.5M18.4 5.6l-2.5 2.5M8.1 15.9l-2.5 2.5"/></svg>Skipper</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 18.5V6"/><path d="M2.5 14h19v4.5"/><path d="M2.5 11h7v3"/><path d="M21.5 14v-2a4 4 0 0 0-4-4h-8"/></svg>King bed</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.6 13.6 8.5 15.5l1.9-5.1 5.1-1.9z"/></svg>Guided</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$4,200 <span class="per">/ week</span></span>
+<a class="rcard-link" href="packages.html#pkg-1">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard rcard-v1" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-2" aria-label="Bareboat Catamaran 45&#x27; &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 26% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(128deg, #213F66 0%, #79735D 54%, #977F4D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Yacht</span></a>
+<div class="rcard-body">
+<h3>Bareboat Catamaran 45&#x27;</h3>
+<p class="rcard-desc">A stable 45-foot cat to skipper yourself, sleeps eight.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17.5 18.5 4c1 4.5.5 9.5-2 13.5H5z"/><path d="M3.5 21h17"/></svg>Sail</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14"/><path d="M12 21a9 9 0 0 1-9-8h3"/><path d="M12 21a9 9 0 0 0 9-8h-3"/><path d="M9 10h6"/></svg>Anchorage</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 18.5V6"/><path d="M2.5 14h19v4.5"/><path d="M2.5 11h7v3"/><path d="M21.5 14v-2a4 4 0 0 0-4-4h-8"/></svg>King bed</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Ensuite</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$6,800 <span class="per">/ week</span></span>
+<a class="rcard-link" href="packages.html#pkg-2">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard rcard-v1" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-3" aria-label="Skippered Monohull 46&#x27; &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 25% 35%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(127deg, #365274 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Yacht</span></a>
+<div class="rcard-body">
+<h3>Skippered Monohull 46&#x27;</h3>
+<p class="rcard-desc">A 46-foot yacht with a skipper to do the sailing.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="9"/><path d="M12 3v3.5M12 17.5V21M3 12h3.5M17.5 12H21M5.6 5.6l2.5 2.5M15.9 15.9l2.5 2.5M18.4 5.6l-2.5 2.5M8.1 15.9l-2.5 2.5"/></svg>Skipper</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17.5 18.5 4c1 4.5.5 9.5-2 13.5H5z"/><path d="M3.5 21h17"/></svg>Sail</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 18.5V6"/><path d="M2.5 14h19v4.5"/><path d="M2.5 11h7v3"/><path d="M21.5 14v-2a4 4 0 0 0-4-4h-8"/></svg>King bed</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3.5h8c0 5-1.2 8.5-4 8.5s-4-3.5-4-8.5z"/><path d="M12 12v7.5"/><path d="M8.5 21h7"/></svg>Bar</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$7,400 <span class="per">/ week</span></span>
+<a class="rcard-link" href="packages.html#pkg-3">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard rcard-v1" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-4" aria-label="Crewed Catamaran 50&#x27; &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 25% 35%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(127deg, #365274 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Yacht</span></a>
+<div class="rcard-body">
+<h3>Crewed Catamaran 50&#x27;</h3>
+<p class="rcard-desc">Skipper and cook aboard a roomy 50-foot catamaran.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="9"/><path d="M12 3v3.5M12 17.5V21M3 12h3.5M17.5 12H21M5.6 5.6l2.5 2.5M15.9 15.9l2.5 2.5M18.4 5.6l-2.5 2.5M8.1 15.9l-2.5 2.5"/></svg>Skipper</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3.5h8c0 5-1.2 8.5-4 8.5s-4-3.5-4-8.5z"/><path d="M12 12v7.5"/><path d="M8.5 21h7"/></svg>Bar</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 18.5V6"/><path d="M2.5 14h19v4.5"/><path d="M2.5 11h7v3"/><path d="M21.5 14v-2a4 4 0 0 0-4-4h-8"/></svg>King bed</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14"/><path d="M12 21a9 9 0 0 1-9-8h3"/><path d="M12 21a9 9 0 0 0 9-8h-3"/><path d="M9 10h6"/></svg>Anchorage</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$12,800 <span class="per">/ week</span></span>
+<a class="rcard-link" href="packages.html#pkg-4">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard rcard-v1" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-5" aria-label="Luxury Crewed Cat 60&#x27; &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 33% 17%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(121deg, #365274 0%, #79735D 54%, #977F4D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Yacht</span></a>
+<div class="rcard-body">
+<h3>Luxury Crewed Cat 60&#x27;</h3>
+<p class="rcard-desc">Full crew, four ensuite cabins and a flybridge bar.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="9"/><path d="M12 3v3.5M12 17.5V21M3 12h3.5M17.5 12H21M5.6 5.6l2.5 2.5M15.9 15.9l2.5 2.5M18.4 5.6l-2.5 2.5M8.1 15.9l-2.5 2.5"/></svg>Skipper</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3.5h8c0 5-1.2 8.5-4 8.5s-4-3.5-4-8.5z"/><path d="M12 12v7.5"/><path d="M8.5 21h7"/></svg>Bar</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c2 2.8 2 5.8 0 8.6-2-2.8-2-5.8 0-8.6z"/><path d="M4.5 9.5c3.2.4 5.5 2.4 6.3 5.8-3.4-.3-5.6-2.3-6.3-5.8z"/><path d="M19.5 9.5c-.7 3.5-2.9 5.5-6.3 5.8.8-3.4 3.1-5.4 6.3-5.8z"/><path d="M7 18.5c3 1.6 7 1.6 10 0"/></svg>Spa</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17.5h16"/><path d="M12 6.5a7.5 7.5 0 0 1 7.5 7.5v1h-15v-1A7.5 7.5 0 0 1 12 6.5z"/><path d="M12 4v2.5"/><path d="M10.5 20.5h3"/></svg>Turndown</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$22,000 <span class="per">/ week</span></span>
+<a class="rcard-link" href="packages.html#pkg-5">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="rcard rcard-v1" data-reveal>
+<a class="rcard-visual" href="packages.html#pkg-6" aria-label="Day-Sail Charter &mdash; see details"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 32% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(148deg, #2F4B70 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="vis-tag">Yacht</span></a>
+<div class="rcard-body">
+<h3>Day-Sail Charter</h3>
+<p class="rcard-desc">A skippered day on the water — coves, lunch and a swim.</p>
+<div class="amen-row"><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17.5 18.5 4c1 4.5.5 9.5-2 13.5H5z"/><path d="M3.5 21h17"/></svg>Sail</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M19.2 4.8l-1.8 1.8M6.6 17.4l-1.8 1.8"/></svg>Sun deck</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg>Ensuite</span><span class="amen-chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14"/><path d="M12 21a9 9 0 0 1-9-8h3"/><path d="M12 21a9 9 0 0 0 9-8h-3"/><path d="M9 10h6"/></svg>Anchorage</span></div>
+<div class="rcard-foot">
+<span class="rcard-price">$980 <span class="per">/ week</span></span>
+<a class="rcard-link" href="packages.html#pkg-6">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="amenities" aria-labelledby="amen-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">What&#x27;s included</span>
+<h2 id="amen-h">Why charter with us</h2>
+<p class="lead">The details that turn a charter into the trip you remember.</p>
+</div>
+<div class="amenities-grid">
+<div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="9"/><path d="M12 3v3.5M12 17.5V21M3 12h3.5M17.5 12H21M5.6 5.6l2.5 2.5M15.9 15.9l2.5 2.5M18.4 5.6l-2.5 2.5M8.1 15.9l-2.5 2.5"/></svg></div>
+<div><h3>Skippered or bareboat</h3><p>Take the helm yourself, or let an experienced skipper sail her.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3.5h8c0 5-1.2 8.5-4 8.5s-4-3.5-4-8.5z"/><path d="M12 12v7.5"/><path d="M8.5 21h7"/></svg></div>
+<div><h3>Cook &amp; provisioning</h3><p>A cook aboard the crewed yachts; full provisioning on all.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14"/><path d="M12 21a9 9 0 0 1-9-8h3"/><path d="M12 21a9 9 0 0 0 9-8h-3"/><path d="M9 10h6"/></svg></div>
+<div><h3>Forty anchorages</h3><p>A different cove, island or harbour town every night.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.6 13.6 8.5 15.5l1.9-5.1 5.1-1.9z"/></svg></div>
+<div><h3>Sail the chain</h3><p>Charts, routes and local knowledge for the whole archipelago.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l8 3.2v6c0 5-3.5 8-8 9.2C7.5 20 4 17 4 12V6l8-3.2z"/><path d="M9 12l2 2 4-4.5"/></svg></div>
+<div><h3>Safety &amp; support</h3><p>Yachts fully equipped and a 24/7 shore team on call.</p></div>
+</div><div class="amenity" data-reveal>
+<div class="amenity-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.5 6.2 5.5 10.2a5.5 5.5 0 0 1-11 0c0-4 5.5-10.2 5.5-10.2z"/></svg></div>
+<div><h3>Toys aboard</h3><p>Paddleboards, snorkel gear and a tender on every yacht.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="gallery" aria-labelledby="gal-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">Gallery</span>
+<h2 id="gal-h">Out on the water</h2>
+<p class="lead">A glimpse of what waits for you — every image here is pure CSS and inline SVG.</p>
+</div>
+<div class="gallery-strip">
+<div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 34% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(178deg, #213F66 0%, #79735D 54%, #977F4D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Yacht</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 24% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(168deg, #2F4B70 0%, #79735D 54%, #A08752 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Catamaran</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 32% 20%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(162deg, #2F4B70 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Cove</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 39% 41%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(169deg, #28456B 0%, #79735D 54%, #A08752 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Sail</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 32% 20%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(162deg, #2F4B70 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Deck</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 40% 20%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(142deg, #2F4B70 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Anchorage</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 41% 17%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(171deg, #365274 0%, #79735D 54%, #A08752 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Sunset</span></div><div class="gtile" data-reveal><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 41% 23%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(143deg, #365274 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div><span class="gtile-cap">Island</span></div>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="reviews" aria-labelledby="rev-h">
+<div class="container">
+<div class="sec-head center" data-reveal>
+<span class="kicker">Traveller reviews</span>
+<h2 id="rev-h">Crew &amp; guest reviews</h2>
+<p class="lead">Real words from people who travelled before you.</p>
+</div>
+<div class="reviews-grid">
+<figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;A week on the crewed cat with a skipper and cook was flawless — a new island every night, every meal a delight.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">T</span>
+<span class="review-meta"><b>The Lindqvist party</b><span>Stockholm</span></span>
+</figcaption>
+</figure><figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;Bareboated the 45-foot cat with mates; the handover and chart briefing were thorough and the boat immaculate.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">M</span>
+<span class="review-meta"><b>Marcus B.</b><span>Sydney</span></span>
+</figcaption>
+</figure><figure class="review" data-reveal>
+<span class="stars" role="img" aria-label="Rated 4 out of 5 stars"><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st st-on" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg><svg class="ic st" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8L12 3.2z"/></svg></span>
+<blockquote class="review-text">&ldquo;The skippered yacht was the right call for us — all the sailing, none of the stress. Book the day-sail to test the water first.&rdquo;</blockquote>
+<figcaption class="review-by">
+<span class="review-ava" aria-hidden="true">É</span>
+<span class="review-meta"><b>Élise R.</b><span>Lyon</span></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section sec-tint" id="booking" aria-labelledby="booking-h">
+<div class="container">
+<div class="loc-wrap">
+<div>
+<div class="sec-head" data-reveal>
+<span class="kicker">Book your charter</span>
+<h2 id="booking-h">Charter your yacht</h2>
+<p class="lead">Peak summer weeks and the crewed catamarans book a season ahead — reserve your dates now.</p>
+</div>
+<ul class="getting-list" data-reveal>
+<li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg></div><div><h3>Pick your dates</h3><p>Tell us when you&#x27;d like to charter and for how long.</p></div></li><li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l8 3.2v6c0 5-3.5 8-8 9.2C7.5 20 4 17 4 12V6l8-3.2z"/><path d="M9 12l2 2 4-4.5"/></svg></div><div><h3>No payment now</h3><p>This is an availability enquiry — nothing is charged today.</p></div></li><li class="getting"><div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg></div><div><h3>We confirm by email</h3><p>A real person replies, usually within one working day.</p></div></li>
+</ul>
+</div>
+<div data-reveal><form class="booking" data-booking novalidate aria-label="Check availability">
+<h3>Check availability</h3>
+<p class="bk-sub">Pick your dates and party — no payment is taken now.</p>
+<div class="bk-grid">
+<div class="field"><label for="bk-date">Check-in</label><input type="date" id="bk-date" name="checkin" data-validate="date" aria-describedby="err-bk-date" required><span class="err" id="err-bk-date" hidden>Please choose a date.</span></div>
+<div class="field"><label for="bk-date2">Check-out</label><input type="date" id="bk-date2" name="checkout" data-validate="dateout" aria-describedby="err-bk-date2" required><span class="err" id="err-bk-date2" hidden>Choose a date after check-in.</span></div>
+<div class="field"><label for="bk-guests">Guests</label><select id="bk-guests" name="guests" data-validate="select" aria-describedby="err-bk-guests" required><option value="" selected disabled>Select…</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6+ guests</option></select><span class="err" id="err-bk-guests" hidden>Please choose guests.</span></div>
+<div class="field col-2"><label for="bk-name">Full name</label><input type="text" id="bk-name" name="name" autocomplete="name" data-validate="name" aria-describedby="err-bk-name" required><span class="err" id="err-bk-name" hidden>Please enter your name.</span></div>
+<div class="field col-2"><label for="bk-email">Email</label><input type="email" id="bk-email" name="email" autocomplete="email" data-validate="email" aria-describedby="err-bk-email" required><span class="err" id="err-bk-email" hidden>Enter a valid email address.</span></div>
+<button class="btn bk-submit" type="submit">Search dates</button>
+<p class="bk-success" data-success tabindex="-1" role="status" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg> Thank you — your dates are noted and we&#x27;ll confirm availability by email.</p>
+<p class="bk-note">No payment is taken now &mdash; we confirm availability by email. Demo form.</p>
+</div>
+</form></div>
+</div>
+</div>
+</section>
+<section class="section" id="location" aria-labelledby="loc-h">
+<div class="container">
+<div class="loc-wrap">
+<div class="loc-copy">
+<div class="sec-head" data-reveal>
+<span class="kicker">Getting there</span>
+<h2 id="loc-h">Where you&#x27;ll set sail</h2>
+<p class="lead">Charters begin at the marina base in the main harbour town, the gateway to the whole island chain.</p>
+</div>
+<div class="getting-list"><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h16l-1.8 3.5H5.8L4 17z"/><path d="M12 3v14"/><path d="M12 4c4.5 2 6.5 6.5 6.5 11"/></svg></div>
+<div><h3>At the marina</h3><p>Board at our marina base; handovers and briefings happen dockside.</p></div>
+</div><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="2.5"/><path d="M3 11h18"/><circle cx="7.5" cy="18.5" r="1.8"/><circle cx="16.5" cy="18.5" r="1.8"/></svg></div>
+<div><h3>Getting here</h3><p>The island airport is a short transfer from the marina; we can arrange it.</p></div>
+</div><div class="getting" data-reveal>
+<div class="getting-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.6 13.6 8.5 15.5l1.9-5.1 5.1-1.9z"/></svg></div>
+<div><h3>Setting off</h3><p>A chart briefing and weather outlook precede every departure.</p></div>
+</div></div>
+</div>
+<div class="map-card" data-reveal role="img" aria-label="Stylised map showing the location of Meridian Yacht Charters">
+<div class="map-canvas" style="background:linear-gradient(135deg, #E3E7EB, #F4EFE5)"></div>
+<div class="vis-over map-canvas" style="opacity:.5"></div>
+<div class="map-pin"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span class="pin-pulse"></span></div>
+<div class="map-addr"><b>Meridian Yacht Charters</b>Meridian Yacht Charters &middot; Marina Base, Quay 7, Port Meridian</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" aria-labelledby="cta-h">
+<div class="container">
+<div class="cta-band" data-reveal>
+<div class="cta-bg" aria-hidden="true"></div>
+<h2 id="cta-h">Charter your yacht</h2>
+<p>Peak summer weeks and the crewed catamarans book a season ahead — reserve your dates now.</p>
+<div class="hero-ctas" style="justify-content:center">
+<a class="btn btn-lg btn-on-hero" href="#booking">Charter Now</a>
+<a class="btn btn-lg btn-on-hero btn-ghost" href="packages.html">See all fleet &amp; charters</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand" href="#home" aria-label="Meridian Yacht Charters home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17.5 18.5 4c1 4.5.5 9.5-2 13.5H5z"/><path d="M3.5 21h17"/></svg></span>
+<span>Meridian Yacht Charters</span>
+</a>
+<p>Crewed and bareboat charters through the island chain — sailing yachts and catamarans with a skipper and cook, or the helm in your own hands, and a differe</p>
+<div class="foot-socials">
+<a class="social" href="#" data-demo-link aria-label="Meridian Yacht Charters on social channel one"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.6 7.4h.01"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Meridian Yacht Charters on social channel two"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3.5 3 10.8l5.8 2.4L11.5 20 21 3.5z"/><path d="M8.8 13.2 17 6.5"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Meridian Yacht Charters on social channel three"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.8 8.6l6 3.4-6 3.4V8.6z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Meridian Yacht Charters on social channel four"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8 8H4l2.1-3.1A8 8 0 1 1 21 11.5z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Meridian Yacht Charters on social channel five"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M8 5h11v11"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer links">
+<h2 class="foot-h">Explore</h2>
+<ul class="foot-links">
+<li><a href="packages.html">Fleet &amp; Charters</a></li>
+<li><a href="about.html#amenities">Amenities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h2 class="foot-h">Visit</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Marina Base, Quay 7<br>Port Meridian, Azure Isles</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h2 class="foot-h">Contact</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h4l2 5-3 2a13.5 13.5 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17.5 17.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg><a href="tel:+30225550191">+30 22 555 0191</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg><a href="mailto:charter@meridianyachts.example">charter@meridianyachts.example</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom">
+<p>&copy; <span data-year>2026</span> Meridian Yacht Charters. All rights reserved.</p>
+<p>A static HTML / CSS / JS template &mdash; no frameworks, no build step.</p>
+</div>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afterdark Cycle — Ride the Beat Drop</title>
+<meta name="description" content="Afterdark is a dark neon-pink-and-cyan spin studio template with an animated beat-bar equalizer, ride-style grid, tabbed weekly ride schedule, instructor lineup and a first-ride booking form.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23EC4899'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23101014'%3EA%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#101014">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body data-tpl="16">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar" id="top">
+<div class="container topbar-in">
+<a class="brand" href="index.html" aria-label="Afterdark Cycle home"><span class="brand-badge" aria-hidden="true"><svg class="ic brand-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg></span><span class="brand-word">AFTERDARK</span></a>
+<nav class="main-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="programs.html">Rides</a></li>
+<li><a class="nav-link" href="programs.html#timetable">Schedule</a></li>
+<li><a class="nav-link" href="about.html#team">Instructors</a></li>
+<li><a class="nav-link" href="pricing.html">Credits</a></li>
+<li><a class="nav-link" href="about.html">The Room</a></li>
+<li class="nav-cta-li"><a class="btn btn-cta" href="contact.html">Book First Ride</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="main">
+<section class="hero hero-v1" id="hero">
+<div class="hero-glow" aria-hidden="true"></div>
+<div class="hero-grid-deco" aria-hidden="true"></div>
+<div class="container hero-in">
+<p class="hero-kicker">45 bikes · One dark room · Volume: yes</p>
+<h1 class="hero-title">Ride the beat drop.</h1>
+<p class="hero-lead">Afterdark is rhythm cycling in a blacked-out room with a festival-grade sound system — 45 minutes where the playlist does the coaching and your legs do the singing.</p>
+<div class="hero-ctas">
+<a class="btn btn-lg btn-solid" href="contact.html">Book Your First Ride — 10</a>
+<a class="btn btn-lg btn-line" href="#schedule">Tonight's Rides</a>
+</div>
+<ul class="hero-points">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> First ride 10 incl. shoe hire</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Metrics optional — vibes mandatory</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Towels, lockers &amp; showers included</li>
+</ul>
+</div>
+<div class="hero-slant" aria-hidden="true"></div>
+</section>
+
+<section class="band eq-band" id="thesound" aria-label="The room rides at 128 BPM">
+<div class="container eq-in">
+<div class="sec-head">
+<span class="kicker"><span class="kick-rule" aria-hidden="true"></span>The Sound</span>
+<h2 class="sec-title">The room rides at 128 BPM</h2>
+<p class="sec-lead">A festival-grade rig, an acoustically treated ceiling and a no-talking-after-lights-down rule. The equalizer below is honest.</p>
+</div>
+<div class="eq-box">
+<div class="eq-bars" data-eq aria-hidden="true"><span class="eq-bar eq-1" aria-hidden="true"></span><span class="eq-bar eq-2" aria-hidden="true"></span><span class="eq-bar eq-3" aria-hidden="true"></span><span class="eq-bar eq-4" aria-hidden="true"></span><span class="eq-bar eq-5" aria-hidden="true"></span><span class="eq-bar eq-6" aria-hidden="true"></span><span class="eq-bar eq-7" aria-hidden="true"></span><span class="eq-bar eq-8" aria-hidden="true"></span><span class="eq-bar eq-9" aria-hidden="true"></span><span class="eq-bar eq-10" aria-hidden="true"></span><span class="eq-bar eq-11" aria-hidden="true"></span><span class="eq-bar eq-12" aria-hidden="true"></span><span class="eq-bar eq-13" aria-hidden="true"></span><span class="eq-bar eq-14" aria-hidden="true"></span><span class="eq-bar eq-15" aria-hidden="true"></span><span class="eq-bar eq-16" aria-hidden="true"></span></div>
+<p class="eq-bpm"><span class="bpm-label">Tonight's Beat Ride averages</span> <strong data-bpm data-count="128" data-suffix=" BPM">128 BPM</strong></p>
+<button type="button" class="btn btn-line eq-toggle" data-eq-toggle aria-pressed="true">Pause the beat</button>
+</div>
+</div>
+</section>
+
+<section class="sec sec-programs" id="rides">
+<div class="container">
+<div class="sec-head">
+<span class="kicker"><span class="kick-rule" aria-hidden="true"></span>Ride Styles</span>
+<h2 class="sec-title">Pick your flavour of dark</h2>
+<p class="sec-lead">Same room, same bikes, very different energy. Every ride is 45 minutes unless the title says otherwise.</p>
+</div>
+<div class="prog-grid">
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18.5V6l11-2v12.5"/><circle cx="6.5" cy="18.5" r="2.5"/><circle cx="17.5" cy="16.5" r="2.5"/></svg></span><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-1">Beat Ride</a></h3><p class="prog-desc">The signature: rhythm-matched climbs, sprints and choruses. No metrics on screen, just the beat.</p><span class="prog-meta"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg> 45 min · All levels</span><a class="prog-link" href="programs.html#prog-1" aria-label="Beat Ride — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg></span><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-2">Power Hour</a></h3><p class="prog-desc">Watts on the wall and FTP intervals for riders who like receipts.</p><span class="prog-meta"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg> 60 min · Metrics on</span><a class="prog-link" href="programs.html#prog-2" aria-label="Power Hour — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c4 0 7-2.7 7-7 0-3-2-5.5-3.5-7C15 9.5 14 10 14 10s.5-4-3-8c-.5 4-3 5.5-4.5 8C5 12 5 13.5 5 15c0 4.3 3 7 7 7z"/></svg></span><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-3">HIIT 30</a></h3><p class="prog-desc">Thirty minutes, no warm-down ballads, straight to the point on your lunch break.</p><span class="prog-meta"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg> 30 min · Express</span><a class="prog-link" href="programs.html#prog-3" aria-label="HIIT 30 — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg></span><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-4">Midnight Ride</a></h3><p class="prog-desc">Friday 22:00. Glow paint, remix sets, the closest a workout gets to a club night.</p><span class="prog-meta"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg> 45 min · Fri only</span><a class="prog-link" href="programs.html#prog-4" aria-label="Midnight Ride — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-8-4.5-8-10a4.5 4.5 0 0 1 8-3 4.5 4.5 0 0 1 8 3c0 5.5-8 10-8 10z"/></svg></span><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-5">Recovery Spin</a></h3><p class="prog-desc">Low lights, low gears, lo-fi — flush the legs and the week.</p><span class="prog-meta"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg> 30 min · Zone 1–2</span><a class="prog-link" href="programs.html#prog-5" aria-label="Recovery Spin — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6L12 16.8 6.6 19.6l1.1-6L3.2 9.4l6.1-.8L12 3z"/></svg></span><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-6">Artist Series</a></h3><p class="prog-desc">One artist's catalogue, one ride. Beyoncé night sells out in minutes.</p><span class="prog-meta"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg> 45 min · Themed</span><a class="prog-link" href="programs.html#prog-6" aria-label="Artist Series — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 5.5 5"/></svg></span><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-7">First-Timer Lab</a></h3><p class="prog-desc">Bike fit, clip-in practice and a gentle half-class before your first real drop.</p><span class="prog-meta"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg> 30 min · Free with first ride</span><a class="prog-link" href="programs.html#prog-7" aria-label="First-Timer Lab — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+</div>
+</div>
+</section>
+
+<section class="sec sec-schedule" id="schedule">
+<div class="container">
+<div class="sec-head">
+<span class="kicker"><span class="kick-rule" aria-hidden="true"></span>The Board</span>
+<h2 class="sec-title">This week's ride board</h2>
+<p class="sec-lead">Rides drop on the app Sundays at 18:00 and the good saddles go fast. Tap a day to see the board.</p>
+</div>
+<div class="sched-wrap" data-schedule data-mode="tabs">
+<div class="sched-tabs" role="tablist" aria-label="Pick a day">
+<button type="button" class="sched-tab is-active" role="tab" id="tab-mon" aria-controls="day-mon" aria-selected="true">Mon</button>
+<button type="button" class="sched-tab" role="tab" id="tab-tue" aria-controls="day-tue" aria-selected="false">Tue</button>
+<button type="button" class="sched-tab" role="tab" id="tab-wed" aria-controls="day-wed" aria-selected="false">Wed</button>
+<button type="button" class="sched-tab" role="tab" id="tab-thu" aria-controls="day-thu" aria-selected="false">Thu</button>
+<button type="button" class="sched-tab" role="tab" id="tab-fri" aria-controls="day-fri" aria-selected="false">Fri</button>
+<button type="button" class="sched-tab" role="tab" id="tab-sat" aria-controls="day-sat" aria-selected="false">Sat</button>
+<button type="button" class="sched-tab" role="tab" id="tab-sun" aria-controls="day-sun" aria-selected="false">Sun</button>
+</div>
+<div class="sched-panels">
+<div class="sched-day" role="tabpanel" id="day-mon" aria-labelledby="tab-mon">
+<div class="srow"><span class="stime">06:45</span><span class="sname">Beat Ride — Wake the Room</span><span class="scoach">Kya Soriano</span><span class="stag">45 min</span></div>
+<div class="srow"><span class="stime">12:30</span><span class="sname">HIIT 30</span><span class="scoach">Dre Mitchell</span><span class="stag">30 min</span></div>
+<div class="srow"><span class="stime">17:45</span><span class="sname">Beat Ride</span><span class="scoach">Kya Soriano</span><span class="stag">45 min</span></div>
+<div class="srow"><span class="stime">19:00</span><span class="sname">Power Hour</span><span class="scoach">Lottie Frank</span><span class="stag">60 min</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-tue" aria-labelledby="tab-tue" hidden>
+<div class="srow"><span class="stime">06:45</span><span class="sname">Power Hour — FTP blocks</span><span class="scoach">Lottie Frank</span><span class="stag">60 min</span></div>
+<div class="srow"><span class="stime">12:30</span><span class="sname">Recovery Spin</span><span class="scoach">Mads Ohlsson</span><span class="stag">30 min</span></div>
+<div class="srow"><span class="stime">17:45</span><span class="sname">Beat Ride</span><span class="scoach">Dre Mitchell</span><span class="stag">45 min</span></div>
+<div class="srow"><span class="stime">19:00</span><span class="sname">Artist Series — synthwave</span><span class="scoach">Kya Soriano</span><span class="stag">45 min</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-wed" aria-labelledby="tab-wed" hidden>
+<div class="srow"><span class="stime">06:45</span><span class="sname">Beat Ride</span><span class="scoach">Dre Mitchell</span><span class="stag">45 min</span></div>
+<div class="srow"><span class="stime">12:30</span><span class="sname">HIIT 30</span><span class="scoach">Kya Soriano</span><span class="stag">30 min</span></div>
+<div class="srow"><span class="stime">17:45</span><span class="sname">Beat Ride</span><span class="scoach">Lottie Frank</span><span class="stag">45 min</span></div>
+<div class="srow"><span class="stime">19:00</span><span class="sname">Beat Ride — throwback set</span><span class="scoach">Mads Ohlsson</span><span class="stag">45 min</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-thu" aria-labelledby="tab-thu" hidden>
+<div class="srow"><span class="stime">06:45</span><span class="sname">Power Hour</span><span class="scoach">Lottie Frank</span><span class="stag">60 min</span></div>
+<div class="srow"><span class="stime">12:30</span><span class="sname">Recovery Spin</span><span class="scoach">Mads Ohlsson</span><span class="stag">30 min</span></div>
+<div class="srow"><span class="stime">17:45</span><span class="sname">Beat Ride</span><span class="scoach">Kya Soriano</span><span class="stag">45 min</span></div>
+<div class="srow"><span class="stime">19:00</span><span class="sname">First-Timer Lab</span><span class="scoach">Dre Mitchell</span><span class="stag">30 min · free</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-fri" aria-labelledby="tab-fri" hidden>
+<div class="srow"><span class="stime">06:45</span><span class="sname">Beat Ride</span><span class="scoach">Mads Ohlsson</span><span class="stag">45 min</span></div>
+<div class="srow"><span class="stime">12:30</span><span class="sname">HIIT 30</span><span class="scoach">Dre Mitchell</span><span class="stag">30 min</span></div>
+<div class="srow"><span class="stime">18:00</span><span class="sname">Beat Ride — weekend opener</span><span class="scoach">Kya Soriano</span><span class="stag">45 min</span></div>
+<div class="srow"><span class="stime">22:00</span><span class="sname">Midnight Ride — glow night</span><span class="scoach">Kya Soriano &amp; Dre Mitchell</span><span class="stag">45 min</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-sat" aria-labelledby="tab-sat" hidden>
+<div class="srow"><span class="stime">09:00</span><span class="sname">Beat Ride</span><span class="scoach">Lottie Frank</span><span class="stag">45 min</span></div>
+<div class="srow"><span class="stime">10:15</span><span class="sname">Artist Series — Beyoncé</span><span class="scoach">Kya Soriano</span><span class="stag">45 min · waitlist</span></div>
+<div class="srow"><span class="stime">11:30</span><span class="sname">First-Timer Lab</span><span class="scoach">Mads Ohlsson</span><span class="stag">30 min · free</span></div>
+<div class="srow"><span class="stime">16:00</span><span class="sname">Power Hour</span><span class="scoach">Lottie Frank</span><span class="stag">60 min</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-sun" aria-labelledby="tab-sun" hidden>
+<div class="srow"><span class="stime">09:30</span><span class="sname">Recovery Spin</span><span class="scoach">Mads Ohlsson</span><span class="stag">30 min</span></div>
+<div class="srow"><span class="stime">10:30</span><span class="sname">Beat Ride — Sunday service</span><span class="scoach">Dre Mitchell</span><span class="stag">45 min</span></div>
+<div class="srow"><span class="stime">17:00</span><span class="sname">Beat Ride — school-night special</span><span class="scoach">Kya Soriano</span><span class="stag">45 min</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="band stats-band slant-both" id="stats" aria-label="AFTERDARK in numbers">
+<div class="container stats-grid">
+<div class="stat"><span class="stat-num" data-count="45" data-suffix="">45</span><span class="stat-label">Bikes in the dark room</span></div>
+<div class="stat"><span class="stat-num" data-count="38" data-suffix="">38</span><span class="stat-label">Rides on the weekly board</span></div>
+<div class="stat"><span class="stat-num" data-count="140" data-suffix="">140</span><span class="stat-label">Average decibels of encouragement</span></div>
+<div class="stat"><span class="stat-num" data-count="96" data-suffix="%">96%</span><span class="stat-label">Riders who rebook after ride one</span></div>
+</div>
+</section>
+
+<section class="sec sec-team" id="instructors">
+<div class="container">
+<div class="sec-head">
+<span class="kicker"><span class="kick-rule" aria-hidden="true"></span>Instructors</span>
+<h2 class="sec-title">The booth lineup</h2>
+<p class="sec-lead">Part coach, part DJ, fully responsible for your playlist dependency.</p>
+</div>
+<div class="team-grid">
+<article class="tm-card"><span class="tm-avatar av-1" aria-hidden="true">KS</span><h3 class="tm-name">Kya Soriano</h3><p class="tm-role">Lead Instructor · Beat Rides</p><p class="tm-bio">Builds rides like DJ sets — her Friday Midnight Ride has a fan account.</p><span class="tm-creds">Schwinn cert. · 7 yrs</span></article>
+<article class="tm-card"><span class="tm-avatar av-2" aria-hidden="true">DM</span><h3 class="tm-name">Dre Mitchell</h3><p class="tm-role">HIIT &amp; Throwbacks</p><p class="tm-bio">Express-ride specialist with a suspicious knowledge of 2009 chart music.</p><span class="tm-creds">Spinning cert. · 6 yrs</span></article>
+<article class="tm-card"><span class="tm-avatar av-3" aria-hidden="true">LF</span><h3 class="tm-name">Lottie Frank</h3><p class="tm-role">Power &amp; Metrics</p><p class="tm-bio">Ex-velodrome racer who makes FTP tests feel like a heist montage.</p><span class="tm-creds">BC Coach L2 · racer</span></article>
+<article class="tm-card"><span class="tm-avatar av-4" aria-hidden="true">MO</span><h3 class="tm-name">Mads Ohlsson</h3><p class="tm-role">Recovery &amp; First-Timers</p><p class="tm-bio">The calmest voice in the dark room; runs every First-Timer Lab personally.</p><span class="tm-creds">Spinning cert. · physio asst.</span></article>
+</div>
+</div>
+</section>
+
+<section class="sec sec-quotes" id="theroom">
+<div class="container">
+<div class="sec-head">
+<span class="kicker"><span class="kick-rule" aria-hidden="true"></span>From the Dark Room</span>
+<h2 class="sec-title">Reviews shouted over the music</h2>
+<p class="sec-lead">Volume slightly edited; enthusiasm untouched.</p>
+</div>
+<div class="qt-grid">
+<figure class="qt-card"><blockquote class="qt-text">“I came for a hen party and now I own padded shorts and opinions about cadence. Send help (book bike 23).”</blockquote><figcaption class="qt-by"><strong>Gemma R.</strong><span>34 rides and counting</span></figcaption><span class="qt-badge">Bike 23 loyalist</span></figure>
+<figure class="qt-card"><blockquote class="qt-text">“Power Hour fixed my cycling plateau — FTP up 11% in a quarter. Beat Rides fixed everything else.”</blockquote><figcaption class="qt-by"><strong>Theo L.</strong><span>Hybrid rider</span></figcaption><span class="qt-badge">FTP +11%</span></figure>
+<figure class="qt-card"><blockquote class="qt-text">“The Midnight Ride is genuinely the best night out in this city and you sweat out the regret in real time.”</blockquote><figcaption class="qt-by"><strong>Aleks P.</strong><span>Friday regular</span></figcaption><span class="qt-badge">0 hangovers</span></figure>
+<figure class="qt-card"><blockquote class="qt-text">“As someone terrified of gym mirrors: this room is dark, loud and completely judgement-free. I belong here.”</blockquote><figcaption class="qt-by"><strong>Nina F.</strong><span>Member since 2024</span></figcaption><span class="qt-badge">96% rebooked — me too</span></figure>
+</div>
+</div>
+</section>
+
+<section class="sec sec-pricing" id="credits">
+<div class="container">
+<div class="sec-head sec-head-center">
+<span class="kicker"><span class="kick-rule" aria-hidden="true"></span>Credits</span>
+<h2 class="sec-title">Ride credits, no contracts</h2>
+<p class="sec-lead">Buy credits, book rides. Credits last six months and shoe hire is always included.</p>
+</div>
+<div class="tier-grid">
+<article class="tier">
+<h3 class="tier-name">Single Ride</h3>
+<p class="tier-tag">Drop in when the beat calls</p>
+<p class="tier-price"><span class="tier-amount">16</span><span class="tier-per">/credit</span></p>
+<ul class="tier-feats">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Any ride on the board</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Shoe hire + towel included</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Lockers &amp; showers</li>
+</ul>
+<a class="btn btn-line tier-btn" href="contact.html">Book First Ride</a>
+</article>
+<article class="tier tier-featured">
+<span class="tier-flag">Most popular</span><h3 class="tier-name">Pack of 10</h3>
+<p class="tier-tag">The regular's choice</p>
+<p class="tier-price"><span class="tier-amount">135</span><span class="tier-per">6-month validity</span></p>
+<ul class="tier-feats">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> 10 ride credits</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Bring-a-friend: 2 guest credits</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Priority booking window</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Artist Series presale</li>
+</ul>
+<a class="btn btn-solid tier-btn" href="contact.html">Book First Ride</a>
+</article>
+<article class="tier">
+<h3 class="tier-name">Unlimited Month</h3>
+<p class="tier-tag">Live in the dark room</p>
+<p class="tier-price"><span class="tier-amount">139</span><span class="tier-per">/month</span></p>
+<ul class="tier-feats">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Unlimited rides incl. Midnight</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Saddle reservation up to 8 days</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Free guest ride monthly</li>
+</ul>
+<a class="btn btn-line tier-btn" href="contact.html">Book First Ride</a>
+</article>
+</div>
+<p class="pricing-note"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg> First ride is 10 with a free First-Timer Lab. Student Tuesdays: every ride one credit cheaper.</p>
+</div>
+</section>
+
+<section class="sec sec-form" id="firstride">
+<div class="container form-cols">
+<div class="form-intro">
+<div class="sec-head">
+<span class="kicker"><span class="kick-rule" aria-hidden="true"></span>First Ride</span>
+<h2 class="sec-title">Book your first ride — 10</h2>
+<p class="sec-lead">Includes shoe hire, towel and a First-Timer Lab if you want it. We'll set your bike up before the lights go down.</p>
+</div>
+<div class="form-aside">
+<div class="aside-row"><span class="aside-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div><strong>Arrive 15 min early</strong><span>First-timers get a bike fit + clip-in practice before doors</span></div></div>
+<div class="aside-row"><span class="aside-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-11.5A7 7 0 0 0 5 9.5C5 15 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.6"/></svg></span><div><strong>Basement, 9 Foundry Arches</strong><span>Follow the pink glow down the stairs</span></div></div>
+<div class="aside-row"><span class="aside-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg></span><div><strong>ride@afterdark.cc</strong><span>DMs answered between drops</span></div></div>
+</div>
+</div>
+<form class="trial-form" id="trial-form" novalidate>
+<div class="field">
+<label for="tf-name">Your name</label>
+<input type="text" id="tf-name" name="name" autocomplete="name" placeholder="Alex Morgan" required>
+<p class="ferr" id="err-name" hidden>Please tell us your name (at least 2 characters).</p>
+</div>
+<div class="field">
+<label for="tf-email">Email address</label>
+<input type="email" id="tf-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+<p class="ferr" id="err-email" hidden>That email doesn't look right — mind checking it?</p>
+</div>
+<div class="field">
+<label for="tf-phone">Phone <span class="opt">(optional)</span></label>
+<input type="tel" id="tf-phone" name="phone" autocomplete="tel" placeholder="(555) 000-0000">
+<p class="ferr" id="err-phone" hidden>Phone numbers need at least 7 digits.</p>
+</div>
+<div class="field">
+<label for="tf-interest">Pick a vibe for ride one</label>
+<select id="tf-interest" name="interest" required>
+<option value="" selected disabled>Choose one…</option>
+<option value="Beat Ride (signature)">Beat Ride (signature)</option>
+<option value="First-Timer Lab first, please">First-Timer Lab first, please</option>
+<option value="HIIT 30 (lunch express)">HIIT 30 (lunch express)</option>
+<option value="Recovery Spin (gentle entry)">Recovery Spin (gentle entry)</option>
+<option value="Midnight Ride (brave)">Midnight Ride (brave)</option>
+</select>
+<p class="ferr" id="err-interest" hidden>Please pick an option so we can match you well.</p>
+</div>
+<div class="field">
+<label for="tf-msg">Anything we should know? <span class="opt">(optional)</span></label>
+<textarea id="tf-msg" name="message" rows="4" placeholder="Goals, injuries, questions — anything helps."></textarea>
+</div>
+<button type="submit" class="btn btn-lg btn-solid btn-block">Book First Ride</button>
+<p class="form-ok" id="form-ok" role="status" hidden>Saddle saved! Check your email for bike-fit notes and what to bring. Lights down, see you in the dark.</p>
+<p class="form-privacy">We only use these details to reply to you — never for spam.</p>
+</form>
+</div>
+</section>
+
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<p class="footer-logo">Afterdark Cycle</p>
+<p class="footer-tag">Rhythm cycling in a blacked-out basement with a festival sound system — 45 bikes, zero judgement.</p>
+<div class="footer-socials">
+<a class="soc" href="#" data-demo-link aria-label="AFTERDARK on Instagram"><svg class="soc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="#" data-demo-link aria-label="AFTERDARK on YouTube"><svg class="soc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12.5" rx="3.5"/><path d="m10 9.5 5 2.7-5 2.7v-5.4z" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="#" data-demo-link aria-label="AFTERDARK on X (Twitter)"><svg class="soc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 4 16 16M20 4 4 20" stroke-width="2"/></svg></a>
+<a class="soc" href="#" data-demo-link aria-label="AFTERDARK on Spotify"><svg class="soc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7.5 9.5c3.5-1 6.5-.5 9 .8M8 12.5c2.8-.8 5.2-.4 7.3.7M8.5 15.3c2.2-.6 4-.3 5.7.6"/></svg></a>
+<a class="soc" href="#" data-demo-link aria-label="AFTERDARK on Facebook"><svg class="soc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8.5H17V5h-2.5A3.5 3.5 0 0 0 11 8.5V11H8.5v3.5H11V21h3.5v-6.5H17L17.5 11h-3v-2a1 1 0 0 1 1-1z" stroke-width="1.6"/></svg></a>
+</div>
+</div>
+<nav class="footer-col" aria-label="Footer quick links">
+<h3 class="footer-h">Explore</h3>
+<ul class="footer-links">
+<li><a href="programs.html">Rides</a></li>
+<li><a href="programs.html#timetable">Schedule</a></li>
+<li><a href="about.html#team">Instructors</a></li>
+<li><a href="pricing.html">Credits</a></li>
+<li><a href="about.html">The Room</a></li>
+<li><a href="contact.html">Book First Ride</a></li>
+</ul>
+</nav>
+<div class="footer-col">
+<h3 class="footer-h">Hours</h3>
+<ul class="footer-hours">
+<li><span>Mon–Fri</span><strong>06:15 – 21:30</strong></li>
+<li><span>Fri late</span><strong>Midnight Ride 22:00</strong></li>
+<li><span>Sat–Sun</span><strong>08:30 – 18:30</strong></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3 class="footer-h">Find us</h3>
+<ul class="footer-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-11.5A7 7 0 0 0 5 9.5C5 15 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.6"/></svg><span>Basement, 9 Foundry Arches</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l1.5 4.5-2.3 1.7a12.5 12.5 0 0 0 5.6 5.6l1.7-2.3L20 15v4a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg><span>(555) 099-1187</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg><span>ride@afterdark.cc</span></li>
+</ul>
+</div>
+</div>
+<div class="container footer-base">
+<p>© <span data-year>2025</span> Afterdark Cycle. All rights reserved.</p>
+<p class="footer-note">Hand-built template · pure HTML, CSS &amp; vanilla JS</p>
+</div>
+</footer>
+<button class="to-top" type="button" data-totop aria-label="Back to top"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+
+</body>
+</html>

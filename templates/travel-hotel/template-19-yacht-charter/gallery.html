@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Meridian Yacht Charters</title>
+<meta name="description" content="Gallery for Meridian Yacht Charters: a filterable look around — cabins, on board, the fleet, the islands — plus highlights and moments. Pure CSS gradients and inline SVG, no external requests.">
+<meta name="theme-color" content="#13335C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2313335C'/%3E%3Cstop offset='1' stop-color='%23B89B5E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Georgia%2Cserif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+<header class="site-header" id="top">
+<div class="container nav-in">
+<a class="brand" href="index.html#home" aria-label="Meridian Yacht Charters home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17.5 18.5 4c1 4.5.5 9.5-2 13.5H5z"/><path d="M3.5 21h17"/></svg></span>
+<span>Meridian Yacht Charters</span>
+</a>
+<nav class="site-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+<span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span>
+</button>
+<ul class="nav-menu" id="nav-menu">
+<li><a class="nav-link" href="packages.html">The fleet</a></li>
+<li><a class="nav-link" href="about.html#amenities">Amenities</a></li>
+<li><a class="nav-link" aria-current="page" href="gallery.html">Gallery</a></li>
+<li><a class="nav-link" href="about.html#reviews">Reviews</a></li>
+<li><a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-cta-li"><a class="btn btn-sm" href="contact.html">Charter Now</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="pkg-hero">
+<div class="container">
+<nav class="container breadcrumb" aria-label="Breadcrumb">
+<a href="index.html#home">Home</a>
+<span class="sep" aria-hidden="true">/</span>
+<span aria-current="page">Gallery</span>
+</nav>
+<span class="kicker" data-reveal>Gallery</span>
+<h1 data-reveal>The fleet &amp; the islands</h1>
+<p class="lead" data-reveal>The yachts under sail, the anchorages and the islands beyond &mdash; rendered here entirely in CSS gradients and inline SVG.</p>
+</div>
+</section>
+<section class="section" aria-labelledby="grid-h">
+<div class="container">
+<h2 id="grid-h" class="visually-hidden-h">Photo gallery</h2>
+<div class="gal-filters" role="group" aria-label="Filter gallery by category" data-gallery>
+<button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+<button type="button" class="chip" data-filter="rooms" aria-pressed="false">Cabins</button>
+<button type="button" class="chip" data-filter="dining" aria-pressed="false">On board</button>
+<button type="button" class="chip" data-filter="grounds" aria-pressed="false">The fleet</button>
+<button type="button" class="chip" data-filter="surroundings" aria-pressed="false">The islands</button>
+</div>
+<div class="gal-grid" data-gallery-grid>
+<figure class="gal-item" data-cat="rooms" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 33% 23%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(163deg, #365274 0%, #79735D 54%, #A08752 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Yacht</figcaption>
+</figure>
+<figure class="gal-item" data-cat="dining" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 29% 23%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(173deg, #365274 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Catamaran</figcaption>
+</figure>
+<figure class="gal-item" data-cat="grounds" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 26% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(128deg, #213F66 0%, #79735D 54%, #977F4D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Cove</figcaption>
+</figure>
+<figure class="gal-item" data-cat="surroundings" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 25% 35%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(127deg, #365274 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Sail</figcaption>
+</figure>
+<figure class="gal-item" data-cat="rooms" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 33% 17%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(121deg, #365274 0%, #79735D 54%, #977F4D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Deck</figcaption>
+</figure>
+<figure class="gal-item" data-cat="dining" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 32% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(148deg, #2F4B70 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Anchorage</figcaption>
+</figure>
+<figure class="gal-item" data-cat="grounds" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 34% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(178deg, #213F66 0%, #79735D 54%, #977F4D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Sunset</figcaption>
+</figure>
+<figure class="gal-item" data-cat="surroundings" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 24% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(168deg, #2F4B70 0%, #79735D 54%, #A08752 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Island</figcaption>
+</figure>
+<figure class="gal-item" data-cat="rooms" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 32% 20%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(162deg, #2F4B70 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Crewed charters</figcaption>
+</figure>
+<figure class="gal-item" data-cat="dining" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 39% 41%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(169deg, #28456B 0%, #79735D 54%, #A08752 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Bareboat hire</figcaption>
+</figure>
+<figure class="gal-item" data-cat="grounds" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 40% 20%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(142deg, #2F4B70 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Hidden anchorages</figcaption>
+</figure>
+<figure class="gal-item" data-cat="surroundings" data-reveal>
+<div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 41% 17%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(171deg, #365274 0%, #79735D 54%, #A08752 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div>
+<figcaption class="gtile-cap">Island-hopping</figcaption>
+</figure>
+</div>
+<p class="gal-empty" data-gallery-empty hidden>No images in this category yet.</p>
+</div>
+</section>
+<section class="section sec-tint" aria-labelledby="mom-h">
+<div class="container">
+<div class="sec-head" data-reveal>
+<span class="kicker">Moments</span>
+<h2 id="mom-h">Caught between the photos</h2>
+<p class="lead">A few of the small moments that the brochure shots never quite manage to hold.</p>
+</div>
+<div class="moments-strip">
+<article class="moment" data-reveal>
+<div class="moment-vis"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 32% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(148deg, #2F4B70 0%, #79735D 54%, #A98F56 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div></div>
+<div class="moment-body"><h3>Anchor up at dawn</h3><p>Glassy water and an empty bay before the day's breeze fills in.</p></div>
+</article>
+<article class="moment" data-reveal>
+<div class="moment-vis"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 34% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(178deg, #213F66 0%, #79735D 54%, #977F4D 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div></div>
+<div class="moment-body"><h3>Under full sail</h3><p>The yacht heels into the afternoon wind between the islands.</p></div>
+</article>
+<article class="moment" data-reveal>
+<div class="moment-vis"><div class="vis " aria-hidden="true"><div class="vis-grad" style="background:radial-gradient(120% 95% at 24% 38%, #637893 0%, rgba(255,255,255,0) 46%), linear-gradient(168deg, #2F4B70 0%, #79735D 54%, #A08752 100%)"></div><div class="vis-over"></div><div class="vis-shine"></div></div></div>
+<div class="moment-body"><h3>Stern-to for dinner</h3><p>Tied to a quay you could only reach by sea, table waiting ashore.</p></div>
+</article>
+</div>
+</div>
+</section>
+<section class="section" aria-labelledby="gcta-h">
+<div class="container">
+<div class="cta-band" data-reveal>
+<div class="cta-bg" aria-hidden="true"></div>
+<h2 id="gcta-h">Like what you see?</h2>
+<p>Peak summer weeks and the crewed catamarans book a season ahead — reserve your dates now.</p>
+<div class="hero-ctas" style="justify-content:center">
+<a class="btn btn-lg btn-on-hero" href="packages.html">View Fleet &amp; Charters</a>
+<a class="btn btn-lg btn-on-hero btn-ghost" href="contact.html">Charter Now</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="foot-grid">
+<div class="foot-col foot-brand">
+<a class="brand" href="index.html#home" aria-label="Meridian Yacht Charters home">
+<span class="brand-mark" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17.5 18.5 4c1 4.5.5 9.5-2 13.5H5z"/><path d="M3.5 21h17"/></svg></span>
+<span>Meridian Yacht Charters</span>
+</a>
+<p>Crewed and bareboat charters through the island chain — sailing yachts and catamarans with a skipper and cook, or the helm in your own hands, and a differe</p>
+<div class="foot-socials">
+<a class="social" href="#" data-demo-link aria-label="Meridian Yacht Charters on social channel one"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><path d="M16.6 7.4h.01"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Meridian Yacht Charters on social channel two"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3.5 3 10.8l5.8 2.4L11.5 20 21 3.5z"/><path d="M8.8 13.2 17 6.5"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Meridian Yacht Charters on social channel three"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.8 8.6l6 3.4-6 3.4V8.6z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Meridian Yacht Charters on social channel four"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8 8H4l2.1-3.1A8 8 0 1 1 21 11.5z"/></svg></a>
+<a class="social" href="#" data-demo-link aria-label="Meridian Yacht Charters on social channel five"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M8 5h11v11"/></svg></a>
+</div>
+</div>
+<nav class="foot-col" aria-label="Footer links">
+<h2 class="foot-h">Explore</h2>
+<ul class="foot-links">
+<li><a href="packages.html">Fleet &amp; Charters</a></li>
+<li><a href="about.html#amenities">Amenities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html#reviews">Reviews</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="foot-col">
+<h2 class="foot-h">Visit</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Marina Base, Quay 7<br>Port Meridian, Azure Isles</span></li>
+</ul>
+</div>
+<div class="foot-col">
+<h2 class="foot-h">Contact</h2>
+<ul class="foot-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h4l2 5-3 2a13.5 13.5 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17.5 17.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg><a href="tel:+30225550191">+30 22 555 0191</a></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5 12 13.5l8.5-6"/></svg><a href="mailto:charter@meridianyachts.example">charter@meridianyachts.example</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom">
+<p>&copy; <span data-year>2026</span> Meridian Yacht Charters. All rights reserved.</p>
+<p>A static HTML / CSS / JS template &mdash; no frameworks, no build step.</p>
+</div>
+</div>
+</footer>
+<button class="totop" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>

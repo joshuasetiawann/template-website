@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KinetiCare Physiotherapy — Assess, Treat, Rebuild</title>
+<meta name="description" content="KinetiCare is a white-teal-and-sky physiotherapy clinic template with joint-motion motifs, a pain-area selector, tabbed weekly clinic schedule, clinician credentials and an appointment request form.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230D9488'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23FFFFFF'%3EK%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body data-tpl="11">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="clin-header" id="top">
+<div class="util-bar"><div class="container util-in"><span class="util-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l1.5 4.5-2.3 1.7a12.5 12.5 0 0 0 5.6 5.6l1.7-2.3L20 15v4a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg> (555) 028-4419</span><span class="util-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-11.5A7 7 0 0 0 5 9.5C5 15 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.6"/></svg> Suite 5, 22 Wellfield Court</span><span class="util-item util-hours"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> Mon–Thu 07:30 – 19:30</span></div></div>
+<div class="container clin-head-in">
+<a class="brand" href="index.html" aria-label="KinetiCare Physiotherapy home"><span class="brand-plate" aria-hidden="true"><svg class="ic brand-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="brand-name">KinetiCare Physiotherapy</span></a>
+<nav class="main-nav" aria-label="Main navigation">
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navmenu"><span class="nav-bar"></span><span class="nav-bar"></span><span class="nav-bar"></span></button>
+<ul class="nav-menu" id="navmenu">
+<li><a class="nav-link" href="programs.html">Services</a></li>
+<li><a class="nav-link" href="programs.html">Conditions</a></li>
+<li><a class="nav-link" href="programs.html#timetable">Clinic Week</a></li>
+<li><a class="nav-link" href="about.html#team">Clinicians</a></li>
+<li><a class="nav-link" href="pricing.html">Fees</a></li>
+<li class="nav-cta-li"><a class="btn btn-cta" href="contact.html">Request Appointment</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="main">
+<section class="hero hero-v3" id="hero">
+<div class="hero-wave" aria-hidden="true"></div>
+<div class="container hero-cols">
+<div class="hero-copy">
+<p class="hero-kicker">MSK physiotherapy · Sports rehab · No referral needed</p>
+<h1 class="hero-title">Assess. Treat. Rebuild.</h1>
+<p class="hero-lead">KinetiCare is a five-clinician physiotherapy practice with a gym floor, real assessment time and rehab plans you can actually follow — most new patients are seen within 48 hours.</p>
+<ul class="cred-row">
+<li class="cred-badge"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg><span>45-minute first assessments</span></li>
+<li class="cred-badge"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg><span>Direct billing to major insurers</span></li>
+<li class="cred-badge"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg><span>Evening &amp; Saturday clinics</span></li>
+</ul>
+<div class="hero-ctas">
+<a class="btn btn-lg btn-solid" href="contact.html">Request an Appointment</a>
+<a class="btn btn-lg btn-line" href="#services">Our Services</a>
+</div>
+</div>
+<aside class="hero-card" aria-label="Key facts">
+<h2 class="hero-card-title">At a glance</h2>
+<dl class="fact-list">
+<div class="fact"><dt>Typical wait for new patients</dt><dd>48hrs</dd></div>
+<div class="fact"><dt>First assessment length</dt><dd>45min</dd></div>
+<div class="fact"><dt>Patients meeting rehab goals</dt><dd>94%</dd></div>
+</dl>
+<a class="btn btn-solid btn-block" href="contact.html">Request an Appointment</a>
+</aside>
+</div>
+</section>
+
+<section class="sec sec-insure" id="goodtoknow" aria-label="Billing, referrals and access notes">
+<div class="container">
+<div class="sec-head"><span class="kicker">Insurance &amp; Access</span><h2 class="sec-title">Billing, referrals and access notes</h2></div>
+<div class="insure-grid">
+<div class="insure-card"><span class="insure-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span><h3 class="insure-h">Direct insurer billing</h3><p>We bill most major health insurers directly — check your physiotherapy cover and bring your policy number.</p></div>
+<div class="insure-card"><span class="insure-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg></span><h3 class="insure-h">No GP referral needed</h3><p>Physiotherapists are first-contact practitioners; self-refer by booking directly.</p></div>
+<div class="insure-card"><span class="insure-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M3.5 10h17M8 2.8V7M16 2.8V7"/></svg></span><h3 class="insure-h">48-hour access</h3><p>Urgent slots are held every morning; most new patients are assessed within two working days.</p></div>
+<div class="insure-card"><span class="insure-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-11.5A7 7 0 0 0 5 9.5C5 15 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.6"/></svg></span><h3 class="insure-h">Step-free clinic</h3><p>Ground-floor suite, accessible treatment rooms and patient parking by the door.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec sec-programs" id="services">
+<div class="container">
+<div class="sec-head">
+<span class="kicker">Services</span>
+<h2 class="sec-title">What we assess and treat</h2>
+<p class="sec-lead">Every plan starts with a 45-minute assessment: history, movement testing and a written diagnosis you'll understand.</p>
+</div>
+<div class="prog-grid">
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M9 5.5h6M8.5 9h7M8.5 12.5h7M8.5 16h7M9 19.5h6"/></svg></span><div class="prog-body"><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-1">Back &amp; Neck Pain</a></h3><p class="prog-desc">Evidence-led treatment for acute flare-ups and long-standing stiffness — without scare-story language.</p><span class="prog-meta">Most common referral</span><a class="prog-link" href="programs.html#prog-1" aria-label="Back &amp; Neck Pain — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg></span><div class="prog-body"><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-2">Sports Injury Rehab</a></h3><p class="prog-desc">From sprained ankles to ACL returns, staged with objective strength testing.</p><span class="prog-meta">Return-to-play tested</span><a class="prog-link" href="programs.html#prog-2" aria-label="Sports Injury Rehab — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12V5.5a1.5 1.5 0 0 1 3 0V11M11 11V4a1.5 1.5 0 0 1 3 0v7M14 11V5.5a1.5 1.5 0 0 1 3 0V13"/><path d="M17 13l1.8-2.4a1.4 1.4 0 0 1 2.3 1.6L17.5 18a6 6 0 0 1-5.3 3H11a6 6 0 0 1-6-6v-3a1.5 1.5 0 0 1 3 0"/></svg></span><div class="prog-body"><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-3">Manual Therapy</a></h3><p class="prog-desc">Joint mobilisation and soft-tissue work, always paired with active rehab.</p><span class="prog-meta">Within treatment plans</span><a class="prog-link" href="programs.html#prog-3" aria-label="Manual Therapy — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h5v-4h5v-4h5V8"/><path d="M16 4h5v5"/></svg></span><div class="prog-body"><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-4">Post-Surgical Rehab</a></h3><p class="prog-desc">Protocol-based recovery for knees, hips, shoulders and spines, coordinated with your surgeon.</p><span class="prog-meta">Surgeon-coordinated</span><a class="prog-link" href="programs.html#prog-4" aria-label="Post-Surgical Rehab — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="m7 14 3.5-4 3 2.5L18 7"/></svg></span><div class="prog-body"><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-5">Strength Diagnostics</a></h3><p class="prog-desc">Dynamometer and jump testing to find the deficit your pain is hiding behind.</p><span class="prog-meta">Objective baselines</span><a class="prog-link" href="programs.html#prog-5" aria-label="Strength Diagnostics — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 5.5 5"/></svg></span><div class="prog-body"><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-6">Workplace &amp; Ergonomics</a></h3><p class="prog-desc">Desk assessments and strain-injury programs for teams and individuals.</p><span class="prog-meta">On-site available</span><a class="prog-link" href="programs.html#prog-6" aria-label="Workplace &amp; Ergonomics — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="8" width="16" height="8" rx="2"/><path d="M21.5 11v2M5.5 11v2M9 11v2M12.5 11v2"/></svg></span><div class="prog-body"><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-7">Chronic Pain Program</a></h3><p class="prog-desc">Graded exposure, pacing and education for pain that has overstayed its welcome.</p><span class="prog-meta">8-week structured</span><a class="prog-link" href="programs.html#prog-7" aria-label="Chronic Pain Program — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+<article class="prog-card"><span class="prog-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span><div class="prog-body"><h3 class="prog-name"><a class="prog-name-link" href="programs.html#prog-8">Run &amp; Gait Lab</a></h3><p class="prog-desc">Treadmill video analysis with cadence and load retraining.</p><span class="prog-meta">45 min · Report included</span><a class="prog-link" href="programs.html#prog-8" aria-label="Run &amp; Gait Lab — full details on the programs page">Details <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+</div>
+</div>
+</section>
+
+<section class="sec sec-picker" id="conditions">
+<div class="container">
+<div class="sec-head">
+<span class="kicker">Where Does It Hurt?</span>
+<h2 class="sec-title">Start with the sore spot</h2>
+<p class="sec-lead">Choose the area giving you trouble and we'll show the usual path through assessment and rehab.</p>
+</div>
+<div class="pick-panel" data-picker>
+<div class="pick-chips" role="group" aria-label="Choose the area that hurts">
+<button type="button" class="chip is-active" data-pick="0" aria-pressed="true">Lower back</button>
+<button type="button" class="chip" data-pick="1" aria-pressed="false">Neck &amp; shoulders</button>
+<button type="button" class="chip" data-pick="2" aria-pressed="false">Knee</button>
+<button type="button" class="chip" data-pick="3" aria-pressed="false">Ankle &amp; foot</button>
+<button type="button" class="chip" data-pick="4" aria-pressed="false">Hip</button>
+<button type="button" class="chip" data-pick="5" aria-pressed="false">Persistent pain (3+ months)</button>
+</div>
+<div class="pick-out" aria-live="polite">
+<div class="pick-desc" data-pick-desc="0"><p>Most lower-back pain settles with staged loading. Path: 45-min assessment → hands-on care as needed → Back Care class block → 6-week retest.</p></div>
+<div class="pick-desc" hidden data-pick-desc="1"><p>Desk-heavy necks respond to graded mobility plus strength. Path: assessment → manual therapy → Shoulder Rehab class → workstation review.</p></div>
+<div class="pick-desc" hidden data-pick-desc="2"><p>From runner's knee to post-op ACL: testing first. Path: assessment + strength diagnostics → Knee Rehab class → return-to-sport testing.</p></div>
+<div class="pick-desc" hidden data-pick-desc="3"><p>Sprains heal; stiff, weak ankles linger. Path: assessment → balance &amp; calf capacity work → Run &amp; Gait Lab if you run.</p></div>
+<div class="pick-desc" hidden data-pick-desc="4"><p>Hips hide in backs and knees. Path: assessment with strength testing → targeted loading plan → gym-floor progressions.</p></div>
+<div class="pick-desc" hidden data-pick-desc="5"><p>Pain that has overstayed needs a different map. Path: extended assessment → Chronic Pain Program (8 weeks) → paced milestones.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec sec-schedule" id="clinicweek">
+<div class="container">
+<div class="sec-head">
+<span class="kicker">Clinic Week</span>
+<h2 class="sec-title">Clinics &amp; rehab classes this week</h2>
+<p class="sec-lead">Appointments run all day; the classes below are small-group rehab sessions included in treatment plans.</p>
+</div>
+<div class="sched-wrap" data-schedule data-mode="tabs">
+<div class="sched-tabs" role="tablist" aria-label="Pick a day">
+<button type="button" class="sched-tab is-active" role="tab" id="tab-mon" aria-controls="day-mon" aria-selected="true">Mon</button>
+<button type="button" class="sched-tab" role="tab" id="tab-tue" aria-controls="day-tue" aria-selected="false">Tue</button>
+<button type="button" class="sched-tab" role="tab" id="tab-wed" aria-controls="day-wed" aria-selected="false">Wed</button>
+<button type="button" class="sched-tab" role="tab" id="tab-thu" aria-controls="day-thu" aria-selected="false">Thu</button>
+<button type="button" class="sched-tab" role="tab" id="tab-fri" aria-controls="day-fri" aria-selected="false">Fri</button>
+<button type="button" class="sched-tab" role="tab" id="tab-sat" aria-controls="day-sat" aria-selected="false">Sat</button>
+</div>
+<div class="sched-panels">
+<div class="sched-day" role="tabpanel" id="day-mon" aria-labelledby="tab-mon">
+<div class="srow"><span class="stime">07:30</span><span class="sname">Early Clinic — appointments</span><span class="scoach">All clinicians</span><span class="stag">Until 19:30</span></div>
+<div class="srow"><span class="stime">09:30</span><span class="sname">Knee Rehab Class</span><span class="scoach">Physio Daria Volkov</span><span class="stag">Gym floor · 6 places</span></div>
+<div class="srow"><span class="stime">12:30</span><span class="sname">Back Care Class</span><span class="scoach">Physio Sam Adeyemi</span><span class="stag">Gym floor · 8 places</span></div>
+<div class="srow"><span class="stime">17:30</span><span class="sname">Shoulder Rehab Class</span><span class="scoach">Physio Daria Volkov</span><span class="stag">Gym floor · 6 places</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-tue" aria-labelledby="tab-tue" hidden>
+<div class="srow"><span class="stime">07:30</span><span class="sname">Clinic — appointments</span><span class="scoach">All clinicians</span><span class="stag">Until 19:30</span></div>
+<div class="srow"><span class="stime">10:00</span><span class="sname">Run &amp; Gait Lab slots</span><span class="scoach">Physio Jonas Ekström</span><span class="stag">Treadmill studio</span></div>
+<div class="srow"><span class="stime">13:00</span><span class="sname">Chronic Pain Program — Week block</span><span class="scoach">Physio Mara Quinn</span><span class="stag">Education room</span></div>
+<div class="srow"><span class="stime">18:00</span><span class="sname">Strength Diagnostics hour</span><span class="scoach">Jonas Ekström</span><span class="stag">Gym floor</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-wed" aria-labelledby="tab-wed" hidden>
+<div class="srow"><span class="stime">07:30</span><span class="sname">Early Clinic — appointments</span><span class="scoach">All clinicians</span><span class="stag">Until 19:30</span></div>
+<div class="srow"><span class="stime">09:30</span><span class="sname">Knee Rehab Class</span><span class="scoach">Daria Volkov</span><span class="stag">Gym floor · 6 places</span></div>
+<div class="srow"><span class="stime">12:30</span><span class="sname">Back Care Class</span><span class="scoach">Sam Adeyemi</span><span class="stag">Gym floor · 8 places</span></div>
+<div class="srow"><span class="stime">17:30</span><span class="sname">Post-Op Lower Limb Class</span><span class="scoach">Daria Volkov</span><span class="stag">Gym floor · 6 places</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-thu" aria-labelledby="tab-thu" hidden>
+<div class="srow"><span class="stime">07:30</span><span class="sname">Clinic — appointments</span><span class="scoach">All clinicians</span><span class="stag">Until 19:30</span></div>
+<div class="srow"><span class="stime">10:00</span><span class="sname">Run &amp; Gait Lab slots</span><span class="scoach">Jonas Ekström</span><span class="stag">Treadmill studio</span></div>
+<div class="srow"><span class="stime">13:00</span><span class="sname">Chronic Pain Program — Week block</span><span class="scoach">Mara Quinn</span><span class="stag">Education room</span></div>
+<div class="srow"><span class="stime">18:00</span><span class="sname">Shoulder Rehab Class</span><span class="scoach">Sam Adeyemi</span><span class="stag">Gym floor · 6 places</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-fri" aria-labelledby="tab-fri" hidden>
+<div class="srow"><span class="stime">07:30</span><span class="sname">Clinic — appointments</span><span class="scoach">All clinicians</span><span class="stag">Until 17:00</span></div>
+<div class="srow"><span class="stime">09:30</span><span class="sname">Back Care Class</span><span class="scoach">Sam Adeyemi</span><span class="stag">Gym floor · 8 places</span></div>
+<div class="srow"><span class="stime">12:00</span><span class="sname">Workplace assessment visits</span><span class="scoach">Mara Quinn</span><span class="stag">Off-site</span></div>
+</div>
+<div class="sched-day" role="tabpanel" id="day-sat" aria-labelledby="tab-sat" hidden>
+<div class="srow"><span class="stime">08:30</span><span class="sname">Saturday Clinic — appointments</span><span class="scoach">Rotating clinicians</span><span class="stag">Until 13:00</span></div>
+<div class="srow"><span class="stime">09:30</span><span class="sname">Knee Rehab Class</span><span class="scoach">Duty physio</span><span class="stag">Gym floor · 6 places</span></div>
+<div class="srow"><span class="stime">11:00</span><span class="sname">Run &amp; Gait Lab slots</span><span class="scoach">Jonas Ekström</span><span class="stag">Treadmill studio</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="band stats-band stats-clin" id="stats" aria-label="KinetiCare in numbers">
+<div class="container stats-grid">
+<div class="stat"><span class="stat-num" data-count="48" data-suffix="hrs">48hrs</span><span class="stat-label">Typical wait for new patients</span></div>
+<div class="stat"><span class="stat-num" data-count="45" data-suffix="min">45min</span><span class="stat-label">First assessment length</span></div>
+<div class="stat"><span class="stat-num" data-count="11000" data-suffix="+">11000+</span><span class="stat-label">Treatments delivered</span></div>
+<div class="stat"><span class="stat-num" data-count="94" data-suffix="%">94%</span><span class="stat-label">Patients meeting rehab goals</span></div>
+</div>
+</section>
+
+<section class="sec sec-team" id="clinicians">
+<div class="container">
+<div class="sec-head">
+<span class="kicker">Clinicians</span>
+<h2 class="sec-title">Registered, specialised, current</h2>
+<p class="sec-lead">All five clinicians are registered physiotherapists with postgraduate specialisations and annual CPD well beyond the minimum.</p>
+</div>
+<div class="team-grid">
+<article class="tm-card"><span class="tm-avatar av-1" aria-hidden="true">DV</span><h3 class="tm-name">Daria Volkov</h3><p class="tm-role">Clinical Lead · MSK &amp; Post-Op</p><p class="tm-bio">Fifteen years across hospital orthopaedics and private practice; leads the post-surgical pathway.</p><span class="tm-creds"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="m8.8 13.5-2.3 7 5.5-3 5.5 3-2.3-7"/></svg>MSc Physio · MCSP</span></article>
+<article class="tm-card"><span class="tm-avatar av-2" aria-hidden="true">SA</span><h3 class="tm-name">Sam Adeyemi</h3><p class="tm-role">Spinal &amp; Back Care</p><p class="tm-bio">Runs the back-care classes and treats more lumbar spines before 9 a.m. than most see all week.</p><span class="tm-creds"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="m8.8 13.5-2.3 7 5.5-3 5.5 3-2.3-7"/></svg>BSc Physio · McKenzie A-D</span></article>
+<article class="tm-card"><span class="tm-avatar av-3" aria-hidden="true">JE</span><h3 class="tm-name">Jonas Ekström</h3><p class="tm-role">Sports &amp; Running</p><p class="tm-bio">Former club triathlete; owns the gait lab and the clinic's strength diagnostics.</p><span class="tm-creds"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="m8.8 13.5-2.3 7 5.5-3 5.5 3-2.3-7"/></svg>MSc Sports Physio · S&amp;C</span></article>
+<article class="tm-card"><span class="tm-avatar av-4" aria-hidden="true">MQ</span><h3 class="tm-name">Mara Quinn</h3><p class="tm-role">Chronic Pain &amp; Ergonomics</p><p class="tm-bio">Pain-science educator who turns 'just live with it' into a plan with milestones.</p><span class="tm-creds"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="m8.8 13.5-2.3 7 5.5-3 5.5 3-2.3-7"/></svg>BSc Physio · PG Pain Mgmt</span></article>
+<article class="tm-card"><span class="tm-avatar av-5" aria-hidden="true">PO</span><h3 class="tm-name">Priye Okafor</h3><p class="tm-role">Physio &amp; Acupuncture</p><p class="tm-bio">Combines manual therapy with Western acupuncture for stubborn soft-tissue cases.</p><span class="tm-creds"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="m8.8 13.5-2.3 7 5.5-3 5.5 3-2.3-7"/></svg>BSc Physio · AACP</span></article>
+</div>
+</div>
+</section>
+
+<section class="sec sec-pricing" id="fees">
+<div class="container">
+<div class="sec-head sec-head-center">
+<span class="kicker">Fees</span>
+<h2 class="sec-title">Transparent fees, direct billing</h2>
+<p class="sec-lead">No referral needed. We bill most major insurers directly — bring your policy details to the first visit.</p>
+</div>
+<div class="tier-grid">
+<article class="tier tier-featured">
+<span class="tier-flag">Most popular</span><h3 class="tier-name">First Assessment</h3>
+<p class="tier-tag">Diagnosis + written plan</p>
+<p class="tier-price"><span class="tier-amount">85</span><span class="tier-per">45 minutes</span></p>
+<ul class="tier-feats">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Full history &amp; movement testing</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Working diagnosis explained</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Written rehab plan same day</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Insurance receipt issued</li>
+</ul>
+<a class="btn btn-solid tier-btn" href="contact.html">Request Appointment</a>
+</article>
+<article class="tier">
+<h3 class="tier-name">Follow-Up</h3>
+<p class="tier-tag">Treatment + plan progression</p>
+<p class="tier-price"><span class="tier-amount">62</span><span class="tier-per">30 minutes</span></p>
+<ul class="tier-feats">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Hands-on treatment as indicated</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Rehab progressions &amp; load checks</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> App-based exercise videos</li>
+</ul>
+<a class="btn btn-line tier-btn" href="contact.html">Request Appointment</a>
+</article>
+<article class="tier">
+<h3 class="tier-name">Rehab Class Block</h3>
+<p class="tier-tag">Small-group rehab on the gym floor</p>
+<p class="tier-price"><span class="tier-amount">110</span><span class="tier-per">6 classes</span></p>
+<ul class="tier-feats">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> 6 coached classes (max 8)</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Programmed by your physio</li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5l5 5L19.5 7"/></svg> Objective retest in week 6</li>
+</ul>
+<a class="btn btn-line tier-btn" href="contact.html">Request Appointment</a>
+</article>
+</div>
+<p class="pricing-note"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg> Receipts itemised for insurance claims. Cancellations free up to 24 hours ahead.</p>
+</div>
+</section>
+
+<section class="sec sec-quotes" id="recoveries">
+<div class="container">
+<div class="sec-head">
+<span class="kicker">Recoveries</span>
+<h2 class="sec-title">Discharged, not dependent</h2>
+<p class="sec-lead">Our favourite goodbye is a patient who doesn't need us anymore. A few of them, in their words.</p>
+</div>
+<div class="qt-grid">
+<figure class="qt-card"><blockquote class="qt-text">“Two years of 'just rest it' elsewhere. KinetiCare found a strength deficit in one assessment and had me trail running in twelve weeks.”</blockquote><figcaption class="qt-by"><strong>Helen B.</strong><span>Achilles rehab · 2024</span></figcaption><span class="qt-badge">12 weeks to running</span></figure>
+<figure class="qt-card"><blockquote class="qt-text">“Post-ACL I knew the protocol mattered. The testing was objective — I returned to football when the numbers said so, not the calendar.”</blockquote><figcaption class="qt-by"><strong>Marko D.</strong><span>ACL return · 2023</span></figcaption><span class="qt-badge">RTP at month 9</span></figure>
+<figure class="qt-card"><blockquote class="qt-text">“The chronic pain program changed my relationship with my back. I manage flare-ups now instead of fearing them.”</blockquote><figcaption class="qt-by"><strong>Sandra E.</strong><span>Chronic pain program</span></figcaption><span class="qt-badge">Flare-ups self-managed</span></figure>
+<figure class="qt-card"><blockquote class="qt-text">“Desk assessment for our team of 40 — sick days from wrist and neck strain halved within a quarter.”</blockquote><figcaption class="qt-by"><strong>Priya V., HR lead</strong><span>Workplace program</span></figcaption><span class="qt-badge">Strain absence -52%</span></figure>
+</div>
+</div>
+</section>
+
+<section class="sec sec-form" id="appointment">
+<div class="container form-cols">
+<div class="form-intro">
+<div class="sec-head">
+<span class="kicker">Appointments</span>
+<h2 class="sec-title">Request an appointment</h2>
+<p class="sec-lead">Tell us what hurts and when you can come — our reception confirms a clinician and time within one working day.</p>
+</div>
+<div class="form-aside">
+<div class="aside-row"><span class="aside-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div><strong>Clinic hours</strong><span>Mon–Thu 07:30–19:30 · Fri to 17:00 · Sat to 13:00</span></div></div>
+<div class="aside-row"><span class="aside-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-11.5A7 7 0 0 0 5 9.5C5 15 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.6"/></svg></span><div><strong>Suite 5, 22 Wellfield Court</strong><span>Step-free access · patient parking on site</span></div></div>
+<div class="aside-row"><span class="aside-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span><div><strong>Direct insurance billing</strong><span>Most major health insurers — bring your policy number</span></div></div>
+</div>
+</div>
+<form class="trial-form" id="trial-form" novalidate>
+<div class="field">
+<label for="tf-name">Your name</label>
+<input type="text" id="tf-name" name="name" autocomplete="name" placeholder="Alex Morgan" required>
+<p class="ferr" id="err-name" hidden>Please tell us your name (at least 2 characters).</p>
+</div>
+<div class="field">
+<label for="tf-email">Email address</label>
+<input type="email" id="tf-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+<p class="ferr" id="err-email" hidden>That email doesn't look right — mind checking it?</p>
+</div>
+<div class="field">
+<label for="tf-phone">Phone <span class="opt">(optional)</span></label>
+<input type="tel" id="tf-phone" name="phone" autocomplete="tel" placeholder="(555) 000-0000">
+<p class="ferr" id="err-phone" hidden>Phone numbers need at least 7 digits.</p>
+</div>
+<div class="field">
+<label for="tf-interest">What best describes your issue?</label>
+<select id="tf-interest" name="interest" required>
+<option value="" selected disabled>Choose one…</option>
+<option value="Back or neck pain">Back or neck pain</option>
+<option value="Sports injury">Sports injury</option>
+<option value="Post-surgical rehab">Post-surgical rehab</option>
+<option value="Chronic / persistent pain">Chronic / persistent pain</option>
+<option value="Running assessment">Running assessment</option>
+<option value="Workplace / ergonomic">Workplace / ergonomic</option>
+<option value="Something else">Something else</option>
+</select>
+<p class="ferr" id="err-interest" hidden>Please pick an option so we can match you well.</p>
+</div>
+<div class="field">
+<label for="tf-msg">Anything we should know? <span class="opt">(optional)</span></label>
+<textarea id="tf-msg" name="message" rows="4" placeholder="Goals, injuries, questions — anything helps."></textarea>
+</div>
+<button type="submit" class="btn btn-lg btn-solid btn-block">Request Appointment</button>
+<p class="form-ok" id="form-ok" role="status" hidden>Request received. Reception will email confirmed appointment options within one working day.</p>
+<p class="form-privacy">We only use these details to reply to you — never for spam.</p>
+</form>
+</div>
+</section>
+
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<p class="footer-logo">KinetiCare Physiotherapy</p>
+<p class="footer-tag">A five-clinician physiotherapy practice with a rehab gym, gait lab and 48-hour new-patient access.</p>
+<div class="footer-socials">
+<a class="soc" href="#" data-demo-link aria-label="KinetiCare on Facebook"><svg class="soc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8.5H17V5h-2.5A3.5 3.5 0 0 0 11 8.5V11H8.5v3.5H11V21h3.5v-6.5H17L17.5 11h-3v-2a1 1 0 0 1 1-1z" stroke-width="1.6"/></svg></a>
+<a class="soc" href="#" data-demo-link aria-label="KinetiCare on LinkedIn"><svg class="soc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5V17M8 7.5v.1M12 17v-4a2.2 2.2 0 0 1 4.4 0V17" stroke-width="1.6"/></svg></a>
+<a class="soc" href="#" data-demo-link aria-label="KinetiCare on Instagram"><svg class="soc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+<a class="soc" href="#" data-demo-link aria-label="KinetiCare on YouTube"><svg class="soc-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12.5" rx="3.5"/><path d="m10 9.5 5 2.7-5 2.7v-5.4z" fill="currentColor" stroke="none"/></svg></a>
+</div>
+</div>
+<nav class="footer-col" aria-label="Footer quick links">
+<h3 class="footer-h">Explore</h3>
+<ul class="footer-links">
+<li><a href="programs.html">Services</a></li>
+<li><a href="programs.html">Conditions</a></li>
+<li><a href="programs.html#timetable">Clinic Week</a></li>
+<li><a href="about.html#team">Clinicians</a></li>
+<li><a href="pricing.html">Fees</a></li>
+<li><a href="contact.html">Request Appointment</a></li>
+</ul>
+</nav>
+<div class="footer-col">
+<h3 class="footer-h">Hours</h3>
+<ul class="footer-hours">
+<li><span>Mon–Thu</span><strong>07:30 – 19:30</strong></li>
+<li><span>Fri</span><strong>07:30 – 17:00</strong></li>
+<li><span>Sat</span><strong>08:30 – 13:00</strong></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3 class="footer-h">Find us</h3>
+<ul class="footer-contact">
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-11.5A7 7 0 0 0 5 9.5C5 15 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.6"/></svg><span>Suite 5, 22 Wellfield Court</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l1.5 4.5-2.3 1.7a12.5 12.5 0 0 0 5.6 5.6l1.7-2.3L20 15v4a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg><span>(555) 028-4419</span></li>
+<li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg><span>reception@kineticare.clinic</span></li>
+</ul>
+</div>
+</div>
+<div class="container footer-base">
+<p>© <span data-year>2025</span> KinetiCare Physiotherapy. All rights reserved.</p>
+<p class="footer-note">Hand-built template · pure HTML, CSS &amp; vanilla JS</p>
+</div>
+</footer>
+<button class="to-top" type="button" data-totop aria-label="Back to top"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+
+</body>
+</html>
