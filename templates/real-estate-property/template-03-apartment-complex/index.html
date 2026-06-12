@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Aria Residences — Luxury Apartments in Mission Bay, SF</title>
+  <meta name="description" content="The Aria Residences offers studio to 3-bedroom luxury apartments in Mission Bay, San Francisco, with a rooftop pool, fitness centre and concierge. Tour floor plans and check your budget.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='15'%20fill='%23F26B5E'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Georgia,serif'%20font-size='32'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EA%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#F26B5E">
+  <script src="script.js" defer></script>
+</head>
+<body id="top" class="v3 t03">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<nav class="nav container" aria-label="Main"><a class="logo" href="#top"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></span>
+<span class="logo-text">The Aria Residences</span>
+</a>
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu"><span></span>
+<span></span>
+<span></span>
+</button>
+<div class="nav-menu" id="navMenu">
+<ul class="nav-links">
+<li><a href="listings.html">Floor plans</a>
+</li>
+<li><a href="listings.html">Featured</a>
+</li>
+<li><a href="about.html">Amenities</a>
+</li>
+<li><a href="listings.html#calc">Calculator</a>
+</li>
+<li><a href="contact.html">Contact</a>
+</li>
+</ul>
+<a class="btn btn-primary nav-cta" href="contact.html">Book a tour</a>
+</div>
+</nav>
+</header>
+<main id="main">
+<section class="hero hero-split" id="hero" aria-labelledby="heroTitle">
+<div class="container hero-grid">
+<div class="hero-copy"><p class="kicker hero-kicker">Now leasing · Move in this month</p>
+<h1 id="heroTitle">Elevated apartment living on the bay</h1>
+<p class="lead hero-lead">The Aria pairs light-filled residences with a resort-grade amenity deck — a rooftop pool, sky lounge and concierge — moments from transit, the waterfront and downtown.</p>
+</div>
+<div class="hero-side">
+<div class="float-card fc-1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg><span><b>186</b><i>residences</i></span>
+</div>
+<div class="float-card fc-2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5 5l1.8 1.8M17.2 17.2 19 19M19 5l-1.8 1.8M6.8 17.2 5 19"/></svg><span><b>Rooftop</b><i>pool & lounge</i></span>
+</div>
+<div class="float-card fc-3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="14" r="4.2"/><path d="M11 11 20 3M16 6.5l2.5 2.5M13.5 9l2 2"/></svg><span><b>12</b><i>plans available</i></span>
+</div>
+</div>
+</div>
+</section>
+<section id="stats" class="sec sec-stats" aria-label="Key numbers">
+<div class="container">
+<div class="stats-row">
+<div class="stat reveal"><span class="stat-num" data-target="186" data-suffix="">0</span>
+<span class="stat-label">Residences</span>
+</div>
+<div class="stat reveal"><span class="stat-num" data-target="38" data-suffix="">0</span>
+<span class="stat-label">Storeys</span>
+</div>
+<div class="stat reveal"><span class="stat-num" data-target="14" data-suffix="k">0k</span>
+<span class="stat-label">Sq ft of amenities</span>
+</div>
+<div class="stat reveal"><span class="stat-num" data-target="96" data-suffix="">0</span>
+<span class="stat-label">Walk score</span>
+</div>
+</div>
+</div>
+</section>
+<section id="listings" class="sec sec-listings">
+<div class="container">
+<div class="section-head"><p class="kicker">Choose your home</p>
+<h2>Floor plans & availability</h2>
+<p class="lead">Filter by layout or budget. Select any plan to see the full residence details.</p>
+</div>
+<div data-listings>
+<div class="chipbar-row">
+<div class="chipbar" role="group" aria-label="Filter listings"><button type="button" class="chip is-active" aria-pressed="true" data-filter="all">All plans</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="studio">Studios</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="one">1 bedroom</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="two">2 bedroom</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="three">3 bedroom</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="penthouse">Penthouses</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="u4000" data-min="0" data-max="4000">Under $4,000</button>
+</div>
+<p class="list-count" data-count aria-live="polite">Showing 6 of 6</p>
+</div>
+<div class="listing-grid">
+<article class="card reveal" data-cat="one move-in" data-price="3250" data-d="0"><a class="card-media g1" href="property.html?p=0" aria-label="View full listing: The Aria — 1 Bed"><span class="ribbon">Available</span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="property.html?p=0">The Aria — 1 Bed</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Mission Bay, San Francisco</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M3 14h18M3 18v2M21 18v2"/><path d="M7 10V8.5A1.5 1.5 0 0 1 8.5 7h7A1.5 1.5 0 0 1 17 8.5V10"/></svg><span>1 bd</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2z"/><path d="M6 12V5.5A1.5 1.5 0 0 1 7.5 4h1A1.5 1.5 0 0 1 10 5.5V6"/><path d="M7 19l-1 2M17 19l1 2"/></svg><span>1 ba</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M9 4v3M15 4v3M4 9h3M4 15h3"/></svg><span>720 sqft</span>
+</li>
+</ul>
+</div>
+<div class="card-foot"><span class="card-price">$3,250<i>/mo</i></span>
+<a class="card-link" href="property.html?p=0" aria-label="View The Aria — 1 Bed listing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</article>
+<article class="card reveal" data-cat="two move-in" data-price="4600" data-d="1"><a class="card-media g2" href="property.html?p=1" aria-label="View full listing: The Aria — 2 Bed"><span class="ribbon">Available</span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="property.html?p=1">The Aria — 2 Bed</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Mission Bay, San Francisco</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M3 14h18M3 18v2M21 18v2"/><path d="M7 10V8.5A1.5 1.5 0 0 1 8.5 7h7A1.5 1.5 0 0 1 17 8.5V10"/></svg><span>2 bd</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2z"/><path d="M6 12V5.5A1.5 1.5 0 0 1 7.5 4h1A1.5 1.5 0 0 1 10 5.5V6"/><path d="M7 19l-1 2M17 19l1 2"/></svg><span>2 ba</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M9 4v3M15 4v3M4 9h3M4 15h3"/></svg><span>1,040 sqft</span>
+</li>
+</ul>
+</div>
+<div class="card-foot"><span class="card-price">$4,600<i>/mo</i></span>
+<a class="card-link" href="property.html?p=1" aria-label="View The Aria — 2 Bed listing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</article>
+<article class="card reveal" data-cat="studio move-in" data-price="2480" data-d="2"><a class="card-media g3" href="property.html?p=2" aria-label="View full listing: The Aria — Studio"><span class="ribbon">2 left</span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="property.html?p=2">The Aria — Studio</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Mission Bay, San Francisco</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M3 14h18M3 18v2M21 18v2"/><path d="M7 10V8.5A1.5 1.5 0 0 1 8.5 7h7A1.5 1.5 0 0 1 17 8.5V10"/></svg><span>Studio</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2z"/><path d="M6 12V5.5A1.5 1.5 0 0 1 7.5 4h1A1.5 1.5 0 0 1 10 5.5V6"/><path d="M7 19l-1 2M17 19l1 2"/></svg><span>1 ba</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M9 4v3M15 4v3M4 9h3M4 15h3"/></svg><span>520 sqft</span>
+</li>
+</ul>
+</div>
+<div class="card-foot"><span class="card-price">$2,480<i>/mo</i></span>
+<a class="card-link" href="property.html?p=2" aria-label="View The Aria — Studio listing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</article>
+<article class="card reveal" data-cat="three" data-price="6200" data-d="0"><a class="card-media g4" href="property.html?p=3" aria-label="View full listing: The Aria — 3 Bed"><span class="ribbon">Available</span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="property.html?p=3">The Aria — 3 Bed</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Mission Bay, San Francisco</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M3 14h18M3 18v2M21 18v2"/><path d="M7 10V8.5A1.5 1.5 0 0 1 8.5 7h7A1.5 1.5 0 0 1 17 8.5V10"/></svg><span>3 bd</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2z"/><path d="M6 12V5.5A1.5 1.5 0 0 1 7.5 4h1A1.5 1.5 0 0 1 10 5.5V6"/><path d="M7 19l-1 2M17 19l1 2"/></svg><span>2 ba</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M9 4v3M15 4v3M4 9h3M4 15h3"/></svg><span>1,420 sqft</span>
+</li>
+</ul>
+</div>
+<div class="card-foot"><span class="card-price">$6,200<i>/mo</i></span>
+<a class="card-link" href="property.html?p=3" aria-label="View The Aria — 3 Bed listing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</article>
+<article class="card reveal" data-cat="three penthouse" data-price="9800" data-d="1"><a class="card-media g5" href="property.html?p=4" aria-label="View full listing: Penthouse Collection"><span class="ribbon">Premium</span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="property.html?p=4">Penthouse Collection</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Mission Bay, San Francisco</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M3 14h18M3 18v2M21 18v2"/><path d="M7 10V8.5A1.5 1.5 0 0 1 8.5 7h7A1.5 1.5 0 0 1 17 8.5V10"/></svg><span>3 bd</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2z"/><path d="M6 12V5.5A1.5 1.5 0 0 1 7.5 4h1A1.5 1.5 0 0 1 10 5.5V6"/><path d="M7 19l-1 2M17 19l1 2"/></svg><span>3 ba</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M9 4v3M15 4v3M4 9h3M4 15h3"/></svg><span>1,880 sqft</span>
+</li>
+</ul>
+</div>
+<div class="card-foot"><span class="card-price">$9,800<i>/mo</i></span>
+<a class="card-link" href="property.html?p=4" aria-label="View Penthouse Collection listing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</article>
+<article class="card reveal" data-cat="one loft" data-price="5100" data-d="2"><a class="card-media g6" href="property.html?p=5" aria-label="View full listing: Live/Work Loft"><span class="ribbon">Available</span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="property.html?p=5">Live/Work Loft</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Mission Bay, San Francisco</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 18v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M3 14h18M3 18v2M21 18v2"/><path d="M7 10V8.5A1.5 1.5 0 0 1 8.5 7h7A1.5 1.5 0 0 1 17 8.5V10"/></svg><span>1 bd</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2z"/><path d="M6 12V5.5A1.5 1.5 0 0 1 7.5 4h1A1.5 1.5 0 0 1 10 5.5V6"/><path d="M7 19l-1 2M17 19l1 2"/></svg><span>1 ba</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M9 4v3M15 4v3M4 9h3M4 15h3"/></svg><span>1,160 sqft</span>
+</li>
+</ul>
+</div>
+<div class="card-foot"><span class="card-price">$5,100<i>/mo</i></span>
+<a class="card-link" href="property.html?p=5" aria-label="View Live/Work Loft listing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</article>
+</div>
+<p class="listing-note">Pricing updated daily. Tour incentives available on select homes this month.</p>
+</div>
+</div>
+</section>
+<section id="featured" class="sec sec-featured tint">
+<div class="container">
+<div class="feat-grid reveal">
+<div class="feat-art gfeat" aria-hidden="true"><span class="feat-tag">Premium</span><svg class="feat-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></div>
+<div class="feat-body"><p class="kicker">Residence of the month</p>
+<h2>Penthouse Collection</h2>
+<p class="feat-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>38th floor · Mission Bay</p>
+<p class="lead">Top-floor corner residences with wrap-around terraces, private elevator access and panoramic bay-to-bridge views.</p>
+<div class="spec-grid">
+<div class="spec"><span class="k">Beds</span>
+<span class="v">3</span>
+</div>
+<div class="spec"><span class="k">Baths</span>
+<span class="v">3</span>
+</div>
+<div class="spec"><span class="k">Area</span>
+<span class="v">1,880 sqft</span>
+</div>
+<div class="spec"><span class="k">Floor</span>
+<span class="v">38</span>
+</div>
+</div>
+<ul class="feat-bullets">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Wrap-around terrace with outdoor kitchen rough-in</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Italian cabinetry and waterfall stone island</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg><span>Private elevator vestibule and two parking bays</span>
+</li>
+</ul>
+<div class="feat-cta"><span class="feat-price">$9,800<i>/mo</i></span>
+<a class="btn btn-primary" href="#enquiry">Tour the penthouse</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="amenities" class="sec sec-amenities">
+<div class="container">
+<div class="section-head"><p class="kicker">Life at The Aria</p>
+<h2>Amenities that earn their keep</h2>
+<p class="lead">Forty thousand square feet dedicated entirely to residents.</p>
+</div>
+<div class="amen-grid">
+<article class="amen reveal" data-d="0"><span class="a-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5 5l1.8 1.8M17.2 17.2 19 19M19 5l-1.8 1.8M6.8 17.2 5 19"/></svg></span>
+<h3>Rooftop pool deck</h3>
+<p>Heated infinity pool, cabanas and an outdoor fireplace lounge.</p>
+</article>
+<article class="amen reveal" data-d="1"><span class="a-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg></span>
+<h3>Fitness & wellness</h3>
+<p>Two-storey gym, yoga studio, sauna and recovery suite.</p>
+</article>
+<article class="amen reveal" data-d="2"><span class="a-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 9h11v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9z"/><path d="M16 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M8 5.5v-2M11.5 5.5v-2"/></svg></span>
+<h3>Sky lounge</h3>
+<p>Resident lounge, demonstration kitchen and co-working desks.</p>
+</article>
+<article class="amen reveal" data-d="0"><span class="a-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5v-9z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></svg></span>
+<h3>Smart parcels</h3>
+<p>24/7 package room with refrigerated locker storage.</p>
+</article>
+<article class="amen reveal" data-d="1"><span class="a-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7.5-4.7 7.5-10.4A4.6 4.6 0 0 0 12 7a4.6 4.6 0 0 0-7.5 3.6C4.5 16.3 12 21 12 21z"/></svg></span>
+<h3>Pet friendly</h3>
+<p>On-site dog run and grooming spa for four-legged residents.</p>
+</article>
+<article class="amen reveal" data-d="2"><span class="a-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7.5 3v5.6c0 5-3.4 8.2-7.5 9.4-4.1-1.2-7.5-4.4-7.5-9.4V6l7.5-3z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></svg></span>
+<h3>Always covered</h3>
+<p>Concierge, controlled access and maintenance around the clock.</p>
+</article>
+</div>
+</div>
+</section>
+<section id="calc" class="sec sec-calc tint">
+<div class="container">
+<div class="section-head"><p class="kicker">Affordability</p>
+<h2>Estimate your monthly payment</h2>
+<p class="lead">Move the sliders to model a repayment that fits your budget.</p>
+</div>
+<div class="calc-card" data-calc>
+<form class="calc-fields" aria-label="Mortgage payment calculator">
+<div class="cfield"><label for="calcPrice">Purchase price (to own)</label>
+<input id="calcPrice" type="number" inputmode="numeric" min="200000" max="2500000" step="5000" value="720000"></div>
+<div class="cfield">
+<div class="range-head"><label for="calcDp">Down payment</label>
+<output id="calcDpOut" for="calcDp">15%</output></div>
+<input id="calcDp" type="range" min="0" max="70" step="1" value="15" aria-describedby="calcDpOut"></div>
+<div class="cfield">
+<div class="range-head"><label for="calcYears">Loan term</label>
+<output id="calcYearsOut" for="calcYears">30 yrs</output></div>
+<input id="calcYears" type="range" min="5" max="35" step="1" value="30" aria-describedby="calcYearsOut"></div>
+<div class="cfield"><label for="calcRate">Interest rate (% p.a.)</label>
+<input id="calcRate" type="number" inputmode="decimal" min="0" max="25" step="0.05" value="6.40"></div>
+</form>
+<div class="calc-out"><p class="c-cap">Estimated monthly mortgage</p>
+<p class="c-monthly" data-calc-monthly aria-live="polite">$0</p>
+<div class="c-bar" aria-hidden="true"><span class="c-bar-fill" data-calc-bar></span>
+</div>
+<dl class="c-rows">
+<div><dt>Loan amount</dt>
+<dd data-calc-loan>&mdash;</dd>
+</div>
+<div><dt>Down payment</dt>
+<dd data-calc-down>&mdash;</dd>
+</div>
+<div><dt>Total interest</dt>
+<dd data-calc-interest>&mdash;</dd>
+</div>
+</dl>
+<p class="c-note">For residents considering purchase. Estimate excludes HOA, taxes and insurance.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="phases" class="sec sec-timeline">
+<div class="container">
+<div class="section-head"><p class="kicker">Your move-in</p>
+<h2>From tour to keys in four steps</h2>
+<p class="lead">A smooth, predictable leasing journey.</p>
+</div>
+<ol class="timeline">
+<li class="tl-item reveal" data-d="0"><span class="tl-dot" aria-hidden="true"></span>
+<span class="tl-tag">Step 01</span>
+<h3>Tour</h3>
+<p>See your favourite plans in person or by video.</p>
+<span class="tl-status st-b">Same week</span>
+</li>
+<li class="tl-item reveal" data-d="1"><span class="tl-dot" aria-hidden="true"></span>
+<span class="tl-tag">Step 02</span>
+<h3>Apply</h3>
+<p>Apply online in minutes with instant screening.</p>
+<span class="tl-status st-a">Online</span>
+</li>
+<li class="tl-item reveal" data-d="2"><span class="tl-dot" aria-hidden="true"></span>
+<span class="tl-tag">Step 03</span>
+<h3>Sign</h3>
+<p>Review and e-sign your lease and choose move-in.</p>
+<span class="tl-status st-a">Digital</span>
+</li>
+<li class="tl-item reveal" data-d="3"><span class="tl-dot" aria-hidden="true"></span>
+<span class="tl-tag">Step 04</span>
+<h3>Move in</h3>
+<p>Collect keys and smart-access credentials.</p>
+<span class="tl-status st-c">Your date</span>
+</li>
+</ol>
+</div>
+</section>
+<section id="about" class="sec sec-about tint">
+<div class="container">
+<div class="about-grid">
+<div class="about-story reveal"><p class="kicker">The building</p>
+<h2>Designed around how you live</h2>
+<p>The Aria was conceived as a vertical neighbourhood — a place where your home, your gym, your co-working desk and your social life share one address.</p>
+<p>Managed on-site by a dedicated team, with 24/7 concierge and maintenance, it's apartment living without the friction.</p>
+<blockquote class="about-quote">&ldquo;Everything you need, two minutes from your front door — that's the whole idea.&rdquo;</blockquote>
+</div>
+<aside class="about-card reveal" data-d="1"><span class="avatar av-feat" aria-hidden="true">AR</span>
+<p class="about-name">The Aria Residences</p>
+<p class="about-role">Professionally managed community</p>
+<ul class="about-marks">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7.5 3v5.6c0 5-3.4 8.2-7.5 9.4-4.1-1.2-7.5-4.4-7.5-9.4V6l7.5-3z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></svg><span>On-site management & 24/7 security</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg><span>EV charging & smart access</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5 5l1.8 1.8M17.2 17.2 19 19M19 5l-1.8 1.8M6.8 17.2 5 19"/></svg><span>Rooftop pool, lounge & co-working</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="14" r="4.2"/><path d="M11 11 20 3M16 6.5l2.5 2.5M13.5 9l2 2"/></svg><span>Flexible 6–18 month leases</span>
+</li>
+</ul>
+</aside>
+</div>
+</div>
+</section>
+<section id="testimonials" class="sec sec-testimonials">
+<div class="container">
+<div class="section-head"><p class="kicker">Resident reviews</p>
+<h2>A community people stay in</h2>
+</div>
+<div class="testi-grid">
+<figure class="t-card reveal" data-d="0">
+<div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+<blockquote>&ldquo;Moving in took an afternoon and the team handled everything. The rooftop pool alone is worth it.&rdquo;</blockquote>
+<figcaption><span class="avatar av-1" aria-hidden="true">JL</span>
+<span class="t-who"><b>Jordan Lee</b><i>1-bed resident</i></span>
+</figcaption>
+</figure>
+<figure class="t-card reveal" data-d="1">
+<div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+<blockquote>&ldquo;Best decision we made. We're two minutes from Caltrain and never have to leave for the gym.&rdquo;</blockquote>
+<figcaption><span class="avatar av-2" aria-hidden="true">AN</span>
+<span class="t-who"><b>Amara & Nick</b><i>2-bed residents</i></span>
+</figcaption>
+</figure>
+<figure class="t-card reveal" data-d="2">
+<div class="stars" role="img" aria-label="Rated 5 out of 5 stars"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 1.7l2.5 5.1 5.6.8-4 4 .9 5.6-5-2.7-5 2.7.9-5.6-4-4 5.6-.8L10 1.7z"/></svg></div>
+<blockquote>&ldquo;The concierge knows everyone by name. It genuinely feels like a community, not a building.&rdquo;</blockquote>
+<figcaption><span class="avatar av-3" aria-hidden="true">SR</span>
+<span class="t-who"><b>Sofia Reyes</b><i>Studio resident</i></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="enquiry" class="sec sec-enquiry tint">
+<div class="container">
+<div class="section-head"><p class="kicker">Get in touch</p>
+<h2>Enquire about a property</h2>
+<p class="lead">Tell us what you are looking for and the team will reply within one business day.</p>
+</div>
+<div class="enq-grid">
+<form class="enq-form reveal" data-enquiry novalidate>
+<div class="f-row">
+<div class="f-field"><label for="enqName">Full name</label>
+<input id="enqName" name="name" type="text" autocomplete="name" placeholder="Jordan Avery" data-req="2"><span class="field-err" hidden>Please enter your name.</span>
+</div>
+<div class="f-field"><label for="enqEmail">Email address</label>
+<input id="enqEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" data-req="email"><span class="field-err" hidden>Enter a valid email address.</span>
+</div>
+</div>
+<div class="f-row">
+<div class="f-field"><label for="enqPhone">Phone <em>(optional)</em></label>
+<input id="enqPhone" name="phone" type="tel" autocomplete="tel" placeholder="+1 (415) 555-0133" data-opt="phone"><span class="field-err" hidden>That phone number looks too short.</span>
+</div>
+<div class="f-field"><label for="enqTopic">I'm interested in</label>
+<select id="enqTopic" name="topic"><option>Booking a tour</option><option>Floor plan & pricing</option><option>Availability dates</option><option>Amenities question</option></select></div>
+</div>
+<div class="f-field"><label for="enqMsg">Your message</label><textarea id="enqMsg" name="message" rows="5" placeholder="I'd like to tour a 2-bedroom this week..." data-req="10"></textarea><span class="field-err" hidden>Tell us a little more (at least 10 characters).</span>
+</div>
+<button class="btn btn-primary btn-lg" type="submit">Request a tour</button>
+<p class="form-status" data-form-status role="status" aria-live="polite"></p>
+<p class="form-fine">By submitting you agree to be contacted about your enquiry. No spam, ever.</p>
+</form>
+<aside class="enq-side reveal" data-d="1">
+<h3>Leasing office</h3>
+<p>Our leasing team tours seven days a week, in person or virtually.</p>
+<p class="side-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3h3l1.5 4.5L9.5 9a12.5 12.5 0 0 0 5.5 5.5l1.5-2L21 14v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 5 5.2 2 2 0 0 1 7 3z"/></svg><span>+1 (415) 555-0133</span>
+</p>
+<p class="side-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg><span>lease@thearia.com</span>
+</p>
+<p class="side-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3.2 2"/></svg><span>Daily · 9am–7pm</span>
+</p>
+</aside>
+</div>
+</div>
+</section>
+<section id="location" class="sec sec-map">
+<div class="container">
+<div class="section-head"><p class="kicker">Location</p>
+<h2>The Mission Bay address</h2>
+<p class="lead">Everything you need within easy reach.</p>
+</div>
+<div class="map-grid">
+<div class="map-canvas reveal" role="img" aria-label="Stylised neighbourhood map with roads, parks and a location marker"><span class="map-road mr-a" aria-hidden="true"></span>
+<span class="map-road mr-b" aria-hidden="true"></span>
+<span class="map-road mr-c" aria-hidden="true"></span>
+<span class="map-park mp-a" aria-hidden="true"></span>
+<span class="map-park mp-b" aria-hidden="true"></span>
+<span class="map-water" aria-hidden="true"></span>
+<span class="map-ring" aria-hidden="true"></span>
+<span class="map-pin"><svg class="map-pin-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+<span class="map-tag">Mission Bay</span>
+</div>
+<aside class="map-side reveal" data-d="1">
+<h3>Getting around</h3>
+<p>A connected waterfront neighbourhood with transit, parks and dining at the door.</p>
+<ul class="map-points">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3.5" width="14" height="13" rx="3"/><path d="M5 10.5h14M9 16.5 7 20.5M15 16.5l2 4M9.5 20.5h5"/><circle cx="9" cy="13.5" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.5" r=".9" fill="currentColor" stroke="none"/></svg><span>Caltrain & Muni — 4 min</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 6.5 11h3L5 17h14l-4.5-6h3L12 3z"/><path d="M12 17v4"/></svg><span>Bayfront park — 3 min</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 9h11v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9z"/><path d="M16 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M8 5.5v-2M11.5 5.5v-2"/></svg><span>Cafés & grocery — 1 min</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7.5-4.7 7.5-10.4A4.6 4.6 0 0 0 12 7a4.6 4.6 0 0 0-7.5 3.6C4.5 16.3 12 21 12 21z"/></svg><span>UCSF Mission Bay — 6 min</span>
+</li>
+</ul>
+<a class="btn btn-ghost" href="#enquiry">Request a viewing</a>
+</aside>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></span>
+<span class="logo-text">The Aria Residences</span>
+</a>
+<p>Resort-style apartment living in the heart of San Francisco's Mission Bay.</p>
+<div class="footer-social"><a href="#top" aria-label="Visit our website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+<a href="#top" aria-label="Email us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></a>
+<a href="#top" aria-label="Watch property tours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+<a href="#top" aria-label="Chat with the team"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+<a href="#top" aria-label="Subscribe to new listings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+</div>
+</div>
+<nav class="footer-col" aria-label="Quick links"><h4>Quick links</h4>
+<a href="listings.html">Floor plans</a>
+<a href="listings.html">Featured</a>
+<a href="about.html">Amenities</a>
+<a href="listings.html#calc">Calculator</a>
+<a href="contact.html">Contact</a>
+</nav>
+<nav class="footer-col" aria-label="Living"><h4>Living</h4>
+<a href="listings.html">Floor plans</a>
+<a href="listings.html">Amenities</a>
+<a href="listings.html">Resident perks</a>
+<a href="listings.html">Neighbourhood</a>
+</nav>
+<div class="footer-col footer-contact"><h4>Contact</h4>
+<p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>500 Terry Francois Blvd, San Francisco, CA</span>
+</p>
+<p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3h3l1.5 4.5L9.5 9a12.5 12.5 0 0 0 5.5 5.5l1.5-2L21 14v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 5 5.2 2 2 0 0 1 7 3z"/></svg><span>+1 (415) 555-0133</span>
+</p>
+<p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg><span>lease@thearia.com</span>
+</p>
+</div>
+</div>
+<div class="footer-bottom"><p>&copy; <span data-year>2026</span> The Aria Residences. All rights reserved.</p>
+<p>Professionally managed · Equal Housing Opportunity</p>
+</div>
+</div>
+</footer>
+<button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>
