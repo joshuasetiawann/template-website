@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumenstack &mdash; Login</title>
+    <meta name="description" content="Sign in to Lumenstack, the calm workspace for team docs and decisions — email and password, social sign-in, or SSO.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%234F46E5'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EL%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#1E1B4B">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="split">
+      <aside class="pane-art" aria-label="About Lumenstack">
+        <div class="art-bg" aria-hidden="true">
+          <span class="orb orb-a"></span>
+          <span class="orb orb-b"></span>
+          <span class="grid-lines"></span>
+        </div>
+        <header class="art-head">
+          <a class="brand" href="#main" aria-label="Lumenstack home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 15.5 12 11l8 4.5-8 4.5zM4 10.5 12 6l8 4.5"/></svg></span>
+          <span class="brand-name">Lumenstack</span>
+        </a>
+      </header>
+      <div class="art-body">
+        <h2 class="art-title">Your team&rsquo;s knowledge,<br>lit from within.</h2>
+        <p class="art-sub">Docs, decisions and runbooks — searchable in one calm workspace.</p>
+        <figure class="glass-card g1">
+          <blockquote>&ldquo;Lumenstack replaced four wikis and a decade of tribal knowledge in a month.&rdquo;</blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">JM</span><span><strong>Jonah Mertens</strong><em>Platform lead, Ferrowave</em></span></figcaption>
+        </figure>
+        <div class="glass-card g2" role="img" aria-label="Stylized search result card">
+          <span class="gc-row w70"></span>
+          <span class="gc-row w90"></span>
+          <span class="gc-row w55"></span>
+          <span class="gc-chip">runbook</span>
+        </div>
+        <dl class="art-stats">
+          <div><dt>9,200+</dt>
+          <dd>teams on board</dd>
+        </div>
+        <div>
+          <dt>140ms</dt>
+          <dd>median search</dd>
+        </div>
+        <div>
+          <dt>99.99%</dt>
+          <dd>uptime, 12 months</dd>
+        </div>
+      </dl>
+    </div>
+    <p class="art-foot">SOC 2 Type II &middot; GDPR ready &middot; SSO on every plan</p>
+  </aside>
+  <main id="main" class="pane-form">
+    <div class="form-wrap enter">
+      <header class="form-head">
+        <h1>Welcome back</h1>
+        <p>Sign in to your workspace. New to Lumenstack? <a class="text-link" href="#main">Start a free trial</a>.</p>
+      </header>
+      <div class="socials">
+        <a class="btn-social" href="#" data-demo-link role="button" title="Google"><span class="soc-glyph soc-g" aria-hidden="true">G</span>Continue with Google</a>
+        <a class="btn-social" href="#" data-demo-link role="button" title="GitHub"><span class="soc-glyph soc-h" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.2-.4-1.2.1-2.6 0 0 .8-.3 2.8 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></span>Continue with GitHub</a>
+      </div>
+      <p class="demo-flash" data-demo-flash role="status" aria-live="polite" hidden>
+      </p>
+      <div class="divider" role="separator" aria-label="or sign in with email">
+        <span>or with email</span></div>
+        <form class="login-form" data-util="login-form" novalidate>
+          <div class="field">
+            <label class="label" for="loginEmail">Work email</label>
+            <div class="control">
+              <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+              <input class="input" id="loginEmail" name="email" type="email" placeholder="ana@company.com" autocomplete="email" inputmode="email">
+            </div>
+            <p class="field-err" data-err hidden>Enter the email you signed up with.</p>
+          </div>
+          <div class="field">
+            <div class="label-row">
+              <label class="label" for="loginPassword">Password</label>
+              <a class="text-link sm" href="#main">Forgot password?</a>
+            </div>
+            <div class="control">
+              <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="10" width="14" height="10" rx="2.5"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></svg>
+              <input class="input" id="loginPassword" name="password" type="password" placeholder="Your password" autocomplete="current-password">
+              <button class="peek" type="button" data-peek aria-label="Show password" aria-pressed="false">
+                <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                <svg class="eye-shut" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" hidden><path d="M2.5 12S6 5.5 12 5.5a9.8 9.8 0 0 1 4.6 1.2M21.5 12S18 18.5 12 18.5a9.8 9.8 0 0 1-4.6-1.2M4 20 20 4"/></svg>
+              </button>
+            </div>
+            <p class="field-err" data-err hidden>Password must be at least 8 characters.</p>
+          </div>
+          <div class="row-between">
+            <label class="check">
+            <input type="checkbox" id="remember" data-remember>
+            <span class="check-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>
+            <span class="check-label">Remember this device</span>
+          </label>
+          <span class="hint-chip" title="Single sign-on">SSO enabled</span>
+        </div>
+        <button class="btn-primary" type="submit" data-submit>
+          <span class="btn-label">Sign in to workspace</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="form-foot">Protected by device checks and rate limiting. <a class="text-link sm" href="#main">Trouble signing in?</a></p>
+      </form>
+      <div class="login-done" data-done hidden>
+        <span class="done-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg></span>
+        <h2>Signed in</h2>
+        <p>Welcome back, <strong data-who>friend</strong>. Opening your workspace&hellip;</p>
+        <span class="done-bar" aria-hidden="true"></span>
+      </div>
+    </div>
+    <footer class="site-foot">
+      <p>&copy; <span data-year>2026</span> Lumenstack Systems, Inc.</p>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="#main">Privacy</a>
+        <a href="#main">Terms</a>
+        <a href="#main">Status</a>
+      </nav>
+    </footer>
+  </main>
+</div>
+</body>
+</html>

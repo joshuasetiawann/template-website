@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernwise &mdash; Sign Up</title>
+    <meta name="description" content="Create a free Fernwise account — the gentle plant-care companion that builds watering schedules around your home, light and routine.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='24'%20fill='%230E9F6E'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EF%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#0E9F6E">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="split">
+      <main id="main" class="pane-form">
+        <header class="form-brand">
+          <a class="brand" href="#main" aria-label="Fernwise home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 21V8M12 8c0-3.5 2.5-5.5 6-5.5 0 3.5-2.5 5.5-6 5.5zM12 13c0-3-2.2-4.8-5.5-4.8 0 3 2.2 4.8 5.5 4.8z"/></svg></span>
+          <span class="brand-name">Fernwise</span>
+        </a>
+      </header>
+      <div class="form-wrap enter">
+        <p class="eyebrow">Free 30-day trial &middot; no card needed</p>
+        <h1>Grow a calmer plant routine</h1>
+        <p class="sub">Create your Fernwise account and we will build a watering schedule around your
+        home, your light and your forgetful weeks.</p>
+        <form class="signup-form" data-signup novalidate>
+          <div class="field">
+            <label class="label" for="suName">Your name</label>
+            <input class="input" id="suName" name="name" type="text" placeholder="Robin Greenfield" autocomplete="name">
+            <p class="field-err" data-err hidden>Tell us what to call you.</p>
+          </div>
+          <div class="field">
+            <label class="label" for="suEmail">Email</label>
+            <input class="input" id="suEmail" name="email" type="email" placeholder="robin@home.garden" autocomplete="email" inputmode="email">
+            <p class="field-err" data-err hidden>We need a valid email for watering reminders.</p>
+          </div>
+          <div class="field">
+            <label class="label" for="suPassword">Password</label>
+            <input class="input" id="suPassword" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" aria-describedby="strengthLabel">
+            <div class="strength" data-util="password-strength">
+              <div class="strength-track" role="img" aria-label="Password strength meter">
+                <span class="strength-seg" data-seg="1"></span>
+                <span class="strength-seg" data-seg="2"></span>
+                <span class="strength-seg" data-seg="3"></span>
+              </div>
+              <p class="strength-label" id="strengthLabel" data-strength-label aria-live="polite">Strength: <strong data-strength-word>start typing</strong></p>
+              <ul class="hints" aria-label="Password requirements">
+                <li class="hint" data-hint="length"><span class="hint-dot" aria-hidden="true"></span>8+ characters</li>
+                <li class="hint" data-hint="case"><span class="hint-dot" aria-hidden="true"></span>Upper &amp; lower case</li>
+                <li class="hint" data-hint="number"><span class="hint-dot" aria-hidden="true"></span>At least one number</li>
+                <li class="hint" data-hint="symbol"><span class="hint-dot" aria-hidden="true"></span>A symbol (!&#64;#&hellip;)</li>
+              </ul>
+            </div>
+            <p class="field-err" data-err hidden>Make the password at least &ldquo;fair&rdquo; before continuing.</p>
+          </div>
+          <div class="field field-check">
+            <label class="check">
+            <input type="checkbox" id="suTerms">
+            <span class="check-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>
+            <span class="check-label">I agree to the <a class="text-link" href="#main">terms</a> and <a class="text-link" href="#main">privacy policy</a></span>
+          </label>
+          <p class="field-err" data-err hidden>Please accept the terms to continue.</p>
+        </div>
+        <button class="btn-primary" type="submit">Create my garden<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="form-foot">Already have an account? <a class="text-link" href="#main">Sign in</a></p>
+      </form>
+      <div class="signup-done" data-done hidden>
+        <span class="done-leaf" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 21V8M12 8c0-3.5 2.5-5.5 6-5.5 0 3.5-2.5 5.5-6 5.5zM12 13c0-3-2.2-4.8-5.5-4.8 0 3 2.2 4.8 5.5 4.8z"/></svg></span>
+        <h2>Welcome to the greenhouse, <span data-who>friend</span>!</h2>
+        <p>We planted a confirmation email at <strong data-sent-to>your inbox</strong>. Tap the link inside and your first watering plan will be waiting.</p>
+        <a class="btn-primary as-link" href="#main">Open the starter guide</a>
+      </div>
+    </div>
+    <footer class="site-foot">
+      <p>&copy; <span data-year>2026</span> Fernwise Garden Labs</p>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="#main">Privacy</a>
+        <a href="#main">Terms</a>
+        <a href="#main">Help</a>
+      </nav>
+    </footer>
+  </main>
+  <aside class="pane-art" aria-label="Why gardeners pick Fernwise">
+    <div class="leaffield" aria-hidden="true"></div>
+    <div class="art-inner">
+      <div class="pot-scene" role="img" aria-label="Illustration of a potted fern with floating care reminders">
+        <span class="pot"></span>
+        <span class="stem"></span>
+        <span class="leaf lf1"></span>
+        <span class="leaf lf2"></span>
+        <span class="leaf lf3"></span>
+        <span class="leaf lf4"></span>
+        <span class="care-chip cc1">Water in 2 days</span>
+        <span class="care-chip cc2">Loves east light</span>
+        <span class="care-chip cc3">Repot in May</span>
+      </div>
+      <h2 class="art-title">37,000 plants thriving on Fernwise schedules</h2>
+      <ul class="art-points">
+        <li>
+          <span class="pt-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></span>Light-aware reminders that shift with the seasons</li>
+          <li><span class="pt-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 21c4 0 7-2.8 7-7 0-4.5-4.5-7.5-7-11-2.5 3.5-7 6.5-7 11 0 4.2 3 7 7 7z"/></svg></span>Watering nudges tuned to each pot, not generic timers</li>
+          <li><span class="pt-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 19c5-1.5 5-9 12-9-1 7-5.5 9-12 9z"/><path d="M9 13c1.5-2.5 4-5 8.5-6"/></svg></span>Identify 4,000+ species from one leaf photo</li>
+        </ul>
+        <figure class="quote">
+          <blockquote>&ldquo;I went from serial plant guilt to a balcony jungle. The streaks feature is sneaky-good.&rdquo;</blockquote>
+          <figcaption>&mdash; Priya N., keeps 23 plants alive in Leeds</figcaption>
+        </figure>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

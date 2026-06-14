@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt & Beam &mdash; Maintenance</title>
+    <meta name="description" content="The Bolt & Beam hardware store is briefly down for scheduled maintenance — track live progress, see the ETA and get an email the moment we are back.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='20'%20fill='%23F59E0B'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFF8EE'%3EB%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#FFF8EE">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="backdrop" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="grid-dots"></span>
+    </div>
+    <header class="site-head">
+      <a class="brand" href="#main" aria-label="Bolt &amp; Beam home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M14.5 6.5a4 4 0 0 0-5.4 5L4 16.6V20h3.4l5.1-5.1a4 4 0 0 0 5-5.4L14.6 12 12 9.4z"/></svg></span>
+      <span class="brand-name">Bolt <em>&amp;</em> Beam</span>
+    </a>
+    <a class="head-pill" href="#updates">Status updates</a>
+  </header>
+  <main id="main" class="stage">
+    <section class="card enter" data-util="maintenance" aria-labelledby="pageTitle">
+      <p class="status-pill">
+        <span class="pill-dot" aria-hidden="true"></span>Scheduled maintenance in progress</p>
+        <div class="toolbox" role="img" aria-label="Illustration of an open toolbox with a wrench and screwdriver">
+          <span class="tb-lid"></span>
+          <span class="tb-body"></span>
+          <span class="tb-handle"></span>
+          <span class="tb-latch"></span>
+          <svg class="tb-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.5 6.5a4 4 0 0 0-5.4 5L4 16.6V20h3.4l5.1-5.1a4 4 0 0 0 5-5.4L14.6 12 12 9.4z"/></svg>
+          <svg class="tb-driver" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l6-6M10 14l6.5-6.5M16 4l4 4-2.5 2.5-4-4z"/></svg>
+          <span class="tb-spark s1"></span>
+          <span class="tb-spark s2"></span>
+          <span class="tb-spark s3"></span>
+        </div>
+        <h1 id="pageTitle">We are tightening a few bolts</h1>
+        <p class="lead">The Bolt &amp; Beam store is briefly offline while we move our warehouse stock
+        system to faster shelves. Your carts, orders and saved projects are safe and waiting.</p>
+        <div class="progress-block" id="updates">
+          <div class="progress-head">
+            <span class="progress-label">Migration progress</span>
+            <span class="progress-pct" data-pct>72%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Maintenance progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72">
+            <span class="progress-fill" data-fill style="width:72%"><span class="progress-shimmer" aria-hidden="true"></span></span>
+          </div>
+          <p class="eta-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>Estimated back online: <strong>today by 14:30 UTC</strong> &mdash; about two coffees from now.</p>
+        </div>
+        <div class="notify">
+          <form class="notify-form" data-notify novalidate>
+            <div class="field">
+              <label class="sr-only" for="notifyEmail">Email address</label>
+              <input class="input" id="notifyEmail" name="email" type="email" placeholder="you@workshop.com" autocomplete="email" inputmode="email">
+              <button class="btn" type="submit">Notify me when we are back</button>
+            </div>
+            <p class="field-err" data-err hidden>Please enter a valid email address.</p>
+          </form>
+          <p class="notify-done" data-done hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg>Done — we will email <strong data-sent-to>you</strong> the second the doors reopen.</p>
+        </div>
+        <ul class="help-row" aria-label="Other ways to reach us">
+          <li><a class="help-link" href="#main"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>help@boltandbeam.shop</a></li>
+          <li><a class="help-link" href="#main"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>+1 (555) 014-2280</a></li>
+          <li><a class="help-link" href="#main"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3a14 14 0 0 1 0 18"/></svg>status.boltandbeam.shop</a></li>
+        </ul>
+      </section>
+      <p class="stage-note enter d2">Placed an order this morning? It is already packed — couriers collect at 16:00 as usual.</p>
+    </main>
+    <footer class="site-foot">
+      <p>&copy; <span data-year>2026</span> Bolt &amp; Beam Hardware Co. &mdash; tools for people who build.</p>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="#main">Returns</a>
+        <a href="#main">Workshop blog</a>
+        <a href="#main">Privacy</a>
+      </nav>
+    </footer>
+  </body>
+</html>

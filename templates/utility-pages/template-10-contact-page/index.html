@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunhatch Studio &mdash; Contact</title>
+    <meta name="description" content="Contact Sunhatch Studio — send a postcard-style note about brand, packaging or illustration work, or find studio hours, phone and address.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='32'%20fill='%23EA580C'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3ES%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#F6F8FA">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-head">
+      <a class="brand" href="#main" aria-label="Sunhatch Studio home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 16a8 8 0 0 1 16 0z"/><path d="M12 8V5M7 9.5 5.5 7.5M17 9.5l1.5-2M3 19.5h18"/></svg></span>
+      <span class="brand-name">Sunhatch<em>Studio</em></span>
+    </a>
+    <nav class="head-nav" aria-label="Header">
+      <a class="head-link" href="#main">Work</a>
+      <a class="head-link" href="#main">Process</a>
+      <a class="head-link is-here" href="#main" aria-current="page">Contact</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <div class="intro">
+      <p class="eyebrow">Say hello</p>
+      <h1>Tell us what you&rsquo;re hatching</h1>
+      <p class="lead">Brand identities, packaging and illustration for food &amp; drink companies.
+      Send the postcard — we reply within two working days, usually faster.</p>
+    </div>
+    <div class="split">
+      <section class="pane-form" aria-label="Contact form">
+        <div class="postcard enter" data-util="contact-form">
+          <span class="stamp" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 16a8 8 0 0 1 16 0z"/><path d="M12 8V5M7 9.5 5.5 7.5M17 9.5l1.5-2"/></svg>
+        </span>
+        <span class="postmark" aria-hidden="true">SUNHATCH &middot; EST. 2019 &middot;</span>
+        <form class="contact-form" data-contact novalidate>
+          <div class="row-2">
+            <div class="field">
+              <label class="label" for="cfName">Your name</label>
+              <input class="input" id="cfName" name="name" type="text" placeholder="Sam Field" autocomplete="name">
+              <p class="field-err" data-err hidden>Please add your name.</p>
+            </div>
+            <div class="field">
+              <label class="label" for="cfEmail">Email</label>
+              <input class="input" id="cfEmail" name="email" type="email" placeholder="sam@goodjam.co" autocomplete="email" inputmode="email">
+              <p class="field-err" data-err hidden>We need a valid email to write back.</p>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="cfTopic">What is this about?</label>
+            <div class="select-wrap">
+              <select class="input select" id="cfTopic" name="topic">
+                <option value="">Choose a topic&hellip;</option>
+                <option value="brand">A new brand identity</option>
+                <option value="packaging">Packaging design</option>
+                <option value="illustration">Illustration commission</option>
+                <option value="press">Press / speaking</option>
+                <option value="other">Something else</option>
+              </select>
+              <span class="select-chev" aria-hidden="true"></span>
+            </div>
+            <p class="field-err" data-err hidden>Pick the closest topic.</p>
+          </div>
+          <div class="field">
+            <label class="label" for="cfMsg">The message <span class="label-hint">(a sentence or two is plenty)</span></label>
+            <textarea class="input area" id="cfMsg" name="message" rows="5" placeholder="We make small-batch hot sauce and need a label that bites back&hellip;"></textarea>
+            <p class="field-err" data-err hidden>Tell us at least a little about the project.</p>
+          </div>
+          <div class="form-foot">
+            <button class="btn-send" type="submit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 4 10.5 13.5M21 4l-6.5 16-4-6.5L4 9.5z"/></svg>
+              Send the postcard
+            </button>
+            <p class="privacy-note">No mailing lists. Your note goes straight to the studio inbox.</p>
+          </div>
+        </form>
+        <div class="sent-state" data-done hidden>
+          <span class="sent-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg></span>
+          <h2>Postcard sent!</h2>
+          <p>Thanks <strong data-who>friend</strong> — your note is pinned to our corkboard.
+          Expect a reply at <strong data-sent-to>your email</strong> within two working days.</p>
+          <button class="btn-again" type="button" data-again>Send another note</button>
+        </div>
+      </div>
+    </section>
+    <aside class="pane-info" aria-label="Studio details">
+      <ul class="info-cards">
+        <li class="info-card enter d2">
+          <span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span>
+          <div><strong>Email the studio</strong><p>hello&#64;sunhatch.studio</p>
+          <em>Best for project enquiries</em></div>
+        </li>
+        <li class="info-card enter d3">
+          <span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg></span>
+          <div><strong>Call us</strong><p>+44 20 7946 0810</p>
+          <em>Tue&ndash;Thu, 10:00&ndash;16:00</em></div>
+        </li>
+        <li class="info-card enter d4">
+          <span class="ic-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <div><strong>The studio</strong><p>14 Marigold Lane, Floor 2<br>Bristol BS1 4QA</p>
+          <em>Visits by appointment</em></div>
+        </li>
+      </ul>
+      <div class="map enter d5" role="img" aria-label="Stylized map showing the studio location on Marigold Lane">
+        <span class="map-road r1"></span>
+        <span class="map-road r2"></span>
+        <span class="map-road r3"></span>
+        <span class="map-river"></span>
+        <span class="map-park"></span>
+        <span class="map-pin">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      </span>
+      <span class="map-label">Marigold Ln</span>
+    </div>
+    <div class="hours enter d6">
+      <h2>Studio hours</h2>
+      <dl>
+        <div>
+          <dt>Mon&ndash;Thu</dt>
+          <dd>09:00 &ndash; 17:30</dd>
+        </div>
+        <div>
+          <dt>Friday</dt>
+          <dd>09:00 &ndash; 13:00 <span class="hours-tag">bake day</span></dd></div>
+          <div><dt>Weekend</dt>
+          <dd>Closed</dd>
+        </div>
+      </dl>
+    </div>
+  </aside>
+</div>
+</main>
+<footer class="site-foot">
+  <p>&copy; <span data-year>2026</span> Sunhatch Studio Ltd. Bristol, UK.</p>
+  <nav class="foot-nav" aria-label="Footer">
+    <a href="#main">Instagram</a>
+    <a href="#main">Dribbble</a>
+    <a href="#main">Newsletter</a>
+  </nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotaflow &mdash; Pricing</title>
+    <meta name="description" content="Quotaflow pricing — usage-based plans for API metering and rate limiting, with a monthly/yearly switch, full feature comparison and pricing FAQ.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232563EB'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EQ%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#FFFFFF">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-head">
+      <nav class="head-nav" aria-label="Main">
+        <a class="brand" href="#main" aria-label="Quotaflow home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 18V9M9.5 18V5M15 18v-8M20 18V8"/><path d="M3 21h18"/></svg></span>
+        <span class="brand-name">Quotaflow</span>
+      </a>
+      <div class="head-links">
+        <a class="head-link" href="#plans">Plans</a>
+        <a class="head-link" href="#compare">Compare</a>
+        <a class="head-link" href="#faq">FAQ</a>
+      </div>
+      <a class="btn-head" href="#plans">Start free</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="pageTitle">
+      <p class="eyebrow">Pricing</p>
+      <h1 id="pageTitle">Metering and rate limits, priced like a utility</h1>
+      <p class="lead">Quotaflow tracks API usage, enforces fair limits and bills your customers for
+      overage — without you writing a single cron job. Every plan starts with a 14-day trial.</p>
+      <div class="billing-toggle" data-util="billing-toggle" role="group" aria-label="Billing period">
+        <button class="bt-opt is-on" type="button" data-period="monthly" aria-pressed="true">Monthly</button>
+        <button class="bt-opt" type="button" data-period="yearly" aria-pressed="false">Yearly<span class="bt-save">−20%</span></button>
+        <span class="bt-thumb" aria-hidden="true"></span>
+      </div>
+      <p class="toggle-note" data-period-note aria-live="polite">Billed monthly. Cancel any time.</p>
+    </section>
+    <section class="plans" id="plans" aria-label="Plans">
+      <article class="plan enter">
+        <h2 class="plan-name">Starter</h2>
+        <p class="plan-for">Side projects &amp; early MVPs</p>
+        <p class="plan-price"><span class="cur">$</span><span class="amount" data-monthly="19" data-yearly="15">19</span><span class="per">/ mo</span></p>
+        <p class="plan-bill" data-bill-note>billed monthly</p>
+        <a class="btn-plan" href="#main">Start 14-day trial</a>
+        <ul class="plan-feats">
+          <li>Up to <strong>1M metered events</strong> / month</li>
+          <li>3 rate-limit policies</li>
+          <li>Usage dashboard &amp; alerts</li>
+          <li>Email support</li>
+        </ul>
+      </article>
+      <article class="plan plan-popular enter d2">
+        <p class="ribbon" aria-label="Most popular plan">Most popular</p>
+        <h2 class="plan-name">Growth</h2>
+        <p class="plan-for">Funded startups in production</p>
+        <p class="plan-price"><span class="cur">$</span><span class="amount" data-monthly="49" data-yearly="39">49</span><span class="per">/ mo</span></p>
+        <p class="plan-bill" data-bill-note>billed monthly</p>
+        <a class="btn-plan btn-plan-solid" href="#main">Start 14-day trial</a>
+        <ul class="plan-feats">
+          <li>Up to <strong>20M metered events</strong> / month</li>
+          <li>Unlimited rate-limit policies</li>
+          <li>Customer-facing usage portal</li>
+          <li>Overage billing via webhooks</li>
+          <li>Slack-channel support</li>
+        </ul>
+      </article>
+      <article class="plan enter d3">
+        <h2 class="plan-name">Scale</h2>
+        <p class="plan-for">High-volume platforms</p>
+        <p class="plan-price"><span class="cur">$</span><span class="amount" data-monthly="129" data-yearly="103">129</span><span class="per">/ mo</span></p>
+        <p class="plan-bill" data-bill-note>billed monthly</p>
+        <a class="btn-plan" href="#main">Talk to sales</a>
+        <ul class="plan-feats">
+          <li>
+            <strong>Unmetered</strong> events, fair use</li>
+            <li>Multi-region enforcement</li>
+            <li>SAML SSO &amp; audit log</li>
+            <li>99.99% uptime SLA</li>
+            <li>Dedicated engineer</li>
+          </ul>
+        </article>
+      </section>
+      <section class="compare" id="compare" aria-labelledby="compareTitle">
+        <h2 class="sec-title" id="compareTitle">Compare every feature</h2>
+        <p class="sec-sub">The fine print, minus the squinting.</p>
+        <div class="table-wrap" role="region" aria-label="Feature comparison table" tabindex="0">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Starter</th>
+                <th scope="col" class="hl">Growth</th>
+                <th scope="col">Scale</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Metered events / month</th>
+                <td>1M</td>
+                <td class="hl">20M</td>
+                <td>Unmetered</td>
+              </tr>
+              <tr>
+                <th scope="row">Rate-limit policies</th>
+                <td>3</td>
+                <td class="hl">Unlimited</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <th scope="row">Burst smoothing</th>
+                <td><span class="no" aria-label="Not included">—</span></td><td class="hl">
+                <span class="yes" aria-label="Included">✓</span></td><td>
+                <span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Customer usage portal</th>
+                <td><span class="no" aria-label="Not included">—</span></td><td class="hl">
+                <span class="yes" aria-label="Included">✓</span></td><td>
+                <span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Overage billing webhooks</th>
+                <td><span class="no" aria-label="Not included">—</span></td><td class="hl">
+                <span class="yes" aria-label="Included">✓</span></td><td>
+                <span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Multi-region enforcement</th>
+                <td><span class="no" aria-label="Not included">—</span></td><td class="hl">
+                <span class="no" aria-label="Not included">—</span></td><td>
+                <span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">SAML SSO + audit log</th>
+                <td><span class="no" aria-label="Not included">—</span></td><td class="hl">
+                <span class="no" aria-label="Not included">—</span></td><td>
+                <span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Uptime SLA</th>
+                <td>99.9%</td>
+                <td class="hl">99.95%</td>
+                <td>99.99%</td>
+              </tr>
+              <tr>
+                <th scope="row">Support</th>
+                <td>Email</td>
+                <td class="hl">Slack channel</td>
+                <td>Dedicated engineer</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="faq" id="faq" aria-labelledby="faqTitle">
+        <h2 class="sec-title" id="faqTitle">Pricing questions, answered</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faqA1" id="faqQ1">What counts as a metered event?<span class="faq-chev" aria-hidden="true"></span></button>
+          </h3>
+          <div class="faq-a" id="faqA1" role="region" aria-labelledby="faqQ1" hidden>
+            <p>Any API call you ask Quotaflow to count: a request, a token batch, a gigabyte — you define the unit. Health checks and our own dashboard calls are always free.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faqA2" id="faqQ2">What happens if I blow past my event quota?<span class="faq-chev" aria-hidden="true"></span></button>
+        </h3>
+        <div class="faq-a" id="faqA2" role="region" aria-labelledby="faqQ2" hidden>
+          <p>Nothing breaks. We keep counting, notify you at 80% and 100%, and bill overage at $0.90 per extra million events. You can also hard-cap any policy.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faqA3" id="faqQ3">Can I switch between monthly and yearly later?<span class="faq-chev" aria-hidden="true"></span></button>
+      </h3>
+      <div class="faq-a" id="faqA3" role="region" aria-labelledby="faqQ3" hidden>
+        <p>Yes — switching to yearly prorates your unused monthly days automatically. Moving back to monthly applies at the end of the current yearly term.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faqA4" id="faqQ4">Do you charge per seat?<span class="faq-chev" aria-hidden="true"></span></button>
+    </h3>
+    <div class="faq-a" id="faqA4" role="region" aria-labelledby="faqQ4" hidden>
+      <p>No. Invite your whole team on every plan. We price on usage because that is what actually costs money to serve.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faqA5" id="faqQ5">Is there a free tier for open-source projects?<span class="faq-chev" aria-hidden="true"></span></button>
+  </h3>
+  <div class="faq-a" id="faqA5" role="region" aria-labelledby="faqQ5" hidden>
+    <p>Yes — public OSS projects get Starter free forever, including the dashboard. Apply from your account settings with a link to the repository.</p>
+  </div>
+</div>
+</div>
+</section>
+<section class="cta" aria-label="Final call to action">
+  <div class="cta-card">
+    <h2>Ship fair limits this week</h2>
+    <p>Median integration time is 41 minutes — one SDK call and a policy file.</p>
+    <a class="btn-cta" href="#plans">Start your free trial</a>
+    <p class="cta-note">No credit card &middot; 14 days &middot; cancel with one click</p>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="foot-inner">
+    <p>&copy; <span data-year>2026</span> Quotaflow Systems, Inc. All rights reserved.</p>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="#main">Docs</a>
+      <a href="#main">Status</a>
+      <a href="#main">Privacy</a>
+      <a href="#main">Terms</a>
+    </nav>
+  </div>
+</footer>
+<button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>
