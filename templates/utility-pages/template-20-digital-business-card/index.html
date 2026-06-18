@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Vey &mdash; Digital Card</title>
+    <meta name="description" content="Atlas Vey — a premium digital business card (vCard) for a product designer, with tap-to-copy phone and email, a scannable QR, share buttons and a gold-on-charcoal theme toggle. Fully offline.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%2315171B'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Georgia,serif'%20font-size='22'%20font-weight='700'%20text-anchor='middle'%20fill='%23C9A227'%3EAV%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#15171B">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="bg-art" aria-hidden="true">
+      <span class="orb orb-a"></span>
+      <span class="orb orb-b"></span>
+      <span class="sheen"></span>
+      <span class="grid"></span>
+    </div>
+    <header class="site-head">
+      <a class="brand" href="#main" aria-label="Atlas Vey home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg></span>
+      <span class="brand-name">Atlas Vey</span>
+    </a>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to light theme">
+      <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+      <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </header>
+  <main id="main" class="stage">
+    <article class="vcard enter" data-util="vcard" aria-labelledby="vcardName">
+      <div class="cover">
+        <span class="cover-shine" aria-hidden="true"></span>
+        <span class="logo-emboss" aria-hidden="true">AV</span>
+      </div>
+      <div class="avatar-ring">
+        <div class="avatar" aria-hidden="true">
+          <svg viewBox="0 0 96 96" focusable="false"><defs><linearGradient id="av" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B2E36"/><stop offset="1" stop-color="#15171B"/></linearGradient></defs><rect width="96" height="96" rx="28" fill="url(#av)"/><circle cx="48" cy="38" r="16" fill="none" stroke="#C9A227" stroke-width="3.5"/><path d="M22 80c4-15 17-22 26-22s22 7 26 22" fill="none" stroke="#C9A227" stroke-width="3.5" stroke-linecap="round"/></svg>
+        </div>
+        <span class="verify-tick" aria-label="Verified profile" role="img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg></span>
+      </div>
+      <div class="vcard-body">
+        <h1 id="vcardName">Atlas Vey</h1>
+        <p class="role">Principal Product Designer</p>
+        <p class="org"><span class="org-dot" aria-hidden="true"></span>Lumen &amp; Co. &middot; San Francisco</p>
+        <p class="tagline">Designing calm, premium software. Coffee-fueled, detail-obsessed,
+        always sketching the next thing.</p>
+        <div class="actions" data-actions>
+          <button class="act-btn" type="button" data-copy="phone" data-value="+1 (415) 555-0173">
+            <span class="act-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 4h3l1.5 5-2 1.5a12 12 0 0 0 6 6l1.5-2 5 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+            <span class="act-text"><small>Call</small><strong>+1 (415) 555-0173</strong></span>
+            <span class="act-copy" aria-hidden="true">Copy</span>
+          </button>
+          <button class="act-btn" type="button" data-copy="email" data-value="atlas@lumenco.example">
+            <span class="act-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span>
+            <span class="act-text"><small>Email</small><strong>atlas@lumenco.example</strong></span>
+            <span class="act-copy" aria-hidden="true">Copy</span>
+          </button>
+        </div>
+        <div class="card-grid">
+          <a class="save-btn" href="#main" data-save-vcard>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h7"/></svg>
+          Save contact
+        </a>
+        <div class="qr-tile">
+          <svg class="qr" viewBox="0 0 21 21" role="img" aria-label="QR code placeholder linking to the Atlas Vey contact card" shape-rendering="crispEdges" focusable="false"><rect width="21" height="21" rx="1" fill="#15171B"/><rect x="0" y="0" width="7" height="7" rx="1" fill="#C9A227"/><rect x="1" y="1" width="5" height="5" fill="#15171B"/><rect x="2" y="2" width="3" height="3" fill="#C9A227"/><rect x="14" y="0" width="7" height="7" rx="1" fill="#C9A227"/><rect x="15" y="1" width="5" height="5" fill="#15171B"/><rect x="16" y="2" width="3" height="3" fill="#C9A227"/><rect x="0" y="14" width="7" height="7" rx="1" fill="#C9A227"/><rect x="1" y="15" width="5" height="5" fill="#15171B"/><rect x="2" y="16" width="3" height="3" fill="#C9A227"/><rect x="8" y="0" width="1" height="1" fill="#C9A227"/><rect x="9" y="0" width="1" height="1" fill="#C9A227"/><rect x="10" y="0" width="1" height="1" fill="#C9A227"/><rect x="11" y="0" width="1" height="1" fill="#C9A227"/><rect x="10" y="1" width="1" height="1" fill="#C9A227"/><rect x="11" y="1" width="1" height="1" fill="#C9A227"/><rect x="12" y="1" width="1" height="1" fill="#C9A227"/><rect x="10" y="2" width="1" height="1" fill="#C9A227"/><rect x="12" y="2" width="1" height="1" fill="#C9A227"/><rect x="8" y="3" width="1" height="1" fill="#C9A227"/><rect x="10" y="3" width="1" height="1" fill="#C9A227"/><rect x="11" y="3" width="1" height="1" fill="#C9A227"/><rect x="12" y="3" width="1" height="1" fill="#C9A227"/><rect x="8" y="4" width="1" height="1" fill="#C9A227"/><rect x="10" y="4" width="1" height="1" fill="#C9A227"/><rect x="11" y="4" width="1" height="1" fill="#C9A227"/><rect x="12" y="4" width="1" height="1" fill="#C9A227"/><rect x="8" y="5" width="1" height="1" fill="#C9A227"/><rect x="9" y="5" width="1" height="1" fill="#C9A227"/><rect x="10" y="5" width="1" height="1" fill="#C9A227"/><rect x="12" y="5" width="1" height="1" fill="#C9A227"/><rect x="10" y="6" width="1" height="1" fill="#C9A227"/><rect x="11" y="7" width="1" height="1" fill="#C9A227"/><rect x="12" y="7" width="1" height="1" fill="#C9A227"/><rect x="1" y="8" width="1" height="1" fill="#C9A227"/><rect x="2" y="8" width="1" height="1" fill="#C9A227"/><rect x="3" y="8" width="1" height="1" fill="#C9A227"/><rect x="4" y="8" width="1" height="1" fill="#C9A227"/><rect x="5" y="8" width="1" height="1" fill="#C9A227"/><rect x="7" y="8" width="1" height="1" fill="#C9A227"/><rect x="8" y="8" width="1" height="1" fill="#C9A227"/><rect x="9" y="8" width="1" height="1" fill="#C9A227"/><rect x="11" y="8" width="1" height="1" fill="#C9A227"/><rect x="12" y="8" width="1" height="1" fill="#C9A227"/><rect x="15" y="8" width="1" height="1" fill="#C9A227"/><rect x="16" y="8" width="1" height="1" fill="#C9A227"/><rect x="18" y="8" width="1" height="1" fill="#C9A227"/><rect x="19" y="8" width="1" height="1" fill="#C9A227"/><rect x="20" y="8" width="1" height="1" fill="#C9A227"/><rect x="6" y="9" width="1" height="1" fill="#C9A227"/><rect x="7" y="9" width="1" height="1" fill="#C9A227"/><rect x="9" y="9" width="1" height="1" fill="#C9A227"/><rect x="10" y="9" width="1" height="1" fill="#C9A227"/><rect x="13" y="9" width="1" height="1" fill="#C9A227"/><rect x="1" y="10" width="1" height="1" fill="#C9A227"/><rect x="3" y="10" width="1" height="1" fill="#C9A227"/><rect x="10" y="10" width="1" height="1" fill="#C9A227"/><rect x="11" y="10" width="1" height="1" fill="#C9A227"/><rect x="12" y="10" width="1" height="1" fill="#C9A227"/><rect x="13" y="10" width="1" height="1" fill="#C9A227"/><rect x="14" y="10" width="1" height="1" fill="#C9A227"/><rect x="17" y="10" width="1" height="1" fill="#C9A227"/><rect x="18" y="10" width="1" height="1" fill="#C9A227"/><rect x="19" y="10" width="1" height="1" fill="#C9A227"/><rect x="20" y="10" width="1" height="1" fill="#C9A227"/><rect x="2" y="11" width="1" height="1" fill="#C9A227"/><rect x="3" y="11" width="1" height="1" fill="#C9A227"/><rect x="6" y="11" width="1" height="1" fill="#C9A227"/><rect x="7" y="11" width="1" height="1" fill="#C9A227"/><rect x="8" y="11" width="1" height="1" fill="#C9A227"/><rect x="9" y="11" width="1" height="1" fill="#C9A227"/><rect x="15" y="11" width="1" height="1" fill="#C9A227"/><rect x="16" y="11" width="1" height="1" fill="#C9A227"/><rect x="17" y="11" width="1" height="1" fill="#C9A227"/><rect x="1" y="12" width="1" height="1" fill="#C9A227"/><rect x="2" y="12" width="1" height="1" fill="#C9A227"/><rect x="3" y="12" width="1" height="1" fill="#C9A227"/><rect x="4" y="12" width="1" height="1" fill="#C9A227"/><rect x="5" y="12" width="1" height="1" fill="#C9A227"/><rect x="6" y="12" width="1" height="1" fill="#C9A227"/><rect x="7" y="12" width="1" height="1" fill="#C9A227"/><rect x="11" y="12" width="1" height="1" fill="#C9A227"/><rect x="12" y="12" width="1" height="1" fill="#C9A227"/><rect x="13" y="12" width="1" height="1" fill="#C9A227"/><rect x="16" y="12" width="1" height="1" fill="#C9A227"/><rect x="18" y="12" width="1" height="1" fill="#C9A227"/><rect x="19" y="12" width="1" height="1" fill="#C9A227"/><rect x="8" y="13" width="1" height="1" fill="#C9A227"/><rect x="9" y="13" width="1" height="1" fill="#C9A227"/><rect x="10" y="13" width="1" height="1" fill="#C9A227"/><rect x="11" y="13" width="1" height="1" fill="#C9A227"/><rect x="13" y="13" width="1" height="1" fill="#C9A227"/><rect x="14" y="13" width="1" height="1" fill="#C9A227"/><rect x="15" y="13" width="1" height="1" fill="#C9A227"/><rect x="16" y="13" width="1" height="1" fill="#C9A227"/><rect x="17" y="13" width="1" height="1" fill="#C9A227"/><rect x="18" y="13" width="1" height="1" fill="#C9A227"/><rect x="20" y="13" width="1" height="1" fill="#C9A227"/><rect x="10" y="14" width="1" height="1" fill="#C9A227"/><rect x="16" y="14" width="1" height="1" fill="#C9A227"/><rect x="17" y="14" width="1" height="1" fill="#C9A227"/><rect x="19" y="14" width="1" height="1" fill="#C9A227"/><rect x="20" y="14" width="1" height="1" fill="#C9A227"/><rect x="8" y="15" width="1" height="1" fill="#C9A227"/><rect x="9" y="15" width="1" height="1" fill="#C9A227"/><rect x="10" y="15" width="1" height="1" fill="#C9A227"/><rect x="12" y="15" width="1" height="1" fill="#C9A227"/><rect x="13" y="15" width="1" height="1" fill="#C9A227"/><rect x="14" y="15" width="1" height="1" fill="#C9A227"/><rect x="16" y="15" width="1" height="1" fill="#C9A227"/><rect x="17" y="15" width="1" height="1" fill="#C9A227"/><rect x="20" y="15" width="1" height="1" fill="#C9A227"/><rect x="8" y="16" width="1" height="1" fill="#C9A227"/><rect x="10" y="16" width="1" height="1" fill="#C9A227"/><rect x="11" y="16" width="1" height="1" fill="#C9A227"/><rect x="12" y="16" width="1" height="1" fill="#C9A227"/><rect x="19" y="16" width="1" height="1" fill="#C9A227"/><rect x="20" y="16" width="1" height="1" fill="#C9A227"/><rect x="9" y="17" width="1" height="1" fill="#C9A227"/><rect x="10" y="17" width="1" height="1" fill="#C9A227"/><rect x="13" y="17" width="1" height="1" fill="#C9A227"/><rect x="9" y="18" width="1" height="1" fill="#C9A227"/><rect x="11" y="18" width="1" height="1" fill="#C9A227"/><rect x="18" y="18" width="1" height="1" fill="#C9A227"/><rect x="19" y="18" width="1" height="1" fill="#C9A227"/><rect x="20" y="18" width="1" height="1" fill="#C9A227"/><rect x="8" y="19" width="1" height="1" fill="#C9A227"/><rect x="9" y="19" width="1" height="1" fill="#C9A227"/><rect x="12" y="19" width="1" height="1" fill="#C9A227"/><rect x="13" y="19" width="1" height="1" fill="#C9A227"/><rect x="14" y="19" width="1" height="1" fill="#C9A227"/><rect x="15" y="19" width="1" height="1" fill="#C9A227"/><rect x="18" y="19" width="1" height="1" fill="#C9A227"/><rect x="19" y="19" width="1" height="1" fill="#C9A227"/><rect x="9" y="20" width="1" height="1" fill="#C9A227"/><rect x="10" y="20" width="1" height="1" fill="#C9A227"/><rect x="11" y="20" width="1" height="1" fill="#C9A227"/><rect x="12" y="20" width="1" height="1" fill="#C9A227"/><rect x="18" y="20" width="1" height="1" fill="#C9A227"/><rect x="19" y="20" width="1" height="1" fill="#C9A227"/><rect x="20" y="20" width="1" height="1" fill="#C9A227"/></svg>
+          <span class="qr-cap">Scan my card</span>
+        </div>
+      </div>
+      <div class="socials" aria-label="Social links">
+        <a class="soc" href="#" data-demo-link aria-label="Atlas on Dribbble" title="Dribbble">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.2"/><path d="M5 8.5c4 .4 9 .2 12.5-2M3.4 13c5-1.3 10.5-.4 14 3.4M9 3.6c3 3.6 5.6 8.6 6.4 16"/></svg>
+      </a>
+      <a class="soc" href="#" data-demo-link aria-label="Atlas on LinkedIn" title="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.5 3.5A2 2 0 1 0 4.5 7.5 2 2 0 0 0 4.5 3.5zM3 9h3v12H3zM9 9h2.9v1.7h.04c.4-.75 1.4-1.7 3-1.7 3.2 0 3.8 2.1 3.8 4.8V21h-3v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg>
+    </a>
+    <a class="soc" href="#" data-demo-link aria-label="Atlas on X" title="X">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.5 3h3l-6.6 7.5L21.5 21h-5.7l-4.4-5.8L6.3 21H3.3l7-8L2.8 3h5.8l4 5.3zm-1 16h1.6L8 4.6H6.3z"/></svg>
+  </a>
+  <a class="soc" href="#" data-demo-link aria-label="Atlas on Instagram" title="Instagram">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1"/></svg>
+</a>
+<a class="soc" href="#" data-demo-link aria-label="Atlas portfolio website" title="Website">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18"/></svg>
+</a>
+</div>
+
+<div class="share-row">
+  <button class="share-btn" type="button" data-share>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+    Share card
+  </button>
+  <button class="share-btn ghost" type="button" data-copy-link data-host="atlasvey.card.example">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 15l6-6M10.5 6.5l1-1a4.5 4.5 0 0 1 6.5 6.5l-1 1M13.5 17.5l-1 1a4.5 4.5 0 0 1-6.5-6.5l1-1"/></svg>
+    Copy link
+  </button>
+</div>
+</div>
+</article>
+<p class="card-note enter d2">A self-contained digital business card &middot; works fully offline.</p>
+</main>
+<footer class="site-foot">
+  <p>&copy; <span data-year>2026</span> Atlas Vey</p>
+  <nav class="foot-nav" aria-label="Footer">
+    <a href="#main">vCard</a>
+    <a href="#main">Privacy</a>
+  </nav>
+</footer>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>

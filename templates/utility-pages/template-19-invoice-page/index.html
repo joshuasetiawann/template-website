@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobalt & Quill &mdash; Invoice</title>
+    <meta name="description" content="Invoice CQ-2026-0417 from Cobalt & Quill design studio — itemized line items, totals, a partially-paid status and a one-click print/PDF action. Crisp, print-ready and self-contained.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%2313335C'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='22'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3ECQ%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#13335C">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-head no-print">
+      <a class="brand" href="#main" aria-label="Cobalt and Quill home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 20s7-2 11-6 5-11 5-11-7 1-11 5-5 12-5 12z"/><path d="M4 20l6-6"/></svg></span>
+      <span class="brand-name">Cobalt &amp; Quill</span>
+    </a>
+    <div class="head-tools">
+      <button class="tool-btn" type="button" data-copy-inv>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+        Copy number
+      </button>
+      <button class="tool-btn primary" type="button" data-print>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>
+        Print / Save PDF
+      </button>
+    </div>
+  </header>
+  <main id="main" class="page">
+    <article class="invoice" data-util="invoice" aria-labelledby="pageTitle">
+      <div class="inv-top">
+        <div class="inv-from">
+          <span class="inv-logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 20s7-2 11-6 5-11 5-11-7 1-11 5-5 12-5 12z"/></svg></span>
+          <p class="from-name">Cobalt &amp; Quill</p>
+          <p class="from-line">Design &amp; Front-End Studio</p>
+          <p class="from-line">88 Inkwell Row, Studio 5</p>
+          <p class="from-line">Portland, OR 97204</p>
+          <p class="from-line">billing@cobaltquill.example</p>
+        </div>
+        <div class="inv-head">
+          <h1 id="pageTitle">Invoice</h1>
+          <p class="inv-num">No. <strong data-inv-number>CQ-2026-0417</strong></p>
+          <span class="status-pill status-partial" data-status>
+          <span class="sp-dot" aria-hidden="true"></span>Partially paid
+        </span>
+      </div>
+    </div>
+    <div class="inv-meta">
+      <div class="meta-block">
+        <p class="meta-label">Billed to</p>
+        <p class="meta-strong">Harborview Coffee Roasters</p>
+        <p class="meta-line">Attn: Dana Okafor</p>
+        <p class="meta-line">512 Marina Blvd</p>
+        <p class="meta-line">Seattle, WA 98109</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-label">Issued</p>
+        <p class="meta-strong">June 1, 2026</p>
+        <p class="meta-label spaced">Due</p>
+        <p class="meta-strong due-date">June 30, 2026</p>
+      </div>
+      <div class="meta-block meta-amount">
+        <p class="meta-label">Amount due</p>
+        <p class="amount-due" data-amount-due>$13,519.15</p>
+        <p class="meta-line">of $19,519.15 total</p>
+      </div>
+    </div>
+    <div class="table-scroll">
+      <table class="items" aria-label="Invoice line items">
+        <thead>
+          <tr>
+            <th scope="col" class="th-name">Description</th>
+            <th scope="col" class="th-qty">Qty</th>
+            <th scope="col" class="th-rate">Rate</th>
+            <th scope="col" class="th-amt">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ti-name"><span class="ti-title">Brand identity system</span><span class="ti-desc">Logo suite, type scale, color tokens &amp; usage guide</span></td>
+            <td class="ti-qty">1</td>
+            <td class="ti-rate">$4,200.00</td>
+            <td class="ti-amt">$4,200.00</td>
+          </tr>
+          <tr>
+            <td class="ti-name"><span class="ti-title">Marketing website design</span><span class="ti-desc">9 responsive page designs in Figma, 2 revision rounds</span></td>
+            <td class="ti-qty">1</td>
+            <td class="ti-rate">$5,600.00</td>
+            <td class="ti-amt">$5,600.00</td>
+          </tr>
+          <tr>
+            <td class="ti-name"><span class="ti-title">Front-end build</span><span class="ti-desc">Hand-coded, accessible HTML/CSS/JS &mdash; 9 pages</span></td>
+            <td class="ti-qty">1</td>
+            <td class="ti-rate">$6,800.00</td>
+            <td class="ti-amt">$6,800.00</td>
+          </tr>
+          <tr>
+            <td class="ti-name"><span class="ti-title">Copywriting</span><span class="ti-desc">Headlines &amp; body copy across the site</span></td>
+            <td class="ti-qty">1</td>
+            <td class="ti-rate">$1,450.00</td>
+            <td class="ti-amt">$1,450.00</td>
+          </tr>
+          <tr>
+            <td class="ti-name"><span class="ti-title">Photography retouching</span><span class="ti-desc">Editing &amp; export of supplied imagery</span></td>
+            <td class="ti-qty">24</td>
+            <td class="ti-rate">$35.00</td>
+            <td class="ti-amt">$840.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="inv-bottom">
+      <div class="inv-notes">
+        <p class="notes-title">Notes &amp; payment</p>
+        <p class="notes-copy">Thank you for the partnership! A 50% deposit of $6,000.00 was received on
+        May 12. The remaining balance is due by June 30, 2026.</p>
+        <p class="notes-copy">Pay by transfer to <strong>Cobalt &amp; Quill LLC</strong>, routing 000-1234,
+        account 55-009982, or by card via the link in your email. Late balances accrue 1.5% monthly.</p>
+        <div class="pay-tags" aria-hidden="true">
+          <span class="pay-tag">Bank transfer</span>
+          <span class="pay-tag">Visa</span>
+          <span class="pay-tag">Mastercard</span>
+          <span class="pay-tag">ACH</span>
+        </div>
+      </div>
+      <div class="inv-totals">
+        <div class="tot-row">
+          <span>Subtotal</span><span>$18,890.00</span></div>
+          <div class="tot-row">
+            <span>Loyalty discount</span><span class="neg">&minus;$900.00</span></div>
+            <div class="tot-row">
+              <span>Sales tax (8.5%)</span><span>$1,529.15</span></div>
+              <div class="tot-row tot-grand">
+                <span>Total</span><span>$19,519.15</span></div>
+                <div class="tot-row tot-paid">
+                  <span>Deposit paid</span><span class="neg">&minus;$6,000.00</span></div>
+                  <div class="tot-row tot-due">
+                    <span>Balance due</span><span data-due-mirror>$13,519.15</span></div>
+                  </div>
+                </div>
+
+                <footer class="inv-foot">
+                  <p>Cobalt &amp; Quill LLC &middot; EIN 88-0192834 &middot; cobaltquill.example</p>
+                  <p class="inv-thanks">Made with care &mdash; we appreciate your business.</p>
+                </footer>
+              </article>
+            </main>
+            <footer class="site-foot no-print">
+              <p>&copy; <span data-year>2026</span> Cobalt &amp; Quill LLC. All rights reserved.</p>
+              <nav class="foot-nav" aria-label="Footer">
+                <a href="#main">Billing help</a>
+                <a href="#main">Terms</a>
+              </nav>
+            </footer>
+            <div class="toast no-print" data-toast role="status" aria-live="polite"></div>
+          </body>
+        </html>

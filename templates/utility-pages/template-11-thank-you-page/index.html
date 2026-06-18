@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mintcrate &mdash; Thank You</title>
+    <meta name="description" content="Order confirmed at Mintcrate — copy your order number, follow the packing timeline and see your full summary while the confetti settles.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='18'%20fill='%2316A34A'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EM%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#F0FAF5">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="confetti-layer" data-confetti aria-hidden="true"></div>
+    <header class="site-head">
+      <a class="brand" href="#main" aria-label="Mintcrate home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 8.5 12 4l8 4.5v7L12 20l-8-4.5z"/><path d="M4 8.5l8 4.5 8-4.5M12 13v7"/></svg></span>
+      <span class="brand-name">Mintcrate</span>
+    </a>
+    <a class="head-link" href="#main">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 7h14l-1.5 9h-11zM6 7 5 4H2.5"/><circle cx="9.5" cy="19.5" r="1.4"/><circle cx="16.5" cy="19.5" r="1.4"/></svg>
+    Continue shopping
+  </a>
+</header>
+<main id="main" class="stage">
+  <section class="card enter" data-util="order-confirmation" aria-labelledby="pageTitle">
+    <div class="check-pop" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg>
+    </div>
+    <h1 id="pageTitle">Thank you, your order is in!</h1>
+    <p class="lead">A confirmation just landed at <strong>maya.k&#64;postbox.io</strong>.
+    We are folding the tissue paper as you read this.</p>
+    <div class="order-id-row">
+      <span class="oid-label">Order number</span>
+      <span class="oid" data-order-id>MC-48213-7</span>
+      <button class="copy-btn" type="button" data-copy-order aria-label="Copy order number MC-48213-7">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h9"/></svg>
+        Copy
+      </button>
+    </div>
+    <div class="timeline" aria-label="Delivery progress">
+      <div class="tl-step is-done">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <span class="tl-name">Ordered</span>
+        <span class="tl-when">Today, 14:02</span>
+      </div>
+      <div class="tl-step is-now">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <span class="tl-name">Packed</span>
+        <span class="tl-when">Today</span>
+      </div>
+      <div class="tl-step">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <span class="tl-name">Shipped</span>
+        <span class="tl-when">Tomorrow</span>
+      </div>
+      <div class="tl-step">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <span class="tl-name">Delivered</span>
+        <span class="tl-when">Jun 16&ndash;17</span>
+      </div>
+    </div>
+    <section class="summary" aria-label="Order summary">
+      <h2 class="sum-title">Order summary</h2>
+      <ul class="items">
+        <li class="item">
+          <span class="item-thumb th-a" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M7 21c-2 0-3.5-1.6-3.5-3.6C3.5 13 8 12 12 5c4 7 8.5 8 8.5 12.4 0 2-1.5 3.6-3.5 3.6z"/></svg></span>
+          <span class="item-body"><strong>Beeswax wrap trio &mdash; meadow print</strong><em>Qty 1</em></span>
+          <span class="item-price">$24.00</span>
+        </li>
+        <li class="item">
+          <span class="item-thumb th-b" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M8 3h8l1 7c0 3-2.2 5-5 5s-5-2-5-5zM12 15v4M8.5 21h7"/></svg></span>
+          <span class="item-body"><strong>Walnut soap dish</strong><em>Qty 2</em></span>
+          <span class="item-price">$22.00</span>
+        </li>
+        <li class="item">
+          <span class="item-thumb th-c" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="5" y="4" width="14" height="17" rx="3"/><path d="M9 4V2.8M15 4V2.8M8.5 9h7M8.5 13h7M8.5 17h4"/></svg></span>
+          <span class="item-body"><strong>Refill: castile counter spray</strong><em>Qty 1</em></span>
+          <span class="item-price">$9.50</span>
+        </li>
+      </ul>
+      <dl class="totals">
+        <div>
+          <dt>Subtotal</dt>
+          <dd>$55.50</dd>
+        </div>
+        <div>
+          <dt>Shipping (carbon-neutral)</dt>
+          <dd>$4.90</dd>
+        </div>
+        <div>
+          <dt>Crate credit applied</dt>
+          <dd class="credit">&minus;$5.00</dd>
+        </div>
+        <div class="grand">
+          <dt>Total charged</dt>
+          <dd>$55.40</dd>
+        </div>
+      </dl>
+    </section>
+    <div class="cta-row">
+      <a class="btn-main" href="#main">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 8h14l-1 12H6zM8.5 8a3.5 3.5 0 0 1 7 0"/></svg>
+      Track this order
+    </a>
+    <a class="btn-soft" href="#main">View receipt</a>
+  </div>
+  <p class="note">Need a change? You can edit the shipping address for the next <strong>2 hours</strong> from your account.</p>
+</section>
+<aside class="after enter d2" aria-label="What happens next">
+  <h2 class="after-title">While you wait</h2>
+  <div class="after-grid">
+    <a class="after-card" href="#main">
+    <span class="ac-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span>
+    <strong>Get arrival texts</strong>
+    <em>One tap from the confirmation email</em>
+  </a>
+  <a class="after-card" href="#main">
+  <span class="ac-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 21c4 0 7-2.8 7-7 0-4.5-4.5-7.5-7-11-2.5 3.5-7 6.5-7 11 0 4.2 3 7 7 7z"/></svg></span>
+  <strong>How we offset shipping</strong>
+  <em>2 min read &middot; verified projects</em>
+</a>
+<a class="after-card" href="#main">
+<span class="ac-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 3l2.5 5.5L20 10l-5.5 1.5L12 17l-2.5-5.5L4 10l5.5-1.5z"/></svg></span>
+<strong>Give $5, get $5</strong>
+<em>Your referral code: <span class="ref">MAYA-MINT</span></em>
+</a>
+</div>
+</aside>
+</main>
+<footer class="site-foot">
+  <p>&copy; <span data-year>2026</span> Mintcrate Goods Co. &mdash; gentle things for loud kitchens.</p>
+  <nav class="foot-nav" aria-label="Footer">
+    <a href="#main">Help center</a>
+    <a href="#main">Returns</a>
+    <a href="#main">Privacy</a>
+  </nav>
+</footer>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>

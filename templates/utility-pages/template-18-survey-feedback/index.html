@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomgauge &mdash; Share Feedback</title>
+    <meta name="description" content="Share feedback with Bloomgauge — a two-minute survey with a star rating, an NPS slider, topic chips and a comment box. Playful, accessible and fully self-contained.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%236D5BA6'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EB%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#6D5BA6">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-head">
+      <a class="brand" href="#main" aria-label="Bloomgauge home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 3v9M12 12a4 4 0 1 1-4 4M12 12a4 4 0 1 0 4 4"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg></span>
+      <span class="brand-name">Bloomgauge</span>
+    </a>
+    <span class="head-meta">2-minute survey</span>
+  </header>
+  <main id="main" class="stage">
+    <section class="card enter" data-util="survey" aria-labelledby="pageTitle">
+      <span class="card-blob blob-a" aria-hidden="true"></span>
+      <span class="card-blob blob-b" aria-hidden="true"></span>
+
+      <div class="state-form" data-form-state>
+        <p class="eyebrow">We&rsquo;d love your take</p>
+        <h1 id="pageTitle">How was your Bloomgauge experience?</h1>
+        <p class="lead">Your feedback shapes what we build next. It takes about two minutes &mdash; promise.</p>
+        <form class="survey-form" data-survey novalidate>
+          <!-- Star rating -->
+          <fieldset class="block">
+            <legend class="block-q">Overall, how happy are you? <span class="req-star" aria-hidden="true">*</span></legend>
+            <div class="stars" role="radiogroup" aria-label="Overall rating, 1 to 5 stars" data-stars>
+              <button class="star" type="button" role="radio" aria-checked="false" data-star="1" aria-label="1 star" tabindex="0"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 6 6.6.6-5 4.4 1.5 6.5L12 17.3 6 20.6l1.5-6.5-5-4.4 6.6-.6z"/></svg></button>
+              <button class="star" type="button" role="radio" aria-checked="false" data-star="2" aria-label="2 stars" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 6 6.6.6-5 4.4 1.5 6.5L12 17.3 6 20.6l1.5-6.5-5-4.4 6.6-.6z"/></svg></button>
+              <button class="star" type="button" role="radio" aria-checked="false" data-star="3" aria-label="3 stars" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 6 6.6.6-5 4.4 1.5 6.5L12 17.3 6 20.6l1.5-6.5-5-4.4 6.6-.6z"/></svg></button>
+              <button class="star" type="button" role="radio" aria-checked="false" data-star="4" aria-label="4 stars" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 6 6.6.6-5 4.4 1.5 6.5L12 17.3 6 20.6l1.5-6.5-5-4.4 6.6-.6z"/></svg></button>
+              <button class="star" type="button" role="radio" aria-checked="false" data-star="5" aria-label="5 stars" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 6 6.6.6-5 4.4 1.5 6.5L12 17.3 6 20.6l1.5-6.5-5-4.4 6.6-.6z"/></svg></button>
+            </div>
+            <p class="rating-word" data-rating-word aria-live="polite">Tap a star to rate</p>
+            <p class="field-err" data-err-rating hidden>Please pick a star rating.</p>
+          </fieldset>
+
+          <!-- Range slider -->
+          <fieldset class="block">
+            <legend class="block-q">How likely are you to recommend us?</legend>
+            <div class="slider-wrap">
+              <input class="slider" type="range" id="nps" min="0" max="10" step="1" value="7" data-slider aria-describedby="npsVal">
+              <output class="slider-val" id="npsVal" data-slider-out>7</output>
+            </div>
+            <div class="slider-scale" aria-hidden="true">
+              <span>Not likely</span><span class="slider-tag" data-slider-tag>Passive</span><span>Very likely</span></div>
+            </fieldset>
+
+            <!-- Topic chips -->
+            <fieldset class="block">
+              <legend class="block-q">What stood out? <span class="optional">(optional)</span></legend>
+              <div class="topic-chips" data-topics>
+                <label class="topic"><input type="checkbox" name="topic" value="speed">
+                <span>Speed</span></label>
+                <label class="topic"><input type="checkbox" name="topic" value="design"><span>Design</span></label>
+                <label class="topic"><input type="checkbox" name="topic" value="support"><span>Support</span></label>
+                <label class="topic"><input type="checkbox" name="topic" value="value"><span>Value</span></label>
+                <label class="topic"><input type="checkbox" name="topic" value="reliability"><span>Reliability</span></label>
+                <label class="topic"><input type="checkbox" name="topic" value="features"><span>Features</span></label>
+              </div>
+            </fieldset>
+
+            <!-- Comment -->
+            <fieldset class="block">
+              <legend class="block-q">Anything else on your mind?</legend>
+              <textarea class="textarea" id="comment" rows="4" maxlength="500" placeholder="The thing I loved / the thing that bugged me was&hellip;"></textarea>
+              <p class="counter">
+                <span data-count>0</span> / 500</p>
+              </fieldset>
+
+              <!-- Email opt-in -->
+              <label class="followup">
+              <input type="checkbox" id="followup" data-followup>
+              <span class="fu-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>
+              <span class="fu-text">It&rsquo;s OK to email me about this feedback</span>
+            </label>
+            <div class="field email-field" data-email-field hidden>
+              <label class="sr-only" for="fuEmail">Your email</label>
+              <input class="input" id="fuEmail" type="email" placeholder="you@example.com" autocomplete="email" inputmode="email">
+              <p class="field-err" data-err hidden>Add a valid email or untick the box above.</p>
+            </div>
+
+            <button class="btn-submit" type="submit">
+              Send feedback
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>
+            </button>
+          </form>
+        </div>
+        <div class="state-thanks" data-thanks-state hidden>
+          <span class="thanks-burst" aria-hidden="true"></span>
+          <span class="thanks-emoji" data-thanks-emoji aria-hidden="true">&#127881;</span>
+          <h2>Thank you, truly!</h2>
+          <p class="thanks-copy" data-thanks-copy>Your <strong>5-star</strong> rating is in. Feedback like yours is exactly how Bloomgauge grows.</p>
+          <div class="thanks-recap" data-recap></div>
+          <a class="btn-submit as-link" href="#main">Back to Bloomgauge
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-foot">
+    <p>&copy; <span data-year>2026</span> Bloomgauge Insights Ltd.</p>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="#main">Privacy</a>
+      <a href="#main">How we use feedback</a>
+    </nav>
+  </footer>
+</body>
+</html>

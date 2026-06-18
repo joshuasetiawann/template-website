@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driftbase &mdash; Get Started</title>
+    <meta name="description" content="Driftbase onboarding — a four-step setup wizard with a progress bar, per-step validation and a celebratory finish screen, all dependency-free.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230EA5E9'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3ED%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#0EA5E9">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-head">
+      <a class="brand" href="#main" aria-label="Driftbase home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M3 13c3-7 15-7 18 0M3 13c3 7 15 7 18 0"/><circle cx="12" cy="13" r="2.6"/></svg></span>
+      <span class="brand-name">Driftbase</span>
+    </a>
+    <button class="head-skip" type="button" data-skip-all>Skip setup</button>
+  </header>
+  <main id="main" class="stage">
+    <div class="app-frame enter" data-util="onboarding">
+      <div class="chrome" aria-hidden="true">
+        <span class="dot dr"></span><span class="dot dy"></span><span class="dot dg"></span>
+        <span class="chrome-url">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18"/></svg>
+        app.driftbase.io/welcome
+      </span>
+      <span class="chrome-spacer"></span>
+    </div>
+    <div class="frame-body">
+      <div class="wizard-head">
+        <p class="eyebrow">Welcome aboard</p>
+        <h1>Let&rsquo;s set up your workspace</h1>
+        <p class="lead">Four quick steps and Driftbase will be tuned to how your team actually works.</p>
+      </div>
+      <ol class="steps" data-steps aria-label="Setup progress">
+        <li class="step-pip is-active" data-pip="1"><span class="pip-dot">1</span><span class="pip-name">Profile</span></li>
+        <li class="step-pip" data-pip="2">
+          <span class="pip-dot">2</span><span class="pip-name">Workspace</span></li>
+          <li class="step-pip" data-pip="3">
+            <span class="pip-dot">3</span><span class="pip-name">Focus</span></li>
+            <li class="step-pip" data-pip="4">
+              <span class="pip-dot">4</span><span class="pip-name">Invite</span></li>
+            </ol>
+            <div class="bar"><span class="bar-fill" data-bar style="width:25%"></span></div>
+            <form class="wiz-form" data-wiz novalidate>
+              <!-- Step 1 -->
+              <section class="panel is-current" data-panel="1" aria-label="Step 1: your profile">
+                <h2 class="panel-title">First, the basics</h2>
+                <div class="field">
+                  <label class="label" for="obName">Your name</label>
+                  <input class="input" id="obName" name="name" type="text" placeholder="Jamie Rivers" autocomplete="name">
+                  <p class="field-err" data-err hidden>We&rsquo;d love to know your name.</p>
+                </div>
+                <div class="field">
+                  <label class="label" for="obRole">Your role</label>
+                  <div class="select-wrap">
+                    <select class="input" id="obRole" name="role">
+                      <option value="">Choose one&hellip;</option>
+                      <option>Founder / Owner</option>
+                      <option>Product manager</option>
+                      <option>Designer</option>
+                      <option>Engineer</option>
+                      <option>Operations</option>
+                      <option>Other</option>
+                    </select>
+                    <svg class="select-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                  <p class="field-err" data-err hidden>Pick the closest match so we can tailor things.</p>
+                </div>
+              </section>
+              <!-- Step 2 -->
+              <section class="panel" data-panel="2" hidden aria-label="Step 2: your workspace">
+                <h2 class="panel-title">Name your workspace</h2>
+                <div class="field">
+                  <label class="label" for="obWs">Workspace name</label>
+                  <div class="prefix-field">
+                    <span class="prefix">driftbase.io/</span>
+                    <input class="input" id="obWs" name="workspace" type="text" placeholder="northwind" autocomplete="off">
+                  </div>
+                  <p class="field-err" data-err hidden>Give your workspace a short name.</p>
+                </div>
+                <fieldset class="choice-grid">
+                  <legend class="label">Team size</legend>
+                  <label class="choice"><input type="radio" name="size" value="solo" checked>
+                  <span class="choice-card"><strong>Just me</strong><span>Solo workspace</span></span></label>
+                  <label class="choice"><input type="radio" name="size" value="small">
+                  <span class="choice-card"><strong>2&ndash;10</strong><span>Small team</span></span></label>
+                  <label class="choice"><input type="radio" name="size" value="big">
+                  <span class="choice-card"><strong>11&ndash;50</strong><span>Growing</span></span></label>
+                </fieldset>
+              </section>
+              <!-- Step 3 -->
+              <section class="panel" data-panel="3" hidden aria-label="Step 3: focus areas">
+                <h2 class="panel-title">What should we surface first?</h2>
+                <p class="panel-hint">Pick at least one &mdash; we&rsquo;ll arrange your dashboard around it.</p>
+                <fieldset class="check-grid" data-focus>
+                  <legend class="sr-only">Focus areas</legend>
+                  <label class="check"><input type="checkbox" name="focus" value="tasks">
+                  <span class="check-card"><span class="ck-emoji" aria-hidden="true">&#9745;</span>Tasks &amp; sprints</span></label>
+                  <label class="check"><input type="checkbox" name="focus" value="docs"><span class="check-card"><span class="ck-emoji" aria-hidden="true">&#128196;</span>Docs &amp; wiki</span></label>
+                  <label class="check"><input type="checkbox" name="focus" value="goals"><span class="check-card"><span class="ck-emoji" aria-hidden="true">&#127919;</span>Goals &amp; OKRs</span></label>
+                  <label class="check"><input type="checkbox" name="focus" value="calendar"><span class="check-card"><span class="ck-emoji" aria-hidden="true">&#128197;</span>Calendar</span></label>
+                  <label class="check"><input type="checkbox" name="focus" value="files"><span class="check-card"><span class="ck-emoji" aria-hidden="true">&#128193;</span>Files</span></label>
+                  <label class="check"><input type="checkbox" name="focus" value="chat"><span class="check-card"><span class="ck-emoji" aria-hidden="true">&#128172;</span>Team chat</span></label>
+                </fieldset>
+                <p class="field-err standalone" data-focus-err hidden>Choose at least one focus area.</p>
+              </section>
+              <!-- Step 4 -->
+              <section class="panel" data-panel="4" hidden aria-label="Step 4: invite teammates">
+                <h2 class="panel-title">Invite a teammate (optional)</h2>
+                <div class="field">
+                  <label class="label" for="obInvite">Teammate email</label>
+                  <input class="input" id="obInvite" name="invite" type="email" placeholder="alex@northwind.co" autocomplete="off" inputmode="email">
+                  <p class="field-err" data-err hidden>That email looks off &mdash; or leave it blank to skip.</p>
+                </div>
+                <p class="panel-hint">No rush &mdash; you can invite your whole team later from Settings.</p>
+                <div class="summary" data-summary aria-live="polite"></div>
+              </section>
+
+              <div class="wiz-nav">
+                <button class="btn-ghost" type="button" data-back hidden>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                  Back
+                </button>
+                <button class="btn-next" type="button" data-next>
+                  Continue
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+                <button class="btn-next" type="submit" data-finish hidden>
+                  Finish setup
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg>
+                </button>
+              </div>
+            </form>
+            <div class="finish" data-finish-screen hidden>
+              <span class="finish-burst" aria-hidden="true"></span>
+              <span class="finish-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4.5 12.5l5 5 10-11"/></svg></span>
+              <h2>You&rsquo;re all set, <span data-finish-name>friend</span>!</h2>
+              <p>Your workspace is ready and tuned to your picks. Time to drift in.</p>
+              <a class="btn-next as-link" href="#main">Open my dashboard
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-foot">
+      <p>&copy; <span data-year>2026</span> Driftbase Labs Inc.</p>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="#main">Privacy</a>
+        <a href="#main">Help center</a>
+      </nav>
+    </footer>
+  </body>
+</html>
