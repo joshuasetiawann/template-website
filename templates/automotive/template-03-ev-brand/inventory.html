@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory — Voltaic EV</title>
+  <meta name="description" content="Browse the full Voltaic EV inventory with live filters, sorting and finance estimates.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230EA5A4'/%3E%3Ctext%20x='32'%20y='44'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20text-anchor='middle'%20fill='%23FFFFFF'%3EV%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0EA5A4">
+  <script src="script.js" defer></script>
+</head>
+<body id="top" class="v4 t03 sub">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<nav class="nav container" aria-label="Main"><a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></span>
+<span class="logo-text">Voltaic EV</span>
+</a>
+<button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu"><span></span>
+<span></span>
+<span></span>
+</button>
+<div class="nav-menu" id="navMenu">
+<ul class="nav-links">
+<li><a href="index.html">Home</a>
+</li>
+<li><a aria-current="page" href="inventory.html">Inventory</a>
+</li>
+<li><a href="about.html">About</a>
+</li>
+<li><a href="about.html#impact">Why us</a>
+</li>
+<li><a href="inventory.html#calc">Finance</a>
+</li>
+<li><a href="about.html">Reviews</a>
+</li>
+<li><a href="contact.html">Contact</a>
+</li>
+</ul>
+<a class="btn btn-primary nav-cta" href="contact.html">Book a test drive</a>
+</div>
+</nav>
+</header>
+<main id="main" class="page-main">
+<div class="container pg-shell">
+<nav class="crumb" aria-label="Breadcrumb">
+<ol>
+<li><a href="index.html">Home</a>
+</li>
+<li aria-current="page"><span>Inventory</span>
+</li>
+</ol>
+</nav>
+<header class="subhero"><p class="kicker">Full inventory</p>
+<h1>Browse every vehicle in stock</h1>
+<p class="lead">Use the filters and sort to narrow 9 vehicles by type, fuel and price.</p>
+</header>
+</div>
+<section class="sec" style="padding-top:0">
+<div class="container">
+<div data-listings class="pgx-listings">
+<div class="chipbar-row">
+<div class="chipbar" role="group" aria-label="Filter vehicles"><button type="button" class="chip is-active" aria-pressed="true" data-filter="all">All</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="sedan">Sedans</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="suv">SUVs</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="compact">Compact</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="perf">Performance</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="longrange">Long range</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="budget" data-min="0" data-max="49900">Under $49,900</button>
+<button type="button" class="chip" aria-pressed="false" data-filter="premium" data-min="49900" data-max="99999999">$49,900+</button></div>
+<div class="toolbar"><span class="list-count" data-count aria-live="polite">Showing 9 of 9</span>
+<span class="sort-wrap"><label for="invSort">Sort</label><select id="invSort" data-listsort><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="az">Name A–Z</option></select></span>
+</div>
+</div>
+<div class="listing-grid">
+<article class="card reveal" data-cat="compact longrange" data-price="34990" data-d="0"><a class="card-media g1" href="vehicle.html?p=0" aria-label="View details: Voltaic Lume"><span class="badge b-b">New</span>
+<span class="price-tag">$34,990<i></i></span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="vehicle.html?p=0">Voltaic Lume</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Compact · Electric</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11V8h3l2-2h4v3h3l2 2v4h-2v3H8v-3H5z"/><path d="M16 9h3"/></svg><span>Single, 201 hp</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14 15.5 9"/><path d="M4 18h16"/></svg><span>268 mi EPA</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="7" cy="17" r="2"/><path d="M7 9v6M17 9v8M7 7h10"/></svg><span>6.9 s</span>
+</li>
+</ul>
+<div class="card-foot"><span class="card-type">Compact</span>
+<a class="card-link" href="vehicle.html?p=0">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="card reveal" data-cat="compact longrange" data-price="39990" data-d="1"><a class="card-media g2" href="vehicle.html?p=1" aria-label="View details: Voltaic Lume Long Range"><span class="badge b-a">New</span>
+<span class="price-tag">$39,990<i></i></span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="vehicle.html?p=1">Voltaic Lume Long Range</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Compact · Electric</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11V8h3l2-2h4v3h3l2 2v4h-2v3H8v-3H5z"/><path d="M16 9h3"/></svg><span>Single, 215 hp</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14 15.5 9"/><path d="M4 18h16"/></svg><span>324 mi EPA</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="7" cy="17" r="2"/><path d="M7 9v6M17 9v8M7 7h10"/></svg><span>6.4 s</span>
+</li>
+</ul>
+<div class="card-foot"><span class="card-type">Compact</span>
+<a class="card-link" href="vehicle.html?p=1">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="card reveal" data-cat="sedan longrange" data-price="46500" data-d="2"><a class="card-media g3" href="vehicle.html?p=2" aria-label="View details: Voltaic Arc"><span class="badge b-b">New</span>
+<span class="price-tag">$46,500<i></i></span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="vehicle.html?p=2">Voltaic Arc</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Sedan · Electric</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11V8h3l2-2h4v3h3l2 2v4h-2v3H8v-3H5z"/><path d="M16 9h3"/></svg><span>Dual, 384 hp</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14 15.5 9"/><path d="M4 18h16"/></svg><span>341 mi EPA</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="7" cy="17" r="2"/><path d="M7 9v6M17 9v8M7 7h10"/></svg><span>4.4 s</span>
+</li>
+</ul>
+<div class="card-foot"><span class="card-type">Sedan</span>
+<a class="card-link" href="vehicle.html?p=2">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="card reveal" data-cat="sedan perf" data-price="54900" data-d="0"><a class="card-media g4" href="vehicle.html?p=3" aria-label="View details: Voltaic Arc Performance"><span class="badge b-d">Performance</span>
+<span class="price-tag">$54,900<i></i></span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="vehicle.html?p=3">Voltaic Arc Performance</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Sedan · Electric</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11V8h3l2-2h4v3h3l2 2v4h-2v3H8v-3H5z"/><path d="M16 9h3"/></svg><span>Dual, 510 hp</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14 15.5 9"/><path d="M4 18h16"/></svg><span>312 mi EPA</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="7" cy="17" r="2"/><path d="M7 9v6M17 9v8M7 7h10"/></svg><span>3.3 s</span>
+</li>
+</ul>
+<div class="card-foot"><span class="card-type">Sedan</span>
+<a class="card-link" href="vehicle.html?p=3">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="card reveal" data-cat="suv longrange" data-price="52900" data-d="1"><a class="card-media g5" href="vehicle.html?p=4" aria-label="View details: Voltaic Range SUV"><span class="badge b-a">New</span>
+<span class="price-tag">$52,900<i></i></span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="vehicle.html?p=4">Voltaic Range SUV</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>SUV · Electric</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11V8h3l2-2h4v3h3l2 2v4h-2v3H8v-3H5z"/><path d="M16 9h3"/></svg><span>Dual, 402 hp</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14 15.5 9"/><path d="M4 18h16"/></svg><span>318 mi EPA</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="7" cy="17" r="2"/><path d="M7 9v6M17 9v8M7 7h10"/></svg><span>4.8 s</span>
+</li>
+</ul>
+<div class="card-foot"><span class="card-type">SUV</span>
+<a class="card-link" href="vehicle.html?p=4">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="card reveal" data-cat="suv perf" data-price="58400" data-d="2"><a class="card-media g6" href="vehicle.html?p=5" aria-label="View details: Voltaic Range Adventure"><span class="badge b-b">New</span>
+<span class="price-tag">$58,400<i></i></span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="vehicle.html?p=5">Voltaic Range Adventure</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>SUV · Electric</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11V8h3l2-2h4v3h3l2 2v4h-2v3H8v-3H5z"/><path d="M16 9h3"/></svg><span>Dual, 450 hp</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14 15.5 9"/><path d="M4 18h16"/></svg><span>295 mi EPA</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="7" cy="17" r="2"/><path d="M7 9v6M17 9v8M7 7h10"/></svg><span>4.3 s</span>
+</li>
+</ul>
+<div class="card-foot"><span class="card-type">SUV</span>
+<a class="card-link" href="vehicle.html?p=5">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="card reveal" data-cat="compact" data-price="31490" data-d="0"><a class="card-media g7" href="vehicle.html?p=6" aria-label="View details: Voltaic Lume City"><span class="badge b-c">Value</span>
+<span class="price-tag">$31,490<i></i></span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="vehicle.html?p=6">Voltaic Lume City</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Compact · Electric</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11V8h3l2-2h4v3h3l2 2v4h-2v3H8v-3H5z"/><path d="M16 9h3"/></svg><span>Single, 168 hp</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14 15.5 9"/><path d="M4 18h16"/></svg><span>221 mi EPA</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="7" cy="17" r="2"/><path d="M7 9v6M17 9v8M7 7h10"/></svg><span>7.8 s</span>
+</li>
+</ul>
+<div class="card-foot"><span class="card-type">Compact</span>
+<a class="card-link" href="vehicle.html?p=6">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="card reveal" data-cat="sedan longrange" data-price="49900" data-d="1"><a class="card-media g8" href="vehicle.html?p=7" aria-label="View details: Voltaic Arc Touring"><span class="badge b-b">New</span>
+<span class="price-tag">$49,900<i></i></span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="vehicle.html?p=7">Voltaic Arc Touring</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Sedan · Electric</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11V8h3l2-2h4v3h3l2 2v4h-2v3H8v-3H5z"/><path d="M16 9h3"/></svg><span>Dual, 384 hp</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14 15.5 9"/><path d="M4 18h16"/></svg><span>355 mi EPA</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="7" cy="17" r="2"/><path d="M7 9v6M17 9v8M7 7h10"/></svg><span>4.4 s</span>
+</li>
+</ul>
+<div class="card-foot"><span class="card-type">Sedan</span>
+<a class="card-link" href="vehicle.html?p=7">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+<article class="card reveal" data-cat="suv longrange" data-price="55900" data-d="2"><a class="card-media g1" href="vehicle.html?p=8" aria-label="View details: Voltaic Range Long"><span class="badge b-a">Long range</span>
+<span class="price-tag">$55,900<i></i></span><svg class="card-ill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></a>
+<div class="card-body">
+<h3 class="card-title"><a href="vehicle.html?p=8">Voltaic Range Long</a>
+</h3>
+<p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>SUV · Electric</span>
+</p>
+<ul class="meta">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 11V8h3l2-2h4v3h3l2 2v4h-2v3H8v-3H5z"/><path d="M16 9h3"/></svg><span>Dual, 402 hp</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14 15.5 9"/><path d="M4 18h16"/></svg><span>352 mi EPA</span>
+</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="7" cy="17" r="2"/><path d="M7 9v6M17 9v8M7 7h10"/></svg><span>4.7 s</span>
+</li>
+</ul>
+<div class="card-foot"><span class="card-type">SUV</span>
+<a class="card-link" href="vehicle.html?p=8">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</article>
+</div>
+<p class="empty-note" data-empty hidden>No vehicles match those filters — try widening your search.</p>
+</div>
+</div>
+</section>
+<section id="calc" class="sec sec-calc tint">
+<div class="container">
+<div class="section-head"><p class="kicker">Affordability</p>
+<h2>Estimate your monthly payment</h2>
+<p class="lead">Adjust the deposit, term and APR to see what your repayments could look like.</p>
+</div>
+<div class="calc-card" data-calc>
+<form class="calc-fields" aria-label="Finance payment calculator">
+<div class="cfield"><label for="calcPrice">Vehicle price</label>
+<input id="calcPrice" type="number" inputmode="numeric" min="26000" max="108000" step="500" value="49900"></div>
+<div class="cfield">
+<div class="range-head"><label for="calcDp">Deposit</label>
+<output id="calcDpOut" for="calcDp">10%</output></div>
+<input id="calcDp" type="range" min="0" max="60" step="1" value="10" aria-describedby="calcDpOut"></div>
+<div class="cfield">
+<div class="range-head"><label for="calcYears">Term</label>
+<output id="calcYearsOut" for="calcYears">5 yrs</output></div>
+<input id="calcYears" type="range" min="1" max="8" step="1" value="5" aria-describedby="calcYearsOut"></div>
+<div class="cfield"><label for="calcRate">APR (% p.a.)</label>
+<input id="calcRate" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="6.9"></div>
+</form>
+<div class="calc-out"><p class="c-cap">Estimated monthly payment</p>
+<p class="c-monthly" data-calc-monthly aria-live="polite">$0</p>
+<div class="c-bar" aria-hidden="true"><span class="c-bar-fill" data-calc-bar></span>
+</div>
+<dl class="c-rows">
+<div><dt>Amount financed</dt>
+<dd data-calc-loan>&mdash;</dd>
+</div>
+<div><dt>Deposit</dt>
+<dd data-calc-down>&mdash;</dd>
+</div>
+<div><dt>Total interest</dt>
+<dd data-calc-interest>&mdash;</dd>
+</div>
+</dl>
+<p class="c-note">Estimate only. Excludes fees, tax and final-payment options. Not a finance offer.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="container">
+<div class="cta-band reveal">
+<h2>Seen something you like?</h2>
+<p>Reserve it online or book a test drive — no obligation.</p>
+<div class="hero-actions"><a class="btn btn-invert" href="contact.html">Contact the team</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13l2-5.2A2 2 0 0 1 6.9 6.5h10.2a2 2 0 0 1 1.9 1.3L21 13v5h-3v-2H6v2H3v-5z"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/><path d="M12 8.5l-1.6 2.6h2.2L11 14"/></svg></span>
+<span class="logo-text">Voltaic EV</span>
+</a>
+<p>A minimal modern electric-vehicle brand template with a model line-up, range specs, finance calculator and configurable </p>
+<div class="footer-social"><a href="#" aria-label="Website" data-demo-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18z"/></svg></a>
+<a href="#" aria-label="Email us" data-demo-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></a>
+<a href="#" aria-label="Watch videos" data-demo-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5l12 7-12 7V5z"/></svg></a>
+<a href="#" aria-label="Chat" data-demo-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.4a8.4 8.4 0 1 1 16.2-4.1z"/><path d="M8 10.5h8M8 13.5h5"/></svg></a>
+<a href="#" aria-label="Subscribe" data-demo-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9M4 4.5A15.5 15.5 0 0 1 19.5 20"/><circle cx="5.2" cy="18.8" r="1.4" fill="currentColor" stroke="none"/></svg></a>
+</div>
+</div>
+<nav class="footer-col" aria-label="Quick links"><h4>Explore</h4>
+<a href="inventory.html">Inventory</a>
+<a href="inventory.html#calc">Finance</a>
+<a href="about.html">About us</a>
+<a href="about.html">Reviews</a>
+<a href="contact.html">Contact</a>
+</nav>
+<nav class="footer-col" aria-label="More"><h4>Company</h4>
+<a href="about.html">About us</a>
+<a href="about.html#impact">Why us</a>
+<a href="about.html">Reviews</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="footer-col footer-contact"><h4>Visit us</h4>
+<p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>115 Auto Plaza, San Jose, CA</span>
+</p>
+<p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3h3l1.5 4.5L9.5 9a12.5 12.5 0 0 0 5.5 5.5l1.5-2L21 14v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 5 5.2 2 2 0 0 1 7 3z"/></svg><span>+1 (555) 003-1021</span>
+</p>
+<p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg><span>hello@voltaicev.test</span>
+</p>
+</div>
+</div>
+<div class="footer-bottom"><p>&copy; <span data-year>2026</span> Voltaic EV. All rights reserved.</p>
+<p>Crafted demo template · placeholder content</p>
+</div>
+</div>
+</footer>
+<button class="to-top" type="button" data-totop aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+</body>
+</html>
